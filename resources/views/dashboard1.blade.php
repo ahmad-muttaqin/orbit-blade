@@ -144,16 +144,16 @@
 								<i class="fa fa-clipboard-list text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Dashboard</div> 
-							<div class="menu-caret text-gray"></div>
+							
 					</div>
-
+					
 					<div class="menu-item has-sub mt-3">
 						<a href="javascript:;" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-user-circle text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Tenants</div> 
-							<div class="menu-caret text-gray"></div>
+							
 						</a>
 						
 					</div>
@@ -168,7 +168,7 @@
 								<i class="fa fa-user-edit text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Editions</div> 
-							<div class="menu-caret text-gray"></div>
+							
 						</a>
 						
 					</div>
@@ -182,7 +182,7 @@
 								<i class="fa fa-gear text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Settings</div> 
-							<div class="menu-caret text-gray"></div>
+							
 						</a>
 						
 					</div>
