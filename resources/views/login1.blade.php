@@ -44,7 +44,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+				<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
 					<div class="mx-auto" style="width: 30rem;">
 							<div class="card-body bg-white">
 									<div class="login-header mb-30px">
