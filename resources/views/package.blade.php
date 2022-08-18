@@ -8,7 +8,6 @@
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
-	a
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +20,6 @@
 	<div id="loader" class="app-loader">
 		<span class="spinner"></span>
 	</div>
-www
     <div class="shadow p-3 mb-5 bg-body rounded" style="display: flex; justify-content: center;">
         <div class="card border-0 col-sm-3" style="width:600px; min-width:300px">					
             <img src="../assets/img/logo/orbit-logo-5.png" class="img-fluid" style="margin:9vh"  alt="Orbit Logo">
