@@ -16,7 +16,7 @@
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
 </head>
-<body>
+<body class='pace-top'>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
 		<span class="spinner"></span>
@@ -31,7 +31,7 @@
 
 			
 			<div class="row bg-white " style="min-height:98vh ;">
-				<div class="col-sm" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-image: url(../assets/img/orbit/bh.png);background-repeat: no-repeat; background-size: cover;">
+				<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-image: url(../assets/img/orbit/bh.png);background-repeat: no-repeat; background-size: cover;">
 					<div class="mx-auto" style="width: 60rem;">
 						<div class="text-center">
 							<img src="../assets/img/orbit/orbithrm-logo.png"  width="500rem" alt="Orbit" class="img-fluid">	
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+				<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
 					<div class="mx-auto" style="width: 30rem;">
 							<div class="card-body bg-white">
 									<div class="login-header mb-30px">

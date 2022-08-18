@@ -16,7 +16,7 @@
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
 </head>
-<body>
+<body class='pace-top'>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
 		<span class="spinner"></span>

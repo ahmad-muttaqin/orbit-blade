@@ -34,4 +34,7 @@ Route::get('/dashboard/1', function () {
 Route::get('/dashboard/2', function () {
     return view('dashboard2');
 });
+Route::get('/package', function () {
+    return view('package');
+});
 
