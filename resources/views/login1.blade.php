@@ -99,15 +99,12 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Switch tenant</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">ENTER TENANT NAME</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
-						<div class="form-check form-switch">
-							<label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-							<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-						  </div>
+						
 						<div class="mb-3">
 						  <label for="recipient-name" class="col-form-label">Tenancy name :</label>
 						  <input type="text" class="form-control" id="recipient-name">
@@ -116,7 +113,7 @@
 					</div>
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Send message</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
 					</div>
 				  </div>
 				</div>
