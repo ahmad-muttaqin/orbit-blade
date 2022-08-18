@@ -152,7 +152,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-commenting text-gray"></i>
 							</div>
@@ -161,12 +161,12 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">My Profile </div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Employee Information</div>
 								</a>
 							</div>
@@ -178,7 +178,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-business-time text-gray"></i>
 							</div>
@@ -192,12 +192,12 @@
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Timesheets Report</div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_tabs_accordions.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Realtime Activities</div>
 								</a>
 							</div>
@@ -209,7 +209,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-user-edit text-gray"></i>
 							</div>
@@ -218,12 +218,12 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">My Attendance</div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Attendance Information</div>
 								</a>
 							</div>
@@ -235,7 +235,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-user-cog text-gray"></i>
 							</div>
@@ -244,12 +244,12 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">My Leave</div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Leave Approval</div>
 								</a>
 							</div>
@@ -261,7 +261,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-diagram-project text-gray"></i>
 							</div>
@@ -270,22 +270,22 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Customer</i></div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Project Information</div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_tabs_accordions.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">My Project</div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_unlimited_tabs.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Project Request</div>
 								</a>
 							</div>
@@ -297,7 +297,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-user-group text-gray"></i>
 							</div>
@@ -311,7 +311,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-pen-fancy text-gray"></i>
 							</div>
@@ -320,12 +320,12 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">Timesheet</i></div>
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
+								<a href="#" class="menu-link">
 									<div class="menu-text text-gray">E-Attendance</div>
 								</a>
 							</div>
@@ -337,7 +337,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-gear text-gray"></i>
 							</div>

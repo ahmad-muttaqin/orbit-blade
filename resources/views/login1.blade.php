@@ -104,7 +104,7 @@
 						
 						<div class="mb-3">
 						  <label for="recipient-name" class="col-form-label">Tenancy Code :</label>
-						  <input type="text" class="form-control" id="recipient-name">
+						  <input type="text" class="form-control" id="tenancy-code">
 						</div>
 					  </form>
 					</div>

@@ -139,7 +139,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub mt-3">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-clipboard-list text-gray"></i>
 							</div>
@@ -148,7 +148,7 @@
 					</div>
 					
 					<div class="menu-item has-sub mt-3">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-user-circle text-gray"></i>
 							</div>
@@ -163,7 +163,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-user-edit text-gray"></i>
 							</div>
@@ -177,7 +177,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="javascript:;" class="menu-link">
+						<a href="#" class="menu-link">
 							<div class="menu-icon">
 								<i class="fa fa-gear text-gray"></i>
 							</div>
@@ -208,7 +208,7 @@
 		<div id="content" class="app-content bg-gray-100">
 	<!-- BEGIN breadcrumb -->
 	<ol class="breadcrumb float-xl-end">
-		<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+		<li class="breadcrumb-item"><a href="#">Home</a></li>
 		<li class="breadcrumb-item active">Dashboard</li>
 	</ol>
 	<!-- END breadcrumb -->
