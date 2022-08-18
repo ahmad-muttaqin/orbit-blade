@@ -41,14 +41,7 @@
 			<!-- END navbar-header -->
 			<!-- BEGIN header-nav -->
 			<div class="navbar-nav">
-				<div class="navbar-item navbar-form">
-					<form action="" method="POST" name="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Enter keyword" />
-							<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
-						</div>
-					</form>
-				</div>
+				
 				<div class="navbar-item dropdown">
 					<a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
 						<i class="fa fa-bell"></i>
@@ -151,7 +144,7 @@
 								<i class="fa fa-clipboard-list text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Dashboard</div> 
-							
+							<div class="menu-caret text-gray"></div>
 					</div>
 
 					<div class="menu-item has-sub mt-3">
@@ -162,88 +155,7 @@
 							<div class="menu-text text-gray">Tenants</div> 
 							<div class="menu-caret text-gray"></div>
 						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
-									<div class="menu-text text-gray">General <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
-									<div class="menu-text text-gray">Typography</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tabs_accordions.html" class="menu-link">
-									<div class="menu-text text-gray">Tabs & Accordions</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_unlimited_tabs.html" class="menu-link">
-									<div class="menu-text text-gray">Unlimited Nav Tabs</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_modal_notification.html" class="menu-link">
-									<div class="menu-text text-gray">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_widget_boxes.html" class="menu-link">
-									<div class="menu-text text-gray">Widget Boxes</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_media_object.html" class="menu-link">
-									<div class="menu-text text-gray">Media Object</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_buttons.html" class="menu-link">
-									<div class="menu-text text-gray">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_icons.html" class="menu-link">
-									<div class="menu-text text-gray">Icons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_simple_line_icons.html" class="menu-link">
-									<div class="menu-text text-gray">Simple Line Icons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_ionicons.html" class="menu-link">
-									<div class="menu-text text-gray">Ionicons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tree.html" class="menu-link">
-									<div class="menu-text text-gray">Tree View</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_language_bar_icon.html" class="menu-link">
-									<div class="menu-text">Language Bar & Icon</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_social_buttons.html" class="menu-link">
-									<div class="menu-text text-gray">Social Buttons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tour.html" class="menu-link">
-									<div class="menu-text text-gray">Intro JS</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_offcanvas_toasts.html" class="menu-link">
-									<div class="menu-text text-gray">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-						</div>
+						
 					</div>
 
 					<!-- End Sidenav Content Orbit -->
@@ -258,88 +170,7 @@
 							<div class="menu-text text-gray">Editions</div> 
 							<div class="menu-caret text-gray"></div>
 						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
-									<div class="menu-text text-gray">General <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
-									<div class="menu-text text-gray">Typography</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tabs_accordions.html" class="menu-link">
-									<div class="menu-text text-gray">Tabs & Accordions</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_unlimited_tabs.html" class="menu-link">
-									<div class="menu-text text-gray">Unlimited Nav Tabs</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_modal_notification.html" class="menu-link">
-									<div class="menu-text text-gray">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_widget_boxes.html" class="menu-link">
-									<div class="menu-text text-gray">Widget Boxes</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_media_object.html" class="menu-link">
-									<div class="menu-text text-gray">Media Object</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_buttons.html" class="menu-link">
-									<div class="menu-text text-gray">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_icons.html" class="menu-link">
-									<div class="menu-text text-gray">Icons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_simple_line_icons.html" class="menu-link">
-									<div class="menu-text text-gray">Simple Line Icons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_ionicons.html" class="menu-link">
-									<div class="menu-text text-gray">Ionicons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tree.html" class="menu-link">
-									<div class="menu-text text-gray">Tree View</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_language_bar_icon.html" class="menu-link">
-									<div class="menu-text text-gray">Language Bar & Icon</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_social_buttons.html" class="menu-link">
-									<div class="menu-text text-gray">Social Buttons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tour.html" class="menu-link">
-									<div class="menu-text text-gray">Intro JS</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_offcanvas_toasts.html" class="menu-link">
-									<div class="menu-text text-gray">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-						</div>
+						
 					</div>
 
 					<!-- End Sidenav Content Orbit -->
@@ -353,88 +184,7 @@
 							<div class="menu-text text-gray">Settings</div> 
 							<div class="menu-caret text-gray"></div>
 						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
-									<div class="menu-text text-gray">General <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_typography.html" class="menu-link">
-									<div class="menu-text text-gray">Typography</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tabs_accordions.html" class="menu-link">
-									<div class="menu-text text-gray">Tabs & Accordions</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_unlimited_tabs.html" class="menu-link">
-									<div class="menu-text text-gray">Unlimited Nav Tabs</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_modal_notification.html" class="menu-link">
-									<div class="menu-text text-gray">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_widget_boxes.html" class="menu-link">
-									<div class="menu-text text-gray">Widget Boxes</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_media_object.html" class="menu-link">
-									<div class="menu-text text-gray">Media Object</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_buttons.html" class="menu-link">
-									<div class="menu-text  text-gray">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_icons.html" class="menu-link">
-									<div class="menu-text text-gray">Icons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_simple_line_icons.html" class="menu-link">
-									<div class="menu-text text-gray">Simple Line Icons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_ionicons.html" class="menu-link">
-									<div class="menu-text text-gray">Ionicons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tree.html" class="menu-link">
-									<div class="menu-text text-gray">Tree View</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_language_bar_icon.html" class="menu-link">
-									<div class="menu-text text-gray">Language Bar & Icon</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_social_buttons.html" class="menu-link">
-									<div class="menu-text text-gray">Social Buttons</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_tour.html" class="menu-link">
-									<div class="menu-text text-gray">Intro JS</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="ui_offcanvas_toasts.html" class="menu-link">
-									<div class="menu-text text-gray">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
-								</a>
-							</div>
-						</div>
+						
 					</div>
 
 					<!-- End Sidenav Content Orbit -->
