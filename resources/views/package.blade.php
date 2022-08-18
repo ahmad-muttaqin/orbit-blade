@@ -28,84 +28,65 @@
             <h1 class="text-center text-primary">Choose package : </h1>
             <div class="card border-0 shadow-sm p-3 mb-5" style="margin:2vh; padding:2vh">
                 <i class="fas fa-box fa-7x text-center "></i>
-                <h2 class="text-center">Basic</h2>
+                <h2 class="text-center">BASIC</h2>
                 <h3 class="text-center text-gray">Free</h3>
                 <div class="card border-0" style="padding:2vh">
                     <p class="text-center text-green">
                         <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                        Maximum User Count : 100</p>
                     <p class="text-center text-green">
                         <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                       Test check feature</p>
                     <p class="text-center text-danger">
                         <i class="fa-solid fa-ban"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+						Test check feature 2</p>
                 </div>
                 <div class="mb-15px">
-					<button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Standard Package</button>
+					<button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Basic Package</button>
 				</div>
             </div>
             <div class="card border-0 shadow-sm p-3 mb-5" style="margin:2vh; padding:2vh">
                 <i class="fas fa-gem fa-7x text-center "></i>
-                <h2 class="text-center">Gold</h2>
-                <h4 class="text-center text-gray">RM 399.99/year</h4>
-                <div class="card border-0" style="padding:2vh">
-                    <p class="text-center">
+                <h2 class="text-center">GOLD</h2>
+                <h4 class="text-center text-gray">RM 199.99 / YEARLY</h4>
+				<div class="card border-0" style="padding:2vh">
+                    <p class="text-center text-green">
                         <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
+                        Maximum User Count : Unlimited</p>
+                    <p class="text-center text-green">
                         <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
-                        <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
-                        <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
-                        <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                       Test check feature</p>
+					   <p class="text-center text-green">
+					   <i class="fa-solid fa-square-check"></i>     
+						Test check feature 2</p>
                 </div>
                 <div class="mb-15px">
-					<button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Standard Package</button>
+					<button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Gold Package</button>
 				</div>
             </div>
             <div class="card border-0 shadow-sm p-3 mb-5" style="margin:2vh; padding:2vh">
                 <i class="fas fa-box fa-7x text-center "></i>
-                <h2 class="text-center text-gray-500">Standard</h2>
-                <h3 class="text-center text-gray">Free</h3>
+                <h2 class="text-center">PLATINUM</h2>
+                <h4 class="text-center text-gray">RM 299.99 / YEARLY</h4>
                 <div class="card border-0" style="padding:2vh">
                     <p class="text-center">
+                        RM1 PERDAY <br>
+						RM7 PERWEEK <br>
+						RM30 PERMONTH<br>
+						299.99 PERYEAR
+                    
+						<p class="text-center text-green">
                         <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
+                        Maximum User Count : Unlimited</p>
+                    <p class="text-center text-green">
                         <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
-                        <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
-                        <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="text-center">
-                        <i class="fa-solid fa-square-check"></i>    
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                       Test check feature</p>
+					   <p class="text-center text-green">
+					   <i class="fa-solid fa-square-check"></i>     
+						Test check feature 2</p>
                 </div>
                 <div class="mb-15px">
-					<button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Standard Package</button>
+					<button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Platinum Package</button>
 				</div>
             </div>
 
