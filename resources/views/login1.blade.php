@@ -87,7 +87,7 @@
 										</div>
 										<hr class="bg-gray-600 opacity-2" />
 										<div class="text-gray-600 text-center  mb-0">
-											&copy; OrbitHRM 
+											&copy; OrbitHRM
 										</div>
 									</form>
 							</div>
