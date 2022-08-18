@@ -94,7 +94,7 @@
 						</div>
 				</div>
 			</div>
-			
+
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
@@ -118,6 +118,7 @@
 				  </div>
 				</div>
 			  </div>
+			</div>
 
 			  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
@@ -144,6 +145,7 @@
 				  </div>
 				</div>
 			  </div> 
+			</div>
 			  
 			  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
@@ -170,6 +172,7 @@
 				  </div>
 				</div>
 			  </div> 
+			</div>
 			
 			  
 
