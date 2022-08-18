@@ -35,8 +35,12 @@
 		<div id="header" class="app-header">
 			<!-- BEGIN navbar-header -->
 			<div class="navbar-header">
-				<img src="../assets/img/logo/orbit-logo-5.png" class="navbar-logo navbar-brand"  alt="...">
-				
+				<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span> <b>Color</b> Admin</a>
+				<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			<!-- END navbar-header -->
 			<!-- BEGIN header-nav -->
@@ -152,7 +156,7 @@
 					<!-- Sidenav Content Orbit -->
 
 					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
+						
 							<div class="menu-icon">
 								<i class="fa fa-commenting text-gray"></i>
 							</div>

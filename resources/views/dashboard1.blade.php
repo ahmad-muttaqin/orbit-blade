@@ -34,9 +34,16 @@
 		<!-- BEGIN #header -->
 		<div id="header" class="app-header">
 			<!-- BEGIN navbar-header -->
-			<div class="navbar-header">
-				<img src="../assets/img/logo/orbit-logo-5.png" class="navbar-logo navbar-brand"  alt="...">
-				
+			<div class="navbar">
+			<a href=""><span class="navbar-logo">
+			<img src="../assets/img/logo/orbit-logo-5.png" class="navbar-logo navbar-brand"  alt="...">
+			
+			</span></a>
+				<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			<!-- END navbar-header -->
 			<!-- BEGIN header-nav -->
@@ -147,8 +154,8 @@
 							
 					</div>
 					
-					<div class="menu-item has-sub mt-3">
-						<a href="#" class="menu-link">
+					<div class="menu-item has-sub">
+						<!-- <a href="#" class="menu-link"> -->
 							<div class="menu-icon">
 								<i class="fa fa-user-circle text-gray"></i>
 							</div>
