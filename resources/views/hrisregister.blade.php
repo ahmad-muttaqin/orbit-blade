@@ -411,6 +411,7 @@
 				<!-- BEGIN tab-pane -->
 				<div class="tab-pane fade active show" id="default-tab-1">
 					<h3 class="mt-10px"></i> Employee Profile</h3>
+					<br>
 					<form>
 						<div class="row mb-15px">
 							<label class="form-label col-form-label col-md-1">Employee ID*</label>
@@ -697,7 +698,9 @@
 								</select>
 							</div>
 						</div>
+						<br>
 						<h3 class="mt-10px"></i> Contact Details</h3>
+						<br>
 						<form>
 						<div class="row mb-15px">
 							<label class="form-label col-form-label col-md-1">Home Number</label>
@@ -733,6 +736,7 @@
 				<!-- BEGIN tab-pane -->
 				<div class="tab-pane fade" id="default-tab-2">
 					<h3 class="mt-10px"></i> Permanent Address</h3>
+					<br>
 					<form>
 						<div class="row mb-15px">
 							<label class="form-label col-form-label col-md-1">Adress 1*</label>
@@ -787,8 +791,8 @@
 							</select>
 							</div>
 						</div>
-						
-						<h3 class="mt-10px"></i> Correspondence Address</h3>
+						<br>
+						<h3 class="mt-10px"></i> Correspondence Address</h3><br>
 						<div class="row mb-15px">
 							<label class="form-label col-form-label col-md-1">Adress 1*</label>
 							<div class="col-md-5">
@@ -957,7 +961,7 @@
 							<select class="form-select">
 								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
 								<option value="1" label="Customer Care">Customer Care</option>
-								<option value="2" label="PutraAdministratorjaya">Administrator</option>
+								<option value="2" label="Administrator">Administrator</option>
 								<option value="2" label="Account manager">Account manager</option>
 								
 							</select>
@@ -973,22 +977,23 @@
 								
 							</div>
 							
-							<label class="form-label col-form-label col-md-1">Expiry Date*</label>
+							<label class="form-label col-form-label col-md-1">Joined Date*</label>
 							<div class="col-md-5">
 							<input type="text" class="form-control" id="datepicker-joindate" placeholder="dd/mm/yyyy" />
 							</div>
 								
-							</div>
+							</div></form>
+							<p class="text-end mb-0">
+						<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
+						<a href="javascript:;" class="btn btn-primary">Save</a>
+						</p>
 						</div>
 
 
 
 
-				</form>
-				<p class="text-end mb-0">
-						<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
-						<a href="javascript:;" class="btn btn-primary">Save</a>
-					</p>
+				
+				
 				</div>
 				<!-- END tab-pane -->
 			</div>
