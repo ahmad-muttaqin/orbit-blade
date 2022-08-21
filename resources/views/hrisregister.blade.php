@@ -997,35 +997,15 @@
 				</div>
 				<!-- END tab-pane -->
 			</div>
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
 			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
+		
 		<!-- END col-4 -->
 	</div>
 	<!-- END row -->
 		</div>
 		<!-- END #content -->
 		
-		<!-- BEGIN theme-panel -->
 		
-		<!-- END theme-panel -->
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 		<!-- END scroll-top-btn -->
