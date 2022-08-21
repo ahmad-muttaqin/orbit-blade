@@ -37,4 +37,10 @@ Route::get('/dashboard/2', function () {
 Route::get('/package', function () {
     return view('package');
 });
+Route::get('/hris', function () {
+    return view('hrisempinfo');
+});
+Route::get('/hris/register', function () {
+    return view('hrisregister');
+});
 
