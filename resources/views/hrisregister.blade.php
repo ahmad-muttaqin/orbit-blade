@@ -853,7 +853,7 @@
 				<h3 class="mt-10px"></i> Employment Details</h3>	<br>
 				<form>
 						<div class="row mb-15px">
-							<label class="form-label col-form-label col-md-1">Company</label>
+							<label class="form-label col-form-label col-md-1">Company*</label>
 							<div class="col-md-5">
 							<select class="form-select">
 								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
@@ -872,26 +872,123 @@
 								
 							</div>
 							
-							<label class="form-label col-form-label col-md-1">Adress 2</label>
+							<label class="form-label col-form-label col-md-1">Department*</label>
 							<div class="col-md-5">
-								<input type="email" class="form-control mb-5px" placeholder="Adress" />
-								
+							<select class="form-select">
+							<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="MIDC Technology Sdn Bhd">Business Development</option>
+								<option value="2" label="System Integration">System Integration</option>
+								<option value="3" label="Group Corporate Planning">Group Corporate Planning </option>
+								<option value="4" label="Group Human Resources Developement">Group Human Resources Developement </option>
+								<option value="5" label="Major Accounts">Major Accounts </option>
+								<option value="6" label="Recurring Revenue">Recurring Revenue </option>
+								<option value="7" label="Group Procurement & Credit Control & Group Administration">Group Procurement & Credit Control & Group Administration</option>
+								<option value="8" label="Group Financial Accounting">Group Financial Accounting</option>
+								<option value="9" label="Group Legal & Secretarial">Group Legal & Secretarial</option>
+								<option value="10" label="Group Internal Audit">Group Internal Audit</option>
+							</select> 	
 							</div>
 						</div>
-
+						<br>
 						<div class="row mb-15px">
-							<label class="form-label col-form-label col-md-1">Postcode*</label>
+							<label class="form-label col-form-label col-md-1">Unit*</label>
 							<div class="col-md-5">
-								<input type="email" class="form-control mb-10px" placeholder="Postcode" />
+							<select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Application Unit">Application Unit</option>
+								<option value="2" label="Group Internal Audit">Group Internal Audit</option>
+								<option value="2" label="Infrastructure Unit">Infrastructure Unit</option>
 								
-							</div><label class="form-label col-form-label col-md-1">City*</label>
+							</select>
+								
+							</div>
+							<label class="form-label col-form-label col-md-1">Branch*</label>
 							<div class="col-md-5">
-								<input type="email" class="form-control mb-5px" placeholder="City" />
+							<select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Office">Office</option>
+								<option value="2" label="Putrajaya">Putrajaya</option>
+								<option value="2" label="Kuala Lumpur">Kuala Lumpur</option>
+								
+							</select>
 								
 							</div>
 						</div>
-				</form>
+						<br>
+						<div class="row mb-15px">
+							<label class="form-label col-form-label col-md-1">Job Grade*</label>
+							<div class="col-md-5">
+							<select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Director">Director</option>
+								<option value="2" label="Senior">Senior</option>
+								<option value="2" label="Manager Unit">Manager</option>
+								
+							</select>
+								
+							</div>
+							<label class="form-label col-form-label col-md-1">Designation*</label>
+							<div class="col-md-5">
+							<select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Customer Care">Customer Care</option>
+								<option value="2" label="PutraAdministratorjaya">Administrator</option>
+								<option value="2" label="Account manager">Account manager</option>
+								
+							</select>
+								
+							</div>
+						</div>
+						<br>
+						<div class="row mb-15px">
+							<label class="form-label col-form-label col-md-1">Employment Type*</label>
+							<div class="col-md-5">
+							<select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Director">Director</option>
+								<option value="2" label="Senior">Senior</option>
+								<option value="2" label="Manager Unit">Manager</option>
+								
+							</select>
+								
+							</div>
+							<label class="form-label col-form-label col-md-1">Report To*</label>
+							<div class="col-md-5">
+							<select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Customer Care">Customer Care</option>
+								<option value="2" label="PutraAdministratorjaya">Administrator</option>
+								<option value="2" label="Account manager">Account manager</option>
+								
+							</select>
+								
+							</div>
+						</div>
 
+						<br>
+						<div class="row mb-15px">
+							<label class="form-label col-form-label col-md-1">Working Email*</label>
+							<div class="col-md-5">
+							<input type="email" class="form-control mb-10px" placeholder="Email" />
+								
+							</div>
+							
+							<label class="form-label col-form-label col-md-1">Expiry Date*</label>
+							<div class="col-md-5">
+							<input type="text" class="form-control" id="datepicker-joindate" placeholder="dd/mm/yyyy" />
+							</div>
+								
+							</div>
+						</div>
+
+
+
+
+				</form>
+				<p class="text-end mb-0">
+						<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
+						<a href="javascript:;" class="btn btn-primary">Save</a>
+					</p>
 				</div>
 				<!-- END tab-pane -->
 			</div>
@@ -964,6 +1061,12 @@ var elm = document.getElementById('switchery-default');
 </script>
 <script>
   $("#datepicker-birth").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-joindate").datepicker({
     todayHighlight: true,
     autoclose: true
   });
