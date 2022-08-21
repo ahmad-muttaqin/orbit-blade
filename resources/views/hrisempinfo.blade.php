@@ -381,19 +381,19 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">HRIS</h1>
+	<h1 class="page-header">HRIS | Employee Information</h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
-	<div class="panel panel-inverse">
+	<div class="panel panel">
 		<!-- BEGIN panel-heading -->
 		
 		<div class="panel-heading">
-			
-			<h4 class="panel-title">Employee Information</h4>
+		<a href="#" class="btn btn-primary">+ Register New Employee</a>
+			<h4 class="panel-title"></h4>
 			
 			<div class="panel-heading-btn">
-			<a href="#" class="btn btn-primary">+ Register New Employee</a>
+			
 				
 			</div>
 		</div>
@@ -422,11 +422,11 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
+							
+							 
+							<a href="javascript:;" class="dropdown-item">Edit Employee </a>
 							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
+							<a href="register_v3.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item"> Terminate Employee</a>
 						<td>TNG001</td>
 						<td>ahmad</td>
 						<td>ali</td>
@@ -786,6 +786,129 @@
 
 	<!-- END row -->
 	<!-- BEGIN row -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Terminate Employment</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <form>
+						
+						<div class="mb-5">
+						  <label for="recipient-name" class="col-form-label">Employee ID</label>
+						  <input type="text" class="form-control" id="recipient-name">
+						  <label for="recipient-name" class="col-form-label">Employee Name</label>
+						  <input type="text" class="form-control" id="recipient-name">
+						  <label for="recipient-name" class="col-form-label">Employee Email</label>
+						  <input type="text" class="form-control" id="recipient-name">
+						  <label for="recipient-name" class="col-form-label">Report To</label>
+						  <input type="text" class="form-control" id="recipient-name">
+						  
+						</div>
+						<div class="mb-5">
+						<label for="recipient-name" class="col-form-label">Terminate Date*</label>
+						<input type="text" class="form-control" id="datepicker-terminatedate" placeholder="dd/mm/yyyy" />
+						  <label for="recipient-name" class="col-form-label">Terminate Type*</label>
+						  <select class="form-select">
+								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
+								<option value="1" label="Deceased">Deceased</option>
+								<option value="2" label="Dismissed">Dismissed</option>
+								<option value="3" label="Laid-Off">Laid-Off</option>
+								<option value="4" label="Contract not renewed">Contract not renewed</option>
+								<option value="2" label="Resign-company requested">Resign-company requested</option>
+								<option value="2" label="resign">resign</option>
+								<option value="2" label="Retirement">Retirement</option>
+								<option value="2" label="Others">Others</option>
+
+
+								
+								
+								</select>
+						  <label for="recipient-name" class="col-form-label">Remarks</label>
+						  <textarea class="form-control" rows="3"></textarea>
+
+						  <label for="recipient-name" class="col-form-label">Attachments</label><br>
+						  <form id="fileupload" action="/assets/global/plugins/jquery-file-upload/server/php/" method="POST" enctype="multipart/form-data">
+		<!-- BEGIN panel -->
+		<div class="panel panel-inverse">
+			<!-- BEGIN panel-heading -->
+			
+			<!-- END panel-heading -->
+			
+			<!-- BEGIN panel-body -->
+			<div class="panel-body">			
+				<div class="row fileupload-buttonbar">
+					<div class="col-xl-15">
+						<span class="btn btn-primary fileinput-button me-1">
+							<i class="fa fa-fw fa-plus"></i>
+							<span>Add files</span>
+							<input type="file" name="files[]" multiple>
+						</span>
+						<button type="submit" class="btn btn-primary">
+							<i class="fa fa-fw fa-upload"></i>
+							<span>upload</span>
+						</button>
+						<button type="reset" class="btn btn-default">
+							<i class="fa fa-fw fa-ban"></i>
+							<span>Cancel upload</span>
+						</button>
+						<button type="button" class="btn btn-default">
+							<i class="fa fa-fw fa-trash"></i>
+							<span>Delete</span>
+						</button>
+						<!-- The global file processing state -->
+						<span class="fileupload-process"></span>
+					</div>
+					<!-- The global progress state -->
+					<div class="col-xl-5 fileupload-progress fade d-none d-xl-block">
+						<!-- The global progress bar -->
+						<div class="progress progress-striped active">
+							<div class="progress-bar progress-bar-success" style="width:0%;"></div>
+						</div>
+						<!-- The extended global progress state -->
+						<div class="progress-extended">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+			<!-- END panel-body -->
+			<!-- BEGIN table -->
+			<div class="table-responsive">
+				<table class="table table-panel text-nowrap mb-0">
+					<thead>
+						<tr>
+							<th width="10%">PREVIEW</th>
+							<th>FILE INFO</th>
+							<th>UPLOAD PROGRESS</th>
+							<th width="1%"></th>
+						</tr>
+					</thead>
+					<tbody class="files">
+						<tr data-id="empty">
+							<td colspan="4" class="text-center text-gray-500 py-30px">
+								<div class="mb-10px"><i class="fa fa-file fa-3x"></i></div>
+								<div class="fw-bold">No file selected</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- END table -->
+			<!-- BEGIN hljs-wrapper -->
+			
+		<!-- END panel -->
+	</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+			  
 	<div class="row">
 		<!-- BEGIN col-4 -->
 		<div class="col-xl-4 col-lg-6">
@@ -814,222 +937,7 @@
 		<!-- END #content -->
 		
 		<!-- BEGIN theme-panel -->
-		<div class="theme-panel">
-			<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
-			<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
-				<h5>App Settings</h5>
-				
-				<!-- BEGIN theme-list -->
-				<div class="theme-list">
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-red" data-theme-class="theme-red" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-pink" data-theme-class="theme-pink" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-orange" data-theme-class="theme-orange" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-yellow" data-theme-class="theme-yellow" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-lime" data-theme-class="theme-lime" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-green" data-theme-class="theme-green" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
-					<div class="theme-list-item active"><a href="javascript:;" class="theme-list-link bg-teal" data-theme-class="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-cyan" data-theme-class="theme-cyan" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-blue" data-theme-class="theme-blue" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-purple" data-theme-class="theme-purple" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-indigo" data-theme-class="theme-indigo" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
-					<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-black" data-theme-class="theme-gray-600" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Black">&nbsp;</a></div>
-				</div>
-				<!-- END theme-list -->
-				
-				<div class="theme-panel-divider"></div>
-				
-				<div class="row mt-10px">
-					<div class="col-8 control-label text-dark fw-bold">
-						<div>Dark Mode <span class="badge bg-primary ms-1 py-2px position-relative" style="top: -1px;">NEW</span></div>
-						<div class="lh-14">
-							<small class="text-dark opacity-50">
-								Adjust the appearance to reduce glare and give your eyes a break.
-							</small>
-						</div>
-					</div>
-					<div class="col-4 d-flex">
-						<div class="form-check form-switch ms-auto mb-0">
-							<input type="checkbox" class="form-check-input" name="app-theme-dark-mode" id="appThemeDarkMode" value="1" />
-							<label class="form-check-label" for="appThemeDarkMode">&nbsp;</label>
-						</div>
-					</div>
-				</div>
-				
-				<div class="theme-panel-divider"></div>
-				
-				<!-- BEGIN theme-switch -->
-				<div class="row mt-10px align-items-center">
-					<div class="col-8 control-label text-dark fw-bold">Header Fixed</div>
-					<div class="col-4 d-flex">
-						<div class="form-check form-switch ms-auto mb-0">
-							<input type="checkbox" class="form-check-input" name="app-header-fixed" id="appHeaderFixed" value="1" checked />
-							<label class="form-check-label" for="appHeaderFixed">&nbsp;</label>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-10px align-items-center">
-					<div class="col-8 control-label text-dark fw-bold">Header Inverse</div>
-					<div class="col-4 d-flex">
-						<div class="form-check form-switch ms-auto mb-0">
-							<input type="checkbox" class="form-check-input" name="app-header-inverse" id="appHeaderInverse" value="1" />
-							<label class="form-check-label" for="appHeaderInverse">&nbsp;</label>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-10px align-items-center">
-					<div class="col-8 control-label text-dark fw-bold">Sidebar Fixed</div>
-					<div class="col-4 d-flex">
-						<div class="form-check form-switch ms-auto mb-0">
-							<input type="checkbox" class="form-check-input" name="app-sidebar-fixed" id="appSidebarFixed" value="1" checked />
-							<label class="form-check-label" for="appSidebarFixed">&nbsp;</label>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-10px align-items-center">
-					<div class="col-8 control-label text-dark fw-bold">Sidebar Grid</div>
-					<div class="col-4 d-flex">
-						<div class="form-check form-switch ms-auto mb-0">
-							<input type="checkbox" class="form-check-input" name="app-sidebar-grid" id="appSidebarGrid" value="1" />
-							<label class="form-check-label" for="appSidebarGrid">&nbsp;</label>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-10px align-items-center">
-					<div class="col-md-8 control-label text-dark fw-bold">Gradient Enabled</div>
-					<div class="col-md-4 d-flex">
-						<div class="form-check form-switch ms-auto mb-0">
-							<input type="checkbox" class="form-check-input" name="app-gradient-enabled" id="appGradientEnabled" value="1" />
-							<label class="form-check-label" for="appGradientEnabled">&nbsp;</label>
-						</div>
-					</div>
-				</div>
-				<!-- END theme-switch -->
-				
-				<div class="theme-panel-divider"></div>
-				
-				<h5>Admin Design (5)</h5>
-				<!-- BEGIN theme-version -->
-				<div class="theme-version">
-					<div class="theme-version-item">
-						<a href="../template_html/index_v2.html" class="theme-version-link active">
-							<span style="background-image: url(../assets/img/theme/default.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_transparent/index_v2.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/transparent.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_apple/index_v2.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/apple.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_material/index_v2.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/material.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_facebook/index_v2.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/facebook.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_google/index_v2.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/google.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-				</div>
-				<!-- END theme-version -->
-				
-				<div class="theme-panel-divider"></div>
-				
-				<h5>Language Version (7)</h5>
-				<!-- BEGIN theme-version -->
-				<div class="theme-version">
-					<div class="theme-version-item">
-						<a href="../template_html/index.html" class="theme-version-link active">
-							<span style="background-image: url(../assets/img/version/html.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_ajax/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/ajax.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_angularjs/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/angular1x.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_angularjs13/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/angular10x.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/laravel.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_vuejs/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/vuejs.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../template_reactjs/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/reactjs.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="javascript:alert('.NET Core 3.1 MVC Version only available in downloaded version.');" class="theme-version-link">
-							<span style="background-image: url(../assets/img/version/dotnet.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-				</div>
-				<!-- END theme-version -->
-				
-				<div class="theme-panel-divider"></div>
-				
-				<h5>Frontend Design (5)</h5>
-				<!-- BEGIN theme-version -->
-				<div class="theme-version">
-					<div class="theme-version-item">
-						<a href="../../../frontend/template/template_one_page_parallax/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/one-page-parallax.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../../../frontend/template/template_e_commerce/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/e-commerce.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../../../frontend/template/template_blog/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/blog.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../../../frontend/template/template_forum/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/forum.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-					<div class="theme-version-item">
-						<a href="../../../frontend/template/template_corporate/index.html" class="theme-version-link">
-							<span style="background-image: url(../assets/img/theme/corporate.jpg);" class="theme-version-cover"></span>
-						</a>
-					</div>
-				</div>
-				<!-- END theme-version -->
-				
-				<div class="theme-panel-divider"></div>
-				
-				<a href="https://seantheme.com/color-admin/documentation/" class="btn btn-dark d-block w-100 rounded-pill mb-10px" target="_blank"><b>Documentation</b></a>
-				<a href="javascript:;" class="btn btn-default d-block w-100 rounded-pill" data-toggle="reset-local-storage"><b>Reset Local Storage</b></a>
-			</div>
-		</div>
+		
 		<!-- END theme-panel -->
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
@@ -1070,13 +978,143 @@
 	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
 	<script src="/assets/js/demo/render.highlight.js"></script>
 	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-<script>
+	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<!-- required files -->
+<link href="/assets/plugins/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
+<link href="/assets/plugins/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet" />
+<link href="/assets/plugins/blueimp-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
+
+<script src="/assets/plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="/assets/plugins/blueimp-tmpl/js/tmpl.js"></script>
+<script src="/assets/plugins/blueimp-load-image/js/load-image.all.min.js"></script>
+<script src="/assets/plugins/blueimp-canvas-to-blob/js/canvas-to-blob.js"></script>
+<script src="/assets/plugins/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-audio.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
+<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js"></script>
+<script src="/assets/js/demo/form-multiple-upload.demo.js"></script>
+	
+	<script>
 $('#data-table-default').DataTable({
     responsive: true
   });
 </script>
+<script>
+  $("#datepicker-terminatedate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+		{% for (var i=0, file; file=o.files[i]; i++) { %}
+		<tr class="template-upload fade show">
+			<td>
+				<span class="preview"></span>
+			</td>
+			<td>
+				<div class="bg-light rounded p-3 mb-2">
+					<dl class="mb-0">
+						<dt class="text-dark">File Name:</dt>
+						<dd class="name">{%=file.name%}</dd>
+						<hr />
+						<dt class="text-dark mt-10px">File Size:</dt>
+						<dd class="size mb-0">Processing...</dd>
+					</dl>
+				</div>
+				<strong class="error text-danger h-auto d-block text-left"></strong>
+			</td>
+			<td>
+				<dl>
+					<dt class="text-dark mt-3px">Progress:</dt>
+					<dd class="mt-5px">
+						<div class="progress progress-sm progress-striped active rounded-pill"><div class="progress-bar progress-bar-primary" style="width:0%; min-width: 40px;">0%</div></div>
+					</dd>
+				</dl>
+			</td>
+			<td nowrap>
+				{% if (!i && !o.options.autoUpload) { %}
+					<button class="btn btn-primary start w-100px pe-20px mb-2 d-block" disabled>
+						<i class="fa fa-upload fa-fw text-dark"></i>
+						<span>Start</span>
+					</button>
+				{% } %}
+				{% if (!i) { %}
+					<button class="btn btn-default cancel w-100px pe-20px d-block">
+						<i class="fa fa-trash fa-fw text-muted"></i>
+						<span>Cancel</span>
+					</button>
+				{% } %}
+			</td>
+		</tr>
+		{% } %}
+	</script>
+	
+	<!-- The template to display files available for download -->
+	<script id="template-download" type="text/x-tmpl">
+		{% for (var i=0, file; file=o.files[i]; i++) { %}
+			<tr class="template-download fade show">
+				<td width="1%">
+					<span class="preview">
+						{% if (file.thumbnailUrl) { %}
+							<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}" class="rounded"></a>
+						{% } else { %}
+							<div class="bg-light text-center fs-20px" style="width: 80px; height: 80px; line-height: 80px; border-radius: 6px;">
+								<i class="fa fa-file-image fa-lg text-gray-500"></i>
+							</div>
+						{% } %}
+					</span>
+				</td>
+				<td>
+					<div class="bg-light p-3 mb-2">
+						<dl class="mb-0">
+							<dt class="text-dark">File Name:</dt>
+							<dd class="name">
+								{% if (file.url) { %}
+									<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+								{% } else { %}
+									<span>{%=file.name%}</span>
+								{% } %}
+							</dd>
+							<hr />
+							<dt class="text-dark mt-10px">File Size:</dt>
+							<dd class="size mb-0">{%=o.formatFileSize(file.size)%}</dd>
+						</dl>
+						{% if (file.error) { %}
+							<hr />
+							<div><span class="badge bg-danger me-1">ERROR</span> {%=file.error%}</div>
+						{% } %}
+					</div>
+				</td>
+				<td></td>
+				<td>
+					{% if (file.deleteUrl) { %}
+						<button class="btn btn-danger delete w-100px mb-2 pe-20px" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+							<i class="fa fa-trash float-start fa-fw text-dark mt-2px"></i>
+							<span>Delete</span>
+						</button>
+						<input type="checkbox" name="delete" value="1" class="toggle">
+					{% } else { %}
+						<button class="btn btn-default cancel w-100px me-3px pe-20px">
+							<i class="fa fa-trash float-start fa-fw text-muted mt-2px"></i>
+							<span>Cancel</span>
+						</button>
+					{% } %}
+				</td>
+			</tr>
+		{% } %}
+	</script>
