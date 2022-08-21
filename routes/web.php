@@ -44,3 +44,7 @@ Route::get('/hris/register', function () {
     return view('hrisregister');
 });
 
+Route::get('/hris/myprofile', function () {
+    return view('hris-myprofile');
+});
+
