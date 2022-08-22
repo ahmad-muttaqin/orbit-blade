@@ -375,16 +375,11 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">HRIS | Register Employee</h1>
+	<h1 class="page-header">HRIS | My Profile</h1>
 	<div class="row">
 		<!-- BEGIN col-6 -->
         <div class="col-xl-3">
             <div class="card">
-                <div class="card-header bg-white bg-gray-100">
-                    <h4>
-                    My Profile
-                    </h4>
-                </div>
                 <div class="card-body">
                     <div class="profile-pic m-3">
                         <img src="../assets/img/user/user-13.jpg" width="100px" class="rounded d-block" alt="Profile Picture">
@@ -404,6 +399,22 @@
                             <input type="text" class="form-control" placeholder="admin@gmail.com" aria-label="Username" aria-describedby="basic-addon1" disabled>
                         </div>
 
+						<!-- Tabs navs -->
+						<ul class="nav nav-tabs mb-3 flex d-block" id="ex-with-icons" role="tablist">
+						<li class="nav-item border mb-2 mt-2 rounded-2" role="presentation">
+							<a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+							aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>my profile</a>
+						</li>
+						<li class="nav-item border mb-2 mt-2 rounded-2" role="presentation">
+							<a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+							aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>Settings</a>
+						</li>
+						<li class="nav-item border mb-2 mt-2 rounded-2" role="presentation">
+							<a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+							aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>Settings</a>
+						</li>
+						</ul>
+						<!-- Tabs navs -->
                     </div>
                 </div>
             </div>
