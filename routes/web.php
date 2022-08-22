@@ -43,6 +43,13 @@ Route::get('/hris', function () {
 Route::get('/hris/register', function () {
     return view('hrisregister');
 });
+Route::get('/setting', function () {
+    return view('setting');
+});
+Route::get('/setting/roles', function () {
+    return view('roles');
+});
+
 
 Route::get('/hris/myprofile', function () {
     return view('hris-myprofile');

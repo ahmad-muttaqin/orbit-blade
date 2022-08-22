@@ -389,14 +389,20 @@
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
+		
 		<!-- BEGIN panel-heading -->
 		
 		<div class="panel-heading">
-		<a href="#" class="btn btn-primary">+ Register New Employee</a>
+		<div class="col-md-6">
+		<p>
+			<a href="javascript:;" class="btn btn-primary d-block"><i class="fa fa-list"></i> Select Permissions</a>
+		</p><a href="#" class="btn btn-primary">+ New Role</a>
+		</div>
+		
 			<h4 class="panel-title"></h4>
 			
 			<div class="panel-heading-btn">
-			
+			<a href="#" class="btn btn-primary"><i class="fa fa-arrow-rotate-left"></i> Refresh</a>
 				
 			</div>
 		</div>
@@ -408,14 +414,12 @@
 					<tr>
 						<th width="1%"></th>
 						<th width="1%" data-orderable="false"></th>
-						<th class="text-nowrap">Employee ID</th>
-						<th class="text-nowrap">First Name</th>
-						<th class="text-nowrap">Last name</th>
-						<th class="text-nowrap">Email</th>
-						<th class="text-nowrap">Phone Number</th>
-						<th class="text-nowrap">department</th>
-						<th class="text-nowrap">Report to</th>
-						<th class="text-nowrap">employee status</th>
+						<th class="text-nowrap">Role Name</th>
+						<th class="text-nowrap">Added By</th>
+						<th class="text-nowrap">Added Time</th>
+						<th class="text-nowrap">Modified By</th>
+						<th class="text-nowrap">Modified Time</th>
+						
 
 
 					</tr>
@@ -435,9 +439,7 @@
 						<td>ali</td>
 						<td>ali@gmail.com</td>
 						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">1</td>
@@ -453,11 +455,9 @@
 						<td>ali</td>
 						<td>ali@gmail.com</td>
 						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-danger">Inactive</span></td>
+						
 					</tr>
-					<tr class="odd gradeA">
+					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">1</td>
 						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 						<div class="dropdown-menu">
@@ -471,321 +471,16 @@
 						<td>ali</td>
 						<td>ali@gmail.com</td>
 						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+						
 					</tr>
-					<tr class="even gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="odd gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>abu</td>
-						<td>abu@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-danger">Inactive</span></td>
-					</tr>
-					<tr class="even gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-danger">Inactive</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
+					
+					
 					
 					
 				</tbody>
 			</table>
 		</div>
+	</div>
 
 	<!-- END row -->
 	<!-- BEGIN row -->
