@@ -21,6 +21,15 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
 </head>
 <body>
 	<!-- BEGIN #loader -->
@@ -180,7 +189,7 @@
 
 					<!-- End Sidenav Content Orbit -->
 					<!-- Sidenav Content Orbit -->
-
+				
 					<div class="menu-item has-sub">
 						<a href="#" class="menu-link">
 							<div class="menu-icon">
@@ -432,62 +441,81 @@
 	<!-- BEGIN row -->
 	
 		<!-- BEGIN col-8 -->
-		<div class="panel panel-inverse" data-sortable-id="index-1">
 
-				<div class="panel-heading">
-					<h4 class="panel-title">Latest Announcement</h4>
-					<div class="panel-heading-btn">
+
+			
+				<div class="row">
+					<div class="col-lg-6 panel panel-inverse">
+
+						<div class="panel-heading mt-15px">
+							<h4 class="panel-title">Latest Announcement</h4>
+							<div class="panel-heading-btn">
+							</div>
+						</div>
+
+						<table class="table table-hover table-bordered table-responsive padding-auto">
+							<thead>
+									<tr>
+									<th scope="col">Date</th>
+									<th scope="col">Time</th>
+									<th scope="col">Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<th scope="row">13 October 2020</th>
+									<td>4 PM</td>
+									<td>Memorandum : Conditional Movement Control Order</td>
+									</tr>
+									<tr>
+									<th scope="row">11 September 2020</th>
+									<td>9 AM</td>
+									<td>Memorandum: from the Group Chief Executive Officer</td>
+									</tr>
+									<tr>
+									<th scope="row">11 September 2020</th>
+									<td>9 AM</td>
+									<td>Memorandum: from the Group Chief Executive Officer</td>
+									</tr>
+									<tr>
+									<th scope="row">11 September 2020</th>
+									<td>9 AM</td>
+									<td>Memorandum: from the Group Chief Executive Officer</td>
+									</tr>
+									<tr>
+									<th scope="row">11 September 2020</th>
+									<td>9 AM</td>
+									<td>Memorandum: from the Group Chief Executive Officer</td>
+									</tr>
+									<tr>
+									<th scope="row">11 September 2020</th>
+									<td>9 AM</td>
+									<td>Memorandum: from the Group Chief Executive Officer</td>
+									</tr>
+								</tbody>
+						</table>
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+								</li>
+							</ul>
+							</nav>
 					</div>
-				</div>
-
-				<table class="table table-hover table-bordered table-responsive padding-auto">
-  					<thead>
-							<tr>
-							<th scope="col">Date</th>
-							<th scope="col">Time</th>
-							<th scope="col">Title</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-							<th scope="row">13 October 2020</th>
-							<td>4 PM</td>
-							<td>Memorandum : Conditional Movement Control Order</td>
-							</tr>
-							<tr>
-							<th scope="row">11 September 2020</th>
-							<td>9 AM</td>
-							<td>Memorandum: from the Group Chief Executive Officer</td>
-							</tr>
-							<tr>
-							<th scope="row">11 September 2020</th>
-							<td>9 AM</td>
-							<td>Memorandum: from the Group Chief Executive Officer</td>
-							</tr>
-							<tr>
-							<th scope="row">11 September 2020</th>
-							<td>9 AM</td>
-							<td>Memorandum: from the Group Chief Executive Officer</td>
-							</tr>
-							<tr>
-							<th scope="row">11 September 2020</th>
-							<td>9 AM</td>
-							<td>Memorandum: from the Group Chief Executive Officer</td>
-							</tr>
-							<tr>
-							<th scope="row">11 September 2020</th>
-							<td>9 AM</td>
-							<td>Memorandum: from the Group Chief Executive Officer</td>
-							</tr>
-						</tbody>
-				</table>
-	</div>
-
-	<div class="panel panel-inverse w-50 " data-sortable-id="index-1">
-
-				<div class="panel-heading">
-					<h4 class="panel-title">Events</h4>
-				</div>
+					<div class="col-lg-6 panel panel-inverse">
+							<div class="panel-heading mt-45px">
+								<h4 class="panel-title">Events</h4>
+							</div>
 
 							<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
 								<div class="carousel-indicators">
@@ -527,6 +555,10 @@
 									<span class="visually-hidden">Next</span>
 								</button>
 							</div>
+</div>
+				
+
+	
 
 				<!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
@@ -550,8 +582,7 @@
 				</button>
 				</div> -->
 
-				
-	</div>
+			
 	
 
 	
@@ -563,20 +594,107 @@
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
+	<div class="panel">
+	<table id="data-table-default" class="table table-hover table-striped table-bordered align-middle mt-30px">
+  <thead>
+    <tr>
+						<th class="text-nowrap">Employee ID</th>
+						<th class="text-nowrap">Name</th>
+						<th class="text-nowrap">Email</th>
+						<th class="text-nowrap">Phone</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Clock in</th>
+						<th class="text-nowrap">Location</th>
+						<th class="text-nowrap">Project</th>
+						<th class="text-nowrap">Activity</th>
+
+					</tr>
+				</thead>
+				<tr class="odd gradeX">
+					
+						<td>TNG001</td>
+						<td>ahmad</td>
+						<td>ali@gmail.com</td>
+						<td>60123456789</td>
+						<td><span class="badge bg-green">Active</span></td>
+						<td>8:30 AM</td>
+						<td>Desa Pandan, Kuala Lumpur</td>
+						<td>Projek KASTAM</td>
+						<td>Data Flow</td>
+						
+					</tr>
+					<tr class="odd gradeX">
+					
+						<td>TNG002</td>
+						<td>ahmad</td>
+						<td>ali@gmail.com</td>
+						<td>60123456789</td>
+						<td><span class="badge bg-green">Active</span></td>
+						<td>8:30 AM</td>
+						<td>Desa Pandan, Kuala Lumpur</td>
+						<td>Projek KASTAM</td>
+						<td>Data Flow</td>
+						
+					</tr>
+					<tr class="odd gradeX">
+					
+						<td>TNG003</td>
+						<td>ahmad</td>
+						<td>ali@gmail.com</td>
+						<td>60123456789</td>
+						<td><span class="badge bg-yellow">Away</span></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						
+					</tr>
+					<tr class="odd gradeX">
+					
+						<td>TNG004</td>
+						<td>husin</td>
+						<td>husin@gmail.com</td>
+						<td>601376542398</td>
+						<td><span class="badge bg-green">Active</span></td>
+						<td>8:30 AM</td>
+						<td>Desa Pandan, Kuala Lumpur</td>
+						<td>Projek KASTAM</td>
+						<td>Data Flow</td>
+						
+					</tr>
+					<tr class="odd gradeX">
+					
+						<td>TNG005</td>
+						<td>ahmad</td>
+						<td>ali@gmail.com</td>
+						<td>60123456789</td>
+						<td><span class="badge bg-red">Unavailable</span></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+</table>
+<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+								</li>
+							</ul>
+							</nav>
+</div>
 		<!-- END col-4 -->
 		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
 		<!-- END col-4 -->
 		<!-- BEGIN col-4 -->
 		<div class="col-xl-4 col-lg-6">
@@ -586,6 +704,7 @@
 		</div>
 		<!-- END col-4 -->
 	</div>
+</div>
 	<!-- END row -->
 		</div>
 		<!-- END #content -->
@@ -830,6 +949,11 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-<script>
 
+<!-- script -->
+<!-- script -->
+<script>
+  $('#data-table-default').DataTable({
+    responsive: true
+  });
 </script>
