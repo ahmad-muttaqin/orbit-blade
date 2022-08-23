@@ -49,5 +49,9 @@ Route::get('/setting', function () {
 Route::get('/setting/roles', function () {
     return view('roles');
 });
+Route::get('/setting/company', function () {
+    return view('company');
+});
+
 
 
