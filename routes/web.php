@@ -59,3 +59,12 @@ Route::get('/hris/myprofile', function () {
     return view('hris-myprofile');
 });
 
+Route::get('/e-att', function () {
+    return view('myattendance');
+});
+
+Route::get('/org', function () {
+    return view('organization');
+});
+
+
