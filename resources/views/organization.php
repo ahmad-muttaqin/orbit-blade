@@ -447,8 +447,8 @@
 								<td>Customer Care</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>IT</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>2</td>
@@ -458,8 +458,8 @@
 								<td>Customer  Care</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>IT</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>3</td>
@@ -469,8 +469,8 @@
 								<td>Customer Care</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>Infra</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>4</td>
@@ -480,8 +480,8 @@
 								<td>Data Administrator</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>Finance</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>5</td>
@@ -491,8 +491,8 @@
 								<td>Data Administrator</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>IT</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>6</td>
@@ -502,8 +502,8 @@
 								<td>Customer Care</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>IT</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>7</td>
@@ -513,8 +513,8 @@
 								<td>Data Administrator</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>Finance</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>8</td>
@@ -524,8 +524,8 @@
 								<td>Data Administrator</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>Infra</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>9</td>
@@ -535,8 +535,8 @@
 								<td>Customer Care</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>Infra</td>
 							</tr>
 							<tr class="odd gradeX">
 								<td>10</td>
@@ -546,26 +546,37 @@
 								<td>Customer Care</td>
 								<td>-</td>
 								<td>Safuan</td>
-								<td><span class="badge bg-green">Active</span></td>
-								<td>Safuan</td>
+								<td>60123456789</td>
+								<td>IT</td>
 							</tr>
 						</tbody>
 						</table>
 				</div>
-				<div class="tab-pane fade active show" id="default-tab-2">
-				<div class="input-group">
-					<div class="form-outline text-right">
-							<input type="search" id="form1" class="form h-100" />
-							<label class="form-label" for="form1"></label>
+				<div class="tab-pane fade active " id="default-tab-2">
+					<div class="input-group">
+					<button type="button" class="btn btn-primary h-10">
+								<i class="fas fa-search"></i>
+							</button>
+						<div class="form-outline text-right">
+								<input type="search" id="form1" class="form h-100" />
+								<label class="form-label" for="form1"></label>
 						</div>
-						<button type="button" class="btn btn-primary h-10">
-							<i class="fas fa-search"></i>
-						</button>
+							
 					</div>
 
 				</div>
-				<div class="tab-pane fade active show" id="default-tab-3">
-					
+				<div class="tab-pane fade active " id="default-tab-3">
+				<div class="input-group">
+
+							<button type="button" class="btn btn-primary h-10">
+								<i class="fas fa-search"></i>
+							</button>
+						<div class="form-outline text-right">
+								<input type="search" id="form2" class="form h-100" />
+								<label class="form-label" for="form2"></label>
+						</div>
+							
+					</div>
 
 				</div>
 			</div>
