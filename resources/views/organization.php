@@ -21,6 +21,9 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+
+
 </head>
 <body>
 	<!-- BEGIN #loader -->
@@ -381,7 +384,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">E-Attendance | My Attendance</h1>
+	<h1 class="page-header">Organization</h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -393,25 +396,182 @@
 		<div class="panel panel-with-tabs">
 			<div class="panel-heading p-0">
 				<div class="tab-overflow">
-				<ul class="nav nav-tabs ">
-					<li class="nav-item prev-button"><a href="javascript:;" data-click="prev-tab" class="nav-link text-primary"><i class="fa fa-arrow-left"></i></a></li>
-					<li class="nav-item">
-					<a href="#nav-tab-1" data-bs-toggle="tab" class="nav-link active">Organization</a>
-					</li>
-					...
-					<li class="nav-item next-button"><a href="javascript:;" data-click="next-tab" class="nav-link text-primary"><i class="fa fa-arrow-right"></i></a></li>
-				</ul>
+				<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
+						<span class="d-sm-none">Tab 1</span>
+						<span class="d-sm-block d-none">Phone Directory</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 2</span>
+						<span class="d-sm-block d-none">Organization Chart</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#default-tab-3" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 3</span>
+						<span class="d-sm-block d-none">Department Tree</span>
+					</a>
+				</li>
+			</ul>
 				</div>
 				
 			</div>
 			<div class="panel-body tab-content">
-				<div class="tab-pane fade active show" id="nav-tab-1">
-				...
+				<div class="tab-pane fade active show" id="default-tab-1">
+						<table id="data-table-default" class="table table-striped table-bordered align-middle">
+						<thead>
+							<tr>
+								<th class="text-nowrap">No</th>
+								<th class="text-nowrap">Image</th>
+								<th class="text-nowrap">First Name</th>
+								<th class="text-nowrap">Last name</th>
+								<th class="text-nowrap">Designation</th>
+								<th class="text-nowrap">Extension Number</th>
+								<th class="text-nowrap">Phone Number</th>
+								<th class="text-nowrap">Email</th>
+								<th class="text-nowrap">Department</th>
+								
+
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr class="odd gradeX">
+								<td>1</td>
+								<td class="text-center"><img src="../assets/img/user/user-13.jpg" class="w-50px"></td>
+								<td>Ali</td>
+								<td>Daud</td>
+								<td>Customer Care</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>2</td>
+								<td class="text-center"><img src="../assets/img/user/user-5.jpg" class="w-50px"></td>
+								<td>Husin</td>
+								<td>Suhaimi</td>
+								<td>Customer  Care</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>3</td>
+								<td class="text-center"><img src="../assets/img/user/user-6.jpg" class="w-50px"></td>
+								<td>Kamal</td>
+								<td>Afifi</td>
+								<td>Customer Care</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>4</td>
+								<td class="text-center"><img src="../assets/img/user/user-7.jpg" class="w-50px"></td>
+								<td>Sulaiman</td>
+								<td>Imran</td>
+								<td>Data Administrator</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>5</td>
+								<td class="text-center"><img src="../assets/img/user/user-13.jpg" class="w-50px"></td>
+								<td>Ayubi</td>
+								<td>Suhail</td>
+								<td>Data Administrator</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>6</td>
+								<td class="text-center"><img src="../assets/img/user/user-8.jpg" class="w-50px"></td>
+								<td>Wan</td>
+								<td>Rahim</td>
+								<td>Customer Care</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>7</td>
+								<td class="text-center"><img src="../assets/img/user/user-9.jpg" class="w-50px"></td>
+								<td>Salim</td>
+								<td>Khan</td>
+								<td>Data Administrator</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>8</td>
+								<td class="text-center"><img src="../assets/img/user/user-10.jpg" class="w-50px"></td>
+								<td>Ghani</td>
+								<td>Ayub</td>
+								<td>Data Administrator</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>9</td>
+								<td class="text-center"><img src="../assets/img/user/user-11.jpg" class="w-50px"></td>
+								<td>Jalil</td>
+								<td>Iman</td>
+								<td>Customer Care</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+							<tr class="odd gradeX">
+								<td>10</td>
+								<td class="text-center"><img src="../assets/img/user/user-12.jpg" class="w-50px"></td>
+								<td>Tapan</td>
+								<td>Hamid</td>
+								<td>Customer Care</td>
+								<td>-</td>
+								<td>Safuan</td>
+								<td><span class="badge bg-green">Active</span></td>
+								<td>Safuan</td>
+							</tr>
+						</tbody>
+						</table>
+				</div>
+				<div class="tab-pane fade active show" id="default-tab-2">
+				<div class="input-group">
+					<div class="form-outline text-right">
+							<input type="search" id="form1" class="form h-100" />
+							<label class="form-label" for="form1"></label>
+						</div>
+						<button type="button" class="btn btn-primary h-10">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+
+				</div>
+				<div class="tab-pane fade active show" id="default-tab-3">
+					
+
 				</div>
 			</div>
 			</div>
 
-			
+
 
 	<!-- END row -->
 	<!-- BEGIN row -->
@@ -526,102 +686,3 @@ $('#data-table-default').DataTable({
     autoclose: true
   });
 </script>
-<!-- The template to display files available for upload -->
-<script id="template-upload" type="text/x-tmpl">
-		{% for (var i=0, file; file=o.files[i]; i++) { %}
-		<tr class="template-upload fade show">
-			<td>
-				<span class="preview"></span>
-			</td>
-			<td>
-				<div class="bg-light rounded p-3 mb-2">
-					<dl class="mb-0">
-						<dt class="text-dark">File Name:</dt>
-						<dd class="name">{%=file.name%}</dd>
-						<hr />
-						<dt class="text-dark mt-10px">File Size:</dt>
-						<dd class="size mb-0">Processing...</dd>
-					</dl>
-				</div>
-				<strong class="error text-danger h-auto d-block text-left"></strong>
-			</td>
-			<td>
-				<dl>
-					<dt class="text-dark mt-3px">Progress:</dt>
-					<dd class="mt-5px">
-						<div class="progress progress-sm progress-striped active rounded-pill"><div class="progress-bar progress-bar-primary" style="width:0%; min-width: 40px;">0%</div></div>
-					</dd>
-				</dl>
-			</td>
-			<td nowrap>
-				{% if (!i && !o.options.autoUpload) { %}
-					<button class="btn btn-primary start w-100px pe-20px mb-2 d-block" disabled>
-						<i class="fa fa-upload fa-fw text-dark"></i>
-						<span>Start</span>
-					</button>
-				{% } %}
-				{% if (!i) { %}
-					<button class="btn btn-default cancel w-100px pe-20px d-block">
-						<i class="fa fa-trash fa-fw text-muted"></i>
-						<span>Cancel</span>
-					</button>
-				{% } %}
-			</td>
-		</tr>
-		{% } %}
-	</script>
-	
-	<!-- The template to display files available for download -->
-	<script id="template-download" type="text/x-tmpl">
-		{% for (var i=0, file; file=o.files[i]; i++) { %}
-			<tr class="template-download fade show">
-				<td width="1%">
-					<span class="preview">
-						{% if (file.thumbnailUrl) { %}
-							<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}" class="rounded"></a>
-						{% } else { %}
-							<div class="bg-light text-center fs-20px" style="width: 80px; height: 80px; line-height: 80px; border-radius: 6px;">
-								<i class="fa fa-file-image fa-lg text-gray-500"></i>
-							</div>
-						{% } %}
-					</span>
-				</td>
-				<td>
-					<div class="bg-light p-3 mb-2">
-						<dl class="mb-0">
-							<dt class="text-dark">File Name:</dt>
-							<dd class="name">
-								{% if (file.url) { %}
-									<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
-								{% } else { %}
-									<span>{%=file.name%}</span>
-								{% } %}
-							</dd>
-							<hr />
-							<dt class="text-dark mt-10px">File Size:</dt>
-							<dd class="size mb-0">{%=o.formatFileSize(file.size)%}</dd>
-						</dl>
-						{% if (file.error) { %}
-							<hr />
-							<div><span class="badge bg-danger me-1">ERROR</span> {%=file.error%}</div>
-						{% } %}
-					</div>
-				</td>
-				<td></td>
-				<td>
-					{% if (file.deleteUrl) { %}
-						<button class="btn btn-danger delete w-100px mb-2 pe-20px" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-							<i class="fa fa-trash float-start fa-fw text-dark mt-2px"></i>
-							<span>Delete</span>
-						</button>
-						<input type="checkbox" name="delete" value="1" class="toggle">
-					{% } else { %}
-						<button class="btn btn-default cancel w-100px me-3px pe-20px">
-							<i class="fa fa-trash float-start fa-fw text-muted mt-2px"></i>
-							<span>Cancel</span>
-						</button>
-					{% } %}
-				</td>
-			</tr>
-		{% } %}
-	</script>
