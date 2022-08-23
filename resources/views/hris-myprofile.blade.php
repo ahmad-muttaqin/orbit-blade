@@ -23,6 +23,7 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
+	<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
 </head>
 
@@ -468,31 +469,48 @@
 									<br>
 									<form>
 										<div class="row">		
-											<div class="col">
+											
+											<div class="col-sm-6">
 												<label for="username" class="form-label">Username*</label>
 												<input type="text" id="username" class="form-control" aria-describedby="username">
 												<div class="form-text">
 													Cannot change the username of the admin.
 												</div>
 											</div>
-											<div class="col">
+											<div class="col-sm-6">
 												<label for="email" class="form-label">Personal Email</label>
 												<input type="email" id="email" class="form-control" aria-describedby="email">
 											</div>
-											<div class="col">
-												<label for="username" class="form-label">Username*</label>
-												<input type="text" id="username" class="form-control" aria-describedby="username">
-												<div class="form-text">
-													Cannot change the username of the admin.
-												</div>
+
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<label for="firstname" class="form-label">First Name*</label>
+												<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
 											</div>
-											<div class="col">
-												<label for="email" class="form-label">Personal Email</label>
-												<input type="email" id="email" class="form-control" aria-describedby="email">
+											<div class="col-sm-6">
+												<label for="lastname" class="form-label">Last Name*</label>
+												<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
 											</div>
 										</div>
 										<div class="row">
-											
+											<div class="col-sm-6">
+												<label for="firstname" class="form-label">Full Name</label>
+												<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+											</div>
+											<div class="col">
+												<div class="row">
+
+													<div class="col">
+														<label for="lastname" class="form-label">Non-Citizen</label>
+														<input type="checkbox" id="switchery-default" checked />
+													</div>
+													<div class="col">
+														<label for="lastname" class="form-label">Identification Number*</label>
+														<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+													</div>
+												</div>
+											</div>
 										</div>
 								</div>
 
@@ -803,6 +821,8 @@
 	<script src="/assets/plugins/switchery/dist/switchery.min.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>	
+
 	<!-- ================== END page-js ================== -->
 </body>
 
