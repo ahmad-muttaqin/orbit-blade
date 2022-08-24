@@ -79,7 +79,16 @@ Route::get('/e-att', function () {
 });
 
 Route::get('/org', function () {
-    return view('organization');
+    return view('phonedirectory');
 });
+
+Route::get('/org/orgchart', function () {
+    return view('organizationchart');
+});
+
+Route::get('/org/dept-tree', function () {
+    return view('departmenttree');
+});
+
 
 
