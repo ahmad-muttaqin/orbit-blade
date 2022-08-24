@@ -407,7 +407,7 @@
 			<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">NO</th>
+						<th width="1%">No.</th>
 						<th class="text-nowrap">Company Name</th>
 						<th class="text-nowrap">Department Code</th>
 						<th class="text-nowrap">Company Code</th>

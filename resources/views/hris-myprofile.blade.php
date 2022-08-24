@@ -25,6 +25,12 @@
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+	<!-- ================== DATATABLE ================== -->
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-colreorder-bs5/css/colReorder.bootstrap5.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -426,9 +432,8 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
-				<div class="col-xl-8">
+				<div class="col-xl-9">
 					<!-- BEGIN nav-tabs -->
 					<div class="card">
 						<div class="card-header bg-white bg-gray-100">
@@ -443,33 +448,51 @@
 							<ul class="nav nav-tabs">
 								<li class="nav-item">
 									<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
-										<span class="d-sm-none">Tab 1</span>
+										<span class="d-sm-none">My Profile</span>
 										<span class="d-sm-block d-none">My Profile</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
-										<span class="d-sm-none">Tab 2</span>
+										<span class="d-sm-none">Address Details</span>
 										<span class="d-sm-block d-none">Address Details</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="#default-tab-3" data-bs-toggle="tab" class="nav-link">
-										<span class="d-sm-none">Tab 3</span>
-										<span class="d-sm-block d-none">Employment Details</span>
+										<span class="d-sm-none">Emergency Contact</span>
+										<span class="d-sm-block d-none">Emergency Contact</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#default-tab-4" data-bs-toggle="tab" class="nav-link">
+										<span class="d-sm-none">Companion</span>
+										<span class="d-sm-block d-none">Companion</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#default-tab-5" data-bs-toggle="tab" class="nav-link">
+										<span class="d-sm-none">Children</span>
+										<span class="d-sm-block d-none">Children</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#default-tab-6" data-bs-toggle="tab" class="nav-link">
+										<span class="d-sm-none">Family Particular</span>
+										<span class="d-sm-block d-none">Family Particular</span>
 									</a>
 								</li>
 							</ul>
 							<!-- END nav-tabs -->
 							<!-- BEGIN tab-content -->
+							
 							<div class="tab-content panel m-0 rounded-0 p-3">
 								<!-- BEGIN tab-pane -->
 								<div class="tab-pane fade active show" id="default-tab-1">
-									<h4 class="mt-10px"></i>Personal Details</h4>
+									<h4 class="mt-10px">Personal Details</h4>
 									<br>
 									<form>
-										<div class="row">		
-											
+										<div class="row p-2">		
 											<div class="col-sm-6">
 												<label for="username" class="form-label">Username*</label>
 												<input type="text" id="username" class="form-control" aria-describedby="username">
@@ -483,7 +506,7 @@
 											</div>
 
 										</div>
-										<div class="row">
+										<div class="row p-2">
 											<div class="col-sm-6">
 												<label for="firstname" class="form-label">First Name*</label>
 												<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
@@ -493,300 +516,1217 @@
 												<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
 											</div>
 										</div>
-										<div class="row">
+										<div class="row p-2">
 											<div class="col-sm-6">
 												<label for="firstname" class="form-label">Full Name</label>
 												<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
 											</div>
-											<div class="col">
+											<div class="col-sm-6">
 												<div class="row">
-
-													<div class="col">
-														<label for="lastname" class="form-label">Non-Citizen</label>
-														<input type="checkbox" id="switchery-default" checked />
+													<div class="col-sm-6 ">
+														<div class="form-check form-switch align-right">
+															<input class="form-check-input" type="checkbox" id="citizen">
+															<label class="form-check-label" for="citizen">
+															  	Non-Citizen
+															</label>
+														</div>
 													</div>
-													<div class="col">
+													<div class="col-sm-6">
 														<label for="lastname" class="form-label">Identification Number*</label>
-														<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+														<input type="text" value="0108393019299" id="lastname" class="form-control" aria-describedby="lastname">
 													</div>
 												</div>
 											</div>
 										</div>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<div class="row">
+													<div class="col-sm-6">
+														<label for="passport" class="form-label">Passport Number</label>
+														<input type="text" id="passport" class="form-control" aria-describedby="passport">
+													</div>
+													<div class="col-sm-6">
+														<label for="expirydate" class="form-label">Expiry Date</label>
+														<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<label for="issuing-country" class="form-label">Issuing Country</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<div class="row">
+													<div class="col-sm-6">
+														<label for="dob" class="form-label">Date of Birth</label>
+														<input type="date" id="dob" class="form-control" aria-describedby="dob">
+													</div>
+													<div class="col-sm-6">
+														<label for="gender" class="form-label">Gender</label>
+														<select class="form-select">
+															<option value="0" label="Please Choose " selected="selected"></option>													
+														</select>													</div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<label for="issuing-country" class="form-label">Marital Status</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="religion" class="form-label">Religion</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>	
+											</div>
+											<div class="col-sm-6">
+												<label for="race" class="form-label">Race</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+										</div>
+										<hr class="mt-5">
+										<h4 class="row p-2">Contact Details</h4>
+										<div class="col p-2">
+											<label for="phone-number" class="form-label">Phone Number*</label>
+											<input type="text" id="phone-number" class="form-control" aria-describedby="phone-number">
+										</div>
+										<div class="col p-2">
+											<label for="home-number" class="form-label">Home Number</label>
+											<input type="text" id="home-number" class="form-control" aria-describedby="home-number">
+										</div>
+										<div class="col p-2">
+											<label for="extension-number" class="form-label">Extension Number</label>
+											<input type="text" id="extension-number" class="form-control" aria-describedby="extension-number">
+										</div>
+									</form>
+									<p class="text-end mb-0 mt-3">
+										<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
+										<a href="javascript:;" class="btn btn-primary">Save</a>
+									</p>
 								</div>
 
-								</form>
-								<p class="text-end mb-0">
-									<a href="javascript:;" class="btn btn-white me-5px">Cancel</a>
-									<a href="javascript:;" class="btn btn-primary">Next</a>
-								</p>
-							</div>
-							<!-- END tab-pane -->
-							<!-- BEGIN tab-pane -->
-							<div class="tab-pane fade" id="default-tab-2">
-								<h3 class="mt-10px"></i> Permanent Address</h3>
-								<br>
-								<form>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Adress 1*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-10px" placeholder="Adress 1" />
-
-										</div><label class="form-label col-form-label col-md-1">Adress 2</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-5px" placeholder="Adress" />
-
-										</div>
-									</div>
-
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Postcode*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-10px" placeholder="Postcode" />
-
-										</div><label class="form-label col-form-label col-md-1">City*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-5px" placeholder="City" />
-
-										</div>
-									</div>
-
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">State*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Select State " selected="selected">Select State </option>
-												<option value="Johor" label="Johor">Johor</option>
-												<option value="Kedah" label="Kedah">Kedah</option>
-												<option value="Kelantan" label="Kelantan">Kelantan</option>
-												<option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
-												<option value="Pahang" label="Pahang">Pahang</option>
-												<option value="Penang" label="Penang">Penang</option>
-												<option value="Perak" label="Perak">Perak</option>
-												<option value="Perlis" label="Perlis">Perlis</option>
-												<option value="Sabah" label="Sabah">Sabah</option>
-												<option value="Sarawak" label="Sarawak">Sarawak</option>
-												<option value="Selangor" label="Selangor">Selangor</option>
-												<option value="Terengganu" label="Terengganu">Terengganu</option>
-												<option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
-												<option value="Labuan" label="Labuan">Labuan</option>
-												<option value="Putrajaya" label="Putrajaya">Putrajaya</option>
-											</select>
-										</div>
-										<label class="form-label col-form-label col-md-1">Country*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Malaysia" selected="selected">Malaysia </option>
-											</select>
-										</div>
-									</div>
+								<div class="tab-pane fade" id="default-tab-2">
+									<h4 class="mt-10px">Permanent Address</h4>
 									<br>
-									<h3 class="mt-10px"></i> Correspondence Address</h3><br>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Adress 1*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-10px" placeholder="Adress 1" />
-
-										</div><label class="form-label col-form-label col-md-1">Adress 2</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-5px" placeholder="Adress" />
-
+									<form>
+										<div class="row p-2">		
+											<div class="col-sm-6">
+												<label for="address-1" class="form-label">Address 1*</label>
+												<input type="text" id="address-1" class="form-control" aria-describedby="address-1">
+											</div>
+											<div class="col-sm-6">
+												<label for="address-2" class="form-label">Address 2</label>
+												<input type="text" id="address-2" class="form-control" aria-describedby="address-2">
+											</div>
 										</div>
-									</div>
-
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Postcode*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-10px" placeholder="Postcode" />
-
-										</div><label class="form-label col-form-label col-md-1">City*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-5px" placeholder="City" />
-
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="postcode" class="form-label">Postcode*</label>
+												<input type="text" id="postcode" class="form-control" aria-describedby="postcode">
+											</div>
+											<div class="col-sm-6">
+												<label for="city" class="form-label">City*</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>													</div>
 										</div>
-									</div>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">State*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Select State " selected="selected">Select State </option>
-												<option value="Johor" label="Johor">Johor</option>
-												<option value="Kedah" label="Kedah">Kedah</option>
-												<option value="Kelantan" label="Kelantan">Kelantan</option>
-												<option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
-												<option value="Pahang" label="Pahang">Pahang</option>
-												<option value="Penang" label="Penang">Penang</option>
-												<option value="Perak" label="Perak">Perak</option>
-												<option value="Perlis" label="Perlis">Perlis</option>
-												<option value="Sabah" label="Sabah">Sabah</option>
-												<option value="Sarawak" label="Sarawak">Sarawak</option>
-												<option value="Selangor" label="Selangor">Selangor</option>
-												<option value="Terengganu" label="Terengganu">Terengganu</option>
-												<option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
-												<option value="Labuan" label="Labuan">Labuan</option>
-												<option value="Putrajaya" label="Putrajaya">Putrajaya</option>
-											</select>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="state" class="form-label">State*</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+											<div class="col-sm-6">
+												<label for="country" class="form-label">Country</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
 										</div>
-										<label class="form-label col-form-label col-md-1">Country*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Malaysia" selected="selected">Malaysia </option>
-											</select>
+										<hr class="mt-5">
+										<div class="row">
+											<h4 class="col-sm-6 p-2">Correspondence Address</h4>
+											<div class="col-sm-6">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="same-address">
+													<label class="form-check-label" for="same-address">
+													  Same as Permenant Address
+													</label>
+												  </div>
+											</div>
 										</div>
-									</div>
-								</form>
-								<p class="text-end mb-0">
-									<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
-									<a href="javascript:;" class="btn btn-primary">Next</a>
-								</p>
-							</div>
-							<!-- END tab-pane -->
-							<!-- BEGIN tab-pane -->
-							<div class="tab-pane fade" id="default-tab-3">
-								<h3 class="mt-10px"></i> Employment Details</h3> <br>
-								<form>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Company*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="MIDC Technology Sdn Bhd">MIDC Technology Sdn Bhd</option>
-												<option value="2" label="Edaran Trade Network Sdn Bhd">Edaran Trade Network Sdn Bhd</option>
-												<option value="3" label="Edaran Communications Sdn Bhd">Edaran Communications Sdn Bhd</option>
-												<option value="4" label="Edaran IT Services Sdn Bhd">Edaran IT Services Sdn Bhd</option>
-												<option value="5" label="Sidic Technology Sdn Bhd">Sidic Technology Sdn Bhd</option>
-												<option value="6" label="Edaran Lifestyle Trading Services Sdn Bhd">Edaran Lifestyle Trading Services Sdn Bhd</option>
-												<option value="7" label="Elitemac Resources Sdn Bhd">Elitemac Resources Sdn Bhd</option>
-												<option value="8" label="Edaran Lifestyle Sdn Bhd">Edaran Lifestyle Sdn Bhd</option>
-												<option value="9" label="Edaran Lifestyle Maintenance Sdn Bhd">Edaran Lifestyle Maintenance Sdn Bhd</option>
-												<option value="10" label="Shinba-Edaran Sdn Bhd">Shinba-Edaran Sdn Bhd</option>
+										<div class="row p-2">		
+											<div class="col-sm-6">
+												<label for="address-1" class="form-label">Address 1*</label>
+												<input type="text" id="address-1" class="form-control" aria-describedby="address-1">
+											</div>
+											<div class="col-sm-6">
+												<label for="address-2" class="form-label">Address 2</label>
+												<input type="text" id="address-2" class="form-control" aria-describedby="address-2">
+											</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="postcode" class="form-label">Postcode*</label>
+												<input type="text" id="postcode" class="form-control" aria-describedby="postcode">
+											</div>
+											<div class="col-sm-6">
+												<label for="city" class="form-label">City*</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>													</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="state" class="form-label">State*</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+											<div class="col-sm-6">
+												<label for="country" class="form-label">Country</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+										</div>
+									</form>
+									<p class="text-end mb-0 mt-3">
+										<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
+										<a href="javascript:;" class="btn btn-primary">Save</a>
+									</p>
+								</div>
 
-											</select>
-
-										</div>
-
-										<label class="form-label col-form-label col-md-1">Department*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="MIDC Technology Sdn Bhd">Business Development</option>
-												<option value="2" label="System Integration">System Integration</option>
-												<option value="3" label="Group Corporate Planning">Group Corporate Planning </option>
-												<option value="4" label="Group Human Resources Developement">Group Human Resources Developement </option>
-												<option value="5" label="Major Accounts">Major Accounts </option>
-												<option value="6" label="Recurring Revenue">Recurring Revenue </option>
-												<option value="7" label="Group Procurement & Credit Control & Group Administration">Group Procurement & Credit Control & Group Administration</option>
-												<option value="8" label="Group Financial Accounting">Group Financial Accounting</option>
-												<option value="9" label="Group Legal & Secretarial">Group Legal & Secretarial</option>
-												<option value="10" label="Group Internal Audit">Group Internal Audit</option>
-											</select>
-										</div>
-									</div>
+								<div class="tab-pane fade" id="default-tab-3">
+									<h4 class="mt-10px">Emergency Contact</h4>
 									<br>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Unit*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="Application Unit">Application Unit</option>
-												<option value="2" label="Group Internal Audit">Group Internal Audit</option>
-												<option value="2" label="Infrastructure Unit">Infrastructure Unit</option>
-
-											</select>
+									<form>
+										<div class="row p-2">		
+											<div class="col-sm-6">
+												<label for="emergency-firstname" class="form-label">First Name*</label>
+												<input type="text" id="emergency-firstname" class="form-control" aria-describedby="emergency-firstname">
+											</div>
+											<div class="col-sm-6">
+												<label for="emergency-lastname" class="form-label">Last Name*</label>
+												<input type="text" id="emergency-lastname" class="form-control" aria-describedby="emergency-lastname">
+											</div>
+										</div>
+										<div class="row p-2">		
+											<div class="col-sm-6">
+												<label for="emergency-contactnumber" class="form-label">Contact Number*</label>
+												<input type="text" id="emergency-contactnumber" class="form-control" aria-describedby="emergency-contactnumber">
+											</div>
+											<div class="col-sm-6">
+												<label for="emergency-relationship" class="form-label">Relationship*</label>
+												<input type="text" id="emergency-relationship" class="form-control" aria-describedby="emergency-relationship">
+											</div>
+										</div>
+										<div class="row p-2">		
+											<div class="col-sm-6">
+												<label for="emergency-address1" class="form-label">Address 1*</label>
+												<input type="text" id="emergency-address1" class="form-control" aria-describedby="emergency-address1">
+											</div>
+											<div class="col-sm-6">
+												<label for="emergency-address1" class="form-label">Address 2</label>
+												<input type="text" id="emergency-address2" class="form-control" aria-describedby="emergency-address2">
+											</div>
 
 										</div>
-										<label class="form-label col-form-label col-md-1">Branch*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="Office">Office</option>
-												<option value="2" label="Putrajaya">Putrajaya</option>
-												<option value="2" label="Kuala Lumpur">Kuala Lumpur</option>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="emergency-postcode" class="form-label">Postcode*</label>
+												<input type="text" id="emergency-postcode" class="form-control" aria-describedby="emergency-postcode">
+											</div>
+											<div class="col-sm-6">
+												<label for="emergency-city" class="form-label">City*</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>						
+											</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-sm-6">
+												<label for="emergency-state" class="form-label">State*</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+											<div class="col-sm-6">
+												<label for="emergency-country" class="form-label">Country</label>
+												<select class="form-select">
+													<option value="0" label="Please Choose " selected="selected"></option>													
+												</select>											
+											</div>
+										</div>
+									</form>
+									<p class="text-end mb-0 mt-3">
+										<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
+										<a href="javascript:;" class="btn btn-primary">Save</a>
+									</p>
+								</div>
 
-											</select>
-
+								<div class="tab-pane fade" id="default-tab-4">
+									<form>
+										<div class="accordion" id="accordionExample">
+											<div class="accordion-item">
+											  <h2 class="accordion-header" id="headingOne">
+												<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Add New Companion
+												</button>
+											  </h2>
+											  <div id="collapseOne" class="accordion-collapse collapse show bg-white" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													<form>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<h4>Companion Information</h4>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-check form-switch">
+																	<input class="form-check-input" type="checkbox" role="switch" id="set-main" checked>
+																	<label class="form-check-label" for="set-main">Set as Main Companion</label>
+																  </div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">First Name*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Last Name*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="fullname" class="form-label">Full Name</label>
+																<input type="text" id="fullname" class="form-control" aria-describedby="fullname">
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<div class="form-check form-switch">
+																			<label for="citizen" class="form-label">Non-Citizen ?</label>
+																			<input class="form-check-input" type="checkbox" role="switch" id="citizen" checked>
+																		  </div>
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="passport-number" class="form-label">Identification Number*</label>
+																		<input type="text" value="0108393019299" id="passport-number" class="form-control" aria-describedby="passport-number">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="passport" class="form-label">Passport Number</label>
+																		<input type="text" id="passport" class="form-control" aria-describedby="passport">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="expirydate" class="form-label">Expiry Date</label>
+																		<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<label for="issuing-country" class="form-label">Issuing Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="contact-number" class="form-label">Contact Number</label>
+																<input type="text" id="contact-number" class="form-control" aria-describedby="contact-number">
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="dob" class="form-label">Date of Birth</label>
+																		<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="age" class="form-label">Age</label>
+																		<input type="text" id="age" class="form-control" aria-describedby="age">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="dom" class="form-label">Date of Marriage</label>
+																<input type="date" id="dom" class="form-control" aria-describedby="dom">
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="marriage-cert" class="form-label">Marriage Certificate</label>
+																		<input type="file" id="marriage-cert" class="form-control" aria-describedby="dob">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="marriage-status" class="form-label">Marriage Status</label>
+																		<select class="form-select">
+																			<option value="0" label="Please Choose " selected="selected"></option>													
+																		</select>											
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="address1" class="form-label">Address 1*</label>
+																<input type="text" id="address1" class="form-control" aria-describedby="address1">
+															</div>
+															<div class="col-sm-6">
+																<label for="address2" class="form-label">Address 2</label>
+																<input type="text" id="address2" class="form-control" aria-describedby="address2">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">City*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Postcode*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="state" class="form-label">State*</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>	
+															</div>
+															<div class="col-sm-6">
+																<label for="country" class="form-label">Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+														<hr class="mt-5">
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<h4>Companion Employment Details</h4>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-check form-switch align-right">
+																	<input class="form-check-input" type="checkbox" role="switch" id="set-main" checked>
+																	<label class="form-check-label" for="set-main">Working ?</label>
+																  </div>
+															</div>	
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="company-name" class="form-label">Company Name</label>
+																<input type="text" id="phone-number" class="form-control" aria-describedby="company-name">
+															</div>
+															<div class="col-sm-6">
+																<label for="date-joined-company" class="form-label">Date Joined Company</label>
+																<input type="date" id="date-joined-company" class="form-control" aria-describedby="date-joined-company">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="income-tax-number" class="form-label">Income Tax Number*</label>
+																<input type="text" id="income-tax-number" class="form-control" aria-describedby="income-tax-number">
+															</div>
+															<div class="col-sm-6">
+																<label for="extension-number" class="form-label">Payslip</label>
+																<input type="file" id="extension-number" class="form-control" aria-describedby="extension-number">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="income-tax-number" class="form-label">Office Number</label>
+																<input type="text" id="income-tax-number" class="form-control" aria-describedby="income-tax-number">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="address1" class="form-label">Address 1*</label>
+																<input type="text" id="address1" class="form-control" aria-describedby="address1">
+															</div>
+															<div class="col-sm-6">
+																<label for="address2" class="form-label">Address 2</label>
+																<input type="text" id="address2" class="form-control" aria-describedby="address2">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">City*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Postcode*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="state" class="form-label">State*</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>	
+															</div>
+															<div class="col-sm-6">
+																<label for="country" class="form-label">Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+													</form>
+												</div>
+											  </div>
+											</div>
+											<div class="accordion-item">
+											  <h2 class="accordion-header" id="headingTwo">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												  Aqil Anwar
+												</button>
+											  </h2>
+											  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+												<div class="accordion-body bg-white">
+													<form>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<h4>Companion Information</h4>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-check form-switch">
+																	<input class="form-check-input" type="checkbox" role="switch" id="set-main" checked>
+																	<label class="form-check-label" for="set-main">Set as Main Companion</label>
+																  </div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">First Name*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Last Name*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="fullname" class="form-label">Full Name</label>
+																<input type="text" id="fullname" class="form-control" aria-describedby="fullname">
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<div class="form-check form-switch">
+																			<label for="citizen" class="form-label">Non-Citizen ?</label>
+																			<input class="form-check-input" type="checkbox" role="switch" id="citizen" checked>
+																		  </div>
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="passport-number" class="form-label">Identification Number*</label>
+																		<input type="text" value="0108393019299" id="passport-number" class="form-control" aria-describedby="passport-number">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="passport" class="form-label">Passport Number</label>
+																		<input type="text" id="passport" class="form-control" aria-describedby="passport">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="expirydate" class="form-label">Expiry Date</label>
+																		<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<label for="issuing-country" class="form-label">Issuing Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="contact-number" class="form-label">Contact Number</label>
+																<input type="text" id="contact-number" class="form-control" aria-describedby="contact-number">
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="dob" class="form-label">Date of Birth</label>
+																		<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="age" class="form-label">Age</label>
+																		<input type="text" id="age" class="form-control" aria-describedby="age">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="dom" class="form-label">Date of Marriage</label>
+																<input type="date" id="dom" class="form-control" aria-describedby="dom">
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="marriage-cert" class="form-label">Marriage Certificate</label>
+																		<input type="file" id="marriage-cert" class="form-control" aria-describedby="dob">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="marriage-status" class="form-label">Marriage Status</label>
+																		<select class="form-select">
+																			<option value="0" label="Please Choose " selected="selected"></option>													
+																		</select>											
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="address1" class="form-label">Address 1*</label>
+																<input type="text" id="address1" class="form-control" aria-describedby="address1">
+															</div>
+															<div class="col-sm-6">
+																<label for="address2" class="form-label">Address 2</label>
+																<input type="text" id="address2" class="form-control" aria-describedby="address2">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">City*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Postcode*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="state" class="form-label">State*</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>	
+															</div>
+															<div class="col-sm-6">
+																<label for="country" class="form-label">Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+														<hr class="mt-5">
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<h4>Companion Employment Details</h4>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-check form-switch align-right">
+																	<input class="form-check-input" type="checkbox" role="switch" id="set-main" checked>
+																	<label class="form-check-label" for="set-main">Working ?</label>
+																  </div>
+															</div>	
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="company-name" class="form-label">Company Name</label>
+																<input type="text" id="phone-number" class="form-control" aria-describedby="company-name">
+															</div>
+															<div class="col-sm-6">
+																<label for="date-joined-company" class="form-label">Date Joined Company</label>
+																<input type="date" id="date-joined-company" class="form-control" aria-describedby="date-joined-company">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="income-tax-number" class="form-label">Income Tax Number*</label>
+																<input type="text" id="income-tax-number" class="form-control" aria-describedby="income-tax-number">
+															</div>
+															<div class="col-sm-6">
+																<label for="extension-number" class="form-label">Payslip</label>
+																<input type="file" id="extension-number" class="form-control" aria-describedby="extension-number">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="income-tax-number" class="form-label">Office Number</label>
+																<input type="text" id="income-tax-number" class="form-control" aria-describedby="income-tax-number">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="address1" class="form-label">Address 1*</label>
+																<input type="text" id="address1" class="form-control" aria-describedby="address1">
+															</div>
+															<div class="col-sm-6">
+																<label for="address2" class="form-label">Address 2</label>
+																<input type="text" id="address2" class="form-control" aria-describedby="address2">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">City*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Postcode*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="state" class="form-label">State*</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>	
+															</div>
+															<div class="col-sm-6">
+																<label for="country" class="form-label">Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+													</form>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<p class="text-end mb-0 mt-3">
+											<a href="javascript:;" class="btn btn-primary">Save</a>
+										</p>
+									</form>
+								</div>
+				
+								
+								<div class="tab-pane fade" id="default-tab-5">
+									<button type="button"  data-bs-toggle="modal" data-bs-target="#add-children"  class="btn btn-white mt-3 mb-3"><i class="fa fa-plus"></i> New children</button>
+									<table id="data-table-default" style="width: 100%" class="table table-striped align-middle">
+										<thead>
+												<th width="1%"></th>
+												<th width="1%" data-orderable="false">Action</th>
+												<th class="text-nowrap">Name</th>
+												<th class="text-nowrap">ID/Passport Number</th>
+												<th class="text-nowrap">Age</th>
+												<th class="text-nowrap">Education</th>
+												<th class="text-nowrap">Institution</th>
+												<th class="text-nowrap">Marital Status</th>						
+										</thead>
+										<tbody>
+											<tr>
+												<td width="1%" class="fw-bold text-dark">1</td>
+												<td>
+													<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
+													<div class="dropdown-menu">
+														<a href="javascript:;" class="dropdown-item">Edit Employee </a>
+														<div class="dropdown-divider"></div>
+														<a href="register_v3.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item"> Terminate Employee</a>
+													</div>
+												</td>
+												
+												<td>Aqil</td>
+												<td>9298201203</td>
+												<td>12</td>
+												<td>UPSR</td>
+												<td>60123456789</td>
+												<td>Married</td>
+											</tr>											
+										</tbody>
+									</table>	
+								</div>
+								<div class="tab-pane fade" id="default-tab-6">
+										<div class="container">
+											<h4 class="mt-3 mb-3">Parents information</h4>
+											<button type="button"  data-bs-toggle="modal" data-bs-target="#add-parent"  class="btn btn-white mt-3 mb-3"><i class="fa fa-plus"></i> New Parent</button>
+											<table id="data-table-default" style="width: 100%" class="table table-striped align-middle">
+												<thead>
+														<th width="1%"></th>
+														<th width="1%" data-orderable="false">Action</th>
+														<th class="text-nowrap">First Name</th>
+														<th class="text-nowrap">Last Name</th>
+														<th class="text-nowrap">Address</th>
+														<th class="text-nowrap">Relationship</th>
+														<th class="text-nowrap">Date of Birth</th>
+														<th class="text-nowrap">Contact Number</th>						
+												</thead>
+												<tbody>
+													<tr>
+														<td width="1%" class="fw-bold text-dark">1</td>
+														<td>
+															<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
+															<div class="dropdown-menu">
+																<a href="javascript:;" class="dropdown-item">Edit Employee </a>
+																<div class="dropdown-divider"></div>
+																<a href="register_v3.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item"> Terminate Employee</a>
+															</div>
+														</td>
+														
+														<td>Aqil</td>
+														<td>Anwar</td>
+														<td>Shah Alam</td>
+														<td>Father</td>
+														<td>12 September 1991</td>
+														<td>0193929392</td>
+													</tr>											
+												</tbody>
+											</table>	
+										</div>
+										<div class="container">
+											<h4 class="mt-3 mb-3">Siblings Information</h4>
+											<button type="button"  data-bs-toggle="modal" data-bs-target="#add-sibling"  class="btn btn-white mt-3 mb-3"><i class="fa fa-plus"></i> New Sibling</button>
+											<table id="data-table-default" style="width: 100%" class="table table-striped align-middle">
+												<thead>
+														<th width="1%"></th>
+														<th width="1%" data-orderable="false">Action</th>
+														<th class="text-nowrap">First Name</th>
+														<th class="text-nowrap">Last Name</th>
+														<th class="text-nowrap">Address</th>
+														<th class="text-nowrap">Relationship</th>
+														<th class="text-nowrap">Date of Birth</th>
+														<th class="text-nowrap">Contact Number</th>						
+												</thead>
+												<tbody>
+													<tr>
+														<td width="1%" class="fw-bold text-dark">1</td>
+														<td>
+															<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
+															<div class="dropdown-menu">
+																<a href="javascript:;" class="dropdown-item">Edit Employee </a>
+																<div class="dropdown-divider"></div>
+																<a href="register_v3.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item"> Terminate Employee</a>
+															</div>
+														</td>
+														
+														<td>Aqil</td>
+														<td>Anwar</td>
+														<td>Shah Alam</td>
+														<td>Father</td>
+														<td>12 September 1991</td>
+														<td>0193929392</td>
+													</tr>											
+												</tbody>
+											</table>					
+										</div>
+								<!-- END tab-pane -->
+							
+								<!-- Modal Add Children -->
+								<div class="modal fade" id="add-children" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Add Children Details</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<form>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="firstname" class="form-label">First Name*</label>
+																<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+															</div>
+															<div class="col-sm-6">
+																<label for="lastname" class="form-label">Last Name*</label>
+																<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col">
+																<label for="fullname" class="form-label">Full Name</label>
+																<input type="text" id="fullname" class="form-control" aria-describedby="fullname">
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6 ">
+																		<div class="form-check form-switch align-right">
+																			<input class="form-check-input" type="checkbox" id="citizen">
+																			<label class="form-check-label" for="citizen">
+																				  Non-Citizen
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="lastname" class="form-label">Identification Number*</label>
+																		<input type="text" value="0108393019299" id="lastname" class="form-control" aria-describedby="lastname">
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="dob" class="form-label">Date of Birth</label>
+																		<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="age" class="form-label">Age</label>
+																		<input type="text" id="age" class="form-control" aria-describedby="age">
+																	</div>
+																</div>										
+															</div>													
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<div class="row">
+																	<div class="col-sm-6">
+																		<label for="passport" class="form-label">Passport Number</label>
+																		<input type="text" id="passport" class="form-control" aria-describedby="passport">
+																	</div>
+																	<div class="col-sm-6">
+																		<label for="expirydate" class="form-label">Expiry Date</label>
+																		<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<label for="issuing-country" class="form-label">Issuing Country</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="gender" class="form-label">Gender</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>				
+															</div>
+															<div class="col-sm-6">
+																<label for="issuing-country" class="form-label">Marital Status</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>											
+															</div>
+														</div>
+														<h4 class="mt-3 p-2">Education Information</h4>
+														<div class="row p-2">
+															<div class="col-sm-6">
+																<label for="education-type" class="form-label">Education Type*</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>													</div>
+															<div class="col-sm-6">
+																<label for="education-level" class="form-label">Education Level*</label>
+																<select class="form-select">
+																	<option value="0" label="Please Choose " selected="selected"></option>													
+																</select>
+															</div>
+														</div>
+														<div class="row p-2">
+															<div class="col">
+																<label for="institution-name" class="form-label">Institution Name</label>
+																<input type="text" id="institution-name" class="form-control" aria-describedby="institution-name">
+															</div>
+														</div>
+														<h4 class="mt-3 p-2">File upload</h4>
+														<div class="row p-2">
+															<div class="col">
+																<input type="file" class="form-control">
+															</div>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+													<button type="button" class="btn btn-primary">Save</button>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<!-- Modal Add Parent -->
+								<div class="modal fade" id="add-parent" tabindex="-1" aria-labelledby="add-parent" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="add-parent">Add Parent Details</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="firstname" class="form-label">First Name*</label>
+															<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+														</div>
+														<div class="col-sm-6">
+															<label for="lastname" class="form-label">Last Name*</label>
+															<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col">
+															<label for="fullname" class="form-label">Full Name</label>
+															<input type="text" id="fullname" class="form-control" aria-describedby="fullname">
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<div class="row">
+																<div class="col-sm-6 ">
+																	<div class="form-check form-switch align-right">
+																		<input class="form-check-input" type="checkbox" id="citizen">
+																		<label class="form-check-label" for="citizen">
+																			  Non-Citizen
+																		</label>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Identification Number*</label>
+																	<input type="text" value="0108393019299" id="lastname" class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="row">
+																<div class="col-sm-6">
+																	<label for="dob" class="form-label">Date of Birth</label>
+																	<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																</div>
+																<div class="col-sm-6">
+																	<label for="age" class="form-label">Age</label>
+																	<input type="text" id="age" class="form-control" aria-describedby="age">
+																</div>
+															</div>										
+														</div>													
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<div class="row">
+																<div class="col-sm-6">
+																	<label for="passport" class="form-label">Passport Number</label>
+																	<input type="text" id="passport" class="form-control" aria-describedby="passport">
+																</div>
+																<div class="col-sm-6">
+																	<label for="expirydate" class="form-label">Expiry Date</label>
+																	<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<label for="issuing-country" class="form-label">Issuing Country</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>											
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="gender" class="form-label">Gender</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>				
+														</div>
+														<div class="col-sm-6">
+															<label for="issuing-country" class="form-label">Marital Status</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>											
+														</div>
+													</div>
+													<h4 class="mt-3 p-2">Home Address</h4>
+													<div class="row p-2">
+														<div class="col-sm-6">														
+															<div class="form-check form-switch align-right">
+																<input class="form-check-input" type="checkbox" id="same-address">
+																<label class="form-check-label" for="same-address">
+																	  Same as permenant address
+																</label>
+															</div>
+														</div>															
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="education-type" class="form-label">Education Type*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>													</div>
+														<div class="col-sm-6">
+															<label for="education-level" class="form-label">Education Level*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="education-type" class="form-label">Education Type*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>													</div>
+														<div class="col-sm-6">
+															<label for="education-level" class="form-label">Education Level*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col">
+															<label for="institution-name" class="form-label">Institution Name</label>
+															<input type="text" id="institution-name" class="form-control" aria-describedby="institution-name">
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+											<button type="button" class="btn btn-primary">Save</button>
+											</div>
 										</div>
 									</div>
-									<br>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Job Grade*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="Director">Director</option>
-												<option value="2" label="Senior">Senior</option>
-												<option value="2" label="Manager Unit">Manager</option>
-
-											</select>
-
-										</div>
-										<label class="form-label col-form-label col-md-1">Designation*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="Customer Care">Customer Care</option>
-												<option value="2" label="PutraAdministratorjaya">Administrator</option>
-												<option value="2" label="Account manager">Account manager</option>
-
-											</select>
-
+								</div>
+							
+								<!-- Modal Add Siblings -->
+								<div class="modal fade" id="add-sibling" tabindex="-1" aria-labelledby="add-sibling" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="add-parent">Sibling Information</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="firstname" class="form-label">First Name*</label>
+															<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+														</div>
+														<div class="col-sm-6">
+															<label for="lastname" class="form-label">Last Name*</label>
+															<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col">
+															<label for="fullname" class="form-label">Full Name</label>
+															<input type="text" id="fullname" class="form-control" aria-describedby="fullname">
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<div class="row">
+																<div class="col-sm-6 ">
+																	<div class="form-check form-switch align-right">
+																		<input class="form-check-input" type="checkbox" id="citizen">
+																		<label class="form-check-label" for="citizen">
+																			  Non-Citizen
+																		</label>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Identification Number*</label>
+																	<input type="text" value="0108393019299" id="lastname" class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="row">
+																<div class="col-sm-6">
+																	<label for="dob" class="form-label">Date of Birth</label>
+																	<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																</div>
+																<div class="col-sm-6">
+																	<label for="age" class="form-label">Age</label>
+																	<input type="text" id="age" class="form-control" aria-describedby="age">
+																</div>
+															</div>										
+														</div>													
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="gender" class="form-label">Gender</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>				
+														</div>
+														<div class="col-sm-6">
+															<label for="issuing-country" class="form-label">Relationship</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>											
+														</div>
+													</div>
+													<h4 class="mt-3 p-2">Home Address</h4>
+													<div class="row p-2">
+														<div class="col-sm-6">														
+															<div class="form-check form-switch align-right">
+																<input class="form-check-input" type="checkbox" id="same-address">
+																<label class="form-check-label" for="same-address">
+																	  Same as permenant address
+																</label>
+															</div>
+														</div>															
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="education-type" class="form-label">Education Type*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>													</div>
+														<div class="col-sm-6">
+															<label for="education-level" class="form-label">Education Level*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-sm-6">
+															<label for="education-type" class="form-label">Education Type*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>													</div>
+														<div class="col-sm-6">
+															<label for="education-level" class="form-label">Education Level*</label>
+															<select class="form-select">
+																<option value="0" label="Please Choose " selected="selected"></option>													
+															</select>
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col">
+															<label for="institution-name" class="form-label">Institution Name</label>
+															<input type="text" id="institution-name" class="form-control" aria-describedby="institution-name">
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+											<button type="button" class="btn btn-primary">Save</button>
+											</div>
 										</div>
 									</div>
-									<br>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Employment Type*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="Director">Director</option>
-												<option value="2" label="Senior">Senior</option>
-												<option value="2" label="Manager Unit">Manager</option>
-
-											</select>
-
-										</div>
-										<label class="form-label col-form-label col-md-1">Report To*</label>
-										<div class="col-md-5">
-											<select class="form-select">
-												<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-												<option value="1" label="Customer Care">Customer Care</option>
-												<option value="2" label="Administrator">Administrator</option>
-												<option value="2" label="Account manager">Account manager</option>
-
-											</select>
-
-										</div>
-									</div>
-
-									<br>
-									<div class="row mb-15px">
-										<label class="form-label col-form-label col-md-1">Working Email*</label>
-										<div class="col-md-5">
-											<input type="email" class="form-control mb-10px" placeholder="Email" />
-
-										</div>
-
-										<label class="form-label col-form-label col-md-1">Joined Date*</label>
-										<div class="col-md-5">
-											<input type="text" class="form-control" id="datepicker-joindate" placeholder="dd/mm/yyyy" />
-										</div>
-
-									</div>
-								</form>
-								<p class="text-end mb-0">
-									<a href="javascript:;" class="btn btn-white me-5px">Previous</a>
-									<a href="javascript:;" class="btn btn-primary">Save</a>
-								</p>
-							</div>
-
-
-
-
-
-
+								</div>
+							  
 						</div>
 					</div>
 				</div>
-
 				<!-- END tab-pane -->
 			</div>
 
@@ -821,8 +1761,18 @@
 	<script src="/assets/plugins/switchery/dist/switchery.min.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>	
-
+	<!-- ================== DATA TABLE ================== -->
+	<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-colreorder/js/dataTables.colReorder.min.js"></script>
+	<script src="../assets/plugins/datatables.net-colreorder-bs5/js/colReorder.bootstrap5.min.js"></script>
+	<script>
+		$('#data-table-default').DataTable({
+		  responsive: true
+		});
+	  </script>
 	<!-- ================== END page-js ================== -->
 </body>
 
