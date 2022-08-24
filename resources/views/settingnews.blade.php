@@ -384,7 +384,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Unit </small></h1>
+	<h1 class="page-header">Settings <small>| News</small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -394,7 +394,7 @@
 		
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Unit</a>
+		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New News</a>
 		</div>
 		
 			<h4 class="panel-title"></h4>
@@ -404,59 +404,52 @@
 		<!-- END panel-heading -->
 		<!-- BEGIN panel-body -->
 		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
+		<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department Name</th>
-						<th class="text-nowrap">Unit Code</th>
-						<th class="text-nowrap">Unit Name</th>
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						<th class="text-nowrap">Title</th>
+						<th class="text-nowrap">Content</th>
+						<th class="text-nowrap">Attachment</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 						
 
 
 					</tr>
 				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-						<td width="1%" class="fw-bold text-dark">1</td>
-						<td>Edaran</td>
-						<td>BUD</td>
-						<td>Infrastructure Unit </td>
-						<td>Elong musk</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
+					<tbody>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Training Calendar FY2020</td>
+						<td>Training Calendar</td>
+						<td>Trainingcal.pdf</td>
+						<td>Zaid</td>
+						<td>14 Feb 2021 4.30 pm</td>
+						<td>Kamal</td>
+						<td>14 Feb 2021 4.30 pm</td>
 						
 					</tr>
-					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">2</td>
-					<td>Edaran Audit</td>
-						<td>B05</td>
-						<td>Group Internal Audit </td>
-						<td>Elong musk</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Program Doa Selamat</td>
+						<td>Doa Selamat</td>
+						<td>Doaselamat.pdf</td>
+						<td>Ifwat</td>
+						<td>13 Feb 2021 4.30 pm</td>
+						<td>Rika</td>
+						<td>19 Feb 2021 4.30 pm</td>
 						
 					</tr>
-					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">3</td>
-					<td>Edaran Unit</td>
-						<td>APU</td>
-						<td> Application Unit </td>
-						<td>Elong musk</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
+						<td>Majlis Perkahwinan Aqil</td>
+						<td>Majlis Perkahwinan Aqil</td>
+						<td>weddingaqil.pdf</td>
+						<td>Amad</td>
+						<td>11 Feb 2021 4.30 pm</td>
+						<td>Boi</td>
+						<td>18 Feb 2021 4.30 pm</td>
+							
 					</tr>
 					
 					
@@ -473,29 +466,27 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New Unit</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">New News</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
 						
 						<div class="mb-3">
-						  <label>Department Name* </label><br><br>
-						  <select class="form-select">
-								<option value="0" label="Select Department Name " selected="selected">Select Department Name </option>
-								<option value="1" label="BUD">BUD</option>
-								<option value="2" label="ETH">ETH</option>
-								<option value="3" label="BTC">BTC</option>
-								
-							</select>
-						</div>
-						<div class="mb-3">
-						  <label>Unit Code* </label><br><br>
+						  <label>Title</label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Unit Name* </label><br><br>
+						  <label>Source URL</label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-3">
+						  <label>Content </label><br><br>
+						  <textarea class="form-control" rows="3"></textarea>
+						</div>
+						<div class="mb-3">
+						  <label>File Upload </label><br><br>
+						  <input id="fileupload" type="file" multiple="multiple" ></input>
 						</div>
 					  </form>
 					</div>
@@ -505,10 +496,8 @@
 					</div>
 				  </div>
 				</div>
-			  </div>
-	
-						
-
+			  </div>	  
+		 		  	  
 	<div class="row">
 		<!-- BEGIN col-4 -->
 		<div class="col-xl-4 col-lg-6">
@@ -561,7 +550,7 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
 	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
