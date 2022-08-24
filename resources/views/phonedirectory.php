@@ -21,9 +21,6 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
-
-
-
 </head>
 <body>
 	<!-- BEGIN #loader -->
@@ -309,9 +306,25 @@
 								<i class="fa fa-user-group text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Organization</div> 
-							
+							<div class="menu-caret text-gray"></div>
 						</a>
-						
+						<div class="menu-submenu">
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+									<div class="menu-text text-gray">Phone Directory</i></div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+									<div class="menu-text text-gray">Organization Chart</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+									<div class="menu-text text-gray">Department Tree</div>
+								</a>
+							</div>				
+						</div>
 					</div>
 
 					<!-- End Sidenav Content Orbit -->
@@ -399,20 +412,8 @@
 				<ul class="nav nav-tabs">
 				<li class="nav-item">
 					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
-						<span class="d-sm-none">Tab 1</span>
+						<span class="d-sm-none">Phone Directory</span>
 						<span class="d-sm-block d-none">Phone Directory</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
-						<span class="d-sm-none">Tab 2</span>
-						<span class="d-sm-block d-none">Organization Chart</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#default-tab-3" data-bs-toggle="tab" class="nav-link">
-						<span class="d-sm-none">Tab 3</span>
-						<span class="d-sm-block d-none">Department Tree</span>
 					</a>
 				</li>
 			</ul>
@@ -551,32 +552,6 @@
 							</tr>
 						</tbody>
 						</table>
-				</div>
-				<div class="tab-pane fade active " id="default-tab-2">
-					<div class="input-group">
-					<button type="button" class="btn btn-primary h-10">
-								<i class="fas fa-search"></i>
-							</button>
-						<div class="form-outline text-right">
-								<input type="search" id="form1" class="form h-100" />
-								<label class="form-label" for="form1"></label>
-						</div>
-							
-					</div>
-
-				</div>
-				<div class="tab-pane fade active " id="default-tab-3">
-				<div class="input-group">
-
-							<button type="button" class="btn btn-primary h-10">
-								<i class="fas fa-search"></i>
-							</button>
-						<div class="form-outline text-right">
-								<input type="search" id="form2" class="form h-100" />
-								<label class="form-label" for="form2"></label>
-						</div>
-							
-					</div>
 
 				</div>
 			</div>
@@ -685,6 +660,7 @@
 <script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
 <script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js"></script>
 <script src="/assets/js/demo/form-multiple-upload.demo.js"></script>
+<script src="/assets/js/orgchart.js"></script>
 	
 	<script>
 $('#data-table-default').DataTable({

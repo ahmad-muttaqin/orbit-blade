@@ -448,9 +448,7 @@
 					<div class="col-lg-6 panel panel-inverse">
 
 						<div class="panel-heading mt-15px">
-							<h4 class="panel-title">Latest Announcement</h4>
-							<div class="panel-heading-btn">
-							</div>
+							<h4 class="panel-title"> <i class="fas fa-message fa-fw"></i>Latest Announcement</h4>
 						</div>
 
 						<table class="table table-hover table-bordered table-responsive padding-auto">
@@ -514,7 +512,7 @@
 					</div>
 					<div class="col-lg-6 panel panel-inverse">
 							<div class="panel-heading mt-45px">
-								<h4 class="panel-title">Events</h4>
+								<h4 class="panel-title"><i class="fas fa-rectangle-list fa-fw"></i>Events</h4>
 							</div>
 
 							<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -594,10 +592,15 @@
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-	<div class="panel">
-	<table id="data-table-default" class="table table-hover table-striped table-bordered align-middle mt-30px">
-  <thead>
-    <tr>
+
+							
+	<div class="panel panel-inverse">
+		<div class="panel-heading mt-45px">
+								<h4 class="panel-title"><i class="fas fa-rectangle-list fa-fw"></i>Activity Log</h4>
+							</div>
+					<table id="data-table-default" class="table table-hover table-striped table-bordered align-middle mt-30px">
+				<thead>
+					<tr>
 						<th class="text-nowrap">Employee ID</th>
 						<th class="text-nowrap">Name</th>
 						<th class="text-nowrap">Email</th>
