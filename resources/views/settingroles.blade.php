@@ -478,6 +478,7 @@
 						<div class="mb-3">
 						  
 						  <input type="text" class="form-control" id="recipient-name" placeholder="Search">
+						  <div id="kt_docs_jstree_checkable"></div>
 						</div>
 					  </form>
 					</div>
@@ -547,6 +548,7 @@
 				<blockquote class="blockquote">
 						
 						<input type="text" class="form-control" id="recipient-name" placeholder="Search">
+						<div id="kt_docs_jstree_checkable2"></div>
 					</blockquote>
 					
 					<br>
@@ -566,7 +568,7 @@
 				<!-- END tab-pane -->
 			</div>
 						</div>
-					  
+						<div id="dvPreview"></div>
 					</div>
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -662,21 +664,170 @@
     responsive: true
   });
 </script>
-<!--
-	<script>
-  $("#jstree-checkable").jstree({
-    "plugins": ["wholerow", "checkbox", "types"],
-    "core": {
-      "themes": { "responsive": false },    
-      "data": [{
-        "text": "Same but with checkboxes",
-        "children": [{
-          "text": "initially selected",
-          "state": { "selected": true }
-        }, {
-          "text": "Folder 1"
 
 	
-	The template to display files available for upload -->
 
-
+<script>
+ $('#kt_docs_jstree_checkable').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false
+        },
+        'data': [{
+                "text": "Pages",
+                "children": [{
+                    "text": "initially selected",
+                    "state": {
+                        "selected": true
+                    }
+                }, {
+                    "text": "Employee Spouses",
+                    "icon" : "fa fa-folder text-default",
+                    "state": { "opened": true},
+                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
+                },{
+                    "text": "Designation",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
+                },{
+                    "text": "Job Grade",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
+                },{
+                    "text": "Unit",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
+                },{
+                    "text": "Department",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
+                },{
+                    "text": "Races",
+                },{
+                    "text": "Religions",
+                },{
+                    "text": "Branches",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
+                },{
+                    "text": "custom icon",
+                    "icon": "fa fa-warning text-waring"
+                }, {
+                    "text": "disabled node",
+                    "icon": "fa fa-check text-success",
+                    "state": {
+                        "disabled": true
+                    }
+                }]
+            },
+            "Others"
+        ]
+    },
+    "types" : {
+        "default" : {
+            "icon" : "fa fa-folder text-warning"
+        },
+        "file" : {
+            "icon" : "fa fa-file  text-warning"
+        }
+    },
+});
+</script>
+<script>
+ $('#kt_docs_jstree_checkable2').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false
+        },
+        'data': [{
+                "text": "Pages",
+                "children": [{
+                    "text": "initially selected",
+                    "state": {
+                        "selected": true
+                    }
+                }, {
+                    "text": "Employee Spouses",
+                    "icon" : "fa fa-folder text-default",
+                    "state": { "opened": true},
+                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
+                },{
+                    "text": "Designation",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
+                },{
+                    "text": "Job Grade",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
+                },{
+                    "text": "Unit",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
+                },{
+                    "text": "Department",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
+                },{
+                    "text": "Races",
+                },{
+                    "text": "Religions",
+                },{
+                    "text": "Branches",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
+                },{
+                    "text": "custom icon",
+                    "icon": "fa fa-warning text-waring"
+                }, {
+                    "text": "disabled node",
+                    "icon": "fa fa-check text-success",
+                    "state": {
+                        "disabled": true
+                    }
+                }]
+            },
+            "Others"
+        ]
+    },
+    "types" : {
+        "default" : {
+            "icon" : "fa fa-folder text-warning"
+        },
+        "file" : {
+            "icon" : "fa fa-file  text-warning"
+        }
+    },
+});
+</script>
