@@ -384,7 +384,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Companies </small></h1>
+	<h1 class="page-header">Settings <small>| Unit </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -394,7 +394,7 @@
 		
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Company</a>
+		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Unit</a>
 		</div>
 		
 			<h4 class="panel-title"></h4>
@@ -408,13 +408,14 @@
 				<thead>
 					<tr>
 						<th width="1%">NO</th>
-						<th width="6%" data-orderable="false" class="align-middle">Action</th>
-						<th class="text-nowrap">Company Code</th>
-						<th class="text-nowrap">Company Name</th>
+						<th class="text-nowrap">Department Name</th>
+						<th class="text-nowrap">Unit Code</th>
+						<th class="text-nowrap">Unit Name</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 						
 
 
@@ -423,35 +424,38 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						<td>Edaran</td>
-						<td>Edaran Communications Sdn Bhd</td>
-						<td> Farid </td>
+						<td>BUD</td>
+						<td>Infrastructure Unit </td>
+						<td>Elong musk</td>
 						<td>2 Feb 2022 2.30 pm</td>
 						<td>Elon Musk</td>
 						<td>14 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
+					<td>Edaran Audit</td>
+						<td>B05</td>
+						<td>Group Internal Audit </td>
+						<td>Elong musk</td>
+						<td>2 Feb 2022 2.30 pm</td>
+						<td>Elon Musk</td>
+						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>MIDC</td>
-						<td>MIDC Technology Sdn Bhd</td>
-						<td> Farid </td>
-						<td>3 Feb 2022 2.30 pm</td>
-						<td>Bill Gates</td>
-						<td>12 Feb 2021 4.30 pm</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td>Edaran Unit</td>
+						<td>APU</td>
+						<td> Application Unit </td>
+						<td>Elong musk</td>
+						<td>2 Feb 2022 2.30 pm</td>
+						<td>Elon Musk</td>
+						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>Shinba</td>
-						<td>Shinba-Edaran Sdn Bhd</td>
-						<td> Farid </td>
-						<td>5 Feb 2022 2.30 pm</td>
-						<td>Maisarah</td>
-						<td>10 Feb 2022 2.30 pm</td>
 						
 					</tr>
 					
@@ -469,18 +473,28 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New Company</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">New Unit</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
 						
 						<div class="mb-3">
-						  <label>Company Code* </label><br><br>
+						  <label>Department Name* </label><br><br>
+						  <select class="form-select">
+								<option value="0" label="Select Department Name " selected="selected">Select Department Name </option>
+								<option value="1" label="BUD">BUD</option>
+								<option value="2" label="ETH">ETH</option>
+								<option value="3" label="BTC">BTC</option>
+								
+							</select>
+						</div>
+						<div class="mb-3">
+						  <label>Unit Code* </label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Company Name* </label><br><br>
+						  <label>Unit Name* </label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 					  </form>
@@ -492,35 +506,9 @@
 				  </div>
 				</div>
 			  </div>
-	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-						
-					  <h5 class="modal-title" id="exampleModalLabel">Permission</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					 
-						
-						<div class="mb-3">
-						  
+	
 						
 
-			<div class="tab-content panel m-0 rounded-0 p-3">
-				<!-- BEGIN tab-pane -->
-				
-						</div>
-					  
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>	  
-		 		  	  
 	<div class="row">
 		<!-- BEGIN col-4 -->
 		<div class="col-xl-4 col-lg-6">

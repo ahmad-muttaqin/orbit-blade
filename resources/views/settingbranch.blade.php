@@ -384,7 +384,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Companies </small></h1>
+	<h1 class="page-header">Settings <small>| Branch </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -394,7 +394,7 @@
 		
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Company</a>
+		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Branch</a>
 		</div>
 		
 			<h4 class="panel-title"></h4>
@@ -408,13 +408,14 @@
 				<thead>
 					<tr>
 						<th width="1%">NO</th>
-						<th width="6%" data-orderable="false" class="align-middle">Action</th>
-						<th class="text-nowrap">Company Code</th>
-						<th class="text-nowrap">Company Name</th>
+						<th class="text-nowrap">Unit Name</th>
+						<th class="text-nowrap">Branch Type</th>
+						<th class="text-nowrap">Branch Name</th>
+						<th class="text-nowrap">State</th>
 						<th class="text-nowrap">Added By</th>
-						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 						
 
 
@@ -423,35 +424,38 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>Edaran</td>
-						<td>Edaran Communications Sdn Bhd</td>
-						<td> Farid </td>
-						<td>2 Feb 2022 2.30 pm</td>
+						<td>Unit Name</td>
+						<td>Branch Type</td>
+						<td>Branch Name</td>
+						<td> Putrajaya </td>
+						<td>Farid</td>
 						<td>Elon Musk</td>
 						<td>14 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
+						<td>Unit Name</td>
+						<td>Branch Type</td>
+						<td>Branch Name</td>
+						<td> Putrajaya </td>
+						<td>Farid</td>
+						<td>Elon Musk</td>
+						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>MIDC</td>
-						<td>MIDC Technology Sdn Bhd</td>
-						<td> Farid </td>
-						<td>3 Feb 2022 2.30 pm</td>
-						<td>Bill Gates</td>
-						<td>12 Feb 2021 4.30 pm</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+						<td>Unit Name</td>
+						<td>Branch Type</td>
+						<td>Branch Name</td>
+						<td> Putrajaya </td>
+						<td>Farid</td>
+						<td>Elon Musk</td>
+						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>Shinba</td>
-						<td>Shinba-Edaran Sdn Bhd</td>
-						<td> Farid </td>
-						<td>5 Feb 2022 2.30 pm</td>
-						<td>Maisarah</td>
-						<td>10 Feb 2022 2.30 pm</td>
 						
 					</tr>
 					
@@ -469,22 +473,82 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New Company</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">New Branch</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
-						
-						<div class="mb-3">
-						  <label>Company Code* </label><br><br>
+					 
+					 	<div class="mb-3">
+						  <label>Branch Code</label>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Company Name* </label><br><br>
+						  <label>Branch Name</label>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
+						<div class="mb-2">
+						  <label>Branch Type</label>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-2">
+						  <label>Unit Name</label>
+						  <select class="form-select">
+								<option value="0" label="Select State " selected="selected">Select Unit </option>
+								<option value="1" label="Application Unit">Application Unit</option>
+								<option value="2" label="Maintenance Unit">Maintenance Unit</option>
+								<option value="3" label="Offshore Unit">Offshore Unit</option>
+								
+							</select>
+						</div>
+						<div class="mb-2">
+						  <label>Address</label>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-2">
+						  <label>Address 2</label>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-2">
+						  <label>Postcode </label>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-2">
+						  <label>City</label>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-2">
+						  <label>State</label>
+						  <select class="form-select">
+								<option value="0" label="Select State " selected="selected">Select State </option>
+								<option value="Johor" label="Johor">Johor</option>
+								<option value="Kedah" label="Kedah">Kedah</option>
+								<option value="Kelantan" label="Kelantan">Kelantan</option>
+								<option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
+								<option value="Pahang" label="Pahang">Pahang</option>	
+								<option value="Penang" label="Penang">Penang</option>
+								<option value="Perak" label="Perak">Perak</option>
+								<option value="Perlis" label="Perlis">Perlis</option>
+								<option value="Sabah" label="Sabah">Sabah</option>
+								<option value="Sarawak" label="Sarawak">Sarawak</option>
+								<option value="Selangor" label="Selangor">Selangor</option>
+								<option value="Terengganu" label="Terengganu">Terengganu</option>
+								<option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
+								<option value="Labuan" label="Labuan">Labuan</option>
+								<option value="Putrajaya" label="Putrajaya">Putrajaya</option>
+							</select>
+						</div>
+						<div class="mb-2">
+						  <label>Country</label>
+						  <select class="form-select">
+								<option value="0" label="Malaysia" selected="selected">Malaysia </option>
+								<option value="1" label="Brunei">Brunei</option>
+								<option value="2" label="Singapore">Singapore</option>
+								
+							</select></div>
 					  </form>
 					</div>
+				
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 					  <button type="button" class="btn btn-primary">Save</button>

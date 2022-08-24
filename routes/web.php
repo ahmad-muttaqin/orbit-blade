@@ -58,6 +58,15 @@ Route::get('/setting/department', function () {
 Route::get('/setting/unit', function () {
     return view('settingunit');
 });
+Route::get('/setting/branch', function () {
+    return view('settingbranch');
+});
+Route::get('/setting/designation', function () {
+    return view('settingdesignation');
+});
+Route::get('/setting/jobgrade', function () {
+    return view('settingjobgrade');
+});
 
 
 

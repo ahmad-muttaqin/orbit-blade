@@ -413,13 +413,12 @@
 				<thead>
 					<tr>
 						<th width="1%">NO</th>
-						<th width="6%" data-orderable="false" class="align-middle">Action</th>
 						<th class="text-nowrap">Role Name</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
-						
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 
 
 					</tr>
@@ -427,45 +426,32 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> 
-						<div width="1%">
 						<td>Admin <span class="badge bg-primary rounded-pill">Static</span><span class="badge bg-dark rounded-pill">Default</span></td>
 						<td>ahmad</td>
 						<td>2 Feb 2022 2.30 pm</td>
 						<td>Elon Musk</td>
 						<td>14 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> 
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
 						<td>Administrator<span class="badge bg-primary rounded-pill">Static</span><span class="badge bg-dark rounded-pill">Default</span></td>
 						<td>Rosyam</td>
 						<td>3 Feb 2022 2.30 pm</td>
 						<td>Bill Gates</td>
 						<td>12 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> 
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
 						<td>Intern</td>
 						<td>abu</td>
 						<td>5 Feb 2022 2.30 pm</td>
 						<td>Maisarah</td>
 						<td>10 Feb 2022 2.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					
