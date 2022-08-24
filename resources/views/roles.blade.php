@@ -670,9 +670,7 @@
                 }, {
                     "text": "Employee Spouses",
                     "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
+                    "state": { "opened": true},
                     "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
                 },{
                     "text": "Designation",
