@@ -47,10 +47,16 @@ Route::get('/setting', function () {
     return view('setting');
 });
 Route::get('/setting/roles', function () {
-    return view('roles');
+    return view('settingroles');
 });
 Route::get('/setting/company', function () {
-    return view('company');
+    return view('settingcompany');
+});
+Route::get('/setting/department', function () {
+    return view('settingdepartment');
+});
+Route::get('/setting/unit', function () {
+    return view('settingunit');
 });
 
 
