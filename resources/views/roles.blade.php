@@ -9,12 +9,17 @@
 	<meta content="" name="description" />
 	<meta content="" name="author" />
 	
+	
     <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
+
+
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href=".../assets/dist/themes/default/style.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 	<!-- ================== END core-css ================== -->
 	
 	<!-- ================== BEGIN page-css ================== -->
@@ -23,6 +28,13 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+	<!-- required files -->
+	<link href="../assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/jstree/dist/jstree.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -395,9 +407,27 @@
 		<div class="panel-heading">
 		<div class="col-md-6">
 		<p>
-			<a href="javascript:;" class="btn btn-primary d-block"><i class="fa fa-list"></i> Select Permissions</a>
+			<a href="#modal-dialog" class="btn btn-primary" data-bs-toggle="modal">Select Permissions</a>
 		</p><a href="#" class="btn btn-primary">+ New Role</a>
 		</div>
+		<div class="modal fade" id="modal-dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Select Permissions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body"></div>
+				<div id="kt_docs_jstree_checkable"></div>
+			
+						<div class="modal-footer">
+							<a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal">Close</a>
+							<a href="javascript:;" class="btn btn-success">Action</a>
+						</div>
+
+				</div>
+			</div>
+			</div>
 		
 			<h4 class="panel-title"></h4>
 			
@@ -580,6 +610,7 @@
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+	<script src="../assets/dist/jstree.min.js"></script>
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
@@ -620,9 +651,92 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
 
 	
+	<script>
+ $('#kt_docs_jstree_checkable').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false
+        },
+        'data': [{
+                "text": "Pages",
+                "children": [{
+                    "text": "initially selected",
+                    "state": {
+                        "selected": true
+                    }
+                }, {
+                    "text": "Employee Spouses",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
+                },{
+                    "text": "Designation",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
+                },{
+                    "text": "Job Grade",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
+                },{
+                    "text": "Unit",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
+                },{
+                    "text": "Department",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
+                },{
+                    "text": "Races",
+                },{
+                    "text": "Religions",
+                },{
+                    "text": "Branches",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
+                },{
+                    "text": "custom icon",
+                    "icon": "fa fa-warning text-waring"
+                }, {
+                    "text": "disabled node",
+                    "icon": "fa fa-check text-success",
+                    "state": {
+                        "disabled": true
+                    }
+                }]
+            },
+            "Others"
+        ]
+    },
+    "types" : {
+        "default" : {
+            "icon" : "fa fa-folder text-warning"
+        },
+        "file" : {
+            "icon" : "fa fa-file  text-warning"
+        }
+    },
+});
+</script>
 	<script>
 $('#data-table-default').DataTable({
     responsive: true
@@ -669,3 +783,4 @@ window.onload = function () {
     }
 };
 </script>	
+
