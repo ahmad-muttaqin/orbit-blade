@@ -408,14 +408,13 @@
 				<thead>
 					<tr>
 						<th width="1%">NO</th>
-						<th width="6%" data-orderable="false" class="align-middle">Action</th>
 						<th class="text-nowrap">Company Code</th>
 						<th class="text-nowrap">Company Name</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
-						
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 
 
 					</tr>
@@ -423,35 +422,35 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						<td>Edaran</td>
 						<td>Edaran Communications Sdn Bhd</td>
 						<td> Farid </td>
 						<td>2 Feb 2022 2.30 pm</td>
 						<td>Elon Musk</td>
 						<td>14 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						<td>MIDC</td>
 						<td>MIDC Technology Sdn Bhd</td>
 						<td> Farid </td>
 						<td>3 Feb 2022 2.30 pm</td>
 						<td>Bill Gates</td>
 						<td>12 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						<td>Shinba</td>
 						<td>Shinba-Edaran Sdn Bhd</td>
 						<td> Farid </td>
 						<td>5 Feb 2022 2.30 pm</td>
 						<td>Maisarah</td>
 						<td>10 Feb 2022 2.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					
