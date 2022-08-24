@@ -67,6 +67,15 @@ Route::get('/setting/designation', function () {
 Route::get('/setting/jobgrade', function () {
     return view('settingjobgrade');
 });
+Route::get('/setting/sop', function () {
+    return view('settingsop');
+});
+Route::get('/setting/news', function () {
+    return view('settingnews');
+});
+
+
+
 
 
 

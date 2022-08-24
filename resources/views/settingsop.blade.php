@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM | Dashboard 1</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -24,7 +22,6 @@
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
 </head>
-
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -378,85 +375,91 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
+	<h1 class="page-header">HRIS | Policy's & SOP's</h1>
 	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
+
+
 	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Unit </small></h1>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		
-		<div class="panel-heading">
-		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Unit</a>
-		</div>
-		
-			<h4 class="panel-title"></h4>
-			
-			
-		</div>
-		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
-		<div class="panel-body">
+
+	<div class="row">
+		<!-- BEGIN col-6 -->
+		<div class="col-xl-15">
+			<!-- BEGIN nav-tabs -->
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
+						<span class="d-sm-none">Tab 1</span>
+						<span class="d-sm-block d-none">Policy's</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 2</span>
+						<span class="d-sm-block d-none">SOP's</span>
+					</a>
+				</li>
+				
+			</ul>
+			<!-- END nav-tabs -->
+			<!-- BEGIN tab-content -->
+			<div class="tab-content panel m-0 rounded-0 p-3">
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade active show" id="default-tab-1">
+				<h3 class="mt-10px"></i> Policy's List </h3>
+					<div class="panel-heading-btn">
+					<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Policy's</a>
+					</div>
+					<div class="panel-body">
 			<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department Name</th>
-						<th class="text-nowrap">Unit Code</th>
-						<th class="text-nowrap">Unit Name</th>
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						<th class="text-nowrap">Policy Name</th>
+						<th class="text-nowrap">Document Title</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Attachment</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 						
 
 
 					</tr>
 				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-						<td width="1%" class="fw-bold text-dark">1</td>
-						<td>Edaran</td>
-						<td>BUD</td>
-						<td>Infrastructure Unit </td>
-						<td>Elong musk</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
+					<tbody>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Infra Policy</td>
+						<td>Policy on Infrastructure Policy</td>
+						<td>This policy</td>
+						<td>Infrapolicy.pdf</td>
+						<td>Zaid</td>
+						<td>14 Feb 2021 4.30 pm</td>
+						<td>Kamal</td>
+						<td>14 Feb 2021 4.30 pm</td>
 						
 					</tr>
-					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">2</td>
-					<td>Edaran Audit</td>
-						<td>B05</td>
-						<td>Group Internal Audit </td>
-						<td>Elong musk</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>IT Policy</td>
+						<td>Policy on IT Policy</td>
+						<td>This policy</td>
+						<td>ITpolicy.pdf</td>
+						<td>Ifwat</td>
+						<td>13 Feb 2021 4.30 pm</td>
+						<td>Rika</td>
+						<td>19 Feb 2021 4.30 pm</td>
 						
 					</tr>
-					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">3</td>
-					<td>Edaran Unit</td>
-						<td>APU</td>
-						<td> Application Unit </td>
-						<td>Elong musk</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
+						<td>Standard Policy</td>
+						<td>Policy on General Policy</td>
+						<td>This policy govern</td>
+						<td>generalpolicy.pdf</td>
+						<td>Yusuf</td>
+						<td>11 Feb 2021 4.30 pm</td>
+						<td>Kamal</td>
+						<td>18 Feb 2021 4.30 pm</td>
+							
 					</tr>
 					
 					
@@ -465,37 +468,105 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
+	
+					
+					
+				</div>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade" id="default-tab-2">
+					<h3 class="mt-10px"></i> SOP's List </h3>
+					<div class="panel-heading-btn">
+					<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">+ New SOP's</a>
+					</div>
+					<div class="panel-body">
+			<table id="data-table-default2" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th width="10%" data-orderable="false" class="align-middle">Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+						<th class="text-nowrap">SOP Name</th>
+						<th class="text-nowrap">Document Title</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Attachment</th>
+						<th class="text-nowrap">Added By</th>
+						<th class="text-nowrap">Added Time</th>
+						<th class="text-nowrap">Modified By</th>
+						<th class="text-nowrap">Modified Time</th>
+						
 
+
+					</tr>
+				</thead>
+				<tbody>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Infra SOP</td>
+						<td>SOP on Infrastructure SOP</td>
+						<td>This SOP govern the following activities</td>
+						<td>InfraSOP.pdf</td>
+						<td>Zaid</td>
+						<td>14 Feb 2021 4.30 pm</td>
+						<td>Kamal</td>
+						<td>14 Feb 2021 4.30 pm</td>
+						
+					</tr>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>	
+						<td>IT SOP</td>
+						<td>SOP on IT SOP</td>
+						<td>This SOP govern the following activities</td>
+						<td>ITSOP.pdf</td>
+						<td>Ifwat</td>
+						<td>13 Feb 2021 4.30 pm</td>
+						<td>Rika</td>
+						<td>19 Feb 2021 4.30 pm</td>
+						
+					</tr>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>	
+						<td>Standard SOP</td>
+						<td>SOP on General Policy</td>
+						<td>This SOP govern the following activities</td>
+						<td>generalSOP.pdf</td>
+						<td>Yusuf</td>
+						<td>11 Feb 2021 4.30 pm</td>
+						<td>Kamal</td>
+						<td>18 Feb 2021 4.30 pm</td>
+						
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>		
+		
+		<!-- END col-4 -->
+	</div>
 	<!-- END row -->
-	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		</div>
+		<!-- END #content -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New Unit</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">New Policy's</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
 						
 						<div class="mb-3">
-						  <label>Department Name* </label><br><br>
-						  <select class="form-select">
-								<option value="0" label="Select Department Name " selected="selected">Select Department Name </option>
-								<option value="1" label="BUD">BUD</option>
-								<option value="2" label="ETH">ETH</option>
-								<option value="3" label="BTC">BTC</option>
-								
-							</select>
-						</div>
-						<div class="mb-3">
-						  <label>Unit Code* </label><br><br>
+						  <label>Policy's Code </label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Unit Name* </label><br><br>
+						  <label>Policy's Name </label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-3">
+						  <label>Description </label><br><br>
+						  <textarea class="form-control" rows="3"></textarea>
+						</div>
+						<div class="mb-3">
+						  <label>File Upload </label><br><br>
+						  <input id="fileupload" type="file" multiple="multiple" ></input>
 						</div>
 					  </form>
 					</div>
@@ -506,39 +577,42 @@
 				  </div>
 				</div>
 			  </div>
-	
+			  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">New SOP's</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <form>
 						
-
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-	</div>
-	<!-- END row -->
-		</div>
-		<!-- END #content -->
+						<div class="mb-3">
+						  <label>SOP's Code </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-3">
+						  <label>SOP's Name </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-3">
+						  <label>Description </label><br><br>
+						  <textarea class="form-control" rows="3"></textarea>
+						</div>
+						<div class="mb-3">
+						  <label>File Upload </label><br><br>
+						  <input id="fileupload" type="file" multiple="multiple" ></input>
+						</div>
+					  </form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
 		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 		<!-- END scroll-top-btn -->
@@ -558,9 +632,10 @@
 	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
 	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
 	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
-</body>
-</html>
+	<link href="/assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/switchery/dist/switchery.min.js"></script>
+	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
 	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -590,26 +665,41 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<!--
-	<script>
-  $("#jstree-checkable").jstree({
-    "plugins": ["wholerow", "checkbox", "types"],
-    "core": {
-      "themes": { "responsive": false },    
-      "data": [{
-        "text": "Same but with checkboxes",
-        "children": [{
-          "text": "initially selected",
-          "state": { "selected": true }
-        }, {
-          "text": "Folder 1"
-
-	
-	The template to display files available for upload -->
-
+	<!-- ================== END page-js ================== -->
+</body>
+</html>
+<script>
+var elm = document.getElementById('switchery-default');
+  var switchery = new Switchery(elm, {
+    color: '#00acac'
+  });
+</script>
+<script>
+  $("#datepicker-autoClose").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-birth").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-joindate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
 
 <script>
   $('#data-table-default').DataTable({
+    responsive: true
+  });
+</script>
+<script>
+  $('#data-table-default2').DataTable({
     responsive: true
   });
 </script>
