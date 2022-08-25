@@ -412,12 +412,15 @@
 
 								<!-- Tabs navs -->
 								<div class="align-items-start mt-3">
-									<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-									  <button class="nav-link active text-start" id="v-pills-myprofile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-myprofile" type="button" role="tab" aria-controls="v-pills-myprofile" aria-selected="true">My Profile</button>
-									  <button class="nav-link text-start" id="v-pills-employment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-employment" type="button" role="tab" aria-controls="v-pills-employment" aria-selected="false">Employment Details</button>
-									  <button class="nav-link text-start" id="v-pills-changepassword-tab" data-bs-toggle="pill" data-bs-target="#v-pills-changepassword" type="button" role="tab" aria-controls="v-pills-changepassword" aria-selected="false">Change Password</button>
-									  <button class="nav-link text-start" id="v-pills-vehicledetails-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vehicledetails" type="button" role="tab" aria-controls="v-pills-vehicledetails" aria-selected="false">Vehicle Details</button>
-									  <button class="nav-link text-start" id="v-pills-eleave-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eleave" type="button" role="tab" aria-controls="v-pills-eleave" aria-selected="false">eLeave</button>
+									<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									  <button class="nav-link active text-start border border-1 mt-1 mb-1" id="v-pills-myprofile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-myprofile" type="button" role="tab" aria-controls="v-pills-myprofile" aria-selected="true">
+										<i class="fas fa-circle-user fa-fw"></i>
+										My Profile
+									</button>
+									  <button class="nav-link text-start border border-1 mt-1 mb-1" id="v-pills-employment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-employment" type="button" role="tab" aria-controls="v-pills-employment" aria-selected="false">Employment Details</button>
+									  <button class="nav-link text-start border border-1 mt-1 mb-1" id="v-pills-changepassword-tab" data-bs-toggle="pill" data-bs-target="#v-pills-changepassword" type="button" role="tab" aria-controls="v-pills-changepassword" aria-selected="false">Change Password</button>
+									  <button class="nav-link text-start border border-1 mt-1 mb-1" id="v-pills-vehicledetails-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vehicledetails" type="button" role="tab" aria-controls="v-pills-vehicledetails" aria-selected="false">Vehicle Details</button>
+									  <button class="nav-link text-start border border-1 mt-1 mb-1" id="v-pills-eleave-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eleave" type="button" role="tab" aria-controls="v-pills-eleave" aria-selected="false">eLeave</button>
 									</div>
 								  </div>
 								<!-- Tabs navs -->
@@ -427,7 +430,7 @@
 				</div>
 				<div class="col-xl-9">
 					<div class="tab-content" id="v-pills-tabContent">
-						<div class="tab-pane fade show active" id="v-pills-myprofile" role="tabpanel" aria-labelledby="v-pills-myprofile-tab">
+					<div class="tab-pane fade show active" id="v-pills-myprofile" role="tabpanel" aria-labelledby="v-pills-myprofile-tab">
 					<!-- BEGIN nav-tabs -->
 							<div class="card">
 								<div class="card-header bg-white bg-gray-100">
@@ -594,8 +597,8 @@
 													<input type="text" id="phone-number" class="form-control" aria-describedby="phone-number">
 												</div>
 												<div class="col p-2">
-													<label for="myprofile-number" class="form-label">myprofile Number</label>
-													<input type="text" id="myprofile-number" class="form-control" aria-describedby="myprofile-number">
+													<label for="home-number" class="form-label">Home Number</label>
+													<input type="text" id="home-number" class="form-control" aria-describedby="home-number">
 												</div>
 												<div class="col p-2">
 													<label for="extension-number" class="form-label">Extension Number</label>
@@ -1726,31 +1729,154 @@
 													<option value="0" label="Please Choose " selected="selected"></option>													
 												</select>	
 											</div>
+											<div class="row p-2">
+												<label class="form-label" for="supervisor">
+													  User Role
+												</label>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox" id="supervisor">
+													<label class="form-check-label" for="supervisor">
+														  Supervisor
+													</label>
+												</div>
+												<div class="form-text">
+													If enabled, report-to will enabled the username
+												</div>
+											</div>
+											<hr>
+											<button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#update-employment"">
+												Update
+											</button>
 										</div>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="card">
-										<div class="card-header bg-white bg-gray-100">
-											<h4 class="fw-bold">
-												Job History
-											</h4>
-											<p class="fw-light">
-												Update your history information
-											</p>
-										 </div>
-										<div class="card-body">
+										<div class="card-header bg-gray-100">
 											<div class="row">
-												<div class="col-sm-6">
-													<div class="row p-2">
-														<label for="firstname" class="form-label">First Name*</label>
-														<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
-													</div>
-													<div>
-														<label for="lastname" class="form-label">Last Name*</label>
-														<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+												<div class="col">
+													<h4 class="fw-bold">
+														Job History
+													</h4>
+													<p class="fw-light">
+														Update your history information
+													</p>
+												</div>
+												<div class="col">
+													<button class="btn btn-white float-end" data-bs-toggle="dropdown">
+														Filter content
+														<i class="fa fa-filter text-dark"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a href="#" class="dropdown-item">Company</a>
+														<a href="#" class="dropdown-item">Department</a>
+														<a href="#" class="dropdown-item">Unit</a>
+														<a href="#" class="dropdown-item">Branch</a>
+														<a href="#" class="dropdown-item">Job Grade</a>
+														<a href="#" class="dropdown-item">Designation</a>
+														<a href="#" class="dropdown-item">Employment Type</a>
+														<a href="#" class="dropdown-item">Supervisor</a>
+														<a href="#" class="dropdown-item">Clear Filter</a>
 													</div>
 												</div>
+											</div>
+										 </div>
+										<div class="card-body">
+											<div class="container">
+												<ul class="timeline-with-icons">
+													<li class="timeline-item mb-5 ">
+													  <span class="timeline-icon">
+														<i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+													  </span>
+													  
+													  <div class="card p-3 bg-white">														
+														  <p class="fw-bold">Designation has change from Customer Care to Administrator updated by Ahm Farid</p>
+														  <p class="text-muted mb-2 fw-bold">11 March 2020</p>
+														  <p class="text-muted">
+															  Effective Date: 23 Sep 2021
+														  </p>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <span class="timeline-icon">
+														<i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+													  </span>
+													  
+													  <div class="card p-3 bg-white">														
+														  <p class="fw-bold">Designation has change from Customer Care to Administrator updated by Ahm Farid</p>
+														  <p class="text-muted mb-2 fw-bold">11 March 2020</p>
+														  <p class="text-muted">
+															  Effective Date: 23 Sep 2021
+														  </p>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <span class="timeline-icon">
+														<i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+													  </span>
+													  
+													  <div class="card p-3 bg-white">														
+														  <p class="fw-bold">Designation has change from Customer Care to Administrator updated by Ahm Farid</p>
+														  <p class="text-muted mb-2 fw-bold">11 March 2020</p>
+														  <p class="text-muted">
+															  Effective Date: 23 Sep 2021
+														  </p>
+													  </div>
+													</li>
+												</ul>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<!-- Modal Update Employment-->
+								<div class="modal fade" id="update-employment" tabindex="-1" aria-labelledby="update-employment" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="update-employment">Employment Details - Confirm Changes</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-sm-6">
+														<label for="employee-id" class="form-label">Employee ID</label>
+														<input type="text" id="employee-id" class="form-control" aria-describedby="employee-id">	
+													</div>
+													<div class="col-sm-6">
+														<label for="employee-name" class="form-label">Employee Name</label>
+														<input type="text" id="employee-name" class="form-control" aria-describedby="employee-name">	
+													</div>										
+												</div>
+												<div class="col-sm-6">
+													<label for="employee-email" class="form-label">Employee Email</label>
+													<input type="text" id="employee-email" class="form-control" aria-describedby="employee-email">	
+												</div>		
+												<hr>
+
+												<p class="mt-3 mb-3 fw-bold">Confirm Changes</p>
+												<div class="row">
+													<div class="col-sm-6">
+														<label for="effective-from" class="form-label">Effective From*</label>
+														<input type="date" id="effective-from" class="form-control" aria-describedby="effective-from">	
+													</div>	
+													<div class="col-sm-6">
+														<label for="firstname" class="form-label">Event*</label>
+														<select class="form-select">
+															<option value="0" label="Please Choose " selected="selected"></option>													
+														</select>	
+													</div>	
+												</div>
+												<hr>
+												<p class="mt-3 mb-3 fw-bold">Changes Details</p>
+												<div class="row">
+													<label for="changes-input" class="form-label">Input</label>
+													<input type="file" id="changes-input" class="form-control" aria-describedby="changes-input">	
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save</button>
 											</div>
 										</div>
 									</div>
@@ -1781,7 +1907,11 @@
 										<input type="password" id="password" class="form-control" aria-describedby="password">
 	
 									</div>
+									<button type="button" class="btn btn-primary float-end mt-3">
+										Save
+									</button>
 								</div>
+								
 							</div>
 						</div>
 						<div class="tab-pane fade" id="v-pills-vehicledetails" role="tabpanel" aria-labelledby="v-pills-vehicledetails-tab">
@@ -1877,6 +2007,9 @@
 											<option value="0" label="Please Choose " selected="selected"></option>													
 										</select>	
 									</div>
+									<button type="button" class="btn btn-primary float-end mt-3">
+										Save
+									</button>
 								</div>
 							</div>
 						</div>
