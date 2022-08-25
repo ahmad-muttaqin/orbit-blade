@@ -431,7 +431,7 @@
 						<td>2 Feb 2022 2.30 pm</td>
 						<td>Elon Musk</td>
 						<td>14 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a></td>
+						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -476,9 +476,11 @@
 					  <form>
 						
 						<div class="mb-3">
-						  
+						<blockquote class="blockquote">
 						  <input type="text" class="form-control" id="recipient-name" placeholder="Search">
+						  <br>
 						  <div id="kt_docs_jstree_checkable"></div>
+							</blockquote>
 						</div>
 					  </form>
 					</div>
@@ -494,7 +496,7 @@
 				  <div class="modal-content">
 					<div class="modal-header">
 						
-					  <h5 class="modal-title" id="exampleModalLabel">Permission</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">New Role</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="hljs-wrapper">
@@ -548,6 +550,7 @@
 				<blockquote class="blockquote">
 						
 						<input type="text" class="form-control" id="recipient-name" placeholder="Search">
+						<br>
 						<div id="kt_docs_jstree_checkable2"></div>
 					</blockquote>
 					
@@ -576,31 +579,100 @@
 					</div>
 				  </div>
 				</div>
-			  </div>	  
+			  </div>
+			  
+			  <!--  -->
+			  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+						
+					  <h5 class="modal-title" id="exampleModalLabel">Edit Role</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="hljs-wrapper">
+					 
+						
+						<div class="mb-3">
+						  
+						<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#default-tab-3" data-bs-toggle="tab" class="nav-link active">
+						<span class="d-sm-none" >Tab 1</span>
+						<span class="d-sm-block d-none">Role name</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#default-tab-4" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 2</span>
+						<span class="d-sm-block d-none">Permissions</span>
+					</a>
+				</li>
+				
+			</ul>
+
+			<div class="tab-content panel m-0 rounded-0 p-3">
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade active show" id="default-tab-3">
+				<blockquote class="blockquote">
+						<p>Role name</p>
+						<input type="text" class="form-control" id="recipient-name">
+					</blockquote>
+					<div class="form-check">
+  						<input class="form-check-input" type="checkbox" id="checkbox1"  />
+  						<label class="form-check-label" for="checkbox1">Default</label>
+						<small> - Assign to new users by default. </small>
+					</div>	
+					<br>
+					<div class="note note-warning note-with-end-icon mb-2">
+						<div class="note-content text-end">
+							
+							<p>
+							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
+							</p>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade" id="default-tab-4">
+				<blockquote class="blockquote">
+						
+						<input type="text" class="form-control" id="recipient-name" placeholder="Search">
+						<br>
+						<div id="kt_docs_jstree_checkable3"></div>
+					</blockquote>
+					
+					<br>
+					<div class="note note-warning note-with-end-icon mb-2">
+						<div class="note-content text-end">
+							
+							<p>
+							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
+							</p>
+						</div>
+						
+					</div>
+				</div>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				
+				<!-- END tab-pane -->
+			</div>
+						</div>
+						<div id="dvPreview"></div>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Update</button>
+					</div>
+				  </div>
+				</div>
+			  </div>	
 		 		  	  
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-	</div>
+			 
 	<!-- END row -->
 		</div>
 		<!-- END #content -->
@@ -659,6 +731,7 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<script src="/assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
 	<script>
   $('#data-table-default').DataTable({
     responsive: true
@@ -675,68 +748,60 @@
             "responsive": false
         },
         'data': [{
-                "text": "Pages",
+                "text": "HRIS",
                 "children": [{
-                    "text": "initially selected",
-                    "state": {
-                        "selected": true
-                    }
-                }, {
-                    "text": "Employee Spouses",
-                    "icon" : "fa fa-folder text-default",
-                    "state": { "opened": true},
-                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
-                },{
-                    "text": "Designation",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
-                },{
-                    "text": "Job Grade",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
-                },{
-                    "text": "Unit",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
-                },{
-                    "text": "Department",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
-                },{
-                    "text": "Races",
-                },{
-                    "text": "Religions",
-                },{
-                    "text": "Branches",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
-                },{
-                    "text": "custom icon",
-                    "icon": "fa fa-warning text-waring"
-                }, {
-                    "text": "disabled node",
-                    "icon": "fa fa-check text-success",
-                    "state": {
-                        "disabled": true
-                    }
+					"text": "Employee Info", 
+					"state": { "selected": false },
+					"children": [{"text" : "Register Employee"}, {"text" : "Update Employee", },{"text" : "Terminate Employee", },{"text" : "Activate Employee", }],
                 }]
-            },
-            "Others"
+            },{
+                "text": "TSR",
+                "children": [{
+					"text": "My Timesheet",
+					"children": [{ "text": "Create Event" }]
+						},{
+				"text" : "Timesheet Report",
+				"children": [{"text": "Approve TSR"},{"text": "Decline TSR"},{"text": "View TSR"}]
+			}]
+            },{
+                "text": "Attendance",
+                "children": [{
+					"text": "My Attendance",
+					"children": [{ "text": "View Action Log" }]
+						},{
+				"text" : "Attendance Info",
+			}]
+            },{
+                "text": "Leave",
+                "children": [{
+					"text": "Leave Approval", 
+					"state": { "selected": false },
+					"children": [{"text" : "Approve Leave"}, {"text" : "Reject Leave", },{"text" : "View Leave", }],
+                }]
+            },{
+                "text": "Project",
+                "children": [{
+					"text": "Project Info", 
+					"state": { "selected": false },
+					"children": [{"text" : "Register Project"}, {"text" : "View Project", },{"text" : "Update Status", },{"text" : "Update Project", }],
+                },{
+				"text" : "Project Approval",
+				"children": [{"text": "View Project Request"},{"text": "Approve Project Request"},{"text": "Reject Project Request"}]
+			}]
+            },{
+                "text": "Claim",
+                "children": [{
+					"text": "Claim Approval", 
+					"state": { "selected": false },
+					"children": [{"text" : "Approve Claim"}, {"text" : "Recommend Claim" },{"text" : "Check Claim"},{"text" : "Amend Claim"},{"text" : "Cancel Claim"}],
+                }]
+            },{
+                "text": "Settings",
+                "children": [{"text": "General Settings"},{"text": "Timesheet Settings"},{"text": "Leave Settings"}]
+            },{
+                "text": "Reporting",
+                "children": [{"text": "TSR"},{"text": "Attendance"},{"text": "Leave"},{"text": "Project"},{"text": "Claim"}]
+            }
         ]
     },
     "types" : {
@@ -757,68 +822,60 @@
             "responsive": false
         },
         'data': [{
-                "text": "Pages",
+                "text": "HRIS",
                 "children": [{
-                    "text": "initially selected",
-                    "state": {
-                        "selected": true
-                    }
-                }, {
-                    "text": "Employee Spouses",
-                    "icon" : "fa fa-folder text-default",
-                    "state": { "opened": true},
-                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
-                },{
-                    "text": "Designation",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
-                },{
-                    "text": "Job Grade",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
-                },{
-                    "text": "Unit",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
-                },{
-                    "text": "Department",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
-                },{
-                    "text": "Races",
-                },{
-                    "text": "Religions",
-                },{
-                    "text": "Branches",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
-                },{
-                    "text": "custom icon",
-                    "icon": "fa fa-warning text-waring"
-                }, {
-                    "text": "disabled node",
-                    "icon": "fa fa-check text-success",
-                    "state": {
-                        "disabled": true
-                    }
+					"text": "Employee Info", 
+					"state": { "selected": false },
+					"children": [{"text" : "Register Employee"}, {"text" : "Update Employee", },{"text" : "Terminate Employee", },{"text" : "Activate Employee", }],
                 }]
-            },
-            "Others"
+            },{
+                "text": "TSR",
+                "children": [{
+					"text": "My Timesheet",
+					"children": [{ "text": "Create Event" }]
+						},{
+				"text" : "Timesheet Report",
+				"children": [{"text": "Approve TSR"},{"text": "Decline TSR"},{"text": "View TSR"}]
+			}]
+            },{
+                "text": "Attendance",
+                "children": [{
+					"text": "My Attendance",
+					"children": [{ "text": "View Action Log" }]
+						},{
+				"text" : "Attendance Info",
+			}]
+            },{
+                "text": "Leave",
+                "children": [{
+					"text": "Leave Approval", 
+					"state": { "selected": false },
+					"children": [{"text" : "Approve Leave"}, {"text" : "Reject Leave", },{"text" : "View Leave", }],
+                }]
+            },{
+                "text": "Project",
+                "children": [{
+					"text": "Project Info", 
+					"state": { "selected": false },
+					"children": [{"text" : "Register Project"}, {"text" : "View Project", },{"text" : "Update Status", },{"text" : "Update Project", }],
+                },{
+				"text" : "Project Approval",
+				"children": [{"text": "View Project Request"},{"text": "Approve Project Request"},{"text": "Reject Project Request"}]
+			}]
+            },{
+                "text": "Claim",
+                "children": [{
+					"text": "Claim Approval", 
+					"state": { "selected": false },
+					"children": [{"text" : "Approve Claim"}, {"text" : "Recommend Claim" },{"text" : "Check Claim"},{"text" : "Amend Claim"},{"text" : "Cancel Claim"}],
+                }]
+            },{
+                "text": "Settings",
+                "children": [{"text": "General Settings"},{"text": "Timesheet Settings"},{"text": "Leave Settings"}]
+            },{
+                "text": "Reporting",
+                "children": [{"text": "TSR"},{"text": "Attendance"},{"text": "Leave"},{"text": "Project"},{"text": "Claim"}]
+            }
         ]
     },
     "types" : {
@@ -831,3 +888,78 @@
     },
 });
 </script>
+<script>
+ $('#kt_docs_jstree_checkable3').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false
+        },
+        'data': [{
+                "text": "HRIS",
+                "children": [{
+					"text": "Employee Info", 
+					"state": { "selected": false },
+					"children": [{"text" : "Register Employee"}, {"text" : "Update Employee", },{"text" : "Terminate Employee", },{"text" : "Activate Employee", }],
+                }]
+            },{
+                "text": "TSR",
+                "children": [{
+					"text": "My Timesheet",
+					"children": [{ "text": "Create Event" }]
+						},{
+				"text" : "Timesheet Report",
+				"children": [{"text": "Approve TSR"},{"text": "Decline TSR"},{"text": "View TSR"}]
+			}]
+            },{
+                "text": "Attendance",
+                "children": [{
+					"text": "My Attendance",
+					"children": [{ "text": "View Action Log" }]
+						},{
+				"text" : "Attendance Info",
+			}]
+            },{
+                "text": "Leave",
+                "children": [{
+					"text": "Leave Approval", 
+					"state": { "selected": false },
+					"children": [{"text" : "Approve Leave"}, {"text" : "Reject Leave", },{"text" : "View Leave", }],
+                }]
+            },{
+                "text": "Project",
+                "children": [{
+					"text": "Project Info", 
+					"state": { "selected": false },
+					"children": [{"text" : "Register Project"}, {"text" : "View Project", },{"text" : "Update Status", },{"text" : "Update Project", }],
+                },{
+				"text" : "Project Approval",
+				"children": [{"text": "View Project Request"},{"text": "Approve Project Request"},{"text": "Reject Project Request"}]
+			}]
+            },{
+                "text": "Claim",
+                "children": [{
+					"text": "Claim Approval", 
+					"state": { "selected": false },
+					"children": [{"text" : "Approve Claim"}, {"text" : "Recommend Claim" },{"text" : "Check Claim"},{"text" : "Amend Claim"},{"text" : "Cancel Claim"}],
+                }]
+            },{
+                "text": "Settings",
+                "children": [{"text": "General Settings"},{"text": "Timesheet Settings"},{"text": "Leave Settings"}]
+            },{
+                "text": "Reporting",
+                "children": [{"text": "TSR"},{"text": "Attendance"},{"text": "Leave"},{"text": "Project"},{"text": "Claim"}]
+            }
+        ]
+    },
+    "types" : {
+        "default" : {
+            "icon" : "fa fa-folder text-warning"
+        },
+        "file" : {
+            "icon" : "fa fa-file  text-warning"
+        }
+    },
+});
+</script>
+
