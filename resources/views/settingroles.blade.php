@@ -395,7 +395,7 @@
 		<div class="panel-heading">
 		<div class="col-md-6">
 		<p>
-			<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-inverse d-block"><i class="fa fa-list"></i> Select Permissions</a>
+			
 		</p><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">+ New Role</a>
 		</div>
 		
@@ -465,32 +465,7 @@
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Permission</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						<blockquote class="blockquote">
-						  <input type="text" class="form-control" id="recipient-name" placeholder="Search">
-						  <br>
-						  <div id="kt_docs_jstree_checkable"></div>
-							</blockquote>
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
+	
 	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
@@ -739,81 +714,6 @@
 </script>
 
 	
-
-<script>
- $('#kt_docs_jstree_checkable').jstree({
-    'plugins': ["wholerow", "checkbox", "types"],
-    'core': {
-        "themes" : {
-            "responsive": false
-        },
-        'data': [{
-                "text": "HRIS",
-                "children": [{
-					"text": "Employee Info", 
-					"state": { "selected": false },
-					"children": [{"text" : "Register Employee"}, {"text" : "Update Employee", },{"text" : "Terminate Employee", },{"text" : "Activate Employee", }],
-                }]
-            },{
-                "text": "TSR",
-                "children": [{
-					"text": "My Timesheet",
-					"children": [{ "text": "Create Event" }]
-						},{
-				"text" : "Timesheet Report",
-				"children": [{"text": "Approve TSR"},{"text": "Decline TSR"},{"text": "View TSR"}]
-			}]
-            },{
-                "text": "Attendance",
-                "children": [{
-					"text": "My Attendance",
-					"children": [{ "text": "View Action Log" }]
-						},{
-				"text" : "Attendance Info",
-			}]
-            },{
-                "text": "Leave",
-                "children": [{
-					"text": "Leave Approval", 
-					"state": { "selected": false },
-					"children": [{"text" : "Approve Leave"}, {"text" : "Reject Leave", },{"text" : "View Leave", }],
-                }]
-            },{
-                "text": "Project",
-                "children": [{
-					"text": "Project Info", 
-					"state": { "selected": false },
-					"children": [{"text" : "Register Project"}, {"text" : "View Project", },{"text" : "Update Status", },{"text" : "Update Project", }],
-                },{
-				"text" : "Project Approval",
-				"children": [{"text": "View Project Request"},{"text": "Approve Project Request"},{"text": "Reject Project Request"}]
-			}]
-            },{
-                "text": "Claim",
-                "children": [{
-					"text": "Claim Approval", 
-					"state": { "selected": false },
-					"children": [{"text" : "Approve Claim"}, {"text" : "Recommend Claim" },{"text" : "Check Claim"},{"text" : "Amend Claim"},{"text" : "Cancel Claim"}],
-                }]
-            },{
-                "text": "Settings",
-                "children": [{"text": "General Settings"},{"text": "Timesheet Settings"},{"text": "Leave Settings"}]
-            },{
-                "text": "Reporting",
-                "children": [{"text": "TSR"},{"text": "Attendance"},{"text": "Leave"},{"text": "Project"},{"text": "Claim"}]
-            }
-        ]
-    },
-    "types" : {
-        "default" : {
-            "icon" : "fa fa-folder text-warning"
-        },
-        "file" : {
-            "icon" : "fa fa-file  text-warning"
-        }
-    },
-});
-</script>
 <script>
  $('#kt_docs_jstree_checkable2').jstree({
     'plugins': ["wholerow", "checkbox", "types"],
