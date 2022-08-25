@@ -403,11 +403,11 @@
 		<!-- END panel-heading -->
 		<!-- BEGIN panel-body -->
 		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
-				<thead>
+		<table id="data-table-default" class="table table-striped table-bordered align-middle">
+  				<thead>
 					<tr>
 						<th width="1%"></th>
-						<th width="1%" data-orderable="false"></th>
+						<th width="1%" data-orderable="false">Action</th>
 						<th class="text-nowrap">Employee ID</th>
 						<th class="text-nowrap">First Name</th>
 						<th class="text-nowrap">Last name</th>
@@ -898,28 +898,24 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
+	
+<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="/assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
 <script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
+
 	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/moment/min/moment.min.js"></script>
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -929,8 +925,14 @@
 
 	
 	<script>
-$('#data-table-default').DataTable({
-    responsive: true
+  $('#data-table-default').DataTable({
+    responsive: true,
+    dom: '<"row"<"col-sm-5"B><"col-sm-7"fr>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+    buttons: [
+      { extend: 'csv', className: 'btn-sm' },
+      { extend: 'pdf', className: 'btn-sm' },
+
+    ],
   });
 </script>
 <script>
