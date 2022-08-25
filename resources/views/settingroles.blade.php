@@ -9,12 +9,17 @@
 	<meta content="" name="description" />
 	<meta content="" name="author" />
 	
+	
     <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
+
+
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href=".../assets/dist/themes/default/style.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 	<!-- ================== END core-css ================== -->
 	
 	<!-- ================== BEGIN page-css ================== -->
@@ -23,6 +28,13 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+	<!-- required files -->
+	<link href="../assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/jstree/dist/jstree.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -398,6 +410,24 @@
 			
 		</p><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">+ New Role</a>
 		</div>
+		<div class="modal fade" id="modal-dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Select Permissions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body"></div>
+				<div id="kt_docs_jstree_checkable"></div>
+			
+						<div class="modal-footer">
+							<a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal">Close</a>
+							<a href="javascript:;" class="btn btn-success">Action</a>
+						</div>
+
+				</div>
+			</div>
+			</div>
 		
 			<h4 class="panel-title"></h4>
 			
@@ -664,6 +694,7 @@
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+	<script src="../assets/dist/jstree.min.js"></script>
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
@@ -704,11 +735,100 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<<<<<<< HEAD:resources/views/roles.blade.php
+
+	
+	<script>
+ $('#kt_docs_jstree_checkable').jstree({
+    'plugins': ["wholerow", "checkbox", "types"],
+    'core': {
+        "themes" : {
+            "responsive": false
+        },
+        'data': [{
+                "text": "Pages",
+                "children": [{
+                    "text": "initially selected",
+                    "state": {
+                        "selected": true
+                    }
+                }, {
+                    "text": "Employee Spouses",
+                    "icon" : "fa fa-folder text-default",
+                    "state": { "opened": true},
+                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
+                },{
+                    "text": "Designation",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
+                },{
+                    "text": "Job Grade",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
+                },{
+                    "text": "Unit",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
+                },{
+                    "text": "Department",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
+                },{
+                    "text": "Races",
+                },{
+                    "text": "Religions",
+                },{
+                    "text": "Branches",
+                    "icon" : "fa fa-folder text-default",
+                    "state": {
+                        "opened": true
+                    },
+                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
+                },{
+                    "text": "custom icon",
+                    "icon": "fa fa-warning text-waring"
+                }, {
+                    "text": "disabled node",
+                    "icon": "fa fa-check text-success",
+                    "state": {
+                        "disabled": true
+                    }
+                }]
+            },
+            "Others"
+        ]
+    },
+    "types" : {
+        "default" : {
+            "icon" : "fa fa-folder text-warning"
+        },
+        "file" : {
+            "icon" : "fa fa-file  text-warning"
+        }
+    },
+});
+</script>
+	<script>
+$('#data-table-default').DataTable({
+=======
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<script src="/assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
 	<script>
   $('#data-table-default').DataTable({
+>>>>>>> main:resources/views/settingroles.blade.php
     responsive: true
   });
 </script>
@@ -863,3 +983,39 @@
 });
 </script>
 
+<<<<<<< HEAD:resources/views/roles.blade.php
+<script language="javascript" type="text/javascript">
+window.onload = function () {
+    var fileUpload = document.getElementById("fileupload");
+    fileUpload.onchange = function () {
+        if (typeof (FileReader) != "undefined") {
+            var dvPreview = document.getElementById("dvPreview");
+            dvPreview.innerHTML = "";
+            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+            for (var i = 0; i < fileUpload.files.length; i++) {
+                var file = fileUpload.files[i];
+                if (regex.test(file.name.toLowerCase())) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var img = document.createElement("IMG");
+                        img.height = "100";
+                        img.width = "100";
+                        img.src = e.target.result;
+                        dvPreview.appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                } else {
+                    alert(file.name + " is not a valid image file.");
+                    dvPreview.innerHTML = "";
+                    return false;
+                }
+            }
+        } else {
+            alert("This browser does not support HTML5 FileReader.");
+        }
+    }
+};
+</script>	
+
+=======
+>>>>>>> main:resources/views/settingroles.blade.php
