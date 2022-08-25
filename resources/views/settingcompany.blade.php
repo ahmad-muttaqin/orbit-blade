@@ -428,7 +428,7 @@
 						<td>2 Feb 2022 2.30 pm</td>
 						<td>Elon Musk</td>
 						<td>14 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -495,22 +495,21 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-						
-					  <h5 class="modal-title" id="exampleModalLabel">Permission</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">Update Company</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-					 
+					  <form>
 						
 						<div class="mb-3">
-						  
-						
-
-			<div class="tab-content panel m-0 rounded-0 p-3">
-				<!-- BEGIN tab-pane -->
-				
+						  <label>Company Code* </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
-					  
+						<div class="mb-3">
+						  <label>Company Name* </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+					  </form>
 					</div>
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -518,42 +517,7 @@
 					</div>
 				  </div>
 				</div>
-			  </div>	  
-		 		  	  
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-	</div>
-	<!-- END row -->
-		</div>
-		<!-- END #content -->
-		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
-		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- END scroll-top-btn -->
-	</div>
+			  </div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
