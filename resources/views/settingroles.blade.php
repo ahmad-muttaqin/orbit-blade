@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Roles</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -396,7 +396,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">HRIS | Employee Information</h1>
+	<h1 class="page-header">Roles <small>| Use roles to group permissions. </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -407,8 +407,8 @@
 		<div class="panel-heading">
 		<div class="col-md-6">
 		<p>
-			<a href="#modal-dialog" class="btn btn-primary" data-bs-toggle="modal">Select Permissions</a>
-		</p><a href="#" class="btn btn-primary">+ New Role</a>
+			<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-inverse d-block"><i class="fa fa-list"></i> Select Permissions</a>
+		</p><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">+ New Role</a>
 		</div>
 		<div class="modal fade" id="modal-dialog">
 			<div class="modal-dialog">
@@ -442,14 +442,13 @@
 			<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%"></th>
-						<th width="1%" data-orderable="false"></th>
+						<th width="1%">NO</th>
 						<th class="text-nowrap">Role Name</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
 						<th class="text-nowrap">Modified By</th>
 						<th class="text-nowrap">Modified Time</th>
-						
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
 
 
 					</tr>
@@ -457,50 +456,32 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							
-							 
-							<a href="javascript:;" class="dropdown-item">Edit Employee </a>
-							<div class="dropdown-divider"></div>
-							<a href="register_v3.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item"> Terminate Employee</a>
-						<td>TNG001</td>
+						<td>Admin <span class="badge bg-primary rounded-pill">Static</span><span class="badge bg-dark rounded-pill">Default</span></td>
 						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
+						<td>2 Feb 2022 2.30 pm</td>
+						<td>Elon Musk</td>
+						<td>14 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a></td>
 						
 					</tr>
 					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
+					<td width="1%" class="fw-bold text-dark">2</td>
+						<td>Administrator<span class="badge bg-primary rounded-pill">Static</span><span class="badge bg-dark rounded-pill">Default</span></td>
+						<td>Rosyam</td>
+						<td>3 Feb 2022 2.30 pm</td>
+						<td>Bill Gates</td>
+						<td>12 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> 
 						
 					</tr>
 					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
+					<td width="1%" class="fw-bold text-dark">3</td>
+						<td>Intern</td>
+						<td>abu</td>
+						<td>5 Feb 2022 2.30 pm</td>
+						<td>Maisarah</td>
+						<td>10 Feb 2022 2.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						
 					</tr>
 					
@@ -518,59 +499,113 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Terminate Employment</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">Permission</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
 						
-						<div class="mb-5">
-						  <label for="recipient-name" class="col-form-label">Employee ID</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  <label for="recipient-name" class="col-form-label">Employee Name</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  <label for="recipient-name" class="col-form-label">Employee Email</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  <label for="recipient-name" class="col-form-label">Report To</label>
-						  <input type="text" class="form-control" id="recipient-name">
+						<div class="mb-3">
 						  
+						  <input type="text" class="form-control" id="recipient-name" placeholder="Search">
 						</div>
-						<div class="mb-5">
-						<label for="recipient-name" class="col-form-label">Terminate Date*</label>
-						<input type="text" class="form-control" id="datepicker-terminatedate" placeholder="dd/mm/yyyy" />
-						  <label for="recipient-name" class="col-form-label">Terminate Type*</label>
-						  <select class="form-select">
-								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-								<option value="1" label="Deceased">Deceased</option>
-								<option value="2" label="Dismissed">Dismissed</option>
-								<option value="3" label="Laid-Off">Laid-Off</option>
-								<option value="4" label="Contract not renewed">Contract not renewed</option>
-								<option value="2" label="Resign-company requested">Resign-company requested</option>
-								<option value="2" label="resign">resign</option>
-								<option value="2" label="Retirement">Retirement</option>
-								<option value="2" label="Others">Others</option>
-
-
-								
-								
-								</select>
-						  <label for="recipient-name" class="col-form-label">Remarks</label>
-						  <textarea class="form-control" rows="3"></textarea>
-
-						  <label for="recipient-name" class="col-form-label">Attachments</label><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
-						  <br>
-						
-					</div><div id="dvPreview"></div>
+					  </form>
+					</div>
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Submit</button>
+					  <button type="button" class="btn btn-primary">Save</button>
 					</div>
 				  </div>
 				</div>
 			  </div>
-			  
-			  
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+						
+					  <h5 class="modal-title" id="exampleModalLabel">Permission</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="hljs-wrapper">
+					 
+						
+						<div class="mb-3">
+						  
+						<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
+						<span class="d-sm-none" >Tab 1</span>
+						<span class="d-sm-block d-none">Role name</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 2</span>
+						<span class="d-sm-block d-none">Permissions</span>
+					</a>
+				</li>
+				
+			</ul>
+
+			<div class="tab-content panel m-0 rounded-0 p-3">
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade active show" id="default-tab-1">
+				<blockquote class="blockquote">
+						<p>Role name</p>
+						<input type="text" class="form-control" id="recipient-name">
+					</blockquote>
+					<div class="form-check">
+  						<input class="form-check-input" type="checkbox" id="checkbox1"  />
+  						<label class="form-check-label" for="checkbox1">Default</label>
+						<small> - Assign to new users by default. </small>
+					</div>	
+					<br>
+					<div class="note note-warning note-with-end-icon mb-2">
+						<div class="note-content text-end">
+							
+							<p>
+							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
+							</p>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade" id="default-tab-2">
+				<blockquote class="blockquote">
+						
+						<input type="text" class="form-control" id="recipient-name" placeholder="Search">
+					</blockquote>
+					
+					<br>
+					<div class="note note-warning note-with-end-icon mb-2">
+						<div class="note-content text-end">
+							
+							<p>
+							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
+							</p>
+						</div>
+						
+					</div>
+				</div>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				
+				<!-- END tab-pane -->
+			</div>
+						</div>
+					  
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save</button>
+					</div>
+				  </div>
+				</div>
+			  </div>	  
+		 		  	  
 	<div class="row">
 		<!-- BEGIN col-4 -->
 		<div class="col-xl-4 col-lg-6">
@@ -651,6 +686,7 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<<<<<<< HEAD:resources/views/roles.blade.php
 
 	
 	<script>
@@ -737,18 +773,34 @@
 </script>
 	<script>
 $('#data-table-default').DataTable({
+=======
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<script>
+  $('#data-table-default').DataTable({
+>>>>>>> main:resources/views/settingroles.blade.php
     responsive: true
   });
 </script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
+<!--
+	<script>
+  $("#jstree-checkable").jstree({
+    "plugins": ["wholerow", "checkbox", "types"],
+    "core": {
+      "themes": { "responsive": false },    
+      "data": [{
+        "text": "Same but with checkboxes",
+        "children": [{
+          "text": "initially selected",
+          "state": { "selected": true }
+        }, {
+          "text": "Folder 1"
+
+	
+	The template to display files available for upload -->
 
 
+<<<<<<< HEAD:resources/views/roles.blade.php
 <script language="javascript" type="text/javascript">
 window.onload = function () {
     var fileUpload = document.getElementById("fileupload");
@@ -782,3 +834,5 @@ window.onload = function () {
 };
 </script>	
 
+=======
+>>>>>>> main:resources/views/settingroles.blade.php

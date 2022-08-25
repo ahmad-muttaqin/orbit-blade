@@ -47,8 +47,36 @@ Route::get('/setting', function () {
     return view('setting');
 });
 Route::get('/setting/roles', function () {
-    return view('roles');
+    return view('settingroles');
 });
+Route::get('/setting/company', function () {
+    return view('settingcompany');
+});
+Route::get('/setting/department', function () {
+    return view('settingdepartment');
+});
+Route::get('/setting/unit', function () {
+    return view('settingunit');
+});
+Route::get('/setting/branch', function () {
+    return view('settingbranch');
+});
+Route::get('/setting/designation', function () {
+    return view('settingdesignation');
+});
+Route::get('/setting/jobgrade', function () {
+    return view('settingjobgrade');
+});
+Route::get('/setting/sop', function () {
+    return view('settingsop');
+});
+Route::get('/setting/news', function () {
+    return view('settingnews');
+});
+
+
+
+
 
 
 Route::get('/hris/myprofile', function () {
