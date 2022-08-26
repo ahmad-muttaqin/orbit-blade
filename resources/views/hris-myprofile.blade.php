@@ -832,7 +832,7 @@
 																			</div>
 																			<div class="col-sm-6">
 																				<label for="expirydate" class="form-label">Expiry Date</label>
-																				<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																				<input type="date" id="expirydate1" class="form-control" aria-describedby="expirydate">
 																			</div>
 																		</div>
 																	</div>
@@ -852,7 +852,7 @@
 																		<div class="row">
 																			<div class="col-sm-6">
 																				<label for="dob" class="form-label">Date of Birth</label>
-																				<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																				<input type="date" id="dob1" class="form-control" aria-describedby="dob">
 																			</div>
 																			<div class="col-sm-6">
 																				<label for="age" class="form-label">Age</label>
@@ -864,7 +864,7 @@
 																<div class="row p-2">
 																	<div class="col-sm-6">
 																		<label for="dom" class="form-label">Date of Marriage</label>
-																		<input type="date" id="dom" class="form-control" aria-describedby="dom">
+																		<input type="date" id="dom1" class="form-control" aria-describedby="dom">
 																	</div>
 																	<div class="col-sm-6">
 																		<div class="row">
@@ -934,7 +934,7 @@
 																	</div>
 																	<div class="col-sm-6">
 																		<label for="date-joined-company" class="form-label">Date Joined Company</label>
-																		<input type="date" id="date-joined-company" class="form-control" aria-describedby="date-joined-company">
+																		<input type="date" id="djc" class="form-control" aria-describedby="date-joined-company">
 																	</div>
 																</div>
 																<div class="row p-2">
@@ -1236,9 +1236,9 @@
 														<td>
 															<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 															<div class="dropdown-menu">
-																<a href="javascript:;" class="dropdown-item">Edit</a>
+																<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#update-children" class="dropdown-item">Edit</a>
 																<div class="dropdown-divider"></div>
-																<a href="javascript:;" class="dropdown-item">View</a>
+																<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#view-children" class="dropdown-item">View</a>
 																<div class="dropdown-divider"></div>
 																<a href="javascript:;" class="dropdown-item">Delete</a>
 															</div>
@@ -1275,9 +1275,9 @@
 																<td>
 																	<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 																		<div class="dropdown-menu">
-																			<a href="javascript:;" class="dropdown-item">Edit</a>
+																			<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#update-parent" class="dropdown-item">Edit</a>
 																			<div class="dropdown-divider"></div>
-																			<a href="javascript:;" class="dropdown-item">View</a>
+																			<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#view-parent" class="dropdown-item">View</a>
 																			<div class="dropdown-divider"></div>
 																			<a href="javascript:;" class="dropdown-item">Delete</a>
 																		</div>
@@ -1313,9 +1313,9 @@
 																<td>
 																	<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 																	<div class="dropdown-menu">
-																		<a href="javascript:;" class="dropdown-item">Edit</a>
+																		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#update-sibling" class="dropdown-item">Edit</a>
 																		<div class="dropdown-divider"></div>
-																		<a href="javascript:;" class="dropdown-item">View</a>
+																		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#view-sibling" class="dropdown-item">View</a>
 																		<div class="dropdown-divider"></div>
 																		<a href="javascript:;" class="dropdown-item">Delete</a>
 																	</div>
@@ -1381,7 +1381,7 @@
 																	<div class="row">
 																		<div class="col-sm-6">
 																			<label for="dob" class="form-label">Date of Birth</label>
-																			<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																			<input type="date" id="dob3" class="form-control" aria-describedby="dob">
 																		</div>
 																		<div class="col-sm-6">
 																			<label for="age" class="form-label">Age</label>
@@ -1399,7 +1399,7 @@
 																		</div>
 																		<div class="col-sm-6">
 																			<label for="expirydate" class="form-label">Expiry Date</label>
-																			<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																			<input type="date" id="ed3" class="form-control" aria-describedby="expirydate">
 																		</div>
 																	</div>
 																</div>
@@ -1459,7 +1459,260 @@
 												</div>
 											</div>
 										</div>
+										<!-- Modal Add Children -->
+										<div class="modal fade" id="update-children" tabindex="-1" aria-labelledby="update-children" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+													<h5 class="modal-title" id="update-children">Update Children Details</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="firstname" class="form-label">First Name*</label>
+																	<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Last Name*</label>
+																	<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col">
+																	<label for="fullname" class="form-label">Full Name</label>
+																	<input type="text" id="fullname" class="form-control" aria-describedby="fullname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<div class="row">
+																		<div class="col-sm-6 ">
+																			<div class="form-check form-switch align-right">
+																				<input class="form-check-input" type="checkbox" id="citizen">
+																				<label class="form-check-label" for="citizen">
+																					  Non-Citizen
+																				</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<label for="lastname" class="form-label">Identification Number*</label>
+																			<input type="text" value="0108393019299" id="lastname" class="form-control" aria-describedby="lastname">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<label for="dob" class="form-label">Date of Birth</label>
+																			<input type="date" id="dob4" class="form-control" aria-describedby="dob">
+																		</div>
+																		<div class="col-sm-6">
+																			<label for="age" class="form-label">Age</label>
+																			<input type="text" id="age" class="form-control" aria-describedby="age">
+																		</div>
+																	</div>										
+																</div>													
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<label for="passport" class="form-label">Passport Number</label>
+																			<input type="text" id="passport" class="form-control" aria-describedby="passport">
+																		</div>
+																		<div class="col-sm-6">
+																			<label for="expirydate" class="form-label">Expiry Date</label>
+																			<input type="date" id="ed4" class="form-control" aria-describedby="expirydate">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<label for="issuing-country" class="form-label">Issuing Country</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="gender" class="form-label">Gender</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>				
+																</div>
+																<div class="col-sm-6">
+																	<label for="issuing-country" class="form-label">Marital Status</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+															<h4 class="mt-3 p-2">Education Information</h4>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="education-type" class="form-label">Education Type*</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>													</div>
+																<div class="col-sm-6">
+																	<label for="education-level" class="form-label">Education Level*</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col">
+																	<label for="institution-name" class="form-label">Institution Name</label>
+																	<input type="text" id="institution-name" class="form-control" aria-describedby="institution-name">
+																</div>
+															</div>
+															<h4 class="mt-3 p-2">File upload</h4>
+															<div class="row p-2">
+																<div class="col">
+																	<input type="file" class="form-control">
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn btn-primary">Save</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- view -->
+										<div class="modal fade" id="view-children" tabindex="-1" aria-labelledby="view-children" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+													<h5 class="modal-title" id="view-children">View Children Details</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="firstname" class="form-label">First Name*</label>
+																	<input type="text" id="firstname" readonly class="form-control" aria-describedby="firstname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Last Name*</label>
+																	<input type="text" id="lastname" readonly class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col">
+																	<label for="fullname" class="form-label">Full Name</label>
+																	<input type="text" id="fullname" readonly class="form-control" aria-describedby="fullname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<div class="row">
+																		<div class="col-sm-6 ">
+																			<div class="form-check form-switch align-right">
+																				<input class="form-check-input" type="checkbox" id="citizen" disabled >
+																				<label class="form-check-label" for="citizen">
+																					  Non-Citizen
+																				</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<label for="lastname" class="form-label">Identification Number*</label>
+																			<input type="text" value="0108393019299" id="lastname" readonly class="form-control" aria-describedby="lastname">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<label for="dob" class="form-label">Date of Birth</label>
+																			<input type="date" id="dob" readonly class="form-control" aria-describedby="dob">
+																		</div>
+																		<div class="col-sm-6">
+																			<label for="age" class="form-label">Age</label>
+																			<input type="text" id="age" readonly class="form-control" aria-describedby="age">
+																		</div>
+																	</div>										
+																</div>													
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<label for="passport" class="form-label">Passport Number</label>
+																			<input type="text" id="passport" readonly class="form-control" aria-describedby="passport">
+																		</div>
+																		<div class="col-sm-6">
+																			<label for="expirydate" class="form-label">Expiry Date</label>
+																			<input type="date" id="expirydate" readonly class="form-control" aria-describedby="expirydate">
+																		</div>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<label for="issuing-country" class="form-label">Issuing Country</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="gender" class="form-label">Gender</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose "></option>	
+																		<option value="0" label="Male" selected="selected"></option>
+																		<option value="0" label="Female"></option>														
+																	</select>				
+																</div>
+																<div class="col-sm-6">
+																	<label for="issuing-country" class="form-label">Marital Status</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+															<h4 class="mt-3 p-2">Education Information</h4>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="education-type" class="form-label">Education Type*</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>													</div>
+																<div class="col-sm-6">
+																	<label for="education-level" class="form-label">Education Level*</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col">
+																	<label for="institution-name" class="form-label">Institution Name</label>
+																	<input type="text" readonly class="form-control" id="institution-name" class="form-control" aria-describedby="institution-name">
+																</div>
+															</div>
+															<h4 class="mt-3 p-2">File upload</h4>
+															<div class="row p-2">
+																<div class="col">
+																	<input type="file"  class="form-control">
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+														
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
+									
 										<!-- Modal Add Parent -->
 										<div class="modal fade" id="add-parent" tabindex="-1" aria-labelledby="add-parent" aria-hidden="true">
 											<div class="modal-dialog modal-lg">
@@ -1483,7 +1736,7 @@
 															<div class="row p-2">
 																<div class="col-sm-6">
 																	<label for="dob" class="form-label">Date of Birth*</label>
-																	<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																	<input type="date" id="dob5" class="form-control" aria-describedby="dob">
 																</div>
 																<div class="col-sm-6">
 																	<label for="age" class="form-label">Gender*</label>
@@ -1561,6 +1814,205 @@
 												</div>
 											</div>
 										</div>
+
+										<div class="modal fade" id="update-parent" tabindex="-1" aria-labelledby="update-parent" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+													<h5 class="modal-title" id="update-parent">Update Parent Details</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="firstname" class="form-label">First Name*</label>
+																	<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Last Name*</label>
+																	<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="dob" class="form-label">Date of Birth*</label>
+																	<input type="date" id="dob6" class="form-control" aria-describedby="dob">
+																</div>
+																<div class="col-sm-6">
+																	<label for="age" class="form-label">Gender*</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>																	
+																</div>												
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="passport" class="form-label">Contact Number</label>
+																	<input type="text" id="passport" class="form-control" aria-describedby="passport">
+																</div>
+																<div class="col-sm-6">
+																	<label for="expirydate" class="form-label">Relationship</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>	
+																</div>
+															</div>
+															<h4 class="mt-3 p-2">Home Address</h4>
+															<div class="row p-2">
+																<div class="col-sm-6">														
+																	<div class="form-check form-switch align-right">	
+																		<input class="form-check-input" type="checkbox" id="same-address">
+																		<label class="form-check-label" for="same-address">
+																			  Same as permanent address
+																		</label>
+																	</div>
+																</div>															
+															</div>
+															<div class="row p-2">		
+																<div class="col-sm-6">
+																	<label for="address-1" class="form-label">Address 1*</label>
+																	<input type="text" id="address-1" class="form-control" aria-describedby="address-1">
+																</div>
+																<div class="col-sm-6">
+																	<label for="address-2" class="form-label">Address 2</label>
+																	<input type="text" id="address-2" class="form-control" aria-describedby="address-2">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="postcode" class="form-label">Postcode*</label>
+																	<input type="text" id="postcode" class="form-control" aria-describedby="postcode">
+																</div>
+																<div class="col-sm-6">
+																	<label for="city" class="form-label">City*</label>
+																	<input type="text" id="City" class="form-control" aria-describedby="City">													
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="state" class="form-label">State*</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+																<div class="col-sm-6">
+																	<label for="country" class="form-label">Country</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+					
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn btn-primary">Save</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- view parent-->
+										<div class="modal fade" id="view-parent" tabindex="-1" aria-labelledby="view-parent" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+													<h5 class="modal-title" id="view-parent">View Parent Details</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="firstname" class="form-label">First Name*</label>
+																	<input type="text" id="firstname" readonly  class="form-control" aria-describedby="firstname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Last Name*</label>
+																	<input type="text" id="lastname" readonly class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="dob" class="form-label">Date of Birth*</label>
+																	<input type="date" id="dob" readonly class="form-control" aria-describedby="dob">
+																</div>
+																<div class="col-sm-6">
+																	<label for="age" class="form-label">Gender*</label>
+																	
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>																	
+																</div>												
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="passport" class="form-label">Contact Number</label>
+																	<input type="text" id="passport" readonly class="form-control" aria-describedby="passport">
+																</div>
+																<div class="col-sm-6">
+																	<label for="expirydate" class="form-label">Relationship</label>
+																	<select class="form-select" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>	
+																</div>
+															</div>
+															<h4 class="mt-3 p-2">Home Address</h4>
+															<div class="row p-2">
+																<div class="col-sm-6">														
+																	<div class="form-check form-switch align-right">	
+																		<input class="form-check-input" type="checkbox" id="same-address" disabled>
+																		<label class="form-check-label" for="same-address">
+																			  Same as permanent address
+																		</label>
+																	</div>
+																</div>															
+															</div>
+															<div class="row p-2">		
+																<div class="col-sm-6">
+																	<label for="address-1" class="form-label">Address 1*</label>
+																	<input type="text" id="address-1" readonly class="form-control" aria-describedby="address-1">
+																</div>
+																<div class="col-sm-6">
+																	<label for="address-2" class="form-label">Address 2</label>
+																	<input type="text" id="address-2" readonly class="form-control" aria-describedby="address-2">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="postcode" class="form-label">Postcode*</label>
+																	<input type="text" id="postcode" readonly class="form-control" aria-describedby="postcode">
+																</div>
+																<div class="col-sm-6">
+																	<label for="city" class="form-label">City*</label>
+																	<input type="text" id="City" readonly class="form-control" aria-describedby="City">												
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="state" class="form-label">State*</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+																<div class="col-sm-6">
+																	<label for="country" class="form-label">Country</label>
+																	<select class="form-select"aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+					
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									
 										<!-- Modal Add Siblings -->
 										<div class="modal fade" id="add-sibling" tabindex="-1" aria-labelledby="add-sibling" aria-hidden="true">
@@ -1585,7 +2037,7 @@
 															<div class="row p-2">
 																<div class="col-sm-6">
 																	<label for="dob" class="form-label">Date of Birth</label>
-																	<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																	<input type="date" id="dob7" class="form-control" aria-describedby="dob">
 																</div>
 																<div class="col-sm-6">
 																	<label for="gender" class="form-label">Gender</label>
@@ -1663,7 +2115,208 @@
 												</div>
 											</div>
 										</div>
+
+										<!--update silbing -->
+										<div class="modal fade" id="update-sibling" tabindex="-1" aria-labelledby="update-sibling" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+													<h5 class="modal-title" id="update-parent">Update Sibling Information</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="firstname" class="form-label">First Name*</label>
+																	<input type="text" id="firstname" class="form-control" aria-describedby="firstname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Last Name*</label>
+																	<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="dob" class="form-label">Date of Birth</label>
+																	<input type="date" id="dob8" class="form-control" aria-describedby="dob">
+																</div>
+																<div class="col-sm-6">
+																	<label for="gender" class="form-label">Gender</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>				
+																</div>
+															</div>	
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Contact Number*</label>
+																	<input type="text" value="XXXXXXXXXX" id="lastname" class="form-control" aria-describedby="lastname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Relationship</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>		
+																</div>
+															</div>		
+															<h4 class="mt-3 p-2">Home Address</h4>
+															<div class="row p-2">
+																<div class="col-sm-6">														
+																	<div class="form-check form-switch align-right">
+																		<input class="form-check-input" type="checkbox" id="same-address">
+																		<label class="form-check-label" for="same-address">
+																			  Same as permanent address
+																		</label>
+																	</div>
+																</div>															
+															</div>
+															<div class="row p-2">		
+																<div class="col-sm-6">
+																	<label for="address-1" class="form-label">Address 1*</label>
+																	<input type="text" id="address-1" class="form-control" aria-describedby="address-1">
+																</div>
+																<div class="col-sm-6">
+																	<label for="address-2" class="form-label">Address 2</label>
+																	<input type="text" id="address-2" class="form-control" aria-describedby="address-2">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="postcode" class="form-label">Postcode*</label>
+																	<input type="text" id="postcode" class="form-control" aria-describedby="postcode">
+																</div>
+																<div class="col-sm-6">
+																	<label for="city" class="form-label">City*</label>
+																	<input type="text" id="City" class="form-control" aria-describedby="City">													
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="state" class="form-label">State*</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+																<div class="col-sm-6">
+																	<label for="country" class="form-label">Country</label>
+																	<select class="form-select">
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+					
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn btn-primary">Save</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									  
+										<!-- view sibling -->
+
+										<div class="modal fade" id="view-sibling" tabindex="-1" aria-labelledby="view-sibling" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+													<h5 class="modal-title" id="view-parent">View Sibling Information</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														<form>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="firstname" class="form-label">First Name*</label>
+																	<input type="text" id="firstname" readonly class="form-control" aria-describedby="firstname">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Last Name*</label>
+																	<input type="text" id="lastname" readonly class="form-control" aria-describedby="lastname">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="dob" class="form-label">Date of Birth</label>
+																	<input type="date" id="dob" readonly class="form-control" aria-describedby="dob">
+																</div>
+																<div class="col-sm-6">
+																	<label for="gender" class="form-label">Gender</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>				
+																</div>
+															</div>	
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Contact Number*</label>
+																	<input type="text" value="XXXXXXXXXX" readonly id="ContactNumber" class="form-control" aria-describedby="ContactNumber">
+																</div>
+																<div class="col-sm-6">
+																	<label for="lastname" class="form-label">Relationship</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>		
+																</div>
+															</div>		
+															<h4 class="mt-3 p-2">Home Address</h4>
+															<div class="row p-2">
+																<div class="col-sm-6">														
+																	<div class="form-check form-switch align-right">
+																		<input class="form-check-input" type="checkbox" id="same-address" aria-label="Disabled select example" disabled>
+																		<label class="form-check-label" for="same-address">
+																			  Same as permanent address
+																		</label>
+																	</div>
+																</div>															
+															</div>
+															<div class="row p-2">		
+																<div class="col-sm-6">
+																	<label for="address-1" class="form-label">Address 1*</label>
+																	<input type="text" id="address-1" readonly class="form-control" aria-describedby="address-1">
+																</div>
+																<div class="col-sm-6">
+																	<label for="address-2" class="form-label">Address 2</label>
+																	<input type="text" id="address-2" readonly class="form-control" aria-describedby="address-2">
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="postcode" class="form-label">Postcode*</label>
+																	<input type="text" id="postcode" readonly class="form-control" aria-describedby="postcode">
+																</div>
+																<div class="col-sm-6">
+																	<label for="city" class="form-label">City*</label>
+																	<input type="text" id="City" readonly class="form-control" aria-describedby="City">													
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-sm-6">
+																	<label for="state" class="form-label">State*</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+																<div class="col-sm-6">
+																	<label for="country" class="form-label">Country</label>
+																	<select class="form-select" aria-label="Disabled select example" disabled>
+																		<option value="0" label="Please Choose " selected="selected"></option>													
+																	</select>											
+																</div>
+															</div>
+					
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+														<button type="button" class="btn btn-primary">Save</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
 									</div>
 							</div>
 						</div>
@@ -1927,6 +2580,91 @@
 		  responsive: true
 		});
 	  </script>
+	
+	<script>
+  $("#expirydate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#expirydate1").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob1").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dom1").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#djc").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob3").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#ed3").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob4").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#ed4").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob5").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob6").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob7").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#dob8").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
 	<!-- ================== END page-js ================== -->
 </body>
 
