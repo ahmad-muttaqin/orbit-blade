@@ -822,7 +822,6 @@
 </script>
 
 
-
 	
 <script>
  $('#kt_docs_jstree_checkable2').jstree({
@@ -971,4 +970,9 @@
         }
     },
 });
+</script>
+<script>
+  $('#data-table-default').DataTable({
+    responsive: true
+  });
 </script>
