@@ -18,7 +18,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href=".../assets/dist/themes/default/style.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 	<!-- ================== END core-css ================== -->
 	
@@ -735,6 +734,9 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<script src="/assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
 
 
 	
@@ -820,7 +822,11 @@
     },
 });
 </script>
-
+<script>
+  $('#data-table-default').DataTable({
+    responsive: true
+  });
+</script>
 
 	
 <script>
@@ -970,9 +976,4 @@
         }
     },
 });
-</script>
-<script>
-  $('#data-table-default').DataTable({
-    responsive: true
-  });
 </script>
