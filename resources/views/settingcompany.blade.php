@@ -482,6 +482,8 @@
 						  <label>Company Name* </label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
+
+						
 					  </form>
 					</div>
 					<div class="modal-footer">
@@ -565,22 +567,10 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<!--
-	<script>
-  $("#jstree-checkable").jstree({
-    "plugins": ["wholerow", "checkbox", "types"],
-    "core": {
-      "themes": { "responsive": false },    
-      "data": [{
-        "text": "Same but with checkboxes",
-        "children": [{
-          "text": "initially selected",
-          "state": { "selected": true }
-        }, {
-          "text": "Folder 1"
-
-	
-	The template to display files available for upload -->
+	<!-- required files -->
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
 
 <script>

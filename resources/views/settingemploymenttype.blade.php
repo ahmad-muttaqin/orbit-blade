@@ -506,7 +506,7 @@
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Employment Type Name* </label><br><br>
+						  <label>Employment Type* </label><br><br>
 						  <input type="text" class="form-control" id="recipient-name" placeholder="">
 						</div>
 					  </form>

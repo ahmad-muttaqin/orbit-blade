@@ -664,7 +664,8 @@
 	
 	<script>
 $('#data-table-default').DataTable({
-    responsive: true
+    lengthMenu: [5, 10],
+	responsive: true
   });
 </script>
 <script>
