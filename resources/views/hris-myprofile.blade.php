@@ -393,7 +393,7 @@
 					<div class="card">
 						<div class="card-body">
 							<div class="profile-pic m-3">
-								<img src="../assets/img/user/user-13.jpg" width="100px" class="rounded d-block" alt="Profile Picture">
+								<img src="../assets/img/user/user-13.jpg" width="100px" class="rounded d-block" alt="Profile Picture" data-bs-toggle="modal" data-bs-target="#modal-dialog">
 								<h4 class="mt-3 mb-0 fw-bold">Aqil Anwar</h4>
 								<p>0108</p>
 								<span class="badge bg-success d-block p-2">Active</span>
@@ -409,7 +409,29 @@
 									<span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-square fa-fw me-2"></i></span>
 									<input type="text" class="form-control bg-white" value="0136519887" aria-label="Username" aria-describedby="basic-addon1" readonly>
 								</div>
-
+								<div class="modal fade" id="modal-dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title">Update Profile Picture</h4>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+										</div>
+										<div class="modal-body">
+										<div class="col-sm-6">
+												
+												<input class="form-check-input" type="checkbox" id="Gravatar" />
+  												<label class="form-check-label" for="Gravatar">Use Gravatar profile picture</label><br><br>
+												<label for="marriage-cert" class="form-label">Profile Picture</label>
+												<input type="file" id="marriage-cert" class="form-control" aria-describedby="dob">
+												</div>
+										</div>
+										<div class="modal-footer">
+											<a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal">Close</a>
+											<a href="javascript:;" class="btn btn-primary">Save</a>
+										</div>
+										</div>
+									</div>
+									</div>
 								<!-- Tabs navs -->
 								<div class="align-items-start mt-3">
 									<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -2590,9 +2612,9 @@
 												<td>
 													<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 														<div class="dropdown-menu">
-															<a href="javascript:;" class="dropdown-item">Edit</a>
+															<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#update-vehicle" class="dropdown-item">Edit</a>
 															<div class="dropdown-divider"></div>
-															<a href="javascript:;" class="dropdown-item">View</a>
+															<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#view-vehicle" class="dropdown-item">View</a>
 															<div class="dropdown-divider"></div>
 															<a href="javascript:;" class="dropdown-item">Delete</a>
 														</div>
@@ -2608,7 +2630,7 @@
 								<div class="modal-dialog">
 									<div class="modal-content">
 										<div class="modal-header">
-										<h5 class="modal-title" id="add-parent">New Vehicle</h5>
+										<h5 class="modal-title" id="add-vehicle">New Vehicle</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 										</div>
 										<div class="modal-body">
@@ -2631,7 +2653,67 @@
 										</div>
 									</div>
 								</div>
-							</div>	
+							</div>
+							
+							<!-- update vehicle -->
+							<div class="modal fade" id="update-vehicle" tabindex="-1" aria-labelledby="update-vehicle" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h5 class="modal-title" id="add-vehicle">Update Vehicle</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="row p-2">
+													<label for="firstname" class="form-label">Vehicle Type*</label>
+													<select class="form-select">
+														<option value="0" label="Please Choose " selected="selected"></option>													
+													</select>	
+												</div>
+												<div class="row p-2">
+													<label for="lastname" class="form-label">Plate Number*</label>
+													<input type="text" id="lastname" class="form-control" aria-describedby="lastname">
+												</div>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+											<button type="button" class="btn btn-primary">Save</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- view vehicle-->
+							<div class="modal fade" id="view-vehicle" tabindex="-1" aria-labelledby="view-vehicle" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h5 class="modal-title" id="view-vehicle">View Vehicle</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="row p-2">
+													<label for="firstname" class="form-label">Vehicle Type*</label>
+													<select class="form-select" aria-label="Disabled select example" disabled >
+														<option value="0" label="Please Choose " selected="selected"></option>													
+													</select>	
+												</div>
+												<div class="row p-2">
+													<label for="lastname" class="form-label">Plate Number*</label>
+													<input type="text" id="lastname" readonly class="form-control" aria-describedby="lastname">
+												</div>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+											
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="tab-pane fade" id="v-pills-eleave" role="tabpanel" aria-labelledby="v-pills-eleave-tab">
 							<div class="card">

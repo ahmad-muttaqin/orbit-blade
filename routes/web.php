@@ -73,6 +73,10 @@ Route::get('/setting/sop', function () {
 Route::get('/setting/news', function () {
     return view('settingnews');
 });
+Route::get('/setting/employmenttype', function () {
+    return view('settingemploymenttype');
+});
+
 
 
 
@@ -98,6 +102,8 @@ Route::get('/org/orgchart', function () {
 Route::get('/org/dept-tree', function () {
     return view('departmenttree');
 });
+
+
 
 
 
