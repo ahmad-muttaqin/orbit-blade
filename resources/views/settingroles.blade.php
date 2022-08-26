@@ -735,7 +735,7 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-<<<<<<< HEAD:resources/views/roles.blade.php
+
 
 	
 	<script>
@@ -820,18 +820,8 @@
     },
 });
 </script>
-	<script>
-$('#data-table-default').DataTable({
-=======
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<script src="/assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
-	<script>
-  $('#data-table-default').DataTable({
->>>>>>> main:resources/views/settingroles.blade.php
-    responsive: true
-  });
-</script>
+
+
 
 	
 <script>
@@ -982,40 +972,3 @@ $('#data-table-default').DataTable({
     },
 });
 </script>
-
-<<<<<<< HEAD:resources/views/roles.blade.php
-<script language="javascript" type="text/javascript">
-window.onload = function () {
-    var fileUpload = document.getElementById("fileupload");
-    fileUpload.onchange = function () {
-        if (typeof (FileReader) != "undefined") {
-            var dvPreview = document.getElementById("dvPreview");
-            dvPreview.innerHTML = "";
-            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
-            for (var i = 0; i < fileUpload.files.length; i++) {
-                var file = fileUpload.files[i];
-                if (regex.test(file.name.toLowerCase())) {
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        var img = document.createElement("IMG");
-                        img.height = "100";
-                        img.width = "100";
-                        img.src = e.target.result;
-                        dvPreview.appendChild(img);
-                    }
-                    reader.readAsDataURL(file);
-                } else {
-                    alert(file.name + " is not a valid image file.");
-                    dvPreview.innerHTML = "";
-                    return false;
-                }
-            }
-        } else {
-            alert("This browser does not support HTML5 FileReader.");
-        }
-    }
-};
-</script>	
-
-=======
->>>>>>> main:resources/views/settingroles.blade.php
