@@ -775,6 +775,10 @@ var elm = document.getElementById('switchery-default');
 </script>
 <script>
   $('#data-table-default2').DataTable({
-    responsive: true
+    fixedHeader: {
+      header: true,
+      headerOffset: $('#header').height()
+    },
+	fixedColumns:   true,
   });
 </script>
