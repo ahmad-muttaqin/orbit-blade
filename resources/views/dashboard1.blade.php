@@ -284,12 +284,13 @@
 	</div>
 	<!-- END row -->
 	
+	
 	<!-- BEGIN row -->
 	<div class="row">
 		<!-- BEGIN col-8 -->
 		<div class="col-xl-8">
 			<!-- BEGIN panel -->
-			<div class="panel panel-inverse" data-sortable-id="index-1">
+			<div class="panel panel-inverse">
 				<div class="panel-heading">
 					<h4 class="panel-title">Income Statistics</h4>
 					<div class="btn-group btn-group-toggle my-n1" data-toggle="buttons">	
@@ -301,7 +302,7 @@
 
 						<input type="radio" name="options" class="btn-check" id="option2" />
 						<label class="btn btn-success btn-xs" for="option2">Monthly</label>
-</div>
+					</div>
 				</div>
 				<div class="panel-body pe-1">
 					<div id="interactive-chart" class="h-300px"></div>
@@ -382,6 +383,85 @@
 			
 		<!-- END col-4 -->
 	</div>
+	<div class="row">
+		<div class="panel panel-inverse" style="width: 50%">
+				<div class="panel-heading mt-10px">
+					<h4 class="panel-title text-center">Subscription expiring tenants</h4>
+					</div>
+					<table id="data-table-default" class="table table-hover table-striped table-bordered align-middle text-center">
+						<thead>
+							<tr>
+								<th class="text-nowrap">Tenant Name</th>
+								<th class="text-nowrap">Remaining Day</th>
+							</tr>
+						</thead>
+						<tr class="odd gradeX">
+							
+								<td>Shell</td>
+								<td>50</td>
+							</tr>
+					</table>
+
+							
+					<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-center">
+											<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+											</li>
+										</ul>
+										</nav>
+				</div>
+				<div class="panel panel-inverse" style="width: 50%">
+				<div class="panel-heading mt-10px">
+					<h4 class="panel-title text-center">Recent tenants</h4>
+					</div>
+					<table id="data-table-default" class="table table-hover table-striped table-bordered align-middle text-center">
+						<thead>
+							<tr>
+								<th class="text-nowrap">Tenant Name</th>
+								<th class="text-nowrap">Creation Time</th>
+							</tr>
+						</thead>
+						<tr class="odd gradeX">
+							
+								<td>Petronas</td>
+								<td>08:30 AM</td>
+							</tr>
+					</table>
+
+							
+					<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-center">
+											<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+											</li>
+										</ul>
+										</nav>
+				</div>
+		</div>
+		</div>
+		
+
 	<!-- END row -->
 		</div>
 		<!-- END #content -->
