@@ -76,7 +76,9 @@ Route::get('/setting/news', function () {
 Route::get('/setting/employmenttype', function () {
     return view('settingemploymenttype');
 });
-
+Route::get('/hris/editprofile', function () {
+    return view('hris-editprofile');
+});
 
 
 
