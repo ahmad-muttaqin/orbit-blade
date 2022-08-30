@@ -178,11 +178,17 @@
 						<div class="menu-submenu">
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+										<div class="menu-icon">
+										<i class="fa fa-address-card text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">My Profile </div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-indent text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">Employee Information</div>
 								</a>
 							</div>
@@ -204,17 +210,26 @@
 						<div class="menu-submenu">
 							<div class="menu-item">
 								<a href="ui_general.html" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-calendar-check text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">My Timesheets</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-receipt text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">Timesheets Report</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Realtime Activities</div>
+								<div class="menu-icon">
+										<i class="fa fa-window-restore text-gray"></i>
+									</div>
+									<div class="menu-text text-gray">Realtime Activity</div>
 								</a>
 							</div>
 							
@@ -235,11 +250,17 @@
 						<div class="menu-submenu">
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-bell text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">My Attendance</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-list-check text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">Attendance Information</div>
 								</a>
 							</div>
@@ -261,11 +282,17 @@
 						<div class="menu-submenu">
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-clipboard text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">My Leave</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-list-check text-gray"></i>
+									</div>
 									<div class="menu-text text-gray">Leave Approval</div>
 								</a>
 							</div>
@@ -287,22 +314,63 @@
 						<div class="menu-submenu">
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-share-nodes text-gray"></i>
+							</div>
 									<div class="menu-text text-gray">Customer</i></div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-book text-gray"></i>
+							</div>
 									<div class="menu-text text-gray">Project Information</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-clipboard-list text-gray"></i>
+							</div>
 									<div class="menu-text text-gray">My Project</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-code-pull-request text-gray"></i>
+							</div>
 									<div class="menu-text text-gray">Project Request</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="menu-item has-sub">
+						<a href="#" class="menu-link">
+							<div class="menu-icon">
+								<i class="fa fa-file-lines text-gray"></i>
+							</div>
+							<div class="menu-text text-gray">E-Claim</div> 
+							<div class="menu-caret text-gray"></div>
+						</a>
+						<div class="menu-submenu">
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-envelope-open-text text-gray"></i>
+									</div>
+									<div class="menu-text text-gray">My Claim</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-list-check text-gray"></i>
+									</div>
+									<div class="menu-text text-gray">Claim Approval</div>
 								</a>
 							</div>
 							
@@ -318,9 +386,35 @@
 								<i class="fa fa-user-group text-gray"></i>
 							</div>
 							<div class="menu-text text-gray">Organization</div> 
-							
+							<div class="menu-caret text-gray"></div>
 						</a>
-						
+						<div class="menu-submenu">
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-rectangle-list text-gray"></i>
+							</div>
+									<div class="menu-text text-gray">Phone Directory</i></div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-users text-gray"></i>
+							</div>
+									<div class="menu-text text-gray">Organization Chart</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-folder-tree text-gray"></i>
+							</div>
+									<div class="menu-text text-gray">Department Tree</div>
+								</a>
+							</div>
+							
+						</div>
 					</div>
 
 					<!-- End Sidenav Content Orbit -->
@@ -337,12 +431,26 @@
 						<div class="menu-submenu">
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-file-signature text-gray"></i>
+							</div>
 									<div class="menu-text text-gray">Timesheet</i></div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-user-check text-gray"></i>
+							</div>
 									<div class="menu-text text-gray">E-Attendance</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+								<i class="fa fa-user-minus text-gray"></i>
+							</div>
+									<div class="menu-text text-gray">E-Leave</div>
 								</a>
 							</div>
 							
@@ -451,7 +559,7 @@
 					<div class="col-lg-6 panel panel-inverse">
 
 						<div class="panel-heading mt-15px">
-							<h4 class="panel-title"> <i class="fas fa-message fa-fw"></i>Latest Announcement</h4>
+							<h4 class="panel-title"> <i class="fas fa-message fa-fw me-3"></i>Latest Announcement</h4>
 						</div>
 
 						<table class="table table-hover table-bordered table-responsive padding-auto">
@@ -515,7 +623,7 @@
 					</div>
 					<div class="col-lg-6 panel panel-inverse">
 							<div class="panel-heading mt-45px">
-								<h4 class="panel-title"><i class="fas fa-rectangle-list fa-fw"></i>Events</h4>
+								<h4 class="panel-title"><i class="fas fa-rectangle-list fa-fw me-3"></i>Events</h4>
 							</div>
 
 							<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -598,8 +706,8 @@
 
 							
 	<div class="panel panel-inverse">
-		<div class="panel-heading mt-45px">
-			<h4 class="panel-title"><i class="fas fa-rectangle-list fa-fw"></i>Activity Log</h4>
+		<div class="panel-heading mt-10px">
+			<h4 class="panel-title"><i class="fas fa-rectangle-list fa-fw me-3"></i>Activity Log</h4>
 			</div>
 			<table id="data-table-default" class="table table-hover table-striped table-bordered align-middle ">
 				<thead>
@@ -746,11 +854,11 @@
 var xValues = ["Annual Leave", "Emergency Leave", "Sick Leave", "Unpaid Leave", "Maternity Leave"];
 var yValues = [55, 49, 44, 24, 15];
 var barColors = [
-  "#FFFC33",
-  "#FF3333",
-  "#7AFF33",
-  "#334FFF",
-  "#FF33F0"
+  "#FFA600",
+  "#57167E",
+  "#9B3192",
+  "#EA5F89",
+  "#F7B7A3"
 ];
 
 new Chart("myChart", {
