@@ -83,7 +83,9 @@ Route::get('/setting/employmenttype', function () {
 Route::get('/hris/editprofile', function () {
     return view('hris-editprofile');
 });
-
+Route::get('/hris/edit', function () {
+    return view('hrisedit');
+});
 
 
 
