@@ -21,6 +21,9 @@
 	<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+
+
 </head>
 <body>
 	<!-- BEGIN #loader -->
@@ -460,6 +463,9 @@
 				</div>
 		</div>
 		</div>
+		
+
+
 		
 
 	<!-- END row -->

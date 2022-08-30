@@ -71,7 +71,11 @@ Route::get('/setting/sop', function () {
     return view('settingsop');
 });
 Route::get('/setting/news', function () {
-    return view('settingnews');
+    return view('projectregcust');
+});
+
+Route::get('/project', function () {
+    return view('projectregcustomers');
 });
 Route::get('/setting/employmenttype', function () {
     return view('settingemploymenttype');
