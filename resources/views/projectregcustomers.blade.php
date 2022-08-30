@@ -433,9 +433,9 @@
 					<tbody>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
 						<td><div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-</div></td>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div></td>
 						<td>LEMBAGA HASIL DALAM NEGERI</td>
 						<td>PEJABAT PENGARAH NEGERI
                                 TINGKAT 15 KANAN, BLOK 9
@@ -449,7 +449,10 @@
 						
 					</tr>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><input type="checkbox" id="switchery-default" checked /></td>
+						<td><div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div></td>
 						<td>JABATAN PENERANGAN MALAYSIA</td>
 						<td>Aras 5, 8 -16 dan 18, Kompleks Kementerian Komunikasi dan Multimedia
                             Lot 4G9, Persiaran Perdana, Presint 4
@@ -461,7 +464,10 @@
 						
 					</tr>
 						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><input type="checkbox" id="switchery-default" checked /></td>
+						<td><div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div></td>
 						<td>JABATAN PERDANA MENTERI</td>
 						<td>Prime Minister's Department
                             Setia Perdana 8, Kompleks Setia Perdana,
@@ -475,7 +481,10 @@
 							
 					</tr>
                     <td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><input type="checkbox" id="switchery-default" checked /></td>
+						<td><div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div></td>
 						<td>JABATAN PENGANGKUTAN JALAN MALAYSIA</td>
 						<td>Jabatan Pengangkutan Jalan Malaysia
                             Kementerian Pengangkutan Malaysia
@@ -489,7 +498,10 @@
 							
 					</tr>
                     <td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><input type="checkbox" id="switchery-default" checked /></td>
+						<td><div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div></td>
 						<td>JABATAN KERJA RAYA</td>
 						<td>Ibu Pejabat,
                             Jabatan Kerja Raya,
@@ -502,7 +514,10 @@
 							
 					</tr>
                     <td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><input type="checkbox" id="switchery-default" checked /></td>
+						<td><div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div></td>
 						<td>JABATAN BOMBA DAN PENYELAMAT MALAYSIA</td>
 						<td>Ibu Pejabat, Jabatan Bomba Dan Penyelamat WP, Jln Maharajalela, 56048 Kuala Lumpur</td>
 						<td>603-8892 7600</td>
@@ -527,27 +542,27 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New News</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">Customer Details</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 					  <form>
 						
 						<div class="mb-3">
-						  <label>Title</label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						  <label>Customer Name</label><br><br>
+						  <input type="text" class="form-control" id="customer-name" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Source URL</label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						  <label>Address</label><br><br>
+						  <input type="text" class="form-control" id="customer-address" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>Content </label><br><br>
-						  <textarea class="form-control" rows="3"></textarea>
+						  <label>Phone Number </label><br><br>
+						  <input type="text" class="form-control" id="customer-phoneno" placeholder="">
 						</div>
 						<div class="mb-3">
-						  <label>File Upload </label><br><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
+						  <label>Email</label><br><br>
+						  <input type="text" class="form-control" id="customer-email" placeholder="">
 						</div>
 					  </form>
 					</div>
