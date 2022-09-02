@@ -22,7 +22,7 @@
 	</div>
 
     <div class="text-center mt-40px">
-  <img src="../assets/img/logo/orbit-logo-5.png" class="rounded " style="width:300px; min-width:300px" alt="...">
+    <img src="{{env('ASSETS_URL')}}/img/logo/orbit-logo-5.png" class="img-fluid" style="margin:9vh"  alt="Orbit Logo">
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 g-4 mt-50px">
@@ -45,7 +45,7 @@
                                 </div>
               </div>
                     <div class="mb-15px">
-                        <button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Basic Package</button>
+                    <a href="/registerTenant/basic"><button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Basic Package</button></a>
                     </div>
     </div>
   </div>
@@ -69,7 +69,7 @@
                                 </div>
               </div>
                     <div class="mb-15px">
-                        <button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Gold Package</button>
+                    <a href="/registerTenant/gold"><button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Gold Package</button></a>
                     </div>
     </div>
   </div>
@@ -98,7 +98,7 @@
                                 </div>
               </div>
                     <div class="mb-15px">
-                        <button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Platinum Package</button>
+                    <a href="/registerTenant/premium"><button type="submit" class="btn btn-primary d-block h-45px w-100 btn-lg fs-14px">Platinum Package</button></a>
                     </div>
         </div>
     </div>
