@@ -78,6 +78,10 @@ Route::get('/project', function () {
     return view('projectregcustomers');
 });
 
+Route::get('/project/myproject', function () {
+    return view('projectregmyproject');
+});
+
 
 
 

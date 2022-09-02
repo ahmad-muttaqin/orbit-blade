@@ -396,7 +396,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Project Registration <small>| Customers</small></h1>
+	<h1 class="page-header">Project Registration <small>| My Project</small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -405,126 +405,55 @@
 		<!-- BEGIN panel-heading -->
 		
 		<div class="panel-heading">
-		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ Add Customer</a>
-		</div>
-		
-			<h4 class="panel-title"></h4>
-			
-			
-		</div>
 		<!-- END panel-heading -->
 		<!-- BEGIN panel-body -->
 		<div class="panel-body">
 		<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
-						<th class="text-nowrap">Status</th>
 						<th class="text-nowrap">Customer Name</th>
-						<th class="text-nowrap">Address</th>
-						<th class="text-nowrap">Phone Number</th>
-						<th class="text-nowrap">Email</th>
-						<th class="text-nowrap">Added By</th>
-						<th class="text-nowrap">Added Time</th>
+						<th class="text-nowrap">Project Code</th>
+						<th class="text-nowrap">Project Name</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Project Manager</th>
+						<th class="text-nowrap">Contract End Date</th>
+						<th class="text-nowrap">Location</th>
 					</tr>
 				</thead>
 					<tbody>
-						<td><a href="javascript:;" class="btn btn-outline-green ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa fa-pencil-alt"></i></a></td>
-						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="myFunction()" />
-                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div></td>
-						<td>LEMBAGA HASIL DALAM NEGERI</td>
-						<td>PEJABAT PENGARAH NEGERI
-                                TINGKAT 15 KANAN, BLOK 9
-                                KOMPLEKS BANGUNAN KERAJAAN
-                                JALAN TUANKU ABDUL HALIM
-                                50600 KUALA LUMPUR</td>
-						<td>01666623234</td>
-						<td>lhdn@gmail.com</td>
-						<td>Shira</td>
-						<td>01 Feb 2021 4.30 pm</td>
-						
-					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a></td>
-						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div></td>
-						<td>JABATAN PENERANGAN MALAYSIA</td>
-						<td>Aras 5, 8 -16 dan 18, Kompleks Kementerian Komunikasi dan Multimedia
-                            Lot 4G9, Persiaran Perdana, Presint 4
-                            62100, Putrajaya, Malaysia</td>
-						<td>603-8911 3440</td>
-						<td>jpgm@gmail.com</td>
-						<td>Nabila</td>
-						<td>19 Feb 2021 4.30 pm</td>
-						
-					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a></td>
-						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div></td>
 						<td>JABATAN PERDANA MENTERI</td>
-						<td>Prime Minister's Department
-                            Setia Perdana 8, Kompleks Setia Perdana,
-                            Federal Government Administrative Centre,
-                            62502 Putrajaya,
-                            Malaysia.</td>
-						<td>603-8000 8000</td>
-						<td>jpm@gmail.com</td>
-						<td>Hassan</td>
-						<td>18 Feb 2021 4.30 pm</td>
-							
+						<td>JPM1234</td>
+						<td>PC LEASING</td>
+						<td>To maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>01/03/2020</td>
+						<td><a href="#">2</a></td>
 					</tr>
-                    <td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a></td>
-						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div></td>
-						<td>JABATAN PENGANGKUTAN JALAN MALAYSIA</td>
-						<td>Jabatan Pengangkutan Jalan Malaysia
-                            Kementerian Pengangkutan Malaysia
-                            Level 5, No. 26, Jalan Tun Hussein, Presint 4
-                            Pusat Pentadbiran Kerajaan Persekutuan
-                            62100 Putrajaya</td>
-						<td>03 8000 8000</td>
-						<td>jpj@gmail.com</td>
-						<td>Sulaiman</td>
-						<td>18 Feb 2021 4.30 pm</td>
-							
-					</tr>
-                    <td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a> </td>
-						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div></td>
 						<td>JABATAN KERJA RAYA</td>
-						<td>Ibu Pejabat,
-                            Jabatan Kerja Raya,
-                            Jalan Sultan Salahuddin,
-                            50582 Kuala Lumpur.</td>
-						<td>603-26919011</td>
-						<td>jkr@gmail.com</td>
-						<td>Ayub</td>
-						<td>18 Feb 2021 4.30 pm</td>
-							
+						<td>JKR1234</td>
+						<td>PC LEASING</td>
+						<td>To maintenance PC Leasing</td>
+						<td>Syakir</td>
+						<td>01/03/2020</td>
+						<td><a href="#">1</a></td>
 					</tr>
-                    <td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a> </td>
-						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div></td>
-						<td>JABATAN BOMBA DAN PENYELAMAT MALAYSIA</td>
-						<td>Ibu Pejabat, Jabatan Bomba Dan Penyelamat WP, Jln Maharajalela, 56048 Kuala Lumpur</td>
-						<td>603-8892 7600</td>
-						<td>jbpm@gmail.com</td>
-						<td>Khan</td>
-						<td>18 Feb 2021 4.30 pm</td>
-							
+						<td>JABATAN PERKHIDMATAN AWAM</td>
+						<td>JPA1234</td>
+						<td>PC LEASING</td>
+						<td>To maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>01/03/2020</td>
+						<td><a href="#">1</a></td>
 					</tr>
+						<td>EDARAN</td>
+						<td>Orbit0001</td>
+						<td>ORBIT System</td>
+						<td>To develop orbit system</td>
+						<td>Syakir</td>
+						<td>01/03/2020</td>
+						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">2</a></td>
+					</tr>
+						
 				</tbody>
 			</table>
 		</div>
@@ -537,165 +466,32 @@
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">View Assigned Project Location</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-                    <form data-parsley-validate="true">
-						
-						<div class="mb-3">
-						  <label>Customer Name</label><br><br>
-						  <input type="text" class="form-control" id="customer-name" required="true">
-						</div>
-						<div class="mb-3">
-						  <label>Address 1</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="" required="true">
-						</div>
-                        <div class="mb-3">
-						  <label>Address 2</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="" >
-						</div>
-                        <div class="row row-cols-lg-auto g-3 mb-3">
-                            <div class="col-12" style="width:50%">
-                                <label>Postcode</label><br><br>
-                                <input type="text" class="form-control" id="customer-postcode" placeholder="" required="true">
-                            </div>
-
-                            <div class="col-12" style="width:50%">
-                                <label>City</label><br><br>
-                                <input type="text" class="form-control" id="customer-city" placeholder="" required="true">
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                            <label class="mb-3">State</label>
-                                            <select class="form-select" required="true">
-											<option value="0" label="Select State " selected="selected">Select State </option>
-                                            <option value="Johor" label="Johor">Johor</option>
-                                            <option value="Kedah" label="Kedah">Kedah</option>
-                                            <option value="Kelantan" label="Kelantan">Kelantan</option>
-                                            <option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
-                                            <option value="Pahang" label="Pahang">Pahang</option>	
-                                            <option value="Penang" label="Penang">Penang</option>
-                                            <option value="Perak" label="Perak">Perak</option>
-                                            <option value="Perlis" label="Perlis">Perlis</option>
-                                            <option value="Sabah" label="Sabah">Sabah</option>
-                                            <option value="Sarawak" label="Sarawak">Sarawak</option>
-                                            <option value="Selangor" label="Selangor">Selangor</option>
-                                            <option value="Terengganu" label="Terengganu">Terengganu</option>
-                                            <option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
-                                            <option value="Labuan" label="Labuan">Labuan</option>
-                                            <option value="Putrajaya" label="Putrajaya">Putrajaya</option>
-                                            </select>
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                <label>Country</label><br><br>
-                                <input type="text" class="form-control" id="customer-country" placeholder="" required="true">
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                <label>Phone Number</label><br><br>
-                                <input type="text" class="form-control" id="customer-phoneno" placeholder="" required="true">
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                <label>Email</label><br><br>
-                                <input type="text" class="form-control" id="customer-email" placeholder="" required="true">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Save</button>
-                            </div>
-
-					  </form>
-					</div>
-					<!-- <div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-					  <button type="submit" class="btn btn-primary">Save</button>
-					</div> -->
-				  </div>
+							<table id="data-table-default1" class="table table-striped table-bordered align-middle" style="width:100%">
+									<thead>
+										<tr>
+											<th class="text-nowrap">No.</th>
+											<th class="text-nowrap">Location Name</th>
+										</tr>
+									</thead>
+										<tbody>
+											<td>1</td>
+											<td>Putrajaya</td>
+										</tr>	
+									</tbody>
+								</table>
+							
 				</div>
-			  </div>	
-              
-
-<!-- update modal -->
-
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Customer</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-                    <form data-parsley-validate="true">
-						
-						<div class="mb-3">
-						  <label>Customer Name</label><br><br>
-						  <input type="text" class="form-control" id="customer-name" data-parsley-required="true">
-						</div>
-						<div class="mb-3">
-						  <label>Address 1</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="">
-						</div>
-                        <div class="mb-3">
-						  <label>Address 2</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="">
-						</div>
-                        <div class="row row-cols-lg-auto g-3 mb-3">
-                            <div class="col-12" style="width:50%">
-                                <label>Postcode</label><br><br>
-                                <input type="text" class="form-control" id="customer-postcode" placeholder="">
-                            </div>
-
-                            <div class="col-12" style="width:50%">
-                                <label>City</label><br><br>
-                                <input type="text" class="form-control" id="customer-city" placeholder="">
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                            <label class="mb-3">State</label>
-                                            <select class="form-select">
-											<option value="0" label="Select State " selected="selected">Select State </option>
-                                            <option value="Johor" label="Johor">Johor</option>
-                                            <option value="Kedah" label="Kedah">Kedah</option>
-                                            <option value="Kelantan" label="Kelantan">Kelantan</option>
-                                            <option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
-                                            <option value="Pahang" label="Pahang">Pahang</option>	
-                                            <option value="Penang" label="Penang">Penang</option>
-                                            <option value="Perak" label="Perak">Perak</option>
-                                            <option value="Perlis" label="Perlis">Perlis</option>
-                                            <option value="Sabah" label="Sabah">Sabah</option>
-                                            <option value="Sarawak" label="Sarawak">Sarawak</option>
-                                            <option value="Selangor" label="Selangor">Selangor</option>
-                                            <option value="Terengganu" label="Terengganu">Terengganu</option>
-                                            <option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
-                                            <option value="Labuan" label="Labuan">Labuan</option>
-                                            <option value="Putrajaya" label="Putrajaya">Putrajaya</option>
-                                            </select>
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                <label>Country</label><br><br>
-                                <input type="text" class="form-control" id="customer-country" placeholder="">
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                <label>Phone Number</label><br><br>
-                                <input type="text" class="form-control" id="customer-phoneno" placeholder="">
-                            </div>
-                            <div class="col-12" style="width:50%">
-                                <label>Email</label><br><br>
-                                <input type="text" class="form-control" id="customer-email" placeholder="">
-                            </div>
-                        </div>
-						
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-					  <button type="button" class="btn btn-primary">Update</button>
+				<div class="modal-footer">
+					  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
 					</div>
 				  </div>
 				</div>
 			  </div>	
-              
-            
-		 		  	  
+                
 	<div class="row">
 		<!-- BEGIN col-4 -->
 		<div class="col-xl-4 col-lg-6">
@@ -806,3 +602,9 @@ $(document).ready(function () {
     });
 });
     </script>
+
+<script>
+  $('#data-table-default1').DataTable({
+    responsive: true
+  });
+</script>
