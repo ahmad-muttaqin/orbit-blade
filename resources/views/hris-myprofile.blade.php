@@ -3076,6 +3076,7 @@
 												</tbody>
 											</table>	
 										</div>
+										
 										<div class="tab-pane fade" id="default-tab-6">
 												<div class="container">
 													<h4 class="mt-3 mb-3">Parents information</h4>
