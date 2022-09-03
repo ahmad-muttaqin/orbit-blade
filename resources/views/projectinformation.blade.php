@@ -23,6 +23,13 @@
 	<!-- ================== END page-css ================== -->
 </head>
 <body>
+<style>
+    @media screen and (min-width: 1276px) {
+        .modal-dialog {
+          max-width: 1200px; /* New width for default modal */
+        }
+    }
+</style>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
 		<span class="spinner"></span>
@@ -375,13 +382,14 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">HRIS | Policy's & SOP's</h1>
+	<h1 class="page-header">Project Registration | Project Information</h1>
 	
 
 
 	
 
 	<div class="row">
+		
 		<!-- BEGIN col-6 -->
 		<div class="col-xl-15">
 			<!-- BEGIN nav-tabs -->
@@ -389,13 +397,13 @@
 				<li class="nav-item">
 					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
 						<span class="d-sm-none">Tab 1</span>
-						<span class="d-sm-block d-none">Policy's</span>
+						<span class="d-sm-block d-none">Project Information</span>
 					</a>
 				</li>
 				<li class="nav-item">
 					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
 						<span class="d-sm-none">Tab 2</span>
-						<span class="d-sm-block d-none">SOP's</span>
+						<span class="d-sm-block d-none">Project Approval</span>
 					</a>
 				</li>
 				
@@ -405,288 +413,371 @@
 			<div class="tab-content panel m-0 rounded-0 p-3">
 				<!-- BEGIN tab-pane -->
 				<div class="tab-pane fade active show" id="default-tab-1">
-				<h3 class="mt-10px"></i> Policy's List </h3>
-					<div class="panel-heading-btn">
-					<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Policy's</a>
-					</div>
-					<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
-						<th class="text-nowrap">Policy Name</th>
-						<th class="text-nowrap">Document Title</th>
-						<th class="text-nowrap">Description</th>
-						<th class="text-nowrap">Attachment</th>
-						<th class="text-nowrap">Added By</th>
-						<th class="text-nowrap">Added Time</th>
-						<th class="text-nowrap">Modified By</th>
-						<th class="text-nowrap">Modified Time</th>
-						
-
-
-					</tr>
-				</thead>
-					<tbody>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>Infra Policy</td>
-						<td>Policy on Infrastructure Policy</td>
-						<td>This policy</td>
-						<td>Infrapolicy.pdf</td>
-						<td>Zaid</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						<td>Kamal</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						
-					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>IT Policy</td>
-						<td>Policy on IT Policy</td>
-						<td>This policy</td>
-						<td>ITpolicy.pdf</td>
-						<td>Ifwat</td>
-						<td>13 Feb 2021 4.30 pm</td>
-						<td>Rika</td>
-						<td>19 Feb 2021 4.30 pm</td>
-						
-					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>Standard Policy</td>
-						<td>Policy on General Policy</td>
-						<td>This policy govern</td>
-						<td>generalpolicy.pdf</td>
-						<td>Yusuf</td>
-						<td>11 Feb 2021 4.30 pm</td>
-						<td>Kamal</td>
-						<td>18 Feb 2021 4.30 pm</td>
-							
-					</tr>
-					
-					
-					
-					
-				</tbody>
-			</table>
-		</div>
-	
+				<div class="panel-heading">
+				<div class="col-md-6">
+					<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ Register Project</a>
+				</div>
+				
+					<h4 class="panel-title"></h4>
 					
 					
 				</div>
-				<!-- END tab-pane -->
-				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade" id="default-tab-2">
-					<h3 class="mt-10px"></i> SOP's List </h3>
-					<div class="panel-heading-btn">
-					<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">+ New SOP's</a>
-					</div>
-					<div class="panel-body">
-			<table id="data-table-default2" class="table table-striped table-bordered align-middle">
+				<div class="panel-body">
+			<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="10%" data-orderable="false" class="align-middle">Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-						<th class="text-nowrap">SOP Name</th>
-						<th class="text-nowrap">Document Title</th>
-						<th class="text-nowrap">Description</th>
-						<th class="text-nowrap">Attachment</th>
-						<th class="text-nowrap">Added By</th>
-						<th class="text-nowrap">Added Time</th>
-						<th class="text-nowrap">Modified By</th>
-						<th class="text-nowrap">Modified Time</th>
+						<th width="1%" data-orderable="false" class="align-middle">Action</th>
+						<th width="1%">No.</th>
+						<th class="text-nowrap">LOA Date</th>
+						<th class="text-nowrap">Customer Name</th>
+						<th class="text-nowrap">Project Code</th>
+						<th class="text-nowrap">Project Name</th>
+						<th class="text-nowrap">Account Manager</th>
+						<th class="text-nowrap">Contract Value</th>
+						<th class="text-nowrap">Contract Start Date</th>
+						<th class="text-nowrap">Contract End Date</th>
+						<th class="text-nowrap">Status</th>
 						
 
 
 					</tr>
 				</thead>
 				<tbody>
-						<td><a data-bs-toggle="modal" data-bs-target="#exampleModal4" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td>Infra SOP</td>
-						<td>SOP on Infrastructure SOP</td>
-						<td>This SOP govern the following activities</td>
-						<td>InfraSOP.pdf</td>
-						<td>Zaid</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						<td>Kamal</td>
-						<td>14 Feb 2021 4.30 pm</td>
+					<tr class="odd gradeX">
+						<td width="1%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></td>
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>29/09/2020</td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>Adli</td>
+						<td>RM 876543</td>
+						<td>01/03/2020</td>
+						<td>30/08/2020</td>
+						<td>Ongoing</td>
+					</tr>
+						<tr class="even gradeC">
+						<td width="1%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></td>
+						<td width="1%" class="fw-bold text-dark">2</td>
+						<td>29/09/2020</td>
+						<td>Edaran</td>
+						<td>Orbit001</td>
+						<td>ORBIT System</td>
+						<td>Zaki</td>
+						<td>RM 123876543</td>
+						<td>01/03/2020</td>
+						<td>30/12/2020</td>
+						<td>Closed</td>
 						
 					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>	
-						<td>IT SOP</td>
-						<td>SOP on IT SOP</td>
-						<td>This SOP govern the following activities</td>
-						<td>ITSOP.pdf</td>
-						<td>Ifwat</td>
-						<td>13 Feb 2021 4.30 pm</td>
-						<td>Rika</td>
-						<td>19 Feb 2021 4.30 pm</td>
+					<tr class="even gradeC">
+						<td width="1%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></td>
+						<td width="1%" class="fw-bold text-dark">3</td>
+						<td>05/01/2020</td>
+						<td>Edaran</td>
+						<td>Orbit001</td>
+						<td>HRM Sytem</td>
+						<td>Maria</td>
+						<td>RM 12876543</td>
+						<td>09/03/2020</td>
+						<td>30/08/2020</td>
+						<td>Warranty</td>
 						
 					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>	
-						<td>Standard SOP</td>
-						<td>SOP on General Policy</td>
-						<td>This SOP govern the following activities</td>
-						<td>generalSOP.pdf</td>
-						<td>Yusuf</td>
-						<td>11 Feb 2021 4.30 pm</td>
-						<td>Kamal</td>
-						<td>18 Feb 2021 4.30 pm</td>
-						
-					</tr>
+
+					
+					
+					
 					
 				</tbody>
 			</table>
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Project Register | Register Project</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<form>
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Customer Name*</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Code*</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Name*</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<select class="form-select">
+								<option value="0" label="Please Choose " selected="selected"></option>
+							</select>
+								
+							</div>
+							
+							<div class="col-md-4">
+								<input type="Project Code" class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+								<input type="Project Name" class="form-control mb-5px " style="text-transform: uppercase;"  />
+								
+							</div>
+						</div>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-1">Description</label>
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-12">
+							<textarea class="form-control " rows="5" style="text-transform: uppercase;"></textarea>
+						</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Contract Value*</label>
+							</div>
+
+							
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Contract Type</label>				
+							</div>
+							
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Financial Year*</label>
+								
+							</div>
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+								<input type="number" class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<select class="form-select">
+								<option value="0" label="Please Choose " selected="selected"></option>
+								<option value="1" label="EXT">EXT</option>
+								<option value="2" label="ORI">ORI</option>
+								<option value="3" label="VO">VO</option>
+								
+								
+								</select>
+								
+							</div>
+							
+							<div class="col-md-4">
+							<select class="form-select">
+								<option value="0" label="Please Choose " selected="selected"></option>
+								<option value="Male" label="Male">Male</option>
+								<option value="Female" label="Female">Female</option>
+								<option value="Prefer" label="Prefer not to say">Prefer not to say</option>
+								
+								
+								</select>
+								
+							</div>
+						</div>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">LOA Date*</label>
+							
+							<label class="form-label col-form-label col-md-4">Contract Start Date*</label>
+							
+							<label class="form-label col-form-label col-md-4">Contract End Date*</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="text" class="form-control" id="datepicker-loa" placeholder="dd/mm/yyyy" />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="text" class="form-control" id="datepicker-start" placeholder="dd/mm/yyyy" />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="text" class="form-control" id="datepicker-end" placeholder="dd/mm/yyyy" />
+								
+							</div>
+						</div>
+
+						
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Account Manager*</label>
+							
+							<label class="form-label col-form-label col-md-4">Warranty Start Date</label>
+							
+							<label class="form-label col-form-label col-md-4">Warranty End Date</label>
+							
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<select class="form-select">
+								<option value="0" label="Please Choose " selected="selected"></option>
+								
+								
+								
+							</select>
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="text" class="form-control" id="datepicker-warstart" placeholder="dd/mm/yyyy" />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="text" class="form-control" id="datepicker-warend" placeholder="dd/mm/yyyy" />
+								
+							</div>
+						</div>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Bank Guarantee Amount*</label>
+							
+							<label class="form-label col-form-label col-md-4">Bank Guarantee Expiry Date</label>
+							
+							<label class="form-label col-form-label col-md-4">Status</label>
+							
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+								<input type="number" class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="text" class="form-control" id="datepicker-bankexpiry" placeholder="dd/mm/yyyy" />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<select class="form-select">
+								<option value="0" label="Please Choose " selected="selected"></option>
+								<option value="1" label="Ongoing">Ongoing</option>
+								<option value="2" label="Warranty">Warranty</option>
+								<option value="3" label="Closed">Closed</option>
+								
+								
+							</select>
+								
+							</div>
+						</div>
+
+					</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
 		</div>
-	</div>		
+					
+					
+				</div>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade" id="default-tab-2">
+					
+					<br>
+					<div class="panel-body">
+			<table id="data-table-default2" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th width="6%" data-orderable="false" class="align-middle">Action</th>
+						<th class="text-nowrap">Requested Date</th>
+						<th class="text-nowrap">Employee Name</th>
+						<th class="text-nowrap">Department</th>
+						<th class="text-nowrap">Customer Name</th>
+						<th class="text-nowrap">Project Code</th>
+						<th class="text-nowrap">Project Name</th>
+						<th class="text-nowrap">Reason</th>
+						
+
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td width="7%"><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-circle-check"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-circle-xmark"></i></a></td>
+						<td>29/09/2020</td>
+						<td>Hani Kamarudin</td>
+						<td>Service Delivery Department</td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC LEASING</td>
+						<td>To be part of the developer tea</td>
+						
+						
+					</tr>
+						<tr class="even gradeC">
+						<td width="7%"><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-circle-check"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-circle-xmark"></i></a></td>
+						<td>29/09/2020</td>
+						<td>Awatif Deraman </td>
+						<td>Sales Department</td>
+						<td>Edaran</td>
+						<td>Orbit0001</td>
+						<td>ORBIT System</td>
+						<td>To create documentation</td>
+						
+						
+						
+					</tr>
+					<tr class="even gradeC">
+						<td width="7%"><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-circle-check"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-circle-xmark"></i></a></td>
+						<td>29/09/2020</td>
+						<td>Awatif Deraman </td>
+						<td>Sales Department</td>
+						<td>Edaran</td>
+						<td>Orbit0001</td>
+						<td>ORBIT System</td>
+						<td>To create documentation</td>
+						
+						
+						
+					</tr>
+
+					
+					
+					
+					
+				</tbody>
+			</table>
+									
+
+					</form>
+					
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+				
+				<!-- END tab-pane -->
+			</div>
+			
 		
 		<!-- END col-4 -->
 	</div>
 	<!-- END row -->
 		</div>
 		<!-- END #content -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New Policy's</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label>Policy's Code </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Policy's Name </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Description </label><br><br>
-						  <textarea class="form-control" rows="3"></textarea>
-						</div>
-						<div class="mb-3">
-						  <label>File Upload </label><br><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <!-- 
-
-			   -->
-			   <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Policy's</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label>Policy's Code </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Policy's Name </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Description </label><br><br>
-						  <textarea class="form-control" rows="3"></textarea>
-						</div>
-						<div class="mb-3">
-						  <label>File Upload </label><br><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			   <!--  -->
-			  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New SOP's</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label>SOP's Code </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>SOP's Name </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Description </label><br><br>
-						  <textarea class="form-control" rows="3"></textarea>
-						</div>
-						<div class="mb-3">
-						  <label>File Upload </label><br><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update SOP's</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label>SOP's Code </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>SOP's Name </label><br><br>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Description </label><br><br>
-						  <textarea class="form-control" rows="3"></textarea>
-						</div>
-						<div class="mb-3">
-						  <label>File Upload </label><br><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
+		
 		
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
@@ -711,74 +802,63 @@
 	<script src="/assets/plugins/switchery/dist/switchery.min.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<!-- required files -->
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
 <script>
-var elm = document.getElementById('switchery-default');
-  var switchery = new Switchery(elm, {
-    color: '#00acac'
-  });
-</script>
-<script>
-  $("#datepicker-autoClose").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<script>
-  $("#datepicker-birth").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<script>
-  $("#datepicker-joindate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-
-<script>
   $('#data-table-default').DataTable({
-    responsive: true
+    responsive: true,
+	lengthMenu: [5, 10, 15],
   });
 </script>
 <script>
   $('#data-table-default2').DataTable({
-    fixedHeader: {
-      header: true,
-      headerOffset: $('#header').height()
-    },
-	fixedColumns:   true,
+    responsive: false,
+	lengthMenu: [5, 10, 15],
+	
+	
+  });
+</script>
+<script>
+  $("#datepicker-loa").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-start").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-end").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-warstart").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-warend").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#datepicker-bankexpiry").datepicker({
+    todayHighlight: true,
+    autoclose: true
   });
 </script>

@@ -86,7 +86,12 @@ Route::get('/hris/editprofile', function () {
 Route::get('/hris/edit', function () {
     return view('hrisedit');
 });
-
+Route::get('/project/projectinformation', function () {
+    return view('projectinformation');
+});
+Route::get('/project/projectregistration', function () {
+    return view('projectregistration');
+});
 
 
 
