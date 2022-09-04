@@ -92,8 +92,18 @@ Route::get('/project/projectinformation', function () {
 Route::get('/project/projectregistration', function () {
     return view('projectregistration');
 });
-
-
+Route::get('/project/projectupdate', function () {
+    return view('projectupdate');
+});
+Route::get('/project/projectrequest', function () {
+    return view('projectrequest');
+});
+Route::get('/report/projectlisting', function () {
+    return view('reportprojectlisting');
+});
+Route::get('/report/viewprojectlisting', function () {
+    return view('viewprojectlisting');
+});
 
 
 Route::get('/hris/myprofile', function () {

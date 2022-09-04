@@ -151,216 +151,433 @@
 			<div class="app-sidebar-content bg-white" data-scrollbar="true" data-height="100%">
 				<!-- BEGIN menu -->
 				<div class="menu">
-					<!-- Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
 
-					<div class="menu-item has-sub mt-3">
-						<a href="javascript:;" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-clipboard-list text-gray"></i>
-							</div>
-							<div class="menu-text text-gray">Dashboard</div>
+                    <div class="menu-item has-sub mt-3">
+                        <a href="/dashboardTenant" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-clipboard-list text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">Dashboard</div>
+                        </a>
+                    </div>
 
-					</div>
+                        <!-- End Sidenav Content Orbit -->
 
-					<!-- End Sidenav Content Orbit -->
+                        <!-- Sidenav Content Orbit -->
 
-					<!-- Sidenav Content Orbit -->
-
-					<div class="menu-item has-sub">
-
-						<div class="menu-icon">
-							<i class="fa fa-commenting text-gray"></i>
-						</div>
-						<div class="menu-text text-gray">HRIS</div>
-						<div class="menu-caret text-gray"></div>
+                    <div class="menu-item has-sub">
+                        <a href="javascript:;" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-commenting text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">HRIS</div>
+                            <div class="menu-caret text-gray"></div>
 						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">My Profile </div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Employee Information</div>
-								</a>
-							</div>
+                        
+                        <div class="menu-submenu">
+                            <div class="menu-item">
+                                <a href="/myProfile" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-address-card text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray"> My Profile </div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="/employeeInfoView" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-indent text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">Employee Information</div>
+                                </a>
+                            </div>
 
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
 
-					<div class="menu-item has-sub">
+                    <div class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-business-time text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">Timesheets</div>
+                            <div class="menu-caret text-gray"></div>
+                        </a>
+                        <div class="menu-submenu">
+                            <div class="menu-item">
+                                <a href="ui_general.html" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-calendar-check text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">My Timesheets</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-receipt text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">Timesheets Approval</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-receipt text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">Realtime Activities</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
+
+                    <div class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-user-edit text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">E-Attendance</div>
+                            <div class="menu-caret text-gray"></div>
+                        </a>
+                        <div class="menu-submenu">
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-bell text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">My Attendance</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-list-check text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">Attendance Information</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
+
+                    <div class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-user-cog text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">E-Leave</div>
+                            <div class="menu-caret text-gray"></div>
+                        </a>
+                        <div class="menu-submenu">
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-clipboard text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">My Leave</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+										<i class="fa fa-list-check text-gray"></i>
+									</div>
+                                    <div class="menu-text text-gray">Leave Approval</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
+
+                    <div class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-diagram-project text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">Project Registration</div>
+                            <div class="menu-caret text-gray"></div>
+                        </a>
+                        <div class="menu-submenu">
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-share-nodes text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Customer</i></div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-book text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Project Information</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-clipboard-list text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">My Project</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-code-pull-request text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Project Request</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
+
+                    <div class="menu-item has-sub">
 						<a href="#" class="menu-link">
 							<div class="menu-icon">
-								<i class="fa fa-business-time text-gray"></i>
+								<i class="fa fa-file-lines text-gray"></i>
 							</div>
-							<div class="menu-text text-gray">Timesheets</div>
+							<div class="menu-text text-gray">E-Claim</div> 
 							<div class="menu-caret text-gray"></div>
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="ui_general.html" class="menu-link">
-									<div class="menu-text text-gray">My Timesheets</div>
+								<a href="#" class="menu-link">
+								<div class="menu-icon">
+										<i class="fa fa-envelope-open-text text-gray"></i>
+									</div>
+									<div class="menu-text text-gray">My Claim</div>
 								</a>
 							</div>
 							<div class="menu-item">
 								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Timesheets Report</div>
+								<div class="menu-icon">
+										<i class="fa fa-list-check text-gray"></i>
+									</div>
+									<div class="menu-text text-gray">Claim Approval</div>
 								</a>
 							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Realtime Activities</div>
-								</a>
-							</div>
-
+							
 						</div>
 					</div>
 
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
 
-					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-user-edit text-gray"></i>
-							</div>
-							<div class="menu-text text-gray">E-Attendance</div>
+                    <div class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-user-group text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">Organization</div>
 							<div class="menu-caret text-gray"></div>
-						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
+                        </a>
+
+                            <div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="/phoneDirectory" class="menu-link">
+                                    <div class="menu-icon">
+								        <i class="fa fa-rectangle-list text-gray"></i>
+							        </div>
+                                        <div class="menu-text text-gray">Phone Directory</i></div>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="/organizationChart" class="menu-link">
+                                    <div class="menu-icon">
+								        <i class="fa fa-rectangle-list text-gray"></i>
+							        </div>
+                                        <div class="menu-text text-gray">Organization Chart</div>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="/departmentTree" class="menu-link">
+                                    <div class="menu-icon">
+								        <i class="fa fa-folder-tree text-gray"></i>
+							        </div>
+                                        <div class="menu-text text-gray">Department Tree</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
+
+                    <div class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-pen-fancy text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">Reporting</div>
+                            <div class="menu-caret text-gray"></div>
+                        </a>
+                             <div class="menu-submenu">
+                            <div class="menu-item has-sub">
+                                <a href="#" class="menu-link">
+                                    <div class="menu-icon">
+							    	    <i class="fa fa-file-signature text-gray"></i>
+							        </div>
+                                        <div class="menu-text text-gray">Timesheet</i></div>
+                                        <div class="menu-caret text-gray"></div>
+                                </a>
+                            <div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        <div class="menu-icon">
+								             <i class="fa fa-address-card text-gray"></i>
+							            </div>
+                                        <div class="menu-text text-gray">Status Report</div>
+                                    </a>
+                                    </div>
+                                    <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-user-clock text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Employee Report</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-user-gear text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Overtime Report</div>
+                                </a>
+                            </div>
+                                </div>
+                                
+                            </div>
+                            <div class="menu-item has-sub">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-user-check text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">E-Attendance</div>
+                                    <div class="menu-caret text-gray"></div>
+                                </a><div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        <div class="menu-icon">
+								             <i class="fa fa-user-pen text-gray"></i>
+							            </div>
+                                        <div class="menu-text text-gray">Daily Report</div>
+                                    </a>
+                                    </div>
+                                    <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-users-gear text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Status Report</div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                                
+                                
+                            </div>
+                            <div class="menu-item">
 								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">My Attendance</div>
+								<div class="menu-icon">
+								<i class="fa fa-user-minus text-gray"></i>
+							</div>
+									<div class="menu-text text-gray">E-Leave</div>
 								</a>
 							</div>
-							<div class="menu-item">
+
+                            <div class="menu-item has-sub">
 								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Attendance Information</div>
-								</a>
+								<div class="menu-icon">
+								<i class="fa fa-keyboard text-gray"></i>
 							</div>
-
-						</div>
-					</div>
-
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
-
-					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-user-cog text-gray"></i>
+									<div class="menu-text text-gray">Project</div>
+                                    <div class="menu-caret text-gray"></div>
+								</a><div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        <div class="menu-icon">
+								             <i class="fa fa-book text-gray"></i>
+							            </div>
+                                        <div class="menu-text text-gray">Project Listing</div>
+                                    </a>
+                                    </div>
+                                    <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-book-open text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Project Status</div>
+                                </a>
+                            </div>
+                            
+                                </div>
+                                
 							</div>
-							<div class="menu-text text-gray">E-Leave</div>
-							<div class="menu-caret text-gray"></div>
-						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
+                            <div class="menu-item has-sub">
 								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">My Leave</div>
+								<div class="menu-icon">
+								<i class="fa fa-money-check text-gray"></i>
+							</div>
+									<div class="menu-text text-gray">Claim</div>
+                                    <div class="menu-caret text-gray"></div>
 								</a>
+                                <div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        <div class="menu-icon">
+								             <i class="fa fa-money-bill-wave text-gray"></i>
+							            </div>
+                                        <div class="menu-text text-gray">Claim</div>
+                                    </a>
+                                    </div>
+                                    <div class="menu-item">
+                                <a href="#" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-money-bill-1-wave text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Cash Advance</div>
+                                </a>
+                            </div>
+                            
+                                </div>
 							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Leave Approval</div>
-								</a>
-							</div>
+                        </div>
+                    </div>
 
-						</div>
-					</div>
+                    <!-- End Sidenav Content Orbit -->
+                    <!-- Sidenav Content Orbit -->
 
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
+                    <div class="menu-item has-sub">
+                        <a href="/setting" class="menu-link">
+                            <div class="menu-icon">
+                                <i class="fa fa-gear text-gray"></i>
+                            </div>
+                            <div class="menu-text text-gray">Settings</div>
 
-					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-diagram-project text-gray"></i>
-							</div>
-							<div class="menu-text text-gray">Project Registration</div>
-							<div class="menu-caret text-gray"></div>
-						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Customer</i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Project Information</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">My Project</div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Project Request</div>
-								</a>
-							</div>
+                        </a>
 
-						</div>
-					</div>
-
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
-
-					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-user-group text-gray"></i>
-							</div>
-							<div class="menu-text text-gray">Organization</div>
-
-						</a>
-
-					</div>
-
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
-
-					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-pen-fancy text-gray"></i>
-							</div>
-							<div class="menu-text text-gray">Reporting</div>
-							<div class="menu-caret text-gray"></div>
-						</a>
-						<div class="menu-submenu">
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">Timesheet</i></div>
-								</a>
-							</div>
-							<div class="menu-item">
-								<a href="#" class="menu-link">
-									<div class="menu-text text-gray">E-Attendance</div>
-								</a>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- End Sidenav Content Orbit -->
-					<!-- Sidenav Content Orbit -->
-
-					<div class="menu-item has-sub">
-						<a href="#" class="menu-link">
-							<div class="menu-icon">
-								<i class="fa fa-gear text-gray"></i>
-							</div>
-							<div class="menu-text text-gray">Settings</div>
-
-						</a>
-
-					</div>
+                    </div>
 
 					<!-- End Sidenav Content Orbit -->
 
