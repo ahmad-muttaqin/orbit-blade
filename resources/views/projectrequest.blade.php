@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en" >
+	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Settings </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,6 +24,7 @@
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
 </head>
+
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -598,63 +601,265 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Department Tree</h1>
+	<h1 class="page-header">Project Registration <small>| Project Request </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
-	
+	<div class="panel panel">
+		
 		<!-- BEGIN panel-heading -->
-        
+		
+		
 		<!-- END panel-heading -->
 		<!-- BEGIN panel-body -->
-		<div class="panel panel-with-tabs">
+		<div class="panel-body">
+			<table id="data-table-projectrequest" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Customer Name</th>
+						<th class="text-nowrap">Project Code</th>
+						<th class="text-nowrap">Project Name</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Project Manager</th>
+						<th class="text-nowrap">Contract Start Date</th>
+						<th class="text-nowrap">Contract End Date</th>
+						<th class="text-nowrap">Status</th>
 
-			<div class="panel-body tab-content">
-				<div class="tab-pane fade active show" id="default-tab-1">
-                    <div style="width:100%; height:700px;" id="tree"> </div>
-				</div>
-			</div>
-			</div>
 
-
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td><a href="#" class="btn btn-primary btn-xs" data-bs-toggle="modal" data-bs-target="#requestproject">Request</a><br><a href="#" class="btn btn-warning btn-xs">Cancel</a></td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>To Maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>08/09/2020</td>
+						<td>01/02/2022</td>
+						<td><a href="#" data-bs-toggle="modal" data-bs-target="#requestrejection" > Rejected</td>
+						
+						
+					</tr>
+					<tr class="even gradeC">
+						<td><a href="#" class="btn btn-primary btn-xs" >Request</a><br><a href="#" class="btn btn-warning btn-xs">Cancel</a></td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>To Maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>08/09/2020</td>
+						<td>01/02/2022</td>
+						<td>-</td>
+					</tr>
+					<tr class="even gradeC">
+						<td><a href="#" class="btn btn-primary btn-xs">Request</a><br><a href="#" class="btn btn-warning btn-xs">Cancel</a></td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>To Maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>08/09/2020</td>
+						<td>01/02/2022</td>
+						<td>-</td>
+					</tr>
+					
+					
+					
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
 
 	<!-- END row -->
 	<!-- BEGIN row -->
+	<div class="modal fade" id="requestproject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="max-width: 780px!important;" >
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Request Project</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<form>
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Customer Name:</label>
+							</div>
 
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
 
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Code:</label>
+							</div>
 
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-	</div>
-	<!-- END row -->
-		</div>
-		<!-- END #content -->
-		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
-		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- END scroll-top-btn -->
-	</div>
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Manager:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Reason</label>
+							</div>
+
+							
+							
+							
+							
+						</div>
+						<div class="row">
+							
+
+							
+							<div class="col-md-12">
+							<textarea class="form-control " rows="5" style="text-transform: uppercase;" placeholder="Please State Your Reason"></textarea>			
+							</div>
+							
+							
+						</div>
+						
+					</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	<div class="modal fade" id="requestrejection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="max-width: 780px!important;" >
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Update Company</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<form>
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Customer Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Code:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Manager:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Reason</label>
+							</div>
+
+							
+							
+							
+							
+						</div>
+						<div class="row">
+							
+
+							
+							<div class="col-md-12">
+							<textarea class="form-control" readonly rows="5" style="text-transform: uppercase;" placeholder="Please State Your Reason"></textarea>			
+							</div>
+							
+							
+						</div>
+						
+					</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  
+					</div>
+				  </div>
+				</div>
+			  </div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -700,53 +905,16 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- required files -->
-<link href="/assets/plugins/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
-<link href="/assets/plugins/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet" />
-<link href="/assets/plugins/blueimp-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-<script src="/assets/plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
-<script src="/assets/plugins/blueimp-tmpl/js/tmpl.js"></script>
-<script src="/assets/plugins/blueimp-load-image/js/load-image.all.min.js"></script>
-<script src="/assets/plugins/blueimp-canvas-to-blob/js/canvas-to-blob.js"></script>
-<script src="/assets/plugins/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-audio.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js"></script>
-<script src="/assets/js/demo/form-multiple-upload.demo.js"></script>
-<script src="/assets/js/orgchart.js"></script>
-	
-	<script>
-$('#data-table-default').DataTable({
+
+<script>
+  $('#data-table-projectrequest').DataTable({
     responsive: true
   });
 </script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<script>
-        var chart = new OrgChart(document.getElementById("tree"), {
-			mouseScrool: OrgChart.action.none,
-			nodeBinding: {
-				field_0: "name",
-				field_1: "grade",
-				img_0: "img"
-			},
-            nodes: [
-                { id: 1, name: "Jonis Martin" , grade: "CEO" , img: "../assets/img/user/user-1.jpg"  },
-                { id: 2, pid: 1, name: "Sarah Hani", grade: "VP" ,  img: "../assets/img/user/user-2.jpg"  },
-                { id: 3, pid: 1, name: "Hanisah Rahman" ,grade: "VP" ,  img: "../assets/img/user/user-3.jpg"},
-				{ id: 4, pid: 1, name: "Harris Azim" ,grade: "Budget Analyst" ,  img: "../assets/img/user/user-4.jpg"} , 
-				{ id: 5, pid: 2, name: "Jamilah Jaafar",grade: "Web Manager" ,   img: "../assets/img/user/user-5.jpg"} , 
-            
-            ]
-        });
-    </script> 

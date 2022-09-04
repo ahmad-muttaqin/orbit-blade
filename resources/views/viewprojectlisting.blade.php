@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en" >
+	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Settings </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,6 +24,7 @@
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
 </head>
+
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -598,63 +601,255 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Department Tree</h1>
+	<h1 class="page-header">Reporting <small>| Project | View Listing Report </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
-	
+	<div class="panel panel">
+	<br>
+	<div style="display: flex; justify-content: flex-end">
+	<button type="button" class="btn btn-inverse me-5 ">PRINT</button>
+	</div>
 		<!-- BEGIN panel-heading -->
-        
+		
+		
 		<!-- END panel-heading -->
+		<div class="panel-body">
+		<h4 class="panel-title"> Project Information</h4>
+
+		<form>
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Customer Name*</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Code*</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Name*</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="customer name" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+								<input type="Project Code" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+								<input type="Project name" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-1">Description</label>
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-12">
+							<textarea class="form-control" readonly rows="3" style="text-transform: uppercase;"></textarea>
+						</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Contract Value*</label>
+							</div>
+
+							
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Contract Type</label>				
+							</div>
+							
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Financial Year*</label>
+								
+							</div>
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="contract-value" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="contract-type" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="financial-year" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">LOA Date*</label>
+							
+							<label class="form-label col-form-label col-md-4">Contract Start Date*</label>
+							
+							<label class="form-label col-form-label col-md-4">Contract End Date*</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="LOA-date" readonly class="form-control mb-5px"  />
+							</div>
+							
+							<div class="col-md-4">
+							<input type="contract-start-date" readonly class="form-control mb-5px"  />	
+							</div>
+							
+							<div class="col-md-4">
+							<input type="contract-end-date" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+
+						
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Account Manager*</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Manager*</label>
+							
+							<label class="form-label col-form-label col-md-4">Warranty Start Date</label>
+							
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="account-manager" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="project-manager" readonly class="form-control mb-5px"  />
+							</div>
+							
+							<div class="col-md-4">
+							<input type="warranty-start-date" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Warranty End Date</label>
+							
+							<label class="form-label col-form-label col-md-4">Bank Guarantee Amount*</label>
+							
+							<label class="form-label col-form-label col-md-4">Bank Guarantee Expiry Date</label>
+							
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="warranty-end-date" readonly class="form-control mb-5px"  />
+							</div>
+							
+							<div class="col-md-4">
+							<input type="bank-gurantee-amount" readonly class="form-control mb-5px"  />
+							</div>
+							
+							<div class="col-md-4">
+							<input type="bank-gurantee-expiry" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+
+						<div class="row">
+							
+							<label class="form-label col-form-label col-md-4">Status</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							
+							
+							<div class="col-md-4">
+							<input type="status" readonly class="form-control mb-5px"  />
+								
+							</div>
+						</div>
+					</form>
+		
+
+
+		</div>
 		<!-- BEGIN panel-body -->
-		<div class="panel panel-with-tabs">
+		<div class="panel-body">
+			<table id="data-table-default" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						
+						<th width="1%">NO</th>
+						<th class="text-nowrap">Project Member Name</th>
+						<th class="text-nowrap">Designation</th>
+						<th class="text-nowrap">Department</th>
+						<th class="text-nowrap">Branch</th>
+						<th class="text-nowrap">Unit</th>
+						<th class="text-nowrap">Joined Date</th>
+						
 
-			<div class="panel-body tab-content">
-				<div class="tab-pane fade active show" id="default-tab-1">
-                    <div style="width:100%; height:700px;" id="tree"> </div>
-				</div>
-			</div>
-			</div>
 
 
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Fatiha</td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>Headquaters</td>
+						<td>SOU Unit</td>
+						<td>8/3/2022</td>
+
+					</tr>
+					<tr class="even gradeC">
+						
+						<td width="1%" class="fw-bold text-dark">2</td>
+						<td>Fatiha</td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>Headquaters</td>
+						<td>SOU Unit</td>
+						<td>8/3/2022</td>
+					</tr>
+					<tr class="even gradeC">
+					
+						<td width="1%" class="fw-bold text-dark">3</td>
+						<td>Fatiha</td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>Headquaters</td>
+						<td>SOU Unit</td>
+						<td>8/3/2022</td>
+					</tr>
+					
+					
+					
+					
+				</tbody>
+			</table>
+		</div>
+
+		<div class="modal-footer">
+		</div>	
+		<div >
+		<button type="button" class="btn btn-secondary m-3" data-bs-dismiss="modal">Back</button>
+</div>
+					
+	</div>
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-	</div>
-	<!-- END row -->
-		</div>
-		<!-- END #content -->
-		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
-		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- END scroll-top-btn -->
-	</div>
+					
+	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -700,53 +895,17 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- required files -->
-<link href="/assets/plugins/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
-<link href="/assets/plugins/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet" />
-<link href="/assets/plugins/blueimp-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-<script src="/assets/plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
-<script src="/assets/plugins/blueimp-tmpl/js/tmpl.js"></script>
-<script src="/assets/plugins/blueimp-load-image/js/load-image.all.min.js"></script>
-<script src="/assets/plugins/blueimp-canvas-to-blob/js/canvas-to-blob.js"></script>
-<script src="/assets/plugins/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-audio.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
-<script src="/assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js"></script>
-<script src="/assets/js/demo/form-multiple-upload.demo.js"></script>
-<script src="/assets/js/orgchart.js"></script>
-	
-	<script>
-$('#data-table-default').DataTable({
-    responsive: true
+
+<script>
+  $('#data-table-default').DataTable({
+    responsive: true,
+	lengthMenu: [5, 10, 15],
   });
 </script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<script>
-        var chart = new OrgChart(document.getElementById("tree"), {
-			mouseScrool: OrgChart.action.none,
-			nodeBinding: {
-				field_0: "name",
-				field_1: "grade",
-				img_0: "img"
-			},
-            nodes: [
-                { id: 1, name: "Jonis Martin" , grade: "CEO" , img: "../assets/img/user/user-1.jpg"  },
-                { id: 2, pid: 1, name: "Sarah Hani", grade: "VP" ,  img: "../assets/img/user/user-2.jpg"  },
-                { id: 3, pid: 1, name: "Hanisah Rahman" ,grade: "VP" ,  img: "../assets/img/user/user-3.jpg"},
-				{ id: 4, pid: 1, name: "Harris Azim" ,grade: "Budget Analyst" ,  img: "../assets/img/user/user-4.jpg"} , 
-				{ id: 5, pid: 2, name: "Jamilah Jaafar",grade: "Web Manager" ,   img: "../assets/img/user/user-5.jpg"} , 
-            
-            ]
-        });
-    </script> 
