@@ -1,7 +1,7 @@
 
+
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
 	<title>OrbitHRM | Settings </title>
@@ -432,7 +432,7 @@
 					<tbody>
 						<td><a href="javascript:;" class="btn btn-outline-green ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa fa-pencil-alt"></i></a></td>
 						<td><div class="form-check form-switch ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="myFunction()" />
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
 						<td>LEMBAGA HASIL DALAM NEGERI</td>
@@ -532,6 +532,24 @@
     
 
 	<!-- END row -->
+    <!-- Modal -->
+<div class="modal fade" id="flexSwitchCheckDefault" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        This is the modal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 	<!-- BEGIN row -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
@@ -567,8 +585,8 @@
                             </div>
                             <div class="col-12" style="width:50%">
                                             <label class="mb-3">State</label>
-                                            <select class="form-select" required="true">
-											<option value="0" label="Select State " selected="selected">Select State </option>
+                                            <select class="form-select" required aria-label="select example">
+                                            <option value="">Select State</option>
                                             <option value="Johor" label="Johor">Johor</option>
                                             <option value="Kedah" label="Kedah">Kedah</option>
                                             <option value="Kelantan" label="Kelantan">Kelantan</option>
@@ -585,10 +603,11 @@
                                             <option value="Labuan" label="Labuan">Labuan</option>
                                             <option value="Putrajaya" label="Putrajaya">Putrajaya</option>
                                             </select>
+                                            <div class="invalid-feedback">Example invalid select feedback</div>
                             </div>
                             <div class="col-12" style="width:50%">
                                 <label>Country</label><br><br>
-                                <input type="text" class="form-control" id="customer-country" placeholder="" required="true">
+                                <input type="text" class="form-control" id="customer-country" placeholder="Malaysia" required="true">
                             </div>
                             <div class="col-12" style="width:50%">
                                 <label>Phone Number</label><br><br>
@@ -629,30 +648,30 @@
 						
 						<div class="mb-3">
 						  <label>Customer Name</label><br><br>
-						  <input type="text" class="form-control" id="customer-name" data-parsley-required="true">
+						  <input type="text" class="form-control" id="customer-name" required="true">
 						</div>
 						<div class="mb-3">
 						  <label>Address 1</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="">
+						  <input type="text" class="form-control" id="customer-address" placeholder="" required="true">
 						</div>
                         <div class="mb-3">
 						  <label>Address 2</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="">
+						  <input type="text" class="form-control" id="customer-address" placeholder="" >
 						</div>
                         <div class="row row-cols-lg-auto g-3 mb-3">
                             <div class="col-12" style="width:50%">
                                 <label>Postcode</label><br><br>
-                                <input type="text" class="form-control" id="customer-postcode" placeholder="">
+                                <input type="text" class="form-control" id="customer-postcode" placeholder="" required="true">
                             </div>
 
                             <div class="col-12" style="width:50%">
                                 <label>City</label><br><br>
-                                <input type="text" class="form-control" id="customer-city" placeholder="">
+                                <input type="text" class="form-control" id="customer-city" placeholder="" required="true">
                             </div>
                             <div class="col-12" style="width:50%">
                                             <label class="mb-3">State</label>
-                                            <select class="form-select">
-											<option value="0" label="Select State " selected="selected">Select State </option>
+                                            <select class="form-select" required aria-label="select example">
+                                            <option value="">Select State</option>
                                             <option value="Johor" label="Johor">Johor</option>
                                             <option value="Kedah" label="Kedah">Kedah</option>
                                             <option value="Kelantan" label="Kelantan">Kelantan</option>
@@ -669,26 +688,26 @@
                                             <option value="Labuan" label="Labuan">Labuan</option>
                                             <option value="Putrajaya" label="Putrajaya">Putrajaya</option>
                                             </select>
+                                            <div class="invalid-feedback">Example invalid select feedback</div>
                             </div>
                             <div class="col-12" style="width:50%">
                                 <label>Country</label><br><br>
-                                <input type="text" class="form-control" id="customer-country" placeholder="">
+                                <input type="text" class="form-control" id="customer-country" placeholder="Malaysia" required="true">
                             </div>
                             <div class="col-12" style="width:50%">
                                 <label>Phone Number</label><br><br>
-                                <input type="text" class="form-control" id="customer-phoneno" placeholder="">
+                                <input type="text" class="form-control" id="customer-phoneno" placeholder="" required="true">
                             </div>
                             <div class="col-12" style="width:50%">
                                 <label>Email</label><br><br>
-                                <input type="text" class="form-control" id="customer-email" placeholder="">
+                                <input type="text" class="form-control" id="customer-email" placeholder="" required="true">
                             </div>
                         </div>
-						
 					  </form>
 					</div>
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-					  <button type="button" class="btn btn-primary">Update</button>
+					  <button type="submit" class="btn btn-primary">Update</button>
 					</div>
 				  </div>
 				</div>
@@ -778,17 +797,6 @@
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- script -->
-    <script>
-function myFunction() {
-  var txt;
-  if (confirm("Are you sure you want to change the status of this company ? ")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
-</script>
 
 
 <script>
@@ -797,12 +805,3 @@ function myFunction() {
   });
 </script>
 
-<script>
-$(document).ready(function () {
-    $("#myswitch").bootstrapSwitch();
-
-    $('#myswitch').on('switchChange.bootstrapSwitch', function (e, data) {
-        $('#showModal').modal('show');
-    });
-});
-    </script>
