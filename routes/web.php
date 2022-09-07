@@ -133,7 +133,15 @@ Route::get('/project/projectregmyproject', function () {
 Route::get('/project', function () {
     return view('projectregcustomers');
 });
-
+Route::get('/projectstatus/customername', function () {
+    return view('statuscustomername');
+});
+Route::get('/projectstatus/all', function () {
+    return view('statusall');
+});
+Route::get('/projectstatus/financialyear', function () {
+    return view('statusfinancialyear');
+});
 
 
 
