@@ -77,6 +77,7 @@ Route::get('/setting/news', function () {
 Route::get('/project', function () {
     return view('projectregcustomers');
 });
+
 Route::get('/setting/employmenttype', function () {
     return view('settingemploymenttype');
 });

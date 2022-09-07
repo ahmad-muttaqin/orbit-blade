@@ -1,7 +1,7 @@
 
+
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
 	<title>OrbitHRM | Settings </title>
@@ -25,10 +25,12 @@
 	<!-- ================== END page-css ================== -->
 
     <!-- required files -->
-<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
+    <script src="../assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
 
-</head>
+    <!-- required files -->
+<script src="../assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+
+</head> 
 
 <body>
 	<!-- BEGIN #loader -->
@@ -636,14 +638,11 @@
 						<th class="text-nowrap">Email</th>
 						<th class="text-nowrap">Added By</th>
 						<th class="text-nowrap">Added Time</th>
-						
-
-
 					</tr>
 				</thead>
 					<tbody>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><div class="form-check form-switch">
+						<td><a href="javascript:;" class="btn btn-outline-green ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa fa-pencil-alt"></i></a></td>
+						<td><div class="form-check form-switch ms-3">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
@@ -659,8 +658,8 @@
 						<td>01 Feb 2021 4.30 pm</td>
 						
 					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><div class="form-check form-switch">
+						<td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a></td>
+						<td><div class="form-check form-switch ms-3">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
@@ -674,8 +673,8 @@
 						<td>19 Feb 2021 4.30 pm</td>
 						
 					</tr>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><div class="form-check form-switch">
+						<td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a></td>
+						<td><div class="form-check form-switch ms-3">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
@@ -691,8 +690,8 @@
 						<td>18 Feb 2021 4.30 pm</td>
 							
 					</tr>
-                    <td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><div class="form-check form-switch">
+                    <td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a></td>
+						<td><div class="form-check form-switch ms-3">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
@@ -708,8 +707,8 @@
 						<td>18 Feb 2021 4.30 pm</td>
 							
 					</tr>
-                    <td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><div class="form-check form-switch">
+                    <td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a> </td>
+						<td><div class="form-check form-switch ms-3">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
@@ -724,8 +723,8 @@
 						<td>18 Feb 2021 4.30 pm</td>
 							
 					</tr>
-                    <td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						<td><div class="form-check form-switch">
+                    <td><a href="javascript:;" class="btn btn-outline-green ms-3"><i class="fa fa-pencil-alt"></i></a> </td>
+						<td><div class="form-check form-switch ms-3">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                         <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                         </div></td>
@@ -737,10 +736,6 @@
 						<td>18 Feb 2021 4.30 pm</td>
 							
 					</tr>
-					
-					
-					
-					
 				</tbody>
 			</table>
 		</div>
@@ -748,60 +743,188 @@
     
 
 	<!-- END row -->
+    <!-- Modal -->
+<div class="modal fade" id="flexSwitchCheckDefault" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        This is the modal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 	<!-- BEGIN row -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Customer Details</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-					  <form>
+                    <form data-parsley-validate="true">
 						
 						<div class="mb-3">
 						  <label>Customer Name</label><br><br>
-						  <input type="text" class="form-control" id="customer-name" placeholder="">
+						  <input type="text" class="form-control" id="customer-name" required="true">
 						</div>
 						<div class="mb-3">
-						  <label>Address</label><br><br>
-						  <input type="text" class="form-control" id="customer-address" placeholder="">
+						  <label>Address 1</label><br><br>
+						  <input type="text" class="form-control" id="customer-address" placeholder="" required="true">
+						</div>
+                        <div class="mb-3">
+						  <label>Address 2</label><br><br>
+						  <input type="text" class="form-control" id="customer-address" placeholder="" >
+						</div>
+                        <div class="row row-cols-lg-auto g-3 mb-3">
+                            <div class="col-12" style="width:50%">
+                                <label>Postcode</label><br><br>
+                                <input type="text" class="form-control" id="customer-postcode" placeholder="" required="true">
+                            </div>
+
+                            <div class="col-12" style="width:50%">
+                                <label>City</label><br><br>
+                                <input type="text" class="form-control" id="customer-city" placeholder="" required="true">
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                            <label class="mb-3">State</label>
+                                            <select class="form-select" required aria-label="select example">
+                                            <option value="">Select State</option>
+                                            <option value="Johor" label="Johor">Johor</option>
+                                            <option value="Kedah" label="Kedah">Kedah</option>
+                                            <option value="Kelantan" label="Kelantan">Kelantan</option>
+                                            <option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
+                                            <option value="Pahang" label="Pahang">Pahang</option>	
+                                            <option value="Penang" label="Penang">Penang</option>
+                                            <option value="Perak" label="Perak">Perak</option>
+                                            <option value="Perlis" label="Perlis">Perlis</option>
+                                            <option value="Sabah" label="Sabah">Sabah</option>
+                                            <option value="Sarawak" label="Sarawak">Sarawak</option>
+                                            <option value="Selangor" label="Selangor">Selangor</option>
+                                            <option value="Terengganu" label="Terengganu">Terengganu</option>
+                                            <option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
+                                            <option value="Labuan" label="Labuan">Labuan</option>
+                                            <option value="Putrajaya" label="Putrajaya">Putrajaya</option>
+                                            </select>
+                                            <div class="invalid-feedback">Example invalid select feedback</div>
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                <label>Country</label><br><br>
+                                <input type="text" class="form-control" id="customer-country" placeholder="Malaysia" required="true">
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                <label>Phone Number</label><br><br>
+                                <input type="text" class="form-control" id="customer-phoneno" placeholder="" required="true">
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                <label>Email</label><br><br>
+                                <input type="text" class="form-control" id="customer-email" placeholder="" required="true">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+
+					  </form>
+					</div>
+					<!-- <div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					  <button type="submit" class="btn btn-primary">Save</button>
+					</div> -->
+				  </div>
+				</div>
+			  </div>	
+              
+
+<!-- update modal -->
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Update Customer</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+                    <form data-parsley-validate="true">
+						
+						<div class="mb-3">
+						  <label>Customer Name</label><br><br>
+						  <input type="text" class="form-control" id="customer-name" required="true">
 						</div>
 						<div class="mb-3">
-						  <label>Phone Number </label><br><br>
-						  <input type="text" class="form-control" id="customer-phoneno" placeholder="">
+						  <label>Address 1</label><br><br>
+						  <input type="text" class="form-control" id="customer-address" placeholder="" required="true">
 						</div>
-						<div class="mb-3">
-						  <label>Email</label><br><br>
-						  <input type="text" class="form-control" id="customer-email" placeholder="">
+                        <div class="mb-3">
+						  <label>Address 2</label><br><br>
+						  <input type="text" class="form-control" id="customer-address" placeholder="" >
 						</div>
+                        <div class="row row-cols-lg-auto g-3 mb-3">
+                            <div class="col-12" style="width:50%">
+                                <label>Postcode</label><br><br>
+                                <input type="text" class="form-control" id="customer-postcode" placeholder="" required="true">
+                            </div>
+
+                            <div class="col-12" style="width:50%">
+                                <label>City</label><br><br>
+                                <input type="text" class="form-control" id="customer-city" placeholder="" required="true">
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                            <label class="mb-3">State</label>
+                                            <select class="form-select" required aria-label="select example">
+                                            <option value="">Select State</option>
+                                            <option value="Johor" label="Johor">Johor</option>
+                                            <option value="Kedah" label="Kedah">Kedah</option>
+                                            <option value="Kelantan" label="Kelantan">Kelantan</option>
+                                            <option value="Negeri Sembilan" label="Negeri Sembilan">Negeri Sembilan</option>
+                                            <option value="Pahang" label="Pahang">Pahang</option>	
+                                            <option value="Penang" label="Penang">Penang</option>
+                                            <option value="Perak" label="Perak">Perak</option>
+                                            <option value="Perlis" label="Perlis">Perlis</option>
+                                            <option value="Sabah" label="Sabah">Sabah</option>
+                                            <option value="Sarawak" label="Sarawak">Sarawak</option>
+                                            <option value="Selangor" label="Selangor">Selangor</option>
+                                            <option value="Terengganu" label="Terengganu">Terengganu</option>
+                                            <option value="Kuala Lumpur" label="Kuala Lumpur">Kuala Lumpur</option>
+                                            <option value="Labuan" label="Labuan">Labuan</option>
+                                            <option value="Putrajaya" label="Putrajaya">Putrajaya</option>
+                                            </select>
+                                            <div class="invalid-feedback">Example invalid select feedback</div>
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                <label>Country</label><br><br>
+                                <input type="text" class="form-control" id="customer-country" placeholder="Malaysia" required="true">
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                <label>Phone Number</label><br><br>
+                                <input type="text" class="form-control" id="customer-phoneno" placeholder="" required="true">
+                            </div>
+                            <div class="col-12" style="width:50%">
+                                <label>Email</label><br><br>
+                                <input type="text" class="form-control" id="customer-email" placeholder="" required="true">
+                            </div>
+                        </div>
 					  </form>
 					</div>
 					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					  <button type="submit" class="btn btn-primary">Update</button>
 					</div>
 				  </div>
 				</div>
 			  </div>	
               
-              <div class="modal fade" id="switchery-default">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Dialog</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal">Close</a>
-        <a href="javascript:;" class="btn btn-success">Action</a>
-      </div>
-    </div>
-  </div>
-</div>
+            
 		 		  	  
 	<div class="row">
 		<!-- BEGIN col-4 -->
@@ -885,12 +1008,6 @@
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- script -->
-<script>
-  var elm = document.getElementById('switchery-default');
-  var switchery = new Switchery(elm, {
-    color: '#00acac'
-  });
-</script>
 
 
 <script>
@@ -898,3 +1015,4 @@
     responsive: true
   });
 </script>
+
