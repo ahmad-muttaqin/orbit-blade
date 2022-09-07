@@ -938,7 +938,7 @@
 				</thead>
 				<tbody>
 					<tr class="odd gradeX">
-						<td width="7%"><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-circle-check"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-circle-xmark"></i></a></td>
+						<td width="7%"><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-circle-check"></i></a> <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#rejectapproval" class="btn btn-outline-danger"><i class="fa fa-circle-xmark"></i></a></td>
 						<td>29/09/2020</td>
 						<td>Hani Kamarudin</td>
 						<td>Service Delivery Department</td>
@@ -988,7 +988,121 @@
 					
 				<!-- END tab-pane -->
 				<!-- BEGIN tab-pane -->
-				
+				<div class="modal fade" id="rejectapproval" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="max-width: 780px!important;" >
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Reject Project Request</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<form>
+					<h5 class="modal-title" id="exampleModalLabel">Requestor Information</h5><br>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Employee ID:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Employee Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Email:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Department:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+						<h5 class="modal-title" id="exampleModalLabel">Project Information</h5><br>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Code:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Reason*</label>
+							</div>
+
+						</div>
+						
+						<div class="row">
+							
+
+							
+							<div class="col-md-12">
+							<textarea class="form-control" rows="5" style="text-transform: uppercase;" placeholder="Please state your reason.."></textarea>			
+							</div>
+							
+							
+						</div>
+						
+					</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
 				<!-- END tab-pane -->
 			</div>
 			
