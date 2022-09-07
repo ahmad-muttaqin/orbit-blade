@@ -78,17 +78,6 @@ Route::get('/project', function () {
     return view('projectregcustomers');
 });
 
-Route::get('/project/myproject', function () {
-    return view('projectregmyproject');
-});
-
-Route::get('/project/projectlisting', function () {
-    return view('projectlisting');
-});
-
-
-
-
 
 Route::get('/hris/myprofile', function () {
     return view('hris-myprofile');
