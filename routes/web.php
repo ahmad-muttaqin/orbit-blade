@@ -127,6 +127,13 @@ Route::get('/org/dept-tree', function () {
     return view('departmenttree');
 });
 
+Route::get('/project/projectregmyproject', function () {
+    return view('projectregmyproject');
+});
+Route::get('/project', function () {
+    return view('projectregcustomers');
+});
+
 
 
 
