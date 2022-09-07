@@ -613,28 +613,28 @@
 				<!-- BEGIN col-4 -->
 				
 				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
+					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
 					<h5 class="mb-5px" >Roles</h5> 
 					
 				</div>
 				<!-- END col-4 -->
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Company</h5> 
 					</div>
 					<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Department</h5> 
 					</div>
 					<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Unit</h5> 
 					</div>
 				<!-- END col-4 -->
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Branch</h5> 
 					</div>
 				
@@ -645,29 +645,29 @@
 				<!-- BEGIN col-4 -->
 				
 				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
+					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
 					<h5 class="mb-5px" >Job Grade</h5> 
 					
 				</div>
 				<!-- END col-4 -->
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Designation</h5> 
 					</div>
 				<!-- END col-4 -->
 
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Employment Type</h5> 
 					</div>
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">SOP's</h5> 
 					</div>
 					<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">News</h5> 
 					</div>
 				

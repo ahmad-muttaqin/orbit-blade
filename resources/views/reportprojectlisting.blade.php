@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM | Reporting </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -641,7 +641,7 @@
 				<tbody>
 					<tr class="odd gradeX">
 						
-						<td style="text-align:center" width="1%" ><a href ="#"><i class="fas fa-eye fa-2x"></i></td>
+						<td style="text-align:center" width="1%" ><a href ="/report/viewprojectlisting"><i class="fas fa-eye fa-2x"></i></td>
 						<td width="1%">29/09/2020</td>
 						<td width="1%">JABATAN PERDANA MENTERI</td>
 						<td width="1%">JPM1234</td>
@@ -800,11 +800,33 @@
 	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/moment/min/moment.min.js"></script>
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-
-
+	<!-- required files -->
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+	<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+	<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 <script>
   $('#data-table-default').DataTable({
     responsive: true,
 	lengthMenu: [5, 10, 15],
+	dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
+    buttons: [
+      { extend: 'excel', className: 'btn-sm' },
+      { extend: 'pdf', className: 'btn-sm' , orientation: 'landscape' },
+      { extend: 'print', className: 'btn-sm' }
+    ],
+	
   });
 </script>

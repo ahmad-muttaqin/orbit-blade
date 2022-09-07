@@ -772,7 +772,7 @@
 				<div class="modal-dialog" style="max-width: 780px!important;" >
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Company</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">Rejection Reason</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -829,10 +829,23 @@
 							
 						</div>
 
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Rejected On:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
 						
 						<div class="row">
 							<div class="col-md-4">
-							<label class="form-label col-md-6">Reason</label>
+							<label class="form-label col-md-6">Remarks</label>
 							</div>
 
 							
@@ -845,7 +858,7 @@
 
 							
 							<div class="col-md-12">
-							<textarea class="form-control" readonly rows="5" style="text-transform: uppercase;" placeholder="Please State Your Reason"></textarea>			
+							<textarea class="form-control" readonly rows="5" style="text-transform: uppercase;"></textarea>			
 							</div>
 							
 							
