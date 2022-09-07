@@ -82,6 +82,9 @@ Route::get('/project/myproject', function () {
     return view('projectregmyproject');
 });
 
+Route::get('/project/projectlisting', function () {
+    return view('projectlisting');
+});
 
 
 
