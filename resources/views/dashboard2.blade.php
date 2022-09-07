@@ -305,7 +305,7 @@
                     <!-- Sidenav Content Orbit -->
 
                     <div class="menu-item has-sub">
-                        <a href="/project/projectregistration" class="menu-link">
+                        <a href="#" class="menu-link">
                             <div class="menu-icon">
                                 <i class="fa fa-diagram-project text-gray"></i>
                             </div>
@@ -314,7 +314,7 @@
                         </a>
                         <div class="menu-submenu">
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-share-nodes text-gray"></i>
 							    </div>
@@ -322,7 +322,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project/projectinformation" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-book text-gray"></i>
 							    </div>
@@ -338,7 +338,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project/projectrequest" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-code-pull-request text-gray"></i>
 							    </div>
