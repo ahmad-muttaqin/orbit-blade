@@ -32,7 +32,7 @@
 
 			
 			<div class="row bg-white">
-				<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center; height: 98vh; background-image: url(../assets/img/orbit/bh.png);background-repeat: no-repeat; background-size: cover;">
+				<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center; background-image: url(../assets/img/orbit/bh.png);background-repeat: no-repeat; background-size: cover;">
 					<div class="mx-auto" style="width: 60rem;">
 						<div class="text-center">
 							<img src="../assets/img/orbit/orbithrm-logo.png"  width="500rem" alt="Orbit" class="img-fluid">	
@@ -45,7 +45,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 p-5" style="display: flex; justify-content: center; align-items: center; height: 98vh;">
+				<div class="col-sm-6" style="display: flex; justify-content: center; align-items: center; ">
 					<div class="mx-auto" style="width: 30rem;">
 							<div class="card-body bg-white m-5">
 									<div class="login-header mb-30px">
@@ -72,12 +72,21 @@
 											<label for="adminEmail" class="d-flex align-items-center fs-13px text-gray-600">Email Address</label>
 										</div>
 										<div class="form-floating mb-15px">
+											<input type="text" class="form-control h-45px fs-13px" placeholder="Tenant Name" id="TenantName" />
+											<label for="Tenant" class="d-flex align-items-center fs-13px text-gray-600">Tenant Name</label>
+										</div>
+										<div class="form-floating mb-15px">
 											<input type="text" class="form-control h-45px fs-13px" placeholder="Company Name" id="companyName" />
 											<label for="adminEmail" class="d-flex align-items-center fs-13px text-gray-600">Company Name</label>
 										</div>
 										<div class="form-floating mb-15px">
 											<input type="text" class="form-control h-45px fs-13px" placeholder="Phone Number" id="phoneNumber" />
 											<label for="adminEmail" class="d-flex align-items-center fs-13px text-gray-600">Phone Number</label>
+										</div>
+										<div class="form-group form-check mb-15px">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<p  class="form-check-label" for="exampleCheck1">Your data will be allocated in Malaysia </a> </p>
+											
 										</div>
 										<div class="mb-15px">
 											<select class="form-select">

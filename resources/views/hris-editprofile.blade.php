@@ -3293,7 +3293,6 @@
 												</tbody>
 											</table>	
 										</div>
-										
 										<div class="tab-pane fade" id="default-tab-6">
 												<div class="container">
 													<h4 class="mt-3 mb-3">Parents information</h4>
@@ -5559,6 +5558,9 @@
 												</div>
 											</div>
 											<hr>
+											<button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#update-employment"">
+												Update
+											</button>
 										</div>
 									</div>
 								</div>

@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Settings </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -27,7 +27,9 @@
 
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -599,163 +601,174 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
+	<h1 class="page-header">Settings <small>| Employment Type </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
 		
 		<!-- BEGIN panel-heading -->
-		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<!-- END row -->
+		
+		<div class="panel-heading">
+		<div class="col-md-6">
+		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New employment Type</a>
 		</div>
 		
+			<h4 class="panel-title"></h4>
+			
+			
+		</div>
+		<!-- END panel-heading -->
+		<!-- BEGIN panel-body -->
+		<div class="panel-body">
+			<table id="data-table-default" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th width="1%">NO</th>
+						<th class="text-nowrap">Employment Type Code</th>
+						<th class="text-nowrap">Employment Type</th>
+						<th class="text-nowrap">Added By</th>
+						<th class="text-nowrap">Added Time</th>
+						<th class="text-nowrap">Modified By</th>
+						<th class="text-nowrap">Modified Time</th>
+						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>ET1</td>
+						<td>Contract</td>
+						<td> Elon Musk </td>
+						<td>2 Feb 2022 2.30 pm</td>
+						<td>Elon Musk</td>
+						<td>14 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">2</td>
+					<td>ET2</td>
+						<td>Permanent</td>
+						<td> Elon </td>
+						<td>5 Feb 2022 2.30 pm</td>
+						<td>Elon Musk</td>
+						<td>11 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td>ET3</td>
+						<td>Internship</td>
+						<td> Elon </td>
+						<td>3 Feb 2022 2.30 pm</td>
+						<td>Elon Musk</td>
+						<td>12 Feb 2021 4.30 pm</td>
+						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						
+					</tr>
+					
+					
+					
+					
+				</tbody>
+			</table>
+		</div>
 	</div>
-	
-</div>
+
+	<!-- END row -->
+	<!-- BEGIN row -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">New Employment Type</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <form>
+						
+						<div class="mb-3">
+						  <label>Employment Type Code* </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-3">
+						  <label>Employment Type* </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+					  </form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Update Employment Type</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <form>
+						
+						<div class="mb-3">
+						  <label>Employment Type Code* </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+						<div class="mb-3">
+						  <label>Employment Type* </label><br><br>
+						  <input type="text" class="form-control" id="recipient-name" placeholder="">
+						</div>
+					  </form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save</button>
+					</div>
+				  </div>
+				</div>
+			  </div>	 		  	  
+	<div class="row">
+		<!-- BEGIN col-4 -->
+		<div class="col-xl-4 col-lg-6">
+			<!-- BEGIN panel -->
+			
+			<!-- END panel -->
+		</div>
+		<!-- END col-4 -->
+		<!-- BEGIN col-4 -->
+		<div class="col-xl-4 col-lg-6">
+			<!-- BEGIN panel -->
+
+			<!-- END panel -->
+		</div>
+		<!-- END col-4 -->
+		<!-- BEGIN col-4 -->
+		<div class="col-xl-4 col-lg-6">
+			<!-- BEGIN panel -->
+
+			<!-- END panel -->
+		</div>
+		<!-- END col-4 -->
+	</div>
+	<!-- END row -->
+		</div>
+		<!-- END #content -->
+		
+		<!-- BEGIN theme-panel -->
+		
+		<!-- END theme-panel -->
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -801,20 +814,28 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<!--
+	<script>
+  $("#jstree-checkable").jstree({
+    "plugins": ["wholerow", "checkbox", "types"],
+    "core": {
+      "themes": { "responsive": false },    
+      "data": [{
+        "text": "Same but with checkboxes",
+        "children": [{
+          "text": "initially selected",
+          "state": { "selected": true }
+        }, {
+          "text": "Folder 1"
 
 	
-	<script>
-$('#data-table-default').DataTable({
+	The template to display files available for upload -->
+
+
+<script>
+  $('#data-table-default').DataTable({
     responsive: true
   });
 </script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
-
-

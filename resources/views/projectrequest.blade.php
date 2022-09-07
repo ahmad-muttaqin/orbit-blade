@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Settings </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -27,7 +27,9 @@
 
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -599,163 +601,278 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
+	<h1 class="page-header">Project Registration <small>| Project Request </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
 		
 		<!-- BEGIN panel-heading -->
-		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<!-- END row -->
-		</div>
 		
+		
+		<!-- END panel-heading -->
+		<!-- BEGIN panel-body -->
+		<div class="panel-body">
+			<table id="data-table-projectrequest" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Customer Name</th>
+						<th class="text-nowrap">Project Code</th>
+						<th class="text-nowrap">Project Name</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Project Manager</th>
+						<th class="text-nowrap">Contract Start Date</th>
+						<th class="text-nowrap">Contract End Date</th>
+						<th class="text-nowrap">Status</th>
+
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td><a href="#" class="btn btn-primary btn-xs" data-bs-toggle="modal" data-bs-target="#requestproject">Request</a><br><a href="#" class="btn btn-warning btn-xs">Cancel</a></td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>To Maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>08/09/2020</td>
+						<td>01/02/2022</td>
+						<td><a href="#" data-bs-toggle="modal" data-bs-target="#requestrejection" > Rejected</td>
+						
+						
+					</tr>
+					<tr class="even gradeC">
+						<td><a href="#" class="btn btn-primary btn-xs" >Request</a><br><a href="#" class="btn btn-warning btn-xs">Cancel</a></td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>To Maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>08/09/2020</td>
+						<td>01/02/2022</td>
+						<td>-</td>
+					</tr>
+					<tr class="even gradeC">
+						<td><a href="#" class="btn btn-primary btn-xs">Request</a><br><a href="#" class="btn btn-warning btn-xs">Cancel</a></td>
+						<td>JABATAN PERDANA MENTERI</td>
+						<td>JPM1234</td>
+						<td>PC Leasing</td>
+						<td>To Maintenance PC Leasing</td>
+						<td>Adli</td>
+						<td>08/09/2020</td>
+						<td>01/02/2022</td>
+						<td>-</td>
+					</tr>
+					
+					
+					
+					
+				</tbody>
+			</table>
+		</div>
 	</div>
-	
-</div>
+
+	<!-- END row -->
+	<!-- BEGIN row -->
+	<div class="modal fade" id="requestproject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="max-width: 780px!important;" >
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Request Project</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<form>
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Customer Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Code:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Manager:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Reason</label>
+							</div>
+
+							
+							
+							
+							
+						</div>
+						<div class="row">
+							
+
+							
+							<div class="col-md-12">
+							<textarea class="form-control " rows="5" style="text-transform: uppercase;" placeholder="Please State Your Reason"></textarea>			
+							</div>
+							
+							
+						</div>
+						
+					</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	<div class="modal fade" id="requestrejection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="max-width: 780px!important;" >
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Rejection Reason</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<form>
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Customer Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Code:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Name:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Project Manager:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Rejected On:</label>
+							</div>
+
+							
+							<div class="col-md-8">
+							<input type="text" readonly class="form-control" />			
+							</div>
+							
+							
+						</div>
+
+						
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-md-6">Remarks</label>
+							</div>
+
+							
+							
+							
+							
+						</div>
+						<div class="row">
+							
+
+							
+							<div class="col-md-12">
+							<textarea class="form-control" readonly rows="5" style="text-transform: uppercase;"></textarea>			
+							</div>
+							
+							
+						</div>
+						
+					</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  
+					</div>
+				  </div>
+				</div>
+			  </div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -801,20 +918,16 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+	<!-- required files -->
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-	
-	<script>
-$('#data-table-default').DataTable({
+
+<script>
+  $('#data-table-projectrequest').DataTable({
     responsive: true
   });
 </script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
-
-

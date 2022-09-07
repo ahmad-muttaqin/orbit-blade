@@ -71,23 +71,40 @@ Route::get('/setting/sop', function () {
     return view('settingsop');
 });
 Route::get('/setting/news', function () {
-    return view('projectregcust');
+    return view('settingnews');
 });
 
 Route::get('/project', function () {
     return view('projectregcustomers');
 });
 
-Route::get('/project/myproject', function () {
-    return view('projectregmyproject');
+Route::get('/setting/employmenttype', function () {
+    return view('settingemploymenttype');
 });
-
-Route::get('/project/projectlisting', function () {
-    return view('projectlisting');
+Route::get('/hris/editprofile', function () {
+    return view('hris-editprofile');
 });
-
-
-
+Route::get('/hris/edit', function () {
+    return view('hrisedit');
+});
+Route::get('/project/projectinformation', function () {
+    return view('projectinformation');
+});
+Route::get('/project/projectregistration', function () {
+    return view('projectregistration');
+});
+Route::get('/project/projectupdate', function () {
+    return view('projectupdate');
+});
+Route::get('/project/projectrequest', function () {
+    return view('projectrequest');
+});
+Route::get('/report/projectlisting', function () {
+    return view('reportprojectlisting');
+});
+Route::get('/report/viewprojectlisting', function () {
+    return view('viewprojectlisting');
+});
 
 
 Route::get('/hris/myprofile', function () {
@@ -109,6 +126,8 @@ Route::get('/org/orgchart', function () {
 Route::get('/org/dept-tree', function () {
     return view('departmenttree');
 });
+
+
 
 
 
