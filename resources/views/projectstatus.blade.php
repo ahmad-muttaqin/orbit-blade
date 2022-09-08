@@ -29,6 +29,7 @@
 
     <!-- required files -->
 <script src="../assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head> 
 
@@ -396,101 +397,123 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Project Registration <small>| My Project</small></h1>
+	<h1 class="page-header">Reporting <small>| Project  | Project Status </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		
-		<div class="panel-heading">
-		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
-		<div class="panel-body">
-		<table id="data-table-default" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th class="text-nowrap">Customer Name</th>
-						<th class="text-nowrap">Project Code</th>
-						<th class="text-nowrap">Project Name</th>
-						<th class="text-nowrap">Description</th>
-						<th class="text-nowrap">Project Manager</th>
-						<th class="text-nowrap">Contract End Date</th>
-						<th class="text-nowrap">Location</th>
-					</tr>
-				</thead>
-					<tbody>
-						<td>JABATAN PERDANA MENTERI</td>
-						<td>JPM1234</td>
-						<td>PC LEASING</td>
-						<td>To maintenance PC Leasing</td>
-						<td>Adli</td>
-						<td>01/03/2020</td>
-						<td><a href="#">2</a></td>
-					</tr>
-						<td>JABATAN KERJA RAYA</td>
-						<td>JKR1234</td>
-						<td>PC LEASING</td>
-						<td>To maintenance PC Leasing</td>
-						<td>Syakir</td>
-						<td>01/03/2020</td>
-						<td><a href="#">1</a></td>
-					</tr>
-						<td>JABATAN PERKHIDMATAN AWAM</td>
-						<td>JPA1234</td>
-						<td>PC LEASING</td>
-						<td>To maintenance PC Leasing</td>
-						<td>Adli</td>
-						<td>01/03/2020</td>
-						<td><a href="#">1</a></td>
-					</tr>
-						<td>EDARAN</td>
-						<td>Orbit0001</td>
-						<td>ORBIT System</td>
-						<td>To develop orbit system</td>
-						<td>Syakir</td>
-						<td>01/03/2020</td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">2</a></td>
-					</tr>
-						
-				</tbody>
-			</table>
-		</div>
-	</div>
+	<div class="panel panel-inverse">
+  <div class="panel-heading">
+    <h4 class="panel-title">Project Status Report</h4>
+    <div class="panel-heading-btn">
+      </a>
+    </div>
+  </div>
+
+  <div class="panel-body">
+  <div class="form-group col-md-4">
+        <label for="Menu1">View By : </label>
+        <select class="form-control" name="name1" id="select1">
+            <option value="All">All</option>
+            <option value="CustName">Customer Name</option>
+            <option value="FinYear">Financial Year</option>
+            <option value="AccManager">Account Manager</option>
+            <option value="ProjManager">Project Manager</option>
+            <option value="Status">Status</option>
+            <option value="ProjName">Project Name</option>
+            <option value="EmpName">Employee Name</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4" id="menu2">
+        <label for="Menu2">Select Customer Name : </label>
+        <select class="form-control" name="name2" id="select2">
+            <option value="">All</option>
+            <option value="JPM">Jabatan Perdana Menteri</option>
+            <option value="Edaran">Edaran</option>
+            <option value="JI">Jabatan Imigresen</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4" id="menu3">
+        <label for="Menu2">Select Financial Year : </label>
+        <select class="form-control" name="name3" id="select3">
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2018">2019</option>
+            <option value="2018">2020</option>
+            <option value="2018">2021</option>
+            <option value="2018">2022</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4" id="menu4">
+        <label for="Menu2">Select Account Manager : </label>
+        <select class="form-control" name="name4" id="select4">
+            <option value="Adli">Adli</option>
+            <option value="Nadia">Nadia</option>
+            <option value="Intan">Intan</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4" id="menu5">
+        <label for="Menu2">Select Project Manager : </label>
+        <select class="form-control" name="name5" id="select5">
+            <option value="Fahmi">Fahmi</option>
+            <option value="Irfan">Irfan</option>
+            <option value="Awatif">Awatif</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4" id="menu6">
+        <label for="Menu2">Select Status : </label>
+        <select class="form-control" name="name6" id="select6">
+            <option value="Ongoing">Ongoing</option>
+            <option value="Closed">Closed</option>
+            <option value="Warranty">Warranty</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4" id="menu7">
+        <label for="Menu2">Select Customer Name : </label>
+        <select class="form-control" name="name7" id="select7">
+            <option value="JPM">Jabatan Perdana Menteri</option>
+            <option value="Edaran">Edaran</option>
+            <option value="LPKN">LPKN</option>
+        </select>
+
+        <div class="form-group" id="menu8">
+            <label for="Menu3">Select Project Name : </label>
+            <select class="form-control" name="name8" id="select8">
+                <option value="PCL">PC Leasing</option>
+                <option value="P1">Project 1</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="form-group col-md-4" id="menu9">
+        <label for="Menu2">Select Department : </label>
+        <select class="form-control" name="name9" id="select9">
+            <option value="Sales">Sales</option>
+            <option value="Software">Software</option>
+            <option value="HR">HR</option>
+        </select>
+
+        <div class="form-group" id="menu10">
+            <label for="Menu3">Select Employee Name : </label>
+            <select class="form-control" name="name10" id="select10">
+                <option value="Abu">Abu</option>
+                <option value="Ali">Ali</option>
+                <option value="Ahmad">Ahmad</option>
+            </select>
+        </div>
+
+    </div>
+    
+    </div>
+</div>
+<button type="button" class="btn btn-primary">
+  Submit
+</button>
     
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">View Assigned Project Location</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-							<table id="data-table-default1" class="table table-striped table-bordered align-middle" style="width:100%">
-									<thead>
-										<tr>
-											<th class="text-nowrap">No.</th>
-											<th class="text-nowrap">Location Name</th>
-										</tr>
-									</thead>
-										<tbody>
-											<td>1</td>
-											<td>Putrajaya</td>
-										</tr>	
-									</tbody>
-								</table>
-							
-				</div>
-				<div class="modal-footer">
-					  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-					</div>
-				  </div>
-				</div>
-			  </div>	
+	
                 
 	<div class="row">
 		<!-- BEGIN col-4 -->
@@ -573,38 +596,79 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<!-- script -->
-    <script>
-function myFunction() {
-  var txt;
-  if (confirm("Are you sure you want to change the status of this company ? ")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
-</script>
-
 
 <script>
-  $('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
+$(document).ready(function(){
+   $("#menu2").hide();
+   $("#menu3").hide();
+   $("#menu4").hide();
+   $("#menu5").hide();
+   $("#menu6").hide();
+   $("#menu7").hide();
+   $("#menu9").hide();
 
-<script>
-$(document).ready(function () {
-    $("#myswitch").bootstrapSwitch();
-
-    $('#myswitch').on('switchChange.bootstrapSwitch', function (e, data) {
-        $('#showModal').modal('show');
-    });
 });
-    </script>
-
-<script>
-  $('#data-table-default1').DataTable({
-    responsive: false
-  });
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "CustName") {
+       $("#menu2").show();
+   } else {
+       $("#menu2").hide();
+   }
+});
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "FinYear") {
+       $("#menu3").show();
+   } else {
+       $("#menu3").hide();
+   }
+});
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "AccManager") {
+       $("#menu4").show();
+   } else {
+       $("#menu4").hide();
+   }
+});
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "ProjManager") {
+       $("#menu5").show();
+   } else {
+       $("#menu5").hide();
+   }
+});
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "Status") {
+       $("#menu6").show();
+   } else {
+       $("#menu6").hide();
+   }
+});
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "ProjName") {
+       $("#menu7").show();
+   } else {
+       $("#menu7").hide();
+   }
+});
+$(document).on('change',"#select7", function () {
+   if ($(this).val() == "JPM") {
+       $("#menu8").show();
+   } else {
+       $("#menu8").hide();
+   }
+});
+$(document).on('change',"#select1", function () {
+   if ($(this).val() == "EmpName") {
+       $("#menu9").show();
+   } else {
+       $("#menu9").hide();
+   }
+});
+$(document).on('change',"#select9", function () {
+   if ($(this).val() == "Sales") {
+       $("#menu10").show();
+   } else {
+       $("#menu10").hide();
+   }
+});
 </script>

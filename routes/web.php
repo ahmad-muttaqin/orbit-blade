@@ -99,6 +99,9 @@ Route::get('/project/projectupdate', function () {
 Route::get('/project/projectrequest', function () {
     return view('projectrequest');
 });
+Route::get('/project/projectregmyproject', function () {
+    return view('projectregmyproject');
+});
 Route::get('/report/projectlisting', function () {
     return view('reportprojectlisting');
 });
@@ -125,6 +128,10 @@ Route::get('/org/orgchart', function () {
 
 Route::get('/org/dept-tree', function () {
     return view('departmenttree');
+});
+
+Route::get('/reporting/projectstatus', function () {
+    return view('projectstatus');
 });
 
 
