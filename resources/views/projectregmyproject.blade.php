@@ -817,6 +817,6 @@ $(document).ready(function () {
 
 <script>
   $('#data-table-default1').DataTable({
-    responsive: true
+    responsive: false
   });
 </script>

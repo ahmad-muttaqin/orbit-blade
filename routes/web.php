@@ -99,6 +99,9 @@ Route::get('/project/projectupdate', function () {
 Route::get('/project/projectrequest', function () {
     return view('projectrequest');
 });
+Route::get('/project/projectregmyproject', function () {
+    return view('projectregmyproject');
+});
 Route::get('/report/projectlisting', function () {
     return view('reportprojectlisting');
 });
@@ -127,12 +130,12 @@ Route::get('/org/dept-tree', function () {
     return view('departmenttree');
 });
 
-Route::get('/project/projectregmyproject', function () {
-    return view('projectregmyproject');
+
+Route::get('/reporting/projectstatus', function () {
+    return view('projectstatus');
 });
-Route::get('/project', function () {
-    return view('projectregcustomers');
-});
+
+
 Route::get('/projectstatus/customername', function () {
     return view('statuscustomername');
 });
@@ -142,6 +145,7 @@ Route::get('/projectstatus/all', function () {
 Route::get('/projectstatus/financialyear', function () {
     return view('statusfinancialyear');
 });
+
 
 
 
