@@ -601,38 +601,51 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Department </small></h1>
+	<h1 class="page-header">Reporting | Project | Project Status Report </h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
 		
 		<!-- BEGIN panel-heading -->
-		
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Department</a>
+		<h4> Project Status Report </h4><br>
+		<h4> Financial Year : (YEAR SELECTED) </h4>
+		
 		</div>
 		
 			<h4 class="panel-title"></h4>
 			
 			
 		</div>
+		
 		<!-- END panel-heading -->
 		<!-- BEGIN panel-body -->
 		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
+			<table id="data-table-fixed-columns" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">No.</th>
-						<th class="text-nowrap">Company Name</th>
-						<th class="text-nowrap">Department Code</th>
-						<th class="text-nowrap">Company Code</th>
-						<th class="text-nowrap">Added By</th>
-						<th class="text-nowrap">Added Time</th>
-						<th class="text-nowrap">Modified By</th>
-						<th class="text-nowrap">Modified Time</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						<th width="1%">NO</th>
+						<th class="text-nowrap">Customer Name</th>
+						<th class="text-nowrap">Project Code</th>
+						<th class="text-nowrap">Project Name</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Contract Value</th>
+						<th class="text-nowrap">Contract Type</th>
+						<th class="text-nowrap">Financial Year</th>
+						<th class="text-nowrap">LOA Date</th>
+						<th class="text-nowrap">Contract Start Date</th>
+						<th class="text-nowrap">Contract End Date</th>
+						<th class="text-nowrap">Account Manager</th>
+						<th class="text-nowrap">Project Manager</th>
+						<th class="text-nowrap">Warranty Start Date</th>
+						<th class="text-nowrap">Warranty End Date</th>
+						<th class="text-nowrap">Bank Gurantee Amount</th>
+						<th class="text-nowrap">Bank Gurantee Expiry Date</th>
+						<th class="text-nowrap">Status</th>
+						
+						
 
 
 					</tr>
@@ -640,38 +653,230 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td>Edaran</td>
-						<td>Edaran001</td>
-						<td>Edaran IT service</td>
-						<td> Farid </td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
-						<td>MIDC</td>
-						<td>MIDC001</td>
-						<td>MIDC IT service</td>
-						<td> Farid </td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
-						<td>Shinba</td>
-						<td>Shinba002</td>
-						<td>Shinba IT service</td>
-						<td> Farid </td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+						<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
+						
+					</tr>
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Description</td>
+						<td class="text-nowrap">Contract Value</td>
+						<td class="text-nowrap">Contract Type</td>
+						<td class="text-nowrap">Financial Year</td>
+						<td class="text-nowrap">LOA Date</td>
+						<td class="text-nowrap">Contract Start Date</td>
+						<td class="text-nowrap">Contract End Date</td>
+						<td class="text-nowrap">Account Manager</td>
+						<td class="text-nowrap">Project Manager</td>
+						<td class="text-nowrap">Warranty Start Date</td>
+						<td class="text-nowrap">Warranty End Date</td>
+						<td class="text-nowrap">Bank Gurantee Amount</td>
+						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
+						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					
@@ -681,97 +886,15 @@
 				</tbody>
 			</table>
 		</div>
+		<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary">Close</button>
+					  
+					</div>
 	</div>
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Department</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label>Company Name* </label>
-						  <select class="form-select">
-								<option value="0" label="Select Company " selected="selected">Select Company </option>
-								<option value="1" label="Edaran IT">Edaran IT</option>
-								<option value="2" label="Shiba IT">Shiba IT</option>
-								<option value="3" label="Link IT">Link IT</option>
-								
-							</select>
-						</div>
-						<div class="mb-3">
-						  <label>Department Name* </label>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Company code* </label>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">New Department</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label>Company Name* </label>
-						  <select class="form-select">
-								<option value="0" label="Select Company " selected="selected">Select Company </option>
-								<option value="1" label="Edaran IT">Edaran IT</option>
-								<option value="2" label="Shiba IT">Shiba IT</option>
-								<option value="3" label="Link IT">Link IT</option>
-								
-							</select>
-						</div>
-						<div class="mb-3">
-						  <label>Department Name* </label>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-						<div class="mb-3">
-						  <label>Company code* </label>
-						  <input type="text" class="form-control" id="recipient-name" placeholder="">
-						</div>
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-						  
-				  
-		 		  	  
 	
-		<!-- END #content -->
-		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
-		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- END scroll-top-btn -->
-	</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -819,26 +942,51 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<!--
-	<script>
-  $("#jstree-checkable").jstree({
-    "plugins": ["wholerow", "checkbox", "types"],
-    "core": {
-      "themes": { "responsive": false },    
-      "data": [{
-        "text": "Same but with checkboxes",
-        "children": [{
-          "text": "initially selected",
-          "state": { "selected": true }
-        }, {
-          "text": "Folder 1"
+	<!-- required files -->
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-fixedcolumns/js/dataTables.fixedColumns.min.js"></script>
+<script src="../assets/plugins/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.min.js"></script>
+
+
+<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>	
 	
-	The template to display files available for upload -->
-
-
-<script>
-  $('#data-table-default').DataTable({
-    responsive: true
+	<script>
+  $('#data-table-fixed-columns').DataTable({
+    scrollY:170,
+    scrollX:true,
+	paging: false,
+	dom: '<"row"<"col-sm-5"B><"col-sm-7"fr>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+    buttons: [
+      { extend: 'excel', text: 'Excel', className: 'btn-sm' },
+      
+    ],
+    
   });
 </script>

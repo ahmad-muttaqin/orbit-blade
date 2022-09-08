@@ -130,8 +130,20 @@ Route::get('/org/dept-tree', function () {
     return view('departmenttree');
 });
 
+
 Route::get('/reporting/projectstatus', function () {
     return view('projectstatus');
+});
+
+
+Route::get('/projectstatus/customername', function () {
+    return view('statuscustomername');
+});
+Route::get('/projectstatus/all', function () {
+    return view('statusall');
+});
+Route::get('/projectstatus/financialyear', function () {
+    return view('statusfinancialyear');
 });
 
 

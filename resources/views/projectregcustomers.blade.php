@@ -153,7 +153,7 @@
                     <!-- Sidenav Content Orbit -->
 
                     <div class="menu-item has-sub mt-3">
-                        <a href="/dashboardTenant" class="menu-link">
+                        <a href="/dashboard/2" class="menu-link">
                             <div class="menu-icon">
                                 <i class="fa fa-clipboard-list text-gray"></i>
                             </div>
@@ -176,7 +176,7 @@
                         
                         <div class="menu-submenu">
                             <div class="menu-item">
-                                <a href="/myProfile" class="menu-link">
+                                <a href="/hris/myprofile" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-address-card text-gray"></i>
 									</div>
@@ -184,7 +184,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/employeeInfoView" class="menu-link">
+                                <a href="/hris" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-indent text-gray"></i>
 									</div>
@@ -312,7 +312,7 @@
                         </a>
                         <div class="menu-submenu">
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-share-nodes text-gray"></i>
 							    </div>
@@ -320,7 +320,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project/projectinformation" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-book text-gray"></i>
 							    </div>
@@ -328,7 +328,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project/projectregmyproject" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-clipboard-list text-gray"></i>
 							    </div>
@@ -336,7 +336,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/project/projectrequest" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-code-pull-request text-gray"></i>
 							    </div>
@@ -514,7 +514,7 @@
                                     <div class="menu-caret text-gray"></div>
 								</a><div class="menu-submenu">
                                 <div class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="/report/projectlisting" class="menu-link">
                                         <div class="menu-icon">
 								             <i class="fa fa-book text-gray"></i>
 							            </div>
