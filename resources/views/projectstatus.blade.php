@@ -410,7 +410,7 @@
   </div>
 
   <div class="panel-body">
-  <div class="form-group col-md-4">
+  <div class="form-group col-md-4 ">
         <label for="Menu1">View By : </label>
         <select class="form-control" name="name1" id="select1">
             <option value="All">All</option>
@@ -423,7 +423,7 @@
             <option value="EmpName">Employee Name</option>
         </select>
     </div>
-    <div class="form-group col-md-4" id="menu2">
+    <div class="form-group col-md-4 mt-3" id="menu2">
         <label for="Menu2">Select Customer Name : </label>
         <select class="form-control" name="name2" id="select2">
             <option value="">All</option>
@@ -432,7 +432,7 @@
             <option value="JI">Jabatan Imigresen</option>
         </select>
     </div>
-    <div class="form-group col-md-4" id="menu3">
+    <div class="form-group col-md-4 mt-3" id="menu3">
         <label for="Menu2">Select Financial Year : </label>
         <select class="form-control" name="name3" id="select3">
             <option value="2017">2017</option>
@@ -443,7 +443,7 @@
             <option value="2018">2022</option>
         </select>
     </div>
-    <div class="form-group col-md-4" id="menu4">
+    <div class="form-group col-md-4 mt-3" id="menu4">
         <label for="Menu2">Select Account Manager : </label>
         <select class="form-control" name="name4" id="select4">
             <option value="Adli">Adli</option>
@@ -451,7 +451,7 @@
             <option value="Intan">Intan</option>
         </select>
     </div>
-    <div class="form-group col-md-4" id="menu5">
+    <div class="form-group col-md-4 mt-3" id="menu5">
         <label for="Menu2">Select Project Manager : </label>
         <select class="form-control" name="name5" id="select5">
             <option value="Fahmi">Fahmi</option>
@@ -459,7 +459,7 @@
             <option value="Awatif">Awatif</option>
         </select>
     </div>
-    <div class="form-group col-md-4" id="menu6">
+    <div class="form-group col-md-4 mt-3" id="menu6">
         <label for="Menu2">Select Status : </label>
         <select class="form-control" name="name6" id="select6">
             <option value="Ongoing">Ongoing</option>
@@ -467,7 +467,7 @@
             <option value="Warranty">Warranty</option>
         </select>
     </div>
-    <div class="form-group col-md-4" id="menu7">
+    <div class="form-group col-md-4 mt-3" id="menu7">
         <label for="Menu2">Select Customer Name : </label>
         <select class="form-control" name="name7" id="select7">
             <option value="JPM">Jabatan Perdana Menteri</option>
@@ -475,7 +475,7 @@
             <option value="LPKN">LPKN</option>
         </select>
 
-        <div class="form-group" id="menu8">
+        <div class="form-group mt-3" id="menu8">
             <label for="Menu3">Select Project Name : </label>
             <select class="form-control" name="name8" id="select8">
                 <option value="PCL">PC Leasing</option>
@@ -485,7 +485,7 @@
 
     </div>
 
-    <div class="form-group col-md-4" id="menu9">
+    <div class="form-group col-md-4 mt-3" id="menu9">
         <label for="Menu2">Select Department : </label>
         <select class="form-control" name="name9" id="select9">
             <option value="Sales">Sales</option>
@@ -493,7 +493,7 @@
             <option value="HR">HR</option>
         </select>
 
-        <div class="form-group" id="menu10">
+        <div class="form-group mt-3" id="menu10">
             <label for="Menu3">Select Employee Name : </label>
             <select class="form-control" name="name10" id="select10">
                 <option value="Abu">Abu</option>
@@ -503,12 +503,13 @@
         </div>
 
     </div>
-    
-    </div>
-</div>
-<button type="button" class="btn btn-primary">
+    <button type="button" class="btn btn-primary mt-3">
   Submit
 </button>
+    </div>
+    
+</div>
+
     
 
 	<!-- END row -->
