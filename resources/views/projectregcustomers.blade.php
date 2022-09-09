@@ -522,7 +522,7 @@
                                     </a>
                                     </div>
                                     <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/reporting/projectstatus" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-book-open text-gray"></i>
 							    </div>

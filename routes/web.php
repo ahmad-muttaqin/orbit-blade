@@ -145,6 +145,9 @@ Route::get('/projectstatus/all', function () {
 Route::get('/projectstatus/financialyear', function () {
     return view('statusfinancialyear');
 });
+Route::get('/projectstatus/projectname', function () {
+    return view('statusprojectname');
+});
 
 
 

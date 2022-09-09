@@ -4,21 +4,17 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Roles</title>
+	<title>OrbitHRM | Settings </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
 	
-	
     <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
-
-
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 	<!-- ================== END core-css ================== -->
 	
 	<!-- ================== BEGIN page-css ================== -->
@@ -27,13 +23,6 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
-
-	<!-- required files -->
-	<link href="../assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="../assets/plugins/jstree/dist/jstree.min.js"></script>
-
-
-
 </head>
 
 <body>
@@ -612,93 +601,176 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Roles <small>| Use roles to group permissions. </small></h1>
+	<h1 class="page-header">Reporting <small>| Project | View Listing Report </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
-		
+	
 		<!-- BEGIN panel-heading -->
 		
-		<div class="panel-heading">
-		<div class="col-md-6">
-		<p>
-			
-		</p><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">+ New Role</a>
-		</div>
-		<div class="modal fade" id="modal-dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Select Permissions</h4>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-				</div>
-				<div class="modal-body"></div>
-				<div id="kt_docs_jstree_checkable"></div>
-			
-						<div class="modal-footer">
-							<a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal">Close</a>
-							<a href="javascript:;" class="btn btn-success">Action</a>
+		
+		<!-- END panel-heading -->
+		<div class="panel-body">
+		<h4 class="row"> 
+			<label class="form-label col-form-label col-md-4">Project Information</label>
+		
+		</h4>
+
+		<form>
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Customer Name:</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Code:</label>
+							
+							<label class="form-label col-form-label col-md-4">Project Name:</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="customer name" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+								<input type="Project Code" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+								<input type="Project name" readonly class="form-control mb-5px"  />
+							</div>
 						</div>
 
-				</div>
-			</div>
-			</div>
+						<h4 class="row"> 
+							<label class="form-label col-form-label col-md-4">Project Manager</label>
+						
+						</h4>
+						
+
+						<div class="row">
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Project Manager Name:</label>
+							</div>
+
+							
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Department:</label>				
+							</div>
+							
+							<div class="col-md-4">
+							<label class="form-label col-form-label col-md-4">Branch:</label>
+								
+							</div>
+						</div>
+
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="contract-value" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="contract-type" readonly class="form-control mb-5px"  />
+								
+							</div>
+							
+							<div class="col-md-4">
+							<input type="financial-year" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+						<h4 class="row"> 
+							<label class="form-label col-form-label col-md-4">Account Manager</label>
+						
+						</h4>
+
+						<div class="row">
+							<label class="form-label col-form-label col-md-4">Account Manager Name</label>
+							
+							<label class="form-label col-form-label col-md-4">Department</label>
+							
+							<label class="form-label col-form-label col-md-4">Branch</label>
+							
+						</div>
+						<div class="row mb-15px">
+							
+							<div class="col-md-4">
+							<input type="LOA-date" readonly class="form-control mb-5px"  />
+							</div>
+							
+							<div class="col-md-4">
+							<input type="contract-start-date" readonly class="form-control mb-5px"  />	
+							</div>
+							
+							<div class="col-md-4">
+							<input type="contract-end-date" readonly class="form-control mb-5px"  />
+							</div>
+						</div>
+
+						
+						
+
+						
+					</form>
 		
-			<h4 class="panel-title"></h4>
-			
-			<div class="panel-heading-btn">
-			<a href="#" class="btn btn-primary"><i class="fa fa-arrow-rotate-left"></i> Refresh</a>
-				
-			</div>
+
+
 		</div>
-		<!-- END panel-heading -->
 		<!-- BEGIN panel-body -->
 		<div class="panel-body">
 			<table id="data-table-default" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
+						
 						<th width="1%">NO</th>
-						<th class="text-nowrap">Role Name</th>
-						<th class="text-nowrap">Added By</th>
-						<th class="text-nowrap">Added Time</th>
-						<th class="text-nowrap">Modified By</th>
-						<th class="text-nowrap">Modified Time</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						<th class="text-nowrap">Project Member Name</th>
+						<th class="text-nowrap">Designation</th>
+						<th class="text-nowrap">Department</th>
+						<th class="text-nowrap">Branch</th>
+						<th class="text-nowrap">Unit</th>
+						<th class="text-nowrap">Joined Date</th>
+						<th class="text-nowrap">Location</th>
+
 
 
 					</tr>
 				</thead>
 				<tbody>
 					<tr class="odd gradeX">
+						
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td>Admin <span class="badge bg-primary rounded-pill">Static</span><span class="badge bg-dark rounded-pill">Default</span></td>
-						<td>ahmad</td>
-						<td>2 Feb 2022 2.30 pm</td>
-						<td>Elon Musk</td>
-						<td>14 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a></td>
-						
+						<td>Fatiha</td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>Headquaters</td>
+						<td>SOU Unit</td>
+						<td>8/3/2022</td>
+						<td><a href="#" data-bs-toggle="modal" data-bs-target="#viewassignedprevious">1</a></td>
+
 					</tr>
 					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">2</td>
-						<td>Administrator<span class="badge bg-primary rounded-pill">Static</span><span class="badge bg-dark rounded-pill">Default</span></td>
-						<td>Rosyam</td>
-						<td>3 Feb 2022 2.30 pm</td>
-						<td>Bill Gates</td>
-						<td>12 Feb 2021 4.30 pm</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> 
 						
+						<td width="1%" class="fw-bold text-dark">2</td>
+						<td>Fatiha</td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>Headquaters</td>
+						<td>SOU Unit</td>
+						<td>8/3/2022</td>
+						<td>1</td>
 					</tr>
 					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">3</td>
-						<td>Intern</td>
-						<td>abu</td>
-						<td>5 Feb 2022 2.30 pm</td>
-						<td>Maisarah</td>
-						<td>10 Feb 2022 2.30 pm</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
+					
+						<td width="1%" class="fw-bold text-dark">3</td>
+						<td>Fatiha</td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>Headquaters</td>
+						<td>SOU Unit</td>
+						<td>8/3/2022</td>
+						<td>2</td>
 					</tr>
 					
 					
@@ -707,210 +779,120 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
-
-	<!-- END row -->
-	<!-- BEGIN row -->
-	
-	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
+		<div class="modal fade" id="viewassignedprevious" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="max-width: 800px!important;">
 				  <div class="modal-content">
 					<div class="modal-header">
-						
-					  <h5 class="modal-title" id="exampleModalLabel">New Role</h5>
+					  <h5 class="modal-title" id="exampleModalLabel">View Assigned Project Location</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="hljs-wrapper">
-					 
+					<div class="modal-body">
+					  <form>
 						
-						<div class="mb-3">
-						  
-						<ul class="nav nav-tabs">
-				<li class="nav-item">
-					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
-						<span class="d-sm-none" >Tab 1</span>
-						<span class="d-sm-block d-none">Role name</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
-						<span class="d-sm-none">Tab 2</span>
-						<span class="d-sm-block d-none">Permissions</span>
-					</a>
-				</li>
-				
-			</ul>
+					  <div class="row">
+							
+					  		<div class="col-md-10">
+							<label class="form-label col-form-label col-md-10">Project Member Name: Noraliya</label>
+							</div>
 
-			<div class="tab-content panel m-0 rounded-0 p-3">
-				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade active show" id="default-tab-1">
-				<blockquote class="blockquote">
-						<p>Role name</p>
-						<input type="text" class="form-control" id="recipient-name">
-					</blockquote>
-					<div class="form-check">
-  						<input class="form-check-input" type="checkbox" id="checkbox1"  />
-  						<label class="form-check-label" for="checkbox1">Default</label>
-						<small> - Assign to new users by default. </small>
-					</div>	
-					<br>
-					<div class="note note-warning note-with-end-icon mb-2">
-						<div class="note-content text-end">
+						</div>
+						<div class="row">
 							
-							<p>
-							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
-							</p>
+					  		<div class="col-md-10">
+							<label class="form-label col-form-label col-md-10">Project Location Name</label>
+							</div>
+
 						</div>
 						
-					</div>
-					
-				</div>
-				<!-- END tab-pane -->
-				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade" id="default-tab-2">
-				<blockquote class="blockquote">
+					  </form>
+					  <div class="panel-body"><br>
+
+					<table id="data-table-viewassigned" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th width="1%">No</th>
+						<th width="1%" data-orderable="false" class="align-middle">Action</th>
+						<th class="text-nowrap">Project Location</th>
 						
-						<input type="text" class="form-control" id="recipient-name" placeholder="Search">
-						<br>
-						<div id="kt_docs_jstree_checkable2"></div>
-					</blockquote>
-					
-					<br>
-					<div class="note note-warning note-with-end-icon mb-2">
-						<div class="note-content text-end">
-							
-							<p>
-							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
-							</p>
-						</div>
 						
-					</div>
-				</div>
-				<!-- END tab-pane -->
-				<!-- BEGIN tab-pane -->
+						
+
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td width="1%">1</td>
+						<td width="1%"><a data-bs-toggle="modal" data-bs-target="#" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Putrajaya</td>
+						
+						
+					</tr>
+					<tr>
+					<td width="1%">2</td>
+						<td width="1%"><a data-bs-toggle="modal" data-bs-target="#" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Kuala Lumpur</td>
+						
+						
+					</tr>
+					<tr>
+					<td width="1%">3</td>
+						<td width="1%"><a data-bs-toggle="modal" data-bs-target="#" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Selangor</td>
+						
+						
+					</tr>
+					<tr>
+					<td width="1%">4</td>
+					<td width="1%"><a data-bs-toggle="modal" data-bs-target="#" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Kuala Terengganu</td>
+						
+						
+					</tr>
+					<tr>
+					<td width="1%">5</td>
+					<td width="1%"><a data-bs-toggle="modal" data-bs-target="#" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Pahang</td>
+						
+						
+					</tr>
+					<tr>
+					<td width="1%">6</td>
+					<td width="1%"><a data-bs-toggle="modal" data-bs-target="#" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+						<td>Kuala Pilah</td>
+						
+						
+					</tr>
+					
+				</tbody>
+			</table>
 				
-				<!-- END tab-pane -->
 			</div>
-						</div>
-						<div id="dvPreview"></div>
 					</div>
 					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
+					  <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+					  
 					</div>
 				  </div>
 				</div>
 			  </div>
-			  
-			  <!--  -->
-			  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-						
-					  <h5 class="modal-title" id="exampleModalLabel">Edit Role</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="hljs-wrapper">
-					 
-						
-						<div class="mb-3">
-						  
-						<ul class="nav nav-tabs">
-				<li class="nav-item">
-					<a href="#default-tab-3" data-bs-toggle="tab" class="nav-link active">
-						<span class="d-sm-none" >Tab 1</span>
-						<span class="d-sm-block d-none">Role name</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#default-tab-4" data-bs-toggle="tab" class="nav-link">
-						<span class="d-sm-none">Tab 2</span>
-						<span class="d-sm-block d-none">Permissions</span>
-					</a>
-				</li>
-				
-			</ul>
-
-			<div class="tab-content panel m-0 rounded-0 p-3">
-				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade active show" id="default-tab-3">
-				<blockquote class="blockquote">
-						<p>Role name</p>
-						<input type="text" class="form-control" id="recipient-name">
-					</blockquote>
-					<div class="form-check">
-  						<input class="form-check-input" type="checkbox" id="checkbox1"  />
-  						<label class="form-check-label" for="checkbox1">Default</label>
-						<small> - Assign to new users by default. </small>
-					</div>	
-					<br>
-					<div class="note note-warning note-with-end-icon mb-2">
-						<div class="note-content text-end">
-							
-							<p>
-							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
-							</p>
-						</div>
-						
-					</div>
+		<div class="modal-footer">
+		</div>	
+		<div >
+		<button type="button" class="btn btn-secondary m-3" data-bs-dismiss="modal">Back</button>
+</div>
 					
-				</div>
-				<!-- END tab-pane -->
-				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade" id="default-tab-4">
-				<blockquote class="blockquote">
-						
-						<input type="text" class="form-control" id="recipient-name" placeholder="Search">
-						<br>
-						<div id="kt_docs_jstree_checkable3"></div>
-					</blockquote>
-					
-					<br>
-					<div class="note note-warning note-with-end-icon mb-2">
-						<div class="note-content text-end">
-							
-							<p>
-							If you are changing your own permissions, you may need to refresh page (F5) to take effect of permission changes on your own screen!
-							</p>
-						</div>
-						
-					</div>
-				</div>
-				<!-- END tab-pane -->
-				<!-- BEGIN tab-pane -->
-				
-				<!-- END tab-pane -->
-			</div>
-						</div>
-						<div id="dvPreview"></div>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Update</button>
-					</div>
-				  </div>
-				</div>
-			  </div>	
-		 		  	  
-			 
-	<!-- END row -->
-		</div>
-		<!-- END #content -->
-		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
-		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- END scroll-top-btn -->
 	</div>
+
+	<!-- END row -->
+	<!-- BEGIN row -->
+					
+	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
-	<script src="../assets/dist/jstree.min.js"></script>
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
@@ -953,244 +935,16 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<script src="/assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+	<!-- required files -->
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
 
-	
-	<script>
- $('#kt_docs_jstree_checkable').jstree({
-    'plugins': ["wholerow", "checkbox", "types"],
-    'core': {
-        "themes" : {
-            "responsive": false
-        },
-        'data': [{
-                "text": "Pages",
-                "children": [{
-                    "text": "initially selected",
-                    "state": {
-                        "selected": true
-                    }
-                }, {
-                    "text": "Employee Spouses",
-                    "icon" : "fa fa-folder text-default",
-                    "state": { "opened": true},
-                    "children": [{"text" : "New Employee Spouses"}, {"text" : "Edit Employee Spouses", }],
-                },{
-                    "text": "Designation",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Designation"}, {"text" : "Edit Designation"}, {"text" : "Delete Designation"}],
-                },{
-                    "text": "Job Grade",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Job Grade"}, {"text" : "Edit Job Grade"}, {"text" : "Delete Job Grade"}],
-                },{
-                    "text": "Unit",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Unit"}, {"text" : "Edit Unit"}, {"text" : "Delete Unit"}],
-                },{
-                    "text": "Department",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Department"}, {"text" : "Edit Department"}, {"text" : "Delete Department"}],
-                },{
-                    "text": "Races",
-                },{
-                    "text": "Religions",
-                },{
-                    "text": "Branches",
-                    "icon" : "fa fa-folder text-default",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [{"text" : "New Branches"}, {"text" : "Edit Branches"}, {"text" : "Delete Branches"}],
-                },{
-                    "text": "custom icon",
-                    "icon": "fa fa-warning text-waring"
-                }, {
-                    "text": "disabled node",
-                    "icon": "fa fa-check text-success",
-                    "state": {
-                        "disabled": true
-                    }
-                }]
-            },
-            "Others"
-        ]
-    },
-    "types" : {
-        "default" : {
-            "icon" : "fa fa-folder text-warning"
-        },
-        "file" : {
-            "icon" : "fa fa-file  text-warning"
-        }
-    },
-});
-</script>
 <script>
   $('#data-table-default').DataTable({
-    responsive: true
+    responsive: true,
+	lengthMenu: [5, 10, 15],
   });
 </script>
 
-	
-<script>
- $('#kt_docs_jstree_checkable2').jstree({
-    'plugins': ["wholerow", "checkbox", "types"],
-    'core': {
-        "themes" : {
-            "responsive": false
-        },
-        'data': [{
-                "text": "HRIS",
-                "children": [{
-					"text": "Employee Info", 
-					"state": { "selected": false },
-					"children": [{"text" : "Register Employee"}, {"text" : "Update Employee", },{"text" : "Terminate Employee", },{"text" : "Activate Employee", }],
-                }]
-            },{
-                "text": "TSR",
-                "children": [{
-					"text": "My Timesheet",
-					"children": [{ "text": "Create Event" }]
-						},{
-				"text" : "Timesheet Report",
-				"children": [{"text": "Approve TSR"},{"text": "Decline TSR"},{"text": "View TSR"}]
-			}]
-            },{
-                "text": "Attendance",
-                "children": [{
-					"text": "My Attendance",
-					"children": [{ "text": "View Action Log" }]
-						},{
-				"text" : "Attendance Info",
-			}]
-            },{
-                "text": "Leave",
-                "children": [{
-					"text": "Leave Approval", 
-					"state": { "selected": false },
-					"children": [{"text" : "Approve Leave"}, {"text" : "Reject Leave", },{"text" : "View Leave", }],
-                }]
-            },{
-                "text": "Project",
-                "children": [{
-					"text": "Project Info", 
-					"state": { "selected": false },
-					"children": [{"text" : "Register Project"}, {"text" : "View Project", },{"text" : "Update Status", },{"text" : "Update Project", }],
-                },{
-				"text" : "Project Approval",
-				"children": [{"text": "View Project Request"},{"text": "Approve Project Request"},{"text": "Reject Project Request"}]
-			}]
-            },{
-                "text": "Claim",
-                "children": [{
-					"text": "Claim Approval", 
-					"state": { "selected": false },
-					"children": [{"text" : "Approve Claim"}, {"text" : "Recommend Claim" },{"text" : "Check Claim"},{"text" : "Amend Claim"},{"text" : "Cancel Claim"}],
-                }]
-            },{
-                "text": "Settings",
-                "children": [{"text": "General Settings"},{"text": "Timesheet Settings"},{"text": "Leave Settings"}]
-            },{
-                "text": "Reporting",
-                "children": [{"text": "TSR"},{"text": "Attendance"},{"text": "Leave"},{"text": "Project"},{"text": "Claim"}]
-            }
-        ]
-    },
-    "types" : {
-        "default" : {
-            "icon" : "fa fa-folder text-warning"
-        },
-        "file" : {
-            "icon" : "fa fa-file  text-warning"
-        }
-    },
-});
-</script>
-<script>
- $('#kt_docs_jstree_checkable3').jstree({
-    'plugins': ["wholerow", "checkbox", "types"],
-    'core': {
-        "themes" : {
-            "responsive": false
-        },
-        'data': [{
-                "text": "HRIS",
-                "children": [{
-					"text": "Employee Info", 
-					"state": { "selected": false },
-					"children": [{"text" : "Register Employee"}, {"text" : "Update Employee", },{"text" : "Terminate Employee", },{"text" : "Activate Employee", }],
-                }]
-            },{
-                "text": "TSR",
-                "children": [{
-					"text": "My Timesheet",
-					"children": [{ "text": "Create Event" }]
-						},{
-				"text" : "Timesheet Report",
-				"children": [{"text": "Approve TSR"},{"text": "Decline TSR"},{"text": "View TSR"}]
-			}]
-            },{
-                "text": "Attendance",
-                "children": [{
-					"text": "My Attendance",
-					"children": [{ "text": "View Action Log" }]
-						},{
-				"text" : "Attendance Info",
-			}]
-            },{
-                "text": "Leave",
-                "children": [{
-					"text": "Leave Approval", 
-					"state": { "selected": false },
-					"children": [{"text" : "Approve Leave"}, {"text" : "Reject Leave", },{"text" : "View Leave", }],
-                }]
-            },{
-                "text": "Project",
-                "children": [{
-					"text": "Project Info", 
-					"state": { "selected": false },
-					"children": [{"text" : "Register Project"}, {"text" : "View Project", },{"text" : "Update Status", },{"text" : "Update Project", }],
-                },{
-				"text" : "Project Approval",
-				"children": [{"text": "View Project Request"},{"text": "Approve Project Request"},{"text": "Reject Project Request"}]
-			}]
-            },{
-                "text": "Claim",
-                "children": [{
-					"text": "Claim Approval", 
-					"state": { "selected": false },
-					"children": [{"text" : "Approve Claim"}, {"text" : "Recommend Claim" },{"text" : "Check Claim"},{"text" : "Amend Claim"},{"text" : "Cancel Claim"}],
-                }]
-            },{
-                "text": "Settings",
-                "children": [{"text": "General Settings"},{"text": "Timesheet Settings"},{"text": "Leave Settings"}]
-            },{
-                "text": "Reporting",
-                "children": [{"text": "TSR"},{"text": "Attendance"},{"text": "Leave"},{"text": "Project"},{"text": "Claim"}]
-            }
-        ]
-    },
-    "types" : {
-        "default" : {
-            "icon" : "fa fa-folder text-warning"
-        },
-        "file" : {
-            "icon" : "fa fa-file  text-warning"
-        }
-    },
-});
-</script>
