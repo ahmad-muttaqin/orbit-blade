@@ -142,8 +142,8 @@ Route::get('/projectstatus/customername', function () {
 Route::get('/projectstatus/all', function () {
     return view('statusall');
 });
-Route::get('/projectstatus/financialyear', function () {
-    return view('statusfinancialyear');
+Route::get('/projectstatus/employeename', function () {
+    return view('statusemployeename');
 });
 Route::get('/projectstatus/projectname', function () {
     return view('statusprojectname');
