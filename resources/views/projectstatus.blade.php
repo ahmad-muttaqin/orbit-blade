@@ -717,17 +717,7 @@
     </div>
         
     </div>
-    <div class="modal-footer">
-					  <button type="button" class="btn btn-secondary">Close</button>
-                      <button type="button" class="btn btn-primary">submit</button>
-					</div>
-</div>
-    <label> Notes for routing to which page after submit button </label><br>
-        <label> View by - File name </label><br>
-        <label> All - statusall.php </label><br>
-        <label> (custumer name, financial year, account manager, project manager, status) (all 17 clomun) - customername.php </label><br>
-        <label> project name - statusprojectname.php </label><br>
-        <label> employee name - statusemployeename.php </label><br>
+    
 	<!-- END row -->
 	<!-- BEGIN row -->
 	
