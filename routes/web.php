@@ -148,6 +148,9 @@ Route::get('/projectstatus/employeename', function () {
 Route::get('/projectstatus/projectname', function () {
     return view('statusprojectname');
 });
+Route::get('/project/viewlocassign', function () {
+    return view('viewlocassign');
+});
 
 
 
