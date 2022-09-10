@@ -610,8 +610,8 @@
 		<!-- BEGIN panel-heading -->
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<h4> Project Status Report </h4><br>
-		<h4> Financial Year : (YEAR SELECTED) </h4>
+		<h4> Employee Name :</h4>
+		
 		
 		</div>
 		
@@ -630,22 +630,14 @@
 						<th class="text-nowrap">Customer Name</th>
 						<th class="text-nowrap">Project Code</th>
 						<th class="text-nowrap">Project Name</th>
-						<th class="text-nowrap">Description</th>
-						<th class="text-nowrap">Contract Value</th>
-						<th class="text-nowrap">Contract Type</th>
-						<th class="text-nowrap">Financial Year</th>
-						<th class="text-nowrap">LOA Date</th>
-						<th class="text-nowrap">Contract Start Date</th>
-						<th class="text-nowrap">Contract End Date</th>
-						<th class="text-nowrap">Account Manager</th>
-						<th class="text-nowrap">Project Manager</th>
-						<th class="text-nowrap">Warranty Start Date</th>
-						<th class="text-nowrap">Warranty End Date</th>
-						<th class="text-nowrap">Bank Gurantee Amount</th>
-						<th class="text-nowrap">Bank Gurantee Expiry Date</th>
-						<th class="text-nowrap">Status</th>
-						
-						
+						<th class="text-nowrap">Project Member Name</th>
+						<th class="text-nowrap">Designantion</th>
+						<th class="text-nowrap">Brnach</th>
+						<th class="text-nowrap">Unit</th>
+						<th class="text-nowrap">Joined Date</th>
+						<th class="text-nowrap">Exit Date</th>
+						<th class="text-nowrap">Assigned As</th>
+						<th class="text-nowrap">Project Status</th>
 
 
 					</tr>
@@ -656,62 +648,29 @@
 						<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
-						<td class="text-nowrap">Customer Name</td>
+					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
-						
-					</tr>
-					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">3</td>
-						<td class="text-nowrap">Customer Name</td>
-						<td class="text-nowrap">Project Code</td>
-						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -719,20 +678,14 @@
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -740,20 +693,14 @@
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -761,20 +708,14 @@
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -782,101 +723,86 @@
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
-						<td class="text-nowrap">Customer Name</td>
+					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
+						
+					</tr>
+					<tr class="even gradeC">
+					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Customer Name</td>
+						<td class="text-nowrap">Project Code</td>
+						<td class="text-nowrap">Project Name</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
 					<td class="text-nowrap">Customer Name</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
-						<td class="text-nowrap">Description</td>
-						<td class="text-nowrap">Contract Value</td>
-						<td class="text-nowrap">Contract Type</td>
-						<td class="text-nowrap">Financial Year</td>
-						<td class="text-nowrap">LOA Date</td>
-						<td class="text-nowrap">Contract Start Date</td>
-						<td class="text-nowrap">Contract End Date</td>
-						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
-						<td class="text-nowrap">Warranty Start Date</td>
-						<td class="text-nowrap">Warranty End Date</td>
-						<td class="text-nowrap">Bank Gurantee Amount</td>
-						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						<td class="text-nowrap">Project Member Name</td>
+						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Brnach</td>
+						<td class="text-nowrap">Unit</td>
+						<td class="text-nowrap">Joined Date</td>
+						<td class="text-nowrap">Exit Date</td>
+						<td class="text-nowrap">Assigned As</td>
+						<td class="text-nowrap">Project Status</td>
 						
 					</tr>
 					
@@ -931,10 +857,6 @@
 	<script src="/assets/js/demo/render.highlight.js"></script>
 	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
 	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/moment/min/moment.min.js"></script>
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -960,7 +882,6 @@
 
 
 <!-- required files -->
-<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 <link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
 <link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
 <script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -979,9 +900,8 @@
 	
 	<script>
   $('#data-table-fixed-columns').DataTable({
-    scrollY:170,
-    scrollX:true,
-	paging: false,
+	lengthMenu: [5, 10],
+	paging: true,
 	dom: '<"row"<"col-sm-5"B><"col-sm-7"fr>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
     buttons: [
       { extend: 'excel', text: 'Excel', className: 'btn-sm' },
