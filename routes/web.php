@@ -151,7 +151,9 @@ Route::get('/projectstatus/projectname', function () {
 Route::get('/project/viewlocassign', function () {
     return view('viewlocassign');
 });
-
+Route::get('/project/viewlocassignmyproject', function () {
+    return view('viewlocassignmyproject');
+});
 
 
 
