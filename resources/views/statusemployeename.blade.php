@@ -631,8 +631,9 @@
 						<th class="text-nowrap">Project Code</th>
 						<th class="text-nowrap">Project Name</th>
 						<th class="text-nowrap">Project Member Name</th>
-						<th class="text-nowrap">Designantion</th>
-						<th class="text-nowrap">Brnach</th>
+						<th class="text-nowrap">Designation</th>
+						<th class="text-nowrap">Department</th>
+						<th class="text-nowrap">Branch</th>
 						<th class="text-nowrap">Unit</th>
 						<th class="text-nowrap">Joined Date</th>
 						<th class="text-nowrap">Exit Date</th>
@@ -650,6 +651,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -665,6 +667,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -680,6 +683,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -695,6 +699,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -710,6 +715,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -725,6 +731,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -740,6 +747,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -755,6 +763,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -769,6 +778,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -783,6 +793,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
@@ -797,6 +808,7 @@
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Project Member Name</td>
 						<td class="text-nowrap">Designantion</td>
+						<td class="text-nowrap">Department</td>
 						<td class="text-nowrap">Brnach</td>
 						<td class="text-nowrap">Unit</td>
 						<td class="text-nowrap">Joined Date</td>
