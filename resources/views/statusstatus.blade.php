@@ -611,7 +611,7 @@
 		
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<h4> Customer Name : (Customer Name) </h4>
+		<h4> Status: (Status) </h4>
 		
 		</div>
 		
@@ -626,6 +626,7 @@
 				<thead>
 					<tr>
 						<th width="1%">NO</th>
+						<th class="text-nowrap">Customer Name</th>
 						<th class="text-nowrap">Project Code</th>
 						<th class="text-nowrap">Project Name</th>
 						<th class="text-nowrap">Description</th>
@@ -641,7 +642,7 @@
 						<th class="text-nowrap">Warranty End Date</th>
 						<th class="text-nowrap">Bank Gurantee Amount</th>
 						<th class="text-nowrap">Bank Gurantee Expiry Date</th>
-						<th class="text-nowrap">Status</th>
+						
 						
 						
 
@@ -651,6 +652,7 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
+						<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -666,11 +668,12 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
+						
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -686,11 +689,11 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -706,11 +709,11 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -726,11 +729,11 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -746,11 +749,11 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -766,11 +769,11 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -786,11 +789,10 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
-						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -806,10 +808,10 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -825,10 +827,10 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -844,10 +846,10 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -863,7 +865,6 @@
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
-						<td class="text-nowrap">Status</td>
 						
 					</tr>
 					

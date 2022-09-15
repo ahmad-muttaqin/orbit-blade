@@ -611,7 +611,7 @@
 		
 		<div class="panel-heading">
 		<div class="col-md-6">
-		<h4> Customer Name : (Customer Name) </h4>
+		<h4> Project Manager: (Project Manager) </h4>
 		
 		</div>
 		
@@ -626,6 +626,7 @@
 				<thead>
 					<tr>
 						<th width="1%">NO</th>
+						<th class="text-nowrap">Customer Name</th>
 						<th class="text-nowrap">Project Code</th>
 						<th class="text-nowrap">Project Name</th>
 						<th class="text-nowrap">Description</th>
@@ -636,7 +637,6 @@
 						<th class="text-nowrap">Contract Start Date</th>
 						<th class="text-nowrap">Contract End Date</th>
 						<th class="text-nowrap">Account Manager</th>
-						<th class="text-nowrap">Project Manager</th>
 						<th class="text-nowrap">Warranty Start Date</th>
 						<th class="text-nowrap">Warranty End Date</th>
 						<th class="text-nowrap">Bank Gurantee Amount</th>
@@ -651,6 +651,7 @@
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
+						<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -661,7 +662,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -671,6 +671,7 @@
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">2</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -681,7 +682,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -691,6 +691,7 @@
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -701,7 +702,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -711,6 +711,7 @@
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -721,7 +722,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -731,6 +731,7 @@
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -741,7 +742,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -751,6 +751,7 @@
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -761,7 +762,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -771,6 +771,7 @@
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -781,16 +782,15 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
 						<td class="text-nowrap">Bank Gurantee Expiry Date</td>
 						<td class="text-nowrap">Status</td>
-						
 					</tr>
 					<tr class="even gradeC">
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -801,7 +801,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -810,6 +809,7 @@
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -820,7 +820,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -829,6 +828,7 @@
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -839,7 +839,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
@@ -848,6 +847,7 @@
 						
 					</tr>
 					<td width="1%" class="fw-bold text-dark">3</td>
+					<td class="text-nowrap">Ali</td>
 						<td class="text-nowrap">Project Code</td>
 						<td class="text-nowrap">Project Name</td>
 						<td class="text-nowrap">Description</td>
@@ -858,7 +858,6 @@
 						<td class="text-nowrap">Contract Start Date</td>
 						<td class="text-nowrap">Contract End Date</td>
 						<td class="text-nowrap">Account Manager</td>
-						<td class="text-nowrap">Project Manager</td>
 						<td class="text-nowrap">Warranty Start Date</td>
 						<td class="text-nowrap">Warranty End Date</td>
 						<td class="text-nowrap">Bank Gurantee Amount</td>
