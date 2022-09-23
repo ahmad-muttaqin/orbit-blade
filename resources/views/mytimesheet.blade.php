@@ -587,20 +587,22 @@
 		<!-- BEGIN #content -->
 		<div id="content" class="app-content">
 			<!-- BEGIN breadcrumb -->
-			<ol class="breadcrumb float-xl-end">
-				<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-				<li class="breadcrumb-item active">Calendar</li>
-			</ol>
+			
 			<!-- END breadcrumb -->
 			<!-- BEGIN page-header -->
-			<h1 class="page-header">Calendar <small>header small text goes here...</small></h1>
+			<h1 class="page-header">Calendar</h1>
 			<!-- END page-header -->
-			<hr />
+			
 			<!-- BEGIN row -->
 			<div class="row">
 				<!-- BEGIN event-list -->
 				<div class="d-none d-lg-block" style="width: 215px">
 					<div id="external-events" class="fc-event-list">
+						<div class="btn-group w-100">
+						<button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#newlogmodal">New Log</button>
+						<button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#neweventmodal">New Events</button>
+						
+						</div>
 						<hr class="bg-grey-lighter my-3" />
 						<h5 class="mb-3">Draggable Events</h5>
 						<div class="fc-event" data-color="#00acac">
@@ -637,8 +639,134 @@
 			<!-- END row -->
 		</div>
 		<!-- END #content -->
-		
-		
+		<!-- MODAL ADD LOG -->
+		<div class="modal fade" id="newlogmodal" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newlogmodal">Add New Logs</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addChildrenForm">
+                    <div class="row p-2">
+                        <div class="col-sm-6">
+                            <label for="firstname" class="form-label">Type Of Log*</label>
+                            <input type="text" id="" name="firstName" value="" class="form-control" aria-describedby="firstname">
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lastname" class="form-label">Date*</label>
+                            <input type="text" id="" name="lastName" value=""  class="form-control" aria-describedby="lastname">
+                        </div>
+                    </div>
+                   
+                    <div class="row p-2">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6 ">
+                                    <div class="form-check form-switch align-right">
+                                        <input class="form-check-input" type="checkbox" id="" name="nonCitizen" >
+                                        <label class="form-check-label" for="citizen">
+                                            Non-Citizen
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="lastname" class="form-label">Identification Number*</label>
+                                    <input type="text" id="" name="idNo" value="" class="form-control" aria-describedby="lastname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <input type="date" id="" name="DOB" class="form-control" aria-describedby="dob">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="age" class="form-label">Age</label>
+                                    <input type="text" id="" name="age" class="form-control" aria-describedby="age">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="passport" class="form-label">Passport Number</label>
+                                    <input type="text" id="" name="passport" class="form-control" aria-describedby="passport">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="expirydate" class="form-label">Expiry Date</label>
+                                    <input type="date" id="" name="expiryDate" class="form-control" aria-describedby="expirydate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="issuing-country" class="form-label">Issuing Country</label>
+                            <select class="form-select" name="issuingCountry" id="">
+                                
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        <div class="col-sm-6">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select class="form-select" name="gender" id="">
+                               
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="issuing-country" class="form-label">Marital Status</label>
+                            <select class="form-select" name="maritalStatus" id="">
+                                <option value="0" label="Please Choose "></option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <had type="button" class="btn btn-primary formSave" id="addChildren">Save</had>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- MODAL ADD LOG -->
+
+		<!-- MODAL ADD EVENT -->
+		<div class="modal fade" id="neweventmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">ADD NEW EVENTS</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal1" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <form>
+					  <div class="mb-3">
+						  <label>A password reset link will be sent to your email to reset your password. If you don't get an email within a few minutes, please re-try.</label>
+						  
+						</div>
+						<div class="mb-3">
+						  <label for="recipient-name" class="col-form-label">Email</label>
+						  <input type="text" class="form-control" id="recipient-name">
+						</div>
+					  </form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				  </div>
+				</div>
+			  </div> 
+		<!-- MODAL ADD EVENT -->
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 		<!-- END scroll-top-btn -->
@@ -689,10 +817,18 @@
   var calendarElm = document.getElementById('calendar');
 	var calendar = new FullCalendar.Calendar(calendarElm, {
     headerToolbar: {
-      left: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek',
+      left: 'prev today next',
       center: 'title',
-      right: 'prev,next today'
+      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
     },
+	customButtons: {
+    myCustomButton: {
+      text: 'Add Log',
+      click: function() {
+        alert('clicked the custom button!');
+      }
+    }
+  },
     buttonText: {
     	today:    'Today',
 			month:    'Month',
