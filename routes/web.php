@@ -166,7 +166,9 @@ Route::get('/project/viewlocassign', function () {
 Route::get('/project/viewlocassignmyproject', function () {
     return view('viewlocassignmyproject');
 });
-
+Route::get('/timesheet/mytimesheet', function () {
+    return view('mytimesheet');
+});
 
 
 
