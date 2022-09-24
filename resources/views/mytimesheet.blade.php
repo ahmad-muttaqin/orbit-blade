@@ -19,6 +19,7 @@
 	<link href="../assets/plugins/@fullcalendar/timegrid/main.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/@fullcalendar/list/main.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/@fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
+	
 	<!-- ================== END page-css ================== -->
 </head>
 <body>
@@ -596,39 +597,7 @@
 			<!-- BEGIN row -->
 			<div class="row">
 				<!-- BEGIN event-list -->
-				<div class="d-none d-lg-block" style="width: 215px">
-					<div id="external-events" class="fc-event-list">
-						<div class="btn-group w-100">
-						<button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#newlogmodal">New Log</button>
-						<button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#neweventmodal">New Events</button>
-						
-						</div>
-						<hr class="bg-grey-lighter my-3" />
-						<h5 class="mb-3">Draggable Events</h5>
-						<div class="fc-event" data-color="#00acac">
-							<div class="fc-event-text">Meeting with Client</div>
-							<div class="fc-event-icon"><i class="fas fa-circle fa-fw fs-9px text-success"></i></div>
-						</div>
-						<div class="fc-event" data-color="#348fe2">
-							<div class="fc-event-text">IOS App Development</div>
-							<div class="fc-event-icon"><i class="fas fa-circle fa-fw fs-9px text-blue"></i></div>
-						</div>
-						<div class="fc-event" data-color="#f59c1a">
-							<div class="fc-event-text">Group Discussion</div>
-							<div class="fc-event-icon"><i class="fas fa-circle fa-fw fs-9px text-warning"></i></div>
-						</div>
-						<div class="fc-event" data-color="#ff5b57">
-							<div class="fc-event-text">New System Briefing</div>
-							<div class="fc-event-icon"><i class="fas fa-circle fa-fw fs-9px text-danger"></i></div>
-						</div>
-						<div class="fc-event">
-							<div class="fc-event-text">Brainstorming</div>
-							<div class="fc-event-icon"><i class="fas fa-circle fa-fw fs-9px text-dark"></i></div>
-						</div>
-						<hr class="bg-grey-lighter my-3" />
-						
-					</div>
-				</div>
+				
 				<!-- END event-list -->
 				<div class="col-lg">
 					<!-- BEGIN calendar -->
@@ -652,7 +621,12 @@
                     <div class="row p-2">
                         <div class="col-sm-6">
                             <label for="firstname" class="form-label">Type Of Log*</label>
-                            <input type="text" id="" name="firstName" value="" class="form-control" aria-describedby="firstname">
+							<select class="form-select" aria-label="Default select example">
+							<option selected>Please Select</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+							</select>
                             
                         </div>
                         <div class="col-sm-6">
@@ -664,14 +638,18 @@
                     <div class="row p-2">
                         <div class="col-sm-6">
                             <div class="row">
-                                <div class="col-sm-6 ">
-                                    <div class="form-check form-switch align-right">
-                                        <input class="form-check-input" type="checkbox" id="" name="nonCitizen" >
-                                        <label class="form-check-label" for="citizen">
-                                            Non-Citizen
-                                        </label>
-                                    </div>
-                                </div>
+							<div class="col-sm-6">
+                            <label for="firstname" class="form-label">Activity Name</label>
+							<select class="form-select" name="typeoflog" id="typeoflog">
+								<option value="" label="Please Select"></option>
+								<option value="1" label="Home"></option>
+								<option value="2" label="Office"></option>
+								<option value="3" label="My Project"></option>
+								<option value="4" label="Others"></option>
+                                
+								</select>
+                            
+                        </div>
                                 <div class="col-sm-6">
                                     <label for="lastname" class="form-label">Identification Number*</label>
                                     <input type="text" id="" name="idNo" value="" class="form-control" aria-describedby="lastname">
@@ -794,17 +772,7 @@
 <script>
 	var handleCalendarDemo = function() {
 	// external events
-	var containerEl = document.getElementById('external-events');
-  var Draggable = FullCalendarInteraction.Draggable;
-	new Draggable(containerEl, {
-    itemSelector: '.fc-event',
-    eventData: function(eventEl) {
-      return {
-        title: eventEl.innerText,
-        color: eventEl.getAttribute('data-color')
-      };
-    }
-  });
+	
   
   // fullcalendar
   
@@ -815,20 +783,27 @@
 	var day = d.getDate();
 	var today = moment().startOf('day');
   var calendarElm = document.getElementById('calendar');
+
 	var calendar = new FullCalendar.Calendar(calendarElm, {
     headerToolbar: {
-      left: 'prev today next',
+      left: 'logButton EventButton',
       center: 'title',
-      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+      right: 'prev,today,next dayGridMonth,timeGridWeek,timeGridDay,listWeek'
     },
 	customButtons: {
-    myCustomButton: {
-      text: 'Add Log',
-      click: function() {
-        alert('clicked the custom button!');
-      }
-    }
-  },
+        logButton: {
+            text:'New Log',
+            click:function(event, jsEvent, view){
+                   $('#newlogmodal').modal('show');
+          }
+        },
+		EventButton: {
+            text:'Add Event',
+            click:function(event, jsEvent, view){
+                   $('#neweventmodal').modal('show');
+          }
+        }
+      },
     buttonText: {
     	today:    'Today',
 			month:    'Month',
@@ -837,8 +812,8 @@
 			list:     'List'
     },
     initialView: 'dayGridMonth',
-    editable: true,
-    droppable: true,
+    editable: false,
+    droppable: false,
   	themeSystem: 'bootstrap',
 		views: {
 			timeGrid: {
@@ -940,3 +915,4 @@ $(document).ready(function() {
 	Calendar.init();
 });
 </script>
+
