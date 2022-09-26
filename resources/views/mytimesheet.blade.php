@@ -924,14 +924,14 @@
 										</div>
 										<div class="col-sm-3">
 										
-										<div class="form-control">
+										<div style="padding-top:20px;">
 										<div class="form-check form-check-inline">
 										<input class="form-check-input"  type="checkbox"  name="inlineRadioOptions" >
-										<label class="form-check-label" id="addeventallday">All Day</label>
+										<label class="form-label" id="addeventallday">All Day</label>
 										</div>
 										<div class="form-check form-check-inline">
 										<input class="form-check-input" id="addeventrecurring" type="checkbox"  name="inlineRadioOptions" >
-										<label class="form-check-label" >Recurring</label>
+										<label class="form-label" >Recurring</label>
 										</div>
 										
 										</div>
@@ -940,18 +940,18 @@
 										<div class="col-sm-6 ">
 										
 										<label for="issuing-country" class="form-label">Priority</label>
-										<div class="form-control">
+										<div style="padding-top:10px;">
 										<div class="form-check form-check-inline">
 										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-										<label class="form-check-label" for="inlineRadio1">Low</label>
+										<label class="form-label" for="inlineRadio1">Low</label>
 										</div>
 										<div class="form-check form-check-inline">
 										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-										<label class="form-check-label" for="inlineRadio2">Medium</label>
+										<label class="form-label" for="inlineRadio2">Medium</label>
 										</div>
 										<div class="form-check form-check-inline">
 										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-										<label class="form-check-label" for="inlineRadio3">High</label>
+										<label class="form-label" for="inlineRadio3">High</label>
 										</div>
 										</div>
 										
@@ -1033,9 +1033,114 @@
 										</div>
 									
 									</div>
+									<div class="row p-2" id="setrecurringyearly" style="display:none">
+										
+										<div class="col-sm-3">
+												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
+											<div class="form-control">
+												<div class="form-check">
+													<input class="form-check-input" id="ondayyearlycheck" type="checkbox"  name="inlineRadioOptions" >
+													<label class="form-check-label" >On</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-3" id="recurringmonthyearly" style="display:none">
+											
+											<label for="" class="form-label">Month</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">January</option>
+												<option value="2">February</option>
+												<option value="3">March</option>
+												<option value="4">April</option>
+												<option value="5">May</option>
+												<option value="6">Jun</option>
+												<option value="7">July</option>
+												<option value="8">August</option>
+												<option value="9">September</option>
+												<option value="10">October</option>
+												<option value="11">November</option>
+												<option value="12">December</option>
+											</select>
+										
+										</div>
+										<div class="col-sm-3" id="recurringdayyearly" style="display:none">
+											
+											<label for="" class="form-label">Day</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">1 </option>
+												<option value="2">2</option>
+												<option value="31">31</option>
+											</select>
+										
+										</div>
+									</div>
+									<div class="row p-2" id="setrecurringontheyearly" style="display:none">
+										
+										<div class="col-sm-3">
+												<label for="issuing-country" class="form-label">Set Reccurrence Yearly*</label><br>
+											<div class="form-control">
+												<div class="form-check">
+													<input class="form-check-input" id="ontheyearlycheck" type="checkbox"  name="inlineRadioOptions" >
+													<label class="form-check-label" >On The</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-3" id="recurringselectyearly" style="display:none">
+											
+											<label for="" class="form-label">&nbsp;</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">First</option>
+												<option value="2">Second</option>
+												<option value="3">Third</option>
+												<option value="4">Fourth</option>
+											</select>
+										
+										</div>
+										<div class="col-sm-2" id="recurringonthedayyearly" style="display:none">
+											
+											<label for="" class="form-label">&nbsp;</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">Sunday </option>
+												<option value="2">Monday</option>
+												<option value="3">Tuesday</option>
+												<option value="4">Wednesday</option>
+												<option value="5">Thursday</option>
+												<option value="6">Friday</option>
+												<option value="7">Saturday</option>
+											</select>
+										
+										</div>
+										<div class="col-sm-1" id="recurringontheof" style="padding-top:30px;display:none" >
+										
+											
+												<label for="" class="form-label" >&nbsp;of</label>
+												
+										</div>
+										<div class="col-sm-3" id="recurringonthemonthyearly" style="display:none">
+											
+											<label for="" class="form-label">&nbsp;</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">January </option>
+												<option value="2">February</option>
+												<option value="3">March</option>
+												<option value="4">May</option>
+												<option value="5">Jun</option>
+												<option value="6">July</option>
+												<option value="7">August</option>
+											</select>
+										
+										</div>
+									</div>
 									<div class="row p-2" id="setrecurringonmontly" style="display:none">
 										
-										<div class="col-sm-2">
+										<div class="col-sm-3">
 												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
 											<div class="form-control">
 												<div class="form-check">
@@ -1045,7 +1150,7 @@
 											</div>
 										</div>
 
-										<div class="col-sm-4" id="recurringselectonthe" style="display:none">
+										<div class="col-sm-3" id="recurringselectonthe" style="display:none">
 											
 											<label for="" class="form-label">&nbsp;</label>
 											<select class="form-select" id="" aria-label="Default select example">
@@ -1098,8 +1203,8 @@
 									<div class="row p-2">
 										<div class="col-sm-6">
 											<label for="firstname" class="form-label">Participant*</label>
-											<select class="selectpicker form-select" id="addneweventparticipant" aria-label="Default select example">
-											<option value="" selected>Please Select</option>
+											<select class="selectpicker form-select" id="addneweventparticipant" aria-label="Default select example" multiple>
+											<option value="">Please Select</option>
 											<option value="1">Participant A</option>
 											<option value="2">Participant B</option>
 											
@@ -1115,7 +1220,7 @@
 									<div class="row p-2">
 										<div class="col-sm-2">
 											
-											<button type="button" id="addreminder" class="btn btn-primary  btn-sm">Add Reminder</button>
+											<button type="button" id="addreminder" class="btn btn-primary btn-xs">Add Reminder</button>
 											
 										</div>
 										<div class="col-sm-4">
@@ -1135,8 +1240,8 @@
 									<div class="row p-2">
 										<div class="col-sm-6">
 											
-											
-											<button type="button" class="btn btn-primary">Attach File</button>
+											<label for="issuing-country" class="form-label">Attach File:</label>
+											<input type="file" class="btn"></input>
 										</div>
 										
 									</div>
@@ -1145,7 +1250,7 @@
 							<div class="modal-footer">
 								
 								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								<had type="button" class="btn btn-primary formSave" id="addChildren">Save</had>
+								<button type="button" class="btn btn-primary" id="">Save</button>
 								
 							</div>
 						</div>
@@ -1198,7 +1303,7 @@
 	var year = d.getFullYear();
 	var day = d.getDate();
 	var today = moment().startOf('day');
-  var calendarElm = document.getElementById('calendar');
+  	var calendarElm = document.getElementById('calendar');
 
 	var calendar = new FullCalendar.Calendar(calendarElm, {
     headerToolbar: {
@@ -1221,10 +1326,16 @@
         }
 	},
 		eventClick: function(info) {
-			
-            $('#editlogmodal').modal('show');
-			
+			info.jsEvent.preventDefault();
 
+			
+			
+			if (info.event.extendedProps.type=="log") {
+            $('#editlogmodal').modal('show');
+			}
+			else {
+				$('#neweventmodal').modal('show');
+			}
 			
 		},
     buttonText: {
@@ -1237,7 +1348,7 @@
     initialView: 'dayGridMonth',
     editable: false,
     droppable: false,
-	
+	selectable: false,
   	themeSystem: 'bootstrap',
 		views: {
 			timeGrid: {
@@ -1245,83 +1356,32 @@
 			}
 		},
   	events: [{
-			title: 'Trip to London',
+			title: 'EXAMPLE LOG',
 			start: year + '-'+ month +'-01',
 			end: year + '-'+ month +'-05',
 			color: app.color.success,
-			selectable:true,
+			extendedProps: {
+        			type: 'log'
+      		}
+			
 			
 		},{
-			title: 'Meet with Irene Wong',
+			title: 'EXAMPLE LOG 2',
 			start: year + '-'+ month +'-02T06:00:00',
-			color: app.color.blue
+			color: app.color.success,
+			extendedProps: {
+        			type: 'log'
+      		},
 		},{
-			title: 'Mobile Apps Brainstorming',
+			title: 'EXAMPLE EVENT',
 			start: year + '-'+ month +'-10',
 			end: year + '-'+ month +'-12',
-			color: app.color.pink
-		},{
-			title: 'Stonehenge, Windsor Castle, Oxford',
-			start: year + '-'+ month +'-05T08:45:00',
-			end: year + '-'+ month +'-06T18:00',
-			color: app.color.indigo
-		},{
-			title: 'Paris Trip',
-			start: year + '-'+ month +'-12',
-			end: year + '-'+ month +'-16'
-		},{
-			title: 'Domain name due',
-			start: year + '-'+ month +'-15',
-			color: app.color.blue
-		},{
-			title: 'Cambridge Trip',
-			start: year + '-'+ month +'-19'
-		},{
-			title: 'Visit Apple Company',
-			start: year + '-'+ month +'-22T05:00:00',
-			color: app.color.success
-		},{
-			title: 'Exercise Class',
-			start: year + '-'+ month +'-22T07:30:00',
-			color: app.color.orange
-		},{
-			title: 'Live Recording',
-			start: year + '-'+ month +'-22T03:00:00',
-			color: app.color.blue
-		},{
-			title: 'Announcement',
-			start: year + '-'+ month +'-22T15:00:00',
-			color: app.color.red
-		},{
-			title: 'Dinner',
-			start: year + '-'+ month +'-22T18:00:00'
-		},{
-			title: 'New Android App Discussion',
-			start: year + '-'+ month +'-25T08:00:00',
-			end: year + '-'+ month +'-25T10:00:00',
-			color: app.color.red
-		},{
-			title: 'Marketing Plan Presentation',
-			start: year + '-'+ month +'-25T12:00:00',
-			end: year + '-'+ month +'-25T14:00:00',
-			color: app.color.blue
-		},{
-			title: 'Chase due',
-			start: year + '-'+ month +'-26T12:00:00',
-			color: app.color.orange
-		},{
-			title: 'Heartguard',
-			start: year + '-'+ month +'-26T08:00:00',
-			color: app.color.orange
-		},{
-			title: 'Lunch with Richard',
-			start: year + '-'+ month +'-28T14:00:00',
-			color: app.color.blue
-		},{
-			title: 'Web Hosting due',
-			start: year + '-'+ month +'-30',
-			color: app.color.blue
-		}],
+			display: 'background',
+			extendedProps: {
+        			type: 'event'
+      		},
+		}
+			],
 		
   });
   
@@ -1342,7 +1402,7 @@ $(document).ready(function() {
 	Calendar.init();
 });
 </script>
-
+<!-- FOR MODAL LOG AND EVENT -->
 <script>
   $("#dateaddlog").datepicker({
     todayHighlight: true,
@@ -1418,7 +1478,17 @@ $(document).on('change',"#addneweventselectrecurring", function () {
 	   
    }
 });
-
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "5" ) {
+       $("#setrecurringyearly").show();
+	   $("#setrecurringontheyearly").show();
+	  
+   } else {
+       $("#setrecurringyearly").hide();
+	   $("#setrecurringontheyearly").hide();
+	   
+   }
+});
 </script>
 <script type="text/javascript">
    $().ready = function() {
@@ -1438,6 +1508,10 @@ $("#addeventrecurring").click(function() {
     } else {
         $("#addneweventrecurring").hide();
 		$("#addneweventsetreccurring").hide();
+		$("#setrecurringyearly").hide();
+	   $("#setrecurringontheyearly").hide();
+	   $("#setrecurringmontly").hide();
+	   $("#setrecurringonmontly").hide();
     }
 });
 
@@ -1465,4 +1539,43 @@ $("#onthecheck").click(function() {
 		
     }
 });
+$("#ondayyearlycheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringmonthyearly").show();
+		$("#recurringdayyearly").show();
+		$('#ontheyearlycheck').not(this).prop('checked', false);
+		$("#recurringselectyearly").hide();
+		$("#recurringonthedayyearly").hide();
+		$("#recurringonthemonthyearly").hide();
+		$("#recurringontheof").hide();
+		// $('#ondaycheck').not(this).prop('checked', false);
+		// $("#ondayselect").hide();
+    } else {
+        $("#recurringmonthyearly").hide();
+		$("#recurringdayyearly").hide();
+		
+    }
+});
+$("#ontheyearlycheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectyearly").show();
+		$("#recurringonthedayyearly").show();
+		$("#recurringonthemonthyearly").show();
+		$("#recurringontheof").show();
+		$('#ondayyearlycheck').not(this).prop('checked', false);
+		$("#recurringmonthyearly").hide();
+		$("#recurringdayyearly").hide();
+		
+    } else {
+        $("#recurringselectyearly").hide();
+		$("#recurringonthedayyearly").hide();
+		$("#recurringonthemonthyearly").hide();
+		$("#recurringontheof").hide();
+    }
+});
 </script>
+<!-- END MODAL LOG AND EVENT JS-->
+
+<!-- START EDIT MODAL LOG AND EVENT JS-->
+
+<!-- END EDIT MODAL LOG AND EVENT JS-->
