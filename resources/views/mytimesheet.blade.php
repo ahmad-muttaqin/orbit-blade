@@ -919,9 +919,12 @@
 											<label for="issuing-country" class="form-label">Duration</label>
 											<select class="form-select" id="" aria-label="Default select example">
 											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">1 Hour</option>
-											<option class="form-label" value="2">2 Hour</option>
-											
+											<option class="form-label" value="1">30 Minute</option>
+											<option class="form-label" value="2">1 Hour</option>
+											<option class="form-label" value="3">1 Hour 30 Minute</option>
+											<option class="form-label" value="4">2 Hour</option>
+											<option class="form-label" value="5">2 Hour 30 Minute</option>
+											<option class="form-label" value="6">3 Hour</option>
 											</select>
 									
 										</div>
@@ -1030,6 +1033,32 @@
 												<option class="form-label" value="" selected>Please Select</option>
 												<option class="form-label" value="1">1 </option>
 												<option class="form-label" value="2">2</option>
+												<option class="form-label" value="3">3 </option>
+												<option class="form-label" value="4">4</option>
+												<option class="form-label" value="5">5 </option>
+												<option class="form-label" value="6">6</option>
+												<option class="form-label" value="7">7 </option>
+												<option class="form-label" value="8">8</option>
+												<option class="form-label" value="9">9 </option>
+												<option class="form-label" value="10">10</option>
+												<option class="form-label" value="11">11</option>
+												<option class="form-label" value="12">12</option>
+												<option class="form-label" value="13">13</option>
+												<option class="form-label" value="14">14</option>
+												<option class="form-label" value="15">15</option>
+												<option class="form-label" value="16">16</option>
+												<option class="form-label" value="17">17</option>
+												<option class="form-label" value="18">18</option>
+												<option class="form-label" value="19">19</option>
+												<option class="form-label" value="20">20</option>
+												<option class="form-label" value="21">21</option>
+												<option class="form-label" value="22">22</option>
+												<option class="form-label" value="23">23</option>
+												<option class="form-label" value="24">24</option>
+												<option class="form-label" value="25">25</option>
+												<option class="form-label" value="26">26</option>
+												<option class="form-label" value="27">27</option>
+												<option class="form-label" value="28">28</option>
 												
 											</select>
 										
@@ -1195,7 +1224,7 @@
 										<div class="col-sm-6">
 										
 											<label for="issuing-country" class="form-label">Project*</label>
-											<select class="form-select" id="" aria-label="Default select example">
+											<select class="selectpicker form-select" id="addneweventselectproject" aria-label="Default select example">
 											<option class="form-label" value="" selected>Please Select</option>
 											<option class="form-label" value="1">Project A</option>
 											<option class="form-label" value="2">Project B</option>
@@ -1323,8 +1352,12 @@
 											<label for="issuing-country" class="form-label">Duration</label>
 											<select class="form-select" id="" aria-label="Default select example">
 											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">1 Hour</option>
-											<option class="form-label" value="2">2 Hour</option>
+											<option class="form-label" value="1">30 Minute</option>
+											<option class="form-label" value="2">1 Hour</option>
+											<option class="form-label" value="3">1 Hour 30 Minute</option>
+											<option class="form-label" value="4">2 Hour</option>
+											<option class="form-label" value="5">2 Hour 30 Minute</option>
+											<option class="form-label" value="6">3 Hour</option>
 											
 											</select>
 									
@@ -1434,6 +1467,32 @@
 												<option class="form-label" value="" selected>Please Select</option>
 												<option class="form-label" value="1">1 </option>
 												<option class="form-label" value="2">2</option>
+												<option class="form-label" value="3">3 </option>
+												<option class="form-label" value="4">4</option>
+												<option class="form-label" value="5">5 </option>
+												<option class="form-label" value="6">6</option>
+												<option class="form-label" value="7">7 </option>
+												<option class="form-label" value="8">8</option>
+												<option class="form-label" value="9">9 </option>
+												<option class="form-label" value="10">10</option>
+												<option class="form-label" value="11">11</option>
+												<option class="form-label" value="12">12</option>
+												<option class="form-label" value="13">13</option>
+												<option class="form-label" value="14">14</option>
+												<option class="form-label" value="15">15</option>
+												<option class="form-label" value="16">16</option>
+												<option class="form-label" value="17">17</option>
+												<option class="form-label" value="18">18</option>
+												<option class="form-label" value="19">19</option>
+												<option class="form-label" value="20">20</option>
+												<option class="form-label" value="21">21</option>
+												<option class="form-label" value="22">22</option>
+												<option class="form-label" value="23">23</option>
+												<option class="form-label" value="24">24</option>
+												<option class="form-label" value="25">25</option>
+												<option class="form-label" value="26">26</option>
+												<option class="form-label" value="27">27</option>
+												<option class="form-label" value="28">28</option>
 												
 											</select>
 										
@@ -1599,7 +1658,7 @@
 										<div class="col-sm-6">
 										
 											<label for="issuing-country" class="form-label">Project*</label>
-											<select class="form-select" id="" aria-label="Default select example">
+											<select class="selectpicker form-select" id="addneweventselectprojectedit" aria-label="Default select example">
 											<option class="form-label" value="" selected>Please Select</option>
 											<option class="form-label" value="1">Project A</option>
 											<option class="form-label" value="2">Project B</option>
@@ -1726,7 +1785,7 @@
           }
         },
 		EventButton: {
-            text:'Add Event',
+            text:'New Event',
             click:function(event, jsEvent, view){
                    $('#neweventmodal').modal('show');
           }
@@ -1831,6 +1890,7 @@ $(document).ready(function() {
   $('#projectlocsearch').picker({ search: true });
   $('#addneweventprojectlocsearch').picker({ search: true });
   $('#addneweventparticipant').picker({ search: true });
+  $('#addneweventselectproject').picker({ search: true });
 </script>
 <script>
   $("#starttime").timepicker();
@@ -2022,6 +2082,7 @@ $("#ontheyearlycheck").click(function() {
   $('#projectlocsearchedit').picker({ search: true });
   $('#addneweventprojectlocsearchedit').picker({ search: true });
   $('#addneweventparticipantedit').picker({ search: true });
+  $('#addneweventselectprojectedit').picker({ search: true });
 </script>
 <script>
   $("#starttimeedit").timepicker();
