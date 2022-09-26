@@ -73,7 +73,9 @@ Route::get('/setting/sop', function () {
 Route::get('/setting/news', function () {
     return view('settingnews');
 });
-
+Route::get('/setting/typeoflog', function () {
+    return view('settingtypeoflog');
+});
 Route::get('/project', function () {
     return view('projectregcustomers');
 });
