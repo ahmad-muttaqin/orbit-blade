@@ -2,14 +2,15 @@
 <html lang="en" >
 <head>
 	<meta charset="utf-8" />
-	<title>Color Admin | Calendar</title>
+	<title>OrbitHRM </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
-	
+	<link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
 	<!-- ================== BEGIN core-css ================== -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
 	
@@ -21,6 +22,7 @@
 	<link href="../assets/plugins/@fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
 	
 	<!-- ================== END page-css ================== -->
+	
 </head>
 <body>
 	<!-- BEGIN #loader -->
@@ -621,88 +623,103 @@
                     <div class="row p-2">
                         <div class="col-sm-6">
                             <label for="firstname" class="form-label">Type Of Log*</label>
-							<select class="form-select" aria-label="Default select example">
-							<option selected>Please Select</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
+							<select class="form-select" id="typeoflog" aria-label="Default select example">
+							<option value="" selected>Please Select</option>
+							<option value="1">Home</option>
+							<option value="2">Office</option>
+							<option value="3">My Project</option>
+							<option value="4">Others</option>
 							</select>
                             
                         </div>
                         <div class="col-sm-6">
                             <label for="lastname" class="form-label">Date*</label>
-                            <input type="text" id="" name="lastName" value=""  class="form-control" aria-describedby="lastname">
+							<div class="input-group">
+                            <input type="text" class="form-control" id="dateaddlog" />
+							<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+					  	 </div>
+						 </div>
+                    </div>
+					<div class="row p-2">
+						<div class="col-sm-6" id="officelog" style="display:none">
+                            <label for="Office-Log" class="form-label">Office Log</label>
+                            <select class="form-select" id="officelog2" aria-label="Default select example">
+							<option value="" selected>Please Select</option>
+							<option value="1">My Project</option>
+							<option value="2">Activity</option>
+							
+							</select>
+                        </div>
+						<div class="col-sm-6" id="myproject" style="display:none">
+                            <label for="Office-Log" class="form-label">My Project</label>
+                            <select class="form-select" id="" aria-label="Default select example">
+							<option value="" selected>List all project</option>
+							
+							
+							</select>
                         </div>
                     </div>
-                   
-                    <div class="row p-2">
-                        <div class="col-sm-6">
-                            <div class="row">
-							<div class="col-sm-6">
-                            <label for="firstname" class="form-label">Activity Name</label>
-							<select class="form-select" name="typeoflog" id="typeoflog">
-								<option value="" label="Please Select"></option>
-								<option value="1" label="Home"></option>
-								<option value="2" label="Office"></option>
-								<option value="3" label="My Project"></option>
-								<option value="4" label="Others"></option>
-                                
-								</select>
-                            
-                        </div>
-                                <div class="col-sm-6">
-                                    <label for="lastname" class="form-label">Identification Number*</label>
-                                    <input type="text" id="" name="idNo" value="" class="form-control" aria-describedby="lastname">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label for="dob" class="form-label">Date of Birth</label>
-                                    <input type="date" id="" name="DOB" class="form-control" aria-describedby="dob">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="age" class="form-label">Age</label>
-                                    <input type="text" id="" name="age" class="form-control" aria-describedby="age">
-                                </div>
-                            </div>
+					<div class="row p-2">
+						<div class="col-sm-6" id="listproject" style="display:none">
+                            <label for="Office-Log" class="form-label">My Project</label>
+                            <select class="form-select" id="" aria-label="Default select example">
+							<option value="" selected>List All Project</option>
+							
+							
+							</select>
                         </div>
                     </div>
                     <div class="row p-2">
-                        <div class="col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label for="passport" class="form-label">Passport Number</label>
-                                    <input type="text" id="" name="passport" class="form-control" aria-describedby="passport">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="expirydate" class="form-label">Expiry Date</label>
-                                    <input type="date" id="" name="expiryDate" class="form-control" aria-describedby="expirydate">
-                                </div>
-                            </div>
+						<div class="col-sm-6">
+                            <label for="issuing-country" class="form-label">Activity Name</label>
+                            <select class="form-select" id="" >
+							<option value="" selected>List All Activity Name</option>
+							
+							
+							</select>
                         </div>
+						
                         <div class="col-sm-6">
-                            <label for="issuing-country" class="form-label">Issuing Country</label>
-                            <select class="form-select" name="issuingCountry" id="">
-                                
-                                
-                            </select>
+						<label for="issuing-country" class="form-label">End Time</label>  
+						<div class="input-group">
+						<input id="starttime" type="text" class="form-control" />
+						<div class="input-group-text"><i class="fa fa-clock"></i></div>
+						</div>	
                         </div>
+                    </div>
+
+					
+
+                    <div class="row p-2">
+                        <div class="col-sm-6">
+						
+                            <label for="issuing-country" class="form-label">Project Location</label>
+                            <select class="selectpicker form-select" id="projectlocsearch" aria-label="Default select example">
+							<option value="" selected>List All Project location</option>
+							
+							
+							</select>
+                       
+                        </div>
+						<div class="col-sm-6 ">
+						
+                           <label for="issuing-country" class="form-label">End Time</label>
+						   <div class="input-group">
+						   <input id="endtime" type="text" class="form-control" />
+						   <div class="input-group-text"><i class="fa fa-clock"></i></div>
+					   </div>
+					   </div>
                     </div>
                     <div class="row p-2">
                         <div class="col-sm-6">
-                            <label for="gender" class="form-label">Gender</label>
-                            <select class="form-select" name="gender" id="">
-                               
-                            </select>
+                            <label for="gender" class="form-label">Description</label>
+							<textarea class="form-control" rows="5"></textarea>
                         </div>
                         <div class="col-sm-6">
-                            <label for="issuing-country" class="form-label">Marital Status</label>
-                            <select class="form-select" name="maritalStatus" id="">
-                                <option value="0" label="Please Choose "></option>
-                               
-                            </select>
+                           
+                            <label for="issuing-country" class="form-label">Total Hours</label>
+                            <input type="text" readonly id="" value="Auto calculate (End time - Start time), default 00:00" name="" class="form-control" aria-describedby="dob">
+                       		
                         </div>
                     </div>
                     
@@ -716,34 +733,424 @@
     </div>
 </div>
 		<!-- MODAL ADD LOG -->
+				<!-- MODAL ADD LOG -->
+				<div class="modal fade" id="editlogmodal" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newlogmodal">Add New Logs</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="addChildrenForm">
+									<div class="row p-2">
+										<div class="col-sm-6">
+											<label for="firstname" class="form-label">Type Of Log*</label>
+											<select class="form-select" id="typeoflog" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">Home</option>
+											<option value="2">Office</option>
+											<option value="3">My Project</option>
+											<option value="4">Others</option>
+											</select>
+											
+										</div>
+										<div class="col-sm-6">
+											<label for="lastname" class="form-label">Date*</label>
+											<div class="input-group">
+											<input type="text" class="form-control" id="dateaddlog" />
+											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+										</div>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6" id="officelog" style="display:none">
+											<label for="Office-Log" class="form-label">Office Log</label>
+											<select class="form-select" id="officelog2" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">My Project</option>
+											<option value="2">Activity</option>
+											
+											</select>
+										</div>
+										<div class="col-sm-6" id="myproject" style="display:none">
+											<label for="Office-Log" class="form-label">My Project</label>
+											<select class="form-select" id="" aria-label="Default select example">
+											<option value="" selected>List all project</option>
+											
+											
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6" id="listproject" style="display:none">
+											<label for="Office-Log" class="form-label">My Project</label>
+											<select class="form-select" id="" aria-label="Default select example">
+											<option value="" selected>List All Project</option>
+											
+											
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6">
+											<label for="issuing-country" class="form-label">Activity Name</label>
+											<select class="form-select" id="" >
+											<option value="" selected>List All Activity Name</option>
+											
+											
+											</select>
+										</div>
+										
+										<div class="col-sm-6">
+										<label for="issuing-country" class="form-label">End Time</label>  
+										<div class="input-group">
+										<input id="starttime" type="text" class="form-control" />
+										<div class="input-group-text"><i class="fa fa-clock"></i></div>
+										</div>	
+										</div>
+									</div>
 
-		<!-- MODAL ADD EVENT -->
-		<div class="modal fade" id="neweventmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">ADD NEW EVENTS</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal1" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-					  <div class="mb-3">
-						  <label>A password reset link will be sent to your email to reset your password. If you don't get an email within a few minutes, please re-try.</label>
-						  
+									
+
+									<div class="row p-2">
+										<div class="col-sm-6">
+										
+											<label for="issuing-country" class="form-label">Project Location</label>
+											<input type="text" id="" name="DOB" class="form-control" aria-describedby="dob">
+									
+										</div>
+										<div class="col-sm-6 ">
+										
+										<label for="issuing-country" class="form-label">End Time</label>
+										<div class="input-group">
+										<input id="endtime" type="text" class="form-control" />
+										<div class="input-group-text"><i class="fa fa-clock"></i></div>
+									</div>
+									</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6">
+											<label for="gender" class="form-label">Description</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+										<div class="col-sm-6">
+										
+											<label for="issuing-country" class="form-label">Total Hours</label>
+											<input type="text" readonly id="" value="Auto calculate (End time - Start time), default 00:00" name="" class="form-control" aria-describedby="dob">
+											
+										</div>
+									</div>
+									
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger">Delete</button>
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<had type="button" class="btn btn-primary formSave" id="addChildren">Save</had>
+								
+							</div>
 						</div>
-						<div class="mb-3">
-						  <label for="recipient-name" class="col-form-label">Email</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						</div>
-					  </form>
 					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Submit</button>
-					</div>
-				  </div>
 				</div>
-			  </div> 
+		<!-- MODAL ADD LOG -->
+		<!-- MODAL ADD EVENT -->
+		<div class="modal fade" id="neweventmodal" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newlogmodal">Add New Event</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="addChildrenForm">
+								<div class="row p-2">
+										<div class="col-sm-12">
+											<label for="firstname" class="form-label">Event Name*</label>
+											<input type="text" class="form-control" id="" />
+											
+										</div>
+										
+									</div>
+									<div class="row p-2">
+									<div class="col-sm-6">
+											<label for="lastname" class="form-label">Start Date*</label>
+											<div class="input-group">
+											<input type="text" class="form-control" id="starteventdate" />
+											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+										</div>
+										</div>
+										<div class="col-sm-6">
+											<label for="lastname" class="form-label">End Date*</label>
+											<div class="input-group">
+											<input type="text" class="form-control" id="endeventdate" />
+											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+										</div>
+										</div>
+									</div>
+									
+									
+									<div class="row p-2">
+									<div class="col-sm-6">
+										<label for="issuing-country" class="form-label">Start Time*</label>  
+										<div class="input-group">
+										<input id="starteventtime" type="text" class="form-control" value="00:00 AM"/>
+										<div class="input-group-text"><i class="fa fa-clock"></i></div>
+										</div>	
+										</div>
+										
+										<div class="col-sm-6">
+										<label for="issuing-country" class="form-label">End Time*</label>  
+										<div class="input-group">
+										<input id="endeventtime" type="text" class="form-control" value="00:00 AM"/>
+										<div class="input-group-text"><i class="fa fa-clock"></i></div>
+										</div>	
+										</div>
+									</div>
+
+									
+
+									<div class="row p-2">
+										<div class="col-sm-3">
+										
+											<label for="issuing-country" class="form-label">Duration</label>
+											<select class="form-select" id="" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">1 Hour</option>
+											<option value="2">2 Hour</option>
+											
+											</select>
+									
+										</div>
+										<div class="col-sm-3">
+										
+										<div class="form-control">
+										<div class="form-check form-check-inline">
+										<input class="form-check-input"  type="checkbox"  name="inlineRadioOptions" >
+										<label class="form-check-label" id="addeventallday">All Day</label>
+										</div>
+										<div class="form-check form-check-inline">
+										<input class="form-check-input" id="addeventrecurring" type="checkbox"  name="inlineRadioOptions" >
+										<label class="form-check-label" >Recurring</label>
+										</div>
+										
+										</div>
+										</div>
+
+										<div class="col-sm-6 ">
+										
+										<label for="issuing-country" class="form-label">Priority</label>
+										<div class="form-control">
+										<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+										<label class="form-check-label" for="inlineRadio1">Low</label>
+										</div>
+										<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+										<label class="form-check-label" for="inlineRadio2">Medium</label>
+										</div>
+										<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+										<label class="form-check-label" for="inlineRadio3">High</label>
+										</div>
+										</div>
+										
+									</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6" id="addneweventrecurring" style="display:none">
+											<label for="firstname" class="form-label">Recurring*</label>
+											<select class="form-select" id="addneweventselectrecurring" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">Every Weekday</option>
+											<option value="2">Daily</option>
+											<option value="3">Weekly</option>
+											<option value="4">Monthly</option>
+											<option value="5">Yearly</option>
+											</select>
+										</div>
+										
+									</div>
+									
+									<div class="row p-2">
+										<div class="col-sm-6" id="addneweventsetreccurring" style="display: none">
+										<label for="firstname" class="form-label">Set Reccurrence*</label>
+										<div class="form-check form-check-inline">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+											<label class="form-check-label" for="inlineCheckbox1">Sun</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+											<label class="form-check-label" for="inlineCheckbox2">Mon</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+											<label class="form-check-label" for="inlineCheckbox3">Tue</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+											<label class="form-check-label" for="inlineCheckbox3">Wed</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+											<label class="form-check-label" for="inlineCheckbox3">Thu</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+											<label class="form-check-label" for="inlineCheckbox3">Fri</label>
+										</div>&nbsp;&nbsp;&nbsp;&nbsp;
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+											<label class="form-check-label" for="inlineCheckbox3">Sat</label>
+										</div>
+										</div>
+										</div>
+										
+									</div>
+									<div class="row p-2" id="setrecurringmontly" style="display:none">
+										
+										<div class="col-sm-3">
+												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
+											<div class="form-control">
+												<div class="form-check">
+													<input class="form-check-input" id="ondaycheck" type="checkbox"  name="inlineRadioOptions" >
+													<label class="form-check-label" >On Day</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-3" id="ondayselect" style="display:none">
+											
+											<label for="" class="form-label">&nbsp;</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">1 </option>
+												<option value="2">2</option>
+												
+											</select>
+										
+										</div>
+									
+									</div>
+									<div class="row p-2" id="setrecurringonmontly" style="display:none">
+										
+										<div class="col-sm-2">
+												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
+											<div class="form-control">
+												<div class="form-check">
+													<input class="form-check-input" id="onthecheck" type="checkbox"  name="inlineRadioOptions" >
+													<label class="form-check-label" >On The</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-4" id="recurringselectonthe" style="display:none">
+											
+											<label for="" class="form-label">&nbsp;</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">First </option>
+												<option value="2">Second</option>
+												<option value="3">Third</option>
+												<option value="4">Fourth</option>
+											</select>
+										
+										</div>
+										<div class="col-sm-4" id="recurringselectwhatday" style="display:none">
+											
+											<label for="" class="form-label">&nbsp;</label>
+											<select class="form-select" id="" aria-label="Default select example">
+												<option value="" selected>Please Select</option>
+												<option value="1">Sunday </option>
+												<option value="2">Monday</option>
+												<option value="3">Tuesday</option>
+												<option value="4">Wednesday</option>
+												<option value="5">Thursday</option>
+												<option value="6">Friday</option>
+												<option value="7">Saturday</option>
+											</select>
+										
+										</div>
+									
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6">
+											<label for="firstname" class="form-label">Location*</label>
+											<select class="selectpicker form-select" id="addneweventprojectlocsearch" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">Location A</option>
+											<option value="2">Location B</option>
+											
+											</select>
+										</div>
+										<div class="col-sm-6">
+										
+											<label for="issuing-country" class="form-label">Project*</label>
+											<select class="form-select" id="" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">Project A</option>
+											<option value="2">Project B</option>
+											
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6">
+											<label for="firstname" class="form-label">Participant*</label>
+											<select class="selectpicker form-select" id="addneweventparticipant" aria-label="Default select example">
+											<option value="" selected>Please Select</option>
+											<option value="1">Participant A</option>
+											<option value="2">Participant B</option>
+											
+											</select>
+										</div>
+										<div class="col-sm-6">
+										
+											<label for="issuing-country" class="form-label">Description*</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+
+									<div class="row p-2">
+										<div class="col-sm-2">
+											
+											<button type="button" id="addreminder" class="btn btn-primary  btn-sm">Add Reminder</button>
+											
+										</div>
+										<div class="col-sm-4">
+											
+											<select class="form-select" id="addeventreminder" aria-label="Default select example" style="display: none">
+											<option value="" selected>Please Select</option>
+											<option value="1">5 Minute Before</option>
+											<option value="2">10 Minute Before</option>
+											<option value="1">15 Minute Before</option>
+											<option value="2">20 Minute Before</option>
+											<option value="1">30 Minute Before</option>
+											<option value="1">1 Hour Before</option>
+											</select>
+											
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-sm-6">
+											
+											
+											<button type="button" class="btn btn-primary">Attach File</button>
+										</div>
+										
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<had type="button" class="btn btn-primary formSave" id="addChildren">Save</had>
+								
+							</div>
+						</div>
+					</div>
+				</div>
 		<!-- MODAL ADD EVENT -->
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
@@ -766,6 +1173,15 @@
 	<script src="../assets/plugins/@fullcalendar/bootstrap/main.global.js"></script>
 	
 	<!-- ================== END page-js ================== -->
+	<!-- required files -->
+	<link href="../assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<!-- required files -->
+	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<!-- required files -->
+	<link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
 </body>
 </html>
 
@@ -803,7 +1219,14 @@
                    $('#neweventmodal').modal('show');
           }
         }
-      },
+	},
+		eventClick: function(info) {
+			
+            $('#editlogmodal').modal('show');
+			
+
+			
+		},
     buttonText: {
     	today:    'Today',
 			month:    'Month',
@@ -814,6 +1237,7 @@
     initialView: 'dayGridMonth',
     editable: false,
     droppable: false,
+	
   	themeSystem: 'bootstrap',
 		views: {
 			timeGrid: {
@@ -824,7 +1248,9 @@
 			title: 'Trip to London',
 			start: year + '-'+ month +'-01',
 			end: year + '-'+ month +'-05',
-			color: app.color.success
+			color: app.color.success,
+			selectable:true,
+			
 		},{
 			title: 'Meet with Irene Wong',
 			start: year + '-'+ month +'-02T06:00:00',
@@ -895,7 +1321,8 @@
 			title: 'Web Hosting due',
 			start: year + '-'+ month +'-30',
 			color: app.color.blue
-		}]
+		}],
+		
   });
   
 	calendar.render();
@@ -916,3 +1343,126 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
+  $("#dateaddlog").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#starteventdate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script><script>
+  $("#endeventdate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $('#projectlocsearch').picker({ search: true });
+  $('#addneweventprojectlocsearch').picker({ search: true });
+  $('#addneweventparticipant').picker({ search: true });
+</script>
+<script>
+  $("#starttime").timepicker();
+  $("#endtime").timepicker();starteventtime
+  $("#starteventtime").timepicker();
+  $("#endeventtime").timepicker();
+</script>
+
+<script>
+$(document).on('change',"#typeoflog", function () {
+   if ($(this).val() == "2") {
+       $("#officelog").show();
+   } else {
+       $("#officelog").hide();
+	   $("#listproject").hide();
+
+   }
+});
+$(document).on('change',"#typeoflog", function () {
+   if ($(this).val() == "3") {
+       $("#myproject").show();
+   } else {
+       $("#myproject").hide();
+	   $("#listproject").hide();
+   }
+});
+$(document).on('change',"#officelog2", function () {
+   if ($(this).val() == "1") {
+       $("#listproject").show();
+   } else {
+       $("#listproject").hide();
+   }
+});
+
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "1" || $(this).val() == '2' || $(this).val() == '3') {
+       $("#addneweventsetreccurring").show();
+
+   } else {
+       $("#addneweventsetreccurring").hide();
+	   
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "4" ) {
+       $("#setrecurringmontly").show();
+	   $("#setrecurringonmontly").show();
+   } else {
+       $("#setrecurringmontly").hide();
+	   $("#setrecurringonmontly").hide();
+	   
+   }
+});
+
+</script>
+<script type="text/javascript">
+   $().ready = function() {
+    
+    
+    $("#addreminder").click(function() {
+        $('#addeventreminder').toggle();
+    });
+
+}();
+</script>
+<script>
+
+$("#addeventrecurring").click(function() {
+    if($(this).is(":checked")) {
+        $("#addneweventrecurring").show();
+    } else {
+        $("#addneweventrecurring").hide();
+		$("#addneweventsetreccurring").hide();
+    }
+});
+
+$("#ondaycheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#ondayselect").show();
+		$('#onthecheck').not(this).prop('checked', false);
+		$("#recurringselectwhatday").hide();
+		$("#recurringselectonthe").hide();
+    } else {
+        $("#ondayselect").hide();
+	
+		
+    }
+});
+$("#onthecheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectwhatday").show();
+		$("#recurringselectonthe").show();
+		$('#ondaycheck').not(this).prop('checked', false);
+		$("#ondayselect").hide();
+    } else {
+        $("#recurringselectwhatday").hide();
+		$("#recurringselectonthe").hide();
+		
+    }
+});
+</script>
