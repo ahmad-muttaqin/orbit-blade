@@ -849,6 +849,7 @@
                 </form>
             </div>
             <div class="modal-footer">
+			<button type="button" class="btn btn-danger" >Delete</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 <had type="button" class="btn btn-primary formSave" id="addChildren">Save</had>
             </div>
@@ -1654,7 +1655,7 @@
 								</form>
 							</div>
 							<div class="modal-footer">
-								
+								<button type="button" class="btn btn-danger" >Delete</button>
 								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 								<button type="button" class="btn btn-primary" id="">Save</button>
 								
