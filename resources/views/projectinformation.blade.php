@@ -206,7 +206,7 @@
                         </a>
                         <div class="menu-submenu">
                             <div class="menu-item">
-                                <a href="ui_general.html" class="menu-link">
+                                <a href="/timesheet/mytimesheet" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-calendar-check text-gray"></i>
 									</div>
