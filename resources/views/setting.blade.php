@@ -199,7 +199,7 @@
                         </a>
                         <div class="menu-submenu">
                             <div class="menu-item">
-                                <a href="ui_general.html" class="menu-link">
+                                <a href="/timesheet/mytimesheet" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-calendar-check text-gray"></i>
 									</div>
@@ -717,7 +717,7 @@
 				<!-- END col-4 -->
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/setting/typeoflog"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Type of Logs</h5> 
 					</div>
 					
