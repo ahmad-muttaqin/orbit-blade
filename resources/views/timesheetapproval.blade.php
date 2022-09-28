@@ -610,20 +610,66 @@
 		<!-- BEGIN panel-heading -->
 		
 		<div class="panel-heading">
+		
 		<div class="col-md-12" style="display: flex; justify-content: flex-end" >
-		<a href="#" class="btn btn-default btn-icon btn-lg">
-		<i class="fa fa-filter"></i>
-		</a>&nbsp;&nbsp;&nbsp;
-		<a href="javascript:;"  class="btn btn-primary">Approve All</a>
+		<a href="javascript:;"  class="btn btn-primary">Approve All</a>	&nbsp;&nbsp;&nbsp;
+		<a id="filter" class="btn btn-default btn-icon btn-lg">
+				<i class="fa fa-filter"></i>
+			</a>
+		
 		</div>
 		
-			<h4 class="panel-title"></h4>
+		</div>
+		<div class="panel-body">
+		<div class="form-control" id="filterform" style="display:none">	
+		<div class="row p-2">	
 			
-			
+			<h4>Filter</h4>
+			<div class="col-sm-2">
+			<label for="emergency-firstname" class="form-label">Employer Name</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+			<label for="emergency-lastname" class="form-label">Month</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<label for="emergency-firstname" class="form-label">Designation</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+			<label for="emergency-firstname" class="form-label">Department</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-2">
+			<label for="emergency-firstname" class="form-label">Status</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-1">
+			<label for="emergency-firstname" class="form-label">&nbsp;</label>
+			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-magnifying-glass"></i> Search</a>
+			</div>
+			<div class="col-sm-1">
+			<label for="emergency-firstname" class="form-label">&nbsp;</label>
+			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-repeat"></i> Reset</a>
+			</div>
+			</div>
 		</div>
 		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
+		<!-- BEGIN panel-body --><br>
+		<div class="form-control">	
 		<div class="panel-body">
+			
 			<table id="timesheetapproval" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
@@ -761,6 +807,7 @@
 				</tbody>
 			</table>
 		</div>
+		</div>
 	</div>
 
 	<!-- END row -->
@@ -783,44 +830,38 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- required files -->
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 
 
 <script>
   $('#timesheetapproval').DataTable({
-    responsive: false
+	"searching": false,
+	"lengthChange": true,
+	lengthMenu: [5, 10],
+    responsive: false,
+	
+    dom: '<"row"<"col-sm-11"B><"col-sm-1"l>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+    buttons: [
+      { extend: 'excel', className: 'btn-blue' },
+      { extend: 'pdf', className: 'btn-blue' },
+      { extend: 'print', className: 'btn-blue' }
+    ],
   });
 </script>
 <script>
@@ -841,4 +882,14 @@ $(document).ready(function() {
 
 
 });
+</script>
+<script type="text/javascript">
+   $().ready = function() {
+    
+    
+    $("#filter").click(function() {
+        $('#filterform').toggle();
+    });
+
+}();
 </script>
