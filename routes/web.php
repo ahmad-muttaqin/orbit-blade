@@ -171,6 +171,9 @@ Route::get('/project/viewlocassignmyproject', function () {
 Route::get('/timesheet/mytimesheet', function () {
     return view('mytimesheet');
 });
+Route::get('/timesheet/timesheetapproval', function () {
+    return view('timesheetapproval');
+});
 
 
 
