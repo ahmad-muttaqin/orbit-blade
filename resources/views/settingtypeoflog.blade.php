@@ -711,52 +711,38 @@
 						</div>
 						<div class="row p-2">
 								<div class="col-sm-10" id="" >
-									<label for="firstname" class="form-label">Activity Name*</label>
-									<input type="text" class="form-control" id="" />
+								<label for="firstname" class="form-label">Activity Name*</label>	
+								<input type="text" id="addtypelogactivityName" placeholder="Name" class="form-control">
+								
+								
 								</div>
 								<div class="col-sm-2" id="" >
 									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<a href="#" class="btn btn-primary btn-sm">+ Add</a>
+									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add Row">
+									
 								</div>			
 						</div>
 						<div class="row p-2">
-						<table id="activityname" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						
 
 
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td width="1%">1</td>
-						<td >Corrective Maintenance</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
+						<table id="tableactivityname" class="table table-striped table-bordered align-middle">
 						
-					<tr>
-						<td width="1%">2</td>
-						<td>Reviewing & Documenting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">3</td>
-						<td>Reporting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
-						
-					
-					
-					
-					
-				</tbody>
-				</table>
-			</div>	
-					  </form>
+						<thead>
+											<tr>
+												
+												<th class="text-nowrap">Activity Name</th>
+												<th width="9%" data-orderable="false" class="align-middle">Action</th>
+
+
+											</tr>
+										</thead>
+						<tr>
+							<th style="display:none"></th>
+							<th style="display:none"></th>
+						</tr>
+						</table>
+
 					</div>
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -910,10 +896,10 @@
 <script>
   $('#data-table-default').DataTable({
 	lengthMenu: [5, 10],
-    responsive: true
+    responsive: false
   });
-  $('#activityname').DataTable({
-	lengthMenu: [5],
+  $('#tableactivityname').DataTable({
+	lengthMenu: [2,5],
     responsive: false
   });
   $('#activitynameedit').DataTable({
@@ -940,4 +926,46 @@ $(document).on('change',"#addtypeoflogedit", function () {
 
    }
 });
+
+
+</script>
+
+
+<script>
+	
+  $("#add-row").click(function(){
+ 
+  var addtypelogactivityName = document.getElementById('addtypelogactivityName').value;
+
+  if(addtypelogactivityName == ""){
+    document.getElementById('addtypelogactivityName');
+    return;
+  }
+ 
+  
+  else{
+    
+    let table = document.getElementById('tableactivityname');
+    // Insert a row at the end of the table
+    let newRow = table.insertRow(-1);
+    var l = table.rows.length-1;
+    //Col 1 = addtypelogactivityName
+    table.rows[l].insertCell(0);
+    table.rows[l].cells[0].innerHTML = addtypelogactivityName;
+   
+    //Col 3 = Delete Button
+    table.rows[l].insertCell(1);
+    table.rows[l].cells[1].innerHTML = "<button type='button' class='btnDelete btn btn-danger btn-sm' onclick='delRow(this);' id='btnDelete' size='1' height='1'>Delete</button>";
+
+    //Clear input
+    
+  
+}
+  });
+
+function delRow(btn){
+  var row = btn.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
+	
 </script>
