@@ -718,10 +718,11 @@
 								</div>
 								<div class="col-sm-2" id="" >
 									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add Row">
+									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add">
 									
 								</div>			
 						</div>
+						<div class="form-control">
 						<div class="row p-2">
 						
 
@@ -729,9 +730,8 @@
 						<table id="tableactivityname" class="table table-striped table-bordered align-middle">
 						
 						<thead>
-											<tr>
-												
-												<th class="text-nowrap">Activity Name</th>
+							<tr>
+								<th class="text-nowrap">Activity Name</th>
 												<th width="9%" data-orderable="false" class="align-middle">Action</th>
 
 
@@ -743,7 +743,8 @@
 						</tr>
 						</table>
 
-					</div>
+					</div></div>
+					
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 					  <button type="button" class="btn btn-primary">Save</button>
@@ -830,7 +831,7 @@
 					
 				</tbody>
 				</table>
-			</div>	
+				</div>	
 					  </form>
 					</div>
 					<div class="modal-footer">
@@ -900,11 +901,13 @@
   });
   $('#tableactivityname').DataTable({
 	lengthMenu: [2,5],
-    responsive: false
+    responsive: false,
+	"searching": false,
   });
   $('#activitynameedit').DataTable({
 	lengthMenu: [5],
-    responsive: false
+    responsive: false,
+	"searching": false,
   });
 </script>
 <script>
