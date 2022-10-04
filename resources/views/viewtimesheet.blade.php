@@ -1,15 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
-	
-    <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
+	<link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +15,15 @@
 	<!-- ================== END core-css ================== -->
 	
 	<!-- ================== BEGIN page-css ================== -->
-	<link href="../assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
-	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
-	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
-	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/common/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/daygrid/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/timegrid/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/list/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
+	
 	<!-- ================== END page-css ================== -->
+	
 </head>
-
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -591,256 +590,265 @@
 		<!-- BEGIN #content -->
 		<div id="content" class="app-content">
 			<!-- BEGIN breadcrumb -->
-			<!-- BEGIN breadcrumb -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Type of Logs </small></h1>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		
-		<div class="panel-heading">
-		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Type of Log</a>
-		</div>
-		
-			<h4 class="panel-title"></h4>
 			
+			<!-- END breadcrumb -->
+			<!-- BEGIN page-header -->
+			<h1 class="page-header">Calendar</h1>
+			<!-- END page-header -->
 			
+			<!-- BEGIN row -->
+			<div class="row">
+				<!-- BEGIN event-list -->
+				
+				<!-- END event-list -->
+				<div class="col-lg">
+					<!-- BEGIN calendar -->
+					<div id="calendar" class="calendar"></div>
+					<!-- END calendar -->
+				</div>
+			</div>
+			<!-- END row -->
 		</div>
-		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
-		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
+		<!-- END #content -->
+		
+				<!-- MODAL VIEW LOG -->
+				<div class="modal fade" id="editlogmodal" tabindex="-1" aria-hidden="true">
+    		<div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="">SELECTED DATE, Eg= 13/2/2022</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addChildrenForm">
+                    <div class="row p-2">
+					<table id="" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Type of Logs</th>
-						<th class="text-nowrap">Project Name</th>
-						<th class="text-nowrap">Activity Name</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						
+						<th class="text-nowrap">Type of Log</th>
+						<th class="text-nowrap">Date</th>
+						<th class="text-nowrap">Start Time</th>
+						<th class="text-nowrap">End Time</th>
+						<th class="text-nowrap">Total Hours</th>
 
 
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td >1</td>
-						<td >Service Delivery Deparment</td>
-						<td >Project</td>
-						<td>Project A</td>
-						<td>1. Corrective Maintenance, <br> 2. Reviewing & Documenting, <br>3. Reporting </td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModaledit" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+					<tr class="odd gradeX">
+						
+						<td >Home</td>
+						<td>13/02/2022</td>
+						<td>12pm</td>
+						<td>11pm</td>
+						<td>1 hours</td>
 					</tr>
-					<tr>
-						<td >2</td>
-						<td >Customer Care Department</td>
-						<td >Project</td>
-						<td>Project B</td>
-						<td>1. Ticketing, <br> 2. Customer Service</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>	
-					<tr>
-						<td >3</td>
-						<td >Coorporate Service</td>
-						<td >Non-Project</td>
-						<td>-</td>
-						<td>1. Reporting</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					<tr>
-						<td >4</td>
-						<td >Bussiness Development</td>
-						<td >Project</td>
-						<td>Project C</td>
-						<td>1. Project Documenation, <br>2. Planning </td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					
 					
 					
 				</tbody>
 			</table>
-		</div>
-	</div>
-
-	<!-- END row -->
-	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Add Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflog" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogproject" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-								<label for="firstname" class="form-label">Activity Name*</label>	
-								<input type="text" id="addtypelogactivityName" placeholder="Name" class="form-control">
-								
-								
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add">
-									
-								</div>			
-						</div>
-						<div class="form-control">
-						<div class="row p-2">
-						
-
-
-						<table id="tableactivityname" class="table table-striped table-bordered align-middle">
-						
-						<thead>
-							<tr>
-								<th class="text-nowrap">Activity Name</th>
-												<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-											</tr>
-										</thead>
-						<tr>
-							<th style="display:none"></th>
-							<th style="display:none"></th>
-						</tr>
-						</table>
-
-					</div></div>
-					
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <!--MODAL EDIT  -->
-			  <div class="modal fade" id="exampleModaledit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflogedit" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogprojectedit" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-									<label for="firstname" class="form-label">Activity Name*</label>
-									<input type="text" class="form-control" id="" />
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<a href="#" class="btn btn-primary btn-sm">+ Add</a>
-								</div>			
-						</div>
-						<div class="row p-2">
-						<table id="activitynameedit" class="table table-striped table-bordered align-middle">
+                    </div>
+					<div class="row p-2">
+					<table id="" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						<th class="text-nowrap">Office Log</th>
+						<th class="text-nowrap">My Project</th>
+						<th class="text-nowrap">Activity Name</th>
+						<th class="text-nowrap">Project Location</th>
+						
 
 
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td width="1%">1</td>
-						<td >Corrective Maintenance</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+					<tr class="odd gradeX">
+						<td >-</td>
+						<td >-</td>
+						<td>Tidur</td>
+						<td>ganu bossku</td>
+						
 					</tr>
-						
-					<tr>
-						<td width="1%">2</td>
-						<td>Reviewing & Documenting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">3</td>
-						<td>Reporting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
-						
-					
-					
 					
 					
 				</tbody>
-				</table>
-				</div>	
-					  </form>
+			</table>
+                    </div>
+					
+                    
+					
+
+                    
+                    <div class="row p-2">
+                        <div class="col-sm-12">
+                            <label for="Description" class="form-label">Description</label>
+							<textarea class="form-control" readonly rows="5"></textarea>
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+			
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+		<!--END MODAL EDIT LOG -->
+		
+
+		<!-- START MODAL EDIT EVENT -->
+		<div class="modal fade" id="editeventmodal" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">SELECTED DATE, Eg= 13/2/2022</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="">
+								<div class="row p-2">
+										<table id="" class="table table-striped table-bordered align-middle">
+									<thead>
+										<tr>
+											
+											<th class="text-nowrap">Event Name</th>
+											<th class="text-nowrap">Start Date</th>
+											<th class="text-nowrap">End Date</th>
+											<th class="text-nowrap">Start Time</th>
+											<th class="text-nowrap">End Time</th>
+											<th class="text-nowrap">Duration</th>
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd gradeX">
+											
+											<td >Weekly Scrum Meeting Project A</td>
+											<td>13/02/2022</td>
+											<td>22/02/2022</td>
+											<td>14.30</td>
+											<td>15.30</td>
+											<td>1.00 hour</td>
+										</tr>
+										
+										
+									</tbody>
+								</table>
+										</div>
+										<div class="row p-2">
+											<table id="" class="table table-striped table-bordered align-middle">
+										<thead>
+											<tr>
+												
+												<th class="text-nowrap">Location</th>
+												<th class="text-nowrap">Project</th>
+												<th class="text-nowrap">Priority</th>
+												<th class="text-nowrap">Recurring</th>
+												
+
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd gradeX">
+												
+												<td >Meeting Room</td>
+												<td>Project A</td>
+												<td>Medium</td>
+												<td>Every Weekday (Mon-Fri)</td>
+												
+											</tr>
+											
+											
+										</tbody>
+									</table>
+											</div>
+									
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<label for="firstname" class="form-label">Participant*</label>
+											<table id="" class="table table-striped table-bordered align-middle">
+											<thead>
+												<tr>
+													
+													<th class="text-nowrap">Name</th>
+													<th class="text-nowrap">Status</th>
+													
+
+
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="odd gradeX">
+													
+													<td >Ahmad</td>
+													<td><span class="badge bg-lime rounded-pill">Attending</span></td>
+													
+												</tr>
+												
+												<tr class="odd gradeX">
+													
+													<td >Shah</td>
+													<td><span class="badge bg-warning rounded-pill">No Response</span></td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													
+													<td >Irsyad</td>
+													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
+													
+												</tr>
+											</tbody>
+										</table>
+										</div>
+										<div class="col-sm-8">
+										
+											<label for="issuing-country" class="form-label">Description*</label>
+											<textarea class="form-control" rows="7"></textarea>
+										</div>
+									</div>
+
+									<div class="row p-2">
+										<div class="col-sm-2">
+											
+											<label class="form-label">Attach File:</label>
+											<a class="form-label" href="#">file.jpg</a><br>
+											<a class="form-label" href="#">file.pdf</a>
+											
+										</div>
+										<div class="col-sm-2">
+											
+										<label class="form-label">Reminder:</label>
+										<label class="form-label">None</label>
+										</div>
+										
+									</div>
+									<div class="row p-2">
+										
+										
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								
+								
+							</div>
+						</div>
 					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
 				</div>
-			  </div>
+		<!-- START MODAL EDIT EVENT -->
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -849,126 +857,561 @@
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
+	<script src="../assets/plugins/moment/min/moment.min.js"></script>
+	<script src="../assets/plugins/@fullcalendar/core/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/daygrid/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/timegrid/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/interaction/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/list/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/bootstrap/main.global.js"></script>
+	
 	<!-- ================== END page-js ================== -->
-</body>
-</html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<!-- required files -->
+	<link href="../assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<!-- required files -->
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- required files -->
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-
+	<link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
+</body>
+</html>
 
 <script>
-  $('#data-table-default').DataTable({
-	lengthMenu: [5, 10],
-    responsive: false
+	var handleCalendarDemo = function() {
+	// external events
+	
+  
+  // fullcalendar
+  
+  var d = new Date();
+	var month = d.getMonth() + 1;
+	    month = (month < 10) ? '0' + month : month;
+	var year = d.getFullYear();
+	var day = d.getDate();
+	var today = moment().startOf('day');
+  	var calendarElm = document.getElementById('calendar');
+
+	var calendar = new FullCalendar.Calendar(calendarElm, {
+    headerToolbar: {
+      left: 'prev,today,next',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+    },
+	customButtons: {
+        logButton: {
+            text:'New Log',
+            click:function(event, jsEvent, view){
+                   $('#newlogmodal').modal('show');
+          }
+        },
+		EventButton: {
+            text:'New Event',
+            click:function(event, jsEvent, view){
+                   $('#neweventmodal').modal('show');
+          }
+        }
+	},
+	eventContent: function(eventInfo) {
+		if (eventInfo.event.extendedProps.type=="log" && eventInfo.event.extendedProps.allday==true) {
+			return { html: ('&nbsp;&nbsp;'+ eventInfo.event.extendedProps.type + eventInfo.event.title)}
+		} 
+		else if (eventInfo.event.extendedProps.type=="event" && eventInfo.event.extendedProps.allday==true) {
+			return { html: ('&nbsp;&nbsp;'+ eventInfo.event.extendedProps.type + eventInfo.event.title)}
+		} 
+		else if (eventInfo.event.extendedProps.type=="event" && eventInfo.event.extendedProps.allday==false) {
+			return { html: ('&nbsp;&nbsp;'+ eventInfo.event.extendedProps.type + eventInfo.event.title)}
+		} 
+
+	},
+
+	
+		eventClick: function(info) {
+			info.jsEvent.preventDefault();
+
+			
+			
+			if (info.event.extendedProps.type=="log") {
+            $('#editlogmodal').modal('show');
+			}
+			else {
+				$('#editeventmodal').modal('show');
+			}
+			
+		},
+    buttonText: {
+    	today:    'Today',
+			month:    'Month',
+			week:     'Week',
+			day:      'Day',
+			list:     'List'
+    },
+    initialView: 'dayGridMonth',
+    editable: false,
+    droppable: false,
+	selectable: false,
+  	themeSystem: 'bootstrap',
+		views: {
+			timeGrid: {
+				eventLimit: 6 // adjust to 6 only for timeGridWeek/timeGridDay
+			}
+		},
+  	events: [{
+			title: 'EXAMPLE Log',
+			start: year + '-'+ month +'-02T06:00:00',
+			color: app.color.primary,
+			extendedProps: {
+        			type: 'log',
+					
+      		}
+			
+			
+		},{
+			title: 'EXAMPLE LOG 2',
+			start: year + '-'+ month +'-02T07:00:00',
+			color: app.color.primary,
+			extendedProps: {
+        			type: 'log',
+					
+      		},
+		},{
+			
+			title: 'EXAMPLE EVENT',
+			start: year + '-'+ month +'-10',
+			end: year + '-'+ month +'-12',
+			color: app.color.red,
+			extendedProps: {
+        			type: 'event',
+					allday: true
+      		},
+		},{
+			title: 'EXAMPLE event 2',
+			start: year + '-'+ month +'-10T01:00:00',
+			color: app.color.red,
+			extendedProps: {
+        			type: 'event'
+					
+      		},
+		}
+			],
+		
   });
-  $('#tableactivityname').DataTable({
-	lengthMenu: [2,5],
-    responsive: false,
-	"searching": false,
-  });
-  $('#activitynameedit').DataTable({
-	lengthMenu: [5],
-    responsive: false,
-	"searching": false,
+  
+	calendar.render();
+};
+
+var Calendar = function () {
+	"use strict";
+	return {
+		//main function
+		init: function () {
+			handleCalendarDemo();
+		}
+	};
+}();
+
+$(document).ready(function() {
+	Calendar.init();
+});
+</script>
+<!-- FOR MODAL LOG AND EVENT -->
+<script>
+  $("#dateaddlog").datepicker({
+    todayHighlight: true,
+    autoclose: true
   });
 </script>
 <script>
-  $(document).on('change',"#addtypeoflog", function () {
+  $("#starteventdate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script><script>
+  $("#endeventdate").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $('#projectlocsearch').picker({ search: true });
+  $('#addneweventprojectlocsearch').picker({ search: true });
+  $('#addneweventparticipant').picker({ search: true });
+  $('#addneweventselectproject').picker({ search: true });
+</script>
+<script>
+  $("#starttime").timepicker({
+	showMeridian:false,
+
+  });
+  $("#endtime").timepicker({
+	use24hours: true
+  });
+  $("#starteventtime").timepicker({
+	use24hours: true
+  });
+  $("#endeventtime").timepicker({
+	use24hours: true
+  });
+</script>
+
+<script>
+$(document).on('change',"#typeoflog", function () {
    if ($(this).val() == "2") {
-       $("#addtypeoflogproject").show();
+       $("#officelog").show();
    } else {
-       $("#addtypeoflogproject").hide();
-	  
+       $("#officelog").hide();
+	   $("#listproject").hide();
 
    }
 });
-$(document).on('change',"#addtypeoflogedit", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogprojectedit").show();
+$(document).on('change',"#typeoflog", function () {
+   if ($(this).val() == "3") {
+       $("#myproject").show();
    } else {
-       $("#addtypeoflogprojectedit").hide();
+       $("#myproject").hide();
+	   $("#listproject").hide();
+   }
+});
+$(document).on('change',"#officelog2", function () {
+   if ($(this).val() == "1") {
+       $("#listproject").show();
+   } else {
+       $("#listproject").hide();
+   }
+});
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "1" ) {
+       $("#addneweventsetreccurring").show();
+	   $('#mon').not(this).prop('checked', true);
+	   $('#tue').not(this).prop('checked', true);
+	   $('#wed').not(this).prop('checked', true);
+	   $('#thu').not(this).prop('checked', true);
+	   $('#fri').not(this).prop('checked', true);
+   } else {
+       $("#addneweventsetreccurring").hide();
+	   $('#mon').not(this).prop('checked', false);
+	   $('#tue').not(this).prop('checked', false);
+	   $('#wed').not(this).prop('checked', false);
+	   $('#thu').not(this).prop('checked', false);
+	   $('#fri').not(this).prop('checked', false);
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "1" || $(this).val() == '2' || $(this).val() == '3') {
+       $("#addneweventsetreccurring").show();
+
+   } else {
+       $("#addneweventsetreccurring").hide();
+	   
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "4" ) {
+       $("#setrecurringmontly").show();
+	   $("#setrecurringonmontly").show();
+   } else {
+       $("#setrecurringmontly").hide();
+	   $("#setrecurringonmontly").hide();
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurring", function () {
+   if ($(this).val()== "5" ) {
+       $("#setrecurringyearly").show();
+	   $("#setrecurringontheyearly").show();
 	  
+   } else {
+       $("#setrecurringyearly").hide();
+	   $("#setrecurringontheyearly").hide();
+	   
+   }
+});
+</script>
+<script type="text/javascript">
+   $().ready = function() {
+    
+    
+    $("#addreminder").click(function() {
+        $('#addeventreminder').toggle();
+    });
+
+}();
+</script>
+<script>
+
+$("#addeventrecurring").click(function() {
+    if($(this).is(":checked")) {
+        $("#addneweventrecurring").show();
+    } else {
+        $("#addneweventrecurring").hide();
+		$("#addneweventsetreccurring").hide();
+		$("#setrecurringyearly").hide();
+	   $("#setrecurringontheyearly").hide();
+	   $("#setrecurringmontly").hide();
+	   $("#setrecurringonmontly").hide();
+    }
+});
+
+$("#ondaycheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#ondayselect").show();
+		$('#onthecheck').not(this).prop('checked', false);
+		$("#recurringselectwhatday").hide();
+		$("#recurringselectonthe").hide();
+    } else {
+        $("#ondayselect").hide();
+	
+		
+    }
+});
+$("#onthecheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectwhatday").show();
+		$("#recurringselectonthe").show();
+		$('#ondaycheck').not(this).prop('checked', false);
+		$("#ondayselect").hide();
+    } else {
+        $("#recurringselectwhatday").hide();
+		$("#recurringselectonthe").hide();
+		
+    }
+});
+$("#ondayyearlycheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringmonthyearly").show();
+		$("#recurringdayyearly").show();
+		$('#ontheyearlycheck').not(this).prop('checked', false);
+		$("#recurringselectyearly").hide();
+		$("#recurringonthedayyearly").hide();
+		$("#recurringonthemonthyearly").hide();
+		$("#recurringontheof").hide();
+		// $('#ondaycheck').not(this).prop('checked', false);
+		// $("#ondayselect").hide();
+    } else {
+        $("#recurringmonthyearly").hide();
+		$("#recurringdayyearly").hide();
+		
+    }
+});
+$("#ontheyearlycheck").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectyearly").show();
+		$("#recurringonthedayyearly").show();
+		$("#recurringonthemonthyearly").show();
+		$("#recurringontheof").show();
+		$('#ondayyearlycheck').not(this).prop('checked', false);
+		$("#recurringmonthyearly").hide();
+		$("#recurringdayyearly").hide();
+		
+    } else {
+        $("#recurringselectyearly").hide();
+		$("#recurringonthedayyearly").hide();
+		$("#recurringonthemonthyearly").hide();
+		$("#recurringontheof").hide();
+    }
+});
+</script>
+<!-- END MODAL LOG AND EVENT JS-->
+
+<!-- START EDIT MODAL LOG AND EVENT JS-->
+<script>
+  $("#dateaddlogedit").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#starteventdateedit").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script><script>
+  $("#endeventdateedit").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $('#projectlocsearchedit').picker({ search: true });
+  $('#addneweventprojectlocsearchedit').picker({ search: true });
+  $('#addneweventparticipantedit').picker({ search: true });
+  $('#addneweventselectprojectedit').picker({ search: true });
+</script>
+<script>
+  $("#starttimeedit").timepicker({
+	use24hours: true
+  });
+  $("#endtimeedit").timepicker({
+	use24hours: true
+  });
+  $("#starteventtimeedit").timepicker({
+	use24hours: true
+  });
+  $("#endeventtimeedit").timepicker({
+	use24hours: true
+  });
+</script>
+
+<script>
+$(document).on('change',"#typeoflogedit", function () {
+   if ($(this).val() == "2") {
+       $("#officelogedit").show();
+   } else {
+       $("#officelogedit").hide();
+	   $("#listprojectedit").hide();
 
    }
 });
+$(document).on('change',"#typeoflogedit", function () {
+   if ($(this).val() == "3") {
+       $("#myprojectedit").show();
+   } else {
+       $("#myprojectedit").hide();
+	   $("#listprojectedit").hide();
+   }
+});
+$(document).on('change',"#officelog2edit", function () {
+   if ($(this).val() == "1") {
+       $("#listprojectedit").show();
+   } else {
+       $("#listprojectedit").hide();
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "1" ) {
+       $("#addneweventsetreccurringedit").show();
+	   $('#monedit').not(this).prop('checked', true);
+	   $('#tueedit').not(this).prop('checked', true);
+	   $('#wededit').not(this).prop('checked', true);
+	   $('#thuedit').not(this).prop('checked', true);
+	   $('#friedit').not(this).prop('checked', true);
+   } else {
+       $("#addneweventsetreccurringedit").hide();
+	   $('#monedit').not(this).prop('checked', false);
+	   $('#tueedit').not(this).prop('checked', false);
+	   $('#wededit').not(this).prop('checked', false);
+	   $('#thuedit').not(this).prop('checked', false);
+	   $('#friedit').not(this).prop('checked', false);
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "1" || $(this).val() == '2' || $(this).val() == '3') {
+       $("#addneweventsetreccurringedit").show();
 
-
+   } else {
+       $("#addneweventsetreccurringedit").hide();
+	   
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "4" ) {
+       $("#setrecurringmontlyedit").show();
+	   $("#setrecurringonmontlyedit").show();
+   } else {
+       $("#setrecurringmontlyedit").hide();
+	   $("#setrecurringonmontlyedit").hide();
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "5" ) {
+       $("#setrecurringyearlyedit").show();
+	   $("#setrecurringontheyearlyedit").show();
+	  
+   } else {
+       $("#setrecurringyearlyedit").hide();
+	   $("#setrecurringontheyearlyedit").hide();
+	   
+   }
+});
 </script>
+<script type="text/javascript">
+   $().ready = function() {
+    
+    
+    $("#addreminderedit").click(function() {
+        $('#addeventreminderedit').toggle();
+    });
 
-
+}();
+</script>
 <script>
+
+$("#addeventrecurringedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#addneweventrecurringedit").show();
+    } else {
+        $("#addneweventrecurringedit").hide();
+		$("#addneweventsetreccurringedit").hide();
+		$("#setrecurringyearlyedit").hide();
+	   $("#setrecurringontheyearlyedit").hide();
+	   $("#setrecurringmontlyedit").hide();
+	   $("#setrecurringonmontlyedit").hide();
+    }
+});
+
+$("#ondaycheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#ondayselectedit").show();
+		$('#onthecheckedit').not(this).prop('checked', false);
+		$("#recurringselectwhatdayedit").hide();
+		$("#recurringselectontheedit").hide();
+    } else {
+        $("#ondayselectedit").hide();
 	
-  $("#add-row").click(function(){
- 
-  var addtypelogactivityName = document.getElementById('addtypelogactivityName').value;
-
-  if(addtypelogactivityName == ""){
-    document.getElementById('addtypelogactivityName');
-    return;
-  }
- 
-  
-  else{
-    
-    let table = document.getElementById('tableactivityname');
-    // Insert a row at the end of the table
-    let newRow = table.insertRow(-1);
-    var l = table.rows.length-1;
-    //Col 1 = addtypelogactivityName
-    table.rows[l].insertCell(0);
-    table.rows[l].cells[0].innerHTML = addtypelogactivityName;
-   
-    //Col 3 = Delete Button
-    table.rows[l].insertCell(1);
-    table.rows[l].cells[1].innerHTML = "<button type='button' class='btnDelete btn btn-danger btn-sm' onclick='delRow(this);' id='btnDelete' size='1' height='1'>Delete</button>";
-
-    //Clear input
-    
-  
-}
-  });
-
-function delRow(btn){
-  var row = btn.parentNode.parentNode;
-  row.parentNode.removeChild(row);
-}
-	
+		
+    }
+});
+$("#onthecheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectwhatdayedit").show();
+		$("#recurringselectontheedit").show();
+		$('#ondaycheckedit').not(this).prop('checked', false);
+		$("#ondayselectedit").hide();
+    } else {
+        $("#recurringselectwhatdayedit").hide();
+		$("#recurringselectontheedit").hide();
+		
+    }
+});
+$("#ondayyearlycheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringmonthyearlyedit").show();
+		$("#recurringdayyearlyedit").show();
+		$("#ontheyearlycheckedit").not(this).prop('checked', false);
+		$("#recurringselectyearlyedit").hide();
+		$("#recurringonthedayyearlyedit").hide();
+		$("#recurringonthemonthyearlyedit").hide();
+		$("#recurringontheofedit").hide();
+		// $('#ondaycheck').not(this).prop('checked', false);
+		// $("#ondayselect").hide();
+    } else {
+        $("#recurringmonthyearlyedit").hide();
+		$("#recurringdayyearlyedit").hide();
+		
+    }
+});
+$("#ontheyearlycheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectyearlyedit").show();
+		$("#recurringonthedayyearlyedit").show();
+		$("#recurringonthemonthyearlyedit").show();
+		$("#recurringontheofedit").show();
+		$('#ondayyearlycheckedit').not(this).prop('checked', false);
+		$("#recurringmonthyearlyedit").hide();
+		$("#recurringdayyearlyedit").hide();
+		
+    } else {
+        $("#recurringselectyearlyedit").hide();
+		$("#recurringonthedayyearlyedit").hide();
+		$("#recurringonthemonthyearlyedit").hide();
+		$("#recurringontheofedit").hide();
+    }
+});
 </script>
+<!-- END EDIT MODAL LOG AND EVENT JS-->

@@ -680,7 +680,7 @@
                         </div>
 						
                         <div class="col-sm-6">
-						<label for="issuing-country" class="form-label">End Time</label>  
+						<label for="issuing-country" class="form-label">Start Time</label>  
 						<div class="input-group">
 						<input id="starttime" type="text" class="form-control" />
 						<div class="input-group-text"><i class="fa fa-clock"></i></div>
@@ -1893,10 +1893,19 @@ $(document).ready(function() {
   $('#addneweventselectproject').picker({ search: true });
 </script>
 <script>
-  $("#starttime").timepicker();
-  $("#endtime").timepicker();starteventtime
-  $("#starteventtime").timepicker();
-  $("#endeventtime").timepicker();
+  $("#starttime").timepicker({
+	showMeridian:false,
+
+  });
+  $("#endtime").timepicker({
+	use24hours: true
+  });
+  $("#starteventtime").timepicker({
+	use24hours: true
+  });
+  $("#endeventtime").timepicker({
+	use24hours: true
+  });
 </script>
 
 <script>
@@ -1983,7 +1992,7 @@ $(document).on('change',"#addneweventselectrecurring", function () {
     });
 
 }();
-</script>addeventallday
+</script>
 <script>
 
 $("#addeventrecurring").click(function() {
@@ -2085,10 +2094,18 @@ $("#ontheyearlycheck").click(function() {
   $('#addneweventselectprojectedit').picker({ search: true });
 </script>
 <script>
-  $("#starttimeedit").timepicker();
-  $("#endtimeedit").timepicker();starteventtime
-  $("#starteventtimeedit").timepicker();
-  $("#endeventtimeedit").timepicker();
+  $("#starttimeedit").timepicker({
+	use24hours: true
+  });
+  $("#endtimeedit").timepicker({
+	use24hours: true
+  });
+  $("#starteventtimeedit").timepicker({
+	use24hours: true
+  });
+  $("#endeventtimeedit").timepicker({
+	use24hours: true
+  });
 </script>
 
 <script>
