@@ -177,5 +177,8 @@ Route::get('/timesheet/timesheetapproval', function () {
 Route::get('/timesheet/viewtimesheet', function () {
     return view('viewtimesheet');
 });
+Route::get('/timesheet/timesheetrealtime', function () {
+    return view('timesheetrealtime');
+});
 
 
