@@ -174,6 +174,8 @@ Route::get('/timesheet/mytimesheet', function () {
 Route::get('/timesheet/timesheetapproval', function () {
     return view('timesheetapproval');
 });
-
+Route::get('/timesheet/viewtimesheet', function () {
+    return view('viewtimesheet');
+});
 
 
