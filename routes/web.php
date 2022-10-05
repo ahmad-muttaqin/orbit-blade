@@ -180,5 +180,8 @@ Route::get('/timesheet/viewtimesheet', function () {
 Route::get('/timesheet/timesheetrealtime', function () {
     return view('timesheetrealtime');
 });
+Route::get('/timesheet/eventrealtime', function () {
+    return view('eventrealtime');
+});
 
 
