@@ -602,7 +602,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Timesheet <small>| Realtime Activity </small></h1>
+	<h1 class="page-header">Timesheet <small>| Realtime Activity | Event Realtime Activity </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -616,7 +616,7 @@
 		<div class="row p-2">	
 		<div class="col-sm-6">
 		<a data-bs-toggle="modal" data-bs-target="#neweventmodal" class="btn btn-primary">New Event</a>
-		<a href="/timesheet/eventrealtime" class="btn btn-primary">View Event</a>
+		<a href="/timesheet/timesheetrealtime"  class="btn btn-primary">View Employee</a>
 			</div>
 		<div class="col-sm-6" style="display: flex; justify-content: flex-end">
 		
@@ -630,30 +630,24 @@
 			
 			<h4>Filter</h4>
 			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Employer Name</label>
+			<label for="emergency-firstname" class="form-label">Employee Name</label>
 				<select class="form-select" id="" >
 					<option class="form-label" value="" selected>Please Select</option>
 				</select>
 			</div>
 			
 			<div class="col-sm-2">
-				<label for="emergency-firstname" class="form-label">Designation</label>
+				<label for="emergency-firstname" class="form-label">Event Name</label>
 				<select class="form-select" id="" >
 					<option class="form-label" value="" selected>Please Select</option>
 				</select>
 			</div>
 			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Department</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
+			<label for="emergency-firstname" class="form-label">Date Range</label>
+			<input type="text" id="daterange" class="form-control" value="" placeholder="click to select the date range" />
+  			
 			</div>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Attendance</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
+			
 			<div class="col-sm-1">
 			<label for="emergency-firstname" class="form-label">&nbsp;</label>
 			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-magnifying-glass"></i> Search</a>
@@ -674,15 +668,13 @@
 					<tr>
 						
 						<th class="text-nowrap">Action</th>
-						<th class="text-nowrap">Image</th>
-						<th class="text-nowrap">Employee</th>
-						<th class="text-nowrap">Phone</th>
-						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Designation</th>
-						<th class="text-nowrap">Attendance</th>
-						<th class="text-nowrap">Clock-In</th>
-						<th class="text-nowrap">Clock-Out</th>
+						<th class="text-nowrap">Event Name</th>
+						<th class="text-nowrap">Date</th>
+						<th class="text-nowrap">Time</th>
 						<th class="text-nowrap">Location</th>
+						<th class="text-nowrap">Description</th>
+						<th class="text-nowrap">Participant</th>
+						
 
 
 					</tr>
@@ -690,70 +682,46 @@
 				<tbody>
 					<tr class="odd gradeX">
 					
-						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#viewlog" class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-13.jpg" class="w-50px"></td>
-						<td> Amanina </td>
-						<td>01128798709</td>
-						<td>Business Analyst</td>
-						<td>Service Delivery Department</td>
-						<td>
-							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:block"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>8.10am</td>
-						<td>17.30pm</td>
-						<td>Headquarter</td>
-					</tr>
-					<tr class="even gradeC">
-					
-					<td><a href="javascript:;"  class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-5.jpg" class="w-50px"></td>
-						<td> Haziq Lokman </td>
-						<td>01128753549</td>
-						<td>Scrum Master</td>
-						<td>Admin Department</td>
-						<td>
-							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:none"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:block"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>-</td>
-						<td>-</td>
-						<td>Unavailable</td>
-					</tr>
-					<tr class="even gradeC">
-					
-					<td><a href="javascript:;"  class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-6.jpg" class="w-50px"></td>
-						<td> Amanina </td>
-						<td>01128798709</td>
-						<td>Business Analyst</td>
-						<td>Group Human Resource</td>
-						<td>
-							<div id="awaitingapproval" style="display:block"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:none"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>-</td>
-						<td>-</td>
-						<td>Unavailable</td>
-					</tr>
-					
-					<td><a href="javascript:;"  class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-7.jpg" class="w-50px"></td>
-						<td> Amanina </td>
-						<td>01128798709</td>
-						<td>Business Analyst</td>
-						<td>Service Delivery Department</td>
-						<td>
-							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:block"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>8.10am</td>
-						<td>17.30pm</td>
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalviewevent" class="btn btn-primary">View</a></td>
+						<td> Event Name 1 </td>
+						<td> 13/01/2020 - 13/01/2020</td>
+						<td>12:00 - 14:00</td>
 						<td>Putrajaya</td>
+						<td>Description for event 1</td>
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalparticipant" >3</a></td>
+						
+					</tr>
+					<tr class="even gradeC">
+					
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalviewevent" class="btn btn-primary">View</a></td>
+						<td> Event Name 1 </td>
+						<td> 13/01/2020 - 22/01/2020</td>
+						<td>12:00 - 13:00</td>
+						<td>Terengganu</td>
+						<td>Description for event 1</td>
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalparticipant" >3</a></td>
+						
+					</tr>
+					<tr class="even gradeC">
+					
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalviewevent" class="btn btn-primary">View</a></td>
+						<td> Event Name 1 </td>
+						<td> 13/01/2020 - 13/01/2020</td>
+						<td>12:00 - 19:00</td>
+						<td>Selangor</td>
+						<td>Description for event 1</td>
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalparticipant" >3</a></td>
+						
+					</tr>
+					
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalviewevent" class="btn btn-primary">View</a></td>
+						<td> Event Name 1 </td>
+						<td> 13/01/2020 - 13/01/2020</td>
+						<td>12:00 - 17:00</td>
+						<td>Klang</td>
+						<td>Description for event 1</td>
+						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalparticipant" >3</a></td>
+						
 					</tr>
 					
 					
@@ -770,7 +738,7 @@
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
-								<form id="addChildrenForm">
+								<form id="">
 								<div class="row p-2">
 										<div class="col-sm-12">
 											<label for="firstname" class="form-label">Event Name*</label>
@@ -1193,90 +1161,233 @@
 					</div>
 				</div>
 		<!-- END MODAL ADD EVENT -->
-			<!-- MODAL VIEW LOG -->
-			<div class="modal fade" id="viewlog" tabindex="-1" aria-hidden="true">
-    		<div class="modal-dialog modal-lg">
+			
+		
+		<!-- MODAL VIEW PARTICIPANT -->
+		<div class="modal fade" id="modalparticipant" tabindex="-1" aria-hidden="true">
+    		<div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="">SELECTED DATE, Eg= 13/2/2022</h5>
+                <h5 class="modal-title" id="">EVENT NAME</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="">
+                
+				<form id="">
                     <div class="row p-2">
-					<table id="" class="table table-striped table-bordered align-middle">
+					<table id="tableviewparticipant" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
 						
-						<th class="text-nowrap">Type of Log</th>
-						<th class="text-nowrap">Date</th>
-						<th class="text-nowrap">Start Time</th>
-						<th class="text-nowrap">End Time</th>
-						<th class="text-nowrap">Total Hours</th>
-
-
+						<th class="text-nowrap">No</th>
+						<th class="text-nowrap">Participant</th>
+						
 					</tr>
 				</thead>
 				<tbody>
-					<tr class="odd gradeX">
-						
-						<td >Home</td>
-						<td>13/02/2022</td>
-						<td>12pm</td>
-						<td>11pm</td>
-						<td>1 hours</td>
-					</tr>
-					
-					
-				</tbody>
-			</table>
-                    </div>
-					<div class="row p-2">
-					<table id="" class="table table-striped table-bordered align-middle">
-				<thead>
 					<tr>
-						<th class="text-nowrap">Office Log</th>
-						<th class="text-nowrap">My Project</th>
-						<th class="text-nowrap">Activity Name</th>
-						<th class="text-nowrap">Project Location</th>
 						
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-						<td >-</td>
-						<td >-</td>
-						<td>Tidur</td>
-						<td>ganu bossku</td>
+						<td >1</td>
+						<td>Ahmad</td>
 						
 					</tr>
-					
-					
+					<tr>
+						
+						<td >2</td>
+						<td>Aqil</td>
+						
+					</tr>
+					<tr>
+						
+						<td >3</td>
+						<td>Boi</td>
+						
+					</tr>
 				</tbody>
 			</table>
                     </div>
 					
-                    <div class="row p-2">
-                        <div class="col-sm-12">
-                            <label for="Description" class="form-label">Description</label>
-							<textarea class="form-control" readonly rows="5"></textarea>
-                        </div>
-                        
-                    </div>
-                    
                 </form>
             </div>
             <div class="modal-footer">
 			
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
         </div>
     </div>
 </div>
-		<!--END MODAL EDIT LOG -->
+		<!--END MODAL VIEW PARTICIPANT -->
+
+		<!-- START MODAL VIEW EVENT -->
+		<div class="modal fade" id="modalviewevent" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">SELECTED DATE, Eg= 13/2/2022</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="">
+								<div class="row p-2">
+										<table id="" class="table table-striped table-bordered align-middle">
+									<thead>
+										<tr>
+											
+											<th class="text-nowrap">Event Name</th>
+											<th class="text-nowrap">Start Date</th>
+											<th class="text-nowrap">End Date</th>
+											<th class="text-nowrap">Start Time</th>
+											<th class="text-nowrap">End Time</th>
+											<th class="text-nowrap">Duration</th>
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd gradeX">
+											
+											<td >Weekly Scrum Meeting Project A</td>
+											<td>13/02/2022</td>
+											<td>22/02/2022</td>
+											<td>14.30</td>
+											<td>15.30</td>
+											<td>1.00 hour</td>
+										</tr>
+										
+										
+									</tbody>
+								</table>
+										</div>
+										<div class="row p-2">
+											<table id="" class="table table-striped table-bordered align-middle">
+										<thead>
+											<tr>
+												
+												<th class="text-nowrap">Location</th>
+												<th class="text-nowrap">Project</th>
+												<th class="text-nowrap">Priority</th>
+												<th class="text-nowrap">Recurring</th>
+												
+
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd gradeX">
+												
+												<td >Meeting Room</td>
+												<td>Project A</td>
+												<td>Medium</td>
+												<td>Every Weekday (Mon-Fri)</td>
+												
+											</tr>
+											
+											
+										</tbody>
+									</table>
+											</div>
+									
+									<div class="row p-2">
+										
+									<div class="col-sm-4">
+											<label for="firstname" class="form-label">Participant*</label>
+											<table id="statusparticipant" class="table table-striped table-bordered align-middle">
+											<thead>
+												<tr>
+													
+													<th style="min-width: 80px">Name</th>
+													<th style="min-width: 80px">Status </th>
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="odd gradeX">
+													
+													<td >Ahmad</td>
+													<td><span class="badge bg-lime rounded-pill">Attending</span></td>
+													
+												</tr>
+												
+												<tr class="odd gradeX">
+													
+													<td >Shah</td>
+													<td><span class="badge bg-warning rounded-pill">No Response</span></td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													
+													<td >Irsyad</td>
+													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													
+													<td >Irsyad</td>
+													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													
+													<td >Irsyad</td>
+													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													
+													<td >Irsyad</td>
+													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													
+													<td >Irsyad</td>
+													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
+													
+												</tr>
+											</tbody>
+										</table>
+										</div>
+										<div class="col-sm-8">
+										
+											<label for="issuing-country" class="form-label">Description*</label>
+											<textarea class="form-control" rows="8" readonly></textarea>
+										</div>
+										
+									</div>
+
+									<div class="row p-2">
+										
+										<div class="col-sm-2">
+											
+											<label class="form-label">Attach File:</label><br>
+											<a class="form-label" href="#">file.jpg</a><br>
+											<a class="form-label" href="#">file.pdf</a>
+											
+										</div>
+										<div class="col-sm-2">
+											
+										<label class="form-label">Reminder:</label>
+										<label class="form-label">None</label>
+										</div>
+										
+									</div>
+									<div class="row p-2">
+										
+										
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- START MODAL VIEW EVENT -->
 		</div>
 	</div>
 
@@ -1317,6 +1428,12 @@
 <script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
 <script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
 <script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
+
+<!-- required files -->
+<link href="../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+<script src="../assets/plugins/moment/min/moment.min.js"></script>
+<script src="../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
 <!-- ================== END page-js ================== -->
 	<!-- required files -->
 	<link href="../assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
@@ -1341,6 +1458,24 @@
       { extend: 'pdf', className: 'btn-blue' },
       { extend: 'print', className: 'btn-blue' }
     ],
+  });
+  
+  $('#tableviewparticipant').DataTable({
+    responsive: false,
+	"searching": false,
+	lengthMenu: [5, 10],
+	"lengthChange": false,
+  });
+
+  $('#statusparticipant').DataTable({
+    responsive: false,
+	"searching": false,
+	scrollY:        100,
+    scrollX:        false,
+    scrollCollapse: false,
+    paging:         false,
+    fixedColumns:   true,
+    info: false,     
   });
 </script>
 
@@ -1517,4 +1652,19 @@ $("#ontheyearlycheck").click(function() {
 		$("#recurringontheof").hide();
     }
 });
+</script>
+<script>
+  $("#daterange").daterangepicker({
+    opens: "right",
+    format: "MM/DD/YYYY",
+    separator: " to ",
+    startDate: moment().subtract("days", 29),
+    endDate: moment(),
+    
+  }, function (start, end) {
+    $("#default-daterange input").val(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
+  });
+</script>
+<script>
+  
 </script>
