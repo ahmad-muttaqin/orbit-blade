@@ -771,53 +771,22 @@
 											</div>
 									
 									<div class="row p-2">
-										<div class="col-sm-4">
-											<label for="firstname" class="form-label">Participant*</label>
-											<table id="" class="table table-striped table-bordered align-middle">
-											<thead>
-												<tr>
-													
-													<th class="text-nowrap">Name</th>
-													<th class="text-nowrap">Status</th>
-													
-
-
-												</tr>
-											</thead>
-											<tbody>
-												<tr class="odd gradeX">
-													
-													<td >Ahmad</td>
-													<td><span class="badge bg-lime rounded-pill">Attending</span></td>
-													
-												</tr>
-												
-												<tr class="odd gradeX">
-													
-													<td >Shah</td>
-													<td><span class="badge bg-warning rounded-pill">No Response</span></td>
-													
-												</tr>
-												<tr class="odd gradeX">
-													
-													<td >Irsyad</td>
-													<td><span class="badge bg-danger rounded-pill">Not Attending</span></td>
-													
-												</tr>
-											</tbody>
-										</table>
-										</div>
-										<div class="col-sm-8">
+										
+										<div class="col-sm-12">
 										
 											<label for="issuing-country" class="form-label">Description*</label>
-											<textarea class="form-control" rows="7"></textarea>
+											<textarea class="form-control" rows="3" readonly></textarea>
 										</div>
 									</div>
 
 									<div class="row p-2">
 										<div class="col-sm-2">
+											<label for="firstname" class="form-label">Status: <td><span class="badge bg-lime rounded-pill">Attending</span></td></label>
 											
-											<label class="form-label">Attach File:</label>
+										</div>
+										<div class="col-sm-2">
+											
+											<label class="form-label">Attach File:</label><br>
 											<a class="form-label" href="#">file.jpg</a><br>
 											<a class="form-label" href="#">file.pdf</a>
 											
