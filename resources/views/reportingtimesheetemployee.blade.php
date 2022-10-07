@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM | Dashboard 1</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,10 +20,17 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 	<!-- ================== END page-css ================== -->
 </head>
-
 <body>
+<style>
+    @media screen and (min-width: 1276px) {
+        .modal-dialog {
+          max-width: 1200px; /* New width for default modal */
+        }
+    }
+</style>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
 		<span class="spinner"></span>
@@ -595,380 +600,235 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
+	<h1 class="page-header">Reporting | Timesheet | Employee Report</h1>
 	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
+
+
 	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Type of Logs </small></h1>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
+
+	<div class="row">
 		
-		<!-- BEGIN panel-heading -->
-		
-		<div class="panel-heading">
-		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Type of Log</a>
-		</div>
-		
-			<h4 class="panel-title"></h4>
-			
-			
-		</div>
-		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
-		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Type of Logs</th>
-						<th class="text-nowrap">Project Name</th>
-						<th class="text-nowrap">Activity Name</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td >1</td>
-						<td >Service Delivery Deparment</td>
-						<td >Project</td>
-						<td>Project A</td>
-						<td>1. Corrective Maintenance, <br> 2. Reviewing & Documenting, <br>3. Reporting </td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModaledit" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					<tr>
-						<td >2</td>
-						<td >Customer Care Department</td>
-						<td >Project</td>
-						<td>Project B</td>
-						<td>1. Ticketing, <br> 2. Customer Service</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>	
-					<tr>
-						<td >3</td>
-						<td >Coorporate Service</td>
-						<td >Non-Project</td>
-						<td>-</td>
-						<td>1. Reporting</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					<tr>
-						<td >4</td>
-						<td >Bussiness Development</td>
-						<td >Project</td>
-						<td>Project C</td>
-						<td>1. Project Documenation, <br>2. Planning </td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
+		<!-- BEGIN col-6 -->
+		<div class="col-xl-15">
+			<!-- BEGIN nav-tabs -->
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
+						<span class="d-sm-none">Tab 1</span>
+						<span class="d-sm-block d-none">Timesheet Report</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 2</span>
+						<span class="d-sm-block d-none">Employee Report</span>
+					</a>
+				</li>
+				
+			</ul>
+			<!-- END nav-tabs -->
+			<!-- BEGIN tab-content -->
+			<div class="tab-content panel m-0 rounded-0 p-3">
+				<!-- BEGIN tab-pane -->
+				<div class="tab-pane fade active show" id="default-tab-1">
+					<div class="panel-heading">
 					
-					
-					
-				</tbody>
-			</table>
-		</div>
-	</div>
-
-	<!-- END row -->
-	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Add Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
+					<div class="panel-body">
+					<div class="row p-2">
+						<div class="col-sm-3">
+							<label for="emergency-firstname" class="form-label">Select Date</label>
+							<input type="text" id="daterange" class="form-control" value="" placeholder="click to select the date range" />
+							
 						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflog" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogproject" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-								<label for="firstname" class="form-label">Activity Name*</label>	
-								<input type="text" id="addtypelogactivityName" placeholder="Name" class="form-control">
-								
-								
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add">
-									
-								</div>			
-						</div>
-						<div class="form-control">
-						<div class="row p-2">
-						
-
-
-						<table id="tableactivityname" class="table table-striped table-bordered align-middle">
-						
-						<thead>
-							<tr>
-								<th class="text-nowrap">Activity Name</th>
-								<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-											</tr>
-										</thead>
-						<tr>
-							<th style="display:none"></th>
-							<th style="display:none"></th>
-						</tr>
-						</table>
-
-					</div></div>
-					
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
 					</div>
-				  </div>
-				</div>
-			  </div>
-			  <!--MODAL EDIT  -->
-			  <div class="modal fade" id="exampleModaledit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="row p-2">
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Timesheet Report By Date</label>
+							<select class="form-select" id="reportby" >
+								<option class="form-label" value="" selected>Please Select</option>
+								<option class="form-label" value="Summary">Summary</option>
+								<option class="form-label" value="Project">Project</option>
+								<option class="form-label" value="Department">Department</option>
+								<option class="form-label" value="Employee">Employee Name</option>
+							</select>
+						</div>
 					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflogedit" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogprojectedit" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
+
+					<div class="row p-2" id="rowproject">
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Project</label>
+							<select class="form-select" >
+								<option class="form-label" value="" selected>Please Select</option>
 								
-						  </select>
+							</select>
 						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-									<label for="firstname" class="form-label">Activity Name*</label>
-									<input type="text" class="form-control" id="" />
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<a href="#" class="btn btn-primary btn-sm">+ Add</a>
-								</div>			
+					</div>
+
+					<div class="row p-2" id="rowdepartment">
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Department</label>
+							<select class="form-select" >
+								<option class="form-label" value="" selected>Please Select</option>
+								
+							</select>
 						</div>
-						<div class="row p-2">
-						<table id="activitynameedit" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+					</div>
+
+					<div class="row p-2" id="rowemployee">
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Employee Name</label>
+							<select class="form-select" >
+								<option class="form-label" value="" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
 
 
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td width="1%">1</td>
-						<td >Corrective Maintenance</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">2</td>
-						<td>Reviewing & Documenting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">3</td>
-						<td>Reporting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
-						
+					<div class="row p-2">
+						<div class="col-sm-12" style="display: flex; justify-content: flex-end" >
+							<button type="button" class="btn btn-primary mt-3">
+								Submit
+							</button>
+						</div>
+					</div>
 					
 					
-					
-					
-				</tbody>
-				</table>
+					</div>
 				</div>	
-					  </form>
+				<!-- END tab-pane -->
+				<!-- BEGIN tab-pane -->
+					<div class="tab-pane fade" id="default-tab-2">
+					<div class="panel-body">
+					<div class="row p-2">
+						<div class="col-sm-3">
+							<label for="emergency-firstname" class="form-label">Select Year</label>
+							<select class="form-select"  >
+								<option class="form-label" value="" selected>Please Select</option>
+								
+							</select>
+						</div>
 					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
+					<div class="row p-2">
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Select Month</label>
+							<select class="form-select"  >
+								<option class="form-label" value="" selected>Please Select</option>
+								
+							</select>
+						</div>
 					</div>
-				  </div>
+
+					<div class="row p-2" >
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Select Department</label>
+							<select class="form-select" >
+								<option class="form-label" value="" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
+
+					<div class="row p-2" >
+						<div class="col-sm-3">
+						<label for="emergency-firstname" class="form-label">Select Employee Name</label>
+							<select class="form-select" >
+								<option class="form-label" value="" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
+
+					
+
+
+					<div class="row p-2">
+						<div class="col-sm-12" style="display: flex; justify-content: flex-end" >
+							<button type="button" class="btn btn-primary mt-3">
+								Submit
+							</button>
+						</div>
+					</div>
+					
+					
+					</div>
+					
+				
+			
+				
+									
+
+					</div>
 				</div>
-			  </div>
+				<!-- END tab-pane -->
+				
+			</div>
+			
+		
+		<!-- END col-4 -->
+	</div>
+	<!-- END row -->
+		</div>
+		<!-- END #content -->
+		
+		
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
 	<!-- ================== END core-js ================== -->
+	<!-- required files -->
+	<link href="../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="../assets/plugins/moment/min/moment.min.js"></script>
+	<script src="../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
 	
-	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
+	
 </body>
 </html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	<!-- required files -->
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-
-
 <script>
-  $('#data-table-default').DataTable({
-	lengthMenu: [5, 10],
-    responsive: false
-  });
-  $('#tableactivityname').DataTable({
-	lengthMenu: [2,5],
-    responsive: false,
-	"searching": false,
-  });
-  $('#activitynameedit').DataTable({
-	lengthMenu: [5],
-    responsive: false,
-	"searching": false,
+  $("#daterange").daterangepicker({
+    opens: "right",
+    format: "MM/DD/YYYY",
+    separator: " to ",
+    startDate: moment().subtract("days", 29),
+    endDate: moment(),
+    
+  }, function (start, end) {
+    $("#default-daterange input").val(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
   });
 </script>
 <script>
-  $(document).on('change',"#addtypeoflog", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogproject").show();
-   } else {
-       $("#addtypeoflogproject").hide();
-	  
+   $(document).ready(function(){
+		$("#rowproject").hide();
+		$("#rowdepartment").hide();
+		$("#rowemployee").hide();
+		
 
+});
+$(document).on('change',"#reportby", function () {
+   if ($(this).val() == "Project") {
+       $("#rowproject").show();
+	   $("#rowdepartment").hide();
+	   $("#rowemployee").hide();
+   } else if ($(this).val() == "Department") {
+	   $("#rowproject").hide();
+	   $("#rowdepartment").show();
+	   $("#rowemployee").hide();
+   } else if ($(this).val() == "Employee") {
+	   $("#rowproject").hide();
+	   $("#rowdepartment").hide();
+	   $("#rowemployee").show();
+   } else {
+	   $("#rowproject").hide();
+	   $("#rowdepartment").hide();
+	   $("#rowemployee").hide();
    }
 });
-$(document).on('change',"#addtypeoflogedit", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogprojectedit").show();
-   } else {
-       $("#addtypeoflogprojectedit").hide();
-	  
-
-   }
-});
-
-
-</script>
-
-
-<script>
-	
-  $("#add-row").click(function(){
- 
-  var addtypelogactivityName = document.getElementById('addtypelogactivityName').value;
-
-  if(addtypelogactivityName == ""){
-    document.getElementById('addtypelogactivityName');
-    return;
-  }
- 
-  
-  else{
-    
-    let table = document.getElementById('tableactivityname');
-    // Insert a row at the end of the table
-    let newRow = table.insertRow(-1);
-    var l = table.rows.length-1;
-    //Col 1 = addtypelogactivityName
-    table.rows[l].insertCell(0);
-    table.rows[l].cells[0].innerHTML = addtypelogactivityName;
-   
-    //Col 3 = Delete Button
-    table.rows[l].insertCell(1);
-    table.rows[l].cells[1].innerHTML = "<button type='button' class='btnDelete btn btn-danger btn-sm' onclick='delRow(this);' id='btnDelete' size='1' height='1'>Delete</button>";
-
-    //Clear input
-    
-  
-}
-  });
-
-function delRow(btn){
-  var row = btn.parentNode.parentNode;
-  row.parentNode.removeChild(row);
-}
-	
 </script>

@@ -183,5 +183,27 @@ Route::get('/timesheet/timesheetrealtime', function () {
 Route::get('/timesheet/eventrealtime', function () {
     return view('eventrealtime');
 });
-
-
+Route::get('/timesheet/reportingstatusreport', function () {
+    return view('reportingstatusreport');
+});
+Route::get('/timesheet/reportingtimesheetemployee', function () {
+    return view('reportingtimesheetemployee');
+});
+Route::get('/timesheet/timesheetreportingsummary', function () {
+    return view('timesheetreportingsummary');
+});
+Route::get('/timesheet/timesheetreportingproject', function () {
+    return view('timesheetreportingproject');
+});
+Route::get('/timesheet/timesheetreportingdepartment', function () {
+    return view('timesheetreportingdepartment');
+});
+Route::get('/timesheet/viewtimesheetemployee', function () {
+    return view('viewtimesheetemployee');
+});
+Route::get('/timesheet/timesheetovertimereport', function () {
+    return view('timesheetovertimereport');
+});
+Route::get('/setting/timesheetperiod', function () {
+    return view('settingtimesheetperiod');
+});

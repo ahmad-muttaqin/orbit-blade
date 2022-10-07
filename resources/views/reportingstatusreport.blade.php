@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM | Timesheet </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Type of Logs </small></h1>
+	<h1 class="page-header">Reporting <small>| Timesheet | Report Status </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -610,62 +610,140 @@
 		<!-- BEGIN panel-heading -->
 		
 		<div class="panel-heading">
-		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Type of Log</a>
+		
+		<div class="col-md-12" style="display: flex; justify-content: flex-end" >
+		
+		<a id="filter" class="btn btn-default btn-icon btn-lg">
+				<i class="fa fa-filter"></i>
+			</a>
+		
 		</div>
 		
-			<h4 class="panel-title"></h4>
+		</div>
+		<div class="panel-body">
+		<div class="form-control" id="filterform" style="display:none">	
+		<div class="row p-2">	
 			
+			<h4>Filter</h4>
+			<div class="col-sm-3">
+			<label for="emergency-firstname" class="form-label">Employer Name</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
 			
+			<div class="col-sm-3">
+				<label for="emergency-firstname" class="form-label">Year</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-3">
+			<label for="emergency-firstname" class="form-label">Month</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			<div class="col-sm-3">
+			<label for="emergency-firstname" class="form-label">Designation</label>
+				<select class="form-select" id="" >
+					<option class="form-label" value="" selected>Please Select</option>
+				</select>
+			</div>
+			
+			</div>
+			<div class="row p-2">	
+				<div class="col-sm-3">
+				<label for="emergency-firstname" class="form-label">Department</label>
+					<select class="form-select" id="" >
+						<option class="form-label" value="" selected>Please Select</option>
+					</select>
+				</div>
+				<div class="col-sm-3">
+				<label for="emergency-firstname" class="form-label">Status</label>
+					<select class="form-select" id="" >
+						<option class="form-label" value="" selected>Please Select</option>
+					</select>
+				</div>
+				<div class="col-sm-1">
+					<label for="emergency-firstname" class="form-label">&nbsp;</label>
+					<a href="#" class="btn btn-primary form-control"> <i class="fas fa-magnifying-glass"></i> Search</a>
+				</div>
+
+				<div class="col-sm-1">
+					<label for="emergency-firstname" class="form-label">&nbsp;</label>
+					<a href="#" class="btn btn-primary form-control"> <i class="fas fa-repeat"></i> Reset</a>
+				</div>
+
+			</div>
 		</div>
 		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
+		<!-- BEGIN panel-body --><br>
+		<div class="form-control">	
 		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
+			
+			<table id="timesheetapproval" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">NO</th>
+						
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Submitted Date</th>
+						<th class="text-nowrap">Employee Name</th>
+						<th class="text-nowrap">Designation</th>
 						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Type of Logs</th>
-						<th class="text-nowrap">Project Name</th>
-						<th class="text-nowrap">Activity Name</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+						<th width="9%" data-orderable="false" class="align-middle">Status</th>
 
 
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td >1</td>
-						<td >Service Delivery Deparment</td>
-						<td >Project</td>
-						<td>Project A</td>
-						<td>1. Corrective Maintenance, <br> 2. Reviewing & Documenting, <br>3. Reporting </td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModaledit" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+					<tr class="odd gradeX">
+					<td width="5%"><a href="javascript:;" class="btn btn-primary">View</a></td>
+						<td>03/10/2022</td>
+						<td> Amira Roslam </td>
+						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
+						<td>
+							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">Awaiting Approval</span> </div>
+							<div id="approved" style="display:block"> <span class="badge bg-lime rounded-pill">Approved</span> </div>
+							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Rejected</span></div>
+						</td>
+						
 					</tr>
-					<tr>
-						<td >2</td>
-						<td >Customer Care Department</td>
-						<td >Project</td>
-						<td>Project B</td>
-						<td>1. Ticketing, <br> 2. Customer Service</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>	
-					<tr>
-						<td >3</td>
-						<td >Coorporate Service</td>
-						<td >Non-Project</td>
-						<td>-</td>
-						<td>1. Reporting</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+					<tr class="even gradeC">
+					<td width="5%"><a href="javascript:;" class="btn btn-primary">View</a></td>
+						<td>03/10/2022</td>
+						<td> Hazizul Husni </td>
+						<td>Bill Gates</td>
+						<td>12 Feb 2021 4.30 pm</td>
+						<td>
+							<div style="display:block"> <span class="badge bg-warning rounded-pill">Awaiting Approval</span> </div>
+							<div style="display:none"> <span class="badge bg-lime rounded-pill">Approved</span> </div>
+							<div style="display:none"> <span class="badge bg-danger rounded-pill">Rejected</span></div>
+						</td>
 					</tr>
-					<tr>
-						<td >4</td>
-						<td >Bussiness Development</td>
-						<td >Project</td>
-						<td>Project C</td>
-						<td>1. Project Documenation, <br>2. Planning </td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+					<tr class="even gradeC">
+					<td width="5%"><a href="javascript:;"  class="btn btn-primary">View</a></td>
+						<td>02/10/2022</td>
+						<td> Shahira Ahmad </td>
+						<td>Maisarah</td>
+						<td>10 Feb 2022 2.30 pm</td>
+						<td>
+							<div style="display:none"> <span class="badge bg-warning rounded-pill">Awaiting Approval</span> </div>
+							<div style="display:block"> <span class="badge bg-lime rounded-pill">Approved</span> </div>
+							<div style="display:none"> <span class="badge bg-danger rounded-pill">Rejected</span></div>
+						</td>
+					</tr>
+					<td width="5%"><a href="javascript:;"  class="btn btn-primary">View</a></td>
+						<td>02/10/2022</td>
+						<td> Izzuddin </td>
+						<td>Maisarah</td>
+						<td>10 Feb 2022 2.30 pm</td>
+						<td>
+							<div style="display:none"> <span class="badge bg-warning rounded-pill">Awaiting Approval</span> </div>
+							<div style="display:none"> <span class="badge bg-lime rounded-pill">Approved</span> </div>
+							<div style="display:block"> <span class="badge bg-danger rounded-pill">Rejected</span></div>
+						</td>
 					</tr>
 					
 					
@@ -673,174 +751,11 @@
 				</tbody>
 			</table>
 		</div>
+		</div>
 	</div>
 
 	<!-- END row -->
-	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Add Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflog" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogproject" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-								<label for="firstname" class="form-label">Activity Name*</label>	
-								<input type="text" id="addtypelogactivityName" placeholder="Name" class="form-control">
-								
-								
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add">
-									
-								</div>			
-						</div>
-						<div class="form-control">
-						<div class="row p-2">
-						
-
-
-						<table id="tableactivityname" class="table table-striped table-bordered align-middle">
-						
-						<thead>
-							<tr>
-								<th class="text-nowrap">Activity Name</th>
-								<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-											</tr>
-										</thead>
-						<tr>
-							<th style="display:none"></th>
-							<th style="display:none"></th>
-						</tr>
-						</table>
-
-					</div></div>
-					
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <!--MODAL EDIT  -->
-			  <div class="modal fade" id="exampleModaledit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflogedit" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogprojectedit" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-									<label for="firstname" class="form-label">Activity Name*</label>
-									<input type="text" class="form-control" id="" />
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<a href="#" class="btn btn-primary btn-sm">+ Add</a>
-								</div>			
-						</div>
-						<div class="row p-2">
-						<table id="activitynameedit" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td width="1%">1</td>
-						<td >Corrective Maintenance</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">2</td>
-						<td>Reviewing & Documenting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">3</td>
-						<td>Reporting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
-						
-					
-					
-					
-					
-				</tbody>
-				</table>
-				</div>	
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
+	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -859,116 +774,66 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- required files -->
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 
 
 <script>
-  $('#data-table-default').DataTable({
+  $('#timesheetapproval').DataTable({
+	"searching": false,
+	"lengthChange": true,
 	lengthMenu: [5, 10],
-    responsive: false
-  });
-  $('#tableactivityname').DataTable({
-	lengthMenu: [2,5],
     responsive: false,
-	"searching": false,
-  });
-  $('#activitynameedit').DataTable({
-	lengthMenu: [5],
-    responsive: false,
-	"searching": false,
-  });
-</script>
-<script>
-  $(document).on('change',"#addtypeoflog", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogproject").show();
-   } else {
-       $("#addtypeoflogproject").hide();
-	  
-
-   }
-});
-$(document).on('change',"#addtypeoflogedit", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogprojectedit").show();
-   } else {
-       $("#addtypeoflogprojectedit").hide();
-	  
-
-   }
-});
-
-
-</script>
-
-
-<script>
 	
-  $("#add-row").click(function(){
- 
-  var addtypelogactivityName = document.getElementById('addtypelogactivityName').value;
+    dom: '<"row"<"col-sm-11"B><"col-sm-1"l>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+    buttons: [
+      { extend: 'excel', className: 'btn-blue' },
+      { extend: 'pdf', className: 'btn-blue' },
+      { extend: 'print', className: 'btn-blue' }
+    ],
+  });
+</script>
+<script>
+$(document).ready(function() {
+	var x = document.getElementById('awaitingapproval');
+	var y= document.getElementById('approved');
+	var z= document.getElementById('rejected');
+	if (x.style.display == "block") {
+		$(".canceltimesheet").hide();
 
-  if(addtypelogactivityName == ""){
-    document.getElementById('addtypelogactivityName');
-    return;
+  } else if (y.style.display == "block") {
+		$(".approvereject").hide();
+		
+  }	else if (z.style.display == "block") {
+		$(".approvereject").hide();
+		
   }
- 
-  
-  else{
-    
-    let table = document.getElementById('tableactivityname');
-    // Insert a row at the end of the table
-    let newRow = table.insertRow(-1);
-    var l = table.rows.length-1;
-    //Col 1 = addtypelogactivityName
-    table.rows[l].insertCell(0);
-    table.rows[l].cells[0].innerHTML = addtypelogactivityName;
-   
-    //Col 3 = Delete Button
-    table.rows[l].insertCell(1);
-    table.rows[l].cells[1].innerHTML = "<button type='button' class='btnDelete btn btn-danger btn-sm' onclick='delRow(this);' id='btnDelete' size='1' height='1'>Delete</button>";
 
-    //Clear input
-    
-  
-}
-  });
 
-function delRow(btn){
-  var row = btn.parentNode.parentNode;
-  row.parentNode.removeChild(row);
-}
-	
+});
+</script>
+<script type="text/javascript">
+   $().ready = function() {
+    
+    
+    $("#filter").click(function() {
+        $('#filterform').toggle();
+    });
+
+}();
 </script>

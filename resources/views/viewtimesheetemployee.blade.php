@@ -1,31 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Timesheet </title>
+	<title>OrbitHRM </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
-	
-    <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
+	<link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	
-	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
 	
 	<!-- ================== BEGIN page-css ================== -->
-	<link href="../assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
-	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
-	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
-	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/common/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/daygrid/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/timegrid/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/list/main.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/@fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
+	
 	<!-- ================== END page-css ================== -->
+	
 </head>
-
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -592,609 +590,30 @@
 		<!-- BEGIN #content -->
 		<div id="content" class="app-content">
 			<!-- BEGIN breadcrumb -->
-			<!-- BEGIN breadcrumb -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h1 class="page-header">Timesheet <small>| Realtime Activity </small></h1>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		
-		
-		
-		<div class="panel-body">
-		<div class="row p-2">	
-		<div class="col-sm-6">
-		<a data-bs-toggle="modal" data-bs-target="#neweventmodal" class="btn btn-primary">New Event</a>
-		<a href="/timesheet/eventrealtime" class="btn btn-primary">View Event</a>
-			</div>
-		<div class="col-sm-6" style="display: flex; justify-content: flex-end">
-		
-		<a id="filter" class="btn btn-default btn-icon btn-lg">
-				<i class="fa fa-filter"></i>
-			</a>
-			</div>
-		</div><br>
-		<div class="form-control" id="filterform" style="display:none">	
-		<div class="row p-2">	
 			
-			<h4>Filter</h4>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Employer Name</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
+			<!-- END breadcrumb -->
+			<!-- BEGIN page-header -->
+			<h1 class="page-header">Calendar <small>| Amanina Hassan</small></h1>
+			<!-- END page-header -->
 			
-			<div class="col-sm-2">
-				<label for="emergency-firstname" class="form-label">Designation</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Department</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Attendance</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-1">
-			<label for="emergency-firstname" class="form-label">&nbsp;</label>
-			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-magnifying-glass"></i> Search</a>
-			</div>
-			<div class="col-sm-1">
-			<label for="emergency-firstname" class="form-label">&nbsp;</label>
-			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-repeat"></i> Reset</a>
-			</div>
-			</div>
-		</div>
-		<!-- END panel-heading -->
-		<!-- BEGIN panel-body --><br>
-		<div class="form-control">	
-		<div class="panel-body">
 			
-			<table id="timesheetapproval" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						
-						<th class="text-nowrap">Action</th>
-						<th class="text-nowrap">Image</th>
-						<th class="text-nowrap">Employee</th>
-						<th class="text-nowrap">Phone</th>
-						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Designation</th>
-						<th class="text-nowrap">Attendance</th>
-						<th class="text-nowrap">Clock-In</th>
-						<th class="text-nowrap">Clock-Out</th>
-						<th class="text-nowrap">Location</th>
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-					
-						<td width="5%"><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#viewlog" class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-13.jpg" class="w-50px"></td>
-						<td> Amanina </td>
-						<td>01128798709</td>
-						<td>Business Analyst</td>
-						<td>Service Delivery Department</td>
-						<td>
-							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:block"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>8.10am</td>
-						<td>17.30pm</td>
-						<td>Headquarter</td>
-					</tr>
-					<tr class="even gradeC">
-					
-					<td><a href="javascript:;"  class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-5.jpg" class="w-50px"></td>
-						<td> Haziq Lokman </td>
-						<td>01128753549</td>
-						<td>Scrum Master</td>
-						<td>Admin Department</td>
-						<td>
-							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:none"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:block"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>-</td>
-						<td>-</td>
-						<td>Unavailable</td>
-					</tr>
-					<tr class="even gradeC">
-					
-					<td><a href="javascript:;"  class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-6.jpg" class="w-50px"></td>
-						<td> Amanina </td>
-						<td>01128798709</td>
-						<td>Business Analyst</td>
-						<td>Group Human Resource</td>
-						<td>
-							<div id="awaitingapproval" style="display:block"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:none"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>-</td>
-						<td>-</td>
-						<td>Unavailable</td>
-					</tr>
-					
-					<td><a href="javascript:;"  class="btn btn-primary">View</a></td>
-						<td class="text-center"><img src="../assets/img/user/user-7.jpg" class="w-50px"></td>
-						<td> Amanina </td>
-						<td>01128798709</td>
-						<td>Business Analyst</td>
-						<td>Service Delivery Department</td>
-						<td>
-							<div id="awaitingapproval" style="display:none"> <span class="badge bg-warning rounded-pill">On leave</span> </div>
-							<div id="approved" style="display:block"> <span class="badge bg-lime rounded-pill">Present</span> </div>
-							<div id="rejected" style="display:none"> <span class="badge bg-danger rounded-pill">Absent</span></div>
-						</td>
-						<td>8.10am</td>
-						<td>17.30pm</td>
-						<td>Putrajaya</td>
-					</tr>
-					
-					
-					
-				</tbody>
-			</table>
-		</div>
-		<!--START MODAL ADD EVENT -->
-		<div class="modal fade" id="neweventmodal" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="newlogmodal">Add New Event</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<form id="addChildrenForm">
-								<div class="row p-2">
-										<div class="col-sm-12">
-											<label for="firstname" class="form-label">Event Name*</label>
-											<input type="text" class="form-control" id="" />
-											
-										</div>
-										
-									</div>
-									<div class="row p-2">
-									<div class="col-sm-6">
-											<label for="lastname" class="form-label">Start Date*</label>
-											<div class="input-group">
-											<input type="text" class="form-control" id="starteventdate" />
-											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-										</div>
-										</div>
-										<div class="col-sm-6">
-											<label for="lastname" class="form-label">End Date*</label>
-											<div class="input-group">
-											<input type="text" class="form-control" id="endeventdate" />
-											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-										</div>
-										</div>
-									</div>
-									
-									
-									<div class="row p-2" id="startendtime">
-									<div class="col-sm-6">
-										<label for="issuing-country" class="form-label">Start Time*</label>  
-										<div class="input-group">
-										<input id="starteventtime" type="text" class="form-control" value="00:00"/>
-										<div class="input-group-text"><i class="fa fa-clock"></i></div>
-										</div>	
-										</div>
-										
-										<div class="col-sm-6">
-										<label for="issuing-country" class="form-label">End Time*</label>  
-										<div class="input-group">
-										<input id="endeventtime" type="text" class="form-control" value="00:00"/>
-										<div class="input-group-text"><i class="fa fa-clock"></i></div>
-										</div>	
-										</div>
-									</div>
-
-									
-
-									<div class="row p-2">
-										<div class="col-sm-3">
-										
-											<label for="issuing-country" class="form-label">Duration</label>
-											<select class="form-select" id="" aria-label="Default select example">
-											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">30 Minute</option>
-											<option class="form-label" value="2">1 Hour</option>
-											<option class="form-label" value="3">1 Hour 30 Minute</option>
-											<option class="form-label" value="4">2 Hour</option>
-											<option class="form-label" value="5">2 Hour 30 Minute</option>
-											<option class="form-label" value="6">3 Hour</option>
-											</select>
-									
-										</div>
-										<div class="col-sm-3">
-										
-										<div style="padding-top:20px;">
-										<div class="form-check form-check-inline">
-										<input class="form-check-input"  id="addeventallday" type="checkbox"  name="inlineRadioOptions" >
-										<label class="form-label" >All Day</label>
-										</div>
-										<div class="form-check form-check-inline">
-										<input class="form-check-input" id="addeventrecurring" type="checkbox"  name="inlineRadioOptions" >
-										<label class="form-label" >Recurring</label>
-										</div>
-										
-										</div>
-										</div>
-
-										<div class="col-sm-6 ">
-										
-										<label for="issuing-country" class="form-label">Priority</label>
-										<div style="padding-top:10px;">
-										<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-										<label class="form-label" for="inlineRadio1">Low</label>
-										</div>
-										<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-										<label class="form-label" for="inlineRadio2">Medium</label>
-										</div>
-										<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-										<label class="form-label" for="inlineRadio3">High</label>
-										</div>
-										</div>
-										
-									</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-sm-6" id="addneweventrecurring" style="display:none">
-											<label for="firstname" class="form-label">Recurring*</label>
-											<select class="form-select" id="addneweventselectrecurring" aria-label="Default select example">
-											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">Every Weekday</option>
-											<option class="form-label" value="2">Daily</option>
-											<option class="form-label" value="3">Weekly</option>
-											<option class="form-label" value="4">Monthly</option>
-											<option class="form-label" value="5">Yearly</option>
-											</select>
-										</div>
-										
-									</div>
-									
-									<div class="row p-2">
-										<div class="col-sm-6" id="addneweventsetreccurring" style="display: none">
-										<label for="firstname" class="form-label">Set Reccurrence*</label>
-										<div class="form-check form-check-inline">
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="sun" value="sunday">
-											<label class="form-label" for="inlineCheckbox1">Sun</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="mon" value="monday">
-											<label class="form-label" for="inlineCheckbox2">Mon</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="tue" value="tuesday">
-											<label class="form-label" for="inlineCheckbox3">Tue</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="wed" value="wednesday">
-											<label class="form-label" for="inlineCheckbox3">Wed</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="thu" value="thursday">
-											<label class="form-label" for="inlineCheckbox3">Thu</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="fri" value="friday">
-											<label class="form-label" for="inlineCheckbox3">Fri</label>
-										</div>&nbsp;&nbsp;&nbsp;&nbsp;
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="sat" value="saturday">
-											<label class="form-label" for="inlineCheckbox3">Sat</label>
-										</div>
-										</div>
-										</div>
-										
-									</div>
-									<div class="row p-2" id="setrecurringmontly" style="display:none">
-										
-										<div class="col-sm-3">
-												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
-											<div class="form-control">
-												<div class="form-check">
-													<input class="form-check-input" id="ondaycheck" type="checkbox"   >
-													<label class="form-check-label" >On Day</label>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-3" id="ondayselect" style="display:none">
-											
-											<label for="" class="form-label">&nbsp;</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">1 </option>
-												<option class="form-label" value="2">2</option>
-												<option class="form-label" value="3">3 </option>
-												<option class="form-label" value="4">4</option>
-												<option class="form-label" value="5">5 </option>
-												<option class="form-label" value="6">6</option>
-												<option class="form-label" value="7">7 </option>
-												<option class="form-label" value="8">8</option>
-												<option class="form-label" value="9">9 </option>
-												<option class="form-label" value="10">10</option>
-												<option class="form-label" value="11">11</option>
-												<option class="form-label" value="12">12</option>
-												<option class="form-label" value="13">13</option>
-												<option class="form-label" value="14">14</option>
-												<option class="form-label" value="15">15</option>
-												<option class="form-label" value="16">16</option>
-												<option class="form-label" value="17">17</option>
-												<option class="form-label" value="18">18</option>
-												<option class="form-label" value="19">19</option>
-												<option class="form-label" value="20">20</option>
-												<option class="form-label" value="21">21</option>
-												<option class="form-label" value="22">22</option>
-												<option class="form-label" value="23">23</option>
-												<option class="form-label" value="24">24</option>
-												<option class="form-label" value="25">25</option>
-												<option class="form-label" value="26">26</option>
-												<option class="form-label" value="27">27</option>
-												<option class="form-label" value="28">28</option>
-												
-											</select>
-										
-										</div>
-									
-									</div>
-									<div class="row p-2" id="setrecurringyearly" style="display:none">
-										
-										<div class="col-sm-3">
-												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
-											<div class="form-control">
-												<div class="form-check">
-													<input class="form-check-input" id="ondayyearlycheck" type="checkbox"  name="inlineRadioOptions" >
-													<label class="form-check-label" >On</label>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-3" id="recurringmonthyearly" style="display:none">
-											
-											<label for="" class="form-label">Month</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">January</option>
-												<option class="form-label" value="2">February</option>
-												<option class="form-label" value="3">March</option>
-												<option class="form-label" value="4">April</option>
-												<option class="form-label" value="5">May</option>
-												<option class="form-label" value="6">Jun</option>
-												<option class="form-label" value="7">July</option>
-												<option class="form-label" value="8">August</option>
-												<option class="form-label" value="9">September</option>
-												<option class="form-label" value="10">October</option>
-												<option class="form-label" value="11">November</option>
-												<option class="form-label" value="12">December</option>
-											</select>
-										
-										</div>
-										<div class="col-sm-3" id="recurringdayyearly" style="display:none">
-											
-											<label for="" class="form-label">Day</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">1 </option>
-												<option class="form-label" value="2">2</option>
-												<option class="form-label" value="31">31</option>
-											</select>
-										
-										</div>
-									</div>
-									<div class="row p-2" id="setrecurringontheyearly" style="display:none">
-										
-										<div class="col-sm-3">
-												<label for="issuing-country" class="form-label">Set Reccurrence Yearly*</label><br>
-											<div class="form-control">
-												<div class="form-check">
-													<input class="form-check-input" id="ontheyearlycheck" type="checkbox"  name="inlineRadioOptions" >
-													<label class="form-check-label" >On The</label>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-3" id="recurringselectyearly" style="display:none">
-											
-											<label for="" class="form-label">&nbsp;</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">First</option>
-												<option class="form-label" value="2">Second</option>
-												<option class="form-label" value="3">Third</option>
-												<option class="form-label" value="4">Fourth</option>
-											</select>
-										
-										</div>
-										<div class="col-sm-2" id="recurringonthedayyearly" style="display:none">
-											
-											<label for="" class="form-label">&nbsp;</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">Sunday </option>
-												<option class="form-label" value="2">Monday</option>
-												<option class="form-label" value="3">Tuesday</option>
-												<option class="form-label" value="4">Wednesday</option>
-												<option class="form-label" value="5">Thursday</option>
-												<option class="form-label" value="6">Friday</option>
-												<option class="form-label" value="7">Saturday</option>
-											</select>
-										
-										</div>
-										<div class="col-sm-1" id="recurringontheof" style="padding-top:30px;display:none" >
-										
-											
-												<label for="" class="form-label" >&nbsp;of</label>
-												
-										</div>
-										<div class="col-sm-3" id="recurringonthemonthyearly" style="display:none">
-											
-											<label for="" class="form-label">&nbsp;</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">January </option>
-												<option class="form-label" value="2">February</option>
-												<option class="form-label" value="3">March</option>
-												<option class="form-label" value="4">May</option>
-												<option class="form-label" value="5">Jun</option>
-												<option class="form-label" value="6">July</option>
-												<option class="form-label" value="7">August</option>
-											</select>
-										
-										</div>
-									</div>
-									<div class="row p-2" id="setrecurringonmontly" style="display:none">
-										
-										<div class="col-sm-3">
-												<label for="issuing-country" class="form-label">Set Reccurrence</label><br>
-											<div class="form-control">
-												<div class="form-check">
-													<input class="form-check-input" id="onthecheck" type="checkbox"  name="inlineRadioOptions" >
-													<label class="form-check-label" >On The</label>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-3" id="recurringselectonthe" style="display:none">
-											
-											<label for="" class="form-label">&nbsp;</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">First </option>
-												<option class="form-label" value="2">Second</option>
-												<option class="form-label" value="3">Third</option>
-												<option class="form-label" value="4">Fourth</option>
-											</select>
-										
-										</div>
-										<div class="col-sm-4" id="recurringselectwhatday" style="display:none">
-											
-											<label for="" class="form-label">&nbsp;</label>
-											<select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Please Select</option>
-												<option class="form-label" value="1">Sunday </option>
-												<option class="form-label" value="2">Monday</option>
-												<option class="form-label" value="3">Tuesday</option>
-												<option class="form-label" value="4">Wednesday</option>
-												<option class="form-label" value="5">Thursday</option>
-												<option class="form-label" value="6">Friday</option>
-												<option class="form-label" value="7">Saturday</option>
-											</select>
-										
-										</div>
-									
-									</div>
-									<div class="row p-2">
-										<div class="col-sm-6">
-											<label for="firstname" class="form-label">Location*</label>
-											<select class="selectpicker form-select" id="addneweventprojectlocsearch" aria-label="Default select example">
-											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">Location A</option>
-											<option class="form-label" value="2">Location B</option>
-											
-											</select>
-										</div>
-										<div class="col-sm-6">
-										
-											<label for="issuing-country" class="form-label">Project*</label>
-											<select class="selectpicker form-select" id="addneweventselectproject" aria-label="Default select example">
-											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">Project A</option>
-											<option class="form-label" value="2">Project B</option>
-											
-											</select>
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-sm-6">
-											<label for="firstname" class="form-label">Participant*</label>
-											<select class="selectpicker form-select" id="addneweventparticipant" aria-label="Default select example" multiple>
-											<option class="form-label" value="">Please Select</option>
-											<option class="form-label" value="1">Participant A</option>
-											<option class="form-label" value="2">Participant B</option>
-											
-											</select>
-										</div>
-										<div class="col-sm-6">
-										
-											<label for="issuing-country" class="form-label">Description*</label>
-											<textarea class="form-control" rows="3"></textarea>
-										</div>
-									</div>
-
-									<div class="row p-2">
-										<div class="col-sm-2">
-											
-											<button type="button" id="addreminder" class="btn btn-primary btn-xs">Add Reminder</button>
-											
-										</div>
-										<div class="col-sm-4">
-											
-											<select class="form-select" id="addeventreminder" aria-label="Default select example" style="display: none">
-											<option class="form-label" value="" selected>Please Select</option>
-											<option class="form-label" value="1">5 Minute Before</option>
-											<option class="form-label" value="2">10 Minute Before</option>
-											<option class="form-label" value="1">15 Minute Before</option>
-											<option class="form-label" value="2">20 Minute Before</option>
-											<option class="form-label" value="1">30 Minute Before</option>
-											<option class="form-label" value="1">1 Hour Before</option>
-											</select>
-											
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-sm-6">
-											
-											<label for="issuing-country" class="form-label">Attach File:</label>
-											<input type="file" class="btn"></input>
-										</div>
-										
-									</div>
-								</form>
-							</div>
-							<div class="modal-footer">
-								
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary" id="">Save</button>
-								
-							</div>
-						</div>
-					</div>
+			<!-- BEGIN row -->
+			<div class="row">
+				<!-- BEGIN event-list -->
+				
+				<!-- END event-list -->
+				<div class="col-lg">
+					<!-- BEGIN calendar -->
+					<div id="calendar" class="calendar"></div>
+					<!-- END calendar -->
 				</div>
-		<!-- END MODAL ADD EVENT -->
-			<!-- MODAL VIEW LOG -->
-			<div class="modal fade" id="viewlog" tabindex="-1" aria-hidden="true">
+			</div>
+			<!-- END row -->
+		</div>
+		<!-- END #content -->
+		
+				<!-- MODAL VIEW LOG -->
+				<div class="modal fade" id="editlogmodal" tabindex="-1" aria-hidden="true">
     		<div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1202,7 +621,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="">
+                <form id="addChildrenForm">
                     <div class="row p-2">
 					<table id="" class="table table-striped table-bordered align-middle">
 				<thead>
@@ -1258,6 +677,10 @@
 			</table>
                     </div>
 					
+                    
+					
+
+                    
                     <div class="row p-2">
                         <div class="col-sm-12">
                             <label for="Description" class="form-label">Description</label>
@@ -1277,11 +700,125 @@
     </div>
 </div>
 		<!--END MODAL EDIT LOG -->
-		</div>
-	</div>
+		
 
-	<!-- END row -->
-	
+		<!-- START MODAL EDIT EVENT -->
+		<div class="modal fade" id="editeventmodal" tabindex="-1" aria-labelledby="add-children" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">SELECTED DATE, Eg= 13/2/2022</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="">
+								<div class="row p-2">
+										<table id="" class="table table-striped table-bordered align-middle">
+									<thead>
+										<tr>
+											
+											<th class="text-nowrap">Event Name</th>
+											<th class="text-nowrap">Start Date</th>
+											<th class="text-nowrap">End Date</th>
+											<th class="text-nowrap">Start Time</th>
+											<th class="text-nowrap">End Time</th>
+											<th class="text-nowrap">Duration</th>
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd gradeX">
+											
+											<td >Weekly Scrum Meeting Project A</td>
+											<td>13/02/2022</td>
+											<td>22/02/2022</td>
+											<td>14.30</td>
+											<td>15.30</td>
+											<td>1.00 hour</td>
+										</tr>
+										
+										
+									</tbody>
+								</table>
+										</div>
+										<div class="row p-2">
+											<table id="" class="table table-striped table-bordered align-middle">
+										<thead>
+											<tr>
+												
+												<th class="text-nowrap">Location</th>
+												<th class="text-nowrap">Project</th>
+												<th class="text-nowrap">Priority</th>
+												<th class="text-nowrap">Recurring</th>
+												
+
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd gradeX">
+												
+												<td >Meeting Room</td>
+												<td>Project A</td>
+												<td>Medium</td>
+												<td>Every Weekday (Mon-Fri)</td>
+												
+											</tr>
+											
+											
+										</tbody>
+									</table>
+											</div>
+									
+									<div class="row p-2">
+										
+										<div class="col-sm-12">
+										
+											<label for="issuing-country" class="form-label">Description*</label>
+											<textarea class="form-control" rows="3" readonly></textarea>
+										</div>
+									</div>
+
+									<div class="row p-2">
+										<div class="col-sm-2">
+											<label for="firstname" class="form-label">Status: <td><span class="badge bg-lime rounded-pill">Attending</span></td></label>
+											
+										</div>
+										<div class="col-sm-2">
+											
+											<label class="form-label">Attach File:</label><br>
+											<a class="form-label" href="#">file.jpg</a><br>
+											<a class="form-label" href="#">file.pdf</a>
+											
+										</div>
+										<div class="col-sm-2">
+											
+										<label class="form-label">Reminder:</label>
+										<label class="form-label">None</label>
+										</div>
+										
+									</div>
+									<div class="row p-2">
+										
+										
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- START MODAL EDIT EVENT -->
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -1290,34 +827,15 @@
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
+	<script src="../assets/plugins/moment/min/moment.min.js"></script>
+	<script src="../assets/plugins/@fullcalendar/core/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/daygrid/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/timegrid/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/interaction/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/list/main.global.js"></script>
+	<script src="../assets/plugins/@fullcalendar/bootstrap/main.global.js"></script>
+	
 	<!-- ================== END page-js ================== -->
-</body>
-</html>
-	<!-- required files -->
-<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
-<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-<!-- ================== END page-js ================== -->
 	<!-- required files -->
 	<link href="../assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
 	<script src="../assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
@@ -1327,40 +845,159 @@
 	<!-- required files -->
 	<link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
 	<script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
+</body>
+</html>
 
 <script>
-  $('#timesheetapproval').DataTable({
-	"searching": false,
-	"lengthChange": true,
-	lengthMenu: [5, 10],
-    responsive: false,
+	var handleCalendarDemo = function() {
+	// external events
 	
-    dom: '<"row"<"col-sm-11"B><"col-sm-1"l>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
-    buttons: [
-      { extend: 'excel', className: 'btn-blue' },
-      { extend: 'pdf', className: 'btn-blue' },
-      { extend: 'print', className: 'btn-blue' }
-    ],
+  
+  // fullcalendar
+  
+  var d = new Date();
+	var month = d.getMonth() + 1;
+	    month = (month < 10) ? '0' + month : month;
+	var year = d.getFullYear();
+	var day = d.getDate();
+	var today = moment().startOf('day');
+  	var calendarElm = document.getElementById('calendar');
+
+	var calendar = new FullCalendar.Calendar(calendarElm, {
+    headerToolbar: {
+      left: 'prev,today,next',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+    },
+	customButtons: {
+        logButton: {
+            text:'New Log',
+            click:function(event, jsEvent, view){
+                   $('#newlogmodal').modal('show');
+          }
+        },
+		EventButton: {
+            text:'New Event',
+            click:function(event, jsEvent, view){
+                   $('#neweventmodal').modal('show');
+          }
+        }
+	},
+	eventContent: function(eventInfo) {
+		if (eventInfo.event.extendedProps.type=="log" && eventInfo.event.extendedProps.allday==true) {
+			return { html: ('&nbsp;&nbsp;'+ eventInfo.event.extendedProps.type + eventInfo.event.title)}
+		} 
+		else if (eventInfo.event.extendedProps.type=="event" && eventInfo.event.extendedProps.allday==true) {
+			return { html: ('&nbsp;&nbsp;'+ eventInfo.event.extendedProps.type + eventInfo.event.title)}
+		} 
+		else if (eventInfo.event.extendedProps.type=="event" && eventInfo.event.extendedProps.allday==false) {
+			return { html: ('&nbsp;&nbsp;'+ eventInfo.event.extendedProps.type + eventInfo.event.title)}
+		} 
+
+	},
+
+	
+		eventClick: function(info) {
+			info.jsEvent.preventDefault();
+
+			
+			
+			if (info.event.extendedProps.type=="log") {
+            $('#editlogmodal').modal('show');
+			}
+			else {
+				$('#editeventmodal').modal('show');
+			}
+			
+		},
+    buttonText: {
+    	today:    'Today',
+			month:    'Month',
+			week:     'Week',
+			day:      'Day',
+			list:     'List'
+    },
+    initialView: 'dayGridMonth',
+    editable: false,
+    droppable: false,
+	selectable: false,
+  	themeSystem: 'bootstrap',
+		views: {
+			timeGrid: {
+				eventLimit: 6 // adjust to 6 only for timeGridWeek/timeGridDay
+			}
+		},
+  	events: [{
+			title: 'EXAMPLE Log',
+			start: year + '-'+ month +'-02T06:00:00',
+			color: app.color.primary,
+			extendedProps: {
+        			type: 'log',
+					
+      		}
+			
+			
+		},{
+			title: 'EXAMPLE LOG 2',
+			start: year + '-'+ month +'-02T07:00:00',
+			color: app.color.primary,
+			extendedProps: {
+        			type: 'log',
+					
+      		},
+		},{
+			
+			title: 'EXAMPLE EVENT',
+			start: year + '-'+ month +'-10',
+			end: year + '-'+ month +'-12',
+			color: app.color.red,
+			extendedProps: {
+        			type: 'event',
+					allday: true
+      		},
+		},{
+			title: 'EXAMPLE event 2',
+			start: year + '-'+ month +'-10T01:00:00',
+			color: app.color.red,
+			extendedProps: {
+        			type: 'event'
+					
+      		},
+		}
+			],
+		
   });
-</script>
+  
+	calendar.render();
+};
 
-<script type="text/javascript">
-   $().ready = function() {
-    
-    
-    $("#filter").click(function() {
-        $('#filterform').toggle();
-    });
-
+var Calendar = function () {
+	"use strict";
+	return {
+		//main function
+		init: function () {
+			handleCalendarDemo();
+		}
+	};
 }();
+
+$(document).ready(function() {
+	Calendar.init();
+});
+</script>
+<!-- FOR MODAL LOG AND EVENT -->
+<script>
+  $("#dateaddlog").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
 </script>
 <script>
   $("#starteventdate").datepicker({
     todayHighlight: true,
     autoclose: true
   });
-</script>
-<script>
+</script><script>
   $("#endeventdate").datepicker({
     todayHighlight: true,
     autoclose: true
@@ -1373,15 +1010,47 @@
   $('#addneweventselectproject').picker({ search: true });
 </script>
 <script>
- 
-  $("#starteventtime").timepicker({
+  $("#starttime").timepicker({
 	showMeridian:false,
+
+  });
+  $("#endtime").timepicker({
+	use24hours: true
+  });
+  $("#starteventtime").timepicker({
+	use24hours: true
   });
   $("#endeventtime").timepicker({
-	showMeridian:false,
+	use24hours: true
   });
+</script>
 
-  $(document).on('change',"#addneweventselectrecurring", function () {
+<script>
+$(document).on('change',"#typeoflog", function () {
+   if ($(this).val() == "2") {
+       $("#officelog").show();
+   } else {
+       $("#officelog").hide();
+	   $("#listproject").hide();
+
+   }
+});
+$(document).on('change',"#typeoflog", function () {
+   if ($(this).val() == "3") {
+       $("#myproject").show();
+   } else {
+       $("#myproject").hide();
+	   $("#listproject").hide();
+   }
+});
+$(document).on('change',"#officelog2", function () {
+   if ($(this).val() == "1") {
+       $("#listproject").show();
+   } else {
+       $("#listproject").hide();
+   }
+});
+$(document).on('change',"#addneweventselectrecurring", function () {
    if ($(this).val()== "1" ) {
        $("#addneweventsetreccurring").show();
 	   $('#mon').not(this).prop('checked', true);
@@ -1430,7 +1099,9 @@ $(document).on('change',"#addneweventselectrecurring", function () {
 	   
    }
 });
-$().ready = function() {
+</script>
+<script type="text/javascript">
+   $().ready = function() {
     
     
     $("#addreminder").click(function() {
@@ -1438,6 +1109,9 @@ $().ready = function() {
     });
 
 }();
+</script>
+<script>
+
 $("#addeventrecurring").click(function() {
     if($(this).is(":checked")) {
         $("#addneweventrecurring").show();
@@ -1450,16 +1124,7 @@ $("#addeventrecurring").click(function() {
 	   $("#setrecurringonmontly").hide();
     }
 });
-$("#addeventallday").click(function() {
-    if($(this).is(":checked")) {
-        $("#startendtime").hide();
-		$("#starteventtime").val()== "00:00";
-		$("#endeventtime").val()== "23:59";
-    } else {
-        $("#startendtime").show();
-		
-    }
-});
+
 $("#ondaycheck").click(function() {
     if($(this).is(":checked")) {
         $("#ondayselect").show();
@@ -1519,3 +1184,204 @@ $("#ontheyearlycheck").click(function() {
     }
 });
 </script>
+<!-- END MODAL LOG AND EVENT JS-->
+
+<!-- START EDIT MODAL LOG AND EVENT JS-->
+<script>
+  $("#dateaddlogedit").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $("#starteventdateedit").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script><script>
+  $("#endeventdateedit").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+</script>
+<script>
+  $('#projectlocsearchedit').picker({ search: true });
+  $('#addneweventprojectlocsearchedit').picker({ search: true });
+  $('#addneweventparticipantedit').picker({ search: true });
+  $('#addneweventselectprojectedit').picker({ search: true });
+</script>
+<script>
+  $("#starttimeedit").timepicker({
+	use24hours: true
+  });
+  $("#endtimeedit").timepicker({
+	use24hours: true
+  });
+  $("#starteventtimeedit").timepicker({
+	use24hours: true
+  });
+  $("#endeventtimeedit").timepicker({
+	use24hours: true
+  });
+</script>
+
+<script>
+$(document).on('change',"#typeoflogedit", function () {
+   if ($(this).val() == "2") {
+       $("#officelogedit").show();
+   } else {
+       $("#officelogedit").hide();
+	   $("#listprojectedit").hide();
+
+   }
+});
+$(document).on('change',"#typeoflogedit", function () {
+   if ($(this).val() == "3") {
+       $("#myprojectedit").show();
+   } else {
+       $("#myprojectedit").hide();
+	   $("#listprojectedit").hide();
+   }
+});
+$(document).on('change',"#officelog2edit", function () {
+   if ($(this).val() == "1") {
+       $("#listprojectedit").show();
+   } else {
+       $("#listprojectedit").hide();
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "1" ) {
+       $("#addneweventsetreccurringedit").show();
+	   $('#monedit').not(this).prop('checked', true);
+	   $('#tueedit').not(this).prop('checked', true);
+	   $('#wededit').not(this).prop('checked', true);
+	   $('#thuedit').not(this).prop('checked', true);
+	   $('#friedit').not(this).prop('checked', true);
+   } else {
+       $("#addneweventsetreccurringedit").hide();
+	   $('#monedit').not(this).prop('checked', false);
+	   $('#tueedit').not(this).prop('checked', false);
+	   $('#wededit').not(this).prop('checked', false);
+	   $('#thuedit').not(this).prop('checked', false);
+	   $('#friedit').not(this).prop('checked', false);
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "1" || $(this).val() == '2' || $(this).val() == '3') {
+       $("#addneweventsetreccurringedit").show();
+
+   } else {
+       $("#addneweventsetreccurringedit").hide();
+	   
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "4" ) {
+       $("#setrecurringmontlyedit").show();
+	   $("#setrecurringonmontlyedit").show();
+   } else {
+       $("#setrecurringmontlyedit").hide();
+	   $("#setrecurringonmontlyedit").hide();
+	   
+   }
+});
+$(document).on('change',"#addneweventselectrecurringedit", function () {
+   if ($(this).val()== "5" ) {
+       $("#setrecurringyearlyedit").show();
+	   $("#setrecurringontheyearlyedit").show();
+	  
+   } else {
+       $("#setrecurringyearlyedit").hide();
+	   $("#setrecurringontheyearlyedit").hide();
+	   
+   }
+});
+</script>
+<script type="text/javascript">
+   $().ready = function() {
+    
+    
+    $("#addreminderedit").click(function() {
+        $('#addeventreminderedit').toggle();
+    });
+
+}();
+</script>
+<script>
+
+$("#addeventrecurringedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#addneweventrecurringedit").show();
+    } else {
+        $("#addneweventrecurringedit").hide();
+		$("#addneweventsetreccurringedit").hide();
+		$("#setrecurringyearlyedit").hide();
+	   $("#setrecurringontheyearlyedit").hide();
+	   $("#setrecurringmontlyedit").hide();
+	   $("#setrecurringonmontlyedit").hide();
+    }
+});
+
+$("#ondaycheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#ondayselectedit").show();
+		$('#onthecheckedit').not(this).prop('checked', false);
+		$("#recurringselectwhatdayedit").hide();
+		$("#recurringselectontheedit").hide();
+    } else {
+        $("#ondayselectedit").hide();
+	
+		
+    }
+});
+$("#onthecheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectwhatdayedit").show();
+		$("#recurringselectontheedit").show();
+		$('#ondaycheckedit').not(this).prop('checked', false);
+		$("#ondayselectedit").hide();
+    } else {
+        $("#recurringselectwhatdayedit").hide();
+		$("#recurringselectontheedit").hide();
+		
+    }
+});
+$("#ondayyearlycheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringmonthyearlyedit").show();
+		$("#recurringdayyearlyedit").show();
+		$("#ontheyearlycheckedit").not(this).prop('checked', false);
+		$("#recurringselectyearlyedit").hide();
+		$("#recurringonthedayyearlyedit").hide();
+		$("#recurringonthemonthyearlyedit").hide();
+		$("#recurringontheofedit").hide();
+		// $('#ondaycheck').not(this).prop('checked', false);
+		// $("#ondayselect").hide();
+    } else {
+        $("#recurringmonthyearlyedit").hide();
+		$("#recurringdayyearlyedit").hide();
+		
+    }
+});
+$("#ontheyearlycheckedit").click(function() {
+    if($(this).is(":checked")) {
+        $("#recurringselectyearlyedit").show();
+		$("#recurringonthedayyearlyedit").show();
+		$("#recurringonthemonthyearlyedit").show();
+		$("#recurringontheofedit").show();
+		$('#ondayyearlycheckedit').not(this).prop('checked', false);
+		$("#recurringmonthyearlyedit").hide();
+		$("#recurringdayyearlyedit").hide();
+		
+    } else {
+        $("#recurringselectyearlyedit").hide();
+		$("#recurringonthedayyearlyedit").hide();
+		$("#recurringonthemonthyearlyedit").hide();
+		$("#recurringontheofedit").hide();
+    }
+});
+</script>
+<!-- END EDIT MODAL LOG AND EVENT JS-->
