@@ -1993,9 +1993,10 @@
 								</select>
 						</div>
 						<div class="mb-3">
-						<label class="form-label">Project Location Name : </label><br><br>
-						<select class="selectpicker form-control" id="projectlocation" multiple>
-									<option value="1">Putrajaya</option>
+						<label class="form-label">Project Location Namead : </label><br><br>
+						<select class="selectpicker form-control"  id="projectlocation" >
+									
+									<option value="1" >Putrajaya</option>
 									<option value="2">Selangor</option>
 									<option value="3">Kuala Lumpur</option>
 									<option value="4">Cyberjaya</option>
@@ -2343,7 +2344,10 @@ $('.btnPrevious').click(function() {
 <link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
 <script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
 <script>
-  $('#ex-search').picker({ search: true });
+  $('#ex-search').picker({ 
+	search: true ,
+	
+	});
 </script>
 <script>
   $('#location-search').picker({ search: true });
@@ -2353,7 +2357,10 @@ $('.btnPrevious').click(function() {
   $('#projectmember').picker({ search: true });
 </script>
 <script>
-  $('#projectlocation').picker({ search: true });
+  $('#projectlocation').picker({ 
+	search: true ,
+	liveSearchPlaceholder: 'Placeholder text'
+	});
 </script>
 <script>
 	$(".partCheck").click(function(){

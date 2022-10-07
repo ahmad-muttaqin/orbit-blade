@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM | Timesheet </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -13,7 +13,8 @@
 	<!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	
+	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
 	
@@ -601,7 +602,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Settings <small>| Type of Logs </small></h1>
+	<h1 class="page-header">Reporting <small>| Timesheet | Overtime Report </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -609,238 +610,67 @@
 		
 		<!-- BEGIN panel-heading -->
 		
-		<div class="panel-heading">
-		<div class="col-md-6">
-		<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">+ New Type of Log</a>
-		</div>
 		
-			<h4 class="panel-title"></h4>
+		
+		<div class="panel-body">
+		<div class="row p-2">	
+		<div class="col-sm-6">
+		
+			</div>
+		<div >
+		<H3 class="form-label">Timesheet Period <a id="filter" class="btn btn-default btn-icon btn-lg">
+				<i class="fa fa-info"></i>
+			</a></H3>
+		
+			</div>
+		</div><br>
+		<div class="form-control" id="filterform" style="display:none">	
+		<div class="row p-2">	
+			
+			<h4>Filter</h4>
+			<div class="col-sm-2">
+			<label for="emergency-firstname" class="form-label">Monthly : Submission once a month</label>
+			<label for="emergency-firstname" class="form-label">Bi Weekly : Submission once a 2 week</label>
+			<label for="emergency-firstname" class="form-label">Weekly : Submission once a week</label>
+			</div>
 			
 			
+			
+			
+			</div>
 		</div>
 		<!-- END panel-heading -->
-		<!-- BEGIN panel-body -->
+		<!-- BEGIN panel-body --><br>
+		<div class="form-control">	
 		<div class="panel-body">
-			<table id="data-table-default" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Type of Logs</th>
-						<th class="text-nowrap">Project Name</th>
-						<th class="text-nowrap">Activity Name</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
+		<div class="form-check">
+		<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+		<label class="form-check-label" for="exampleRadios1">
+			Monthly
+		</label>
+		</div>
+		<div class="form-check">
+		<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+		<label class="form-check-label" for="exampleRadios2">
+			Bi Weekly
+		</label>
+		</div>
+		<div class="form-check">
+		<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+		<label class="form-check-label" for="exampleRadios3">
+			Weekly
+		</label>
+		</div>
+		
 
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td >1</td>
-						<td >Service Delivery Deparment</td>
-						<td >Project</td>
-						<td>Project A</td>
-						<td>1. Corrective Maintenance, <br> 2. Reviewing & Documenting, <br>3. Reporting </td>
-						<td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModaledit" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					<tr>
-						<td >2</td>
-						<td >Customer Care Department</td>
-						<td >Project</td>
-						<td>Project B</td>
-						<td>1. Ticketing, <br> 2. Customer Service</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>	
-					<tr>
-						<td >3</td>
-						<td >Coorporate Service</td>
-						<td >Non-Project</td>
-						<td>-</td>
-						<td>1. Reporting</td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					<tr>
-						<td >4</td>
-						<td >Bussiness Development</td>
-						<td >Project</td>
-						<td>Project C</td>
-						<td>1. Project Documenation, <br>2. Planning </td>
-						<td><a href="javascript:;" class="btn btn-outline-green"><i class="fa fa-pencil-alt"></i></a> <a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-					
-					
-					
-				</tbody>
-			</table>
+			
+		</div>
+		
 		</div>
 	</div>
 
 	<!-- END row -->
-	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Add Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflog" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogproject" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-								<label for="firstname" class="form-label">Activity Name*</label>	
-								<input type="text" id="addtypelogactivityName" placeholder="Name" class="form-control">
-								
-								
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<input type="button" id="add-row" class="add-row btn btn-primary btn-sm" value="Add">
-									
-								</div>			
-						</div>
-						<div class="form-control">
-						<div class="row p-2">
-						
-
-
-						<table id="tableactivityname" class="table table-striped table-bordered align-middle">
-						
-						<thead>
-							<tr>
-								<th class="text-nowrap">Activity Name</th>
-								<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-											</tr>
-										</thead>
-						<tr>
-							<th style="display:none"></th>
-							<th style="display:none"></th>
-						</tr>
-						</table>
-
-					</div></div>
-					
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <!--MODAL EDIT  -->
-			  <div class="modal fade" id="exampleModaledit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Update Type of Log</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-3">
-						  <label class="form-label">Department* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-												<option class="form-label" value="" selected>Select Department</option>
-												
-						  </select>
-						</div>
-						<div class="mb-3">
-						  <label class="form-label">Type of Log* </label>
-						  <select class="form-select" id="addtypeoflogedit" aria-label="Default select example">
-								<option class="form-label" value="" selected>Select Type of Log</option>
-								<option class="form-label" value="1" >Non-Project</option>
-								<option class="form-label" value="2" >Project</option>
-						  </select>
-						</div>
-						<div class="mb-3" id="addtypeoflogprojectedit" style="display:none">
-						  <label class="form-label">Project* </label>
-						  <select class="form-select" id="" aria-label="Default select example">
-								<option class="form-label" value="">Select Project</option>
-								
-						  </select>
-						</div>
-						<div class="row p-2">
-								<div class="col-sm-10" id="" >
-									<label for="firstname" class="form-label">Activity Name*</label>
-									<input type="text" class="form-control" id="" />
-								</div>
-								<div class="col-sm-2" id="" >
-									<label for="firstname" class="form-label">&nbsp;</label><br>
-									<a href="#" class="btn btn-primary btn-sm">+ Add</a>
-								</div>			
-						</div>
-						<div class="row p-2">
-						<table id="activitynameedit" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th width="1%">NO</th>
-						<th class="text-nowrap">Department</th>
-						<th width="9%" data-orderable="false" class="align-middle">Action</th>
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td width="1%">1</td>
-						<td >Corrective Maintenance</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">2</td>
-						<td>Reviewing & Documenting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-					</tr>
-						
-					<tr>
-						<td width="1%">3</td>
-						<td>Reporting</td>
-						<td width="1%"><a href="javascript:;" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
-						
-						
-					
-					
-					
-					
-				</tbody>
-				</table>
-				</div>	
-					  </form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
+	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -859,116 +689,43 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
+<!-- ================== END page-js ================== -->
+	<!-- required files -->
+	<link href="../assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<!-- required files -->
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	<!-- required files -->
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
 
 
-<script>
-  $('#data-table-default').DataTable({
-	lengthMenu: [5, 10],
-    responsive: false
-  });
-  $('#tableactivityname').DataTable({
-	lengthMenu: [2,5],
-    responsive: false,
-	"searching": false,
-  });
-  $('#activitynameedit').DataTable({
-	lengthMenu: [5],
-    responsive: false,
-	"searching": false,
-  });
-</script>
-<script>
-  $(document).on('change',"#addtypeoflog", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogproject").show();
-   } else {
-       $("#addtypeoflogproject").hide();
-	  
 
-   }
-});
-$(document).on('change',"#addtypeoflogedit", function () {
-   if ($(this).val() == "2") {
-       $("#addtypeoflogprojectedit").show();
-   } else {
-       $("#addtypeoflogprojectedit").hide();
-	  
-
-   }
-});
-
-
-</script>
-
-
-<script>
-	
-  $("#add-row").click(function(){
- 
-  var addtypelogactivityName = document.getElementById('addtypelogactivityName').value;
-
-  if(addtypelogactivityName == ""){
-    document.getElementById('addtypelogactivityName');
-    return;
-  }
- 
-  
-  else{
+<script type="text/javascript">
+   $().ready = function() {
     
-    let table = document.getElementById('tableactivityname');
-    // Insert a row at the end of the table
-    let newRow = table.insertRow(-1);
-    var l = table.rows.length-1;
-    //Col 1 = addtypelogactivityName
-    table.rows[l].insertCell(0);
-    table.rows[l].cells[0].innerHTML = addtypelogactivityName;
-   
-    //Col 3 = Delete Button
-    table.rows[l].insertCell(1);
-    table.rows[l].cells[1].innerHTML = "<button type='button' class='btnDelete btn btn-danger btn-sm' onclick='delRow(this);' id='btnDelete' size='1' height='1'>Delete</button>";
-
-    //Clear input
     
-  
-}
-  });
+    $("#filter").click(function() {
+        $('#filterform').toggle();
+    });
 
-function delRow(btn){
-  var row = btn.parentNode.parentNode;
-  row.parentNode.removeChild(row);
-}
-	
+}();
 </script>
