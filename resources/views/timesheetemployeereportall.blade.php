@@ -631,6 +631,7 @@
 						<th width="1%">NO</th>
 						<th class="text-nowrap">Employee Name</th>
 						<th class="text-nowrap">Designation</th>
+						<th class="text-nowrap">Department</th>
 						<th class="text-nowrap">Status</th>
 						<th class="text-nowrap">1hb</th>
 						<th class="text-nowrap">2hb</th>
@@ -672,6 +673,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Amira Roslam</td>
 						<td>Business Analyst</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -710,6 +712,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Irsyad</td>
 						<td>Developer</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -748,6 +751,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Ahmad</td>
 						<td>IT Support</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -786,6 +790,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Apam</td>
 						<td>IT Manager</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -824,6 +829,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Naim</td>
 						<td>IT Manager</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -862,6 +868,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Danial</td>
 						<td>IT Manager</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -900,6 +907,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Apam</td>
 						<td>IT Manager</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -938,6 +946,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Apam</td>
 						<td>IT Manager</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
@@ -976,6 +985,7 @@
 						<td width="1%" class="fw-bold text-dark">1</td>
 						<td>Apam</td>
 						<td>IT Manager</td>
+						<td>Service Delivery Department</td>
 						<td> Active</td>
 						<td>8:00</td>
 						<td><span class="badge bg-info">holiday</span></td>
