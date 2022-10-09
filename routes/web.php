@@ -207,3 +207,6 @@ Route::get('/timesheet/timesheetovertimereport', function () {
 Route::get('/setting/timesheetperiod', function () {
     return view('settingtimesheetperiod');
 });
+Route::get('/timesheet/timesheetemployeereportall', function () {
+    return view('timesheetemployeereportall');
+});
