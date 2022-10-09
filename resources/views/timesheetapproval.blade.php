@@ -209,7 +209,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetapproval" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -217,7 +217,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetrealtime" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -434,7 +434,7 @@
                                 </a>
                             <div class="menu-submenu">
                                 <div class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="/timesheet/reportingstatusreport" class="menu-link">
                                         <div class="menu-icon">
 								             <i class="fa fa-address-card text-gray"></i>
 							            </div>
@@ -442,7 +442,7 @@
                                     </a>
                                     </div>
                                     <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-clock text-gray"></i>
 							    </div>
@@ -450,7 +450,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetovertimereport" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-gear text-gray"></i>
 							    </div>
@@ -692,7 +692,7 @@
 							<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
 							<div class="dropdown-menu">
 									<div class="viewtimesheet">
-									<a href="javascript:;" class="dropdown-item" id="viewtimesheet">View Timesheet</a>
+									<a href="/timesheet/viewtimesheet" class="dropdown-item" id="viewtimesheet">View Timesheet</a>
 									</div>
 								<div class="approvereject">
 								<div class="dropdown-divider "></div>

@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Settings </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -601,502 +601,423 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">HRIS | Employee Information</h1>
+	<h1 class="page-header">Reporting <small>| Timesheet | Employee Report </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
-		<!-- BEGIN panel-heading -->
 		
-		<div class="panel-heading">
-		<a href="#" class="btn btn-primary">+ Register New Employee</a>
-			<h4 class="panel-title"></h4>
-			
-			<div class="panel-heading-btn">
-			
-				
-			</div>
-		</div>
-		<!-- END panel-heading -->
+		
 		<!-- BEGIN panel-body -->
 		<div class="panel-body">
-		<table id="data-table-default" class="table table-striped table-bordered align-middle">
-  				<thead>
+			<div class="row p-2">
+				<div class="col-sm-12">
+					<h5>Year : 2022</h5>
+				</div>
+			</div>
+			<div class="row p-2">
+				<div class="col-sm-12">
+					<h5> Month : September</h5>
+				</div>
+			</div>
+			<div class="row p-2">
+				<div class="col-sm-12">
+					<h5> Department : Service Delivery Department</h5>
+				</div>
+			</div>
+			<table id="summarytable" class="table table-striped table-bordered align-middle">
+				<thead>
 					<tr>
-						<th width="1%"></th>
-						<th width="1%" data-orderable="false">Action</th>
-						<th class="text-nowrap">Employee ID</th>
-						<th class="text-nowrap">First Name</th>
-						<th class="text-nowrap">Last name</th>
-						<th class="text-nowrap">Email</th>
-						<th class="text-nowrap">Phone Number</th>
-						<th class="text-nowrap">department</th>
-						<th class="text-nowrap">Report to</th>
-						<th class="text-nowrap">employee status</th>
-
+						<th width="1%">NO</th>
+						<th class="text-nowrap">Employee Name</th>
+						<th class="text-nowrap">Designation</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">1hb</th>
+						<th class="text-nowrap">2hb</th>
+						<th class="text-nowrap">3hb</th>
+						<th class="text-nowrap">4hb</th>
+						<th class="text-nowrap">5hb</th>
+						<th class="text-nowrap">6hb</th>
+						<th class="text-nowrap">7hb</th>
+						<th class="text-nowrap">8hb</th>
+						<th class="text-nowrap">9hb</th>
+						<th class="text-nowrap">10hb</th>
+						<th class="text-nowrap">11hb</th>
+						<th class="text-nowrap">12hb</th>
+						<th class="text-nowrap">13hb</th>
+						<th class="text-nowrap">14hb</th>
+						<th class="text-nowrap">15hb</th>
+						<th class="text-nowrap">16hb</th>
+						<th class="text-nowrap">17hb</th>
+						<th class="text-nowrap">18hb</th>
+						<th class="text-nowrap">19hb</th>
+						<th class="text-nowrap">20hb</th>
+						<th class="text-nowrap">21hb</th>
+						<th class="text-nowrap">22hb</th>
+						<th class="text-nowrap">23hb</th>
+						<th class="text-nowrap">24hb</th>
+						<th class="text-nowrap">25hb</th>
+						<th class="text-nowrap">26hb</th>
+						<th class="text-nowrap">27hb</th>
+						<th class="text-nowrap">28hb</th>
+						<th class="text-nowrap">29hb</th>
+						<th class="text-nowrap">30hb</th>
+						<th class="text-nowrap">31hb</th>
+						
 
 					</tr>
 				</thead>
 				<tbody>
 					<tr class="odd gradeX">
 						<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							
-							 
-							<a href="javascript:;" class="dropdown-item">Edit Employee </a>
-							<div class="dropdown-divider"></div>
-							<a href="register_v3.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item"> Terminate Employee</a>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+						<td>Amira Roslam</td>
+						<td>Business Analyst</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="even gradeC">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-danger">Inactive</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Irsyad</td>
+						<td>Developer</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="odd gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Ahmad</td>
+						<td>IT Support</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="even gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Apam</td>
+						<td>IT Manager</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="odd gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>abu</td>
-						<td>abu@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-danger">Inactive</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Naim</td>
+						<td>IT Manager</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="even gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-danger">Inactive</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Danial</td>
+						<td>IT Manager</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Apam</td>
+						<td>IT Manager</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Apam</td>
+						<td>IT Manager</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
+					<tr class="odd gradeX">
+						<td width="1%" class="fw-bold text-dark">1</td>
+						<td>Apam</td>
+						<td>IT Manager</td>
+						<td> Active</td>
+						<td>8:00</td>
+						<td><span class="badge bg-info">holiday</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-warning">On-Leave</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td><span class="badge bg-primary">Weekend</span></td>
+						<td>8:00</td>
+						<td>8:00</td>
+						<td>8:00</td>
+						
 					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					<tr class="gradeA">
-					<td width="1%" class="fw-bold text-dark">1</td>
-						<td><a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Actions <i class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a href="javascript:;" class="dropdown-item">Action 1</a>
-							<a href="javascript:;" class="dropdown-item">Action 2</a>
-							<a href="javascript:;" class="dropdown-item">Action 3</a>
-							<div class="dropdown-divider"></div>
-							<a href="javascript:;" class="dropdown-item">Action 4</a></td>
-						<td>TNG001</td>
-						<td>ahmad</td>
-						<td>ali</td>
-						<td>ali@gmail.com</td>
-						<td>60123456789</td>
-						<td>IT</td>
-						<td>Safuan</td>
-						<td><span class="badge bg-green">Active</span></td>
-					</tr>
-					
-					
 				</tbody>
 			</table>
 		</div>
+	</div>
 
 	<!-- END row -->
 	<!-- BEGIN row -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel">Terminate Employment</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <form>
-						
-						<div class="mb-5">
-						  <label for="recipient-name" class="col-form-label">Employee ID</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  <label for="recipient-name" class="col-form-label">Employee Name</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  <label for="recipient-name" class="col-form-label">Employee Email</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  <label for="recipient-name" class="col-form-label">Report To</label>
-						  <input type="text" class="form-control" id="recipient-name">
-						  
-						</div>
-						<div class="mb-5">
-						<label for="recipient-name" class="col-form-label">Terminate Date*</label>
-						<input type="text" class="form-control" id="datepicker-terminatedate" placeholder="dd/mm/yyyy" />
-						  <label for="recipient-name" class="col-form-label">Terminate Type*</label>
-						  <select class="form-select">
-								<option value="0" label="Please Choose" selected="selected">Please Choose </option>
-								<option value="1" label="Deceased">Deceased</option>
-								<option value="2" label="Dismissed">Dismissed</option>
-								<option value="3" label="Laid-Off">Laid-Off</option>
-								<option value="4" label="Contract not renewed">Contract not renewed</option>
-								<option value="2" label="Resign-company requested">Resign-company requested</option>
-								<option value="2" label="resign">resign</option>
-								<option value="2" label="Retirement">Retirement</option>
-								<option value="2" label="Others">Others</option>
-
-
-								
-								
-								</select>
-						  <label for="recipient-name" class="col-form-label">Remarks</label>
-						  <textarea class="form-control" rows="3"></textarea>
-
-						  <label for="recipient-name" class="col-form-label">Attachments</label><br>
-						  <input id="fileupload" type="file" multiple="multiple" ></input>
-						  <br>
-						
-					</div><div id="dvPreview"></div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Submit</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  
-			  
-	<div class="row">
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-			
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-		<!-- BEGIN col-4 -->
-		<div class="col-xl-4 col-lg-6">
-			<!-- BEGIN panel -->
-
-			<!-- END panel -->
-		</div>
-		<!-- END col-4 -->
-	</div>
-	<!-- END row -->
-		</div>
-		<!-- END #content -->
-		
-		<!-- BEGIN theme-panel -->
-		
-		<!-- END theme-panel -->
-		<!-- BEGIN scroll-top-btn -->
-		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- END scroll-top-btn -->
-	</div>
+	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -1113,51 +1034,43 @@
 	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
 	<script src="../assets/js/demo/dashboard-v2.js"></script>
 	<!-- ================== END page-js ================== -->
+	<!-- required files -->
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+	<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+	<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 </body>
 </html>
-	
-<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-<link href="/assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
-
-	
-	<script>
-  $('#data-table-default').DataTable({
-    responsive: true,
-    dom: '<"row"<"col-sm-5"B><"col-sm-7"fr>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+<script>
+  $('#summarytable').DataTable({
+    responsive: false,
+	lengthMenu: [5, 10, -1],
+	deferRender:    true,
+    scrollY:        true,
+	scrollX:        false,
+	scrollCollapse: true,
+    scroller:       true,
+	paging: true,
+    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
     buttons: [
-      { extend: 'csv', className: 'btn-sm' },
-      { extend: 'pdf', className: 'btn-sm' },
-
+     
+      { extend: 'excel', className: 'btn-sm' },
+     
     ],
   });
-</script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
+
+</script>	
 
 
