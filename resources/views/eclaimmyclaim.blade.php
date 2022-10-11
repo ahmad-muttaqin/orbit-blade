@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Settings </title>
+	<title>OrbitHRM | Timesheet </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -601,432 +601,483 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">Reporting <small>| Timesheet | Employee Report </small></h1>
+	<h1 class="page-header">eClaim <small>| My Claim </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
 		
+		<!-- BEGIN panel-heading -->
 		
-		<!-- BEGIN panel-body -->
+		
 		<div class="panel-body">
-			<div class="row p-2">
-				<div class="col-sm-12">
-					<h5>Year : 2022</h5>
-				</div>
+		
+		<div class="form-control">	
+		
+		<h3>Claim Overview</h3>
+		<br>
+		<div class="row p-2">	
+			
+			
+			<div class="col-sm-2">
+			
+			<h3 class="text-center">Total Pending Claim Approval:</h3>
+			<h3 class="text-center text-primary ">2</h3>
 			</div>
-			<div class="row p-2">
-				<div class="col-sm-12">
-					<h5> Month : September</h5>
-				</div>
+			
+			<div class="col-sm-2">
+			
+			<h3 class="text-center">Total Amount Pending Claims:</h3>
+			<h3 class="text-center text-primary">MYR 100.00</h3>
 			</div>
-			<div class="row p-2">
-				<div class="col-sm-12">
-					<h5> Department : Service Delivery Department</h5>
-				</div>
+
+			<div class="col-sm-2">
+				
+			<h3 class="text-center">Total Amount Paid Claims:</h3>
+			<h3 class="text-center text-primary">MYR 600.00</h3>
 			</div>
-			<table id="summarytable" class="table table-striped table-bordered align-middle">
+			
+			<div class="col-sm-2">
+				
+			<h3 class="text-center">Total Amount Rejected Claims:</h3>
+			<h3 class="text-center text-primary">MYR 0.00</h3>
+			</div>
+
+			<div class="col-sm-2">
+			
+			<h3 class="text-center"> Total Pending Cash Advance:</h3>
+			<h3 class="text-center text-primary">2</h3>
+			</div>
+			
+			<div class="col-sm-2">
+			
+			<h3 class="text-center">Total Amount Cash Advance:</h3>
+			<h3 class="text-center text-primary">MYR 0.00</h3>
+			</div>
+			</div>
+		
+		</div>
+		<!-- END panel-heading -->
+		<!-- BEGIN panel-body --><br>
+		<div class="form-control">	
+			<div class="panel-body">
+				<div class="row p-2">	
+					<div class="col-sm-4">	
+						<!-- BEGIN card -->
+					<div class="card text-center border-0">
+						<div class="card-header">
+							<ul class="nav nav-pills card-header-pills">
+								<li class="nav-item"><button type="button" class="btn btn-primary">+ General Claim</button></li>
+								
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="tab-content p-0 m-0">
+								<div class="tab-pane fade active show" >
+									<table id="timesheetapproval" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						<th width="1%">Action</th>
-						<th class="text-nowrap">Employee Name</th>
-						<th class="text-nowrap">Designation</th>
-						<th class="text-nowrap">Department</th>
-						<th class="text-nowrap">Status</th>
-						<th class="text-nowrap">1hb</th>
-						<th class="text-nowrap">2hb</th>
-						<th class="text-nowrap">3hb</th>
-						<th class="text-nowrap">4hb</th>
-						<th class="text-nowrap">5hb</th>
-						<th class="text-nowrap">6hb</th>
-						<th class="text-nowrap">7hb</th>
-						<th class="text-nowrap">8hb</th>
-						<th class="text-nowrap">9hb</th>
-						<th class="text-nowrap">10hb</th>
-						<th class="text-nowrap">11hb</th>
-						<th class="text-nowrap">12hb</th>
-						<th class="text-nowrap">13hb</th>
-						<th class="text-nowrap">14hb</th>
-						<th class="text-nowrap">15hb</th>
-						<th class="text-nowrap">16hb</th>
-						<th class="text-nowrap">17hb</th>
-						<th class="text-nowrap">18hb</th>
-						<th class="text-nowrap">19hb</th>
-						<th class="text-nowrap">20hb</th>
-						<th class="text-nowrap">21hb</th>
-						<th class="text-nowrap">22hb</th>
-						<th class="text-nowrap">23hb</th>
-						<th class="text-nowrap">24hb</th>
-						<th class="text-nowrap">25hb</th>
-						<th class="text-nowrap">26hb</th>
-						<th class="text-nowrap">27hb</th>
-						<th class="text-nowrap">28hb</th>
-						<th class="text-nowrap">29hb</th>
-						<th class="text-nowrap">30hb</th>
-						<th class="text-nowrap">31hb</th>
 						
+						<th class="text-nowrap">Year</th>
+						<th class="text-nowrap">Month</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Action</th>
+
 
 					</tr>
 				</thead>
 				<tbody>
 					<tr class="odd gradeX">
-						<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Amira Roslam</td>
-						<td>Business Analyst</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
+						<td>2022</td>
+						<td>SEPTEMBER</td>
+						<td><h4><span class="badge bg-lime">Open</span></h4></td>
+						<td><button type="button" class="btn btn-primary btn-sm">+ Apply</button></td>
+						
 						
 					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Irsyad</td>
-						<td>Developer</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 						
 					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Ahmad</td>
-						<td>IT Support</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>JULY</td>
+						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Apam</td>
-						<td>IT Manager</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>JUNE</td>
+						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Naim</td>
-						<td>IT Manager</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>MAY</td>
+						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Danial</td>
-						<td>IT Manager</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>APRIL</td>
+						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Apam</td>
-						<td>IT Manager</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
-					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Apam</td>
-						<td>IT Manager</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
-					</tr>
-					<tr class="odd gradeX">
-					<td ><a href="javascript:;" class="btn btn-primary">View</a></td>
-						<td>Apam</td>
-						<td>IT Manager</td>
-						<td>Service Delivery Department</td>
-						<td> Active</td>
-						<td>8:00</td>
-						<td><span class="badge bg-info">holiday</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-warning">On-Leave</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td><span class="badge bg-primary">Weekend</span></td>
-						<td>8:00</td>
-						<td>8:00</td>
-						<td>8:00</td>
-						
-					</tr>
+					
 				</tbody>
 			</table>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- END card -->
+				
+		
+			
+		</div>
+		
+		
+		<div class=" col-sm-8">	
+			<!-- BEGIN card -->
+			<div class="card text-center border-0">
+						<div class="card-header">
+							<ul class="nav nav-pills card-header-pills">
+								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1">Claim</a></li>
+								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2">Cash Advance</a></li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="tab-content p-0 m-0">
+								<div class="tab-pane fade active show" id="card-pill-1">
+								<div class="category-filter">
+									<select id="Status" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+										<option value="">Show All</option>
+										<option value="Pending">Pending</option>
+										<option value="Rejected">Amended</option>
+										<option value="Jazz">Paid</option>
+									</select>
+								</div>
+								<table id="claimtable" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Year</th>
+						<th class="text-nowrap">Month</th>
+						<th class="text-nowrap">Claim ID</th>
+						<th class="text-nowrap">Type</th>
+						<th class="text-nowrap">Total Amount</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Status Date</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>102</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-warning">Pending</span></td>
+						<td>20/09/2022</td>
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>103</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-warning">Pending</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>104</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>105</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>110</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>101</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					
+					
+					
+					</tbody>
+				</table> 
+								</div>
+								<div class="tab-pane fade" id="card-pill-2">
+								<table id="cashadvancetable" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Year</th>
+						<th class="text-nowrap">Month</th>
+						<th class="text-nowrap">Claim ID</th>
+						<th class="text-nowrap">Type</th>
+						<th class="text-nowrap">Total Amount</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Status Date</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>102</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-warning">Pending</span></td>
+						<td>20/09/2022</td>
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>103</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-warning">Pending</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>104</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>105</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>110</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>101</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					
+					
+					
+					</tbody>
+				</table> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END card -->
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<!-- END row -->
-	<!-- BEGIN row -->
 	
 	<!-- END #app -->
 	
@@ -1044,43 +1095,89 @@
 	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
 	<script src="../assets/js/demo/dashboard-v2.js"></script>
 	<!-- ================== END page-js ================== -->
-	<!-- required files -->
-	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
-	<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 </body>
 </html>
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
+
+
 <script>
-  $('#summarytable').DataTable({
+  $('#timesheetapproval').DataTable({
+	"searching": false,
+	"lengthChange": false,
+	lengthMenu: [5, 10],
     responsive: false,
-	lengthMenu: [5, 10, -1],
-	deferRender:    true,
-    scrollY:        true,
-	scrollX:        true,
-	scrollCollapse: true,
-    scroller:       true,
-	paging: true,
-    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
-    buttons: [
-     
-      { extend: 'excel', className: 'btn-sm' },
-     
-    ],
+	info: false
+
+	
   });
 
-</script>	
+  $("document").ready(function () {
+      $("#claimtable").dataTable({
+        "searching": true,
+		"lengthChange": false,
+		lengthMenu: [5, 10],
+		responsive: false,
+		info: false,
+		dom: '<"top">rt<"bottom"p><"clear">',
+      });
+      //Get a reference to the new datatable
+      var table = $('#claimtable').DataTable();
+      //Take the category filter drop down and append it to the datatables_filter div. 
+      //You can use this same idea to move the filter anywhere withing the datatable that you want.
+      $("#claimtable_filter.dataTables_filter").append($("#Status"));
+      
+      //Get the column index for the Category column to be used in the method below ($.fn.dataTable.ext.search.push)
+      //This tells datatables what column to filter on when a user selects a value from the dropdown.
+      //It's important that the text used here (Category) is the same for used in the header of the column to filter
+      var categoryIndex = 0;
+      $("#claimtable th").each(function (i) {
+        if ($($(this)).html() == "Status") {
+          categoryIndex = i; return false;
+        }
+      });
+      //Use the built in datatables API to filter the existing rows by the Category column
+      $.fn.dataTable.ext.search.push(
+        function (settings, data, dataIndex) {
+          var selectedItem = $('#Status').val()
+          var category = data[categoryIndex];
+          if (selectedItem === "" || category.includes(selectedItem)) {
+            return true;
+          }
+          return false;
+        }
+      );
+      //Set the change event for the Category Filter dropdown to redraw the datatable each time
+      //a user selects a new filter.
+      $("#Status").change(function (e) {
+        table.draw();
+      });
+      table.draw();
+    });
 
+  
+
+  $('#cashadvancetable').DataTable({
+	"searching": false,
+	"lengthChange": false,
+	lengthMenu: [5, 10],
+    responsive: false,
+	info: false
+  });
+</script>
 

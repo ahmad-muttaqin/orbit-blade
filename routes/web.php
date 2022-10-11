@@ -210,3 +210,6 @@ Route::get('/setting/timesheetperiod', function () {
 Route::get('/timesheet/timesheetemployeereportall', function () {
     return view('timesheetemployeereportall');
 });
+Route::get('/eclaim/myclaim', function () {
+    return view('eclaimmyclaim');
+});
