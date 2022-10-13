@@ -674,7 +674,7 @@
 						<div class="card-body">
 							<div class="tab-content p-0 m-0">
 								<div class="tab-pane fade active show" >
-									<table id="timesheetapproval" class="table table-striped table-bordered align-middle">
+									<table id="generalclaim" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
 						
@@ -690,7 +690,7 @@
 					<tr class="odd gradeX">
 						<td>2022</td>
 						<td>SEPTEMBER</td>
-						<td><h4><span class="badge bg-lime">Open</span></h4></td>
+						<td><span class="badge bg-lime">Open</span></td>
 						<td><button type="button" class="btn btn-primary btn-sm">+ Apply</button></td>
 						
 						
@@ -698,32 +698,32 @@
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>AUGUST</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 						
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>JULY</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>JUNE</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>MAY</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>APRIL</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					
@@ -754,7 +754,7 @@
 							<div class="tab-content p-0 m-0">
 								<div class="tab-pane fade active show" id="card-pill-1">
 								<div class="category-filter">
-									<select id="Status" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
 										<option value="">Show All</option>
 										<option value="Pending">Pending</option>
 										<option value="Rejected">Amended</option>
@@ -1117,7 +1117,7 @@
 
 
 <script>
-  $('#timesheetapproval').DataTable({
+  $('#generalclaim').DataTable({
 	"searching": false,
 	"lengthChange": false,
 	lengthMenu: [5, 10],
@@ -1140,7 +1140,7 @@
       var table = $('#claimtable').DataTable();
       //Take the category filter drop down and append it to the datatables_filter div. 
       //You can use this same idea to move the filter anywhere withing the datatable that you want.
-      $("#claimtable_filter.dataTables_filter").append($("#Status"));
+      $("#claimtable_filter.dataTables_filter").append($("#Statusclaim"));
       
       //Get the column index for the Category column to be used in the method below ($.fn.dataTable.ext.search.push)
       //This tells datatables what column to filter on when a user selects a value from the dropdown.
@@ -1154,7 +1154,7 @@
       //Use the built in datatables API to filter the existing rows by the Category column
       $.fn.dataTable.ext.search.push(
         function (settings, data, dataIndex) {
-          var selectedItem = $('#Status').val()
+          var selectedItem = $('#Statusclaim').val()
           var category = data[categoryIndex];
           if (selectedItem === "" || category.includes(selectedItem)) {
             return true;
@@ -1164,7 +1164,7 @@
       );
       //Set the change event for the Category Filter dropdown to redraw the datatable each time
       //a user selects a new filter.
-      $("#Status").change(function (e) {
+      $("#Statusclaim").change(function (e) {
         table.draw();
       });
       table.draw();
