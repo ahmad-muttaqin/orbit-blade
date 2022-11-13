@@ -211,5 +211,34 @@ Route::get('/timesheet/timesheetemployeereportall', function () {
     return view('timesheetemployeereportall');
 });
 Route::get('/eclaim/myclaim', function () {
-    return view('eclaimmyclaim');
+    return view('eclaim/eclaimmyclaim');
+});
+Route::get('/eclaim/viewmyclaim', function () {
+    return view('eclaim/eclaimviewmyclaim');
+});
+//
+
+Route::get('/report/reportingclaimreport', function () {
+    return view('eclaim/reportingclaimreport');
+});
+Route::get('/report/claimreportall', function () {
+    return view('eclaim/claimreportall');
+});
+Route::get('/report/claimreportproject', function () {
+    return view('eclaim/claimreportproject');
+});
+Route::get('/report/claimreportdepartment', function () {
+    return view('eclaim/claimreportdepartment');
+});
+Route::get('/report/claimreportemployee', function () {
+    return view('eclaim/claimreportemployee');
+});
+Route::get('/report/claimreportrefnum', function () {
+    return view('eclaim/claimreportrefnum');
+});
+Route::get('/report/cashadvreportall', function () {
+    return view('eclaim/cashadvreportall');
+});
+Route::get('/report/reportingcashadvance', function () {
+    return view('eclaim/reportingcashadvance');
 });

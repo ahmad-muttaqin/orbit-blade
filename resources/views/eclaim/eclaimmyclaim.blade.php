@@ -756,6 +756,7 @@
 								<div class="category-filter">
 									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
 										<option value="">Show All</option>
+										<option value="Active">Active</option>
 										<option value="Pending">Pending</option>
 										<option value="Rejected">Amended</option>
 										<option value="Jazz">Paid</option>
@@ -764,7 +765,6 @@
 								<table id="claimtable" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						
 						<th class="text-nowrap">Action</th>
 						<th class="text-nowrap">Year</th>
 						<th class="text-nowrap">Month</th>
@@ -795,7 +795,7 @@
 						<td>102</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Pending</span></td>
+						<td><span class="badge bg-lime">Active</span></td>
 						<td>20/09/2022</td>
 					</tr>
 					<tr class="even gradeC">
@@ -915,6 +915,15 @@
 				</table> 
 								</div>
 								<div class="tab-pane fade" id="card-pill-2">
+								<div class="category-filter">
+									<select id="Statuscash" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+										<option value="">Show All</option>
+										<option value="Active">Active</option>
+										<option value="Pending">Pending</option>
+										<option value="Rejected">Amended</option>
+										<option value="Jazz">Paid</option>
+									</select>
+								</div>
 								<table id="cashadvancetable" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
@@ -1117,7 +1126,10 @@
 
 
 <script>
-  $('#generalclaim').DataTable({
+  
+
+  $("document").ready(function () {
+	$('#generalclaim').DataTable({
 	"searching": false,
 	"lengthChange": false,
 	lengthMenu: [5, 10],
@@ -1127,7 +1139,6 @@
 	
   });
 
-  $("document").ready(function () {
       $("#claimtable").dataTable({
         "searching": true,
 		"lengthChange": false,
@@ -1168,16 +1179,46 @@
         table.draw();
       });
       table.draw();
+	  
+	  $("#cashadvancetable").dataTable({
+        "searching": true,
+		"lengthChange": false,
+		lengthMenu: [5, 10],
+		responsive: false,
+		info: false,
+		dom: '<"top">rt<"bottom"p><"clear">',
+      });
+
+	  var table2 = $('#cashadvancetable').DataTable();
+      //Take the category filter drop down and append it to the datatables_filter div. 
+      //You can use this same idea to move the filter anywhere withing the datatable that you want.
+      $("#cashadvancetable_filter.dataTables_filter").append($("#Statuscash"));
+
+	  var categoryIndex2 = 0;
+      $("#cashadvancetable th").each(function (i) {
+        if ($($(this)).html() == "Status") {
+          categoryIndex2 = i; return false;
+        }
+      });
+      //Use the built in datatables API to filter the existing rows by the Category column
+      $.fn.dataTable.ext.search.push(
+        function (settings, data, dataIndex) {
+          var selectedItem2 = $('#Statuscash').val()
+          var category2 = data[categoryIndex2];
+          if (selectedItem2 === "" || category2.includes(selectedItem2)) {
+            return true;
+          }
+          return false;
+        }
+      );
+	  $("#Statuscash").change(function (e) {
+        table2.draw();
+      });
+      table2.draw();
     });
 
   
-
-  $('#cashadvancetable').DataTable({
-	"searching": false,
-	"lengthChange": false,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
+	  
+	
 </script>
 
