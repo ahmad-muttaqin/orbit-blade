@@ -621,8 +621,8 @@
 			
 			<div class="col-sm-2">
 			
-			<h3 class="text-center">Total Pending Claim Approval:</h3>
-			<h3 class="text-center text-primary ">2</h3>
+				<h3 class="text-center">Total Pending Claim Approval:</h3>
+				<h3 class="text-center text-primary ">2</h3>
 			</div>
 			
 			<div class="col-sm-2">
@@ -674,7 +674,7 @@
 						<div class="card-body">
 							<div class="tab-content p-0 m-0">
 								<div class="tab-pane fade active show" >
-									<table id="timesheetapproval" class="table table-striped table-bordered align-middle">
+									<table id="generalclaim" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
 						
@@ -690,7 +690,7 @@
 					<tr class="odd gradeX">
 						<td>2022</td>
 						<td>SEPTEMBER</td>
-						<td><h4><span class="badge bg-lime">Open</span></h4></td>
+						<td><span class="badge bg-lime">Open</span></td>
 						<td><button type="button" class="btn btn-primary btn-sm">+ Apply</button></td>
 						
 						
@@ -698,32 +698,32 @@
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>AUGUST</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 						
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>JULY</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>JUNE</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>MAY</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>APRIL</td>
-						<td><h4><span class="badge bg-danger">Expired</span></h4></td>
+						<td><span class="badge bg-danger">Expired</span></td>
 						<td><button type="button" class="btn btn-warning btn-sm">+ Appeal</button></td>
 					</tr>
 					
@@ -754,8 +754,9 @@
 							<div class="tab-content p-0 m-0">
 								<div class="tab-pane fade active show" id="card-pill-1">
 								<div class="category-filter">
-									<select id="Status" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
 										<option value="">Show All</option>
+										<option value="Active">Active</option>
 										<option value="Pending">Pending</option>
 										<option value="Rejected">Amended</option>
 										<option value="Jazz">Paid</option>
@@ -764,7 +765,6 @@
 								<table id="claimtable" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
-						
 						<th class="text-nowrap">Action</th>
 						<th class="text-nowrap">Year</th>
 						<th class="text-nowrap">Month</th>
@@ -795,7 +795,7 @@
 						<td>102</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Pending</span></td>
+						<td><span class="badge bg-lime">Active</span></td>
 						<td>20/09/2022</td>
 					</tr>
 					<tr class="even gradeC">
@@ -915,6 +915,15 @@
 				</table> 
 								</div>
 								<div class="tab-pane fade" id="card-pill-2">
+								<div class="category-filter">
+									<select id="Statuscash" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+										<option value="">Show All</option>
+										<option value="Active">Active</option>
+										<option value="Pending">Pending</option>
+										<option value="Rejected">Amended</option>
+										<option value="Jazz">Paid</option>
+									</select>
+								</div>
 								<table id="cashadvancetable" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
@@ -1117,7 +1126,10 @@
 
 
 <script>
-  $('#timesheetapproval').DataTable({
+  
+
+  $("document").ready(function () {
+	$('#generalclaim').DataTable({
 	"searching": false,
 	"lengthChange": false,
 	lengthMenu: [5, 10],
@@ -1127,7 +1139,6 @@
 	
   });
 
-  $("document").ready(function () {
       $("#claimtable").dataTable({
         "searching": true,
 		"lengthChange": false,
@@ -1140,7 +1151,7 @@
       var table = $('#claimtable').DataTable();
       //Take the category filter drop down and append it to the datatables_filter div. 
       //You can use this same idea to move the filter anywhere withing the datatable that you want.
-      $("#claimtable_filter.dataTables_filter").append($("#Status"));
+      $("#claimtable_filter.dataTables_filter").append($("#Statusclaim"));
       
       //Get the column index for the Category column to be used in the method below ($.fn.dataTable.ext.search.push)
       //This tells datatables what column to filter on when a user selects a value from the dropdown.
@@ -1154,7 +1165,7 @@
       //Use the built in datatables API to filter the existing rows by the Category column
       $.fn.dataTable.ext.search.push(
         function (settings, data, dataIndex) {
-          var selectedItem = $('#Status').val()
+          var selectedItem = $('#Statusclaim').val()
           var category = data[categoryIndex];
           if (selectedItem === "" || category.includes(selectedItem)) {
             return true;
@@ -1164,20 +1175,50 @@
       );
       //Set the change event for the Category Filter dropdown to redraw the datatable each time
       //a user selects a new filter.
-      $("#Status").change(function (e) {
+      $("#Statusclaim").change(function (e) {
         table.draw();
       });
       table.draw();
+	  
+	  $("#cashadvancetable").dataTable({
+        "searching": true,
+		"lengthChange": false,
+		lengthMenu: [5, 10],
+		responsive: false,
+		info: false,
+		dom: '<"top">rt<"bottom"p><"clear">',
+      });
+
+	  var table2 = $('#cashadvancetable').DataTable();
+      //Take the category filter drop down and append it to the datatables_filter div. 
+      //You can use this same idea to move the filter anywhere withing the datatable that you want.
+      $("#cashadvancetable_filter.dataTables_filter").append($("#Statuscash"));
+
+	  var categoryIndex2 = 0;
+      $("#cashadvancetable th").each(function (i) {
+        if ($($(this)).html() == "Status") {
+          categoryIndex2 = i; return false;
+        }
+      });
+      //Use the built in datatables API to filter the existing rows by the Category column
+      $.fn.dataTable.ext.search.push(
+        function (settings, data, dataIndex) {
+          var selectedItem2 = $('#Statuscash').val()
+          var category2 = data[categoryIndex2];
+          if (selectedItem2 === "" || category2.includes(selectedItem2)) {
+            return true;
+          }
+          return false;
+        }
+      );
+	  $("#Statuscash").change(function (e) {
+        table2.draw();
+      });
+      table2.draw();
     });
 
   
-
-  $('#cashadvancetable').DataTable({
-	"searching": false,
-	"lengthChange": false,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
+	  
+	
 </script>
 
