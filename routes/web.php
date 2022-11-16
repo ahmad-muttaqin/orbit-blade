@@ -216,6 +216,12 @@ Route::get('/eclaim/myclaim', function () {
 Route::get('/eclaim/viewmyclaim', function () {
     return view('eclaim/eclaimviewmyclaim');
 });
+Route::get('/eclaim/applygeneralclaim', function () {
+    return view('eclaim/eclaimapplygeneral');
+});
+Route::get('/eclaim/applyclaim', function () {
+    return view('eclaim/eclaimapplyclaim');
+});
 //
 
 Route::get('/report/reportingclaimreport', function () {
