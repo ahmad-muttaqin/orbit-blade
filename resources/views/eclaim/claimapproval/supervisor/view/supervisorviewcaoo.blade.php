@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM  </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -27,7 +27,9 @@
 
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -207,7 +209,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetapproval" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -215,7 +217,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetrealtime" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -432,7 +434,7 @@
                                 </a>
                             <div class="menu-submenu">
                                 <div class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="/timesheet/reportingstatusreport" class="menu-link">
                                         <div class="menu-icon">
 								             <i class="fa fa-address-card text-gray"></i>
 							            </div>
@@ -440,7 +442,7 @@
                                     </a>
                                     </div>
                                     <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-clock text-gray"></i>
 							    </div>
@@ -448,7 +450,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetovertimereport" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-gear text-gray"></i>
 							    </div>
@@ -599,207 +601,413 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
-	
+	<h1 class="page-header">eClaim <small>| Supervisor | View Cash Advance | Others ( Outstation )</small></h1>
+
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
+		<div class="panel-body">
 		
 		<!-- BEGIN panel-heading -->
-		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/typeoflog"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-
-			<br>
-			<h3 class="mt-10px"></i> eClaim Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/eclaimgeneral"><i class="fa fa-wrench fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >General</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimdate"><i class="fas fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Date</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimcategory"><i class="fa fa-file fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Category</h5> 
-					</div>
-
-				
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/entitlement"><i class="fa fa-briefcase fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Entitlement <br> Group</h5> 
+			<div class="row p-2">
+				<div class="col-md-7">	
+					<div class="form-control">
+						<div class="row p-2">
+							<h4>Cash Advance Information</h4>
 						</div>
-
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/cashadvancecontroller"><i class="fa fa-gamepad fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Cash Advanced <br> Controller</h5> 
+						
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Type of Cash Advance :</label>
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
 						</div>
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/claimmonth"><i class="fa fa-calendar-week fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Claim Month <br> Controller</h5> 
+						<div class="row p-2">
+							<div class="col-md-3">	
+							<label class="form-label col-form-label">Cash Advance ID:</label>
+								
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
 						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Claim Type :</label>
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+							<label class="form-label col-form-label">Travel Date :</label>
+								
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Project :</label>
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+							<label class="form-label col-form-label">Destination :</label>
+								
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Purpose :</label>
+							</div>
+							<div class="col-md-9">	
+								<textarea type="text" readonly class="form-control" rows="3" maxlength="255"></textarea>
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+							<label class="form-label col-form-label">Mode of Transport :</label>
+								
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						
+					</div>
+					<br>
+					<div class="form-control">
+						<div class="row p-2">
+							<h4> Travel Expenses</h4>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Subsistence Allowance :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Accommodation :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Travel Expenses :</label>
+							</div>
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Fuel Parking :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Toll/Parking :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Entertainment :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
 
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Total :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Maximum Paid Out (75%) :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">	
 				
-					
-				
-				<!-- END col-4 -->
+					<div class="form-control">
+						<div class="row p-2">
+							<h4>Cash Advance History</h4>
+							<div class="card-body">
+					<div class="container">
+						<ul class="timeline-with-icons">
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-circle-plus text-primary fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold">Siti Sarah Submitted claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold"> Mukhsin recommended Claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-arrow-rotate-right text-warning fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold">Hassan amended Claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold"> Hafizi approved Claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-circle-xmark text-danger fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold"> Nadia rejected Claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-circle-check text-yellow fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold"> Shida checked Claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="timeline-item mb-5 ">
+								<div class="card bg-white">	
+								<div class="row p-2">
+									<div class="col-md-2">
+										<i class="fas fa-circle-minus text-indigo fa-xl fa-fw"></i>	
+									</div>		
+									<div class="col-md-10">	
+										<p class="fw-bold"> Amira Closed Claim</p>
+										<div class="row">
+											<div class="col-md-6">	
+												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											</div>
+											<div class="col-md-6">	
+												<p class="text-muted">10:24 AM</p>
+											</div>
+										</div>
+								</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+					</div>
+				</div>
 			</div>
-			<!-- END row -->
 		</div>
-		
+
+				</div>
+				
+			</div>
+		</div>
+		<div class="row p-2">
+			<div class="col align-self-start">
+				<a href="/claimapproval/supervisor" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+			</div>	
+			<div class="col d-flex justify-content-end">
+				<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
+				<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
+				<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
+				<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
+			</div>
+		</div>
 	</div>
 	
-</div>
+		
+	<!-- END row -->
+	<!-- Modal amend -->
+	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <!-- Modal reject -->
+      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -818,47 +1026,30 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 
-	
-	<script>
-$('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
+
 <script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
+  
+	
+	
 
+	
+</script>
 

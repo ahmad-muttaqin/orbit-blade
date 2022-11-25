@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Setting Update Claim</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,12 +20,29 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-	<!-- ================== END page-css ================== -->
-</head>
 
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+
+
+	
+
+
+	
+	
+	<!-- ================== END page-css ================== -->
+	<style>
+
+		
+		</style>
+		</head>
+		<body>
+</head>
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -593,231 +608,118 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
+	<h1 class="page-header">Setting | Update Claim Category</h1>
+        <div class="panel panel">
+			<div class="panel-body">
+                 <div class="row p-2">
+                   <div class="col-md-6">
+                     <h3>Update Claim Category</h3>
+                    <br>
+                    <form>
+                            <div class="form-group row p-2">
+                                <label for="categorycode" class="col-sm-2 col-form-label">Claim Category Code*</label>
+                                <div class="col">
+                                  <input type="text" class="form-control" id="category_code" name="categorycode" placeholder="Input Claim Category Code">
+                                </div>
+                              </div>
+                              <br>
+                        <div class="form-group row p-2">
+                          <label for="claimcategory" class="col-sm-2 col-form-label">Claim Category*</label>
+                          <div class="col">
+                            <input type="text" class="form-control"  name="claimcategory" id="claim_category" placeholder="Input Claim Category">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-group row p-2">
+                            <label for="claimtype" class="col-sm-2 col-form-label">Claim Type*</label>
+                            <div class="col-sm-6">
+                                <div class="row-sm-6 p-2">
+                                  <input type="checkbox" class="form-check-input" name="" id="" /> <label>MTC- Monthly Claim</label>
+                                </div>
+                                <div class="row-sm-6 p-2">
+                                  <input type="checkbox" class="form-check-input" name="" id="" /> <label>GC- General Claim</label>
+                                </div>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="form-group row p-2">
+                            <label for="description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col">
+                                <textarea class="form-control" name="description" id="descriptionn" rows="3" placeholder="Input Description"></textarea>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-white mt-3 mb-3" data-bs-toggle="modal" id="myModal1" data-bs-target="#modaladdcontent"><i class="fa fa-plus"></i> Add Content Category</button>
+                      <table  id="tablesavecontent"  class="table table-striped table-bordered align-middle">
+                        <thead>
+                          <tr>	
+                            <th  data-orderable="false">Action</th>
+                            <th class="text-nowrap">Content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                
+                            </tr>
+                        </tbody>
+                      </table>
+                      <br><br>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col align-self-start">
+                      <a href="/setting/claimcategory" class="btn btn-light" style="color: black" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+                    </div>
+                    
+                    <div class="col d-flex justify-content-end">
+                      <button class="btn btn-light" type="submit" style="color: black"><i class="fa fa-save"></i> Save</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+    </div>
+
+            <!-- Modal -->
+<div class="modal fade" id="modaladdcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Content</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+				<div class="row mb-3">
+					<label for="inputEmail3" class="col-sm-2 col-form-label">Content</label><br>
+					<div class="col-sm-6">
+					<input type="text" class="form-control" id="addcontent" value="content1">
+				</form>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="savecontent" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
 	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/typeoflog"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-
-			<br>
-			<h3 class="mt-10px"></i> eClaim Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/eclaimgeneral"><i class="fa fa-wrench fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >General</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimdate"><i class="fas fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Date</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimcategory"><i class="fa fa-file fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Category</h5> 
-					</div>
-
-				
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/entitlement"><i class="fa fa-briefcase fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Entitlement <br> Group</h5> 
-						</div>
-
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/cashadvancecontroller"><i class="fa fa-gamepad fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Cash Advanced <br> Controller</h5> 
-						</div>
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/claimmonth"><i class="fa fa-calendar-week fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Claim Month <br> Controller</h5> 
-						</div>
-
-				
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<!-- END row -->
-		</div>
-		
-	</div>
-	
-</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+
+
 	<!-- ================== END core-js ================== -->
-	
-	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
+
 </body>
 </html>
+
 <script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
 	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -845,20 +747,63 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	
 
-	
-	<script>
-$('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
 <script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
+	$(document).ready(function () {
+        $('#tablesavecontent')
+                .dataTable({
+                    "responsive": true,
+                    "bLengthChange": false,
+                    "bFilter": false,
+                    "info": false,
+                });
+        
+    });
+
+$("#savecontent").click(function() {
+
+var addtypelogactivityName = document.getElementById('addcontent').value;
+
+if (addtypelogactivityName == "") {
+document.getElementById('addcontent');
+return;
+} else {
+
+let table = document.getElementById('tablesavecontent');
+// Insert a row at the end of the table
+let newRow = table.insertRow(-1);
+var l = table.rows.length - 1;
+
+//Col 3 = Delete Button
+table.rows[l].insertCell(0);
+table.rows[l].cells[0].innerHTML = "<input hidden name='Area' value='" + addtypelogactivityName + "' /> <button type='button' class='btn btn-outline-danger' onclick='delRow(this);' id='btnDelete' size='1' height='1' ><i class='fa fa-trash'></i></button>";
+
+
+//Col 1 = addtypelogactivityName
+table.rows[l].insertCell(1);
+table.rows[l].cells[1].innerHTML = addtypelogactivityName;
+
+
+
+
+//Clear input
+
+
+}
+});
+
+
+function delRow(btn) {
+var row = btn.parentNode.parentNode;
+row.parentNode.removeChild(row);
+}
+
+function editRow() {
+    $('#subsistencemodal').modal('show');
+}
 </script>
-<!-- The template to display files available for upload -->
 
 

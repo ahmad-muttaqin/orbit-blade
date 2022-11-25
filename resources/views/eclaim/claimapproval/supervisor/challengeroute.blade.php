@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Timesheet </title>
+	<title>OrbitHRM | Setting General</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,9 +20,26 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-	<!-- ================== END page-css ================== -->
-</head>
 
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+
+
+	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
+	{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 --}}
+
+
+	
+	
+	<!-- ================== END page-css ================== -->
+	<style>
+	
+		</style>
+		</head>
+		<body>
+</head>
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -209,7 +224,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/timesheet/timesheetapproval" class="menu-link">
+                                <a href="#" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -217,7 +232,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/timesheet/timesheetrealtime" class="menu-link">
+                                <a href="#" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -434,7 +449,7 @@
                                 </a>
                             <div class="menu-submenu">
                                 <div class="menu-item">
-                                    <a href="/timesheet/reportingstatusreport" class="menu-link">
+                                    <a href="#" class="menu-link">
                                         <div class="menu-icon">
 								             <i class="fa fa-address-card text-gray"></i>
 							            </div>
@@ -442,7 +457,7 @@
                                     </a>
                                     </div>
                                     <div class="menu-item">
-                                <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
+                                <a href="#" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-clock text-gray"></i>
 							    </div>
@@ -450,7 +465,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/timesheet/timesheetovertimereport" class="menu-link">
+                                <a href="#" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-gear text-gray"></i>
 							    </div>
@@ -595,292 +610,270 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
+		<h3 class="page-header">eClaim | Claim Approval | Finance | Challenge Route </h3>
+	    <div class="panel-body">
+            <div class="form-control">
+					<h3>*Please click on "Check route" button to enable "Choose Route " button</h3><br>
+					<div class="row p-2">
+						<div class="col-md-5 align-self-start">
+							<div class="row p-2">
+								<div class="form-control">
+									<div class="row p-2">
+										<div class="col align-self-start">
+										  <h4>Destination A</h4>
+										</div>
+										
+										<div class="col d-flex justify-content-end">
+										  <button class="btn btn-primary btn-sm" id="btnroutea" type="button" disabled> Choose Route A</button>
+										</div>
+									</div>
+									  <br>
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											   <h5> Start address </h5>
+										</div>
+										<div class="col">
+											<h5> : Kastam Presint 8, Putrajaya</h5>
+										</div>
+								   </div>
 		
-		<!-- BEGIN panel-heading -->
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact Start Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.147523,101734331</h5>
+										</div>
+								   </div>
 		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> End Address </h5>
+										</div>
+										<div class="col">
+											<h5> : Edaran IT Services, WPKL</h5>
+										</div>
+									</div>
 		
-		<div class="panel-body">
-			
-			<div class="row p-2">
-				<div class="col-md-3">	
-					<div class="form-check">
-						<input type="checkbox" id="cashadvance" unchecked />   
-						<label class="form-check-label"><h5>&nbsp;&nbsp;Cash Advanced?</h5></label>
-                    </div>
-				</div>
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact End Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.147523,101734331</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Activity </h5>
+										</div>
+										<div class="col">
+											<h5> : Office <i class="fa fa-arrow-right" aria-hidden="true"></i> My project</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-2 align-self-center"></div>
+
+						<div class="col-md-5 align-self-end">
+							<div class="row p-2">
+								<div class="form-control">
+									<div class="row p-2">
+										<div class="col align-self-start">
+										  <h4>Destination B</h4>
+										</div>
+										
+										<div class="col d-flex justify-content-end">
+										  <button class="btn btn-primary btn-sm" id="bntrouteb" type="button" disabled> Choose Route B</button>
+										</div>
+									</div>
+									  <br>
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											   <h5> Start address </h5>
+										</div>
+										<div class="col">
+											<h5> : Jalan Mersing, Putrajaya</h5>
+										</div>
+								   </div>
+		
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact Start Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.13232523,101734331</h5>
+										</div>
+								   </div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> End Address </h5>
+										</div>
+										<div class="col">
+											<h5> : Edaran IT Services, WPKL</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact End Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.1475223,101734331</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Activity </h5>
+										</div>
+										<div class="col">
+											<h5> : Home <i class="fa fa-arrow-right" aria-hidden="true"></i> My project</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col d-flex justify-content-start">
+							<div class="row p-2">
+								<div class="col">
+									<h4>Mileage:</h4>
+								</div>
+								<div class="col">
+									<h4>35KM</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col d-flex justify-content-center">
+							<button class="btn btn-primary" id="btncheckroute">Check Route</button>
+						</div>
+						<div class="col d-flex justify-content-end">
+							<div class="row p-2">
+								<div class="col">
+									<h4>Mileage:</h4>
+								</div>
+								<div class="col">
+									<h4>42KM</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row p-2">
+						<div class="col-md-5 align-self-start">
+							<div class="row p-2">
+
+								<h3>Route A</h3>
+							</div>
+							<div class="row p-2">
+								<div class="col-md-12">
+									<iframe width="100%" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=edaran%20berhad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+									
+									</iframe>
+								</div>
+							</div>
+							
+						</div>
+	
+						<div class="col-md-2 align-self-center">
+	
+						</div>
+	
+	
+						<div class="col-md-5 align-self-end">
+							<div class="row p-2">
+								<h3>Route B</h3>
+							</div>
+							<div class="row p-2">
+								<div class="col-md-12">
+									<iframe width="100%" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=edaran%20berhad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+									
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row p-2">
+				<div class="col align-self-start">
+					<a href="#" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Cancel</a>
+				</div>	
 				
 			</div>
-			<div class="row p-2">
-				<div class="col-md-6">	
-					
-					<div class="form-control">	
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Claim ID</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-							<div class="col-md-3">
-								<label class="form-label">Claim Type</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
-							</div>
-						</div>
+            </div>   
+			
+      </div>
 
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Status</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" value="Draft"class="form-control">
-							</div>
-							<div class="col-md-3">
-								<label class="form-label">Total Amount</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<br>
-						</div>
-						<div class="form-control">	
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Month</label>
-							</div>
-							<div class="col-md-9">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									<option class="form-label" value="1">January</option>
-									<option class="form-label" value="2">February</option>
-									<option class="form-label" value="3">March</option>
-									<option class="form-label" value="4">April</option>
-									<option class="form-label" value="5">May</option>
-									<option class="form-label" value="6">Jun</option>
-									<option class="form-label" value="7">July</option>
-									<option class="form-label" value="8">August</option>
-									<option class="form-label" value="9">September</option>
-									<option class="form-label" value="10">October</option>
-									<option class="form-label" value="11">November</option>
-									<option class="form-label" value="12">December</option>
-									
-								</select>
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Applied Date</label>
-							</div>
-							<div class="col-md-9">
-								<div class="input-group" id="">
-									<input type="text" name="" class="form-control" value="" id="datepicker-autoClose" />
-										<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-								</div>					
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Claim Category</label>
-							</div>
-							<div class="col-md-9">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Amount (MYR)</label>
-							</div>
-							<div class="col-md-9">
-								<input  type="number" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Description</label>
-							</div>
-							<div class="col-md-9">
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Supporting Document</label>
-							</div>
-							<div class="col-md-9">
-								<input type="file" class="form-control-file" id="">
-							</div>
-						</div>
-						</div>
-						<div class="row p-2">
-							<div class="modal-footer">
 
-								<button type="button" class="btn btn-secondary" >Reset</button>
-								<button type="button" class="btn btn-primary" >Save</button>
-								
-							</div>
-						</div>
-						</div>
-					</div>
-				
-				<div class="col-md-6">	
-					<div class="form-control">	
-					<table id="applyclaimtable" class="table table-striped table-bordered align-middle">
-								<thead>
-									<tr>
-										<th>Action</th>
-										<th class="text-nowrap">Applied Date</th>
-										<th class="text-nowrap">Claim Category</th>
-										<th class="text-nowrap">Amount</th>
-										<th class="text-nowrap">Description</th>
-										<th class="text-nowrap">Attachment</th>
-										
-									</tr>
-								</thead>
-								<tbody>
-									
-									<tr>
-										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">Delete</a></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-								</tbody>
-							</table>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-secondary btn-block ml-1">Back</button>
-			<button type="button" class="btn btn-primary text-nowrap">Submit</button>
-		</div>
-		
-		
-		<!-- END panel-heading -->
-		
-	</div>
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	
 	<!-- END #app -->
-	</div>
+	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+
+
 	<!-- ================== END core-js ================== -->
-	
-	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
+
+
 </body>
 </html>
-	<!-- required files -->
-<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
-<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
-<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
-<script>
-  
-  var elm = document.getElementById('cashadvance');
-  var switchery = new Switchery(elm, {
-    color: '#00acac'
-  });
+<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
+	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
+	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
+	<script src="/assets/js/demo/render.highlight.js"></script>
+	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 
-  
-  $('#applyclaimtable').DataTable({
-	"searching": false,
-	"lengthChange": true,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
+
+	<script>
+		$(document).ready(function () {
+			// $("#btncheckroute").click(function(){
+			// $("#btnroutea").prop('disabled', false);
+			// $("#bntrouteb").prop('disabled', false);
+			// });
+
+			$("#btncheckroute").click(function(event) {
+				//$(".clickable-row").not(this).removeClass('selected');
+				$(this).toggleClass('selected');
+				$("#btnroutea").prop("disabled", !$(this).hasClass('selected'));
+				$("#bntrouteb").prop("disabled", !$(this).hasClass('selected'));
+			});
+
+    });
+	</script>
+
 	
-  $("#datepicker-autoClose").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
-</script>
 

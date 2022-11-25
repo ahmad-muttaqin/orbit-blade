@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Setting Entitlement</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,12 +20,28 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-	<!-- ================== END page-css ================== -->
-</head>
 
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+
+
+
+
+	
+	
+	<!-- ================== END page-css ================== -->
+	<style>
+		
+
+		</style>
+		</head>
+		<body>
+</head>
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -455,8 +469,7 @@
                                     <div class="menu-text text-gray">Overtime Report</div>
                                 </a>
                             </div>
-                                </div>
-                                
+                                </div>      
                             </div>
                             <div class="menu-item has-sub">
                                 <a href="#" class="menu-link">
@@ -482,10 +495,7 @@
                                     <div class="menu-text text-gray">Status Report</div>
                                 </a>
                             </div>
-                            
                         </div>
-                                
-                                
                             </div>
                             <div class="menu-item">
 								<a href="#" class="menu-link">
@@ -593,231 +603,230 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
+	<h1 class="page-header">Settings| Entitlement Group</h1>
+    <div class="panel panel">
+			<div class="panel-body">
+                
+				<div class="row">	
+                    <h3>Entitlement Group List</h3>
+                </div>
+                <div class="row p-2">
+                    <div class="form-check">
+                        <a href="/setting/addentitlement" type="button" class="btn btn-primary " name="" id=""><i class="fa fa-plus"></i> Entitlement Group</a>
+                    </div>
+			    </div>
+                
+                <div class="row p-2">	
+                    <table id="tableSaveArea"  class="table table-striped table-bordered align-middle">
+                        <thead>
+                          <tr>	
+                            <th  data-orderable="false">Action</th>
+                            <th class="text-nowrap">Status</th>
+							<th class="text-nowrap">Claim <BR> benefit</th>
+							<th class="text-nowrap">Subsistence <BR> Allowence</th>
+							<th class="text-nowrap">Entitlement <BR> Group Name</th>
+							<th class="text-nowrap">Local <BR> Travelling</th>
+                            <th class="text-nowrap">Overseas <BR> Travelling</th>
+                            <th class="text-nowrap">Lodging <BR> Allowance</th>
+                                <th class="text-nowrap">Local Hotel</th>
+                            <th class="text-nowrap">Car<BR>  Mileage</th>
+                            <th class="text-nowrap">Mcycle<BR> Mileage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                        <div class="dropdown-menu">
+                                            <a href="/setting/updateentitlement" id="" data-id="" class="dropdown-item">Update</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item">Delete</a>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input"   name="mainCompanion"  type="checkbox" role="" id=""  checked>
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimbenefit">view</button></td>
+                                <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subsistenceallowance">view</button></i></td>
+                                <td>Chairman</td>
+                                <td>F</td>
+                                <td>F</td>
+                                <td>None</td>
+                                <td>Actual</td>
+                               <td>0.7</td>
+                               <td>0.4</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                        <div class="dropdown-menu">
+                                            <a href="/setting/updateentitlement" id="" data-id="" class="dropdown-item">Update</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item">Delete</a>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input"   name="mainCompanion"  type="checkbox" role="" id=""  >
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimbenefit">view</button></i></td>
+                                <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subsistenceallowance">view</button></td>
+                                <td>CEO</td>
+                                <td>C</td>
+                                <td>C</td>
+                                <td>None</td>
+                                <td>350</td>
+                               <td>0.7</td>
+                               <td>0.4</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                        <div class="dropdown-menu">
+                                            <a href="/setting/updateentitlement" id="" data-id="" class="dropdown-item">Update</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item">Delete</a>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input"   name="mainCompanion"  type="checkbox" role="" id=""  checked>
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimbenefit">view</button></i></td>
+                                <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subsistenceallowance">view</button></i></td>
+                                <td>Executive/ Officer</td>
+                                <td>Y</td>
+                                <td>Y</td>
+                                <td>80</td>
+                                <td>150</td>
+                               <td>0.7</td>
+                               <td>0.4</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="row p-2">
+                        <div class="col align-self-start">
+                            <a href="/setting" class="btn btn-light" style="color: black" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+                        </div>
+                  </div>
+				</div>
+            </div>
+            
+				
+		<!-- Modal  claim benefit-->
+        <div class="modal fade" id="claimbenefit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Claim Benefit</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <table  id="tableSaveArea"  class="table table-striped table-bordered align-middle">
+                <thead>
+                  <tr>	
+                    <th class="text-nowrap">No</th>
+                    <th class="text-nowrap">Area</th>
+                    <th class="text-nowrap">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MALAYSIA</td>
+                        <td>60</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>MIDDLE EAST</td>
+                        <td>170</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>SINGAPORE/BRUNEI</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{-- modal subsistence --}}
+  <div class="modal fade" id="subsistenceallowance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Subsistence Allowance</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <table  id="tableSaveArea"  class="table table-striped table-bordered align-middle">
+                <thead>
+                  <tr>	
+                    <th class="text-nowrap">No</th>
+                    <th class="text-nowrap">Area</th>
+                    <th class="text-nowrap">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MALAYSIA</td>
+                        <td>60</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>MIDDLE EAST</td>
+                        <td>170</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>SINGAPORE/BRUNEI</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
 	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/typeoflog"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-
-			<br>
-			<h3 class="mt-10px"></i> eClaim Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/eclaimgeneral"><i class="fa fa-wrench fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >General</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimdate"><i class="fas fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Date</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimcategory"><i class="fa fa-file fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Category</h5> 
-					</div>
-
-				
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/entitlement"><i class="fa fa-briefcase fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Entitlement <br> Group</h5> 
-						</div>
-
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/cashadvancecontroller"><i class="fa fa-gamepad fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Cash Advanced <br> Controller</h5> 
-						</div>
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/claimmonth"><i class="fa fa-calendar-week fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Claim Month <br> Controller</h5> 
-						</div>
-
-				
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<!-- END row -->
-		</div>
-		
-	</div>
-	
-</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+
+
 	<!-- ================== END core-js ================== -->
-	
-	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
+
 </body>
 </html>
+
 <script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
 	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -845,20 +854,24 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 	
 
-	
+
 	<script>
-$('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
-
+		$(document).ready(function () {
+			$('#tableSaveArea')
+					.dataTable({
+					"responsive": true,
+					"pageLength": 50,
+					"bPaginate": true,
+                    });
+                    
+                    
+			$('[data-toggle="tooltip1"]').tooltip();  
+			$('[data-toggle="tooltip2"]').tooltip();   
+			 
+		});
+	</script>
 

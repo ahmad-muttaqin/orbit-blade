@@ -211,19 +211,112 @@ Route::get('/timesheet/timesheetemployeereportall', function () {
     return view('timesheetemployeereportall');
 });
 Route::get('/eclaim/myclaim', function () {
-    return view('eclaim/eclaimmyclaim');
+    return view('eclaim/myclaim/eclaimmyclaim');
 });
 Route::get('/eclaim/viewmyclaim', function () {
-    return view('eclaim/eclaimviewmyclaim');
+    return view('eclaim/myclaim/viewmyclaim/eclaimviewmyclaim');
 });
 Route::get('/eclaim/applygeneralclaim', function () {
-    return view('eclaim/eclaimapplygeneral');
+    return view('eclaim/myclaim/applyclaim/eclaimapplygeneral');
 });
 Route::get('/eclaim/applyclaim', function () {
-    return view('eclaim/eclaimapplyclaim');
+    return view('eclaim/myclaim/applyclaim/eclaimapplyclaim');
+});
+Route::get('/eclaim/cashadvance', function () {
+    return view('eclaim/myclaim/applyclaim/eclaimcashadvance');
+});
+Route::get('/eclaim/appealclaim', function () {
+    return view('eclaim/myclaim/applyclaim/eclaimappealclaim');
+});
+Route::get('/eclaim/viewgeneralclaim', function () {
+    return view('eclaim/myclaim/viewmyclaim/eclaimviewgeneralclaim');
+});
+Route::get('/eclaim/updateapply', function () {
+    return view('eclaim/myclaim/updateclaim/eclaimupdateapply');
+});
+Route::get('/eclaim/viewcashprojectoutstation', function () {
+    return view('eclaim/myclaim/viewmyclaim/eclaimviewcapo');
+});
+Route::get('/eclaim/viewcashprojectnoneoutstation', function () {
+    return view('eclaim/myclaim/viewmyclaim/eclaimviewcapno');
+});
+Route::get('/eclaim/viewcashothersoutstation', function () {
+    return view('eclaim/myclaim/viewmyclaim/eclaimviewcaoo');
+});
+Route::get('/eclaim/viewcashothersnoneoutstation', function () {
+    return view('eclaim/myclaim/viewmyclaim/eclaimviewcaono');
+});
+//update
+Route::get('/eclaim/updatemontly', function () {
+    return view('eclaim/myclaim/updateclaim/updatemtc');
+});
+Route::get('/eclaim/updategeneral', function () {
+    return view('eclaim/myclaim/updateclaim/updategnc');
+});
+Route::get('/eclaim/updateappeal', function () {
+    return view('eclaim/myclaim/updateclaim/updateappeal');
 });
 //
-
+Route::get('/setting/cashadvancecontroller', function () {
+    return view('eclaim/setting/cashadvancecontroller/cashAdvancedController');
+});
+Route::get('/setting/claimcategory', function () {
+    return view('eclaim/setting/claimcategory/Claim-Category');
+});
+Route::get('/setting/addclaim', function () {
+    return view('eclaim/setting/claimcategory/add/add-claim');
+});
+Route::get('/setting/updateclaim', function () {
+    return view('eclaim/setting/claimcategory/update/update-claim');
+});
+Route::get('/setting/claimdate', function () {
+    return view('eclaim/setting/claimdate/Claim-Date');
+});
+Route::get('/setting/claimmonth', function () {
+    return view('eclaim/setting/claimmonth/claimmonth');
+});
+Route::get('/setting/entitlement', function () {
+    return view('eclaim/setting/entitlement/settingEntitlement');
+});
+Route::get('/setting/addentitlement', function () {
+    return view('eclaim/setting/entitlement/add/AddEntitlementGroup');
+});
+Route::get('/setting/updateentitlement', function () {
+    return view('eclaim/setting/entitlement/update/UpdateEntitlementGroup');
+});
+Route::get('/setting/eclaimgeneral', function () {
+    return view('eclaim/setting/general/settinggeneral');
+});
+//approval
+Route::get('/claimapproval/supervisor', function () {
+    return view('eclaim/claimapproval/supervisor/supervisorapproval');
+});
+Route::get('/claimapproval/viewmtcsupervisor', function () {
+    return view('eclaim/claimapproval/supervisor/view/viewmtc');
+});
+Route::get('/claimapproval/viewgncsupervisor', function () {
+    return view('eclaim/claimapproval/supervisor/view/viewgnc');
+});
+Route::get('/claimapproval/viewappealsupervisor', function () {
+    return view('eclaim/claimapproval/supervisor/view/viewappeal');
+});
+// Route::get('/claimapproval/challenge', function () {
+//     return view('eclaim/claimapproval/supervisor/challengeroute');
+// });
+//view supervisor
+Route::get('/claimapproval/viewprojectoutstation', function () {
+    return view('eclaim/claimapproval/supervisor/view/supervisorviewcapo');
+});
+Route::get('/claimapproval/viewprojectnoneoutstation', function () {
+    return view('eclaim/claimapproval/supervisor/view/supervisorviewcapno');
+});
+Route::get('/claimapproval/viewothersoutstation', function () {
+    return view('eclaim/claimapproval/supervisor/view/supervisorviewcaoo');
+});
+Route::get('/claimapproval/viewothersnoneoutstation', function () {
+    return view('eclaim/claimapproval/supervisor/view/supervisorviewcaono');
+});
+//
 Route::get('/report/reportingclaimreport', function () {
     return view('eclaim/reportingclaimreport');
 });
