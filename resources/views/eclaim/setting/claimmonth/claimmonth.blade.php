@@ -4,30 +4,37 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Timesheet </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
 	
     <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
 	<!-- ================== BEGIN core-css ================== -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
-	<!-- ================== END core-css ================== -->
-	
-	<!-- ================== BEGIN page-css ================== -->
-	<link href="../assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
-	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
-	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
-	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-	<!-- ================== END page-css ================== -->
+	<link href="https://fonts.googleapis.com" rel="preconnect"/>
+	<link href="https://fonts.gstatic.com" crossorigin rel="preconnect"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet"/>
+    <link href="../assets/css/vendor.min.css" rel="stylesheet"/>
+	<link href="../assets/css/default/app.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet"/>
+	<link href="../assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet"/>
+	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet"/>
+	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet"/>
+	<link href="../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"/>
+    <link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet"/>
+    <link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
+    <link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet"/>
+    <!-- ================== END core-css ================== -->
 </head>
 
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -593,221 +600,269 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
+    
+	<h1 class="page-header">Claim <small>| Claim for the Month </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
 		
 		<!-- BEGIN panel-heading -->
-		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/typeoflog"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-
-			<br>
-			<h3 class="mt-10px"></i> eClaim Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/eclaimgeneral"><i class="fa fa-wrench fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >General</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimdate"><i class="fas fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Date</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimcategory"><i class="fa fa-file fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Category</h5> 
-					</div>
-
-				
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/entitlement"><i class="fa fa-briefcase fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Entitlement <br> Group</h5> 
-						</div>
-
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/cashadvancecontroller"><i class="fa fa-gamepad fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Cash Advanced <br> Controller</h5> 
-						</div>
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/claimmonth"><i class="fa fa-calendar-week fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Claim Month <br> Controller</h5> 
-						</div>
-
-				
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<!-- END row -->
-		</div>
 		
+		<div class="panel-heading">
+		<div class="col-md-6">
+            <div class="row p-2">
+                <h3> Claim Report For The Month </h3>
+            </div>
+            <div class="row p-2 col-md-2">
+                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#newcftm" class="btn btn-primary">+ Add Claim</a></br>
+            </div>
+        </div>
+			<h4 class="panel-title"></h4>
+		</div>
+		<!-- END panel-heading -->
+	<!-- END #app -->
+    <div class="panel-body">
+        <div class="row p-2">
+            <table id="tableformonth" class="table table-striped table-bordered align-middle">
+            <thead>
+                <tr>
+                <th width="1%">No</th>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th>Status</th>
+                    <th>Feature</th>
+                    <th>Added By</th>
+                    <th>Added Time</th>
+                    <th>Modified By</th>
+                    <th>Modified Time</th>
+                    <th width="9%" data-orderable="false" class="align-middle">Action</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr class="even gradeC">
+                    <td width="1%" class="fw-bold text-dark">1</td>
+                    <td>2022</td>
+                    <td>June</td>
+                    <td>hello</td>
+                    <td>P01</td>
+                    <td>AFIQAH</td>
+                    <td>SDD</td>
+                    <td>PV012254</td>
+                    <td>12345</td>
+                    <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#updatecftm" class="btn btn-outline-green">
+                        <i class="fa fa-pencil-alt"></i>
+                    </a>
+                        <a href="javascript:;" class="btn btn-outline-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="even gradeC">
+                    <td width="1%" class="fw-bold text-dark">2</td>
+                    <td>2024</td>
+                    <td>July</td>
+                    <td>hello</td>
+                    <td>P01</td>
+                    <td>AFIQAH</td>
+                    <td>SDD</td>
+                    <td>PV012254</td>
+                    <td>12345</td>
+                    <td><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#updatecftm" class="btn btn-outline-green">
+                        <i class="fa fa-pencil-alt"></i>
+                    </a>
+                        <a href="javascript:;" class="btn btn-outline-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+               <div class="row p-2">
+                    <div class="col align-self-start">
+                      <a href="/setting" class="btn btn-light" style="color: black" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+                    </div>
+                </div>
+		</div>
+        
 	</div>
 	
-</div>
-	<!-- END #app -->
-	
+
+    <div class="modal fade" id="newcftm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">New Claim for the Month</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<div class="modal-body">
+					  <form>
+                      <div class="row p-2">
+                            <div class ="col-md-2">
+                                <label class="form-label">Year</label>
+                            </div>
+                            <div class ="col-md-10">
+                                <select class='form-select'>
+                                    <option value="0" label="Select Year" selected= "selected">Please Choose</option>
+                                    <option value="1" label= "2022"></option>
+                                    <option value="2" label= "2023"></option>
+                                    <option value="3" label= "2024"></option>
+                                    <option value="4" label= "2025"></option>
+                                </select>
+                            </div>
+						</div>
+                   
+                        <div class="row p-2">
+                            <div class ="col-md-2">
+						        <label class="form-label">Month</label>
+                            </div>
+                            <div class ="col-md-10">
+                                <select class='form-select'>
+                                    <option value="0" label="Select Month" selected= "selected">Please Choose</option>
+                                    <option value="1" label= "January"></option>
+                                    <option value="2" label= "February"></option>
+                                    <option value="3" label= "March"></option>
+                                    <option value="4" label= "April"></option>
+                                    <option value="5" label= "May"></option>
+                                    <option value="6" label= "June"></option>
+                                    <option value="7" label= "July"></option>
+                                    <option value="8" label= "August"></option>
+                                    <option value="9" label= "September"></option>
+                                    <option value="10" label= "October"></option>
+                                    <option value="11" label= "November"></option>
+                                    <option value="12" label= "December"></option>
+                                </select>
+                            </div>
+					    </div>
+                   
+
+						<div class="row p-2">
+                            <div class ="col-md-2">
+                                <label class="form-label">Status</label>
+                            </div>
+                            <div class ="col-md-10">
+                                    <select class='form-select'>
+                                        <option value="0" label="Select Status" selected= "selected">Please Choose</option>
+                                        <option value="1" label= "Expired"></option>
+                                        <option value="2" label= "Open"></option>
+                                    </select>
+                            </div>
+						</div>
+
+						<div class="row p-2">
+                            <div class ="col-md-2">
+                                <label class="form-label">Feature</label>
+                            </div>
+                            <div class ="col-md-10">
+                            <select class='form-select'>
+                                <option value="0" label="Select Feature" selected= "selected">Please Choose</option>
+                                <option value="1" label= "Apply"></option>
+                                <option value="2" label= "Appeal"></option>
+                            </select>
+                            </div>
+						</div>
+                    </div>  
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                    </form>
+					
+				  </div>
+				</div>
+			  </div>
+
+
+
+	<div class="modal fade" id="updatecftm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Update Claim for the Month</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <form>
+                      <div class="row p-2">
+                            <div class ="col-md-2">
+                                <label class="form-label">Year</label>
+                            </div>
+                            <div class ="col-md-10">
+                                <select class='form-select'>
+                                    <option value="0" label="Select Year" selected= "selected">Please Choose</option>
+                                    <option value="1" label= "2022"></option>
+                                    <option value="2" label= "2023"></option>
+                                    <option value="3" label= "2024"></option>
+                                    <option value="4" label= "2025"></option>
+                                </select>
+                            </div>
+						</div>
+                   
+                        <div class="row p-2">
+                            <div class ="col-md-2">
+						        <label class="form-label">Month</label>
+                            </div>
+                            <div class ="col-md-10">
+                                <select class='form-select'>
+                                    <option value="0" label="Select Month" selected= "selected">Please Choose</option>
+                                    <option value="1" label= "January"></option>
+                                    <option value="2" label= "February"></option>
+                                    <option value="3" label= "March"></option>
+                                    <option value="4" label= "April"></option>
+                                    <option value="5" label= "May"></option>
+                                    <option value="6" label= "June"></option>
+                                    <option value="7" label= "July"></option>
+                                    <option value="8" label= "August"></option>
+                                    <option value="9" label= "September"></option>
+                                    <option value="10" label= "October"></option>
+                                    <option value="11" label= "November"></option>
+                                    <option value="12" label= "December"></option>
+                                </select>
+                            </div>
+					    </div>
+                   
+
+						<div class="row p-2">
+                            <div class ="col-md-2">
+                                <label class="form-label">Status</label>
+                            </div>
+                            <div class ="col-md-10">
+                                    <select class='form-select'>
+                                        <option value="0" label="Select Status" selected= "selected">Please Choose</option>
+                                        <option value="1" label= "Expired"></option>
+                                        <option value="2" label= "Open"></option>
+                                    </select>
+                            </div>
+						</div>
+
+						<div class="row p-2">
+                            <div class ="col-md-2">
+                                <label class="form-label">Feature</label>
+                            </div>
+                            <div class ="col-md-10">
+                            <select class='form-select'>
+                                <option value="0" label="Select Feature" selected= "selected">Please Choose</option>
+                                <option value="1" label= "Apply"></option>
+                                <option value="2" label= "Appeal"></option>
+                            </select>
+                            </div>
+						</div>
+                    </div>  
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+                    </form>
+					
+				  </div>
+				</div>
+			  </div>
+
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
-	<!-- ================== END core-js ================== -->
-	
-	<!-- ================== BEGIN page-js ================== -->
 	<script src="../assets/plugins/d3/d3.min.js"></script>
 	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
 	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
@@ -815,16 +870,27 @@
 	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
 	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
 	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
-</body>
-</html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/moment/min/moment.min.js"></script>
+    <script src="../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="../assets/plugins/select2/dist/js/select2.min.js"></script>
+    <script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
+    <script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+    <script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
+
+    <script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
 	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
 	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
 	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
 	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
@@ -845,20 +911,42 @@
 	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
 
-	
-	<script>
-$('#data-table-default').DataTable({
-    responsive: true
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net-fixedcolumns/js/dataTables.fixedColumns.min.js"></script>
+<script src="../assets/plugins/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.min.js"></script>
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+    
+	<!-- ================== END core-js ================== -->
+</body>
+</html>
+	<!-- required files -->
+<!-- <script>
+  $('#tableformonth').DataTable({
+    responsive: true,
+    dom: '<"row"<"col-sm-5"B><"col-sm-7"fr>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+    buttons: [
+      { extend: 'copy', className: 'btn-sm' },
+      { extend: 'csv', className: 'btn-sm' },
+      { extend: 'excel', className: 'btn-sm' },
+      { extend: 'pdf', className: 'btn-sm' },
+      { extend: 'print', className: 'btn-sm' }
+    ],
   });
-</script>
+</script> -->
+
 <script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
+  $('#tableformonth').DataTable({
+    // responsive: true,
+    // scrollY: true,
+    // scrollX: true,
+    // dom: '<"row"<"col-sm-5"B><"col-sm-7"fr>>t<"row"<"col-sm-5"i><"col-sm-7"p>>',
+	paging: true,
+    // bFilter: true,
   });
 </script>
-<!-- The template to display files available for upload -->
-
-

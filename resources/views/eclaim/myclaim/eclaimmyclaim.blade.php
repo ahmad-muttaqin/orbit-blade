@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Dashboard 1</title>
+	<title>OrbitHRM | Timesheet </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -27,7 +27,9 @@
 
 <body>
 	<!-- BEGIN #loader -->
-	
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
 	<!-- END #loader -->
 
 	<!-- BEGIN #app -->
@@ -207,7 +209,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetapproval" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -215,7 +217,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetrealtime" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -432,7 +434,7 @@
                                 </a>
                             <div class="menu-submenu">
                                 <div class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="/timesheet/reportingstatusreport" class="menu-link">
                                         <div class="menu-icon">
 								             <i class="fa fa-address-card text-gray"></i>
 							            </div>
@@ -440,7 +442,7 @@
                                     </a>
                                     </div>
                                     <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-clock text-gray"></i>
 							    </div>
@@ -448,7 +450,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/timesheet/timesheetovertimereport" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-gear text-gray"></i>
 							    </div>
@@ -599,207 +601,451 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h3 class="page-header">Setting <small>| Show and change application settings</small></h3>
+	<h1 class="page-header">eClaim <small>| My Claim </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
 		
 		<!-- BEGIN panel-heading -->
+		
+		
 		<div class="panel-body">
-		<h3 class="mt-10px"></i> General Settings</h3><br>
-			<!-- BEGIN row -->
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/roles"><i class="fas fa-circle-user fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Roles</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/company"><i class="fas fa-home fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Company</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/department"><i class="fas fa-users fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Department</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/unit"><i class="fas fa-upload fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Unit</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/branch"><i class="fa fa-location-dot fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Branch</h5> 
-					</div>
-				
-				
-				<!-- END col-4 -->
-			</div><br><br><br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/jobgrade"><i class="fas fa-upload fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Job Grade</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/designation"><i class="fas fa-laptop fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Designation</h5> 
-					</div>
-				<!-- END col-4 -->
-
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/employmenttype"><i class="fa fa-address-book fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Employment Type</h5> 
-					</div>
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/sop"><i class="fa fa-circle-info fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">SOP's</h5> 
-					</div>
-					<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/news"><i class="fa fa-bell fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">News</h5> 
-					</div>
-				
-				<!-- END col-4 -->
+		
+		<div class="form-control">	
+		
+		<h3>Claim Overview</h3>
+		<br>
+		<div class="row p-2">	
+			
+			
+			<div class="col-sm-2">
+			
+				<h3 class="text-center">Total Pending Claim Approval:</h3>
+				<h3 class="text-center text-primary ">2</h3>
 			</div>
-			<br>
-			<h3 class="mt-10px"></i> e-Attendance Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-clock-rotate-left fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Clock In Types</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-chart-line fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Working Patterns</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-map-location fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Location</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div><br>
-			<h3 class="mt-10px"></i> Timesheets Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-days fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Timesheets Administrator and Timesheets Period</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-user-group fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Timesheets Group</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/typeoflog"><i class="fa fa-pen-to-square fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Type of Logs</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
-			</div>
-			<br>
-			<h3 class="mt-10px"></i> Configuration - eLeave</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
-				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >Leave Entitlement</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Holiday</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Leave Types</h5> 
-					</div>
-					
-				
-				<!-- END col-4 -->
+			
+			<div class="col-sm-2">
+			
+			<h3 class="text-center">Total Amount Pending Claims:</h3>
+			<h3 class="text-center text-primary">MYR 100.00</h3>
 			</div>
 
-			<br>
-			<h3 class="mt-10px"></i> eClaim Settings</h3> <br>
-			<div class="row text-center">
-				<!-- BEGIN col-4 -->
+			<div class="col-sm-2">
 				
-				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/eclaimgeneral"><i class="fa fa-wrench fa-4x text-blue" ></i></a><br><br>
-					<h5 class="mb-5px" >General</h5> 
-					
-				</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimdate"><i class="fas fa-calendar fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Date</h5> 
-					</div>
-				<!-- END col-4 -->
-				<!-- BEGIN col-4 -->
-				<div class="col-lg-2">
-					<a class="mb-10px" href="/setting/claimcategory"><i class="fa fa-file fa-4x text-blue"></i></a><br><br>
-					<h5 class="mb-5px">Claim Category</h5> 
-					</div>
+			<h3 class="text-center">Total Amount Paid Claims:</h3>
+			<h3 class="text-center text-primary">MYR 600.00</h3>
+			</div>
+			
+			<div class="col-sm-2">
+				
+			<h3 class="text-center">Total Amount Rejected Claims:</h3>
+			<h3 class="text-center text-primary">MYR 0.00</h3>
+			</div>
 
-				
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/entitlement"><i class="fa fa-briefcase fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Entitlement <br> Group</h5> 
+			<div class="col-sm-2">
+			
+			<h3 class="text-center"> Total Pending Cash Advance:</h3>
+			<h3 class="text-center text-primary">2</h3>
+			</div>
+			
+			<div class="col-sm-2">
+			
+			<h3 class="text-center">Total Amount Cash Advance:</h3>
+			<h3 class="text-center text-primary">MYR 0.00</h3>
+			</div>
+			</div>
+		
+		</div>
+		<!-- END panel-heading -->
+		<!-- BEGIN panel-body --><br>
+		<div class="form-control">	
+			<div class="panel-body">
+				<div class="row p-2">	
+					<div class="col-sm-4">	
+						<!-- BEGIN card -->
+					<div class="card text-center border-0">
+						<div class="card-header">
+							<ul class="nav nav-pills card-header-pills">
+								<li class="nav-item" style="margin-left: 5px;"><a href="/eclaim/applygeneralclaim" class="btn btn-primary">+ General Claim</a></li>
+								<li class="nav-item" style="margin-left: 5px;"><a href="/eclaim/cashadvance" class="btn btn-primary">+ Cash Advance</a></li>
+							</ul>
 						</div>
+						<div class="card-body">
+							<div class="tab-content p-0 m-0">
+								<div class="tab-pane fade active show" >
+									<table id="generalclaim" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						
+						<th class="text-nowrap">Year</th>
+						<th class="text-nowrap">Month</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Action</th>
 
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/cashadvancecontroller"><i class="fa fa-gamepad fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Cash Advanced <br> Controller</h5> 
-						</div>
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/claimmonth"><i class="fa fa-calendar-week fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Claim Month <br> Controller</h5> 
-						</div>
 
-				
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td>2022</td>
+						<td>SEPTEMBER</td>
+						<td><span class="badge bg-lime">Open</span></td>
+						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">+ Apply</a></td>
+						
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td><span class="badge bg-danger">Expired</span></td>
+						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>JULY</td>
+						<td><span class="badge bg-danger">Expired</span></td>
+						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+					</tr>
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>JUNE</td>
+						<td><span class="badge bg-danger">Expired</span></td>
+						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+					</tr>
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>MAY</td>
+						<td><span class="badge bg-danger">Expired</span></td>
+						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+					</tr>
+					<tr class="even gradeC">
+						<td>2022</td>
+						<td>APRIL</td>
+						<td><span class="badge bg-danger">Expired</span></td>
+						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+					</tr>
 					
+				</tbody>
+			</table>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- END card -->
 				
-				<!-- END col-4 -->
-			</div>
-			<!-- END row -->
+		
+			
 		</div>
 		
+		
+		<div class=" col-sm-8">	
+			<!-- BEGIN card -->
+			<div class="card text-center border-0">
+						<div class="card-header"> 
+							<ul class="nav nav-pills card-header-pills">
+								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1">Claim</a></li>
+								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2">Cash Advance</a></li>
+							</ul>
+						</div>
+						<div class="card-body">
+							<div class="tab-content p-0 m-0">
+								<div class="tab-pane fade active show" id="card-pill-1">
+								<div class="category-filter">
+									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+										<option value="">Show All</option>
+										<option value="Active">Active</option>
+										<option value="Pending">Pending</option>
+										<option value="Rejected">Amended</option>
+										<option value="Jazz">Paid</option>
+									</select>
+								</div>
+						<table id="claimtable" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Year</th>
+						<th class="text-nowrap">Month</th>
+						<th class="text-nowrap">Claim ID</th>
+						<th class="text-nowrap">Type</th>
+						<th class="text-nowrap">Total Amount</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Status Date</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>102</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-lime">Active</span></td>
+						<td>20/09/2022</td>
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>103</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-warning">Pending</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>104</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>105</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>110</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>2022</td>
+						<td>AUGUST</td>
+						<td>101</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					
+					
+					
+					</tbody>
+				</table> 
+								</div>
+								<div class="tab-pane fade" id="card-pill-2">
+								<div class="category-filter">
+									<select id="Statuscash" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
+										<option value="">Show All</option>
+										<option value="Active">Active</option>
+										<option value="Pending">Pending</option>
+										<option value="Rejected">Amended</option>
+										<option value="Jazz">Paid</option>
+									</select>
+								</div>
+								<table id="cashadvancetable" class="table table-striped table-bordered align-middle">
+				<thead>
+					<tr>
+						
+						<th class="text-nowrap">Action</th>
+						<th class="text-nowrap">Cash Advance ID</th>
+						<th class="text-nowrap">Type of Cash Advance</th>
+						<th class="text-nowrap">Request Date</th>
+						<th class="text-nowrap">Travel Date</th>
+						<th class="text-nowrap">Amount</th>
+						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap">Status Date</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd gradeX">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewcashprojectoutstation" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>101</td>
+						<td>Project ( Outstation )</td>
+						<td>102</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-lime">Active</span></td>
+						<td>20/09/2022</td>
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewcashprojectnoneoutstation" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>102</td>
+						<td>Project ( Non-Outstation )</td>
+						<td>103</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-warning">Pending</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewcashothersoutstation" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>103</td>
+						<td>Others ( Outstation )</td>
+						<td>104</td>
+						<td>MTC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-success">Amended</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					<tr class="even gradeC">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewcashothersnoneoutstation" class="dropdown-item">View Claim</a>
+									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+								</div>
+							</div>
+						</td>
+						<td>104</td>
+						<td>Others ( Non-Oustation )</td>
+						<td>105</td>
+						<td>GNC</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-danger">Rejected</span></td>
+						<td>20/09/2022</td>
+						
+					</tr>
+					
+					
+					
+					
+					
+					</tbody>
+				</table> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END card -->
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<!-- END row -->
 	
-</div>
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -818,47 +1064,119 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
-	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
-	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
-	<script src="/assets/js/demo/render.highlight.js"></script>
-	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/moment/min/moment.min.js"></script>
-	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-	
+	<!-- required files -->
+<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
 
-	
-	<script>
-$('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
+
 <script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<!-- The template to display files available for upload -->
+  
 
+  $("document").ready(function () {
+	$('#generalclaim').DataTable({
+	"searching": false,
+	"lengthChange": false,
+	lengthMenu: [5, 10],
+    responsive: false,
+	info: false
+
+	
+  });
+
+      $("#claimtable").dataTable({
+        "searching": true,
+		"lengthChange": false,
+		lengthMenu: [5, 10],
+		responsive: false,
+		info: false,
+		dom: '<"top">rt<"bottom"p><"clear">',
+      });
+      //Get a reference to the new datatable
+      var table = $('#claimtable').DataTable();
+      //Take the category filter drop down and append it to the datatables_filter div. 
+      //You can use this same idea to move the filter anywhere withing the datatable that you want.
+      $("#claimtable_filter.dataTables_filter").append($("#Statusclaim"));
+      
+      //Get the column index for the Category column to be used in the method below ($.fn.dataTable.ext.search.push)
+      //This tells datatables what column to filter on when a user selects a value from the dropdown.
+      //It's important that the text used here (Category) is the same for used in the header of the column to filter
+      var categoryIndex = 0;
+      $("#claimtable th").each(function (i) {
+        if ($($(this)).html() == "Status") {
+          categoryIndex = i; return false;
+        }
+      });
+      //Use the built in datatables API to filter the existing rows by the Category column
+      $.fn.dataTable.ext.search.push(
+        function (settings, data, dataIndex) {
+          var selectedItem = $('#Statusclaim').val()
+          var category = data[categoryIndex];
+          if (selectedItem === "" || category.includes(selectedItem)) {
+            return true;
+          }
+          return false;
+        }
+      );
+      //Set the change event for the Category Filter dropdown to redraw the datatable each time
+      //a user selects a new filter.
+      $("#Statusclaim").change(function (e) {
+        table.draw();
+      });
+      table.draw();
+	  
+	  $("#cashadvancetable").dataTable({
+        "searching": true,
+		"lengthChange": false,
+		lengthMenu: [5, 10],
+		responsive: false,
+		info: false,
+		dom: '<"top">rt<"bottom"p><"clear">',
+      });
+
+	  var table2 = $('#cashadvancetable').DataTable();
+      //Take the category filter drop down and append it to the datatables_filter div. 
+      //You can use this same idea to move the filter anywhere withing the datatable that you want.
+      $("#cashadvancetable_filter.dataTables_filter").append($("#Statuscash"));
+
+	  var categoryIndex2 = 0;
+      $("#cashadvancetable th").each(function (i) {
+        if ($($(this)).html() == "Status") {
+          categoryIndex2 = i; return false;
+        }
+      });
+      //Use the built in datatables API to filter the existing rows by the Category column
+      $.fn.dataTable.ext.search.push(
+        function (settings, data, dataIndex) {
+          var selectedItem2 = $('#Statuscash').val()
+          var category2 = data[categoryIndex2];
+          if (selectedItem2 === "" || category2.includes(selectedItem2)) {
+            return true;
+          }
+          return false;
+        }
+      );
+	  $("#Statuscash").change(function (e) {
+        table2.draw();
+      });
+      table2.draw();
+    });
+
+  
+	  
+	
+</script>
 
