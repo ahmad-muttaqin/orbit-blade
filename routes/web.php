@@ -300,6 +300,11 @@ Route::get('/claimapproval/viewgncsupervisor', function () {
 Route::get('/claimapproval/viewappealsupervisor', function () {
     return view('eclaim/claimapproval/supervisor/view/viewappeal');
 });
+//cash advnce
+Route::get('/claimapproval/supervisorcashadvance', function () {
+    return view('eclaim/claimapproval/supervisor/cashadvance/approvalcashadvance');
+});
+
 // Route::get('/claimapproval/challenge', function () {
 //     return view('eclaim/claimapproval/supervisor/challengeroute');
 // });
