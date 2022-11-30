@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	    <h1 class="page-header">eClaim | Cash Advance Approval | Supervisor</h1>
+	    <h1 class="page-header">eClaim | Cash Advance Approval | Head Of Department</h1>
         <div class="panel panel">
             <div class="panel-body">
                 <div class="form-control">
@@ -641,9 +641,18 @@
                             <div class="row">
                                 <div class="col d-flex justify-content-start">
                                     <ul class="nav nav-pills">
-                                    <li class="nav-item">
-                                        <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Cash Advance</a>   
-                                    </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Active</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">Approved</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Rejected</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-4" data-bs-toggle="tab" class="nav-link ">Closed</a>   
+                                        </li>
                                     
                                     </ul>
                                 </div>
@@ -728,7 +737,7 @@
                     </div>
                         <div class="tab-content panel p-3 rounded">
                             <div class="tab-pane fade active show" id="default-tab-1">
-                                {{-- claim approval --}}
+                                <!-- {{-- claim approval --}} -->
                                 <table  id="tablecashadvance"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                         <tr>

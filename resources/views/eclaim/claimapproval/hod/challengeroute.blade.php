@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
 	<meta charset="utf-8" />
-	<title>eclaim | eclaim approval</title>
+	<title>OrbitHRM | Setting General</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -24,6 +24,15 @@
 	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
 
+
+	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
+	{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 --}}
+
+
+	
+	
 	<!-- ================== END page-css ================== -->
 	<style>
 	
@@ -601,316 +610,203 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	    <h1 class="page-header">eClaim | Cash Advance Approval | Supervisor</h1>
-        <div class="panel panel">
-            <div class="panel-body">
-                <div class="form-control">
-                    
-                 <div class="form-control">
-                    <div class="row p-2">
-                        <h3>Cash Advance Overview</h3>
-                        <div class="row p-2">	
-                            <div class="col-sm-3">
-                                <h3 class="text-center">Total <br> Cash Advance:</h3>
-                                <h3 class="text-center text-primary ">2</h3>
-                            </div>
-                            
-                            <div class="col-sm-3">
-                            
-                            <h3 class="text-center">Total  Pending Cash <br> Advance: </h3>
-                            <h3 class="text-center text-primary">3</h3>
-                            </div>
-                
-                            <div class="col-sm-3">
-                                
-                                <h3 class="text-center">Total Rejected <br> Cash Advance:</h3>
-                                <h3 class="text-center text-primary">6</h3>
-                            </div>
-                            
-                            <div class="col-sm-3">
-                                <h3 class="text-center">Total Closed <br> Cash Advance:</h3>
-                                <h3 class="text-center text-primary">5</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="form-control">
-                    <div class="row p-2">
-                        <div class="card-header">
-                            <div class="row">
-                                <div class="col d-flex justify-content-start">
-                                    <ul class="nav nav-pills">
-                                    <li class="nav-item">
-                                        <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Cash Advance</a>   
-                                    </li>
-                                    
-                                    </ul>
-                                </div>
-                                <div class="col d-flex justify-content-end">
-                                    <button class="btn btn-primary"  type="button" id="filter"> <i class="fa fa-filter" aria-hidden="true"></i></button>&nbsp;
-                                    <button class="btn btn-primary"  type="button"> <i class='far fa-file-pdf'></i></button>&nbsp;
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="filteronoff" style="display: none">
-                        <div class="form-control">						
-                            <div class="row p-2">
-                                <div class="col-md-2">	
-                                        <label for="employee name" class="form-label">Employee Name</label>
-                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                        <option  selected value="all_employee">All Employee</option>
-                                        </select>			
-                                </div>
-                                <div class="col-md-2">
-                                            <label for="employee name" class="form-label">Month</label>
-                                            <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                <option  selected value="all_employee">Select Month</option>
-                                                <option   value="all_employee">January</option>
-                                                <option   value="all_employee">February</option>
-                                                <option   value="all_employee">Mac</option>
-                                                <option   value="all_employee">April</option>
-                                                <option   value="all_employee">Mei</option>
-                                                <option   value="all_employee">June</option>
-                                                <option   value="all_employee">July </option>
-                                                <option   value="all_employee">August</option>
-                                                <option   value="all_employee">September</option>
-                                                <option   value="all_employee">October</option>
-                                                <option   value="all_employee">November</option>
-                                                <option   value="all_employee">Disember</option>
-                                            </select>
-                                </div>
-                                <div class="col-md-2">
-                                            <label for="employee name" class="form-label">Claim Type</label>
-                                            <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                <option  selected value="all_employee">Select Claim Type</option>
-                                                <option   value="all_employee">MTC  </option>
-                                                <option   value="all_employee">GNC  </option>
-                                            </select>						
-                                </div>
-                                <div class="col-md-2">
-                                            <label for="employee name" class="form-label">Status</label>
-                                            <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                <option  selected value="">Select Status</option>
-                                                <option   value="">Pending</option>
-                                                <option value="">Approved</option>
-                                                <option value="">Rejected</option>
-                                                <option value="">Amended</option>
-                                                <option value="">Cancelled</option>
-                                            </select>
-                                </div>
+		<h3 class="page-header">eClaim | Claim Approval | Finance | Challenge Route </h3>
+	    <div class="panel-body">
+            <div class="form-control">
+					<h3>*Please click on "Check route" button to enable "Choose Route " button</h3><br>
+					<div class="row p-2">
+						<div class="col-md-5 align-self-start">
+							<div class="row p-2">
+								<div class="form-control">
+									<div class="row p-2">
+										<div class="col align-self-start">
+										  <h4>Destination A</h4>
+										</div>
+										
+										<div class="col d-flex justify-content-end">
+										  <button class="btn btn-primary btn-sm" id="btnroutea" type="button" disabled> Choose Route A</button>
+										</div>
+									</div>
+									  <br>
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											   <h5> Start address </h5>
+										</div>
+										<div class="col">
+											<h5> : Kastam Presint 8, Putrajaya</h5>
+										</div>
+								   </div>
+		
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact Start Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.147523,101734331</h5>
+										</div>
+								   </div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> End Address </h5>
+										</div>
+										<div class="col">
+											<h5> : Edaran IT Services, WPKL</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact End Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.147523,101734331</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Activity </h5>
+										</div>
+										<div class="col">
+											<h5> : Office <i class="fa fa-arrow-right" aria-hidden="true"></i> My project</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-2 align-self-center"></div>
 
-                                <div class="col-md-2"></div>
+						<div class="col-md-5 align-self-end">
+							<div class="row p-2">
+								<div class="form-control">
+									<div class="row p-2">
+										<div class="col align-self-start">
+										  <h4>Destination B</h4>
+										</div>
+										
+										<div class="col d-flex justify-content-end">
+										  <button class="btn btn-primary btn-sm" id="bntrouteb" type="button" disabled> Choose Route B</button>
+										</div>
+									</div>
+									  <br>
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											   <h5> Start address </h5>
+										</div>
+										<div class="col">
+											<h5> : Jalan Mersing, Putrajaya</h5>
+										</div>
+								   </div>
+		
+								   <div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact Start Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.13232523,101734331</h5>
+										</div>
+								   </div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> End Address </h5>
+										</div>
+										<div class="col">
+											<h5> : Edaran IT Services, WPKL</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Exact End Coordinate </h5>
+										</div>
+										<div class="col">
+											<h5> : 3.1475223,101734331</h5>
+										</div>
+									</div>
+		
+									<div class="row p-2">
+										<div class="col-sm-4">
+											<h5> Activity </h5>
+										</div>
+										<div class="col">
+											<h5> : Home <i class="fa fa-arrow-right" aria-hidden="true"></i> My project</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col d-flex justify-content-start">
+							<div class="row p-2">
+								<div class="col">
+									<h4>Mileage:</h4>
+								</div>
+								<div class="col">
+									<h4>35KM</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col d-flex justify-content-center">
+							<button class="btn btn-primary" id="btncheckroute">Check Route</button>
+						</div>
+						<div class="col d-flex justify-content-end">
+							<div class="row p-2">
+								<div class="col">
+									<h4>Mileage:</h4>
+								</div>
+								<div class="col">
+									<h4>42KM</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row p-2">
+						<div class="col-md-5 align-self-start">
+							<div class="row p-2">
 
-                                <div class="col">
-                                    <div class="row-p-2">
-                                        <label for="test"></label>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <button class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                                    </div>
-                                </div>&nbsp;
-
-                                <div class="col">
-                                    <div class="row-p-2">
-                                        <label for="test"></label>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <button class="btn btn-primary">Reset</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="tab-content panel p-3 rounded">
-                            <div class="tab-pane fade active show" id="default-tab-1">
-                                {{-- claim approval --}}
-                                <table  id="tablecashadvance"  class="table table-striped table-bordered align-middle">
-                                    <thead>
-                                        <tr>
-                                            <th  data-orderable="false"></th>	
-                                            <th  data-orderable="false">Action</th>
-                                            <th class="text-nowrap">Cash Advance ID</th>
-                                            <th class="text-nowrap">Employee Name</th>
-                                            <th class="text-nowrap">Type of Cash Advance</th>
-                                            <th class="text-nowrap">Request Date</th>
-                                            <th class="text-nowrap">Travel Date</th>
-                                            <th class="text-nowrap"> Amount</th>
-                                            <th class="text-nowrap">Status</th>
-                                            <th class="text-nowrap">Status  Date</th>
-                                            <th class="text-nowrap">Category</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
-                                            <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                                <div class="dropdown-menu">
-                                                    <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                                </div>
-                                            <td>201</td>
-                                            <td>Marimar</td>
-                                            <td>Project  (Outstation)</td>
-                                            <td>20/7/2022</td>
-                                            <td>24/7/2022</td>
-                                            <td>MYR130</td>
-                                            <td>Pending</td>
-                                            <td>21/7/2022</td>
-                                            <td>PO</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
-                                            <td>
-                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                                <div class="dropdown-menu">
-                                                    <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                                </div>
-                                            </td>
-                                            <td>202</td>
-                                            <td>Syqfiq</td>
-                                            <td>Project (Non-Outstation)</td>
-                                            <td>14/7/2022</td>
-                                            <td>23/7/2022</td>
-                                            <td>MYR250.00</td>
-                                            <td>Pending</td>
-                                            <td>21/07/2022</td>
-                                            <td>PNO</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
-                                            <td>
-                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                                <div class="dropdown-menu">
-                                                    <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                                </div>
-                                            </td>
-                                            <td>202</td>
-                                            <td>Syqfiq</td>
-                                            <td>Others (Outstation)</td>
-                                            <td>14/7/2022</td>
-                                            <td>23/7/2022</td>
-                                            <td>MYR250.00</td>
-                                            <td>Pending</td>
-                                            <td>21/07/2022</td>
-                                            <td>OO</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
-                                            <td>
-                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                                <div class="dropdown-menu">
-                                                    <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                                </div>
-                                            </td>
-                                            <td>202</td>
-                                            <td>Syqfiq</td>
-                                            <td>Others (Non-Outstation)</td>
-                                            <td>14/7/2022</td>
-                                            <td>23/7/2022</td>
-                                            <td>MYR250.00</td>
-                                            <td>Pending</td>
-                                            <td>21/07/2022</td>
-                                            <td>ONO</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="tab-pane fade show" id="default-tab-2">
-                                
-                        </div>
-                        </div>  
-                    </div>
-                    </div>
-                </div>
-            </div> 
-        </div> 
-
-      <!-- Modal reject -->
-      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Modal amend -->
-      <div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
-         
+								<h3>Route A</h3>
+							</div>
+							<div class="row p-2">
+								<div class="col-md-12">
+									<iframe width="100%" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=edaran%20berhad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+									
+									</iframe>
+								</div>
+							</div>
+							
+						</div>
+	
+						<div class="col-md-2 align-self-center">
+	
+						</div>
+	
+	
+						<div class="col-md-5 align-self-end">
+							<div class="row p-2">
+								<h3>Route B</h3>
+							</div>
+							<div class="row p-2">
+								<div class="col-md-12">
+									<iframe width="100%" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=edaran%20berhad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+									
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row p-2">
+				<div class="col align-self-start">
+					<a href="#" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Cancel</a>
+				</div>	
+				
+			</div>
+            </div>   
+			
       </div>
 
 
@@ -964,29 +860,18 @@
 
 	<script>
 		$(document).ready(function () {
+			// $("#btncheckroute").click(function(){
+			// $("#btnroutea").prop('disabled', false);
+			// $("#bntrouteb").prop('disabled', false);
+			// });
 
-            $('#tableclaimapproval')
-				.dataTable({
-					// "responsive": true,
-					"bLengthChange": false,
-					"bFilter": false,
-				});
+			$("#btncheckroute").click(function(event) {
+				//$(".clickable-row").not(this).removeClass('selected');
+				$(this).toggleClass('selected');
+				$("#btnroutea").prop("disabled", !$(this).hasClass('selected'));
+				$("#bntrouteb").prop("disabled", !$(this).hasClass('selected'));
+			});
 
-			$('#tablecashadvance')
-			.dataTable({
-				// "responsive": true,
-				"bLengthChange": false,
-				"bFilter": false,
-				});
-
-            $("#filter").click(function(){
-			$("#filteronoff").toggle();
-            });
-
-			// tablecashadvance
-
-            // hide remarks
-            // $('#tableclaimapproval th:nth-child(11),td:nth-child(11)').hide();
     });
 	</script>
 

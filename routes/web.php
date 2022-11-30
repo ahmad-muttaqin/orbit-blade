@@ -210,6 +210,7 @@ Route::get('/setting/timesheetperiod', function () {
 Route::get('/timesheet/timesheetemployeereportall', function () {
     return view('timesheetemployeereportall');
 });
+//my claim
 Route::get('/eclaim/myclaim', function () {
     return view('eclaim/myclaim/eclaimmyclaim');
 });
@@ -287,7 +288,7 @@ Route::get('/setting/updateentitlement', function () {
 Route::get('/setting/eclaimgeneral', function () {
     return view('eclaim/setting/general/settinggeneral');
 });
-//approval
+//approval supervisor
 Route::get('/claimapproval/supervisor', function () {
     return view('eclaim/claimapproval/supervisor/supervisorapproval');
 });
@@ -300,7 +301,42 @@ Route::get('/claimapproval/viewgncsupervisor', function () {
 Route::get('/claimapproval/viewappealsupervisor', function () {
     return view('eclaim/claimapproval/supervisor/view/viewappeal');
 });
-//cash advnce
+
+//approval hod
+Route::get('/claimapproval/hod', function () {
+    return view('eclaim/claimapproval/hod/hodapproval');
+});
+Route::get('/cashadvance/hodcashadvance', function () {
+    return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
+});
+//approval finance recommender
+Route::get('/claimapproval/financerecommender', function () {
+    return view('eclaim/claimapproval/financerecommender/frapproval');
+});
+//approval finance checker
+Route::get('/claimapproval/financechecker', function () {
+    return view('eclaim/claimapproval/financechecker/fcapproval');
+});
+Route::get('/cashadvance/financechecker', function () {
+    return view('eclaim/claimapproval/financechecker/cashadvance/fccashadvance');
+});
+//approval finance approver
+Route::get('/claimapproval/financeapprover', function () {
+    return view('eclaim/claimapproval/financeapprover/faapproval');
+});
+//approval admin checker
+Route::get('/claimapproval/adminchecker', function () {
+    return view('eclaim/claimapproval/adminchecker/acapproval');
+});
+//approval admin recommender
+Route::get('/claimapproval/adminrecommender', function () {
+    return view('eclaim/claimapproval/adminrecommender/arapproval');
+});
+//approval admin approver
+Route::get('/claimapproval/adminapprover', function () {
+    return view('eclaim/claimapproval/adminapprover/apapproval');
+});
+//cash advance
 Route::get('/claimapproval/supervisorcashadvance', function () {
     return view('eclaim/claimapproval/supervisor/cashadvance/approvalcashadvance');
 });
@@ -308,6 +344,7 @@ Route::get('/claimapproval/supervisorcashadvance', function () {
 // Route::get('/claimapproval/challenge', function () {
 //     return view('eclaim/claimapproval/supervisor/challengeroute');
 // });
+
 //view supervisor
 Route::get('/claimapproval/viewprojectoutstation', function () {
     return view('eclaim/claimapproval/supervisor/view/supervisorviewcapo');
