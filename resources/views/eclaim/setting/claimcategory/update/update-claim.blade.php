@@ -690,10 +690,16 @@
         </div>
         <div class="modal-body">
             <form>
-				<div class="row mb-3">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Content</label><br>
+                <div class="row mb-3">
+					<label for="Description" class="col-sm-2 col-form-label">Description</label><br>
 					<div class="col-sm-6">
-					<input type="text" class="form-control" id="addcontent" value="content1">
+                        <input type="text" class="form-control" id=""  readonly >
+                    </div>
+                </div>
+				<div class="row mb-3">
+					<label for="Content" class="col-sm-2 col-form-label">Content</label><br>
+					<div class="col-sm-6">
+					<input type="text" class="form-control" id="uaddcontent">
 				</form>
         </div>
         </div>
@@ -765,10 +771,10 @@
 
 $("#savecontent").click(function() {
 
-var addtypelogactivityName = document.getElementById('addcontent').value;
+var addtypelogactivityName = document.getElementById('uaddcontent').value;
 
 if (addtypelogactivityName == "") {
-document.getElementById('addcontent');
+document.getElementById('uaddcontent');
 return;
 } else {
 
