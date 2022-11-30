@@ -944,7 +944,7 @@ margin-top: 10px;
                         <div class="row mb-3">
                             <label for="unlimited subsistence" class="col-sm-2 col-form-label">Value</label><br>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="valuesubsistence" placeholder="value">
+                                <input type="text" class="form-control" id="valuesubsistence1" placeholder="value">
                                 <input type="checkbox" class="unlimited" value="unlimited"> unlimited
                             </div>
                         </div>
@@ -980,7 +980,7 @@ margin-top: 10px;
                 <div class="row mb-3">
 					<label for="inputEmail3" class="col-sm-2 col-form-label">Value</label><br>
 					<div class="col-sm-6">
-                        <input type="text" class="form-control" id="valueclaim" placeholder="value">
+                        <input type="text" class="form-control" id="valueclaim1" placeholder="value">
                         <input type="checkbox" class="unlimited1" value="unlimited">unlimited
                     </div>
                 </div>
@@ -1133,6 +1133,8 @@ $(document).ready(function(){
         $('[data-toggle="tooltip1"]').tooltip();  
 		$('[data-toggle="tooltip2"]').tooltip();
 
+
+        //subsistence unlimited
         $('.unlimited').click(function() {
           var text = "";
         $('.unlimited:checked').each(function() {
@@ -1145,6 +1147,8 @@ $(document).ready(function(){
       });
 
 
+
+      //claim unlimited
       $('.unlimited1').click(function() {
           var text = "";
         $('.unlimited1:checked').each(function() {

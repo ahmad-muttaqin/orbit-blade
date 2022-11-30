@@ -693,13 +693,13 @@
         <div class="modal-body">
             <form>
                 <div class="row mb-3">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Subsistence Allowance</label><br>
+					<label for="Description" class="col-sm-2 col-form-label">Description</label><br>
 					<div class="col-sm-6">
-                        <input type="text" class="form-control" id="" placeholder="Malaysia" readonly >
+                        <input type="text" class="form-control" id=""  readonly >
                     </div>
                 </div>
 				<div class="row mb-3">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Content</label><br>
+					<label for="Content" class="col-sm-2 col-form-label">Content</label><br>
 					<div class="col-sm-6">
 					<input type="text" class="form-control" id="addcontent" value="">
         </div>
