@@ -761,7 +761,9 @@
 										<option value="Rejected">Amended</option>
 										<option value="Jazz">Paid</option>
 									</select>
+									
 								</div>
+								
 						<table id="claimtable" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>

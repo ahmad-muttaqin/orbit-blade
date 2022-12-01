@@ -826,6 +826,20 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th  data-orderable="false"></th>	
+                                            <th></th>
+                                            <th class="text-nowrap">Applied Date</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Month</th>
+                                            <th class="text-nowrap">Claim ID</th>
+                                            <th class="text-nowrap">Claim Type</th>
+                                            <th class="text-nowrap">Total Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status Date</th>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-2">
@@ -1443,25 +1457,54 @@
 
 
 	<script>
-		$(document).ready(function () {
 
-            $('#activetable')
-				.dataTable({ 
-					// "responsive": true,
-					"bLengthChange": false,
-					"bFilter": false,
-                    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
-                    buttons: [
-                        { extend: 'pdf', className: 'btn-sm', orientation: 'landscape' },
-                        {
-                            text: '<i class="fa fa-filter" aria-hidden="true"></i>',
-                            action: function ( e, dt, node, config ) {
-                                $("#filteractive").toggle();
-                            }
-                        }
-                    ],
+        
+        
+
+		$(document).ready(function () {
+            $('#activetable').DataTable({
+                initComplete: function () {
+                    this.api()
+                        .columns()
+                        .every(function () {
+                            var column = this;
+                            var select = $('<select><option value=""></option></select>')
+                                .appendTo($(column.footer()).empty())
+                                .on('change', function () {
+                                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
+        
+                                    column.search(val ? '^' + val + '$' : '', true, false).draw();
+                                });
+        
+                            column
+                                .data()
+                                .unique()
+                                .sort()
+                                .each(function (d, j) {
+                                    select.append('<option value="' + d + '">' + d + '</option>');
+                                });
+                        });
+                },
+            });
+
+            //
+            // $('#activetable')
+			// 	.dataTable({ 
+			// 		// "responsive": true,
+			// 		"bLengthChange": false,
+			// 		"bFilter": false,
+            //         dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
+            //         buttons: [
+            //             { extend: 'pdf', className: 'btn-sm', orientation: 'landscape' },
+            //             {
+            //                 text: '<i class="fa fa-filter" aria-hidden="true"></i>',
+            //                 action: function ( e, dt, node, config ) {
+            //                     $("#filteractive").toggle();
+            //                 }
+            //             }
+            //         ],
                     
-				});
+			// 	});
 
 			$('#recommendedtable')
 			.dataTable({
