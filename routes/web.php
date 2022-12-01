@@ -346,3 +346,16 @@ Route::get('/report/cashadvreportall', function () {
 Route::get('/report/reportingcashadvance', function () {
     return view('eclaim/reportingcashadvance');
 });
+
+//eleave setting
+Route::get('/eleave/eleaveentitlement', function () {
+    return view('eleave/setting/eleaveentitlement');
+});
+Route::get('/eleave/leavetypes', function () {
+    return view('eleave/setting/leavetypes');
+});
+Route::get('/eleave/holidaylist', function () {
+    return view('eleave/setting/holidaylist');
+});
+
+

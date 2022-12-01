@@ -648,7 +648,7 @@
                                 <textarea class="form-control" name="description" id="descriptionn" rows="3" placeholder="Input Description"></textarea>
                             </div>
                           </div>
-                          <button type="button" class="btn btn-white mt-3 mb-3" data-bs-toggle="modal" id="myModal1" data-bs-target="#modaladdcontent"><i class="fa fa-plus"></i> Add Content Category</button>
+                          <button type="button" class="btn btn-white mt-3 mb-3" data-bs-toggle="modal" id="myModal1" data-bs-target="#modaladdcontent"><i class="fa fa-plus"></i> Add Content Description</button>
                       <table  id="tablesavecontent"  class="table table-striped table-bordered align-middle">
                         <thead>
                           <tr>	
@@ -683,19 +683,13 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Update Content</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Update Content Description</h5>
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
             <form>
-                <div class="row mb-3">
-					<label for="Description" class="col-sm-2 col-form-label">Description</label><br>
-					<div class="col-sm-6">
-                        <input type="text" class="form-control" id=""  readonly >
-                    </div>
-                </div>
 				<div class="row mb-3">
 					<label for="Content" class="col-sm-2 col-form-label">Content</label><br>
 					<div class="col-sm-6">
