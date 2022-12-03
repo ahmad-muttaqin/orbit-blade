@@ -794,6 +794,19 @@
 				
 				<!-- END col-4 -->
 			</div>
+			<br>
+			<div class="row text-center">
+				<!-- BEGIN col-4 -->
+				
+				<div class="col-lg-2" >
+					<a class="mb-10px" href="/setting/approvalconfiguration"><i class="fa fa-laptop fa-4x text-blue" ></i></a><br><br>
+					<h5 class="mb-5px" >Approval Configuration </h5> 
+					
+				</div>
+				
+				
+				<!-- END col-4 -->
+			</div>
 			<!-- END row -->
 		</div>
 		
@@ -848,17 +861,7 @@
 	
 
 	
-	<script>
-$('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
-<script>
-  $("#datepicker-terminatedate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
+	
 <!-- The template to display files available for upload -->
 
 
