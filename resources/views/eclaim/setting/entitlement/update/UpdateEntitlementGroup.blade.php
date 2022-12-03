@@ -727,11 +727,11 @@ margin-top: 10px;
                                         <input type="text" class="form-control" id="car_mileagekm" name="carmileagekm" value="700">
                                     </div>
                                     <div class="col">
-                                        <h5 class="form-control" id="km1" aria-readonly="true">KM</h5>
+                                        <h5 class="form-control" id="ukm1" aria-readonly="true">KM</h5>
                                     </div>
                                     <div class="col">
-                                        <button id="plusbtn" type="button"><i class="fa fa-plus"></i> </button>
-                                        <button id="minusbtn" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
+                                        <button id="uplusbtn" type="button"><i class="fa fa-plus"></i> </button>
+                                        <button id="uminusbtn" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
                                     </div>
                               </div>
 
@@ -739,17 +739,17 @@ margin-top: 10px;
                                 <div class="row">
                                     <label for="carmileage1" class="col-sm-3 col-form-label"></label>
                                         <div class="col-sm-3">
-                                        <input style="display: none;" type="text" class="form-control" id="mileagecharge1">
+                                        <input style="display: none;" type="text" class="form-control" id="umileagecharge1">
                                         </div>
                                     <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagekm1" >
+                                        <input type="text" style="display: none;"  class="form-control" id="umileagekm1" >
                                     </div>
                                     <div class="col">
-                                        <h5 class="form-control" id="km2" style="display: none;" aria-readonly="true">KM</h5>
+                                        <h5 class="form-control" id="ukm2" style="display: none;" aria-readonly="true">KM</h5>
                                     </div>
                                     <div class="col">
-                                        <button id="plusbtn1" type="button" style="display: none;"><i class="fa fa-plus"></i> </button>
-                                        <button id="minusbtn1" type="button" style="display: none;"><i class="fa fa-minus"></i> </button>
+                                        <button id="uplusbtn1" type="button" style="display: none;"><i class="fa fa-plus"></i> </button>
+                                        <button id="uminusbtn1" type="button" style="display: none;"><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
                                 <br>
@@ -757,67 +757,67 @@ margin-top: 10px;
                                     {{-- <label for="inputEmail3" class="col-sm col-form-label">Car Mileage Claim*</label> --}}
                                     <label for="staticEmail" class="col-sm-3 col-form-label"></label>
                                         <div class="col-sm-3">
-                                        <input  type="text" style="display: none;" class="form-control" id="mileagecharge2"  >
+                                        <input  type="text" style="display: none;" class="form-control" id="umileagecharge2"  >
                                         </div>
                                     <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagekm2" >
+                                        <input type="text" style="display: none;"  class="form-control" id="umileagekm2" >
                                     </div>
                                     <div class="col">
-                                        <h5 class="form-control" id="km3" style="display: none;" aria-readonly="true">KM</h5>
+                                        <h5 class="form-control" id="ukm3" style="display: none;" aria-readonly="true">KM</h5>
                                     </div>
                                     <div class="col">
-                                        <button id="plusbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
-                                        <button id="minusbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
+                                        <button id="uplusbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
+                                        <button id="uminusbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <label for="staticEmail" class="col-sm-3 col-form-label">Motorcycle Mileage <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)" data-toggle="tooltip2" title="Mileage claim  for own motorcycle only & with prior approval&#010; from supervisor.&#010; if leave blank KM field, it will assume as no limit.&#010; Click the &quot;+&quot; button to add the subsequent KM and rate.&#010;Click the &quot;-&quot; button to remove the subsequent KM and rate"></i> claim* </label>
                                         <div class="col-sm-3">
-                                        <input  type="text"  class="form-control" id="mileagemcharge" value="0.40" >
+                                        <input  type="text"  class="form-control" id="umileagemcharge" value="0.40" >
                                         </div>
                                     <div class="col-sm-3">
-                                        <input type="text"   class="form-control" id="mileagemkm" value="700" >
+                                        <input type="text"   class="form-control" id="umileagemkm" value="700" >
                                     </div>
                                     <div class="col">
-                                        <h5 class="form-control" id="mkm1" aria-readonly="true">KM</h5>
+                                        <h5 class="form-control" id="umkm1" aria-readonly="true">KM</h5>
                                     </div>
                                     <div class="col">
-                                        <button id="plusmbtn" type="button"><i class="fa fa-plus" aria-hidden="true"></i> </button>
-                                        <button id="minusmbtn" style="display: none;" type="button"><i class="fa fa-minus"></i> </button>
+                                        <button id="uplusmbtn" type="button"><i class="fa fa-plus" aria-hidden="true"></i> </button>
+                                        <button id="uminusmbtn" style="display: none;" type="button"><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <label for="staticEmail" class="col-sm-3 col-form-label"></label>
                                         <div class="col-sm-3">
-                                        <input  type="text" style="display: none;" class="form-control" id="mileagemcharge1"  >
+                                        <input  type="text" style="display: none;" class="form-control" id="umileagemcharge1"  >
                                         </div>
                                     <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagemkm1" >
+                                        <input type="text" style="display: none;"  class="form-control" id="umileagemkm1" >
                                     </div>
                                     <div class="col">
-                                        <h5 class="form-control" id="mkm2" style="display: none;" aria-readonly="true">KM</h5>
+                                        <h5 class="form-control" id="umkm2" style="display: none;" aria-readonly="true">KM</h5>
                                     </div>
                                     <div class="col">
-                                        <button id="plusmbtn1" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
-                                        <button id="minusmbtn1" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
+                                        <button id="uplusmbtn1" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
+                                        <button id="uminusmbtn1" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <label for="staticEmail" class="col-sm-3 col-form-label"></label>
                                         <div class="col-sm-3">
-                                        <input  type="text" style="display: none;" class="form-control" id="mileagemcharge2"  >
+                                        <input  type="text" style="display: none;" class="form-control" id="umileagemcharge2"  >
                                         </div>
                                     <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagemkm2"  >
+                                        <input type="text" style="display: none;"  class="form-control" id="umileagemkm2"  >
                                     </div>
                                     <div class="col">
-                                        <h5 class="form-control" id="mkm3" style="display: none;" aria-readonly="true">KM</h5>
+                                        <h5 class="form-control" id="umkm3" style="display: none;" aria-readonly="true">KM</h5>
                                     </div>
                                     <div class="col">
-                                        <button id="plusmbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
-                                        <button id="minusmbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
+                                        <button id="uplusmbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
+                                        <button id="uminusmbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
                             </div>
@@ -938,7 +938,7 @@ margin-top: 10px;
                         <div class="row mb-3">
                             <label for="subsistence allowance" class="col-sm-2 col-form-label">Subsistence Allowance</label><br>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="Malaysia" readonly >
+                                <input type="text" class="form-control" id="" placeholder="" readonly >
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -974,7 +974,7 @@ margin-top: 10px;
                 <div class="row mb-3">
 					<label for="inputEmail3" class="col-sm-2 col-form-label">Area</label><br>
 					<div class="col-sm-6">
-                        <input type="text" class="form-control" id="" placeholder="Entertainment" readonly >
+                        <input type="text" class="form-control" id="" placeholder="" readonly >
                     </div>
                 </div>
                 <div class="row mb-3">

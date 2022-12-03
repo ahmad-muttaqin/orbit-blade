@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Add Entitlement</title>
+	<title>OrbitHRM | Setting E Leave Entitlement</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -35,8 +35,7 @@
 	
 	<!-- ================== END page-css ================== -->
 	<style>
-
-
+	
 		</style>
 		</head>
 		<body>
@@ -611,387 +610,203 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-    <!-- {{-- margin-top: 10px; --}} -->
-	<h1 class="page-header">Settings | Add Entitlement Group</h1>
-         <div class="panel panel">
-			<div class="panel-body">
-					
-                    <div class="row p-2">
-                        <h3>Add Entitlement Group</h3>
-                    </div>
-                      <form>
-                    <div class="form-control">	
-                       <div class="row p-2">
-                        <div class="col mb-6">
-                            <div class="row">
-                                <label for="entitlementgroupname" class="col-sm col-form-label">Entitlement Group Name*</label>
-                                <div class="col">
-                                  <input type="text" class="form-control"  name="entitlementgroupname" id="entitlement_groupname" placeholder="Entitlement Group Name">
-                                </div>
-                              </div>
-                              <br>
-                              <div class="row">
-                                    <label for="jobgrade" class="col-sm col-form-label">Job Grade*</label>
-                                    <div class="col">
-                                        <input type="text" class="form-control" name="jobgrade" id="job_grade" placeholder="Type for hints...">
-                                    </div>
-                              </div>
-                              <br>
-                              <div class="row">
-                                <div class="col">
-                                    <h6>Local Travelling*</h6>
-                                </div>
-                                    <div class="col">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Local" id="flexRadioF" checked>
-                                            <label class="form-check-label" for="flexRadioF">
-                                            F- First Class
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Local" id="flexRadioC" >
-                                            <label class="form-check-label" for="flexRadioC">
-                                            C- Business Class
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Local" id="flexRadioY" >
-                                            <label class="form-check-label" for="flexRadioY">
-                                            Y - First Class
-                                            </label>
-                                        </div>
-                                    </div>
-                              </div>
-                              <br>
-                              <div class="row">
-                                <div class="col">
-                                    <h6>Overseas Travelling*</h6>
-                                </div>
-                                    <div class="col">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Overseas" id="flexRadioOF">
-                                            <label class="form-check-label" for="flexRadioOF">
-                                            F- First Class
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Overseas" id="flexRadioOC" checked>
-                                            <label class="form-check-label" for="flexRadioOC">
-                                            C- Business Class
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Overseas" id="flexRadioOY" >
-                                            <label class="form-check-label" for="flexRadioOY">
-                                            Y - First Class
-                                            </label>
-                                        </div>
-                                    </div>
-                              </div>       
-                        </div>
-                        <div class="col mb-6">
-                            <div class="row">
-                                <label for="lodgingallowance" class="col-sm-3 col-form-label">Lodging Allowance</label>
-                                <div class="col-sm-3">
-                                    <select class="form-select" name="lodgingallowance" id="lodging_allowance" aria-label="Disabled select example">
-                                        <option selected>None</option>
-                                        <option value="actual">Actual</option>
-                                        <option value="inputvalue">Input Value</option>
-                                      </select>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <label for="localhotela" class="col-sm-3 col-form-label">Local Hotel Allowance</label>
-                                <div class="col-sm-3">
-                                    <select class="form-select" name="localhotela" id="local_hotela" aria-label="Disabled select example">
-                                        <option >None</option>
-                                        <option value="actual">Actual</option>
-                                        <option selected value="inputvalue">Input Value</option>
-                                      </select>
-                                </div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" id="local_hotela1" name="localhotela" value="150">
-                                </div>
-                            </div>
-                            <br>
-                              <div class="row">
-                                    <label for="carmileage" class="col-sm-3 col-form-label">Car Mileage Claim* <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltip1" title="Mileage claim  for own car only & with prior approval&#010; from supervisor.&#010; if leave blank KM field, it will assume as no limit.&#010; Click the &quot;+&quot; button to add the subsequent KM and rate.&#010;Click the &quot;-&quot; button to remove the subsequent KM and rate"></i></label>
-                                        <div class="col-sm-3">
-                                        <input type="text" class="form-control" name="carmileagecharge" id="car_mileagecharge" value="0.7">
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="car_mileagekm" name="carmileagekm" value="700">
-                                    </div>
-                                    <div class="col">
-                                        <h5 class="form-control" id="km1" aria-readonly="true">KM</h5>
-                                    </div>
-                                    <div class="col">
-                                        <button id="plusbtn" type="button"><i class="fa fa-plus"></i> </button>
-                                        <button id="minusbtn" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
-                                    </div>
-                              </div>
-
-                              <br>
-                                <div class="row">
-                                    <label for="carmileage1" class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-3">
-                                        <input style="display: none;" type="text" class="form-control" id="mileagecharge1">
-                                        </div>
-                                    <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagekm1" >
-                                    </div>
-                                    <div class="col">
-                                        <h5 class="form-control" id="km2" style="display: none;" aria-readonly="true">KM</h5>
-                                    </div>
-                                    <div class="col">
-                                        <button id="plusbtn1" type="button" style="display: none;"><i class="fa fa-plus"></i> </button>
-                                        <button id="minusbtn1" type="button" style="display: none;"><i class="fa fa-minus"></i> </button>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    {{-- <label for="inputEmail3" class="col-sm col-form-label">Car Mileage Claim*</label> --}}
-                                    <label for="staticEmail" class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-3">
-                                        <input  type="text" style="display: none;" class="form-control" id="mileagecharge2"  >
-                                        </div>
-                                    <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagekm2" >
-                                    </div>
-                                    <div class="col">
-                                        <h5 class="form-control" id="km3" style="display: none;" aria-readonly="true">KM</h5>
-                                    </div>
-                                    <div class="col">
-                                        <button id="plusbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
-                                        <button id="minusbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label">Motorcycle Mileage <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)" data-toggle="tooltip2" title="Mileage claim  for own motorcycle only & with prior approval&#010; from supervisor.&#010; if leave blank KM field, it will assume as no limit.&#010; Click the &quot;+&quot; button to add the subsequent KM and rate.&#010;Click the &quot;-&quot; button to remove the subsequent KM and rate"></i> claim* </label>
-                                        <div class="col-sm-3">
-                                        <input  type="text"  class="form-control" id="mileagemcharge" value="0.40" >
-                                        </div>
-                                    <div class="col-sm-3">
-                                        <input type="text"   class="form-control" id="mileagemkm" value="700" >
-                                    </div>
-                                    <div class="col">
-                                        <h5 class="form-control" id="mkm1" aria-readonly="true">KM</h5>
-                                    </div>
-                                    <div class="col">
-                                        <button id="plusmbtn" type="button"><i class="fa fa-plus" aria-hidden="true"></i> </button>
-                                        <button id="minusmbtn" style="display: none;" type="button"><i class="fa fa-minus"></i> </button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-3">
-                                        <input  type="text" style="display: none;" class="form-control" id="mileagemcharge1"  >
-                                        </div>
-                                    <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagemkm1" >
-                                    </div>
-                                    <div class="col">
-                                        <h5 class="form-control" id="mkm2" style="display: none;" aria-readonly="true">KM</h5>
-                                    </div>
-                                    <div class="col">
-                                        <button id="plusmbtn1" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
-                                        <button id="minusmbtn1" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label"></label>
-                                        <div class="col-sm-3">
-                                        <input  type="text" style="display: none;" class="form-control" id="mileagemcharge2"  >
-                                        </div>
-                                    <div class="col-sm-3">
-                                        <input type="text" style="display: none;"  class="form-control" id="mileagemkm2"  >
-                                    </div>
-                                    <div class="col">
-                                        <h5 class="form-control" id="mkm3" style="display: none;" aria-readonly="true">KM</h5>
-                                    </div>
-                                    <div class="col">
-                                        <button id="plusmbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
-                                        <button id="minusmbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    </form>
-                </div>
-                <br>
-             <div class="row">
-                <div class="col mb-6">
-                   
-                        <div class="form-control">
-                            <h5>Subsistence Allowance</h5>
-                            <table  id="tablesavesubsistence"  class="table table-striped table-bordered align-middle">
-                                <thead>
-                                <tr>	
-                                    <th  data-orderable="false">Action</th>
-                                    <th class="text-nowrap">Area</th>
-                                    <th class="text-nowrap">Value</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editsubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>  
-                                        </td>
-                                        <td>MALAYSIA</td>
-                                        <td>60</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editsubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
-                                        </td>
-                                        <td>MIDDLE EAST</td>
-                                        <td>170</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editsubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
-                                        </td>
-                                        <td>SINGAPORE/BRUNEI</td>
-                                        <td>80</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                </div>
-
-                <div class="col mb-6">
-                    
-                        <div class="form-control">
-                            <h5>Claim Benefits</h5>
-                            <table  id="tableSaveArea"  class="table table-striped table-bordered align-middle">
-                                <thead>
-                                <tr>	
-                                    <th  data-orderable="false">Action</th>
-                                    <th class="text-nowrap">Area</th>
-                                    <th class="text-nowrap">Value</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
-                                        </td>
-                                        <td>ENTERTAINMENT</td>
-                                        <td>60</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>
-                                        </td>
-                                        <td>PHONE BILL</td>
-                                        <td>170</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
-                                        </td>
-                                        <td>OTHERS</td>
-                                        <td>80</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                </div>
-            </div>
-            <br>
-            <div class="row p-2">
-                <div class="modal-footer">
-                    <div class="col align-self-start">
-                        <a href="/setting/entitlement" class="btn btn-light" style="color: black" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-                    </div>
-                    
-                    <div class="col d-flex justify-content-end">
-                        <button class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal subsistence -->
-        <div class="modal fade" id="editsubsistence" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Subsistence Allowance</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row mb-3">
-                            <label for="subsistence allowance" class="col-sm-2 col-form-label">Subsistence Allowance</label><br>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="" readonly >
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="unlimited subsistence" class="col-sm-2 col-form-label">Value</label><br>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="valuesubsistence" placeholder="value">
-                                <input type="checkbox" class="unlimited" value="unlimited"> unlimited
-                            </div>
-                        </div>
-                        </form>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" id="savesubsistence" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
-        </div>
+	<h1 class="page-header">Setting | Leave Entitlement</h1>
+			<div class="panel panel">
+				<div class="panel-body">
+					<div class="form-control">
+						<div class="row p-2">
+							<h3>Leave Entitlement List</h3>
+						</div>
+						<div class="row p-2 ">
+							<button class="btn btn-primary col-2" data-bs-toggle="modal" id="myModal1" data-bs-target="#updatelapse"> <i class="fa fa-calendar" aria-hidden="true"></i> Lapsed Date</button>
+						</div>
+						<div class="row p-2">
+							<table  id="tableeleave"  class="table table-striped table-bordered align-middle">
+								<thead>
+								  <tr>	
+									<th  data-orderable="false"></th>
+									<th class="text-nowrap">Action</th>
+									<th class="text-nowrap">Employee Name</th>
+									<th class="text-nowrap">Department</th>
+									<th class="text-nowrap">Current Entitlement(2022)</th>
+									<th class="text-nowrap">Current Entitlement Balance</th>
+									<th class="text-nowrap">Sick Leave Entitlement</th>
+									<th class="text-nowrap">Sick Leave Entitlement Balance</th>
+									<th class="text-nowrap">Carry Forward(2021)</th>
+									<th class="text-nowrap">Carry Forward Balance</th>
+									<th class="text-nowrap">Lapsed Date</th>
+									<th class="text-nowrap">Lapse</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  	<tr>
+										<td><input class="form-check-input" type="checkbox" value="" id="" checked></td>
+										<td><button class="btn btn-primary" data-bs-toggle="modal" id="myModal1" data-bs-target="#editleave">Edit</button></td>
+										<td>Amira Roslam</td>
+										<td>Service Delivery Department</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+								  	</tr>
+								  	<tr>
+										<td><input class="form-check-input" type="checkbox" value="" id="" checked></td>
+										<td><button class="btn btn-primary" data-bs-toggle="modal" id="myModal1" data-bs-target="#editleave">Edit</button></td>
+										<td>Hazizul Husni</td>
+										<td>Sales Department</td>
+										<td>24</td>
+										<td>20</td>
+										<td>10</td>
+										<td>6</td>
+										<td>5</td>
+										<td>2</td>
+										<td>31/03/2022</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" value="" id=""></td>
+										<td><button class="btn btn-primary" data-bs-toggle="modal" id="myModal1" data-bs-target="#editleave">Edit</button></td>
+										<td>izzudin Umar</td>
+										<td>Business Development</td>
+										<td>12</td>
+										<td>6</td>
+										<td>15</td>
+										<td>9</td>
+										<td>5</td>
+										<td>0</td>
+										<td>31/03/2022</td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							  </table>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
-{{-- modal claim --}}
-  <div class="modal fade" id="editclaimbenefit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Claims Benefit</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="row mb-3">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Area</label><br>
-					<div class="col-sm-6">
-                        <input type="text" class="form-control" id="" placeholder="" readonly >
-                    </div>
-                </div>
-                <div class="row mb-3">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Value</label><br>
-					<div class="col-sm-6">
-                        <input type="text" class="form-control" id="valueclaim" placeholder="value">
-                        <input type="checkbox" class="unlimited1" value="unlimited">unlimited
-                    </div>
-                </div>
-				</form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" id="savesubsistence" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-				
-		
+
+<!-- Modal  edit row-->
+<div class="modal fade" id="editleave" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Edit Entitlement</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Employee Name :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""  readonly />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Department :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value="  "  readonly />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Current Entitlement Balance :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Sick Leave Entitlement :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Carry Forward(2021) :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Current Forward Balance :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Lapsed Date :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Lapsed :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{-- modal updatedlapsed --}}
+<div class="modal fade" id="updatelapse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Update Lapsed Date</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row p-2">
+					{{-- <h3 readonly>Amira Roslam, Hazizul Husni</h3> --}}
+					{{-- <input type="text" class="form-control col-sm-2" id="" value="Amira Roslam, Hazizul Husni" readonly > --}}
+					<div class="col-md-9">
+						<div class="mb-2">
+							<label for="lapsed date" class="form-label">Employee Name: </label>
+							<input type="text" class="form-control col-sm-2" id="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="row p-2">
+					<div class="col-md-9">
+						<form >
+							<div class="mb-2">
+								<label for="lapsed date" class="form-label">Lapsed Date </label>
+								<input type="text" class="form-control col-sm-2" id="datepickerlapse">
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 		<!-- END scroll-top-btn -->
@@ -1004,6 +819,7 @@
 
 
 	<!-- ================== END core-js ================== -->
+
 
 </body>
 </html>
@@ -1037,122 +853,29 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-	
 
 
 <script>
-$(document).ready(function(){
-        //car 
-        $("#plusbtn").click(function(){
-        $("#mileagecharge1").show();
-        $("#mileagekm1").show();
-        $("#minusbtn").show();
-        $("#minusbtn1").show();
-        $("#plusbtn1").show();
-        $("#km2").show();
-        $("#minusbtn").prop('disabled', true);
-        });
-
-        $("#plusbtn1").click(function(){
-        $("#mileagecharge2").show();
-        $("#mileagekm2").show();
-        $("#minusbtn2").show();
-        $("#km3").show();
-        $("#minusbtn1").prop('disabled', true);
-        });
-
-        $("#minusbtn1").click(function(){
-        $("#mileagecharge1").hide();
-        $("#mileagekm1").hide();    
-        $("#plusbtn1").hide();
-        $("#minusbtn1").hide();
-        $("#minusbtn").hide();
-        $("#km2").hide();
-        $("#minusbtn").prop('disabled', false);
-        });
-
-        $("#minusbtn").click(function(){
-        $("#mileagecharge1").hide();
-        $("#mileagekm1").hide();
-        });
-
-        $("#minusbtn2").click(function(){
-        $("#mileagecharge2").hide();
-        $("#mileagekm2").hide();
-        $("#minusbtn2").hide();
-        $("#km3").hide();
-        $("#minusbtn1").prop('disabled', false);
-        });
-
-        //motor
-        $("#plusmbtn").click(function(){
-        $("#mileagemcharge1").show();
-        $("#mileagemkm1").show();
-        $("#minusmbtn").show();
-        $("#minusmbtn1").show();
-        $("#plusmbtn1").show();
-        $("#mkm2").show();
-        $("#minusmbtn").prop('disabled', true);
-        });
-
-        $("#plusmbtn1").click(function(){
-        $("#mileagemcharge2").show();
-        $("#mileagemkm2").show();
-        $("#minusmbtn2").show();
-        $("#mkm3").show();
-        $("#minusmbtn1").prop('disabled', true);
-        });
-
-        $("#minusmbtn1").click(function(){
-        $("#mileagemcharge1").hide();
-        $("#mileagemkm1").hide();    
-        $("#plusmbtn1").hide();
-        $("#minusmbtn1").hide();
-        $("#minusmbtn").hide();
-        $("#mkm2").hide();
-        $("#minusmbtn").prop('disabled', false);
-        });
-
-        $("#minusmbtn").click(function(){
-        $("#mileagemcharge1").hide();
-        $("#mileagemkm1").hide();
-        });
-
-        $("#minusmbtn2").click(function(){
-        $("#mileagemcharge2").hide();
-        $("#mileagemkm2").hide();
-        $("#minusmbtn2").hide();
-        $("#mkm3").hide();
-        $("#minusmbtn1").prop('disabled', false);
-        });
-
-        $('[data-toggle="tooltip1"]').tooltip();  
-		$('[data-toggle="tooltip2"]').tooltip();
-
-        $('.unlimited').click(function() {
-          var text = "";
-        $('.unlimited:checked').each(function() {
-            text+=$(this).val()+ ',';
-        });
-        text=text.substring(0,text.length-1);
-        $('#valuesubsistence').val(text);
-        var count = $("[type='checkbox']:checked".length);
-        $('#count').val($("[type='checkbox']:checked").length); 
-      });
-
-
-      $('.unlimited1').click(function() {
-          var text = "";
-        $('.unlimited1:checked').each(function() {
-            text+=$(this).val()+ ',';
-        });
-        text=text.substring(0,text.length-1);
-        $('#valueclaim').val(text);
-        var count = $("[type='checkbox']:checked".length);
-        $('#count').val($("[type='checkbox']:checked").length); 
-      });
-
-        });
+	$(document).ready(function () {
+			$('#tableeleave')
+					.dataTable({
+						"responsive": false,
+						"bLengthChange": false,
+						"bFilter": true,
+							
+												
+						
+					});
+	});
 </script>
 
+<script>
+	$("#datepickerlapse").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+
+</script>
+
+	
 
