@@ -402,3 +402,7 @@ Route::get('/eleave/holidaylist', function () {
 });
 
 
+//Eleave Approval
+Route::get('/eLeave/LeaveApproval', function () {
+    return view('eLeave/leaveAppr');
+});
