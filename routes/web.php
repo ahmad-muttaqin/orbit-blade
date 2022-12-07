@@ -257,7 +257,7 @@ Route::get('/eclaim/updategeneral', function () {
 Route::get('/eclaim/updateappeal', function () {
     return view('eclaim/myclaim/updateclaim/updateappeal');
 });
-//
+// setting eclaim
 Route::get('/setting/cashadvancecontroller', function () {
     return view('eclaim/setting/cashadvancecontroller/cashAdvancedController');
 });
@@ -287,6 +287,12 @@ Route::get('/setting/updateentitlement', function () {
 });
 Route::get('/setting/eclaimgeneral', function () {
     return view('eclaim/setting/general/settinggeneral');
+});
+Route::get('/setting/approvalconfiguration', function () {
+    return view('eclaim/setting/approvalconfiguration/approvalconfigure');
+});
+Route::get('/setting/approvalrole', function () {
+    return view('eclaim/setting/approvalrole/approvalrole');
 });
 //approval supervisor
 Route::get('/claimapproval/supervisor', function () {
