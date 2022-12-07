@@ -660,78 +660,6 @@
                     
                         <div class="tab-content panel p-3 rounded">
                             <div class="tab-pane fade active show" id="default-tab-1">
-                                {{-- claim approval --}}
-                                <div id="filteractive" style="display: none">
-                                    <div class="form-control">						
-                                        <div class="row p-2">
-                                            <div class="col-md-2">	
-                                                    <label for="employee name" class="form-label">Employee Name</label>
-                                                    <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                    <option  selected value="all_employee">All Employee</option>
-                                                    </select>			
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Month</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Month</option>
-                                                            <option   value="all_employee">January</option>
-                                                            <option   value="all_employee">February</option>
-                                                            <option   value="all_employee">Mac</option>
-                                                            <option   value="all_employee">April</option>
-                                                            <option   value="all_employee">Mei</option>
-                                                            <option   value="all_employee">June</option>
-                                                            <option   value="all_employee">July </option>
-                                                            <option   value="all_employee">August</option>
-                                                            <option   value="all_employee">September</option>
-                                                            <option   value="all_employee">October</option>
-                                                            <option   value="all_employee">November</option>
-                                                            <option   value="all_employee">Disember</option>
-                                                        </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Claim Type</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Claim Type</option>
-                                                            <option   value="all_employee">MTC  </option>
-                                                            <option   value="all_employee">GNC  </option>
-                                                        </select>						
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Status</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="">Select Status</option>
-                                                            <option   value="">Pending</option>
-                                                            <option value="">Approved</option>
-                                                            <option value="">Rejected</option>
-                                                            <option value="">Amended</option>
-                                                            <option value="">Cancelled</option>
-                                                        </select>
-                                            </div>
-
-                                            <div class="col-md-2"></div>
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                                                </div>
-                                            </div>&nbsp;
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary">Reset</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <br>
                                 <table  id="activetable"  class="table table-striped table-bordered align-middle">
                                     <thead>
@@ -826,7 +754,7 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     </tbody>
-                                    <tfoot>
+                                    <tfoot style="display:table-row-group" id="filteractive">
                                         <tr>
                                             <th  data-orderable="false"></th>	
                                             <th></th>
@@ -843,78 +771,6 @@
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-2">
-                            <div id="filterrecommended" style="display: none">
-                                    <div class="form-control">						
-                                        <div class="row p-2">
-                                            <div class="col-md-2">	
-                                                    <label for="employee name" class="form-label">Employee Name</label>
-                                                    <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                    <option  selected value="all_employee">All Employee</option>
-                                                    </select>			
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Month</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Month</option>
-                                                            <option   value="all_employee">January</option>
-                                                            <option   value="all_employee">February</option>
-                                                            <option   value="all_employee">Mac</option>
-                                                            <option   value="all_employee">April</option>
-                                                            <option   value="all_employee">Mei</option>
-                                                            <option   value="all_employee">June</option>
-                                                            <option   value="all_employee">July </option>
-                                                            <option   value="all_employee">August</option>
-                                                            <option   value="all_employee">September</option>
-                                                            <option   value="all_employee">October</option>
-                                                            <option   value="all_employee">November</option>
-                                                            <option   value="all_employee">Disember</option>
-                                                        </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Claim Type</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Claim Type</option>
-                                                            <option   value="all_employee">MTC  </option>
-                                                            <option   value="all_employee">GNC  </option>
-                                                        </select>						
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Status</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="">Select Status</option>
-                                                            <option   value="">Pending</option>
-                                                            <option value="">Approved</option>
-                                                            <option value="">Rejected</option>
-                                                            <option value="">Amended</option>
-                                                            <option value="">Cancelled</option>
-                                                        </select>
-                                            </div>
-
-                                            <div class="col-md-2"></div>
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                                                </div>
-                                            </div>&nbsp;
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary">Reset</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
                                 <table  id="recommendedtable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
@@ -1008,81 +864,23 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     </tbody>
+                                    <tfoot style="display:table-row-group" id="filterrecommend">
+                                        <tr>
+                                            <th  data-orderable="false"></th>	
+                                            <th  data-orderable="false"></th>
+                                            <th class="text-nowrap">Applied Date</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Month</th>
+                                            <th class="text-nowrap">Claim ID</th>
+                                            <th class="text-nowrap">Claim Type</th>
+                                            <th class="text-nowrap">Total Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status Date</th>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-3">
-                                <div id="filteramend" style="display: none">
-                                    <div class="form-control">						
-                                        <div class="row p-2">
-                                            <div class="col-md-2">	
-                                                    <label for="employee name" class="form-label">Employee Name</label>
-                                                    <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                    <option  selected value="all_employee">All Employee</option>
-                                                    </select>			
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Month</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Month</option>
-                                                            <option   value="all_employee">January</option>
-                                                            <option   value="all_employee">February</option>
-                                                            <option   value="all_employee">Mac</option>
-                                                            <option   value="all_employee">April</option>
-                                                            <option   value="all_employee">Mei</option>
-                                                            <option   value="all_employee">June</option>
-                                                            <option   value="all_employee">July </option>
-                                                            <option   value="all_employee">August</option>
-                                                            <option   value="all_employee">September</option>
-                                                            <option   value="all_employee">October</option>
-                                                            <option   value="all_employee">November</option>
-                                                            <option   value="all_employee">Disember</option>
-                                                        </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Claim Type</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Claim Type</option>
-                                                            <option   value="all_employee">MTC  </option>
-                                                            <option   value="all_employee">GNC  </option>
-                                                        </select>						
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Status</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="">Select Status</option>
-                                                            <option   value="">Pending</option>
-                                                            <option value="">Approved</option>
-                                                            <option value="">Rejected</option>
-                                                            <option value="">Amended</option>
-                                                            <option value="">Cancelled</option>
-                                                        </select>
-                                            </div>
-
-                                            <div class="col-md-2"></div>
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                                                </div>
-                                            </div>&nbsp;
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary">Reset</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
                                 <table  id="amendtable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
@@ -1180,81 +978,24 @@
                                         <td>incomplete</td> 
                                     </tr>
                                     </tbody>
+                                    <tfoot style="display:table-row-group" id="filteramends">
+                                        <tr>
+                                            <th  data-orderable="false"></th>	
+                                            <th  data-orderable="false"></th>
+                                            <th class="text-nowrap">Applied Date</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Month</th>
+                                            <th class="text-nowrap">Claim ID</th>
+                                            <th class="text-nowrap">Claim Type</th>
+                                            <th class="text-nowrap">Total Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status Date</th>
+                                            <th class="text-nowrap">Remarks</th> 
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-4">
-                                <div id="filterrejected" style="display: none">
-                                    <div class="form-control">						
-                                        <div class="row p-2">
-                                            <div class="col-md-2">	
-                                                    <label for="employee name" class="form-label">Employee Name</label>
-                                                    <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                    <option  selected value="all_employee">All Employee</option>
-                                                    </select>			
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Month</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Month</option>
-                                                            <option   value="all_employee">January</option>
-                                                            <option   value="all_employee">February</option>
-                                                            <option   value="all_employee">Mac</option>
-                                                            <option   value="all_employee">April</option>
-                                                            <option   value="all_employee">Mei</option>
-                                                            <option   value="all_employee">June</option>
-                                                            <option   value="all_employee">July </option>
-                                                            <option   value="all_employee">August</option>
-                                                            <option   value="all_employee">September</option>
-                                                            <option   value="all_employee">October</option>
-                                                            <option   value="all_employee">November</option>
-                                                            <option   value="all_employee">Disember</option>
-                                                        </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Claim Type</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="all_employee">Select Claim Type</option>
-                                                            <option   value="all_employee">MTC  </option>
-                                                            <option   value="all_employee">GNC  </option>
-                                                        </select>						
-                                            </div>
-                                            <div class="col-md-2">
-                                                        <label for="employee name" class="form-label">Status</label>
-                                                        <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                                                            <option  selected value="">Select Status</option>
-                                                            <option   value="">Pending</option>
-                                                            <option value="">Approved</option>
-                                                            <option value="">Rejected</option>
-                                                            <option value="">Amended</option>
-                                                            <option value="">Cancelled</option>
-                                                        </select>
-                                            </div>
-
-                                            <div class="col-md-2"></div>
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                                                </div>
-                                            </div>&nbsp;
-
-                                            <div class="col">
-                                                <div class="row-p-2">
-                                                    <label  ></label>
-                                                </div>
-                                                
-                                                <div class="row">
-                                                    <button class="btn btn-primary">Reset</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
                                 <table  id="rejecttable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
@@ -1352,6 +1093,21 @@
                                         <td>incomplete</td> 
                                     </tr>
                                     </tbody>
+                                    <tfoot style="display:table-row-group" id="filterreject">
+                                        <tr>
+                                            <th  data-orderable="false"></th>	
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Applied Date</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Month</th>
+                                            <th class="text-nowrap">Claim ID</th>
+                                            <th class="text-nowrap">Claim Type</th>
+                                            <th class="text-nowrap">Total Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status Date</th>
+                                            <th class="text-nowrap">Remarks</th> 
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </div>
                         </div>  
@@ -1457,109 +1213,169 @@
 
 
 	<script>
-
-        
-        
-
 		$(document).ready(function () {
-            $('#activetable').DataTable({
-                initComplete: function () {
-                    this.api()
-                        .columns()
-                        .every(function () {
-                            var column = this;
-                            var select = $('<select><option value=""></option></select>')
-                                .appendTo($(column.footer()).empty())
-                                .on('change', function () {
-                                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
-        
-                                    column.search(val ? '^' + val + '$' : '', true, false).draw();
-                                });
-        
-                            column
-                                .data()
-                                .unique()
-                                .sort()
-                                .each(function (d, j) {
-                                    select.append('<option value="' + d + '">' + d + '</option>');
-                                });
+                $("#filteractive").hide();
+                $('#activetable').DataTable({
+                "bPaginate": false,
+                initComplete: function ()   {
+                this.api()
+                    .columns([2,3,4,5,6,7,8,9])
+                    .every(function () {
+                        var column = this;
+                        var select = $('<select><option value=""></option></select>')
+                            .appendTo($(column.footer()).empty())
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                                column.search(val ? '^' + val + '$' : '', true, false).draw();
+                            });
+    
+                        column
+                            .data()
+                            .unique()
+                            .sort()
+                            .each(function (d, j) {
+                                select.append('<option value="' + d + '">' + d + '</option>');
+                            });
                         });
-                },
-            });
-
-            //
-            // $('#activetable')
-			// 	.dataTable({ 
-			// 		// "responsive": true,
-			// 		"bLengthChange": false,
-			// 		"bFilter": false,
-            //         dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
-            //         buttons: [
-            //             { extend: 'pdf', className: 'btn-sm', orientation: 'landscape' },
-            //             {
-            //                 text: '<i class="fa fa-filter" aria-hidden="true"></i>',
-            //                 action: function ( e, dt, node, config ) {
-            //                     $("#filteractive").toggle();
-            //                 }
-            //             }
-            //         ],
-                    
-			// 	});
-
-			$('#recommendedtable')
-			.dataTable({
-				// "responsive": true,
-				"bLengthChange": false,
-				"bFilter": false,
-                dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
+                    },
+                
+                    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
                     buttons: [
-                        { extend: 'pdf', className: 'btn-sm', orientation: 'landscape' },
-                        {
-                            text: '<i class="fa fa-filter" aria-hidden="true"></i>',
-                            action: function ( e, dt, node, config ) {
-                                $("#filterrecommended").toggle();
-                            }
-                        }
-                    ],
-				});
+                                    { extend: 'pdf', className: 'btn-sm', orientation: 'landscape', exportOptions: {columns:[2,3,4,5,6,7,8,9]} },
+                                    {
+                                        text: '<i class="fa fa-filter" aria-hidden="true"></i>',
+                                        action: function ( e, dt, node, config ) {
+                                            $("#filteractive").toggle();
+                                        }
+                                    }
+                                ],  
+                        
+                });
 
-            $('#amendtable')
-			.dataTable({
-				// "responsive": true,
-				"bLengthChange": false,
-				"bFilter": false,
-                dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
+                $("#filterrecommend").hide();
+                $('#recommendedtable').DataTable({
+                "bPaginate": false,
+                initComplete: function ()   {
+                this.api()
+                    .columns([2,3,4,5,6,7,8,9])
+                    .every(function () {
+                        var column = this;
+                        var select = $('<select><option value=""></option></select>')
+                            .appendTo($(column.footer()).empty())
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                                column.search(val ? '^' + val + '$' : '', true, false).draw();
+                            });
+    
+                        column
+                            .data()
+                            .unique()
+                            .sort()
+                            .each(function (d, j) {
+                                select.append('<option value="' + d + '">' + d + '</option>');
+                            });
+                        });
+                    },
+                
+                    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
                     buttons: [
-                        { extend: 'pdf', className: 'btn-sm', orientation: 'landscape' },
-                        {
-                            text: '<i class="fa fa-filter" aria-hidden="true"></i>',
-                            action: function ( e, dt, node, config ) {
-                                $("#filteramend").toggle();
-                            }
-                        }
-                    ],
-				});
+                                    { extend: 'pdf', className: 'btn-sm', orientation: 'landscape'},
+                                    {
+                                        text: '<i class="fa fa-filter" aria-hidden="true"></i>',
+                                        action: function ( e, dt, node, config ) {
+                                            $("#filterrecommend").toggle();
+                                        }
+                                    }
+                                ],  
+                        
+                });
 
-            $('#rejecttable')
-			.dataTable({
-				// "responsive": true,
-				"bLengthChange": false,
-				"bFilter": false,
-                dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
+                
+                $("#filteramends").hide();
+                $('#amendtable').DataTable({
+                "bPaginate": false,
+                initComplete: function ()   {
+                this.api()
+                    .columns([2,3,4,5,6,7,8,9,10])
+                    .every(function () {
+                        var column = this;
+                        var select = $('<select><option value=""></option></select>')
+                            .appendTo($(column.footer()).empty())
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                                column.search(val ? '^' + val + '$' : '', true, false).draw();
+                            });
+    
+                        column
+                            .data()
+                            .unique()
+                            .sort()
+                            .each(function (d, j) {
+                                select.append('<option value="' + d + '">' + d + '</option>');
+                            });
+                        });
+                    },
+                
+                    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
                     buttons: [
-                        { extend: 'pdf', className: 'btn-sm', orientation: 'landscape' },
-                        {
-                            text: '<i class="fa fa-filter" aria-hidden="true"></i>',
-                            action: function ( e, dt, node, config ) {
-                                $("#filterrejected").toggle();
-                            }
-                        }
-                    ],
-				});  
+                                    { extend: 'pdf', className: 'btn-sm', orientation: 'landscape'},
+                                    {
+                                        text: '<i class="fa fa-filter" aria-hidden="true"></i>',
+                                        action: function ( e, dt, node, config ) {
+                                            $("#filteramends").toggle();
+                                        }
+                                    }
+                                ],  
+                        
+                });
 
-            $("#filter").click(function(){
-			$("#filteronoff").toggle();
-            });
+    
+                $("#filterreject").hide();
+                $('#rejecttable').DataTable({
+                "bPaginate": false,
+                initComplete: function ()   {
+                this.api()
+                    .columns([2,3,4,5,6,7,8,9,10])
+                    .every(function () {
+                        var column = this;
+                        var select = $('<select><option value=""></option></select>')
+                            .appendTo($(column.footer()).empty())
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                                column.search(val ? '^' + val + '$' : '', true, false).draw();
+                            });
+    
+                        column
+                            .data()
+                            .unique()
+                            .sort()
+                            .each(function (d, j) {
+                                select.append('<option value="' + d + '">' + d + '</option>');
+                            });
+                        });
+                    },
+                
+                    dom: '<"dataTables_wrapper dt-bootstrap"<"row"<"col-xl-7 d-block d-sm-flex d-xl-block justify-content-center"<"d-block d-lg-inline-flex me-0 me-md-3"l><"d-block d-lg-inline-flex"B>><"col-xl-5 d-flex d-xl-block justify-content-center"fr>>t<"row"<"col-md-5"i><"col-md-7"p>>>',
+                    buttons: [
+                                    { extend: 'pdf', className: 'btn-sm', orientation: 'landscape'},
+                                    {
+                                        text: '<i class="fa fa-filter" aria-hidden="true"></i>',
+                                        action: function ( e, dt, node, config ) {
+                                            $("#filterreject").toggle();
+                                        }
+                                    }
+                                ],  
+                        
+                });
+
+
+                // $("#filter").click(function(){
+                // $("#filteronoff").toggle();
+                // });
+
+                $('tfoot').each(function () {
+                $(this).insertAfter($(this).siblings('thead'));
+                });
 
     });
 	</script>
