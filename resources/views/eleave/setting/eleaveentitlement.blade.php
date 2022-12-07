@@ -862,9 +862,7 @@
 						"responsive": false,
 						"bLengthChange": false,
 						"bFilter": true,
-							
-												
-						
+						"scrollX": true,
 					});
 	});
 </script>
