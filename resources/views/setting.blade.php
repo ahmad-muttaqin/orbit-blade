@@ -801,7 +801,7 @@
 					
 				</div>
 				<div class="col-lg-2" >
-					<a class="mb-10px" href="/setting/approvalconfiguration"><i class="fa fa-lock fa-4x text-blue" ></i></a><br><br>
+					<a class="mb-10px" href="/setting/approvalrole"><i class="fa fa-lock fa-4x text-blue" ></i></a><br><br>
 					<h5 class="mb-5px" >Approval Role </h5> 
 					
 				</div>

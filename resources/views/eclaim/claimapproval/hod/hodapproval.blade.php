@@ -648,6 +648,12 @@
                                     <li class="nav-item">
                                         <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Rejected</a>  
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Approved</a>  
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Amended</a>  
+                                    </li>
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
