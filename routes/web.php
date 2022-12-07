@@ -291,6 +291,9 @@ Route::get('/setting/eclaimgeneral', function () {
 Route::get('/setting/approvalconfiguration', function () {
     return view('eclaim/setting/approvalconfiguration/approvalconfigure');
 });
+Route::get('/setting/approvalrole', function () {
+    return view('eclaim/setting/approvalrole/approvalrole');
+});
 //approval supervisor
 Route::get('/claimapproval/supervisor', function () {
     return view('eclaim/claimapproval/supervisor/supervisorapproval');

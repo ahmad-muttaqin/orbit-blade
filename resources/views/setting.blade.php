@@ -784,10 +784,7 @@
 						<a class="mb-10px" href="/setting/cashadvancecontroller"><i class="fa fa-gamepad fa-4x text-blue"></i></a><br><br>
 						<h5 class="mb-5px">Cash Advanced <br> Controller</h5> 
 						</div>
-					<div class="col-lg-2">
-						<a class="mb-10px" href="/setting/claimmonth"><i class="fa fa-calendar-week fa-4x text-blue"></i></a><br><br>
-						<h5 class="mb-5px">Claim Month <br> Controller</h5> 
-						</div>
+					
 
 				
 					
@@ -801,6 +798,11 @@
 				<div class="col-lg-2" >
 					<a class="mb-10px" href="/setting/approvalconfiguration"><i class="fa fa-laptop fa-4x text-blue" ></i></a><br><br>
 					<h5 class="mb-5px" >Approval Configuration </h5> 
+					
+				</div>
+				<div class="col-lg-2" >
+					<a class="mb-10px" href="/setting/approvalconfiguration"><i class="fa fa-lock fa-4x text-blue" ></i></a><br><br>
+					<h5 class="mb-5px" >Approval Role </h5> 
 					
 				</div>
 				
