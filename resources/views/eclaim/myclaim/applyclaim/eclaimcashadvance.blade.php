@@ -639,7 +639,7 @@
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -655,7 +655,7 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -663,7 +663,7 @@
 												<label class="form-label">Purpose</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -754,7 +754,7 @@
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -770,7 +770,7 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -778,7 +778,7 @@
 												<label class="form-label">Purpose</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -811,7 +811,7 @@
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -819,7 +819,7 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -827,7 +827,7 @@
 												<label class="form-label">Purpose</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -860,7 +860,7 @@
 												<label class="form-label">Date of Required Cash</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="text" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -868,7 +868,8 @@
 												<label class="form-label">Purpose</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												{{-- <input  type="text" class="form-control"> --}}
+												<textarea class="form-control" id="" rows="3"></textarea>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -876,7 +877,7 @@
 												<label class="form-label">Amount</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<input  type="number" class="form-control">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -929,16 +930,20 @@
 														<label class="form-label">Day</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="text" class="form-control" id="day">
 													</div>
 													<div class="col-md-1">
 														<label class="form-label">X</label>
 													</div>
 													<div class="col-md-3">
-														<input readonly value="Malaysia" type="text" class="form-control">
+														{{-- <input readonly value="Malaysia" type="text" class="form-control"> --}}
+														<select class="form-select" >
+															<option class="form-label" value="" selected>Malaysia</option>
+															
+														</select>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="text" class="form-control" id="subs" value="60" readonly>
 													</div>
 												</div>
 												<div class="row p-2">
@@ -958,7 +963,7 @@
 														<label class="form-label">Total</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input readonly type="text" class="form-control" id="totalsubs">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -974,16 +979,20 @@
 														<label class="form-label">Night</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="text" class="form-control" id="night">
 													</div>
 													<div class="col-md-1">
 														<label class="form-label">X</label>
 													</div>
 													<div class="col-md-3">
-														<input readonly value="Hotel" type="text" class="form-control">
+														{{-- <input readonly value="Hotel" type="text" class="form-control"> --}}
+														<select class="form-select" >
+															<option class="form-label" value="" selected>Hotel</option>
+															
+														</select>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input type="text" class="form-control" id="acco">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1003,7 +1012,7 @@
 														<label class="form-label">Total</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input readonly type="text" class="form-control" id="totalacco">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1019,7 +1028,7 @@
 														<label class="form-label">Fuel/Fare</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control" id="fuelfare">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1030,7 +1039,7 @@
 														<label class="form-label">Toll/Parking</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control" id="tollparking">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1041,7 +1050,7 @@
 														<label class="form-label">Entertainment</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control" id="ent">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1052,7 +1061,7 @@
 														<label class="form-label">Total</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input readonly type="text" class="form-control" id="totalexp">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1063,7 +1072,7 @@
 														<label class="form-label">Maximum Paid Out (75%)</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input readonly type="text" class="form-control" id="maxpaid">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1178,7 +1187,7 @@
 														<label class="form-label">Fuel/Fare</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1189,7 +1198,7 @@
 														<label class="form-label">Entertainment</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1326,7 +1335,7 @@
 														<label class="form-label">Entertainment</label>
 													</div>
 													<div class="col-md-2">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1481,5 +1490,41 @@
 			$(".CP").hide();
         }
     });	
+
+	// cal mode transport
+
+	$("#day,#subs").change(function(){
+		var a = parseInt($("#day").val());
+		var b = parseInt($("#subs").val());
+        $("#totalsubs").val(a * b);
+    }); 
+
+	// cal acco
+
+	$("#night,#acco").change(function(){
+		var a = parseInt($("#night").val());
+		var b = parseInt($("#acco").val());
+        $("#totalacco").val(a * b);
+    }); 
+
+	//total mode of transport
+	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent").change(function(){
+		var a = parseInt($("#totalsubs").val());  
+		var b = parseInt($("#totalacco").val());  
+		var c = parseInt($("#fuelfare").val());  
+		var d = parseInt($("#tollparking").val()); 
+		var e = parseInt($("#ent").val());     
+		var sum = a + b + c + d + e;
+        $("#totalexp").val(sum);
+    });
+
+	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent,#totalexp").change(function(){
+		var a = parseInt($("#totalexp").val()); 
+        max = parseFloat((75 / 100) * a);
+		$("#maxpaid").val(max);
+    });
+	
+	
+
 </script>
 

@@ -705,7 +705,9 @@
 						<td>2022</td>
 						<td>JULY</td>
 						<td><span class="badge bg-danger">Expired</span></td>
-						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+						{{-- <td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td> --}}
+						eclaim/appealclaim
+						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
 					</tr>
 					
 					
@@ -1125,6 +1127,7 @@
 	  $("#cashadvancetable").dataTable({
         "searching": true,
 		"lengthChange": false,
+		"scrollX": true,
 		lengthMenu: [5, 10],
 		responsive: false,
 		info: false,

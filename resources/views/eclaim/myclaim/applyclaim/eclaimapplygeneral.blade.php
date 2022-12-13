@@ -612,7 +612,7 @@
 		
 		<div class="panel-body">
 			
-			<div class="row p-2">
+			{{-- <div class="row p-2">
 				<div class="col-md-3">	
 					<div class="form-check">
 						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
@@ -620,7 +620,7 @@
                     </div>
 				</div>
 				
-			</div>
+			</div> --}}
 			<div class="row p-2">
 				<div class="col-md-6">	
 					
@@ -636,7 +636,7 @@
 								<label class="form-label">Claim Type</label>
 							</div>
 							<div class="col-md-3">
-								<select class="form-select" >
+								<select class="form-select">
 									<option class="form-label" value="" selected>Please Select</option>
 									
 								</select>
@@ -874,25 +874,24 @@
 <script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
 <script>
-  
-  var elm = document.getElementById('cashadvance');
-  var switchery = new Switchery(elm, {
-    color: '#00acac'
-  });
+		// var elm = document.getElementById('cashadvance');
+		// var switchery = new Switchery(elm, {
+		// 	color: '#00acac'
+		// });	
 
   
-  $('#applyclaimtable').DataTable({
-	"searching": false,
-	"lengthChange": true,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
-	
-  $("#datepicker-autoClose").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
+		$('#applyclaimtable').DataTable({
+			"searching": false,
+			"lengthChange": true,
+			lengthMenu: [5, 10],
+			responsive: false,
+			info: false
+		});
+			
+		$("#datepicker-autoClose").datepicker({
+			todayHighlight: true,
+			autoclose: true,
+			format: 'dd/mm/yyyy',
+		});
 </script>
 

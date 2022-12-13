@@ -633,7 +633,10 @@
                               <div class="row">
                                     <label for="jobgrade" class="col-sm col-form-label">Job Grade*</label>
                                     <div class="col">
-                                        <input type="text" class="form-control" name="jobgrade" id="job_grade" placeholder="Type for hints...">
+                                        <select class="form-select" name="" id="" aria-label="Disabled select example" id="">
+                                            <option selected>Please Select</option>
+                                            
+                                          </select>
                                     </div>
                               </div>
                               <br>
@@ -693,25 +696,28 @@
                             <div class="row">
                                 <label for="lodgingallowance" class="col-sm-3 col-form-label">Lodging Allowance</label>
                                 <div class="col-sm-3">
-                                    <select class="form-select" name="lodgingallowance" id="lodging_allowance" aria-label="Disabled select example">
-                                        <option selected>None</option>
-                                        <option value="actual">Actual</option>
-                                        <option value="inputvalue">Input Value</option>
+                                    <select class="form-select" name="lodgingallowance" id="lodgingallowance" aria-label="Disabled select example" id="lodginghotels">
+                                        <option selected value="0">None</option>
+                                        <option value="1">Actual</option>
+                                        <option value="2">Input Value</option>
                                       </select>
+                                </div>
+                                <div class="col-sm-3" id="lodginghoteli" style="display: none">
+                                    <input type="text" class="form-control" id="local_hotela1" name="" value="">
                                 </div>
                             </div>
                             <br>
                             <div class="row">
                                 <label for="localhotela" class="col-sm-3 col-form-label">Local Hotel Allowance</label>
                                 <div class="col-sm-3">
-                                    <select class="form-select" name="localhotela" id="local_hotela" aria-label="Disabled select example">
-                                        <option >None</option>
-                                        <option value="actual">Actual</option>
-                                        <option selected value="inputvalue">Input Value</option>
+                                    <select class="form-select" name="localhotela" id="localhotela" aria-label="Disabled select example">
+                                        <option selected value="0">None</option>
+                                        <option value="1">Actual</option>
+                                        <option value="2">Input Value</option>
                                       </select>
                                 </div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" id="local_hotela1" name="localhotela" value="150">
+                                <div class="col-sm-3" id="localhoteli" style="display: none">
+                                    <input type="text" class="form-control" id="" name="localhotela" value="">
                                 </div>
                             </div>
                             <br>
@@ -850,7 +856,7 @@
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editsubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
                                         </td>
                                         <td>MIDDLE EAST</td>
-                                        <td>170</td>
+                                        <td>unlimited</td>
                                     </tr>
 
                                     <tr>
@@ -891,7 +897,7 @@
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>
                                         </td>
                                         <td>PHONE BILL</td>
-                                        <td>170</td>
+                                        <td>unlimited</td>
                                     </tr>
 
                                     <tr>
@@ -1152,7 +1158,29 @@ $(document).ready(function(){
         $('#count').val($("[type='checkbox']:checked").length); 
       });
 
-        });
+});
+
+        $(document).on('change', "#localhotela", function() {
+        if ($(this).val() == "2") {
+            $("#localhoteli").show();
+			
+		}else {
+			
+			$("#localhoteli").hide();
+        }
+    });
+
+    // 
+    $(document).on('change', "#lodgingallowance", function() {
+        if ($(this).val() == "2") {
+            $("#lodginghoteli").show();
+			
+		}else {
+			
+			$("#lodginghoteli").hide();
+        }
+    });
+
 </script>
 
 

@@ -23,6 +23,10 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
+
+
+	{{-- timepicker --}}
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 </head>
 
 <body>
@@ -612,14 +616,14 @@
 		
 		<div class="panel-body">
 			
-			<div class="row p-2">
+			{{-- <div class="row p-2">
 				<div class="col-md-3">	
 					<div class="form-check">
 						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
                     </div>
 				</div>
 				
-			</div>
+			</div> --}}
 			<div class="row p-2">
 				<div class="col-md-6">	
 					
@@ -675,7 +679,7 @@
 														<label class="form-label">Applied Date</label>
 													</div>
 													<div class="col-md-8">
-														<input readonly type="text" class="form-control">
+														<input type="text" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -691,7 +695,7 @@
 														<label class="form-label">Amount</label>
 													</div>
 													<div class="col-md-8">
-														<input readonly type="text" class="form-control">
+														<input  type="number" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -699,7 +703,8 @@
 														<label class="form-label">Description</label>
 													</div>
 													<div class="col-md-8">
-														<input readonly type="text" class="form-control">
+														<textarea class="form-control" id="" rows="3"></textarea>
+														{{-- <input  type="text" class="form-control"> --}}
 														
 													</div>
 												</div>
@@ -736,21 +741,21 @@
 															<label class="form-label">Travel Date</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
-															<label class="form-label">Start Time</label>
+															<label class="form-label" >Start Time</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="text" id="timestart" class="timepicker form-control form-control" value="">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">End Time</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="text" id="timeend" class=" timepicker form-control form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -758,7 +763,7 @@
 															<label class="form-label">Total Hours</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" id="totalduration" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -766,7 +771,8 @@
 															<label class="form-label">Description</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<textarea class="form-control" id="" rows="3"></textarea>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -774,7 +780,7 @@
 															<label class="form-label">Reason of Web</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -782,7 +788,15 @@
 															<label class="form-label">Type of Transport</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<select class="form-select" id="">
+																<option class="form-label" value="" selected>Please Select</option>
+																<option class="form-label" value="" > Personal Car</option>
+																<option class="form-label" value="" >Personal Motocycle</option>
+																<option class="form-label" value="" > Public Transport</option>
+																<option class="form-label" value="" >Company Car</option>
+																<option class="form-label" value="" > Carpool</option>
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -790,15 +804,25 @@
 															<label class="form-label">Location Start</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<select class="form-select" id="ls">
+																<option class="form-label" value="" selected>Please Select</option>
+																<option class="form-label" value="" >Home</option>
+																<option class="form-label" value="" >Office</option>
+																<option class="form-label" value="3" > My Project</option>
+																<option class="form-label" value="" >Others</option>
+															</select>
 														</div>
 													</div>
-													<div class="row p-2">
+													<div class="row p-2" id="project" style="display: none">
 														<div class="col-md-4">
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<select class="form-select" id="">
+																<option class="form-label" value="" selected>Please Select</option>
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -806,7 +830,8 @@
 															<label class="form-label">Address Start</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
+															
 														</div>
 													</div>
 													<div class="row p-2">
@@ -814,23 +839,36 @@
 															<label class="form-label">Destination</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<select class="form-select" id="dest">
+																<option class="form-label" value="" selected>Please Select</option>
+																<option class="form-label" value="" >Home</option>
+																<option class="form-label" value="" >Office</option>
+																<option class="form-label" value="3" >My Project</option>
+																<option class="form-label" value="4" >Others</option>
+															</select>
 														</div>
 													</div>
-													<div class="row p-2">
+													<div class="row p-2" id="projectdest" style="display: none">
 														<div class="col-md-4">
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<select class="form-select" id="dest">
+																<option class="form-label" value="" selected>Please Select</option>
+															</select>
 														</div>
 													</div>
-													<div class="row p-2">
+													<div class="row p-2" id="logname" style="display: none">
 														<div class="col-md-4">
 															<label class="form-label">Log Name</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input readonly type="text" class="form-control"> --}}
+															<select class="form-select" id="">
+																<option class="form-label" value="" selected>Please Select</option>
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -838,7 +876,7 @@
 															<label class="form-label">Destination Address</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -853,7 +891,7 @@
 															<label class="form-label">Petrol/Fares</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="number" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -861,14 +899,14 @@
 															<label class="form-label">Toll</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="number" class="form-control">
 														</div>
 													
 														<div class="col-md-2">
 															<label class="form-label">Parking</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="number" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1001,7 +1039,7 @@
 															<label class="form-label">Travel Date</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1009,13 +1047,13 @@
 															<label class="form-label">Start Time</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">End Time</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1023,7 +1061,7 @@
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1031,7 +1069,8 @@
 															<label class="form-label">Description</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" class="form-control">
+															{{-- <input  type="text" class="form-control"> --}}
+															<textarea class="form-control" id="" rows="3"></textarea>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1341,10 +1380,12 @@
 <link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 <script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
-<script>
-  
 
-  
+{{-- timpicker --}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+<script>
+
   $('#claimtable').DataTable({
 	"searching": false,
 	"lengthChange": true,
@@ -1383,6 +1424,83 @@
             $(".WOC").hide();
         }
     });
-	
+
+	//
+	$(document).on('change', "#dest", function() {
+       
+	   if ($(this).val() == "3") {
+		   $("#projectdest").show();
+		
+	   } else {
+            $("#projectdest").hide();
+        }
+	   
+	  
+   });
+
+   //
+   $(document).on('change', "#dest", function() {
+       
+	   if ($(this).val() == "3") {
+		   $("#project").show();
+		   $("#logname").hide();
+		
+	   } else if ($(this).val() == "4"){
+			$("#project").hide();
+			$("#logname").show();
+
+		}    else {
+            $("#project").hide();
+			$("#logname").hide();
+        }  
+	  
+   });
 </script>
+
+{{-- calculate total hours --}}
+<script>
+	$(function () {
+
+	TimePicker();
+
+	});
+
+var TimePicker = function () {
+
+if ($(".timepicker").length === 0) { return; }
+
+$(".timepicker").timepicker({
+	timeFormat: 'HH:mm',
+    interval: 30,
+    // minTime: '10',
+    // maxTime: '',
+    defaultTime: '09:00',
+    // startTime: '',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true,
+	change: tmTotalHrsOnSite
+});
+
+};
+
+function tmTotalHrsOnSite () {
+
+if ($("#timestart") && $("#timeend")) {
+
+	valueStart = $("#timestart").val();
+	valueStop = $("#timeend").val();
+
+	var str0="01/01/1970 " + valueStart;
+	var str1="01/01/1970 " + valueStop;
+
+	var diff=(Date.parse(str1)-Date.parse(str0))/1000/60;
+	var hours=String(100+Math.floor(diff/60)).substr(1);
+	var mins=String(100+diff%60).substr(1);
+	$("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
+
+	}
+
+};
+	</script>
 
