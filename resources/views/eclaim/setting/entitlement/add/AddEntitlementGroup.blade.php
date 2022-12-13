@@ -848,7 +848,7 @@
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editsubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>  
                                         </td>
                                         <td>MALAYSIA</td>
-                                        <td>60</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
@@ -889,7 +889,7 @@
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#editclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
                                         </td>
                                         <td>ENTERTAINMENT</td>
-                                        <td>60</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>

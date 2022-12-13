@@ -851,7 +851,7 @@ margin-top: 10px;
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#updatesubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>  
                                         </td>
                                         <td>MALAYSIA</td>
-                                        <td>60</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
@@ -892,7 +892,7 @@ margin-top: 10px;
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#updateclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
                                         </td>
                                         <td>ENTERTAINMENT</td>
-                                        <td>60</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
