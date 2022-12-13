@@ -656,9 +656,9 @@
                             </div>
                         </div>
                     </div>
-                    
                         <div class="tab-content panel p-3 rounded">
                             <div class="tab-pane fade active show" id="default-tab-1">
+                                <br>
                                 <table  id="activetable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
