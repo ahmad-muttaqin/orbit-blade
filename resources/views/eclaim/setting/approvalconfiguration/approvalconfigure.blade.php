@@ -651,8 +651,30 @@
                                         <th style="text-align: center">PAYMENT</th>
                                         <th style="text-align: center">PAID</th>
                                     </tr>
+                                    
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 1</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                    </tr>
                                     <tr>
                                         <td>1</td>
                                         <td width="40%">SUPERVISOR - RECOMMENDER</td>
@@ -694,6 +716,27 @@
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 2</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -757,6 +800,27 @@
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 3</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
@@ -862,6 +926,27 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 1</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                    </tr>
+                                    <tr>
                                         <td>1</td>
                                         <td width="40%">HOD / CEO - APPROVER</td>
                                         <td style="text-align: center"><input class="form-check-input" type="checkbox"  /></td>
@@ -881,6 +966,27 @@
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 3</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -986,6 +1092,27 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 1</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                    </tr>
+                                    <tr>
                                         <td>1</td>
                                         <td width="40%">HOD / CEO - APPROVER</td>
                                         <td style="text-align: center"><input class="form-check-input" type="checkbox"  /></td>
@@ -1005,6 +1132,27 @@
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
                                         <td style="text-align: center;background-color:darkgray!important;" ><input class="form-check-input" type="checkbox"  disabled/></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="19" style="text-align: center"><label class="form-label">Level 3</label></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
+                                        <td style="display: none"></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -1127,6 +1275,7 @@
     paging: false,
     searching:false,
     info:false,
+    ordering:false
   });
 
 //   $('#table-general').DataTable({
@@ -1146,7 +1295,7 @@ var general =$('#table-general').DataTable({
     paging: false,
     searching:false,
     info:false,
-    
+    ordering:false
 });
 
 var cashadvance =$('#table-cash-advance').DataTable({
@@ -1156,7 +1305,7 @@ var cashadvance =$('#table-cash-advance').DataTable({
     paging: false,
     searching:false,
     info:false,
-    
+    ordering:false
 });
 
 $( "#tab2" ).on( "click", function () {
