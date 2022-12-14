@@ -642,7 +642,7 @@
                         </div>
                         <br>
                         <div class="row p-2">
-                                <label for="expiredate" class="col-sm-5 col-form-label">Open Claim Duration <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipexpiredate" title="User can decide duration of open claim 
+                                <label for="expiredate" class="col-sm-5 col-form-label">Open Claim Duration <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipexpiredate" title="User can decide duration to open claim 
                                     "></i></label>
                                 <div class="col-sm-3">
                                     <select class="form-select" id="" name="status">
