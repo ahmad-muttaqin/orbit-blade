@@ -756,9 +756,9 @@
                                         <button id="minusbtn1" type="button" style="display: none;"><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
-                                <br>
+                                
                                 <div class="row">
-                                    {{-- <label for="inputEmail3" class="col-sm col-form-label">Car Mileage Claim*</label> --}}
+                                    
                                     <label for="staticEmail" class="col-sm-3 col-form-label"></label>
                                         <div class="col-sm-3">
                                         <input  type="text" style="display: none;" class="form-control" id="mileagecharge2"  >
@@ -822,6 +822,34 @@
                                     <div class="col">
                                         <button id="plusmbtn2" type="button" style="display: none;" ><i class="fa fa-plus"></i> </button>
                                         <button id="minusmbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Food Allowance</label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Breakfast </label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Lunch </label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Dinner </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" name="" id="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" name="" >
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" name="" >
                                     </div>
                                 </div>
                             </div>
