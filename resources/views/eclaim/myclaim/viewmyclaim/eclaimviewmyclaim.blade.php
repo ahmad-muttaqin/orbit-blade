@@ -647,7 +647,7 @@
 							</div>
 						</div>
 						<div class="row p-2">
-							<table id="traveltable" class="table table-striped table-bordered align-middle">
+							<table id="claimtable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -713,7 +713,7 @@
 							</table>
 						</div>
 						<div class="row p-2">
-							<table id="claimtable" class="table table-striped table-bordered align-middle">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1201,6 +1201,17 @@
                         <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
+
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Total Subsistence Allowance:</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
 				<div class="row p-2">
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Accommodation :</label>
@@ -1225,6 +1236,18 @@
                     </div>
 					<div class="col-md-3">
 					<input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+					<label class="form-label col-form-label">Total Accomodation</label>
+                    </div>
+					<div class="col-md-3">
+					<input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				</div>
@@ -1340,6 +1363,7 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
+		scrollX : true
     });
 	$("#traveltable").DataTable({
         responsive: false,
@@ -1347,6 +1371,7 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
+		scrollX : true
     });
 	$(document).on("click", "#btn-view-claim", function() {
         $('#modal-view-claim').modal('show');

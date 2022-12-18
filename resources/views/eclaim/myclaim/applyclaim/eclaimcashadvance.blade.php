@@ -639,7 +639,7 @@
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input type="text" class="form-control">	
+												<input type="text" class="form-control" id="datefilter1" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -686,42 +686,42 @@
 												<tbody>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022</td>
+														<td>1/1/2022 - 3/1/2022</td>
 														<td>Orbit</td>
 														<td>Kuala Lumpur</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022</td>
+														<td>5/1/2022 - 7/1/2022</td>
 														<td>Payje</td>
 														<td>Putrajaya</td>
 														<td>Project Discussion</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022</td>
+														<td>2/2/2022 - 3/2/2022</td>
 														<td>Orbit</td>
 														<td>Kuala Lumpur</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022</td>
+														<td>5/2/2022 - 7/5/2022</td>
 														<td>MyVM</td>
 														<td>Selangor</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022</td>
+														<td>8/5/2022 - 10/5/2022</td>
 														<td>Payje</td>
 														<td>Kuala Lumpur</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022</td>
+														<td>12/5/2022 - 15/5/2022</td>
 														<td>Orbit</td>
 														<td>Kajang</td>
 														<td>Meeting</td>
@@ -988,11 +988,11 @@
 														{{-- <input readonly value="Hotel" type="text" class="form-control"> --}}
 														<select class="form-select" >
 															<option class="form-label" value="" selected>Hotel</option>
-															
+															<option class="form-label" value="" >Lodging</option>
 														</select>
 													</div>
 													<div class="col-md-2">
-														<input type="text" class="form-control" id="acco">
+														<input type="text" class="form-control" id="acco" value="350" readonly>
 													</div>
 												</div>
 												<div class="row p-2">
@@ -1423,6 +1423,12 @@
 <link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 <script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
+
+{{-- date range --}}
+<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+<script src="/assets/plugins/moment/min/moment.min.js"></script>
+<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script> 
+
 <script>
 
   $(document).on('change', "#toca", function() {
@@ -1518,13 +1524,37 @@
         $("#totalexp").val(sum);
     });
 
+
+	//
 	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent,#totalexp").change(function(){
 		var a = parseInt($("#totalexp").val()); 
         max = parseFloat((75 / 100) * a);
 		$("#maxpaid").val(max);
     });
-	
-	
 
+	$(function() {
+
+$('#datefilter1').daterangepicker({
+	autoUpdateInput: false,
+	locale: {
+		cancelLabel: 'Clear'
+	}
+});
+
+$('#datefilter1').on('apply.daterangepicker', function(ev, picker) {
+	$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+});
+
+$('#datefilter1').on('cancel.daterangepicker', function(ev, picker) {
+	$(this).val('');
+});
+
+});
 </script>
+
+
+{{-- date range --}}
+<script>
+	
+	</script>
 

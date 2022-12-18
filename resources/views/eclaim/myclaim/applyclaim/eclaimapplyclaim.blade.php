@@ -605,7 +605,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
+	<h1 class="page-header">eClaim <small>| My Claim | Apply Monthly Claim</small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -679,7 +679,7 @@
 														<label class="form-label">Applied Date</label>
 													</div>
 													<div class="col-md-8">
-														<input type="text" class="form-control">
+														<input type="text" class="form-control" id="datepickerpc">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -687,7 +687,9 @@
 														<label class="form-label">Claim Category</label>
 													</div>
 													<div class="col-md-8">
-														<input readonly type="text" class="form-control">
+														<select class="form-select" id="" readonly>
+															<option class="form-label" value="" selected>Please Select</option>
+														</select>
 													</div>
 												</div>
 												<div class="row p-2">
@@ -704,8 +706,14 @@
 													</div>
 													<div class="col-md-8">
 														<textarea class="form-control" id="" rows="3"></textarea>
-														{{-- <input  type="text" class="form-control"> --}}
-														
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-4">
+														<label class="form-label">Content Description</label>
+													</div>
+													<div class="col-md-8">
+														<input  type="text" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -741,7 +749,7 @@
 															<label class="form-label">Travel Date</label>
 														</div>
 														<div class="col-md-8">
-															<input  type="text" class="form-control">
+															<input  type="text " class="form-control" id="datepickertc">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -777,7 +785,7 @@
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
-															<label class="form-label">Reason of Web</label>
+															<label class="form-label">Reason using Web</label>
 														</div>
 														<div class="col-md-8">
 															<input  type="text" class="form-control">
@@ -1028,7 +1036,7 @@
 													</div>
 													<div class="modal-footer">
 
-														<button type="button" class="btn btn-secondary" >Reset</button>
+														
 														<button type="button" class="btn btn-primary" >Save</button>
 														
 													</div>
@@ -1077,33 +1085,67 @@
 														<div class="col-md-4">
 															<label class="form-label">Subsistence Allowance:</label>
 														</div>
-														<div class="col-md-4">
+														<div class="col-md-2">
 															<label class="form-label">Breakfast</label>
 														</div>
-														<div class="col-md-4">
+														<div class="col-md-2">
 															<input readonly type="text" class="form-control">
 														</div>
+														<div class="col-md-2">
+															<label class="form-label">X day =</label>
+														</div>
+														<div class="col-md-2">
+															<input  type="text" class="form-control">
+														</div>
+														
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
 
 														</div>
-														<div class="col-md-4">
+														<div class="col-md-2">
 															<label class="form-label">Lunch</label>
 														</div>
-														<div class="col-md-4">
+														<div class="col-md-2">
 															<input readonly type="text" class="form-control">
+														</div>
+														<div class="col-md-2">
+															<label class="form-label">X day =</label>
+														</div>
+														<div class="col-md-2">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
-															
 														</div>
-														<div class="col-md-4">
+														<div class="col-md-2">
 															<label class="form-label">Dinner</label>
 														</div>
-														<div class="col-md-4">
+														<div class="col-md-2">
 															<input readonly type="text" class="form-control">
+														</div>
+														<div class="col-md-2">
+															<label class="form-label">X day =</label>
+														</div>
+														<div class="col-md-2">
+															<input  type="text" class="form-control">
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-md-4">
+														</div>
+														<div class="col-md-2">
+															
+														</div>
+														<div class="col-md-2">
+															
+														</div>
+														<div class="col-md-2">
+															Total Subsistence
+														</div>
+														<div class="col-md-2">
+															<input readonly  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1121,7 +1163,7 @@
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1137,6 +1179,24 @@
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
+														</div>
+														<div class="col-md-2">
+															<input  type="text" class="form-control">
+														</div>
+													</div>
+													<div class="row p-2">
+														<div class="col-md-4">
+															<label class="form-label"></label>
+														</div>
+														<div class="col-md-2">
+															
+															<label class="form-label"></label>
+														</div>
+														<div class="col-md-2">
+															
+														</div>
+														<div class="col-md-2">
+															<label class="form-label">Total Accomodation</label>
 														</div>
 														<div class="col-md-2">
 															<input readonly type="text" class="form-control">
@@ -1180,7 +1240,7 @@
 				<div class="form-control">	
 					<div class="row">
 						<div class="">	
-							<table id="claimtable" class="table table-striped table-bordered align-middle">
+							<table id="claimtable1" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1386,20 +1446,32 @@
 
 <script>
 
+  $('#claimtable1').DataTable({
+	"searching": false,
+	"lengthChange": true,
+	lengthMenu: [5, 10],
+    responsive: false,
+	info: false,
+	scrollX : true
+  });
+
   $('#claimtable').DataTable({
 	"searching": false,
 	"lengthChange": true,
 	lengthMenu: [5, 10],
     responsive: false,
-	info: false
+	info: false,
+	scrollX : true
   });
+
 
   $('#traveltable').DataTable({
 	"searching": false,
 	"lengthChange": true,
 	lengthMenu: [5, 10],
     responsive: false,
-	info: false
+	info: false,
+	scrollX : true
   });
 	
   $("#datepicker-autoClose").datepicker({
@@ -1426,13 +1498,13 @@
     });
 
 	//
-	$(document).on('change', "#dest", function() {
+	$(document).on('change', "#ls", function() {
        
 	   if ($(this).val() == "3") {
-		   $("#projectdest").show();
+		   $("#project").show();
 		
 	   } else {
-            $("#projectdest").hide();
+            $("#project").hide();
         }
 	   
 	  
@@ -1442,15 +1514,15 @@
    $(document).on('change', "#dest", function() {
        
 	   if ($(this).val() == "3") {
-		   $("#project").show();
+		   $("#projectdest").show();
 		   $("#logname").hide();
 		
 	   } else if ($(this).val() == "4"){
-			$("#project").hide();
+			$("#projectdest").hide();
 			$("#logname").show();
 
 		}    else {
-            $("#project").hide();
+            $("#projectdest").hide();
 			$("#logname").hide();
         }  
 	  
@@ -1502,5 +1574,18 @@ if ($("#timestart") && $("#timeend")) {
 	}
 
 };
+
+$("#datepickerpc").datepicker({
+    todayHighlight: true,
+    autoclose: true,
+	format: 'dd-mm-yyyy'
+  });
+
+
+  $("#datepickertc").datepicker({
+    todayHighlight: true,
+    autoclose: true,
+	format: 'dd-mm-yyyy'
+  });
 	</script>
 

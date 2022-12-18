@@ -657,7 +657,9 @@
 								<label class="form-label">Claim Category</label>
 							</div>
 							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
+								<select class="form-select" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
 							</div>
 						</div>
 						<div class="row p-2">
@@ -665,7 +667,7 @@
 								<label class="form-label">Amount</label>
 							</div>
 							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
+								<input  type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row p-2">
@@ -673,7 +675,7 @@
 								<label class="form-label">Description</label>
 							</div>
 							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
+								<textarea class="form-control" rows="3"></textarea>
 							</div>
 						</div>
 						<div class="row p-2">

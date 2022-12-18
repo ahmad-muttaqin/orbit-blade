@@ -706,7 +706,6 @@
 						<td>JULY</td>
 						<td><span class="badge bg-danger">Expired</span></td>
 						{{-- <td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td> --}}
-						eclaim/appealclaim
 						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
 					</tr>
 					
