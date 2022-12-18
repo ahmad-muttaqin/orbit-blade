@@ -827,6 +827,34 @@ margin-top: 10px;
                                         <button id="uminusmbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Food Allowance</label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Breakfast </label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Lunch </label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Dinner </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" name="" id="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" name="" >
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" name="" >
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>

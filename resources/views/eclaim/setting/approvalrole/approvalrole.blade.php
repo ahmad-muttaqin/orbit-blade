@@ -732,6 +732,19 @@
 											<h5>ADMIN</h5>
 										</div>
 										<div class="col-md-2">
+											<label class="form-label">Role</label>
+										</div>
+										<div class="col-md-6">
+											<select class="form-select" id="" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											
+										</div>
+										<div class="col-md-2">
 											<label class="form-label">Checker 1</label>
 										</div>
 										<div class="col-md-6">
@@ -803,6 +816,19 @@
 									<div class="row p-2">
 										<div class="col-md-2">
 											<h5>FINANCE</h5>
+										</div>
+										<div class="col-md-2">
+											<label class="form-label">Role</label>
+										</div>
+										<div class="col-md-6">
+											<select class="form-select" id="" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											
 										</div>
 										<div class="col-md-2">
 											<label class="form-label">Checker 1</label>
@@ -882,6 +908,19 @@
 										<div class="row p-2">
 											<div class="col-md-2">
 												<h5>FINANCE</h5>
+											</div>
+											<div class="col-md-2">
+												<label class="form-label">Role</label>
+											</div>
+											<div class="col-md-6">
+												<select class="form-select" id="" >
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>
+											</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-md-2">
+												
 											</div>
 											<div class="col-md-2">
 												<label class="form-label">Checker 1</label>
@@ -985,6 +1024,19 @@
 																	<h5>ADMIN</h5>
 																</div>
 																<div class="col-md-2">
+																	<label class="form-label">Role</label>
+																</div>
+																<div class="col-md-6">
+																	<select class="form-select" id="" >
+																		<option class="form-label" value="" selected>Please Select</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-md-2">
+																	
+																</div>
+																<div class="col-md-2">
 																	<label class="form-label">Checker 1</label>
 																</div>
 																<div class="col-md-6">
@@ -1056,6 +1108,19 @@
 															<div class="row p-2">
 																<div class="col-md-2">
 																	<h5>FINANCE</h5>
+																</div>
+																<div class="col-md-2">
+																	<label class="form-label">Role</label>
+																</div>
+																<div class="col-md-6">
+																	<select class="form-select" id="" >
+																		<option class="form-label" value="" selected>Please Select</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-md-2">
+																	
 																</div>
 																<div class="col-md-2">
 																	<label class="form-label">Checker 1</label>
@@ -1135,6 +1200,19 @@
 																<div class="row p-2">
 																	<div class="col-md-2">
 																		<h5>FINANCE</h5>
+																	</div>
+																	<div class="col-md-2">
+																		<label class="form-label">Role</label>
+																	</div>
+																	<div class="col-md-6">
+																		<select class="form-select" id="" >
+																			<option class="form-label" value="" selected>Please Select</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="row p-2">
+																	<div class="col-md-2">
+																		
 																	</div>
 																	<div class="col-md-2">
 																		<label class="form-label">Checker 1</label>
