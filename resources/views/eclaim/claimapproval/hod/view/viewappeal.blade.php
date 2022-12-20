@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Timesheet </title>
+	<title>OrbitHRM  </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -601,102 +601,380 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
-	
+	<h1 class="page-header">eClaim <small>| Claim Approval | Supervisor | View Appeal Claim </small></h1>
+
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
+		<div class="panel-body">
 		
 		<!-- BEGIN panel-heading -->
-		
-		
-		<div class="panel-body">
-			
-			{{-- <div class="row p-2">
-				<div class="col-md-3">	
-					<div class="form-check">
-						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
-                    </div>
-				</div>
-				
-			</div> --}}
 			<div class="row p-2">
-				<div class="col-md-12">	
-					<div class="form-control">	
+				<div class="col-md-7">	
+					<div class="form-control">
 						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim ID</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Type</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Applied Date</label>
-							</div>
-							<div class="col-md-3">
-								<input id="appealdate" type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Category</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Amount</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Description</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Supporting Document</label>
-							</div>
-							<div class="col-md-3">
-								<input type="file" class="form-control-file" id="">
-							</div>
+							<h4>Claim Information</h4>
 						</div>
 						
+						<div class="row p-2">
+							<div class="col-md-12">	
+								
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Claim ID</label>
+										</div>
+										<div class="col-md-3">
+											<input readonly type="text" class="form-control">
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Claim Type</label>
+										</div>
+										<div class="col-md-3">
+											<select class="form-select" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Applied Date</label>
+										</div>
+										<div class="col-md-3">
+											<input id="appealdate" type="text" class="form-control">
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Claim Category</label>
+										</div>
+										<div class="col-md-3">
+											<input readonly type="text" class="form-control">
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Amount</label>
+										</div>
+										<div class="col-md-3">
+											<input readonly type="text" class="form-control">
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Description</label>
+										</div>
+										<div class="col-md-3">
+											<input readonly type="text" class="form-control">
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											<label class="form-label">Supporting Document</label>
+										</div>
+										<div class="col-md-3">
+											<input type="file" class="form-control-file" id="">
+										</div>
+									</div>
+									
+								</div>
+			</div>	
 					</div>
+				</div>
+				<div class="col-md-5">	
+				
+					<div class="form-control">
+						<div class="row p-2">
+							<h4>Claim History</h4>
+							<div class="card-body">
+											<div class="container">
+												<ul class="timeline-with-icons">
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-plus text-primary fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold">Siti Sarah Submitted claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Mukhsin recommended Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-arrow-rotate-right text-warning fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold">Hassan amended Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Hafizi approved Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-xmark text-danger fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Nadia rejected Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-yellow fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Shida checked Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-minus text-indigo fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Amira Closed Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+			<div class="row p-2">
+				<div class="col align-self-start">
+					<a href="/claimapproval/supervisor" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+				</div>	
+				<div class="col d-flex justify-content-end">
+					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
+					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
+					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
+					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 				</div>
 			</div>
 		</div>
-		<div class="row p-2">
-			<div class="col align-self-start">
-				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-			</div>	
-			<div class="col d-flex justify-content-end">
-				<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
+		
+	</div>
+	
+		
+	<div class="modal fade" id="modal-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Applied Date</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Claim Category</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Amount</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+					</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-6">
+                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Supporting Document</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                   
+				</div>
+				
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
 			</div>
 		</div>
+	</div>		
+	
+	<!-- Modal amend -->
+	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <!-- Modal reject -->
+      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	<!-- END row -->
+	
 	<!-- END #app -->
-	</div>
+	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
@@ -730,17 +1008,23 @@
 <script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
 <script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
 <script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
-<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+
 
 <script>
-  
-  $("#appealdate").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
+   
+	$(document).on("click", "#btn-view-claim", function() {
+        $('#modal-view-claim').modal('show');
+
+    });
+	$(document).on("click", "#btn-view-subsistence", function() {
+        $('#modal-view-subsistence').modal('show');
+
+    });
+	$(document).on("click", "#btn-view", function() {
+        $('#modal-view').modal('show');
+
+    });
+
+	
 </script>
 

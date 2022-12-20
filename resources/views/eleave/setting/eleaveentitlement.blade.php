@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Timesheet </title>
+	<title>OrbitHRM | Setting E Leave Entitlement</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -22,9 +20,26 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-	<!-- ================== END page-css ================== -->
-</head>
 
+	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+
+
+	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
+	{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 --}}
+
+
+	
+	
+	<!-- ================== END page-css ================== -->
+	<style>
+	
+		</style>
+		</head>
+		<body>
+</head>
 <body>
 	<!-- BEGIN #loader -->
 	<div id="loader" class="app-loader">
@@ -209,7 +224,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/timesheet/timesheetapproval" class="menu-link">
+                                <a href="#" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -217,7 +232,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/timesheet/timesheetrealtime" class="menu-link">
+                                <a href="#" class="menu-link">
                                     <div class="menu-icon">
 										<i class="fa fa-receipt text-gray"></i>
 									</div>
@@ -434,7 +449,7 @@
                                 </a>
                             <div class="menu-submenu">
                                 <div class="menu-item">
-                                    <a href="/timesheet/reportingstatusreport" class="menu-link">
+                                    <a href="#" class="menu-link">
                                         <div class="menu-icon">
 								             <i class="fa fa-address-card text-gray"></i>
 							            </div>
@@ -442,7 +457,7 @@
                                     </a>
                                     </div>
                                     <div class="menu-item">
-                                <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
+                                <a href="#" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-clock text-gray"></i>
 							    </div>
@@ -450,7 +465,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a href="/timesheet/timesheetovertimereport" class="menu-link">
+                                <a href="#" class="menu-link">
                                 <div class="menu-icon">
 								    <i class="fa fa-user-gear text-gray"></i>
 							    </div>
@@ -595,152 +610,270 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	
-	<!-- END page-header -->
-	<!-- BEGIN row -->
-	
-	<!-- END breadcrumb -->
-	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
-	
-	<!-- END page-header -->
-	<!-- BEGIN panel -->
-	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		
-		
-		<div class="panel-body">
-			
-			{{-- <div class="row p-2">
-				<div class="col-md-3">	
-					<div class="form-check">
-						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
-                    </div>
-				</div>
-				
-			</div> --}}
-			<div class="row p-2">
-				<div class="col-md-12">	
-					<div class="form-control">	
+	<h1 class="page-header">Setting | Leave Entitlement</h1>
+			<div class="panel panel">
+				<div class="panel-body">
+					<div class="form-control">
 						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim ID</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
+							<h3>Leave Entitlement List</h3>
+						</div>
+						<div class="row p-2 ">
+							<button class="btn btn-primary col-2" data-bs-toggle="modal" id="myModal1" data-bs-target="#updatelapse"> <i class="fa fa-calendar" aria-hidden="true"></i> Lapsed Date</button>
 						</div>
 						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Type</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-								</select>
-							</div>
+							<table  id="tableeleave"  class="table table-striped table-bordered align-middle">
+								<thead>
+								  <tr>	
+									<th  data-orderable="false"></th>
+									<th class="text-nowrap">Action</th>
+									<th class="text-nowrap">Employee Name</th>
+									<th class="text-nowrap">Department</th>
+									<th class="text-nowrap">Current Entitlement(2022)</th>
+									<th class="text-nowrap">Current Entitlement Balance</th>
+									<th class="text-nowrap">Sick Leave Entitlement</th>
+									<th class="text-nowrap">Sick Leave Entitlement Balance</th>
+									<th class="text-nowrap">Carry Forward(2021)</th>
+									<th class="text-nowrap">Carry Forward Balance</th>
+									<th class="text-nowrap">Lapsed Date</th>
+									<th class="text-nowrap">Lapse</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  	<tr>
+										<td><input class="form-check-input" type="checkbox" value="" id="" checked></td>
+										<td><button class="btn btn-primary" data-bs-toggle="modal" id="myModal1" data-bs-target="#editleave">Edit</button></td>
+										<td>Amira Roslam</td>
+										<td>Service Delivery Department</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+								  	</tr>
+								  	<tr>
+										<td><input class="form-check-input" type="checkbox" value="" id="" checked></td>
+										<td><button class="btn btn-primary" data-bs-toggle="modal" id="myModal1" data-bs-target="#editleave">Edit</button></td>
+										<td>Hazizul Husni</td>
+										<td>Sales Department</td>
+										<td>24</td>
+										<td>20</td>
+										<td>10</td>
+										<td>6</td>
+										<td>5</td>
+										<td>2</td>
+										<td>31/03/2022</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td><input class="form-check-input" type="checkbox" value="" id=""></td>
+										<td><button class="btn btn-primary" data-bs-toggle="modal" id="myModal1" data-bs-target="#editleave">Edit</button></td>
+										<td>izzudin Umar</td>
+										<td>Business Development</td>
+										<td>12</td>
+										<td>6</td>
+										<td>15</td>
+										<td>9</td>
+										<td>5</td>
+										<td>0</td>
+										<td>31/03/2022</td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							  </table>
 						</div>
-
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Applied Date</label>
-							</div>
-							<div class="col-md-3">
-								<input id="appealdate" type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Category</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Amount</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Description</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Supporting Document</label>
-							</div>
-							<div class="col-md-3">
-								<input type="file" class="form-control-file" id="">
-							</div>
-						</div>
-						
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row p-2">
-			<div class="col align-self-start">
-				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-			</div>	
-			<div class="col d-flex justify-content-end">
-				<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
+
+
+
+<!-- Modal  edit row-->
+<div class="modal fade" id="editleave" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Edit Entitlement</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Employee Name :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""  readonly />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Department :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value="  "  readonly />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Current Entitlement Balance :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Sick Leave Entitlement :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Carry Forward(2021) :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Current Forward Balance :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Lapsed Date :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Lapsed :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
 			</div>
 		</div>
-	<!-- END #app -->
 	</div>
+</div>
+
+
+{{-- modal updatedlapsed --}}
+<div class="modal fade" id="updatelapse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Update Lapsed Date</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row p-2">
+					{{-- <h3 readonly>Amira Roslam, Hazizul Husni</h3> --}}
+					{{-- <input type="text" class="form-control col-sm-2" id="" value="Amira Roslam, Hazizul Husni" readonly > --}}
+					<div class="col-md-9">
+						<div class="mb-2">
+							<label for="lapsed date" class="form-label">Employee Name: </label>
+							<input type="text" class="form-control col-sm-2" id="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="row p-2">
+					<div class="col-md-9">
+						<form >
+							<div class="mb-2">
+								<label for="lapsed date" class="form-label">Lapsed Date </label>
+								<input type="text" class="form-control col-sm-2" id="datepickerlapse">
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	
+	<!-- END #app -->
+	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
+
+
 	<!-- ================== END core-js ================== -->
-	
-	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/d3/d3.min.js"></script>
-	<script src="../assets/plugins/nvd3/build/nv.d3.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap.min.js"></script>
-	<script src="../assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js"></script>
-	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
-	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
-	<script src="../assets/js/demo/dashboard-v2.js"></script>
-	<!-- ================== END page-js ================== -->
+
+
 </body>
 </html>
-	<!-- required files -->
-<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-<link href="../assets/plugins/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" />
-<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="../assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
-<script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
-<script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
-<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+
+<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="/assets/plugins/pdfmake/build/pdfmake.min.js"></script>
+	<script src="/assets/plugins/pdfmake/build/vfs_fonts.js"></script>
+	<script src="/assets/plugins/jszip/dist/jszip.min.js"></script>
+	<script src="/assets/js/demo/table-manage-buttons.demo.js"></script>
+	<script src="/assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
+	<script src="/assets/js/demo/render.highlight.js"></script>
+	<link href="/assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="/assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/plugins/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/plugins/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/moment/min/moment.min.js"></script>
+	<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
+
 
 <script>
-  
-  $("#appealdate").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
+	$(document).ready(function () {
+			$('#tableeleave')
+					.dataTable({
+						"responsive": false,
+						"bLengthChange": false,
+						"bFilter": true,
+						"scrollX": true,
+					});
+	});
 </script>
+
+<script>
+	$("#datepickerlapse").datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+
+</script>
+
+	
 

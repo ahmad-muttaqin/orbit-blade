@@ -619,33 +619,71 @@
                                     <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipsubmitclaim" title="Setup the claim batch date that should be moved to Admin approver">
                                     </i>
                                 </label>
-                                <div class="col-sm-2">
-                                    <input type="number" class="form-control" name="submitclaim" id="submit_claim" value="8">
+                                <div class="col-sm-3">
+                                    <select class="form-select" id="" name="status">
+                                        <option class="form-label" value="">Please Select</option>
+                                        <option class="form-label" value="1">1hb</option>
+                                        <option class="form-label" value="2">2hb</option>
+                                        <option class="form-label" value="3">3hb</option>
+                                        <option class="form-label" value="4">4hb</option>
+                                        <option class="form-label" value="5">5hb</option>
+                                        <option class="form-label" value="6">6hb</option>
+                                        <option class="form-label" value="7">7hb</option>
+                                        <option class="form-label" value="8">8hb</option>
+                                        <option class="form-label" value="9">9hb</option>
+                                        <option class="form-label" value="10">10hb</option>
+                                        <option class="form-label" value="11">11hb</option>
+                                        <option class="form-label" value="12">12hb</option>
+                                        <option class="form-label" value="13">13hb</option>
+                                        <option class="form-label" value="14">14hb</option>
+                                        <option class="form-label" value="15">15hb</option>
+                                    </select>
                                 </div>
                         </div>
                         <br>
                         <div class="row p-2">
-                                <label for="expiredate" class="col-sm-5 col-form-label">Claim Expiration Date <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipexpiredate" title="User can decide the date the claim batch 
-                                    should be renewed"></i></label>
-                                <div class="col-sm-2">
-                                    <input type="number" class="form-control" name="expiredate" id="expire_date" value="1">
+                                <label for="expiredate" class="col-sm-5 col-form-label">Open Claim Duration <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipexpiredate" title="User can decide duration to open claim 
+                                    "></i></label>
+                                <div class="col-sm-3">
+                                    <select class="form-select" id="" name="status">
+                                        <option class="form-label" value="">Please Select</option>
+                                        <option class="form-label" value="1">1 Month</option>
+                                        <option class="form-label" value="2">2 Month</option>
+                                        <option class="form-label" value="3">3 Month</option>
+                                        <option class="form-label" value="4">4 Month</option>
+                                        <option class="form-label" value="5">5 Month</option>
+                                    </select>                                
                                 </div>
-                        </div>
+                            </div>
                         </div>
                         <div class="col"> 
                             <div class="row p-2">
                                 <label for="claimfinance" class="col-sm-5 col-form-label">Submit Claim to Finance on Every: <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipsubmitclaim" title="Setup the claim batch date that should be 
                                     moved to Finance approver
                                     "></i></label>
-                                <div class="col-sm-2">
-                                    <input type="number" class="form-control" name="claimfinance" id="claim_finance" value="13">
+                                <div class="col-sm-3">
+                                    <select class="form-select" id="" >
+                                        <option class="form-label" value="">Please Select</option>
+                                        <option class="form-label" value="16">16hb</option>
+                                        <option class="form-label" value="17">17hb</option>
+                                        <option class="form-label" value="18">18hb</option>
+                                        <option class="form-label" value="19">19hb</option>
+                                        <option class="form-label" value="20">20hb</option>
+                                    </select>
                                 </div>
                             </div>
                             <br>
                             <div class="row p-2">
-                                <label for="claimsubmit" class="col-sm-5 col-form-label">Final Claim Submit Date: <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipclaimsubmit" title="User can decide on the final submit claim date"></i></label>
-                            <div class="col-sm-2">
-                                <input type="number" class="form-control" name="claimsubmit" id="claim_submit" value="7"><br>
+                                <label for="claimsubmit" class="col-sm-5 col-form-label">Table List Display: <i class="fa fa-question-circle" style="color:rgba(0, 81, 255, 0.904)"   data-toggle="tooltipclaimsubmit" title="Number of row will be display on user claim page"></i></label>
+                            <div class="col-sm-3">
+                                    <select class="form-select" id="" >
+                                        <option class="form-label" value="">Please Select</option>
+                                        <option class="form-label" value="1">1 row</option>
+                                        <option class="form-label" value="2">2 row</option>
+                                        <option class="form-label" value="3">3 row</option>
+                                        <option class="form-label" value="4">4 row</option>
+                                        <option class="form-label" value="5">5 row</option>
+                                    </select>
                             </div>
                         </div>     
                         </div>

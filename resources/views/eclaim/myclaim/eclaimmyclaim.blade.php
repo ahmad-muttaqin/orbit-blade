@@ -693,39 +693,23 @@
 						<td><span class="badge bg-lime">Open</span></td>
 						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">+ Apply</a></td>
 						
-						
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>AUGUST</td>
-						<td><span class="badge bg-danger">Expired</span></td>
-						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+						<td><span class="badge bg-lime">Open</span></td>
+						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">Update</a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>JULY</td>
 						<td><span class="badge bg-danger">Expired</span></td>
-						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+						{{-- <td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td> --}}
+						eclaim/appealclaim
+						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
 					</tr>
-					<tr class="even gradeC">
-						<td>2022</td>
-						<td>JUNE</td>
-						<td><span class="badge bg-danger">Expired</span></td>
-						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
-					</tr>
-					<tr class="even gradeC">
-						<td>2022</td>
-						<td>MAY</td>
-						<td><span class="badge bg-danger">Expired</span></td>
-						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
-					</tr>
-					<tr class="even gradeC">
-						<td>2022</td>
-						<td>APRIL</td>
-						<td><span class="badge bg-danger">Expired</span></td>
-						<td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
-					</tr>
+					
 					
 				</tbody>
 			</table>
@@ -761,7 +745,9 @@
 										<option value="Rejected">Amended</option>
 										<option value="Jazz">Paid</option>
 									</select>
+									
 								</div>
+								
 						<table id="claimtable" class="table table-striped table-bordered align-middle">
 				<thead>
 					<tr>
@@ -1141,6 +1127,7 @@
 	  $("#cashadvancetable").dataTable({
         "searching": true,
 		"lengthChange": false,
+		"scrollX": true,
 		lengthMenu: [5, 10],
 		responsive: false,
 		info: false,

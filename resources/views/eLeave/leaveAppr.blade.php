@@ -601,102 +601,121 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
-	
+	<h1 class="page-header">E-Leave <small>| Leave Approval </small></h1>
 	<!-- END page-header -->
+
 	<!-- BEGIN panel -->
 	<div class="panel panel">
-		
-		<!-- BEGIN panel-heading -->
-		
-		
-		<div class="panel-body">
-			
-			{{-- <div class="row p-2">
-				<div class="col-md-3">	
-					<div class="form-check">
-						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
-                    </div>
-				</div>
-				
-			</div> --}}
-			<div class="row p-2">
-				<div class="col-md-12">	
-					<div class="form-control">	
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim ID</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Type</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-								</select>
-							</div>
-						</div>
 
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Applied Date</label>
-							</div>
-							<div class="col-md-3">
-								<input id="appealdate" type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Category</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Amount</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Description</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Supporting Document</label>
-							</div>
-							<div class="col-md-3">
-								<input type="file" class="form-control-file" id="">
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
+		<!-- BEGIN panel-heading -->
+		<div class="panel-body">
+		    <div class="form-control">	
+		        <h3>Leave Approval</h3>
+		        <br>
+                
+                <div class="align-items-center" type="checkbox" data-toggle="toggle">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <i class="fa fa-filter"></i>
+                    </button>  
+                    <div id="collapseOne" class="form-control collapse hidden">
+                        <h5>Filter</h5><br>
+                        <table>
+                            <form class="row row-cols-lg-auto g-3 align-items-center">
+                                <div class="row-5">
+                                    <label for="date">Date</label>
+                                    <label for="empname">Employee Name</label>
+                                    <label for="tol">Type Of Leave</label><br> 
+                                </div>
+                                <div class="row-5">
+                                    <input type="date">
+                                    <input type="text">
+                                    <input type="text">
+                                    <button type="search" class="btn btn-info">Search</button>&ensp;
+                                    <button type="reset" class="btn btn-info">Reset</button>
+                                </div>
+                            </form>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row p-1">
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="row p-1">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row p-1">
+                            <label for="text">Employee Name</label>
+                        </div>
+                        <div class="row p-1">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row p-1">
+                            <label for="text">Type of Leave</label>
+                        </div>
+                        <div class="row p-1">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="row p-2">
+                            <button type="search" class="btn btn-info">Search</button> &ensp;
+                            <button type="reset" class="btn btn-info">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <table class="table table-striped table-bordered align-middle">
+                <tr>
+                    <th>Action</th>
+                    <th>Applied Date</th>
+                    <th>Employee Name</th>
+                    <th>Type of Leave</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Total Days Applied</th>
+                    <th>Status</th>
+                </tr>
+                <tr> 
+                    <td >
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Action</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="#">View Leave</a>
+                                <a class="dropdown-item" href="#">Approve Leave</a>
+                                <a class="dropdown-item" href="#">Reject Leave</a>
+                                <a class="dropdown-item" href="#">Cancel Leave</a>
+                                <a class="dropdown-item" href="#">View Calendar</a>
+                            </ul>
+                        </div>
+                        
+                    </td>
+                    <td>14/08/2022</td>
+                    <td>Noraliya Azman</td>
+                    <td>Annual Leave</td>
+                    <td>01/09/2022</td>
+                    <td>02/09/2022</td>
+                    <td>2</td>
+                    <td>Pending</td>
+                </tr>     
+                </table>
+            </div>
+
 		</div>
-		<div class="row p-2">
-			<div class="col align-self-start">
-				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-			</div>	
-			<div class="col d-flex justify-content-end">
-				<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
-			</div>
-		</div>
-	<!-- END #app -->
 	</div>
+
+	<!-- END row -->
+	
+	<!-- END #app -->
+	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
@@ -730,17 +749,5 @@
 <script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
 <script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
 <script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
-<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
-<script>
-  
-  $("#appealdate").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
-</script>
 

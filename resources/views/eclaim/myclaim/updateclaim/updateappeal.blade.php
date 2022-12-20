@@ -612,7 +612,7 @@
 		
 		<div class="panel-body">
 			
-			<div class="row p-2">
+			{{-- <div class="row p-2">
 				<div class="col-md-3">	
 					<div class="form-check">
 						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
@@ -620,7 +620,7 @@
                     </div>
 				</div>
 				
-			</div>
+			</div> --}}
 			<div class="row p-2">
 				<div class="col-md-12">	
 					

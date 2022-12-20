@@ -605,8 +605,7 @@
         <div class="panel panel">
             <div class="panel-body">
                 <div class="form-control">
-                    <h3>Cash Advance Overview</h3>
-                    <br>
+                    
                  <div class="form-control">
                     <div class="row p-2">
                         <h3>Cash Advance Overview</h3>
@@ -649,8 +648,6 @@
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
-                                    <button class="btn btn-primary"  type="button">Skip the Queue</button>&nbsp;
-                                    <button class="btn btn-primary"  type="button">Approve All</button>&nbsp;
                                     <button class="btn btn-primary"  type="button" id="filter"> <i class="fa fa-filter" aria-hidden="true"></i></button>&nbsp;
                                     <button class="btn btn-primary"  type="button"> <i class='far fa-file-pdf'></i></button>&nbsp;
                                 </div>  

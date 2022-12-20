@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Timesheet </title>
+	<title>OrbitHRM  </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -23,10 +23,6 @@
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
-
-
-	{{-- timepicker --}}
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 </head>
 
 <body>
@@ -605,582 +601,53 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
-	
+	<h1 class="page-header">eClaim <small>| Claim Approval | Supervisor | View Monthly Claim </small></h1>
+
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
+		<div class="panel-body">
 		
 		<!-- BEGIN panel-heading -->
-		
-		
-		<div class="panel-body">
-			
-			{{-- <div class="row p-2">
-				<div class="col-md-3">	
-					<div class="form-check">
-						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
-                    </div>
-				</div>
-				
-			</div> --}}
 			<div class="row p-2">
-				<div class="col-md-6">	
-					
-					<div class="form-control">	
+				<div class="col-md-7">	
+					<div class="form-control">
 						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Claim ID</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-							<div class="col-md-3">
-								<label class="form-label">Claim Type</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
-							</div>
+							<h4>Claim Information</h4>
 						</div>
-
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Status</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" value="Draft"class="form-control">
-							</div>
-							<div class="col-md-3">
-								<label class="form-label">Total Amount</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<br>
-						</div>
-							<div class="">	
-								
-									<div class="accordion" id="accordionExample">
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="headingOne">
-											<button class="accordion-button bg-white-500 text-black px-3 py-10px pointer-cursor " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												<label class="form-label">Personal Claims</label>
-											</button>
-											</h2>
-											<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-											<div class="accordion-body bg-gray-100 text-black">
-												<div class="row p-2">
-													<div class="col-md-4">
-														<label class="form-label">Applied Date</label>
-													</div>
-													<div class="col-md-8">
-														<input type="text" class="form-control">
-													</div>
-												</div>
-												<div class="row p-2">
-													<div class="col-md-4">
-														<label class="form-label">Claim Category</label>
-													</div>
-													<div class="col-md-8">
-														<input readonly type="text" class="form-control">
-													</div>
-												</div>
-												<div class="row p-2">
-													<div class="col-md-4">
-														<label class="form-label">Amount</label>
-													</div>
-													<div class="col-md-8">
-														<input  type="number" class="form-control">
-													</div>
-												</div>
-												<div class="row p-2">
-													<div class="col-md-4">
-														<label class="form-label">Description</label>
-													</div>
-													<div class="col-md-8">
-														<textarea class="form-control" id="" rows="3"></textarea>
-														{{-- <input  type="text" class="form-control"> --}}
-														
-													</div>
-												</div>
-												<div class="row p-2">
-													<div class="col-md-4">
-														<label class="form-label">Supporting Document</label>
-													</div>
-													<div class="col-md-8">
-														
-														<input type="file" class="form-control-file" id="">
-													</div>
-												</div>
-												<div class="row p-2">
-													<div class="modal-footer">
-
-														<button type="button" class="btn btn-secondary" >Reset</button>
-														<button type="button" class="btn btn-primary" >Save</button>
-														
-													</div>
-												</div>
-											</div>
-											</div>
-										</div>
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="headingTwo">
-												<button class="accordion-button bg-white-500 text-black px-3 py-10px pointer-cursor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													<label class="form-label">Travelling</label>
-												</button>
-											</h2>
-											<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-												<div class="accordion-body bg-gray-100 text-black">
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Travel Date</label>
-														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label" >Start Time</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="text" id="timestart" class="timepicker form-control form-control" value="">
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">End Time</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="text" id="timeend" class=" timepicker form-control form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Total Hours</label>
-														</div>
-														<div class="col-md-8">
-															<input readonly type="text" id="totalduration" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Description</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<textarea class="form-control" id="" rows="3"></textarea>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Reason of Web</label>
-														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Type of Transport</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="">
-																<option class="form-label" value="" selected>Please Select</option>
-																<option class="form-label" value="" > Personal Car</option>
-																<option class="form-label" value="" >Personal Motocycle</option>
-																<option class="form-label" value="" > Public Transport</option>
-																<option class="form-label" value="" >Company Car</option>
-																<option class="form-label" value="" > Carpool</option>
-															</select>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Location Start</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="ls">
-																<option class="form-label" value="" selected>Please Select</option>
-																<option class="form-label" value="" >Home</option>
-																<option class="form-label" value="" >Office</option>
-																<option class="form-label" value="3" > My Project</option>
-																<option class="form-label" value="" >Others</option>
-															</select>
-														</div>
-													</div>
-													<div class="row p-2" id="project" style="display: none">
-														<div class="col-md-4">
-															<label class="form-label">Project</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="">
-																<option class="form-label" value="" selected>Please Select</option>
-															</select>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Address Start</label>
-														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
-															
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Destination</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="dest">
-																<option class="form-label" value="" selected>Please Select</option>
-																<option class="form-label" value="" >Home</option>
-																<option class="form-label" value="" >Office</option>
-																<option class="form-label" value="3" >My Project</option>
-																<option class="form-label" value="4" >Others</option>
-															</select>
-														</div>
-													</div>
-													<div class="row p-2" id="projectdest" style="display: none">
-														<div class="col-md-4">
-															<label class="form-label">Project</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="dest">
-																<option class="form-label" value="" selected>Please Select</option>
-															</select>
-														</div>
-													</div>
-													<div class="row p-2" id="logname" style="display: none">
-														<div class="col-md-4">
-															<label class="form-label">Log Name</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="">
-																<option class="form-label" value="" selected>Please Select</option>
-															</select>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Destination Address</label>
-														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Mileage</label>
-														</div>
-														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
-														</div>
-													
-														<div class="col-md-2">
-															<label class="form-label">Petrol/Fares</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="number" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Toll</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="number" class="form-control">
-														</div>
-													
-														<div class="col-md-2">
-															<label class="form-label">Parking</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="number" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Supporting Document</label>
-														</div>
-														<div class="col-md-8">
-															<input type="file" class="form-control-file" id="">
-														</div>
-													</div>
-													<div class="row p-2">
-													<div class="modal-footer">
-
-														<button type="button" class="btn btn-secondary" >Reset</button>
-														<button type="button" class="btn btn-primary" >Save</button>
-														
-													</div>
-												</div>
-												</div>
-											</div>
-										</div>
-										<div class="accordion-item">
-											<h2 class="accordion-header" id="headingThree">
-												<button class="accordion-button bg-white-500 text-black px-3 py-10px pointer-cursor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													<label class="form-label">Subsistence Allowance & Accommodation</label>
-												</button>
-											</h2>
-											<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-											<div class="accordion-body bg-gray-100 text-black">
-												<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Claim For</label>
-														</div>
-														<div class="col-md-8">
-															<select class="form-select" id="ca">
-																<option class="form-label" value="" selected>Please Select</option>
-																<option class="form-label" value="1" >With Cash Advance</option>
-																<option class="form-label" value="2" >Without Cash Advance</option>
-															</select>
-														</div>
-												</div>
-
-												<div class="row p-2">
-															<div class="col-md-4">
-																<label class="form-label">Supporting Document</label>
-															</div>
-															<div class="col-md-8">
-																<input type="file" class="form-control-file" id="">
-															</div>
-													</div>
-												
-												<div class="WC" style="display:none">
-													
-													<div class="row p-2">
-														<table id="claimtable" class="table table-striped table-bordered align-middle">
-															<thead>
-																<tr>
-																	<th>-</th>
-																	<th class="text-nowrap">No</th>
-																	<th class="text-nowrap">Form ID</th>
-																	<th class="text-nowrap">Type of Cash Advance</th>
-																	<th class="text-nowrap">Travel Date</th>
-																	<th class="text-nowrap">Amount</th>
-																	
-																</tr>
-															</thead>
-															<tbody>
-																
-																<tr>
-																	<td><input class="form-check-input" type="checkbox"/></td>
-																	<td>1</td>
-																	<td>Form ID 1</td>
-																	<td>Type of Cash Advance 1</td>
-																	<td>1/1/2022</td>
-																	<td>MYR200</td>
-																</tr>
-																<tr>
-																	<td><input class="form-check-input" type="checkbox"/></td>
-																	<td>2</td>
-																	<td>Form ID 2</td>
-																	<td>Type of Cash Advance 2</td>
-																	<td>1/2/2022</td>
-																	<td>MYR201</td>
-																</tr>
-																<tr>
-																	<td><input class="form-check-input" type="checkbox"/></td>
-																	<td>3</td>
-																	<td>Form ID 3</td>
-																	<td>Type of Cash Advance 3</td>
-																	<td>2/3/2022</td>
-																	<td>MYR22</td>
-																</tr>
-																<tr>
-																	<td><input class="form-check-input" type="checkbox"/></td>
-																	<td>4</td>
-																	<td>Form ID 4</td>
-																	<td>Type of Cash Advance 4</td>
-																	<td>3/5/2022</td>
-																	<td>MYR220</td>
-																</tr>
-																<tr>
-																	<td><input class="form-check-input" type="checkbox"/></td>
-																	<td>5</td>
-																	<td>Form ID 5</td>
-																	<td>Type of Cash Advance 5</td>
-																	<td>3/6/2022</td>
-																	<td>MYR230</td>
-																</tr>
-																<tr>
-																	<td><input class="form-check-input" type="checkbox"/></td>
-																	<td>6</td>
-																	<td>Form ID 6</td>
-																	<td>Type of Cash Advance 6</td>
-																	<td>1/8/2022</td>
-																	<td>MYR250</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-													<div class="modal-footer">
-
-														<button type="button" class="btn btn-secondary" >Reset</button>
-														<button type="button" class="btn btn-primary" >Save</button>
-														
-													</div>
-												</div>
-												<div class="WOC" style="display:none">
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Travel Date</label>
-														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Start Time</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="text" class="form-control">
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">End Time</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Project</label>
-														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Description</label>
-														</div>
-														<div class="col-md-8">
-															{{-- <input  type="text" class="form-control"> --}}
-															<textarea class="form-control" id="" rows="3"></textarea>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Subsistence Allowance:</label>
-														</div>
-														<div class="col-md-4">
-															<label class="form-label">Breakfast</label>
-														</div>
-														<div class="col-md-4">
-															<input readonly type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-
-														</div>
-														<div class="col-md-4">
-															<label class="form-label">Lunch</label>
-														</div>
-														<div class="col-md-4">
-															<input readonly type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															
-														</div>
-														<div class="col-md-4">
-															<label class="form-label">Dinner</label>
-														</div>
-														<div class="col-md-4">
-															<input readonly type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Accommodation:</label>
-														</div>
-														<div class="col-md-2">
-															<input class="form-check-input" type="checkbox"/>
-															<label class="form-label">Hotel</label>
-														</div>
-														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">X Night =</label>
-														</div>
-														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															<input class="form-check-input" type="checkbox"/>
-															<label class="form-label">Lodging</label>
-														</div>
-														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">X Night =</label>
-														</div>
-														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">TOTAL</label>
-														</div>
-														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
-														</div>
-													</div>
-													<div class="modal-footer">
-
-														<button type="button" class="btn btn-secondary" >Reset</button>
-														<button type="button" class="btn btn-primary" >Save</button>
-														
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 						
+						<div class="row p-2">
+							<div class="col-md-2">	
+								<label class="form-label col-form-label">Claim ID :</label>
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-2">	
+							<label class="form-label col-form-label">Claim Type :</label>
+								
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
 						</div>
-					</div>
-				
-				<div class="col-md-6">	
-				<div class="form-control">	
-					<div class="row">
-						<div class="">	
-							<table id="claimtable" class="table table-striped table-bordered align-middle">
+						<div class="row p-2">
+							<div class="col-md-2">	
+								<label class="form-label col-form-label">Status :</label>
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-2">	
+							<label class="form-label col-form-label">Total Amount :</label>
+								
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1195,7 +662,7 @@
 								<tbody>
 									
 									<tr>
-										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">Delete</a></td>
+										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">View</a></td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -1203,7 +670,7 @@
 										<td>Receipt.pdf</td>
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM30</td>
@@ -1211,7 +678,7 @@
 										<td>Receipt.pdf</td>
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -1219,7 +686,7 @@
 										<td>Receipt.pdf</td>
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM50</td>
@@ -1227,7 +694,7 @@
 										<td>Receipt.pdf</td>
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -1235,7 +702,7 @@
 										<td>Receipt.pdf</td>
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM140</td>
@@ -1245,10 +712,8 @@
 								</tbody>
 							</table>
 						</div>
-					</div>
-					<div class="row">
-						<div class="">	
-							<table id="traveltable" class="table table-striped table-bordered align-middle">
+						<div class="row p-2">
+							<table id="claimtable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1264,84 +729,647 @@
 								<tbody>
 									
 									<tr>
-										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">Delete</a></td>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+										</td>
 										<td>21/07/2022</td>
-										<td>Telephone</td>
+										<td>Orbit</td>
+										<td><label id="claim_check">Travelling</label></td>
 										<td>RM40</td>
 										<td>Maxis Data</td>
 										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-										
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
+										</td>										
 										<td>21/07/2022</td>
 										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
+										<td><label class="claim_check" >Subsistence</label></td>
 										<td>RM40</td>
 										<td>Maxis Data</td>
 										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
 									</tr>
 									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
+										</td>										
 										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
+										<td>Telephone</td>
+										<td><label class="claim_check" >Subsistence</label></td>
+										<td>RM40</td>
 										<td>Maxis Data</td>
 										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check">Travelling</label></td>
+										<td>RM40</td>
 										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check">Travelling</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check" >Subsistence</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
 				</div>
+				<div class="col-md-5">	
+				
+					<div class="form-control">
+						<div class="row p-2">
+							<h4>Claim History</h4>
+							<div class="card-body">
+											<div class="container">
+												<ul class="timeline-with-icons">
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-plus text-primary fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold">Siti Sarah Submitted claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Mukhsin recommended Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-arrow-rotate-right text-warning fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold">Hassan amended Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Hafizi approved Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-xmark text-danger fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Nadia rejected Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-yellow fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Shida checked Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-minus text-indigo fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Amira Closed Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
-			</div>	
-		</div>
-		<div class="row p-2">
-			<div class="col align-self-start">
-				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-			</div>	
-			<div class="col d-flex justify-content-end">
-				<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
+				
+			</div>
+			<div class="row p-2">
+				<div class="col align-self-start">
+					<a href="/claimapproval/supervisor" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+				</div>	
+				<div class="col d-flex justify-content-end">
+					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
+					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
+					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
+					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
+				</div>
 			</div>
 		</div>
 	</div>
-		
-		
-		<!-- END panel-heading -->
-		
-	</div>
+
+	<!-- Modal Travel claim -->
+	<div class="modal fade" id="modal-view-claim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Travel Date</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Start Time</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">End Time</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Total Hours</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Reason Using Web</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Type of Transport</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Location Start</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Project</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Address Start</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Destination</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Destination Address</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Milleage</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Toll</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Petrol/Fares</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Parking</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Supporting Documents</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
+			</div>
+		</div>
+	</div>	
+	<!-- Modal view subsistence -->
+	<div class="modal fade" id="modal-view-subsistence" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Claim For</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Supporting Document</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Travel Date</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Start Time</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">End Time</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Project</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+					</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Subsistence Allowance :</label>
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Breakfast</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Lunch</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Dinner</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Accommodation :</label>
+                    </div>
+					<div class="col-md-3">
+
+                    </div>
+					<div class="col-md-3">
+						<label class="form-label col-form-label">Hotel</label>
+                    </div>
+					<div class="col-md-3">
+						<input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+					<label class="form-label col-form-label">Lodging</label>
+                    </div>
+					<div class="col-md-3">
+					<input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
+			</div>
+		</div>
+	</div>		
+
+	<!-- Modal view personal -->
+	<div class="modal fade" id="modal-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Applied Date</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Claim Category</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Amount</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+					</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-6">
+                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Supporting Document</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				
+                   
+				</div>
+				
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
+			</div>
+		</div>
+	</div>		
+
+	<!-- Modal amend -->
+	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <!-- Modal reject -->
+      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	<!-- END row -->
+	
 	<!-- END #app -->
-	</div>
+	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
@@ -1375,132 +1403,36 @@
 <script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
 <script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
 <script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
-<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
-<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
-
-{{-- timpicker --}}
-<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 
 <script>
+   $("#claimtable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
+	$("#traveltable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
+	$(document).on("click", "#btn-view-claim", function() {
+        $('#modal-view-claim').modal('show');
 
-  $('#claimtable').DataTable({
-	"searching": false,
-	"lengthChange": true,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
+    });
+	$(document).on("click", "#btn-view-subsistence", function() {
+        $('#modal-view-subsistence').modal('show');
 
-  $('#traveltable').DataTable({
-	"searching": false,
-	"lengthChange": true,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
-	
-  $("#datepicker-autoClose").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
-  
+    });
+	$(document).on("click", "#btn-view", function() {
+        $('#modal-view').modal('show');
 
-	$(document).on('change', "#ca", function() {
-       
-		if ($(this).val() == "1") {
-            $(".WC").show();
-			$(".WOC").hide();
-            
-        } else if ($(this).val() == "2"){
-			$(".WC").hide();
-			$(".WOC").show();
-		}
-		else {
-            $(".WC").hide();
-            $(".WOC").hide();
-        }
     });
 
-	//
-	$(document).on('change', "#dest", function() {
-       
-	   if ($(this).val() == "3") {
-		   $("#projectdest").show();
-		
-	   } else {
-            $("#projectdest").hide();
-        }
-	   
-	  
-   });
-
-   //
-   $(document).on('change', "#dest", function() {
-       
-	   if ($(this).val() == "3") {
-		   $("#project").show();
-		   $("#logname").hide();
-		
-	   } else if ($(this).val() == "4"){
-			$("#project").hide();
-			$("#logname").show();
-
-		}    else {
-            $("#project").hide();
-			$("#logname").hide();
-        }  
-	  
-   });
+	
 </script>
-
-{{-- calculate total hours --}}
-<script>
-	$(function () {
-
-	TimePicker();
-
-	});
-
-var TimePicker = function () {
-
-if ($(".timepicker").length === 0) { return; }
-
-$(".timepicker").timepicker({
-	timeFormat: 'HH:mm',
-    interval: 30,
-    // minTime: '10',
-    // maxTime: '',
-    defaultTime: '09:00',
-    // startTime: '',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true,
-	change: tmTotalHrsOnSite
-});
-
-};
-
-function tmTotalHrsOnSite () {
-
-if ($("#timestart") && $("#timeend")) {
-
-	valueStart = $("#timestart").val();
-	valueStop = $("#timeend").val();
-
-	var str0="01/01/1970 " + valueStart;
-	var str1="01/01/1970 " + valueStop;
-
-	var diff=(Date.parse(str1)-Date.parse(str0))/1000/60;
-	var hours=String(100+Math.floor(diff/60)).substr(1);
-	var mins=String(100+diff%60).substr(1);
-	$("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
-
-	}
-
-};
-	</script>
 
