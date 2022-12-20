@@ -616,14 +616,12 @@
 				<div class="col-md-3">	
 					<div class="form-check">
 						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
-						
                     </div>
-				</div>
-				
+				</div>	
 			</div>
+
 			<div class="row p-2">
 				<div class="col-md-12">	
-					
 					<div class="form-control">	
 						<div class="row p-2">
 							<div class="col-md-2">
@@ -685,11 +683,9 @@
 							</div>
 						</div>
 						
-						</div>
 					</div>
-				
-				
-			</div>	
+				</div>
+			</div>
 		</div>
 		<div class="row p-2">
 			<div class="col align-self-start">

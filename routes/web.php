@@ -346,3 +346,7 @@ Route::get('/report/cashadvreportall', function () {
 Route::get('/report/reportingcashadvance', function () {
     return view('eclaim/reportingcashadvance');
 });
+
+Route::get('/setting/eleave', function () {
+    return view('eleave/myleave');
+});
