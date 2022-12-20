@@ -769,7 +769,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatemontly" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -790,7 +790,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updategeneral" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>

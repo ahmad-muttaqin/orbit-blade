@@ -730,20 +730,20 @@
 				<!-- BEGIN col-4 -->
 				
 				<div class="col-lg-2" >
-					<a class="mb-10px" href="#"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
+					<a class="mb-10px" href="/eleave/eleaveentitlement"><i class="fas fa-calendar-day fa-4x text-blue" ></i></a><br><br>
 					<h5 class="mb-5px" >Leave Entitlement</h5> 
 					
 				</div>
 				<!-- END col-4 -->
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/eleave/holidaylist"><i class="fas fa-rocket fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Holiday</h5> 
 					</div>
 				<!-- END col-4 -->
 				<!-- BEGIN col-4 -->
 				<div class="col-lg-2">
-					<a class="mb-10px" href="#"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
+					<a class="mb-10px" href="/eleave/leavetypes"><i class="fa fa-calendar fa-4x text-blue"></i></a><br><br>
 					<h5 class="mb-5px">Leave Types</h5> 
 					</div>
 					

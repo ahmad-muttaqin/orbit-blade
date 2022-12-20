@@ -257,6 +257,9 @@ Route::get('/eclaim/updategeneral', function () {
 Route::get('/eclaim/updateappeal', function () {
     return view('eclaim/myclaim/updateclaim/updateappeal');
 });
+Route::get('/eclaim/updatecashadvance', function () {
+    return view('eclaim/myclaim/updateclaim/updatecashadvance');
+});
 // setting eclaim
 Route::get('/setting/cashadvancecontroller', function () {
     return view('eclaim/setting/cashadvancecontroller/cashAdvancedController');

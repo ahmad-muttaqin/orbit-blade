@@ -26,7 +26,11 @@
 
 
 	{{-- timepicker --}}
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+	{{-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"> --}}
+
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+<link href="../assets/plugins/timepicker/css/mdtimepicker.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -692,6 +696,20 @@
 														</select>
 													</div>
 												</div>
+												{{-- akan tarik data dari  labelling name dlam setting add claim --}}
+												<div class="row p-2">
+													{{-- <div class="col-md-4">  --}}
+														{{-- <input type="text" class="form-control" name="labellingname" id="" readonly> --}}
+													{{-- </div> --}}
+													<div class="col-md-4"> 
+														<input type="text" class="form-control" name="labellingname" id="" readonly value="provider">
+													</div>
+													<div class="col-md-8"> 
+														<select class="form-select" id="" readonly>
+															<option class="form-label" value="" selected>Please Select</option>
+														</select>
+													</div>
+												</div>
 												<div class="row p-2">
 													<div class="col-md-4">
 														<label class="form-label">Amount</label>
@@ -1035,35 +1053,70 @@
 														</table>
 													</div>
 													<div class="modal-footer">
-
-														
-														<button type="button" class="btn btn-primary" >Save</button>
-														
+														<button type="button" class="btn btn-primary" >Save</button>	
 													</div>
 												</div>
 												<div class="WOC" style="display:none">
 													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Travel Date</label>
+														<div class="row p-2">
+															<label class="form-label">Travel date and time</label>
 														</div>
-														<div class="col-md-8">
-															<input  type="text" class="form-control">
+														<div class="row p-2">
+															<div class="col-md-6">
+																{{-- <input  type="text" class="form-control"> --}}
+																<div class="card">
+																	<div class="card-body">
+																		<div class="row p-2">
+																			<div class="col-md-3">
+																				<label class="form-label">Start</label>
+																			</div>
+																			<div class="col">
+																				<input  type="text" class="form-control" placeholder="Date" id="date1">
+																			</div>
+																		</div>
+																		<div class="row p-2">
+																			<div class="col-md-3">
+																				<label class="form-label">Start</label>
+																			</div>
+																			<div class="col">
+																				<input  type="text" class="form-control" placeholder="Time" id="time1">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="card-body">
+																		<div class="row p-2">
+																			<div class="col-md-3">
+																				<label class="form-label">End</label>
+																			</div>
+																			<div class="col">
+																				<input  type="text" class="form-control" placeholder="Date" id="date2">
+																			</div>
+																		</div>
+																		<div class="row p-2">
+																			<div class="col-md-3">
+																				<label class="form-label">End</label>
+																			</div>
+																			<div class="col">
+																				<input  type="text" class="form-control" placeholder="Time" id="time2">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
 														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Start Time</label>
 														</div>
-														<div class="col-md-3">
-															<input  type="text" class="form-control">
+														<div class="row p-2">
+															<div class="col-md-4">
+																<label class="form-label">Travel Duration</label>
+															</div>
+															<div class="col-md-8">
+																<input  type="text" class="form-control" id="result1" readonly>
+															</div>
 														</div>
-														<div class="col-md-2">
-															<label class="form-label">End Time</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="text" class="form-control">
-														</div>
-													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label">Project</label>
@@ -1089,13 +1142,13 @@
 															<label class="form-label">Breakfast</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" class="form-control" value="15" id="BF">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X day =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control">
+															<input  type="text" class="form-control" value="0" id="DBF">
 														</div>
 														
 													</div>
@@ -1107,13 +1160,13 @@
 															<label class="form-label">Lunch</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" class="form-control" value="15" id="LH">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X day =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control">
+															<input  type="text" class="form-control" value="0" id="DLH">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1123,13 +1176,13 @@
 															<label class="form-label">Dinner</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" class="form-control" value="15" id="DN">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X day =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control">
+															<input  type="text" class="form-control" value="0" id="DDN">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1145,43 +1198,43 @@
 															Total Subsistence
 														</div>
 														<div class="col-md-2">
-															<input readonly  type="text" class="form-control">
+															<input readonly  type="text" class="form-control" value="0" id="TS">
 														</div>
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label">Accommodation:</label>
 														</div>
-														<div class="col-md-2">
-															<input class="form-check-input" type="checkbox"/>
+														<div class="col-md-2" id="hotelc">
+															<input class="form-check-input" type="checkbox" value="350" id="htv"/>
 															<label class="form-label">Hotel</label>
 														</div>
-														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+														<div class="col-md-2" >
+															<input readonly type="text" class="form-control" id="hotelcv">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control">
+															<input  type="text" class="form-control" id="hn">
 														</div>
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label"></label>
 														</div>
-														<div class="col-md-2">
-															<input class="form-check-input" type="checkbox"/>
+														<div class="col-md-2" id="lodgingc">
+															<input class="form-check-input" type="checkbox" value="100" id="ldgv"/>
 															<label class="form-label">Lodging</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" class="form-control" id="lodgingcv">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control">
+															<input  type="text" class="form-control" value="0" id="ln">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1199,7 +1252,7 @@
 															<label class="form-label">Total Accomodation</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" class="form-control" value="0" id="TAV">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1217,7 +1270,7 @@
 															<label class="form-label">TOTAL</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control">
+															<input readonly type="text" class="form-control" value="" id="total2">
 														</div>
 													</div>
 													<div class="modal-footer">
@@ -1442,8 +1495,9 @@
 
 
 {{-- timpicker --}}
-<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-
+{{-- <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script> --}}
+{{-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> --}}
+<script src="../assets/plugins/timepicker/js/mdtimepicker.js"></script>
 <script>
 
   $('#claimtable1').DataTable({
@@ -1541,17 +1595,8 @@ var TimePicker = function () {
 
 if ($(".timepicker").length === 0) { return; }
 
-$(".timepicker").timepicker({
-	timeFormat: 'HH:mm',
-    interval: 30,
-    // minTime: '10',
-    // maxTime: '',
-    defaultTime: '09:00',
-    // startTime: '',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true,
-	change: tmTotalHrsOnSite
+$(".timepicker").mdtimepicker({
+	
 });
 
 };
@@ -1587,5 +1632,107 @@ $("#datepickerpc").datepicker({
     autoclose: true,
 	format: 'dd-mm-yyyy'
   });
-	</script>
+</script>
 
+
+
+{{-- duration new --}}
+<script>
+	$(function () {
+     $("#date1, #date2").datepicker({  format: 'mm/dd/yyyy'})
+     $('#time1,#time2').mdtimepicker({
+       
+     });
+ });
+
+ $(document).ready(function () {
+     $("#result1").focus(function () {
+
+    var startdt = new Date($("#date1").val() + " " + $("#time1").val());
+    
+    var enddt = new Date($("#date2").val() + " " + $("#time2").val());
+
+    var diff = enddt - startdt;
+    
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    diff -=  days * (1000 * 60 * 60 * 24);
+    
+    var hours = Math.floor(diff / (1000 * 60 * 60));
+    diff -= hours * (1000 * 60 * 60);
+    
+    var mins = Math.floor(diff / (1000 * 60));
+    diff -= mins * (1000 * 60);
+    
+    // var seconds = Math.floor(diff / (1000));
+    // diff -= seconds * (1000);
+    
+    // $("#result").val(days + " days : " + hours + " hours : " + mins + " minutes : " + seconds + " seconds");
+    
+    $("#result1").val(days + " days : " + hours + " hours : " + mins + " minutes ");
+    
+
+     });
+ });
+</script>
+
+
+<script>
+$('#hotelc').change(function() {
+  var s = $('#hotelc input:checked').map(function() {
+    return this.value;
+  }).get().join(',');
+  $('#hotelcv').val((s.length > 0 ? s : ""));
+});
+
+$('#lodgingc').change(function() {
+  var s = $('#lodgingc input:checked').map(function() {
+    return this.value;
+  }).get().join(',');
+  $('#lodgingcv').val((s.length > 0 ? s : ""));
+});
+</script>
+
+{{-- cal total subs and acco --}}
+<script>
+    $("#BF,#DBF,#LH,#DLH,#DN,#DDN,#TS").change(function(){
+		var a = parseInt($("#BF").val());
+		var b = parseInt($("#DBF").val());
+		var c = parseInt($("#LH").val());
+		var d = parseInt($("#DLH").val());
+		var e = parseInt($("#DN").val());
+		var f = parseInt($("#DDN").val());
+        $("#TS").val((a*b) + (c*d) + (e*f));
+    });
+
+
+	// $("#hotelcv,#hn,#lodgingcv,#ln").change(function(){
+	// 	var a = parseInt($("#hotelcv").val());
+	// 	var b = parseInt($("#hn").val());
+	// 	var c = parseInt($("#lodgingcv").val());
+	// 	var d = parseInt($("#ln").val());
+    //     $("#TAV").val((a*b) + (c*d));
+    // });
+
+
+	// $("#firstnamemc,#lastnamemc").change(function(){
+    //     var a = $("#firstnamemc").val();
+    //     var b = $("#lastnamemc").val();
+    //     $("#fullnamemc").val(a+ ' '+b);
+    // });
+
+	$("#hotelcv,#hn,#lodgingcv,#ln").change(function(){
+		var a = $("#hotelcv").val();
+		var b = $("#hn").val();
+		var c = $("#lodgingcv").val();
+		var d = $("#ln").val();
+
+		if (b == "") {
+			$("#total2").val("test2");
+		} else {
+			$("#total2").val("0");
+		}
+		
+
+        // $("#TAV").val((a*b) + (c*d));
+    });
+</script>
