@@ -775,13 +775,29 @@
 															<label class="form-label" >Start Time</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" id="timestart" class="timepicker form-control form-control" value="">
+															<input  type="text" id="timestart" class=" form-control" value="">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">End Time</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" id="timeend" class=" timepicker form-control form-control">
+															<input  type="text" id="timeend" class=" form-control">
+														</div>
+													</div>
+													<div id="" style="display: none">
+														<div class="row p-2">
+															<div class="col-md-4">
+																<label class="form-label" >Start date</label>
+															</div>
+															<div class="col-md-3">
+																<input  type="text" id="daystart" class=" form-control" value="">
+															</div>
+															<div class="col-md-2" style="display: none">
+																<label class="form-label">End date</label>
+															</div>
+															<div class="col-md-3">
+																<input  type="text" id="dayend" class=" form-control">
+															</div>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1206,17 +1222,20 @@
 															<label class="form-label">Accommodation:</label>
 														</div>
 														<div class="col-md-2" id="hotelc">
-															<input class="form-check-input" type="checkbox" value="350" id="htv"/>
+															<input class="form-check-input" type="checkbox" value="100" id="htv"/>
 															<label class="form-label">Hotel</label>
 														</div>
 														<div class="col-md-2" >
 															<input readonly type="text" class="form-control" id="hotelcv">
 														</div>
+														<div class="col-md-2" style="display: none">
+															<input readonly type="text" class="form-control" id="hotelcv1">
+														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" id="hn">
+															<input  type="text" class="form-control" id="hn" disabled value="0">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1230,11 +1249,14 @@
 														<div class="col-md-2">
 															<input readonly type="text" class="form-control" id="lodgingcv">
 														</div>
+														<div class="col-md-2" style="display: none">
+															<input readonly type="text" class="form-control" id="lodgingcv1" value="0">
+														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" value="0" id="ln">
+															<input  type="text" class="form-control" value="0" id="ln" disabled>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1585,40 +1607,75 @@
 
 {{-- calculate total hours --}}
 <script>
-	$(function () {
+// 	$(function () {
 
-	TimePicker();
+// 	TimePicker();
 
-	});
+// 	});
 
-var TimePicker = function () {
+// var TimePicker = function () {
 
-if ($(".timepicker").length === 0) { return; }
+// if ($(".timepicker").length === 0) { return; }
 
-$(".timepicker").mdtimepicker({
+// $(".timepicker").mdtimepicker({
 	
-});
+// });
 
-};
+// };
 
-function tmTotalHrsOnSite () {
+// function tmTotalHrsOnSite () {
 
-if ($("#timestart") && $("#timeend")) {
+// if ($("#timestart") && $("#timeend")) {
 
-	valueStart = $("#timestart").val();
-	valueStop = $("#timeend").val();
+// 	valueStart = $("#timestart").val();
+// 	valueStop = $("#timeend").val();
 
-	var str0="01/01/1970 " + valueStart;
-	var str1="01/01/1970 " + valueStop;
+// 	var str0="01/01/1970 " + valueStart;
+// 	var str1="01/01/1970 " + valueStop;
 
-	var diff=(Date.parse(str1)-Date.parse(str0))/1000/60;
-	var hours=String(100+Math.floor(diff/60)).substr(1);
-	var mins=String(100+diff%60).substr(1);
-	$("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
+// 	var diff=(Date.parse(str1)-Date.parse(str0))/1000/60;
+// 	var hours=String(100+Math.floor(diff/60)).substr(1);
+// 	var mins=String(100+diff%60).substr(1);
+// 	$("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
 
-	}
+// 	}
 
-};
+// };
+
+$(function () {
+	$('#timestart,#timeend').mdtimepicker({
+       
+	});
+	$('#daystart,#dayend').datepicker({
+                    format:'mm/dd/yyyy',
+                }).datepicker("setDate",'now');
+ });
+
+ $(document).ready(function () {
+    
+	$("#totalduration").focus(function () {
+
+	var startdt = new Date($("#daystart").val() + " " + $("#timestart").val());
+    
+    var enddt = new Date($("#dayend").val() + " " + $("#timeend").val());
+
+    var diff = enddt - startdt;
+    
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    diff -=  days * (1000 * 60 * 60 * 24);
+    
+    var hours = Math.floor(diff / (1000 * 60 * 60));
+    diff -= hours * (1000 * 60 * 60);
+    
+    var mins = Math.floor(diff / (1000 * 60));
+    diff -= mins * (1000 * 60);
+
+    $("#totalduration").val(hours + " hours : " + mins + " minutes ");
+    
+	// $("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
+    });
+ });
+
 
 $("#datepickerpc").datepicker({
     todayHighlight: true,
@@ -1682,6 +1739,7 @@ $('#hotelc').change(function() {
     return this.value;
   }).get().join(',');
   $('#hotelcv').val((s.length > 0 ? s : ""));
+  $('#hotelcv1').val((s.length > 0 ? s : "0"));
 });
 
 $('#lodgingc').change(function() {
@@ -1689,6 +1747,8 @@ $('#lodgingc').change(function() {
     return this.value;
   }).get().join(',');
   $('#lodgingcv').val((s.length > 0 ? s : ""));
+  $('#lodgingcv1').val((s.length > 0 ? s : "0"));
+  
 });
 </script>
 
@@ -1705,34 +1765,44 @@ $('#lodgingc').change(function() {
     });
 
 
-	// $("#hotelcv,#hn,#lodgingcv,#ln").change(function(){
-	// 	var a = parseInt($("#hotelcv").val());
-	// 	var b = parseInt($("#hn").val());
-	// 	var c = parseInt($("#lodgingcv").val());
-	// 	var d = parseInt($("#ln").val());
-    //     $("#TAV").val((a*b) + (c*d));
-    // });
+$("#htv,#hotelcv1,#hn,#lodgingcv1,#ln,#ldgv").change(function(){
+		var a = parseInt($("#hotelcv1").val());
+		var b = parseInt($("#hn").val());
+
+		var c = parseInt($("#lodgingcv1").val());
+		var d = parseInt($("#ln").val());
+   	 $("#TAV").val((a*b) + (c*d));
+
+});
 
 
-	// $("#firstnamemc,#lastnamemc").change(function(){
-    //     var a = $("#firstnamemc").val();
-    //     var b = $("#lastnamemc").val();
-    //     $("#fullnamemc").val(a+ ' '+b);
-    // });
 
-	$("#hotelcv,#hn,#lodgingcv,#ln").change(function(){
-		var a = $("#hotelcv").val();
-		var b = $("#hn").val();
-		var c = $("#lodgingcv").val();
-		var d = $("#ln").val();
-
-		if (b == "") {
-			$("#total2").val("test2");
-		} else {
-			$("#total2").val("0");
-		}
+	$("#hotelcv,#hotelcv1,#hn,#lodgingcv,#hotelcv1,#ln,#htv,#ldgv,#TS,#TAV,#DBF,#DLH,#DDN").change(function(){
 		
+		var a = parseInt($("#TS").val());	
+		var b = parseInt($("#TAV").val());
+		$("#total2").val(a + b);
 
-        // $("#TAV").val((a*b) + (c*d));
-    });
+});
+</script>
+
+
+<script>
+	$('#htv').click(function() {
+    if (this.checked) {
+        $('#hn').prop('disabled', false); // If checked enable item      
+    } else {
+        $('#hn').prop('disabled', true); // If checked disable item   
+		$("#hn").val(0);               
+    }
+});
+
+	$('#ldgv').click(function() {
+		if (this.checked) {
+			$('#ln').prop('disabled', false); // If checked enable item      
+		} else {
+			$('#ln').prop('disabled', true); // If checked disable item   
+			$("#ln").val(0);               
+		}
+	});
 </script>
