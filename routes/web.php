@@ -346,7 +346,9 @@ Route::get('/claimapproval/adminapprover', function () {
 Route::get('/claimapproval/supervisorcashadvance', function () {
     return view('eclaim/claimapproval/supervisor/cashadvance/approvalcashadvance');
 });
-
+Route::get('/claimapproval/hodcashadvance', function () {
+    return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
+});
 Route::get('/claimapproval/challenge', function () {
     return view('eclaim/claimapproval/supervisor/challengeroute');
 });
