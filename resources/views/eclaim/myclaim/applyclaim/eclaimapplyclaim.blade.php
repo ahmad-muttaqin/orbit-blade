@@ -698,11 +698,8 @@
 												</div>
 												{{-- akan tarik data dari  labelling name dlam setting add claim --}}
 												<div class="row p-2">
-													{{-- <div class="col-md-4">  --}}
-														{{-- <input type="text" class="form-control" name="labellingname" id="" readonly> --}}
-													{{-- </div> --}}
 													<div class="col-md-4"> 
-														<input type="text" class="form-control" name="labellingname" id="" readonly value="provider">
+														<input type="text" class="form-control" name="labellingname" id="" readonly value="">
 													</div>
 													<div class="col-md-8"> 
 														<select class="form-select" id="" readonly>
@@ -724,14 +721,6 @@
 													</div>
 													<div class="col-md-8">
 														<textarea class="form-control" id="" rows="3"></textarea>
-													</div>
-												</div>
-												<div class="row p-2">
-													<div class="col-md-4">
-														<label class="form-label">Content Description</label>
-													</div>
-													<div class="col-md-8">
-														<input  type="text" class="form-control">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -805,7 +794,7 @@
 															<label class="form-label">Total Hours</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" id="totalduration" class="form-control">
+															<input readonly type="text" id="totalduration" class="form-control" placeholder="click  to show total hours">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1130,7 +1119,7 @@
 																<label class="form-label">Travel Duration</label>
 															</div>
 															<div class="col-md-8">
-																<input  type="text" class="form-control" id="result1" readonly>
+																<input  type="text" class="form-control" id="result1" readonly placeholder="click to show travel duration">
 															</div>
 														</div>
 													<div class="row p-2">
@@ -1222,14 +1211,14 @@
 															<label class="form-label">Accommodation:</label>
 														</div>
 														<div class="col-md-2" id="hotelc">
-															<input class="form-check-input" type="checkbox" value="100" id="htv"/>
+															<input class="form-check-input" type="checkbox" value="85" id="htv"/>
 															<label class="form-label">Hotel</label>
 														</div>
 														<div class="col-md-2" >
 															<input readonly type="text" class="form-control" id="hotelcv">
 														</div>
 														<div class="col-md-2" style="display: none">
-															<input readonly type="text" class="form-control" id="hotelcv1">
+															<input readonly type="text" class="form-control" id="hotelcv1" value="0">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
@@ -1603,81 +1592,8 @@
         }  
 	  
    });
-</script>
 
-{{-- calculate total hours --}}
-<script>
-// 	$(function () {
-
-// 	TimePicker();
-
-// 	});
-
-// var TimePicker = function () {
-
-// if ($(".timepicker").length === 0) { return; }
-
-// $(".timepicker").mdtimepicker({
-	
-// });
-
-// };
-
-// function tmTotalHrsOnSite () {
-
-// if ($("#timestart") && $("#timeend")) {
-
-// 	valueStart = $("#timestart").val();
-// 	valueStop = $("#timeend").val();
-
-// 	var str0="01/01/1970 " + valueStart;
-// 	var str1="01/01/1970 " + valueStop;
-
-// 	var diff=(Date.parse(str1)-Date.parse(str0))/1000/60;
-// 	var hours=String(100+Math.floor(diff/60)).substr(1);
-// 	var mins=String(100+diff%60).substr(1);
-// 	$("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
-
-// 	}
-
-// };
-
-$(function () {
-	$('#timestart,#timeend').mdtimepicker({
-       
-	});
-	$('#daystart,#dayend').datepicker({
-                    format:'mm/dd/yyyy',
-                }).datepicker("setDate",'now');
- });
-
- $(document).ready(function () {
-    
-	$("#totalduration").focus(function () {
-
-	var startdt = new Date($("#daystart").val() + " " + $("#timestart").val());
-    
-    var enddt = new Date($("#dayend").val() + " " + $("#timeend").val());
-
-    var diff = enddt - startdt;
-    
-    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    diff -=  days * (1000 * 60 * 60 * 24);
-    
-    var hours = Math.floor(diff / (1000 * 60 * 60));
-    diff -= hours * (1000 * 60 * 60);
-    
-    var mins = Math.floor(diff / (1000 * 60));
-    diff -= mins * (1000 * 60);
-
-    $("#totalduration").val(hours + " hours : " + mins + " minutes ");
-    
-	// $("#totalduration").val(hours+ " hours " + ': '  + mins + " mins");
-    });
- });
-
-
-$("#datepickerpc").datepicker({
+   $("#datepickerpc").datepicker({
     todayHighlight: true,
     autoclose: true,
 	format: 'dd-mm-yyyy'
@@ -1689,20 +1605,25 @@ $("#datepickerpc").datepicker({
     autoclose: true,
 	format: 'dd-mm-yyyy'
   });
-</script>
 
-
-
-{{-- duration new --}}
-<script>
-	$(function () {
+  
+  $(function () {
      $("#date1, #date2").datepicker({  format: 'mm/dd/yyyy'})
      $('#time1,#time2').mdtimepicker({
        
      });
+
+	 $('#timestart,#timeend').mdtimepicker({
+       
+	});
+	$('#daystart,#dayend').datepicker({
+                    format:'mm/dd/yyyy',
+                }).datepicker("setDate",'now');
  });
 
+ 
  $(document).ready(function () {
+	//calculate date range in subsistence allowance
      $("#result1").focus(function () {
 
     var startdt = new Date($("#date1").val() + " " + $("#time1").val());
@@ -1720,20 +1641,35 @@ $("#datepickerpc").datepicker({
     var mins = Math.floor(diff / (1000 * 60));
     diff -= mins * (1000 * 60);
     
-    // var seconds = Math.floor(diff / (1000));
-    // diff -= seconds * (1000);
-    
-    // $("#result").val(days + " days : " + hours + " hours : " + mins + " minutes : " + seconds + " seconds");
-    
     $("#result1").val(days + " days : " + hours + " hours : " + mins + " minutes ");
     
 
      });
  });
-</script>
+
+//  calculate time duration un travelling
+ $("#totalduration").focus(function () {
+
+var startdt = new Date($("#daystart").val() + " " + $("#timestart").val());
+
+var enddt = new Date($("#dayend").val() + " " + $("#timeend").val());
+
+var diff = enddt - startdt;
+
+var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+diff -=  days * (1000 * 60 * 60 * 24);
+
+var hours = Math.floor(diff / (1000 * 60 * 60));
+diff -= hours * (1000 * 60 * 60);
+
+var mins = Math.floor(diff / (1000 * 60));
+diff -= mins * (1000 * 60);
+
+$("#totalduration").val(hours + " hours : " + mins + " minutes ");
+
+});
 
 
-<script>
 $('#hotelc').change(function() {
   var s = $('#hotelc input:checked').map(function() {
     return this.value;
@@ -1750,45 +1686,41 @@ $('#lodgingc').change(function() {
   $('#lodgingcv1').val((s.length > 0 ? s : "0"));
   
 });
-</script>
 
-{{-- cal total subs and acco --}}
-<script>
-    $("#BF,#DBF,#LH,#DLH,#DN,#DDN,#TS").change(function(){
-		var a = parseInt($("#BF").val());
+// calculate total subsistence & accomadation
+$("#BF,#DBF,#LH,#DLH,#DN,#DDN,#TS").change(function(){
+		var a = parseFloat($("#BF").val()); //float
 		var b = parseInt($("#DBF").val());
-		var c = parseInt($("#LH").val());
+		var c = parseFloat($("#LH").val()); //float
 		var d = parseInt($("#DLH").val());
-		var e = parseInt($("#DN").val());
+		var e = parseFloat($("#DN").val()); //float
 		var f = parseInt($("#DDN").val());
-        $("#TS").val((a*b) + (c*d) + (e*f));
+        $("#TS").val((a*b) + (c*d) + (e*f)); //float
     });
 
 
 $("#htv,#hotelcv1,#hn,#lodgingcv1,#ln,#ldgv").change(function(){
-		var a = parseInt($("#hotelcv1").val());
+		var a = parseFloat($("#hotelcv1").val()); //float
 		var b = parseInt($("#hn").val());
 
-		var c = parseInt($("#lodgingcv1").val());
+		var c = parseFloat($("#lodgingcv1").val()); //float
 		var d = parseInt($("#ln").val());
-   	 $("#TAV").val((a*b) + (c*d));
+		var e = parseFloat((a*b) + (c*d)).toFixed(2);
+   	 	$("#TAV").val(e);
 
 });
-
 
 
 	$("#hotelcv,#hotelcv1,#hn,#lodgingcv,#hotelcv1,#ln,#htv,#ldgv,#TS,#TAV,#DBF,#DLH,#DDN").change(function(){
 		
-		var a = parseInt($("#TS").val());	
-		var b = parseInt($("#TAV").val());
-		$("#total2").val(a + b);
+		var a = parseFloat($("#TS").val());	
+		var b = parseFloat($("#TAV").val());
+		var c = parseFloat(a + b).toFixed(2)
+		$("#total2").val(c);
 
 });
-</script>
 
-
-<script>
-	$('#htv').click(function() {
+$('#htv').click(function() {
     if (this.checked) {
         $('#hn').prop('disabled', false); // If checked enable item      
     } else {

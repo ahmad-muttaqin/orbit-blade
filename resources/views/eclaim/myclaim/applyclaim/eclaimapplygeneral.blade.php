@@ -719,6 +719,17 @@
 								</select>
 							</div>
 						</div>
+						{{-- akan tarik data dari  labelling name dlam setting add claim --}}
+						<div class="row p-2">
+							<div class="col-md-3"> 
+								<input type="text" class="form-control" name="labellingname" id="" readonly value="">
+							</div>
+							<div class="col-md-9"> 
+								<select class="form-select" id="" readonly>
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+							</div>
+						</div>
 						<div class="row p-2">
 							<div class="col-md-3">
 								<label class="form-label">Amount (MYR)</label>

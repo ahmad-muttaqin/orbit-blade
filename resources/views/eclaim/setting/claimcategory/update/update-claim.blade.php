@@ -652,9 +652,9 @@
                           <br>
                           <div class="labelu" style="display: none">
                             <div class="form-group row p-2">
-                                <label for="description" class="col-sm-3 col-form-label">Description</label>
+                                <label for="description" class="col-sm-3 col-form-label">Labelling Name</label>
                                 <div class="col">
-                                    <textarea class="form-control" name="description" id="descriptionn" rows="3" placeholder="Input Description"></textarea>
+                                <input type="text" class="form-control" name="description" id="descriptionn" placeholder="Input Labelling">
                                 </div>
                             </div>
                               <button type="button" class="btn btn-white mt-3 mb-3" data-bs-toggle="modal" id="myModal1" data-bs-target="#modaladdcontent"><i class="fa fa-plus"></i> Add Dropdown Content</button>
@@ -709,7 +709,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" id="savecontent" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+          <button type="button" id="savecontent" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
         </div>
       </div>
     </div>

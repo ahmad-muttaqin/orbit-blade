@@ -1130,28 +1130,53 @@
                     </div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">Travel Date</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">Start Time</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
+					<div class="col-md-6">
+						{{-- <input  type="text" class="form-control"> --}}
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date1" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time1" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date2" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time2" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">End Time</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Project</label>
                     </div>

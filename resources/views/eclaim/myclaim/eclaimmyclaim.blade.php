@@ -698,7 +698,7 @@
 						<td>2022</td>
 						<td>AUGUST</td>
 						<td><span class="badge bg-lime">Open</span></td>
-						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">Update</a></td>
+						<td><a href="/eclaim/updatemontly" type="button" class="btn btn-primary btn-sm">Update</a></td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -932,7 +932,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashprojectoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -953,7 +953,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashprojectnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -975,7 +975,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashothersoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -997,7 +997,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashothersnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>

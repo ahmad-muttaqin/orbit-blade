@@ -923,7 +923,7 @@
 														</div>
 													</div>
 													<div class="row p-2">
-														<div class="col-md-2">
+														<div class="col-md-1">
 															
 														</div>
 														<div class="col-md-2">
@@ -942,7 +942,7 @@
 																
 															</select>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input  type="text" class="form-control" id="subs" value="60" readonly>
 														</div>
 													</div>
@@ -959,10 +959,10 @@
 														<div class="col-md-1">
 															<label class="form-label"></label>
 														</div>
-														<div class="col-md-3">
+														<div class="col-md-2">
 															<label class="form-label">Total</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input readonly type="text" class="form-control" id="totalsubs" value="0">
 														</div>
 													</div>
@@ -972,7 +972,7 @@
 														</div>
 													</div>
 													<div class="row p-2">
-														<div class="col-md-2">
+														<div class="col-md-1">
 														
 														</div>
 														<div class="col-md-2">
@@ -991,8 +991,8 @@
 																<option class="form-label" value="" >Lodging</option>
 															</select>
 														</div>
-														<div class="col-md-2">
-															<input type="text" class="form-control" id="acco" value="350" readonly>
+														<div class="col-md-3">
+															<input type="text" class="form-control" id="acco" value="350" readonly >
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1008,10 +1008,10 @@
 														<div class="col-md-1">
 															<label class="form-label"></label>
 														</div>
-														<div class="col-md-3">
+														<div class="col-md-2">
 															<label class="form-label">Total</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input readonly type="text" class="form-control" id="totalacco" value="0">
 														</div>
 													</div>
@@ -1070,7 +1070,7 @@
 														<div class="col-md-5">
 															<label class="form-label">Total</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input readonly type="text" class="form-control" id="totalexp" value="0">
 														</div>
 													</div>
@@ -1083,7 +1083,7 @@
 														<div class="col-md-5">
 															<label class="form-label">Maximum Paid Out (75%)</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input readonly type="text" class="form-control" id="maxpaid">
 														</div>
 													</div>
@@ -1214,6 +1214,19 @@
 			$(".TE").show();
 			$(".MPO").show();
 			$(".SV").show();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
+			
+			
+			
+
         } else if ($(this).val() == "4"){
 			$(".SAC").show();
 			$(".TE").show();
@@ -1223,6 +1236,15 @@
 			$(".TE").show();
 			$(".MPO").show();
 			$(".SV").show();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
 		}
 		else if ($(this).val() == "6"){
 			$(".SAC").show();
@@ -1233,6 +1255,15 @@
 			$(".TE").show();
 			$(".MPO").show();
 			$(".SV").show();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
 		}
 		else {
             $(".SAC").hide();
@@ -1243,6 +1274,15 @@
 			$(".TE").hide();
 			$(".MPO").hide();
 			$(".SV").hide();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
         }
     });	
 
@@ -1251,34 +1291,36 @@
 	// cal mode transport
 	$("#day,#subs").change(function(){
 		var a = parseInt($("#day").val());
-		var b = parseInt($("#subs").val());
-        $("#totalsubs").val(a * b);
+		var b = parseFloat($("#subs").val());
+		var c = parseFloat(a*b).toFixed(2);
+        $("#totalsubs").val(c);
     }); 
 
 	// cal acco
 	$("#night,#acco").change(function(){
 		var a = parseInt($("#night").val());
-		var b = parseInt($("#acco").val());
-        $("#totalacco").val(a * b);
+		var b = parseFloat($("#acco").val());
+		var c = parseFloat(a*b).toFixed(2);
+        $("#totalacco").val(c);
     }); 
 
 	//
 	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent").change(function(){
-		var a = parseInt($("#totalsubs").val());  
-		var b = parseInt($("#totalacco").val());  
-		var c = parseInt($("#fuelfare").val());  
-		var d = parseInt($("#tollparking").val()); 
-		var e = parseInt($("#ent").val());     
-		var sum = a + b + c + d + e;
-        $("#totalexp").val(sum);
+		var a = parseFloat($("#totalsubs").val());  
+		var b = parseFloat($("#totalacco").val());  
+		var c = parseFloat($("#fuelfare").val());  
+		var d = parseFloat($("#tollparking").val()); 
+		var e = parseFloat($("#ent").val()); 
+		var f = parseFloat(a + b + c + d + e).toFixed(2);    
+        $("#totalexp").val(f);
     });
 
 
-	//
+	//cal maximum paid out
 	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent,#totalexp").change(function(){
-		var a = parseInt($("#totalexp").val()); 
-        max = parseFloat((75 / 100) * a);
-		$("#maxpaid").val(max);
+		var a = parseFloat($("#totalexp").val()); 
+		var f = parseFloat((75 / 100) * a).toFixed(2); 
+		$("#maxpaid").val(f);
     });
 
 	// end total transport
@@ -1301,10 +1343,4 @@ $('#datefilter1').on('cancel.daterangepicker', function(ev, picker) {
 
 });
 </script>
-
-
-{{-- date range --}}
-<script>
-	
-	</script>
 
