@@ -796,7 +796,7 @@
 															<label class="form-label">Total Hours</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" id="utotalduration" class="form-control" placeholder="click to show total duration">
+															<input readonly type="text" id="utotalduration" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1121,7 +1121,7 @@
 																<label class="form-label">Travel Duration</label>
 															</div>
 															<div class="col-md-8">
-																<input  type="text" class="form-control" id="result1" readonly placeholder="click to show travel duration">
+																<input  type="text" class="form-control" id="result1" readonly>
 															</div>
 														</div>
 													<div class="row p-2">
@@ -1626,7 +1626,7 @@
  
  $(document).ready(function () {
 	//calculate date range in subsistence allowance
-     $("#result1").focus(function () {
+     $("#result1,#udate1,#utime1,#udate2,#utime2").focus(function () {
 
     var startdt = new Date($("#udate1").val() + " " + $("#utime1").val());
     
@@ -1650,7 +1650,7 @@
  });
 
 //  calculate time duration un travelling
- $("#utotalduration").focus(function () {
+ $("#utotalduration,#udaystart,#utimestart,#udayend,#utimeend").focus(function () {
 
 var startdt = new Date($("#udaystart").val() + " " + $("#utimestart").val());
 

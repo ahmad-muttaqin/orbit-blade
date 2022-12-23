@@ -764,13 +764,13 @@
 															<label class="form-label" >Start Time</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" id="timestart" class=" form-control" value="">
+															<input  type="text" id="timestart" class=" form-control" value="" placeholder="choose time">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">End Time</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" id="timeend" class=" form-control">
+															<input  type="text" id="timeend" class=" form-control" placeholder="choose time">
 														</div>
 													</div>
 													<div id="" style="display: none">
@@ -794,7 +794,7 @@
 															<label class="form-label">Total Hours</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" id="totalduration" class="form-control" placeholder="click  to show total hours">
+															<input readonly type="text" id="totalduration" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1119,7 +1119,7 @@
 																<label class="form-label">Travel Duration</label>
 															</div>
 															<div class="col-md-8">
-																<input  type="text" class="form-control" id="result1" readonly placeholder="click to show travel duration">
+																<input  type="text" class="form-control" id="result1" readonly >
 															</div>
 														</div>
 													<div class="row p-2">
@@ -1624,7 +1624,7 @@
  
  $(document).ready(function () {
 	//calculate date range in subsistence allowance
-     $("#result1").focus(function () {
+     $("#result1,#date1,#time1,#date2,#time2").focus(function () {
 
     var startdt = new Date($("#date1").val() + " " + $("#time1").val());
     
@@ -1648,7 +1648,9 @@
  });
 
 //  calculate time duration un travelling
- $("#totalduration").focus(function () {
+
+// 
+ $("#totalduration,#daystart,#timestart,#dayend,#timeend").focus(function () {
 
 var startdt = new Date($("#daystart").val() + " " + $("#timestart").val());
 
@@ -1668,6 +1670,8 @@ diff -= mins * (1000 * 60);
 $("#totalduration").val(hours + " hours : " + mins + " minutes ");
 
 });
+
+
 
 
 $('#hotelc').change(function() {
