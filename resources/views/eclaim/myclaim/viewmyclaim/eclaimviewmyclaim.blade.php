@@ -1114,19 +1114,17 @@
             </div>
             <div class="modal-body">
 				<div class="row p-2">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label class="form-label col-form-label">Claim For</label>
                     </div>
-					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-4">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-3">
+					<div class="col-md-2">
                         <label class="form-label col-form-label">Supporting Document</label>
                     </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-4">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1177,19 +1175,19 @@
 					</div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label class="form-label col-form-label">Project</label>
                     </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-10">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label class="form-label col-form-label">Description</label>
                     </div>
-					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-10">
+						<textarea class="form-control"  rows="2" readonly></textarea>
                     </div>
 					</div>
 				<div class="row p-2">

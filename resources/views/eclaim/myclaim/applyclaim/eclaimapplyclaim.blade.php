@@ -26,11 +26,11 @@
 
 
 	{{-- timepicker --}}
-	{{-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"> --}}
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
 	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
-<link href="../assets/plugins/timepicker/css/mdtimepicker.css" rel="stylesheet" type="text/css">
+	<link href="../assets/plugins/timepicker/css/mdtimepicker.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -1135,7 +1135,6 @@
 															<label class="form-label">Description</label>
 														</div>
 														<div class="col-md-8">
-															{{-- <input  type="text" class="form-control"> --}}
 															<textarea class="form-control" id="" rows="3"></textarea>
 														</div>
 													</div>
@@ -1506,7 +1505,7 @@
 
 
 {{-- timpicker --}}
-{{-- <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script> --}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 {{-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> --}}
 <script src="../assets/plugins/timepicker/js/mdtimepicker.js"></script>
 <script>
