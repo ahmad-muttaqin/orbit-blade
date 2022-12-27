@@ -697,20 +697,6 @@ margin-top: 10px;
                         </div>
                         <div class="col mb-6">
                             <div class="row">
-                                <label for="lodgingallowance" class="col-sm-3 col-form-label">Lodging Allowance</label>
-                                <div class="col-sm-3">
-                                    <select class="form-select" name="" id="ulodgingallowance" aria-label="Disabled select example">
-                                        <option selected value="0">None</option>
-                                        <option  value="1">Actual</option>
-                                        <option  value="2">Input Value</option>
-                                      </select>
-                                </div>
-                                <div class="col-sm-3" style="display: none" id="ulodginghoteli">
-                                    <input type="text" class="form-control" id="" name="" value="">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
                                 <label for="localhotela" class="col-sm-3 col-form-label">Local Hotel Allowance</label>
                                 <div class="col-sm-3">
                                     <select class="form-select" name="localhotela" id="ulocalhotela" aria-label="Disabled select example">
@@ -720,6 +706,21 @@ margin-top: 10px;
                                       </select>
                                 </div>
                                 <div class="col-sm-3" style="display: none" id="ulocalhoteli">
+                                    <input type="text" class="form-control" id="" name="" value="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                
+                                <label for="lodgingallowance" class="col-sm-3 col-form-label">Lodging Allowance</label>
+                                <div class="col-sm-3">
+                                    <select class="form-select" name="" id="ulodgingallowance" aria-label="Disabled select example">
+                                        <option selected value="0">None</option>
+                                        <option  value="1">Actual</option>
+                                        <option  value="2">Input Value</option>
+                                      </select>
+                                </div>
+                                <div class="col-sm-3" style="display: none" id="ulodginghoteli">
                                     <input type="text" class="form-control" id="" name="" value="">
                                 </div>
                             </div>

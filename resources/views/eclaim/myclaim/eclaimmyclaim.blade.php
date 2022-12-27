@@ -698,7 +698,7 @@
 						<td>2022</td>
 						<td>AUGUST</td>
 						<td><span class="badge bg-lime">Open</span></td>
-						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">Update</a></td>
+						<td><a href="/eclaim/updatemontly" type="button" class="btn btn-primary btn-sm">Update</a></td>
 						
 					</tr>
 					<tr class="even gradeC">
@@ -706,7 +706,6 @@
 						<td>JULY</td>
 						<td><span class="badge bg-danger">Expired</span></td>
 						{{-- <td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td> --}}
-						eclaim/appealclaim
 						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
 					</tr>
 					
@@ -770,7 +769,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatemontly" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -791,7 +790,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updategeneral" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -933,7 +932,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashprojectoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -954,7 +953,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashprojectnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -976,7 +975,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashothersoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -998,7 +997,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashothersnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
