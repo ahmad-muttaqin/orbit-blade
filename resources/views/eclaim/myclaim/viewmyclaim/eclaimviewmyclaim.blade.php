@@ -647,7 +647,7 @@
 							</div>
 						</div>
 						<div class="row p-2">
-							<table id="traveltable" class="table table-striped table-bordered align-middle">
+							<table id="claimtable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -713,7 +713,7 @@
 							</table>
 						</div>
 						<div class="row p-2">
-							<table id="claimtable" class="table table-striped table-bordered align-middle">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1130,28 +1130,53 @@
                     </div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">Travel Date</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">Start Time</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
+					<div class="col-md-6">
+						{{-- <input  type="text" class="form-control"> --}}
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date1" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time1" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date2" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time2" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">End Time</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Project</label>
                     </div>
@@ -1201,6 +1226,17 @@
                         <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
+
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Total Subsistence Allowance:</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
 				<div class="row p-2">
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Accommodation :</label>
@@ -1225,6 +1261,18 @@
                     </div>
 					<div class="col-md-3">
 					<input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+					<label class="form-label col-form-label">Total Accomodation</label>
+                    </div>
+					<div class="col-md-3">
+					<input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				</div>
@@ -1340,6 +1388,7 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
+		scrollX : true
     });
 	$("#traveltable").DataTable({
         responsive: false,
@@ -1347,6 +1396,7 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
+		scrollX : true
     });
 	$(document).on("click", "#btn-view-claim", function() {
         $('#modal-view-claim').modal('show');

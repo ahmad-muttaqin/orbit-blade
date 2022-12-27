@@ -620,51 +620,60 @@
                     <br>
                     <form>
                             <div class="form-group row p-2">
-                                <label for="categorycode" class="col-sm-2 col-form-label">Claim Category Code*</label>
+                                <label for="categorycode" class="col-sm-3 col-form-label">Claim Category Code*</label>
                                 <div class="col">
                                   <input type="text" class="form-control" id="category_code" name="categorycode" placeholder="Input Claim Category Code">
                                 </div>
                               </div>
                               <br>
                         <div class="form-group row p-2">
-                          <label for="claimcategory" class="col-sm-2 col-form-label">Claim Category*</label>
+                          <label for="claimcategory" class="col-sm-3 col-form-label">Claim Category*</label>
                           <div class="col">
                             <input type="text" class="form-control"  name="claimcategory" id="claim_category" placeholder="Input Claim Category">
                           </div>
                         </div>
                         <br>
                         <div class="form-group row p-2">
-                            <label for="claimtype" class="col-sm-2 col-form-label">Claim Type*</label>
+                            <label for="claimtype" class="col-sm-3 col-form-label">Claim Type*</label>
                             <div class="col-sm-6">
-                                <div class="row-sm-6 p-2">
+                                <div class="row-sm-6 p-1">
                                   <input type="checkbox" class="form-check-input" name="" id="" /> <label>MTC- Monthly Claim</label>
                                 </div>
-                                <div class="row-sm-6 p-2">
+                                <div class="row-sm-6 p-1">
                                   <input type="checkbox" class="form-check-input" name="" id="" /> <label>GC- General Claim</label>
                                 </div>
                             </div>
-                          </div>
-                          <br>
-                          <div class="form-group row p-2">
-                            <label for="description" class="col-sm-2 col-form-label">Description</label>
-                            <div class="col">
-                                <textarea class="form-control" name="description" id="descriptionn" rows="3" placeholder="Input Description"></textarea>
+                        </div>
+                        <div class="form-group row p-2">
+                            <label for="claimtype" class="col-sm-3 col-form-label">Add Dropdown</label>
+                            <div class="col-sm-6">
+                                <div class="row-sm-6 p-1">
+                                  <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> <label></label>
+                                </div>
                             </div>
-                          </div>
-                          <button type="button" class="btn btn-white mt-3 mb-3" data-bs-toggle="modal" id="myModal1" data-bs-target="#modaladdcontent"><i class="fa fa-plus"></i> Add Content Description</button>
-                      <table  id="tablesavecontent"  class="table table-striped table-bordered align-middle">
-                        <thead>
-                          <tr>	
-                            <th  data-orderable="false">Action</th>
-                            <th class="text-nowrap">Content</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                
-                            </tr>
-                        </tbody>
-                      </table>
+                        </div>
+                          <div class="label" style="display: none">
+                                <div class="form-group row p-2">
+                                    <label for="description" class="col-sm-3 col-form-label">Labelling Name</label>
+                                    <div class="col">
+                                        <input type= "text" class="form-control" name="description" id="descriptionn" placeholder="Input Labelling"></textarea>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-white mt-3 mb-3" data-bs-toggle="modal" id="myModal1" data-bs-target="#modaladdcontent"><i class="fa fa-plus"></i> Add Dropdown Content</button>
+                                <table  id="tablesavecontent"  class="table table-striped table-bordered align-middle">
+                                        <thead>
+                                        <tr>	
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Content</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>    
+                                
+                                            </tr>
+                                        </tbody>
+                                </table>
+                         </div>
                       <br><br>
                 </div>
                 <br>
@@ -685,7 +694,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Content Description</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Add Dropdown Content</h5>
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -700,7 +709,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" id="savecontent" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+          <button type="button" id="savecontent" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
         </div>
     </form>
       </div>
@@ -806,6 +815,18 @@ row.parentNode.removeChild(row);
 function editRow() {
     $('#subsistencemodal').modal('show');
 }
+</script>
+
+{{-- checkbox label --}}
+
+<script>
+    $("#adddropdown").click(function() {
+    if($(this).is(":checked")) {
+        $(".label").show();
+    } else {
+        $(".label").hide();
+    }
+});
 </script>
 
 
