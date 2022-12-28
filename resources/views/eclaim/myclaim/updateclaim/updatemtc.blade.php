@@ -722,7 +722,7 @@
 														<label class="form-label">Description</label>
 													</div>
 													<div class="col-md-8">
-														<textarea class="form-control" id="" rows="3"></textarea>
+														<textarea class="form-control" id="" rows="3" ></textarea>
 													</div>
 												</div>
 												<div class="row p-2">
