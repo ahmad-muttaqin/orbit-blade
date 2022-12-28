@@ -595,80 +595,9 @@
 	
 			<div class="panel panel">
 				
-<<<<<<<< HEAD:resources/views/eclaim/myclaim/updateclaim/updatecashadvance.blade.php
 				<div class="panel-body">
 					<div class="row">
 					<h4>Cash Advance Information</h4>
-========
-			</div> --}}
-			<div class="row p-2">
-				<div class="col-md-12">	
-					
-					<div class="form-control">	
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim ID</label>
-							</div>
-							<div class="col-md-3">
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Type</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Applied Date</label>
-							</div>
-							<div class="col-md-3">
-								<input id="appealdate" type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Claim Category</label>
-							</div>
-							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-								</select>
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Amount</label>
-							</div>
-							<div class="col-md-3">
-								<input  type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Description</label>
-							</div>
-							<div class="col-md-3">
-								<textarea class="form-control" rows="3"></textarea>
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-2">
-								<label class="form-label">Supporting Document</label>
-							</div>
-							<div class="col-md-3">
-								<input type="file" class="form-control-file" id="">
-							</div>
-						</div>
-						
-						</div>
->>>>>>>> main:resources/views/eclaim/myclaim/applyclaim/eclaimappealclaim.blade.php
 					</div>
 						<div class="row p-2">
 							<div class="col-md-7">

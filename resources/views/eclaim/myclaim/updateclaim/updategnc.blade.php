@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
+	<h1 class="page-header">eClaim <small>| My Claim | Update General Claim</small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -620,7 +620,7 @@
                     </div>
 				</div>
 				
-			</div>
+			</div> --}}
 			<div class="row p-2">
 				<div class="col-md-6">	
 					
@@ -636,7 +636,7 @@
 								<label class="form-label">Claim Type</label>
 							</div>
 							<div class="col-md-3">
-								<select class="form-select" >
+								<select class="form-select">
 									<option class="form-label" value="" selected>Please Select</option>
 									
 								</select>
@@ -703,7 +703,7 @@
 							</div>
 							<div class="col-md-9">
 								<div class="input-group" id="">
-									<input type="text" name="" class="form-control" value="" id="datepicker-autoClose" />
+									<input type="text" name="" class="form-control" value="" id="udatepicker" />
 										<div class="input-group-text"><i class="fa fa-calendar"></i></div>
 								</div>					
 							</div>
@@ -873,27 +873,31 @@
 <link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 <script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
-<script>
-  
-  var elm = document.getElementById('cashadvance');
-  var switchery = new Switchery(elm, {
-    color: '#00acac'
-  });
 
-  
-  $('#applyclaimtable').DataTable({
-	"searching": false,
-	"lengthChange": true,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-  });
-	
-  $("#datepicker-autoClose").datepicker({
-    todayHighlight: true,
-    autoclose: true,
-	format: 'dd/mm/yyyy',
-  });
+{{-- date range --}}
+<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+<script src="/assets/plugins/moment/min/moment.min.js"></script>
+<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script> 
+
+<script>
+		// var elm = document.getElementById('cashadvance');
+		// var switchery = new Switchery(elm, {
+		// 	color: '#00acac'
+		// });	
+
+		$('#applyclaimtable').DataTable({
+			"searching": false,
+			"lengthChange": true,
+			lengthMenu: [5, 10],
+			responsive: false,
+			info: false
+		});
+			
+		$("#udatepicker").datepicker({
+			todayHighlight: true,
+			autoclose: true,
+			format: 'dd/mm/yyyy',
+		}).datepicker("setDate",'now');
 </script>
 
 
