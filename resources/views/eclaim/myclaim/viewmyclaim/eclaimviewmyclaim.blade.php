@@ -957,6 +957,13 @@
 				
 			</div>
 		</div>
+
+		<div class="row p-2">
+			<div class="col align-self-start">
+				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+			</div>	
+			
+		</div>
 	</div>
 	<div class="modal fade" id="modal-view-claim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -1339,7 +1346,9 @@
             </div>
 			</div>
 		</div>
-	</div>		
+	</div>
+	
+	
 	<!-- END row -->
 	
 	<!-- END #app -->

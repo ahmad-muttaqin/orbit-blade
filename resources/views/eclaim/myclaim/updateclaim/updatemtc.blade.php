@@ -917,7 +917,7 @@
 															<label class="form-label">Mileage</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control">
+															<input  type="text" class="form-control">
 														</div>
 													
 														<div class="col-md-2">
