@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim </small></h1>
+	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -611,468 +611,98 @@
 		
 		
 		<div class="panel-body">
-		
-		<div class="form-control">	
-		
-		<h3>Claim Overview</h3>
-		<br>
-		<div class="row p-2">	
 			
-			
-			<div class="col-sm-2">
-			
-				<h3 class="text-center">Total Pending Claim Approval:</h3>
-				<h3 class="text-center text-primary ">2</h3>
-			</div>
-			
-			<div class="col-sm-2">
-			
-			<h3 class="text-center">Total Amount Pending Claims:</h3>
-			<h3 class="text-center text-primary">MYR 100.00</h3>
-			</div>
-
-			<div class="col-sm-2">
-				
-			<h3 class="text-center">Total Amount Paid Claims:</h3>
-			<h3 class="text-center text-primary">MYR 600.00</h3>
-			</div>
-			
-			<div class="col-sm-2">
-				
-			<h3 class="text-center">Total Amount Rejected Claims:</h3>
-			<h3 class="text-center text-primary">MYR 0.00</h3>
-			</div>
-
-			<div class="col-sm-2">
-			
-			<h3 class="text-center"> Total Pending Cash Advance:</h3>
-			<h3 class="text-center text-primary">2</h3>
-			</div>
-			
-			<div class="col-sm-2">
-			
-			<h3 class="text-center">Total Amount Cash Advance:</h3>
-			<h3 class="text-center text-primary">MYR 0.00</h3>
-			</div>
-			</div>
-		
-		</div>
-		<!-- END panel-heading -->
-		<!-- BEGIN panel-body --><br>
-		<div class="form-control">	
-			<div class="panel-body">
-				<div class="row p-2">	
-					<div class="col-sm-4">	
-						<!-- BEGIN card -->
-					<div class="card text-center border-0">
-						<div class="card-header">
-							<ul class="nav nav-pills card-header-pills">
-								<li class="nav-item" style="margin-left: 5px;"><a href="/eclaim/applygeneralclaim" class="btn btn-primary">+ General Claim</a></li>
-								<li class="nav-item" style="margin-left: 5px;"><a href="/eclaim/cashadvance" class="btn btn-primary">+ Cash Advance</a></li>
-							</ul>
-						</div>
-						<div class="card-body">
-							<div class="tab-content p-0 m-0">
-								<div class="tab-pane fade active show" >
-									<table id="generalclaim" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
+			{{-- <div class="row p-2">
+				<div class="col-md-3">	
+					<div class="form-check">
+						<a href="/eclaim/cashadvance" class="btn btn-primary">Cash Advance?</a>
 						
-						<th class="text-nowrap">Year</th>
-						<th class="text-nowrap">Month</th>
-						<th class="text-nowrap">Status</th>
-						<th class="text-nowrap">Action</th>
-
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-						<td>2022</td>
-						<td>SEPTEMBER</td>
-						<td><span class="badge bg-lime">Open</span></td>
-						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">+ Apply</a></td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td><span class="badge bg-lime">Open</span></td>
-						<td><a href="/eclaim/updatemontly" type="button" class="btn btn-primary btn-sm">Update</a></td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>2022</td>
-						<td>JULY</td>
-						<td><span class="badge bg-danger">Expired</span></td>
-						<td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Appeal</button></td>
-					</tr>
-				</tbody>
-			</table>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					<!-- END card -->
-				
-		
-			
-		</div>
-		
-		
-		<div class=" col-sm-8">	
-			<!-- BEGIN card -->
-			<div class="card text-center border-0">
-						<div class="card-header"> 
-							<ul class="nav nav-pills card-header-pills">
-								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1" id="claimnav">Claim</a></li>
-								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2" id="cashnav">Cash Advance</a></li>
-							</ul>
-						</div>
-						<div class="card-body">
-							<div class="tab-content p-0 m-0">
-								<div class="tab-pane fade active show" id="card-pill-1">
-								<div class="category-filter">
-									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
-										<option value="">Show All</option>
-										<option value="Draft">Draft</option>
-										<option value="Active">Active</option>
-										<option value="Rejected">Rejected</option>
-										<option value="Amend">Amend</option>
-										<option value="Paid">Paid</option>
-									</select>
-									
-								</div>
-								
-						<table id="claimtable" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						<th class="text-nowrap">Action</th>
-						<th class="text-nowrap">Year</th>
-						<th class="text-nowrap">Month</th>
-						<th class="text-nowrap">Claim ID</th>
-						<th class="text-nowrap">Type</th>
-						<th class="text-nowrap">Total Amount</th>
-						<th class="text-nowrap">Status</th>
-						<th class="text-nowrap">Status Date</th>
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/updatemontly" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td>102</td>
-						<td>MTC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Draft</span></td>
-						<td>20/09/2022</td>
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="/eclaim/updategeneral" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td>103</td>
-						<td>GNC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amend</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td>104</td>
-						<td>MTC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-lime">Active</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td>105</td>
-						<td>GNC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-secondary">Paid</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td>110</td>
-						<td>GNC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-danger">Rejected</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>2022</td>
-						<td>AUGUST</td>
-						<td>101</td>
-						<td>MTC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-danger">Rejected</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					
-					
-					
-					</tbody>
-				</table> 
-								</div>
-								<div class="tab-pane fade" id="card-pill-2">
-								<div class="category-filter">
-									<select id="Statuscash" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
-										<option value="">Show All</option>
-										<option value="Active">Active</option>
-										<option value="Pending">Pending</option>
-										<option value="Rejected">Amended</option>
-										<option value="Jazz">Paid</option>
-									</select>
-								</div>
-								<table id="cashadvancetable" class="table table-striped table-bordered align-middle">
-				<thead>
-					<tr>
-						
-						<th class="text-nowrap">Action</th>
-						<th class="text-nowrap">Cash Advance ID</th>
-						<th class="text-nowrap">Type of Cash Advance</th>
-						<th class="text-nowrap">Request Date</th>
-						<th class="text-nowrap">Travel Date</th>
-						<th class="text-nowrap">Amount</th>
-						<th class="text-nowrap">Status</th>
-						<th class="text-nowrap">Status Date</th>
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd gradeX">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewcashprojectoutstation" class="dropdown-item">View Claim</a>
-									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>101</td>
-						<td>Project ( Outstation )</td>
-						<td>102</td>
-						<td>MTC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-lime">Active</span></td>
-						<td>20/09/2022</td>
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewcashprojectnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>102</td>
-						<td>Project ( Non-Outstation )</td>
-						<td>103</td>
-						<td>GNC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Pending</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewcashothersoutstation" class="dropdown-item">View Claim</a>
-									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
-								</div>
-							</div>
-						</td>
-						<td>103</td>
-						<td>Others ( Outstation )</td>
-						<td>104</td>
-						<td>MTC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amended</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					<tr class="even gradeC">
-						<td>
-							<div class="btn-group me-1 mb-1">
-								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
-								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewcashothersnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
-								</div>
-							</div>
-						</td>
-						<td>104</td>
-						<td>Others ( Non-Oustation )</td>
-						<td>105</td>
-						<td>GNC</td>
-						<td>MYR 100.00</td>
-						<td><span class="badge bg-danger">Rejected</span></td>
-						<td>20/09/2022</td>
-						
-					</tr>
-					
-					
-					
-					
-					
-					</tbody>
-				</table> 
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END card -->
+                    </div>
 				</div>
-			</div>
-		</div>
-	</div>
+				
+			</div> --}}
+			<div class="row p-2">
+				<div class="col-md-12">	
+					
+					<div class="form-control">	
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Claim ID</label>
+							</div>
+							<div class="col-md-3">
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Claim Type</label>
+							</div>
+							<div class="col-md-3">
+								<select class="form-select" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+							</div>
+						</div>
 
-	{{-- modal appeal --}}
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabel">Appeal</h5>
-			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			</div>
-			<div class="modal-body">
-				<div class="row p-2">
-					<div class="col-md-4">
-						<label class="form-label">Year</label>
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Applied Date</label>
+							</div>
+							<div class="col-md-3">
+								<input id="appealdate" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Claim Category</label>
+							</div>
+							<div class="col-md-3">
+								<select class="form-select" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Amount</label>
+							</div>
+							<div class="col-md-3">
+								<input  type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Description</label>
+							</div>
+							<div class="col-md-3">
+								<textarea class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-2">
+								<label class="form-label">Supporting Document</label>
+							</div>
+							<div class="col-md-3">
+								<input type="file" class="form-control-file" id="">
+							</div>
+						</div>
+						
+						</div>
 					</div>
-					<div class="col-md-8">
-						<input type="text" class="form-control" readonly value="2022">
-					</div>
-				</div>	
-				<div class="row p-2">
-					<div class="col-md-4">
-						<label class="form-label">Month</label>
-					</div>
-					<div class="col-md-8">
-						<input type="text" class="form-control" readonly value="July">
-					</div>
-				</div>	
-				<div class="row p-2">
-					<div class="col-md-4">
-						<label class="form-label">State Reason</label>
-					</div>
-					<div class="col-md-8">
-						<textarea class="form-control" id="" rows="3"></textarea>
-					</div>
-				</div>	
-				<div class="row p-2">
-					<div class="col-md-4">
-						<label class="form-label">Supporting Document</label>
-					</div>
-					<div class="col-md-8">
-						<input type="file" class="form-control-file" id="">
-					</div>
-				</div>
-			</div>
-			<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-primary">Submit</button>
+				
+				
+			</div>	
+		</div>
+		<div class="row p-2">
+			<div class="col align-self-start">
+				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+			</div>	
+			<div class="col d-flex justify-content-end">
+				<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
 			</div>
 		</div>
-		</div>
-	</div>
-	<!-- END row -->
-	
 	<!-- END #app -->
-	
+	</div>
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
@@ -1106,120 +736,17 @@
 <script src="../assets/plugins/pdfmake/build/pdfmake.min.js"></script>
 <script src="../assets/plugins/pdfmake/build/vfs_fonts.js"></script>
 <script src="../assets/plugins/jszip/dist/jszip.min.js"></script>
-
+<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
+<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
+<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
 <script>
   
-
-  $("document").ready(function () {
-	$('#generalclaim').DataTable({
-	"searching": false,
-	"lengthChange": false,
-	lengthMenu: [5, 10],
-    responsive: false,
-	info: false
-
-	
+  $("#appealdate").datepicker({
+    todayHighlight: true,
+    autoclose: true,
+	format: 'dd/mm/yyyy',
   });
-
-      $("#claimtable").dataTable({
-        "searching": true,
-		"lengthChange": false,
-		lengthMenu: [5, 10],
-		responsive: false,
-		info: false,
-		dom: '<"top">rt<"bottom"p><"clear">',
-      });
-      //Get a reference to the new datatable
-      var table = $('#claimtable').DataTable();
-      //Take the category filter drop down and append it to the datatables_filter div. 
-      //You can use this same idea to move the filter anywhere withing the datatable that you want.
-      $("#claimtable_filter.dataTables_filter").append($("#Statusclaim"));
-      
-      //Get the column index for the Category column to be used in the method below ($.fn.dataTable.ext.search.push)
-      //This tells datatables what column to filter on when a user selects a value from the dropdown.
-      //It's important that the text used here (Category) is the same for used in the header of the column to filter
-      var categoryIndex = 0;
-      $("#claimtable th").each(function (i) {
-        if ($($(this)).html() == "Status") {
-          categoryIndex = i; return false;
-        }
-      });
-      //Use the built in datatables API to filter the existing rows by the Category column
-      $.fn.dataTable.ext.search.push(
-        function (settings, data, dataIndex) {
-          var selectedItem = $('#Statusclaim').val()
-          var category = data[categoryIndex];
-          if (selectedItem === "" || category.includes(selectedItem)) {
-            return true;
-          }
-          return false;
-        }
-      );
-      //Set the change event for the Category Filter dropdown to redraw the datatable each time
-      //a user selects a new filter.
-      $("#Statusclaim").change(function (e) {
-        table.draw();
-      });
-      table.draw();
-	  
-	  $("#cashadvancetable").dataTable({
-        "searching": true,
-		"lengthChange": false,
-		"scrollX": true,
-		lengthMenu: [5, 10],
-		responsive: false,
-		info: false,
-		dom: '<"top">rt<"bottom"p><"clear">',
-      });
-
-	  var table2 = $('#cashadvancetable').DataTable();
-      //Take the category filter drop down and append it to the datatables_filter div. 
-      //You can use this same idea to move the filter anywhere withing the datatable that you want.
-      $("#cashadvancetable_filter.dataTables_filter").append($("#Statuscash"));
-
-	  var categoryIndex2 = 0;
-      $("#cashadvancetable th").each(function (i) {
-        if ($($(this)).html() == "Status") {
-          categoryIndex2 = i; return false;
-        }
-      });
-      //Use the built in datatables API to filter the existing rows by the Category column
-      $.fn.dataTable.ext.search.push(
-        function (settings, data, dataIndex) {
-          var selectedItem2 = $('#Statuscash').val()
-          var category2 = data[categoryIndex2];
-          if (selectedItem2 === "" || category2.includes(selectedItem2)) {
-            return true;
-          }
-          return false;
-        }
-      );
-	  $("#Statuscash").change(function (e) {
-        table2.draw();
-      });
-      table2.draw();
-
-	//   $( "#cashnav" ).on( "click", function () {
-   	// 	setTimeout(function () {
-    //     general.columns.adjust().draw();	
-   	// 	}, 200);
-	//   });
-
-	//   $( "#claimnav" ).on( "click", function () {
-   	// 	setTimeout(function () {
-    //     general.columns.adjust().draw();
-   	// 	}, 200);
-	//   });
-
-	$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
-   $($.fn.dataTable.tables(true)).DataTable()
-      .columns.adjust();
-});
-});
-
-  
-	  
-	
 </script>
 
