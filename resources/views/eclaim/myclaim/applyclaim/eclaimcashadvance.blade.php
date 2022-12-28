@@ -686,42 +686,42 @@
 												<tbody>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>1/1/2022 - 3/1/2022</td>
+														<td>1/1/2022</td>
 														<td>Orbit</td>
 														<td>Kuala Lumpur</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>5/1/2022 - 7/1/2022</td>
+														<td>1/1/2022</td>
 														<td>Payje</td>
 														<td>Putrajaya</td>
 														<td>Project Discussion</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>2/2/2022 - 3/2/2022</td>
+														<td>1/1/2022</td>
 														<td>Orbit</td>
 														<td>Kuala Lumpur</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>5/2/2022 - 7/5/2022</td>
+														<td>1/1/2022</td>
 														<td>MyVM</td>
 														<td>Selangor</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>8/5/2022 - 10/5/2022</td>
+														<td>1/1/2022</td>
 														<td>Payje</td>
 														<td>Kuala Lumpur</td>
 														<td>Meeting</td>
 													</tr>
 													<tr>
 														<td><button type="button" class="btn btn-danger" >Delete</button></td>
-														<td>12/5/2022 - 15/5/2022</td>
+														<td>1/1/2022</td>
 														<td>Orbit</td>
 														<td>Kajang</td>
 														<td>Meeting</td>
@@ -906,193 +906,463 @@
 												</div>
 												<div class="col-md-8">
 													<select class="form-select" id="SMOT">
-														<option class="form-label" value="1" selected>Please Select</option>
-														<option class="form-label" value="2" >Personal Car</option>
-														<option class="form-label" value="3" >Personal Motorcycle</option>
-														<option class="form-label" value="4" >Public Transport </option>
-														<option class="form-label" value="5" >Company Car</option>
-														<option class="form-label" value="6" >Carpool</option>
+														<option class="form-label" value="" selected>Please Select</option>
+														<option class="form-label" value="1" >Personal Car</option>
+														<option class="form-label" value="2" >Personal Motorcycle</option>
+														<option class="form-label" value="3" >Public Transport </option>
+														<option class="form-label" value="4" >Company Car</option>
+														<option class="form-label" value="5" >Carpool</option>
 													</select>
 												</div>
 											</div>
 											<!-- For Personal Car/Personal Motorcycle/Company Car -->
-												<div class="SAC" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-4">
-															<label class="form-label">Subsistance Allowance :</label>
-														</div>
+											<div class="PA" style="display:none">
+												<div class="row p-2">
+													<div class="col-md-4">
+														<label class="form-label">Subsistance Allowance :</label>
 													</div>
-													<div class="row p-2">
-														<div class="col-md-1">
-															
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">Day</label>
-														</div>
-														<div class="col-md-2">
-															<input  type="text" class="form-control" id="day" value="0">
-														</div>
-														<div class="col-md-1">
-															<label class="form-label">X</label>
-														</div>
-														<div class="col-md-3">
-															{{-- <input readonly value="Malaysia" type="text" class="form-control"> --}}
-															<select class="form-select" >
-																<option class="form-label" value="" selected>Malaysia</option>
-																
-															</select>
-														</div>
-														<div class="col-md-3">
-															<input  type="text" class="form-control" id="subs" value="60" readonly>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															
-														</div>
-														<div class="col-md-1">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">Total</label>
-														</div>
-														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="totalsubs" value="0">
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-4">
-																<label class="form-label">Accommodation :</label>
-														</div>
-													</div>
-													<div class="row p-2">
-														<div class="col-md-1">
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
 														
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">Night</label>
-														</div>
-														<div class="col-md-2">
-															<input  type="text" class="form-control" id="night" value="0">
-														</div>
-														<div class="col-md-1">
-															<label class="form-label">X</label>
-														</div>
-														<div class="col-md-3">
-															{{-- <input readonly value="Hotel" type="text" class="form-control"> --}}
-															<select class="form-select" >
-																<option class="form-label" value="" selected>Hotel</option>
-																<option class="form-label" value="" >Lodging</option>
-															</select>
-														</div>
-														<div class="col-md-3">
-															<input type="text" class="form-control" id="acco" value="350" readonly >
-														</div>
 													</div>
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
+													<div class="col-md-2">
+														<label class="form-label">Day</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="text" class="form-control" id="day">
+													</div>
+													<div class="col-md-1">
+														<label class="form-label">X</label>
+													</div>
+													<div class="col-md-3">
+														{{-- <input readonly value="Malaysia" type="text" class="form-control"> --}}
+														<select class="form-select" >
+															<option class="form-label" value="" selected>Malaysia</option>
 															
-														</div>
-														<div class="col-md-1">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-2">
-															<label class="form-label">Total</label>
-														</div>
-														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="totalacco" value="0">
-														</div>
+														</select>
+													</div>
+													<div class="col-md-2">
+														<input  type="text" class="form-control" id="subs" value="60" readonly>
 													</div>
 												</div>
-												<div class="TE" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-3">
-																<label class="form-label">Travel Expenses</label>
-														</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-1">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-3">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control" id="totalsubs">
 													</div>
 												</div>
-												<div class="FF" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-5">
-															<label class="form-label">Fuel/Fare</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="number" class="form-control" id="fuelfare" value="0">
-														</div>
+												<div class="row p-2">
+													<div class="col-md-3">
+															<label class="form-label">Accommodation :</label>
 													</div>
 												</div>
-												<div class="TP" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-5">
-															<label class="form-label">Toll/Parking</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="number" class="form-control" id="tollparking" value="0">
-														</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+													
+													</div>
+													<div class="col-md-2">
+														<label class="form-label">Night</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="text" class="form-control" id="night">
+													</div>
+													<div class="col-md-1">
+														<label class="form-label">X</label>
+													</div>
+													<div class="col-md-3">
+														{{-- <input readonly value="Hotel" type="text" class="form-control"> --}}
+														<select class="form-select" >
+															<option class="form-label" value="" selected>Hotel</option>
+															
+														</select>
+													</div>
+													<div class="col-md-2">
+														<input type="text" class="form-control" id="acco">
 													</div>
 												</div>
-												<div class="ENTT" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-5">
-															<label class="form-label">Entertainment</label>
-														</div>
-														<div class="col-md-3">
-															<input  type="number" class="form-control" id="ent" value="0">
-														</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-1">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-3">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control" id="totalacco">
 													</div>
 												</div>
-												<div class="TE" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-5">
-															<label class="form-label">Total</label>
-														</div>
-														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="totalexp" value="0">
-														</div>
+												<div class="row p-2">
+													<div class="col-md-3">
+															<label class="form-label">Travel Expenses</label>
 													</div>
 												</div>
-												<div class="MPO" style="display: none">
-													<div class="row p-2">
-														<div class="col-md-2">
-															<label class="form-label"></label>
-														</div>
-														<div class="col-md-5">
-															<label class="form-label">Maximum Paid Out (75%)</label>
-														</div>
-														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="maxpaid">
-														</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Fuel/Fare</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="number" class="form-control" id="fuelfare">
 													</div>
 												</div>
-												<div class="SV" style="display: none">
-													<div class="row p-2">
-														<div class="modal-footer">
-															<button type="button" class="btn btn-primary" >Save</button>
-														</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Toll/Parking</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="number" class="form-control" id="tollparking">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Entertainment</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="number" class="form-control" id="ent">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control" id="totalexp">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Maximum Paid Out (75%)</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control" id="maxpaid">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="modal-footer">
+														<button type="button" class="btn btn-primary" >Save</button>
+													</div>
+												</div>
+											</div>
+											<!-- END For Personal Car/Personal Motorcycle/Company Car -->
+											<!-- For Public Transport -->
+											<div class="PT" style="display:none">
+												<div class="row p-2">
+													<div class="col-md-4">
+														<label class="form-label">Subsistance Allowance :</label>
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-2">
+														<label class="form-label">Day</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+													<div class="col-md-1">
+														<label class="form-label">X</label>
+													</div>
+													<div class="col-md-3">
+														<input readonly value="Malaysia" type="text" class="form-control">
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-1">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-3">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-3">
+															<label class="form-label">Accommodation :</label>
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+													
+													</div>
+													<div class="col-md-2">
+														<label class="form-label">Night</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+													<div class="col-md-1">
+														<label class="form-label">X</label>
+													</div>
+													<div class="col-md-3">
+														<input readonly value="Hotel" type="text" class="form-control">
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-1">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-3">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-3">
+															<label class="form-label">Travel Expenses</label>
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Fuel/Fare</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="number" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Entertainment</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="number" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Maximum Paid Out (75%)</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="modal-footer">
+														<button type="button" class="btn btn-primary" >Save</button>
+													</div>
+												</div>
+											</div>
+											<!-- END For Public Transport -->
+											<!--  For Carpool -->
+											<div class="CP" style="display:none">
+												<div class="row p-2">
+													<div class="col-md-4">
+														<label class="form-label">Subsistance Allowance :</label>
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-2">
+														<label class="form-label">Day</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+													<div class="col-md-1">
+														<label class="form-label">X</label>
+													</div>
+													<div class="col-md-3">
+														<input readonly value="Malaysia" type="text" class="form-control">
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-1">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-3">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-3">
+															<label class="form-label">Accommodation :</label>
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+													
+													</div>
+													<div class="col-md-2">
+														<label class="form-label">Night</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+													<div class="col-md-1">
+														<label class="form-label">X</label>
+													</div>
+													<div class="col-md-3">
+														<input readonly value="Hotel" type="text" class="form-control">
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-2">
+														
+													</div>
+													<div class="col-md-1">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-3">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-3">
+															<label class="form-label">Travel Expenses</label>
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Entertainment</label>
+													</div>
+													<div class="col-md-2">
+														<input  type="number" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Total</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="col-md-2">
+														<label class="form-label"></label>
+													</div>
+													<div class="col-md-5">
+														<label class="form-label">Maximum Paid Out (75%)</label>
+													</div>
+													<div class="col-md-2">
+														<input readonly type="text" class="form-control">
+													</div>
+												</div>
+												<div class="row p-2">
+													<div class="modal-footer">
+														<button type="button" class="btn btn-primary" >Save</button>
 													</div>
 												</div>
 											</div>
@@ -1153,12 +1423,6 @@
 <link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 <script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
-
-{{-- date range --}}
-<link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-<script src="/assets/plugins/moment/min/moment.min.js"></script>
-<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script> 
-
 <script>
 
   $(document).on('change', "#toca", function() {
@@ -1203,144 +1467,64 @@
         }
     });
 
-
 	$(document).on('change', "#SMOT", function() {
-        if ($(this).val() == "2" || $(this).val() == '3' || $(this).val() == '5')  {
-            $(".SAC").show();
-			$(".TE").show();
-			$(".FF").show();
-			$(".TP").show();
-			$(".ENTT").show();
-			$(".TE").show();
-			$(".MPO").show();
-			$(".SV").show();
-			$("#day").val(0);
-			$("#night").val(0);
-			$("#fuelfare").val(0);
-			$("#tollparking").val(0);
-			$("#ent").val(0);
-			$("#totalexp").val(0);
-			$("#maxpaid").val(0);
-			$("#totalsubs").val(0); 
-			$("#totalacco").val(0);
+        if ($(this).val() == "1" || $(this).val() == '2' || $(this).val() == '4') {
+            $(".PA").show();
+			$(".PT").hide();
+			$(".CP").hide();
+        } else if ($(this).val() == "3"){
 			
-			
-			
-
-        } else if ($(this).val() == "4"){
-			$(".SAC").show();
-			$(".TE").show();
-			$(".FF").show();
-			$(".TP").hide();
-			$(".ENTT").show();
-			$(".TE").show();
-			$(".MPO").show();
-			$(".SV").show();
-			$("#day").val(0);
-			$("#night").val(0);
-			$("#fuelfare").val(0);
-			$("#tollparking").val(0);
-			$("#ent").val(0);
-			$("#totalexp").val(0);
-			$("#maxpaid").val(0);
-			$("#totalsubs").val(0); 
-			$("#totalacco").val(0);
+			$(".PT").show();
+			$(".PA").hide();
+			$(".CP").hide();
 		}
-		else if ($(this).val() == "6"){
-			$(".SAC").show();
-			$(".TE").show();
-			$(".FF").hide();
-			$(".TP").hide();
-			$(".ENTT").show();
-			$(".TE").show();
-			$(".MPO").show();
-			$(".SV").show();
-			$("#day").val(0);
-			$("#night").val(0);
-			$("#fuelfare").val(0);
-			$("#tollparking").val(0);
-			$("#ent").val(0);
-			$("#totalexp").val(0);
-			$("#maxpaid").val(0);
-			$("#totalsubs").val(0); 
-			$("#totalacco").val(0);
+		else if ($(this).val() == "5"){
+			
+			$(".CP").show();
+			$(".PT").hide();
+			$(".PA").hide();
 		}
 		else {
-            $(".SAC").hide();
-			$(".TE").hide();
-			$(".FF").hide();
-			$(".TP").hide();
-			$(".ENTT").hide();
-			$(".TE").hide();
-			$(".MPO").hide();
-			$(".SV").hide();
-			$("#day").val(0);
-			$("#night").val(0);
-			$("#fuelfare").val(0);
-			$("#tollparking").val(0);
-			$("#ent").val(0);
-			$("#totalexp").val(0);
-			$("#maxpaid").val(0);
-			$("#totalsubs").val(0); 
-			$("#totalacco").val(0);
+           	$(".PT").hide();
+			$(".PA").hide();
+			$(".CP").hide();
         }
     });	
 
-
-
 	// cal mode transport
+
 	$("#day,#subs").change(function(){
 		var a = parseInt($("#day").val());
-		var b = parseFloat($("#subs").val());
-		var c = parseFloat(a*b).toFixed(2);
-        $("#totalsubs").val(c);
+		var b = parseInt($("#subs").val());
+        $("#totalsubs").val(a * b);
     }); 
 
 	// cal acco
+
 	$("#night,#acco").change(function(){
 		var a = parseInt($("#night").val());
-		var b = parseFloat($("#acco").val());
-		var c = parseFloat(a*b).toFixed(2);
-        $("#totalacco").val(c);
+		var b = parseInt($("#acco").val());
+        $("#totalacco").val(a * b);
     }); 
 
-	//
+	//total mode of transport
 	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent").change(function(){
-		var a = parseFloat($("#totalsubs").val());  
-		var b = parseFloat($("#totalacco").val());  
-		var c = parseFloat($("#fuelfare").val());  
-		var d = parseFloat($("#tollparking").val()); 
-		var e = parseFloat($("#ent").val()); 
-		var f = parseFloat(a + b + c + d + e).toFixed(2);    
-        $("#totalexp").val(f);
+		var a = parseInt($("#totalsubs").val());  
+		var b = parseInt($("#totalacco").val());  
+		var c = parseInt($("#fuelfare").val());  
+		var d = parseInt($("#tollparking").val()); 
+		var e = parseInt($("#ent").val());     
+		var sum = a + b + c + d + e;
+        $("#totalexp").val(sum);
     });
 
-
-	//cal maximum paid out
 	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent,#totalexp").change(function(){
-		var a = parseFloat($("#totalexp").val()); 
-		var f = parseFloat((75 / 100) * a).toFixed(2); 
-		$("#maxpaid").val(f);
+		var a = parseInt($("#totalexp").val()); 
+        max = parseFloat((75 / 100) * a);
+		$("#maxpaid").val(max);
     });
+	
+	
 
-	// end total transport
-	$(function() {
-
-$('#datefilter1').daterangepicker({
-	autoUpdateInput: false,
-	locale: {
-		cancelLabel: 'Clear'
-	}
-});
-
-$('#datefilter1').on('apply.daterangepicker', function(ev, picker) {
-	$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-});
-
-$('#datefilter1').on('cancel.daterangepicker', function(ev, picker) {
-	$(this).val('');
-});
-
-});
 </script>
 
