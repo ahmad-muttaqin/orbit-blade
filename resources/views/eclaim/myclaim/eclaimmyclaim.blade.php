@@ -726,8 +726,8 @@
 			<div class="card text-center border-0">
 						<div class="card-header"> 
 							<ul class="nav nav-pills card-header-pills">
-								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1">Claim</a></li>
-								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2">Cash Advance</a></li>
+								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1" id="claimnav">Claim</a></li>
+								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2" id="cashnav">Cash Advance</a></li>
 							</ul>
 						</div>
 						<div class="card-body">
@@ -1208,7 +1208,24 @@
         table2.draw();
       });
       table2.draw();
-    });
+
+	//   $( "#cashnav" ).on( "click", function () {
+   	// 	setTimeout(function () {
+    //     general.columns.adjust().draw();	
+   	// 	}, 200);
+	//   });
+
+	//   $( "#claimnav" ).on( "click", function () {
+   	// 	setTimeout(function () {
+    //     general.columns.adjust().draw();
+   	// 	}, 200);
+	//   });
+
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+   $($.fn.dataTable.tables(true)).DataTable()
+      .columns.adjust();
+});
+});
 
   
 	  

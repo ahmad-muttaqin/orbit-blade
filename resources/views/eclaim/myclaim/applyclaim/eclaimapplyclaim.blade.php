@@ -1596,14 +1596,14 @@
     todayHighlight: true,
     autoclose: true,
 	format: 'dd-mm-yyyy'
-  });
+  }).datepicker("setDate",'now');
 
 
   $("#datepickertc").datepicker({
     todayHighlight: true,
     autoclose: true,
 	format: 'dd-mm-yyyy'
-  });
+  }).datepicker("setDate",'now');
 
   
   $(function () {

@@ -591,7 +591,7 @@
 		<!-- BEGIN #content -->
 		<div id="content" class="app-content">
 			
-			<h1 class="page-header">eClaim <small>| My Claim | Apply Cash Advance</small></h1>
+			<h1 class="page-header">eClaim <small>| My Claim | Update Cash Advance</small></h1>
 	
 			<div class="panel panel">
 				
@@ -1031,7 +1031,7 @@
 														<div class="col-md-5">
 															<label class="form-label">Fuel/Fare</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input  type="number" class="form-control" id="ufuelfare" value="0">
 														</div>
 													</div>
@@ -1044,7 +1044,7 @@
 														<div class="col-md-5">
 															<label class="form-label">Toll/Parking</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input  type="number" class="form-control" id="utollparking" value="0">
 														</div>
 													</div>
@@ -1057,7 +1057,7 @@
 														<div class="col-md-5">
 															<label class="form-label">Entertainment</label>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-3">
 															<input  type="number" class="form-control" id="uent" value="0">
 														</div>
 													</div>
