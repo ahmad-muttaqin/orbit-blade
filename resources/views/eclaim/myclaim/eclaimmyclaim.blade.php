@@ -736,10 +736,11 @@
 								<div class="category-filter">
 									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
 										<option value="">Show All</option>
+										<option value="Draft">Draft</option>
 										<option value="Active">Active</option>
-										<option value="Pending">Pending</option>
-										<option value="Rejected">Amended</option>
-										<option value="Jazz">Paid</option>
+										<option value="Rejected">Rejected</option>
+										<option value="Amend">Amend</option>
+										<option value="Paid">Paid</option>
 									</select>
 									
 								</div>
@@ -765,7 +766,6 @@
 								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
 									<a href="/eclaim/updatemontly" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
@@ -777,7 +777,7 @@
 						<td>102</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-lime">Active</span></td>
+						<td><span class="badge bg-warning">Draft</span></td>
 						<td>20/09/2022</td>
 					</tr>
 					<tr class="even gradeC">
@@ -798,7 +798,7 @@
 						<td>103</td>
 						<td>GNC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Pending</span></td>
+						<td><span class="badge bg-success">Amend</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -820,7 +820,7 @@
 						<td>104</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amended</span></td>
+						<td><span class="badge bg-lime">Active</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -831,9 +831,6 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
 							</div>
 						</td>
@@ -842,7 +839,7 @@
 						<td>105</td>
 						<td>GNC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amended</span></td>
+						<td><span class="badge bg-secondary">Paid</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -853,9 +850,6 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
 							</div>
 						</td>
@@ -875,9 +869,6 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
 							</div>
 						</td>

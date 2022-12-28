@@ -701,7 +701,7 @@
 														{{-- <input type="text" class="form-control" name="labellingname" id="" readonly> --}}
 													{{-- </div> --}}
 													<div class="col-md-4"> 
-														<input type="text" class="form-control" name="labellingname" id="" readonly value="provider">
+														<input type="text" class="form-control" name="labellingname" id="" readonly >
 													</div>
 													<div class="col-md-8"> 
 														<select class="form-select" id="" readonly>
@@ -722,12 +722,12 @@
 														<label class="form-label">Description</label>
 													</div>
 													<div class="col-md-8">
-														<textarea class="form-control" id="" rows="3"></textarea>
+														<textarea class="form-control" rows="3"></textarea>
 													</div>
 												</div>
 												<div class="row p-2">
 													<div class="col-md-4">
-														<label class="form-label">Supporting Document</label>
+														<label class="form-label">Supporting Documents</label>
 													</div>
 													<div class="col-md-8">
 														
