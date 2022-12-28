@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | Apply General Claim</small></h1>
+	<h1 class="page-header">eClaim <small>| My Claim | Update General Claim</small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -884,8 +884,7 @@
 		// var switchery = new Switchery(elm, {
 		// 	color: '#00acac'
 		// });	
-est
-  
+
 		$('#applyclaimtable').DataTable({
 			"searching": false,
 			"lengthChange": true,
@@ -894,32 +893,12 @@ est
 			info: false
 		});
 			
-		// $("#datepicker-autoClose").datepicker({
-		// 	todayHighlight: true,
-		// 	autoclose: true,
-		// 	format: 'dd/mm/yyyy',
-		// });
+		$("#udatepicker").datepicker({
+			todayHighlight: true,
+			autoclose: true,
+			format: 'dd/mm/yyyy',
+		}).datepicker("setDate",'now');
 </script>
 
 
-<script>
-		$(function() {
-
-	$('#udatepicker').daterangepicker({
-		autoUpdateInput: false,
-		locale: {
-			cancelLabel: 'Clear'
-		}
-	});
-
-	$('#udatepicker').on('apply.daterangepicker', function(ev, picker) {
-		$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-	});
-
-	$('#udatepicker').on('cancel.daterangepicker', function(ev, picker) {
-		$(this).val('');
-	});
-
-	});
-</script>
 

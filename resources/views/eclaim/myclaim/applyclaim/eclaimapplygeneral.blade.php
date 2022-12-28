@@ -890,12 +890,8 @@
 <script src="/assets/plugins/moment/min/moment.min.js"></script>
 <script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script> 
 
-<script>
-		// var elm = document.getElementById('cashadvance');
-		// var switchery = new Switchery(elm, {
-		// 	color: '#00acac'
-		// });	
-est
+<script>	
+
   
 		$('#applyclaimtable').DataTable({
 			"searching": false,
@@ -905,32 +901,13 @@ est
 			info: false
 		});
 			
-		// $("#datepicker-autoClose").datepicker({
-		// 	todayHighlight: true,
-		// 	autoclose: true,
-		// 	format: 'dd/mm/yyyy',
-		// });
+		$("#datepicker").datepicker({
+			setDate: new Date(),
+			todayHighlight: true,
+			autoclose: true,
+			format: 'dd/mm/yyyy',
+		}).datepicker("setDate", 'now');
 </script>
 
 
-<script>
-		$(function() {
-
-	$('#datepicker').daterangepicker({
-		autoUpdateInput: false,
-		locale: {
-			cancelLabel: 'Clear'
-		}
-	});
-
-	$('#datepicker').on('apply.daterangepicker', function(ev, picker) {
-		$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-	});
-
-	$('#datepicker').on('cancel.daterangepicker', function(ev, picker) {
-		$(this).val('');
-	});
-
-	});
-</script>
 
