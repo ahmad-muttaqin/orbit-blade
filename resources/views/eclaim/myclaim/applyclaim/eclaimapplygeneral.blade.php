@@ -636,10 +636,7 @@
 								<label class="form-label">Claim Type</label>
 							</div>
 							<div class="col-md-3">
-								<select class="form-select">
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
+								<input readonly type="text" class="form-control">
 							</div>
 						</div>
 

@@ -647,7 +647,9 @@
 												<label class="form-label">Project</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -655,7 +657,9 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -669,8 +673,11 @@
 										<div class="row p-2">
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" >Reset</button>
-												<button type="button" class="btn btn-primary" >Save</button>
+												<button type="button" class="btn btn-primary" >Add</button>
 											</div>		
+										</div>
+										<div class="row p-2">
+											<h4>Project Table List :</h4>
 										</div>
 										<div class="row p-2">
 										<table id="claimtable" class="table table-striped table-bordered align-middle">
@@ -754,7 +761,7 @@
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input type="text" class="form-control" id="udatefilter2" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -762,7 +769,9 @@
 												<label class="form-label">Project</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -770,7 +779,9 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -811,7 +822,7 @@
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input type="text" class="form-control" id="udatefilter3" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -847,20 +858,13 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Date of Required Cash</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input type="text" class="form-control" id="udatefilter4" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -917,6 +921,9 @@
 											</div>
 											<!-- For Personal Car/Personal Motorcycle/Company Car -->
 												<div class="USAC" style="display: none">
+													<div class="usubbacco">
+
+													
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label">Subsistance Allowance :</label>
@@ -1016,6 +1023,7 @@
 														</div>
 													</div>
 												</div>
+											</div>
 												<div class="UTEE" style="display: none">
 													<div class="row p-2">
 														<div class="col-md-3">
@@ -1088,13 +1096,13 @@
 														</div>
 													</div>
 												</div>
-												<div class="USV" style="display: none">
+												{{-- <div class="USV" style="display: none">
 													<div class="row p-2">
 														<div class="modal-footer">
 															<button type="button" class="btn btn-primary" >Save</button>
 														</div>
 													</div>
-												</div>
+												</div> --}}
 											</div>
 											<!--  END For Carpool -->
 										</div>
@@ -1108,6 +1116,7 @@
 								</div>
 								
 								<div class="col d-flex justify-content-end">
+									<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Save</a>&nbsp;
 									<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
 								</div>
 							</div>
@@ -1168,6 +1177,7 @@
 			$(".UPNO").hide();
 			$(".UOTHERSNO").hide();
 			$(".UOTHERSO").hide();
+			$(".usubbacco").show();
             
         } else if ($(this).val() == "2"){
 			
@@ -1176,6 +1186,8 @@
 			$(".UMOT").show();
 			$(".UOTHERSNO").hide();
 			$(".UOTHERSO").hide();
+			$(".usubbacco").hide();
+
 
 		} else if ($(this).val() == "3"){
 			
@@ -1184,6 +1196,7 @@
 			$(".UPO").hide();
 			$(".UPNO").hide();
 			$(".UOTHERSNO").hide();
+			$(".usubbacco").show();
 
 		} else if ($(this).val() == "4"){
 			
@@ -1192,6 +1205,7 @@
 			$(".UMOT").hide();
 			$(".UPO").hide();
 			$(".UPNO").hide();
+			$(".usubbacco").show();
 		}
 		else {
 			$(".UOTHERSNO").hide();
@@ -1199,6 +1213,7 @@
             $(".UPO").hide();
 			$(".UMOT").hide();
 			$(".UPNO").hide();
+			$(".usubbacco").show();
 			
         }
     });
@@ -1332,6 +1347,50 @@ $('#udatefilter1').daterangepicker({
 		cancelLabel: 'Clear'
 	}
 });
+
+$('#udatefilter2').daterangepicker({
+	autoUpdateInput: false,
+	locale: {
+		cancelLabel: 'Clear'
+	}
+});
+
+$('#udatefilter3').daterangepicker({
+	autoUpdateInput: false,
+	locale: {
+		cancelLabel: 'Clear'
+	}
+});
+$('#udatefilter1').on('apply.daterangepicker', function(ev, picker) {
+	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+});
+
+$('#udatefilter1').on('cancel.daterangepicker', function(ev, picker) {
+	$(this).val('');
+});
+
+$('#udatefilter2').on('apply.daterangepicker', function(ev, picker) {
+	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+});
+
+$('#udatefilter2').on('cancel.daterangepicker', function(ev, picker) {
+	$(this).val('');
+});
+
+$('#udatefilter3').on('apply.daterangepicker', function(ev, picker) {
+	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+});
+
+$('#udatefilter3').on('cancel.daterangepicker', function(ev, picker) {
+	$(this).val('');
+});
+
+$("#udatefilter4").datepicker({
+    todayHighlight: true,
+    autoclose: true,
+	format: 'dd/mm/yyyy',
+	orientation: "bottom"
+  });
 
 $('#udatefilter1').on('apply.daterangepicker', function(ev, picker) {
 	$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
