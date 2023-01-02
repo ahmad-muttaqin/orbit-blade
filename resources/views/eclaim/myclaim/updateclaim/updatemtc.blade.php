@@ -1129,7 +1129,10 @@
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input  type="text" class="form-control">
+															<select class="form-select" >
+																<option class="form-label" value="" selected>Please Select</option>
+																
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1303,7 +1306,11 @@
 					</div>
 				
 				<div class="col-md-6">	
-				<div class="form-control">	
+				<div class="form-control">
+					<div class="row">
+						<h4>Personal Claims Table List:</h4>
+					</div>	
+					<br>
 					<div class="row">
 						<div class="">	
 							<table id="uclaimtable1" class="table table-striped table-bordered align-middle">
@@ -1373,6 +1380,10 @@
 						</div>
 					</div>
 					<div class="row">
+					<div class="row">
+						<h4>Travelling & Subsistence & Accomodation:</h4>
+					</div>
+					<br>
 						<div class="">	
 							<table id="utraveltable" class="table table-striped table-bordered align-middle">
 								<thead>

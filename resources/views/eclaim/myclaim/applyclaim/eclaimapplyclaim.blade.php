@@ -643,10 +643,7 @@
 								<label class="form-label">Claim Type</label>
 							</div>
 							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
+								<input readonly type="text" class="form-control">
 							</div>
 						</div>
 
@@ -1127,7 +1124,10 @@
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input  type="text" class="form-control">
+															<select class="form-select" >
+																<option class="form-label" value="" selected>Please Select</option>
+																
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1299,8 +1299,13 @@
 						</div>
 					</div>
 				
+					
 				<div class="col-md-6">	
+					
 				<div class="form-control">	
+					<div class="row p-2">
+						<h4>Personal Claims Table List:</h4>
+					</div>
 					<div class="row">
 						<div class="">	
 							<table id="claimtable1" class="table table-striped table-bordered align-middle">
@@ -1369,7 +1374,12 @@
 							</table>
 						</div>
 					</div>
+					<br>
+					<div class="row p-2">
+						<h4>Travelling & Subsistence & Accomodation Table List:</h4>
+					</div>
 					<div class="row">
+						
 						<div class="">	
 							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>

@@ -1280,6 +1280,18 @@
 					<input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
+				<div class="dropdown-divider"></div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label"></label>
+                    </div>
+					<div class="col-md-3">
+						<label class="form-label col-form-label">Total</label>
+                    </div>
+					<div class="col-md-3">
+						<input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
 				</div>
 				<div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
