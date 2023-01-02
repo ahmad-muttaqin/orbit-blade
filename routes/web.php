@@ -370,9 +370,7 @@ Route::get('/claimapproval/viewothersnoneoutstation', function () {
     return view('eclaim/claimapproval/supervisor/view/supervisorviewcaono');
 });
 //////
-// Route::get('/report/reportingclaimreport', function () {
-//     return view('eclaim/reportingclaimreport');
-// });
+
 Route::get('/report/reportingclaimreport', function () {
     return view('eclaim/reportingclaimreport');
 });
