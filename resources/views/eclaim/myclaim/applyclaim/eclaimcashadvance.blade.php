@@ -1098,10 +1098,8 @@
 									
 								</div> --}}
 								<div class="col d-flex justify-content-end">
-									<a class="btn btn-light" style="color: black; display:none" type="submit" id="btnPO"><i class="fa fa-save"></i> Save PO</a>&nbsp;
-									<a class="btn btn-light" style="color: black; display:none" type="submit" id="btnPNO"><i class="fa fa-save"></i> Save PNO</a>&nbsp;
-									<a class="btn btn-light" style="color: black; display:none" type="submit" id="btnOO"><i class="fa fa-save"></i> Save OO</a>&nbsp;
-									<a class="btn btn-light" style="color: black; display:none" type="submit" id="btnONO"><i class="fa fa-save"></i> Save ONO</a>&nbsp;
+									
+									<a class="btn btn-light" style="color: black" type="submit" id="btnONO"><i class="fa fa-save"></i> Save</a>&nbsp;
 									<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
 								</div>
 							</div>
@@ -1163,10 +1161,7 @@
 			$(".OTHERSNO").hide();
 			$(".OTHERSO").hide();
             $(".subacco").show();
-			$("#btnPO").show();
-			$("#btnPNO").hide();
-			$("#btnOO").hide();
-			$("#btnONO").hide();
+			
 
         } else if ($(this).val() == "2"){
 			
@@ -1176,10 +1171,7 @@
 			$(".OTHERSNO").hide();
 			$(".OTHERSO").hide();
 			$(".subacco").hide();
-			$("#btnPO").hide();
-			$("#btnPNO").show();
-			$("#btnOO").hide();
-			$("#btnONO").hide();
+			
 
 		} else if ($(this).val() == "3"){
 			
@@ -1189,10 +1181,7 @@
 			$(".PNO").hide();
 			$(".OTHERSNO").hide();
 			$(".subacco").show();
-			$("#btnPO").hide();
-			$("#btnPNO").hide();
-			$("#btnOO").show();
-			$("#btnONO").hide();
+			
 
 		} else if ($(this).val() == "4"){
 			
@@ -1202,10 +1191,7 @@
 			$(".PO").hide();
 			$(".PNO").hide();
 			$(".subacco").show();
-			$("#btnPO").hide();
-			$("#btnPNO").hide();
-			$("#btnOO").hide();
-			$("#btnONO").show();
+			
 		}
 		else {
 			$(".OTHERSNO").hide();
@@ -1214,10 +1200,7 @@
 			$(".MOT").hide();
 			$(".PNO").hide();
 			$(".subacco").show();
-			$("#btnPO").hide();
-			$("#btnPNO").hide();
-			$("#btnOO").hide();
-			$("#btnONO").hide();
+			
         }
     });
 
