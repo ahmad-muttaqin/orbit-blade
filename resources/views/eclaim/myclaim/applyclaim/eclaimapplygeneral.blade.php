@@ -663,21 +663,22 @@
 								<label class="form-label">Year</label>
 							</div>
 							<div class="col-md-9">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									<option class="form-label" value="1">2022</option>
-									<option class="form-label" value="2">2023</option>
-									<option class="form-label" value="3">2024</option>
-									<option class="form-label" value="4">2025</option>
-								</select>							</div>
+								<select class="form-select" id="year" >
+									<option class="form-label" value="Please Select" selected>Please Select</option>
+									<option class="form-label" value="2022">2022</option>
+									<option class="form-label" value="2023">2023</option>
+									<option class="form-label" value="2024">2024</option>
+									<option class="form-label" value="2025">2025</option>
+								</select>							
+							</div>
 						</div>
 						<div class="row p-2">
 							<div class="col-md-3">
 								<label class="form-label">Month</label>
 							</div>
 							<div class="col-md-9">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
+								<select class="form-select" id="month">
+									<option class="form-label" value="Please Select" selected>Please Select</option>
 									<option class="form-label" value="1">January</option>
 									<option class="form-label" value="2">February</option>
 									<option class="form-label" value="3">March</option>
@@ -700,7 +701,7 @@
 							</div>
 							<div class="col-md-9">
 								<div class="input-group" id="">
-									<input type="text" name="" class="form-control" value="" id="datepicker" />
+									<input type="text" name="" class="form-control" value="" id="applieddate" />
 										<div class="input-group-text"><i class="fa fa-calendar"></i></div>
 								</div>					
 							</div>
@@ -710,8 +711,8 @@
 								<label class="form-label">Claim Category</label>
 							</div>
 							<div class="col-md-9">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
+								<select class="form-select" id="claimcategory">
+									<option class="form-label" value="Please Select" selected>Please Select</option>
 									
 								</select>
 							</div>
@@ -719,11 +720,11 @@
 						{{-- akan tarik data dari  labelling name dlam setting add claim --}}
 						<div class="row p-2">
 							<div class="col-md-3"> 
-								<input type="text" class="form-control" name="labellingname" id="" readonly value="">
+								<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
 							</div>
 							<div class="col-md-9"> 
-								<select class="form-select" id="" readonly>
-									<option class="form-label" value="" selected>Please Select</option>
+								<select class="form-select" id="contentlabel" >
+									<option class="form-label" value="Please Select" selected>Please Select</option>
 								</select>
 							</div>
 						</div>
@@ -732,7 +733,7 @@
 								<label class="form-label">Amount (MYR)</label>
 							</div>
 							<div class="col-md-9">
-								<input  type="number" class="form-control">
+								<input  type="number" class="form-control" id="amount">
 							</div>
 						</div>
 						<div class="row p-2">
@@ -740,7 +741,7 @@
 								<label class="form-label">Description</label>
 							</div>
 							<div class="col-md-9">
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								<textarea class="form-control" rows="3" id="description"></textarea>
 							</div>
 						</div>
 						<div class="row p-2">
@@ -748,7 +749,7 @@
 								<label class="form-label">Supporting Document</label>
 							</div>
 							<div class="col-md-9">
-								<input type="file" class="form-control-file" id="">
+								<input type="file" class="form-control-file" id="supportdocument">
 							</div>
 						</div>
 						</div>
@@ -756,7 +757,7 @@
 							<div class="modal-footer">
 
 								<button type="button" class="btn btn-secondary" >Reset</button>
-								<button type="button" class="btn btn-primary" >Save</button>
+								<button onclick="addTableRow()" type="button" class="btn btn-primary" >Save</button>
 								
 							</div>
 						</div>
@@ -774,59 +775,27 @@
 										<th class="text-nowrap">Amount</th>
 										<th class="text-nowrap">Description</th>
 										<th class="text-nowrap">Attachment</th>
-										
+										<th class="text-nowrap" style="display: none">Year</th>
+										<th class="text-nowrap" style="display: none">Month</th>
+										<th class="text-nowrap" style="display: none">label</th>
+										<th class="text-nowrap" style="display: none">content</th>
 									</tr>
 								</thead>
 								<tbody>
 									
 									<tr>
-										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">Delete</a></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
+										<td style="display: none"></td>
 									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
+									
 								</tbody>
 							</table>
 					</div>
@@ -890,20 +859,52 @@
 <script>	
 
   
-		$('#applyclaimtable').DataTable({
-			"searching": false,
-			"lengthChange": true,
-			lengthMenu: [5, 10],
-			responsive: false,
-			info: false
-		});
-			
-		$("#datepicker").datepicker({
-			setDate: new Date(),
-			todayHighlight: true,
-			autoclose: true,
-			format: 'dd/mm/yyyy',
-		}).datepicker("setDate", 'now');
+	$('#applyclaimtable').DataTable({
+		"searching": false,
+		"lengthChange": true,
+		lengthMenu: [5, 10],
+		responsive: false,
+		info: false
+	});
+		
+	$("#applieddate").datepicker({
+		setDate: new Date(),
+		todayHighlight: true,
+		autoclose: true,
+		format: 'dd/mm/yyyy',
+	}).datepicker("setDate", 'now');
+
+	function addTableRow() {
+		var year = document.getElementById("year");
+		var month = document.getElementById("month");
+		var label = document.getElementById("label");
+		var contentlabel = document.getElementById("contentlabel");
+		var applieddate = document.getElementById("applieddate");
+		var claimcategory = document.getElementById("claimcategory");
+		var amount = document.getElementById("amount");
+		var description = document.getElementById("description");
+		var supportdocument = document.getElementById("supportdocument");
+		var table = document.getElementById("applyclaimtable");
+		var rowCount = table.rows.length;
+		var row = table.insertRow(rowCount);
+										
+		row.insertCell(0).innerHTML= "<a class='btn btn-primary btn-sm' onclick='deleteRow(this);' id='btnDelete'>Delete</a>";
+		row.insertCell(1).innerHTML= applieddate.value;
+		row.insertCell(2).innerHTML= claimcategory.value;
+		row.insertCell(3).innerHTML= amount.value;
+		row.insertCell(4).innerHTML= description.value;
+		row.insertCell(5).innerHTML= supportdocument.value;
+		row.style.display = "none".insertCell(6).innerHTML= year.value;
+		row.style.display = "none".insertCell(7).innerHTML = month.value;
+		row.style.display = "none".insertCell(8).innerHTML = label.value;
+		row.style.display = "none".insertCell(9).innerHTML = contentlabel.value;
+		}
+
+	function deleteRow(row)
+		{
+			var i=row.parentNode.parentNode.rowIndex;
+			document.getElementById('applyclaimtable').deleteRow(i);
+		}
 </script>
 
 
