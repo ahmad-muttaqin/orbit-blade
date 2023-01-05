@@ -257,6 +257,9 @@ Route::get('/eclaim/updategeneral', function () {
 Route::get('/eclaim/updateappeal', function () {
     return view('eclaim/myclaim/updateclaim/updateappeal');
 });
+Route::get('/eclaim/updatecashadvance', function () {
+    return view('eclaim/myclaim/updateclaim/updatecashadvance');
+});
 // setting eclaim
 Route::get('/setting/cashadvancecontroller', function () {
     return view('eclaim/setting/cashadvancecontroller/cashAdvancedController');
@@ -346,7 +349,9 @@ Route::get('/claimapproval/adminapprover', function () {
 Route::get('/claimapproval/supervisorcashadvance', function () {
     return view('eclaim/claimapproval/supervisor/cashadvance/approvalcashadvance');
 });
-
+Route::get('/claimapproval/hodcashadvance', function () {
+    return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
+});
 Route::get('/claimapproval/challenge', function () {
     return view('eclaim/claimapproval/supervisor/challengeroute');
 });
@@ -364,7 +369,10 @@ Route::get('/claimapproval/viewothersoutstation', function () {
 Route::get('/claimapproval/viewothersnoneoutstation', function () {
     return view('eclaim/claimapproval/supervisor/view/supervisorviewcaono');
 });
-//
+//////
+// Route::get('/report/reportingclaimreport', function () {
+//     return view('eclaim/reportingclaimreport');
+// });
 Route::get('/report/reportingclaimreport', function () {
     return view('eclaim/reportingclaimreport');
 });

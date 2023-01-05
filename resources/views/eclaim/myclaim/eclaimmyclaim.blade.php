@@ -698,19 +698,15 @@
 						<td>2022</td>
 						<td>AUGUST</td>
 						<td><span class="badge bg-lime">Open</span></td>
-						<td><a href="/eclaim/applyclaim" type="button" class="btn btn-primary btn-sm">Update</a></td>
+						<td><a href="/eclaim/updatemontly" type="button" class="btn btn-primary btn-sm">Update</a></td>
 						
 					</tr>
 					<tr class="even gradeC">
 						<td>2022</td>
 						<td>JULY</td>
 						<td><span class="badge bg-danger">Expired</span></td>
-						{{-- <td><a type="button" class="btn btn-warning btn-sm">+ Appeal</a></td> --}}
-						eclaim/appealclaim
-						<td><a href="/eclaim/appealclaim" type="button" class="btn btn-warning btn-sm">+ Appeal</a></td>
+						<td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Appeal</button></td>
 					</tr>
-					
-					
 				</tbody>
 			</table>
 								</div>
@@ -730,8 +726,8 @@
 			<div class="card text-center border-0">
 						<div class="card-header"> 
 							<ul class="nav nav-pills card-header-pills">
-								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1">Claim</a></li>
-								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2">Cash Advance</a></li>
+								<li class="nav-item"><a class="nav-link active " data-bs-toggle="tab" href="#card-pill-1" id="claimnav">Claim</a></li>
+								<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#card-pill-2" id="cashnav">Cash Advance</a></li>
 							</ul>
 						</div>
 						<div class="card-body">
@@ -740,10 +736,11 @@
 								<div class="category-filter">
 									<select id="Statusclaim" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
 										<option value="">Show All</option>
+										<option value="Draft">Draft</option>
 										<option value="Active">Active</option>
-										<option value="Pending">Pending</option>
-										<option value="Rejected">Amended</option>
-										<option value="Jazz">Paid</option>
+										<option value="Rejected">Rejected</option>
+										<option value="Amend">Amend</option>
+										<option value="Paid">Paid</option>
 									</select>
 									
 								</div>
@@ -769,8 +766,7 @@
 								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
+									<a href="/eclaim/updatemontly" class="dropdown-item">Update Claim</a>
 									<div class="dropdown-divider"></div>
 									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
@@ -781,7 +777,7 @@
 						<td>102</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-lime">Active</span></td>
+						<td><span class="badge bg-warning" data-toggle="drafc" title="Draft">Draft</span></td>
 						<td>20/09/2022</td>
 					</tr>
 					<tr class="even gradeC">
@@ -791,9 +787,7 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+									<a href="/eclaim/updategeneral" class="dropdown-item">Update Claim</a>
 								</div>
 							</div>
 						</td>
@@ -802,7 +796,7 @@
 						<td>103</td>
 						<td>GNC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Pending</span></td>
+						<td><span class="badge bg-success" data-toggle="amendc" title="Amend">Amend</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -824,7 +818,7 @@
 						<td>104</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amended</span></td>
+						<td><span class="badge bg-lime" data-toggle="activec" title="Active">Active</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -835,9 +829,6 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
 							</div>
 						</td>
@@ -846,7 +837,7 @@
 						<td>105</td>
 						<td>GNC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amended</span></td>
+						<td><span class="badge bg-secondary" data-toggle="paidc" title="Paid">Paid</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -857,9 +848,6 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewgeneralclaim" class="dropdown-item">View General Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
 							</div>
 						</td>
@@ -868,7 +856,7 @@
 						<td>110</td>
 						<td>GNC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-danger">Rejected</span></td>
+						<td><span class="badge bg-danger" data-toggle="rejectedc" title="Rejected">Rejected</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -878,10 +866,7 @@
 								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
+									<a href="/eclaim/viewmyclaim" class="dropdown-item">View Claim</a>	
 								</div>
 							</div>
 						</td>
@@ -890,7 +875,7 @@
 						<td>101</td>
 						<td>MTC</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-danger">Rejected</span></td>
+						<td><span class="badge bg-danger" data-toggle="rejectedc" title="Rejected">Rejected</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -904,9 +889,10 @@
 								<div class="category-filter">
 									<select id="Statuscash" class="form-control" style=" width: 200px; margin-left: auto; margin-right: 0;">
 										<option value="">Show All</option>
+										<option value="Draft">Draft</option>
 										<option value="Active">Active</option>
-										<option value="Pending">Pending</option>
-										<option value="Rejected">Amended</option>
+										<option value="Rejected">Rejected</option>
+										<option value="Rejected">Amend</option>
 										<option value="Jazz">Paid</option>
 									</select>
 								</div>
@@ -932,19 +918,38 @@
 								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
-									<a href="/eclaim/viewcashprojectoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 								</div>
 							</div>
 						</td>
 						<td>101</td>
 						<td>Project ( Outstation )</td>
-						<td>102</td>
-						<td>MTC</td>
+						<td>04/05/2022</td>
+						<td>07/06/2022</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-lime">Active</span></td>
+						<td><span class="badge bg-warning" data-toggle="drafca" title="Draft">Draft</span></td>
+						<td>20/09/2022</td>
+					</tr>
+
+					<tr class="odd gradeX">
+						<td>
+							<div class="btn-group me-1 mb-1">
+								<a href="javascript:;" class="btn btn-primary btn-sm">Action</a>
+								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="/eclaim/viewcashprojectoutstation" class="dropdown-item">View Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
+									<div class="dropdown-divider"></div>
+									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+								</div>
+							</div>
+						</td>
+						<td>102</td>
+						<td>Project ( Outstation )</td>
+						<td>04/06/2022</td>
+						<td>06/06/2022</td>
+						<td>MYR 100.00</td>
+						<td><span class="badge bg-lime" data-toggle="activeca" title="Active">Active</span></td>
 						<td>20/09/2022</td>
 					</tr>
 					<tr class="even gradeC">
@@ -954,18 +959,15 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashprojectnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
 								</div>
 							</div>
 						</td>
-						<td>102</td>
-						<td>Project ( Non-Outstation )</td>
 						<td>103</td>
-						<td>GNC</td>
+						<td>Project ( Non-Outstation )</td>
+						<td>03/07/2022</td>
+						<td>07/07/2022</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-warning">Pending</span></td>
+						<td><span class="badge bg-danger" data-toggle="rejectedca" title="Rejected">Rejected</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -976,18 +978,16 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashothersoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel Claim</a>
+									<a href="/eclaim/updatecashadvance" class="dropdown-item">Update Claim</a>
 								</div>
 							</div>
 						</td>
-						<td>103</td>
-						<td>Others ( Outstation )</td>
 						<td>104</td>
-						<td>MTC</td>
+						<td>Others ( Outstation )</td>
+						<td>08/08/2022</td>
+						<td>10/08/2022</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-success">Amended</span></td>
+						<td><span class="badge bg-success" data-toggle="amendca" title="Amend">Amend</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -998,18 +998,15 @@
 								<a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm"><i class="fa fa-caret-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="/eclaim/viewcashothersnoneoutstation" class="dropdown-item">View Claim</a>
-									<a href="javascript:;" class="dropdown-item">Update Claim</a>
-									<div class="dropdown-divider"></div>
-									<a href="javascript:;" class="dropdown-item">Cancel CLaim</a>
 								</div>
 							</div>
 						</td>
-						<td>104</td>
-						<td>Others ( Non-Oustation )</td>
 						<td>105</td>
-						<td>GNC</td>
+						<td>Others ( Non-Oustation )</td>
+						<td>11/12/2022</td>
+						<td>09/12/2022</td>
 						<td>MYR 100.00</td>
-						<td><span class="badge bg-danger">Rejected</span></td>
+						<td><span class="badge bg-secondary" data-toggle="paidca" title="Paid">Paid</span></td>
 						<td>20/09/2022</td>
 						
 					</tr>
@@ -1030,6 +1027,58 @@
 		</div>
 	</div>
 
+	{{-- modal appeal --}}
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Appeal</h5>
+			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+				<div class="row p-2">
+					<div class="col-md-4">
+						<label class="form-label">Year</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control" readonly value="2022">
+					</div>
+				</div>	
+				<div class="row p-2">
+					<div class="col-md-4">
+						<label class="form-label">Month</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control" readonly value="July">
+					</div>
+				</div>	
+				<div class="row p-2">
+					<div class="col-md-4">
+						<label class="form-label">State Reason</label>
+					</div>
+					<div class="col-md-8">
+						<textarea class="form-control" id="" rows="3"></textarea>
+					</div>
+				</div>	
+				<div class="row p-2">
+					<div class="col-md-4">
+						<label class="form-label">Supporting Document</label>
+					</div>
+					<div class="col-md-8">
+						<input type="file" class="form-control-file" id="">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+		</div>
+	</div>
 	<!-- END row -->
 	
 	<!-- END #app -->
@@ -1160,7 +1209,25 @@
         table2.draw();
       });
       table2.draw();
-    });
+
+	//   $( "#cashnav" ).on( "click", function () {
+   	// 	setTimeout(function () {
+    //     general.columns.adjust().draw();	
+   	// 	}, 200);
+	//   });
+
+	//   $( "#claimnav" ).on( "click", function () {
+   	// 	setTimeout(function () {
+    //     general.columns.adjust().draw();
+   	// 	}, 200);
+	//   });
+
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+   $($.fn.dataTable.tables(true)).DataTable()
+      .columns.adjust();
+});
+
+});
 
   
 	  
