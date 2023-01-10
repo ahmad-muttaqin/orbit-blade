@@ -1321,52 +1321,11 @@
 									</tr>
 								</thead>
 								<tbody>
-									
 									<tr>
 										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">Delete</a></td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
 										<td>Maxis Data</td>
 										<td>Receipt.pdf</td>
 									</tr>
@@ -1406,51 +1365,7 @@
 										<td>Maxis Data</td>
 										
 									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
+									
 								</tbody>
 							</table>
 						</div>

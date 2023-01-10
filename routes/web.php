@@ -369,8 +369,46 @@ Route::get('/claimapproval/viewothersoutstation', function () {
 Route::get('/claimapproval/viewothersnoneoutstation', function () {
     return view('eclaim/claimapproval/supervisor/view/supervisorviewcaono');
 });
-//////
 
+//view adminchecker
+Route::get('/adminchecker/viewmtc', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewmtc');
+});
+Route::get('/adminchecker/viewgnc', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewgnc');
+});
+Route::get('/adminchecker/viewcapo', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewcapo');
+});
+Route::get('/adminchecker/viewcapno', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewcapno');
+});
+Route::get('/adminchecker/viewcaoo', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewcaoo');
+});
+Route::get('/adminchecker/viewcaono', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewcaono');
+});
+//view finance checker
+Route::get('/financechecker/viewmtc', function () {
+    return view('eclaim/claimapproval/financechecker/view/acviewmtc');
+});
+Route::get('/financechecker/viewgnc', function () {
+    return view('eclaim/claimapproval/financechecker/view/acviewgnc');
+});
+Route::get('/financechecker/viewcapo', function () {
+    return view('eclaim/claimapproval/financechecker/view/acviewcapo');
+});
+Route::get('/financechecker/viewcapno', function () {
+    return view('eclaim/claimapproval/financechecker/view/acviewcapno');
+});
+Route::get('/financechecker/viewcaoo', function () {
+    return view('eclaim/claimapproval/financechecker/view/acviewcaoo');
+});
+Route::get('/financechecker/viewcaono', function () {
+    return view('eclaim/claimapproval/financechecker/view/acviewcaono');
+});
+////////////////////
 Route::get('/report/reportingclaimreport', function () {
     return view('eclaim/reportingclaimreport');
 });
