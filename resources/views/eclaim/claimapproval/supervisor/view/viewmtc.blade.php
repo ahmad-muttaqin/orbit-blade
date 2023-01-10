@@ -1275,6 +1275,7 @@
                         <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
+				
 				<div class="row p-2">
                     <div class="col-md-6">
                         <label class="form-label col-form-label">Amount</label>

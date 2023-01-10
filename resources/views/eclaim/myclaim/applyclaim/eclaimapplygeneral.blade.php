@@ -658,109 +658,109 @@
 							<br>
 						</div>
 						<div class="form-control">	
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Year</label>
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Year</label>
+								</div>
+								<div class="col-md-9">
+									<select class="form-select" id="year" >
+										<option class="form-label" value="Please Select" selected>Please Select</option>
+										<option class="form-label" value="2022">2022</option>
+										<option class="form-label" value="2023">2023</option>
+										<option class="form-label" value="2024">2024</option>
+										<option class="form-label" value="2025">2025</option>
+									</select>							
+								</div>
 							</div>
-							<div class="col-md-9">
-								<select class="form-select" id="year" >
-									<option class="form-label" value="Please Select" selected>Please Select</option>
-									<option class="form-label" value="2022">2022</option>
-									<option class="form-label" value="2023">2023</option>
-									<option class="form-label" value="2024">2024</option>
-									<option class="form-label" value="2025">2025</option>
-								</select>							
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Month</label>
+								</div>
+								<div class="col-md-9">
+									<select class="form-select" id="month">
+										<option class="form-label" value="Please Select" selected>Please Select</option>
+										<option class="form-label" value="1">January</option>
+										<option class="form-label" value="2">February</option>
+										<option class="form-label" value="3">March</option>
+										<option class="form-label" value="4">April</option>
+										<option class="form-label" value="5">May</option>
+										<option class="form-label" value="6">Jun</option>
+										<option class="form-label" value="7">July</option>
+										<option class="form-label" value="8">August</option>
+										<option class="form-label" value="9">September</option>
+										<option class="form-label" value="10">October</option>
+										<option class="form-label" value="11">November</option>
+										<option class="form-label" value="12">December</option>
+										
+									</select>
+								</div>
 							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Month</label>
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Applied Date</label>
+								</div>
+								<div class="col-md-9">
+									<div class="input-group" id="">
+										<input type="text" name="" class="form-control" value="" id="applieddate" />
+											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+									</div>					
+								</div>
 							</div>
-							<div class="col-md-9">
-								<select class="form-select" id="month">
-									<option class="form-label" value="Please Select" selected>Please Select</option>
-									<option class="form-label" value="1">January</option>
-									<option class="form-label" value="2">February</option>
-									<option class="form-label" value="3">March</option>
-									<option class="form-label" value="4">April</option>
-									<option class="form-label" value="5">May</option>
-									<option class="form-label" value="6">Jun</option>
-									<option class="form-label" value="7">July</option>
-									<option class="form-label" value="8">August</option>
-									<option class="form-label" value="9">September</option>
-									<option class="form-label" value="10">October</option>
-									<option class="form-label" value="11">November</option>
-									<option class="form-label" value="12">December</option>
-									
-								</select>
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Claim Category</label>
+								</div>
+								<div class="col-md-9">
+									<select class="form-select" id="claimcategory">
+										<option class="form-label" value="Please Select" selected>Please Select</option>
+										
+									</select>
+								</div>
 							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Applied Date</label>
-							</div>
-							<div class="col-md-9">
-								<div class="input-group" id="">
-									<input type="text" name="" class="form-control" value="" id="applieddate" />
-										<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-								</div>					
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Claim Category</label>
-							</div>
-							<div class="col-md-9">
-								<select class="form-select" id="claimcategory">
-									<option class="form-label" value="Please Select" selected>Please Select</option>
-									
-								</select>
-							</div>
-						</div>
 						{{-- akan tarik data dari  labelling name dlam setting add claim --}}
-						<div class="row p-2">
-							<div class="col-md-3"> 
-								<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
+							<div class="row p-2">
+								<div class="col-md-3"> 
+									<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
+								</div>
+								<div class="col-md-9"> 
+									<select class="form-select" id="contentlabel" >
+										<option class="form-label" value="Please Select" selected>Please Select</option>
+									</select>
+								</div>
 							</div>
-							<div class="col-md-9"> 
-								<select class="form-select" id="contentlabel" >
-									<option class="form-label" value="Please Select" selected>Please Select</option>
-								</select>
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Amount (MYR)</label>
+								</div>
+								<div class="col-md-9">
+									<input  type="number" class="form-control" id="amount">
+								</div>
+							</div>
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Description</label>
+								</div>
+								<div class="col-md-9">
+									<textarea class="form-control" rows="3" id="description"></textarea>
+								</div>
+							</div>
+							<div class="row p-2">
+								<div class="col-md-3">
+									<label class="form-label">Supporting Document</label>
+								</div>
+								<div class="col-md-9">
+									<input type="file" class="form-control-file" id="supportdocument">
+								</div>
 							</div>
 						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Amount (MYR)</label>
-							</div>
-							<div class="col-md-9">
-								<input  type="number" class="form-control" id="amount">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Description</label>
-							</div>
-							<div class="col-md-9">
-								<textarea class="form-control" rows="3" id="description"></textarea>
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">
-								<label class="form-label">Supporting Document</label>
-							</div>
-							<div class="col-md-9">
-								<input type="file" class="form-control-file" id="supportdocument">
-							</div>
-						</div>
-						</div>
-						<div class="row p-2">
-							<div class="modal-footer">
+							<div class="row p-2">
+								<div class="modal-footer">
 
-								<button type="button" class="btn btn-secondary" >Reset</button>
-								<button onclick="addTableRow()" type="button" class="btn btn-primary" >Save</button>
-								
+									<button type="button" class="btn btn-secondary" >Reset</button>
+									<button onclick="addTableRow()" type="button" class="btn btn-primary" >Save</button>
+									
+								</div>
 							</div>
-						</div>
 						</div>
 					</div>
 				

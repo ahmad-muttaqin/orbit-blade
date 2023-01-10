@@ -658,7 +658,7 @@
                     </div>
                         <div class="tab-content panel p-3 rounded">
                             <div class="tab-pane fade active show" id="default-tab-1">
-                                <br>
+                                
                                 <table  id="activetable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
@@ -689,7 +689,7 @@
                                                 <div class="dropdown-divider"></div>
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
                                                 <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -714,7 +714,7 @@
                                             <div class="dropdown-divider"></div>
                                             <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
                                             <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -774,7 +774,7 @@
                                                 <div class="dropdown-divider"></div>
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
                                                 <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                <a href="javascript:;" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -799,7 +799,7 @@
                                             <div class="dropdown-divider"></div>
                                             <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
                                             <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -859,9 +859,7 @@
                                                 <div class="dropdown-divider"></div>
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
                                                 <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -885,9 +883,7 @@
                                             <div class="dropdown-divider"></div>
                                             <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                             <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -944,13 +940,7 @@
                                             <div class="dropdown-menu">
                                                 <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
                                                 <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -970,13 +960,7 @@
                                             <div class="dropdown-menu">
                                             <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
                                             <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>

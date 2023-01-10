@@ -601,8 +601,8 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| My Claim | View Claim </small></h1>
-	
+	<h1 class="page-header">eClaim <small>| Claim Approval | Admin Checker | View Monthly Claim </small></h1>
+
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
@@ -647,10 +647,11 @@
 							</div>
 						</div>
 						<div class="row p-2">
-							<table id="claimtable" class="table table-striped table-bordered align-middle">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
+										<th>Checker</th>
 										<th class="text-nowrap">Applied Date</th>
 										<th class="text-nowrap">Claim Category</th>
 										<th class="text-nowrap">Amount</th>
@@ -663,6 +664,7 @@
 									
 									<tr>
 										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">View</a></td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -671,6 +673,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM30</td>
@@ -679,6 +682,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -687,6 +691,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM50</td>
@@ -695,6 +700,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -703,6 +709,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM140</td>
@@ -713,10 +720,11 @@
 							</table>
 						</div>
 						<div class="row p-2">
-							<table id="traveltable" class="table table-striped table-bordered align-middle">
+							<table id="claimtable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
+										<th>Checker</th>
 										<th class="text-nowrap">Travel Date</th>
 										<th class="text-nowrap">Project Name</th>
 										<th class="text-nowrap">Claim Category</th>
@@ -730,8 +738,9 @@
 									
 									<tr>
 										<td>
-											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View T</a>
 										</td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>
 										<td>21/07/2022</td>
 										<td>Orbit</td>
 										<td><label id="claim_check">Travelling</label></td>
@@ -741,8 +750,9 @@
 									</tr>
 									<tr>
 										<td>
-											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
-										</td>										
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View S</a>
+										</td>	
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>									
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td><label class="claim_check" >Subsistence</label></td>
@@ -752,8 +762,9 @@
 									</tr>
 									<tr>
 										<td>
-											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
-										</td>										
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View S</a>
+										</td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>										
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td><label class="claim_check" >Subsistence</label></td>
@@ -763,8 +774,9 @@
 									</tr>
 									<tr>
 										<td>
-											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
-										</td>										
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View T</a>
+										</td>	
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>									
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td><label class="claim_check">Travelling</label></td>
@@ -774,8 +786,9 @@
 									</tr>
 									<tr>
 										<td>
-											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
-										</td>										
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View T</a>
+										</td>
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>										
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td><label class="claim_check">Travelling</label></td>
@@ -785,8 +798,9 @@
 									</tr>
 									<tr>
 										<td>
-											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
-										</td>										
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View S</a>
+										</td>	
+										<td><input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> &nbsp; <input type="checkbox" class="form-check-input" name="" id="adddropdown" /> </td>									
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td><label class="claim_check" >Subsistence</label></td>
@@ -956,15 +970,21 @@
 				</div>
 				
 			</div>
-		</div>
-
-		<div class="row p-2">
-			<div class="col align-self-start">
-				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-			</div>	
-			
+			<div class="row p-2">
+				<div class="col align-self-start">
+					<a href="/claimapproval/supervisor" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+				</div>	
+				<div class="col d-flex justify-content-end">
+					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
+					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
+					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
+					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<!-- Modal Travel claim -->
 	<div class="modal fade" id="modal-view-claim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -978,14 +998,14 @@
                         <label class="form-label col-form-label">Travel Date</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Start Time</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -993,14 +1013,14 @@
                         <label class="form-label col-form-label">End Time</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Total Hours</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1008,7 +1028,7 @@
                         <label class="form-label col-form-label">Description</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1016,7 +1036,7 @@
                         <label class="form-label col-form-label">Reason Using Web</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1024,14 +1044,14 @@
                         <label class="form-label col-form-label">Type of Transport</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Location Start</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1039,13 +1059,13 @@
                         <label class="form-label col-form-label">Project</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 					<div class="col-md-3">
                         <label class="form-label col-form-label">Log Name</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1053,7 +1073,7 @@
                         <label class="form-label col-form-label">Address Start</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1061,7 +1081,7 @@
                         <label class="form-label col-form-label">Destination</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1069,7 +1089,7 @@
                         <label class="form-label col-form-label">Destination Address</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1077,14 +1097,14 @@
                         <label class="form-label col-form-label">Milleage</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Toll</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1092,14 +1112,14 @@
                         <label class="form-label col-form-label">Petrol/Fares</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Parking</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1107,17 +1127,19 @@
                         <label class="form-label col-form-label">Supporting Documents</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				</div>
 				<div class="modal-footer">
+				<button type="button" class="btn btn-lime" data-bs-dismiss="modal">Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
 			</div>
 		</div>
 	</div>	
+	<!-- Modal view subsistence -->
 	<div class="modal fade" id="modal-view-subsistence" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -1300,12 +1322,15 @@
 				</div>
 				</div>
 				<div class="modal-footer">
+				<button type="button" class="btn btn-lime" data-bs-dismiss="modal">Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
 			</div>
 		</div>
 	</div>		
+
+	<!-- Modal view personal -->
 	<div class="modal fade" id="modal-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1319,7 +1344,7 @@
                         <label class="form-label col-form-label">Applied Date</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1327,23 +1352,16 @@
                         <label class="form-label col-form-label">Claim Category</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				</div>
-				<div class="row p-2">
-					<div class="col-md-6"> 
-						<input type="text" class="form-control" name="labellingname" id="" readonly value="">
-					</div>
-					<div class="col-md-6"> 
-						<input type="text" readonly class="form-control" >
-					</div>
-				</div>
+				
 				<div class="row p-2">
                     <div class="col-md-6">
                         <label class="form-label col-form-label">Amount</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 					</div>
 				<div class="row p-2">
@@ -1351,7 +1369,7 @@
                         <label class="form-label col-form-label">Description</label>
                     </div>
 					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control"  rows="3" maxlength="255"></textarea>
+                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1359,7 +1377,7 @@
                         <label class="form-label col-form-label">Supporting Document</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" >
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
 				
                    
@@ -1367,14 +1385,69 @@
 				
 				</div>
 				<div class="modal-footer">
+				<button type="button" class="btn btn-lime" >Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
 			</div>
 		</div>
-	</div>
-	
-	
+	</div>		
+
+	<!-- Modal amend -->
+	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <!-- Modal reject -->
+      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
 	<!-- END row -->
 	
 	<!-- END #app -->
@@ -1421,7 +1494,6 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
-		scrollX : true
     });
 	$("#traveltable").DataTable({
         responsive: false,
@@ -1429,7 +1501,6 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
-		scrollX : true
     });
 	$(document).on("click", "#btn-view-claim", function() {
         $('#modal-view-claim').modal('show');
