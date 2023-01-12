@@ -352,7 +352,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -601,8 +601,8 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Supervisor | View Cash Advance | Others ( Non-Outstation )</small></h1>
-
+	<h1 class="page-header">eClaim <small>| Claim Approval | Finance Approver | View General Claim </small></h1>
+	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
@@ -613,248 +613,383 @@
 				<div class="col-md-7">	
 					<div class="form-control">
 						<div class="row p-2">
-							<h4>Cash Advance Information</h4>
+							<h4>Claim Information</h4>
 						</div>
 						
 						<div class="row p-2">
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Type of Cash Advance :</label>
+							<div class="col-md-2">	
+								<label class="form-label col-form-label">Claim ID :</label>
 							</div>
-							<div class="col-md-9">	
+							<div class="col-md-4">	
 								<input readonly type="text" class="form-control">
 							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-							<label class="form-label col-form-label">Cash Advance ID:</label>
+							<div class="col-md-2">	
+							<label class="form-label col-form-label">Claim Type :</label>
 								
 							</div>
-							<div class="col-md-9">	
+							<div class="col-md-4">	
 								<input readonly type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row p-2">
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Claim Type :</label>
+							<div class="col-md-2">	
+								<label class="form-label col-form-label">Status :</label>
 							</div>
-							<div class="col-md-9">	
+							<div class="col-md-4">	
 								<input readonly type="text" class="form-control">
 							</div>
-						</div>
-						
-						<div class="row p-2">
-							<div class="col-md-3">	
-							<label class="form-label col-form-label">Date of Cash Required :</label>
+							<div class="col-md-2">	
+							<label class="form-label col-form-label">Total Amount :</label>
 								
 							</div>
-							<div class="col-md-9">	
+							<div class="col-md-4">	
 								<input readonly type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row p-2">
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Purpose :</label>
-							</div>
-							<div class="col-md-9">	
-								<textarea type="text" readonly class="form-control" rows="3" maxlength="255"></textarea>
-							</div>
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
+								<thead>
+									<tr>
+										<th>Action</th>
+										<th class="text-nowrap">Applied Date</th>
+										<th class="text-nowrap">Claim Category</th>
+										<th class="text-nowrap">Amount</th>
+										<th class="text-nowrap">Description</th>
+										<th class="text-nowrap">Attachment</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">View</a></td>
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Entertainment</td>
+										<td>RM30</td>
+										<td>Cinema</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td>RM40</td>
+										<td>Celcom Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Entertainment</td>
+										<td>RM50</td>
+										<td>Paintball</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Entertainment</td>
+										<td>RM140</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 						<div class="row p-2">
-							<div class="col-md-3">	
-							<label class="form-label col-form-label">Amount :</label>
-								
-							</div>
-							<div class="col-md-9">	
-								<input readonly type="text" class="form-control">
-							</div>
+							
 						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Supporting Document :</label>
-							</div>
-							<div class="col-md-9">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						
-						
 					</div>
-					
-					
 				</div>
 				<div class="col-md-5">	
 				
 					<div class="form-control">
 						<div class="row p-2">
-							<h4>Cash Advance History</h4>
+							<h4>Claim History</h4>
 							<div class="card-body">
-					<div class="container">
-						<ul class="timeline-with-icons">
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-circle-plus text-primary fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold">Siti Sarah Submitted claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+											<div class="container">
+												<ul class="timeline-with-icons">
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-plus text-primary fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold">Siti Sarah Submitted claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Mukhsin recommended Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-arrow-rotate-right text-warning fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold">Hassan amended Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Hafizi approved Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-xmark text-danger fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Nadia rejected Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-check text-yellow fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Shida checked Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														  	</div>
+													  	</div>
+													  </div>
+													</li>
+													<li class="timeline-item mb-5 ">
+													  <div class="card bg-white">	
+														<div class="row p-2">
+															<div class="col-md-2">
+																<i class="fas fa-circle-minus text-indigo fa-xl fa-fw"></i>	
+															</div>		
+															<div class="col-md-10">	
+																<p class="fw-bold"> Amira Closed Claim</p>
+																<div class="row">
+																	<div class="col-md-6">	
+																		<p class="text-muted mb-2 fw-bold">01/03/2022</p>
+																	</div>
+																	<div class="col-md-6">	
+																		<p class="text-muted">10:24 AM</p>
+																	</div>
+																</div>
+														</div>
+												</div>
 											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-									</div>
+										</li>
+									</ul>
 								</div>
-								</div>
-							</li>
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold"> Mukhsin recommended Claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
-											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-							</li>
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-arrow-rotate-right text-warning fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold">Hassan amended Claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
-											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-							</li>
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-circle-check text-lime fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold"> Hafizi approved Claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
-											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-							</li>
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-circle-xmark text-danger fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold"> Nadia rejected Claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
-											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-							</li>
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-circle-check text-yellow fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold"> Shida checked Claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
-											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-							</li>
-							<li class="timeline-item mb-5 ">
-								<div class="card bg-white">	
-								<div class="row p-2">
-									<div class="col-md-2">
-										<i class="fas fa-circle-minus text-indigo fa-xl fa-fw"></i>	
-									</div>		
-									<div class="col-md-10">	
-										<p class="fw-bold"> Amira Closed Claim</p>
-										<div class="row">
-											<div class="col-md-6">	
-												<p class="text-muted mb-2 fw-bold">01/03/2022</p>
-											</div>
-											<div class="col-md-6">	
-												<p class="text-muted">10:24 AM</p>
-											</div>
-										</div>
-								</div>
+							</div>
 						</div>
 					</div>
-					</li>
-				</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 
 				</div>
 				
 			</div>
-		</div>
-		<div class="row p-2">
-			<div class="col align-self-start">
-				<a href="/claimapproval/supervisor" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
-			</div>	
-			<div class="col d-flex justify-content-end">
-				<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-				<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-				<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-				<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
+			<div class="row p-2">
+				<div class="col align-self-start">
+					<a href="/claimapproval/supervisor" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+				</div>	
+				<div class="col d-flex justify-content-end">
+					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
+					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
+					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
+					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
+				</div>
 			</div>
 		</div>
+		
 	</div>
 	
 		
-		<!-- Modal amend -->
+	<div class="modal fade" id="modal-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Year</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								<option class="form-label" value="2022">2022</option>
+								<option class="form-label" value="2023">2023</option>
+								<option class="form-label" value="2024">2024</option>
+								<option class="form-label" value="2025">2025</option>
+							</select>							
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Month</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Applied Date</label>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group" >
+								<input type="text" name="" class="form-control" value=""  readonly/>
+									<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>					
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Claim Category</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
+				{{-- akan tarik data dari  labelling name dlam setting add claim --}}
+					<div class="row p-2">
+						<div class="col-md-3"> 
+							<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
+						</div>
+						<div class="col-md-9"> 
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Amount (MYR)</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="number" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Description</label>
+						</div>
+						<div class="col-md-9">
+							<textarea class="form-control" rows="3" readonly></textarea>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Supporting Document</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="text" class="form-control" readonly>
+						</div>
+					</div>
+				</div>
+					<div class="row p-2">
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>		
+
+	<!-- Modal amend -->
 	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -908,7 +1043,7 @@
             </div>
           </div>
         </div>
-      </div>	
+      </div>
 	<!-- END row -->
 	
 	<!-- END #app -->
@@ -949,9 +1084,32 @@
 
 
 <script>
-   
-	
-	
+   $("#claimtable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
+	$("#traveltable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
+	$(document).on("click", "#btn-view-claim", function() {
+        $('#modal-view-claim').modal('show');
+
+    });
+	$(document).on("click", "#btn-view-subsistence", function() {
+        $('#modal-view-subsistence').modal('show');
+
+    });
+	$(document).on("click", "#btn-view", function() {
+        $('#modal-view').modal('show');
+
+    });
 
 	
 </script>

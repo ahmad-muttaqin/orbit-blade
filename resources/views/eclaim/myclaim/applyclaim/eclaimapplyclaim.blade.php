@@ -360,7 +360,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -643,10 +643,7 @@
 								<label class="form-label">Claim Type</label>
 							</div>
 							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
+								<input readonly type="text" class="form-control">
 							</div>
 						</div>
 
@@ -1127,7 +1124,10 @@
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input  type="text" class="form-control">
+															<select class="form-select" >
+																<option class="form-label" value="" selected>Please Select</option>
+																
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1299,8 +1299,13 @@
 						</div>
 					</div>
 				
+					
 				<div class="col-md-6">	
+					
 				<div class="form-control">	
+					<div class="row p-2">
+						<h4>Personal Claims Table List:</h4>
+					</div>
 					<div class="row">
 						<div class="">	
 							<table id="claimtable1" class="table table-striped table-bordered align-middle">
@@ -1316,7 +1321,6 @@
 									</tr>
 								</thead>
 								<tbody>
-									
 									<tr>
 										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">Delete</a></td>
 										<td>21/07/2022</td>
@@ -1325,51 +1329,16 @@
 										<td>Maxis Data</td>
 										<td>Receipt.pdf</td>
 									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
+					<br>
+					<div class="row p-2">
+						<h4>Travelling & Subsistence & Accomodation Table List:</h4>
+					</div>
 					<div class="row">
+						
 						<div class="">	
 							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
@@ -1396,51 +1365,7 @@
 										<td>Maxis Data</td>
 										
 									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM30</td>
-										<td>Cinema</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Celcom Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM50</td>
-										<td>Paintball</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Telephone</td>
-										<td>RM40</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
-									<tr>
-										<td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
-										<td>21/07/2022</td>
-										<td>Entertainment</td>
-										<td>RM140</td>
-										<td>Maxis Data</td>
-										<td>Receipt.pdf</td>
-										<td>Maxis Data</td>
-									</tr>
+									
 								</tbody>
 							</table>
 						</div>

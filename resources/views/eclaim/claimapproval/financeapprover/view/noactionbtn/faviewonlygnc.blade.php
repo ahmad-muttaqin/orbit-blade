@@ -352,7 +352,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -601,8 +601,8 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Claim Approval | Supervisor | View Appeal Claim </small></h1>
-
+	<h1 class="page-header">eClaim <small>| Claim Approval | Finance Approver | View General Claim </small></h1>
+	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
@@ -617,70 +617,104 @@
 						</div>
 						
 						<div class="row p-2">
-							<div class="col-md-12">	
+							<div class="col-md-2">	
+								<label class="form-label col-form-label">Claim ID :</label>
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-2">	
+							<label class="form-label col-form-label">Claim Type :</label>
 								
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Claim ID</label>
-										</div>
-										<div class="col-md-3">
-											<input readonly type="text" class="form-control">
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Claim Type</label>
-										</div>
-										<div class="col-md-3">
-											<select class="form-select" >
-												<option class="form-label" value="" selected>Please Select</option>
-											</select>
-										</div>
-									</div>
-
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Applied Date</label>
-										</div>
-										<div class="col-md-3">
-											<input id="appealdate" type="text" class="form-control">
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Claim Category</label>
-										</div>
-										<div class="col-md-3">
-											<input readonly type="text" class="form-control">
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Amount</label>
-										</div>
-										<div class="col-md-3">
-											<input readonly type="text" class="form-control">
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Description</label>
-										</div>
-										<div class="col-md-3">
-											<input readonly type="text" class="form-control">
-										</div>
-									</div>
-									<div class="row p-2">
-										<div class="col-md-2">
-											<label class="form-label">Supporting Document</label>
-										</div>
-										<div class="col-md-3">
-											<input type="file" class="form-control-file" id="">
-										</div>
-									</div>
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-md-2">	
+								<label class="form-label col-form-label">Status :</label>
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-2">	
+							<label class="form-label col-form-label">Total Amount :</label>
+								
+							</div>
+							<div class="col-md-4">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row p-2">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
+								<thead>
+									<tr>
+										<th>Action</th>
+										<th class="text-nowrap">Applied Date</th>
+										<th class="text-nowrap">Claim Category</th>
+										<th class="text-nowrap">Amount</th>
+										<th class="text-nowrap">Description</th>
+										<th class="text-nowrap">Attachment</th>
+										
+									</tr>
+								</thead>
+								<tbody>
 									
-								</div>
-			</div>	
+									<tr>
+										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">View</a></td>
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Entertainment</td>
+										<td>RM30</td>
+										<td>Cinema</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td>RM40</td>
+										<td>Celcom Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Entertainment</td>
+										<td>RM50</td>
+										<td>Paintball</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td>21/07/2022</td>
+										<td>Entertainment</td>
+										<td>RM140</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="row p-2">
+							
+						</div>
 					</div>
 				</div>
 				<div class="col-md-5">	
@@ -865,57 +899,96 @@
             </div>
             <div class="modal-body">
 				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Applied Date</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Claim Category</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Amount</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
+						<div class="col-md-3">
+							<label class="form-label">Year</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								<option class="form-label" value="2022">2022</option>
+								<option class="form-label" value="2023">2023</option>
+								<option class="form-label" value="2024">2024</option>
+								<option class="form-label" value="2025">2025</option>
+							</select>							
+						</div>
 					</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Description</label>
-                    </div>
-					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
-                    </div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Month</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Applied Date</label>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group" >
+								<input type="text" name="" class="form-control" value=""  readonly/>
+									<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>					
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Claim Category</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
+				{{-- akan tarik data dari  labelling name dlam setting add claim --}}
+					<div class="row p-2">
+						<div class="col-md-3"> 
+							<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
+						</div>
+						<div class="col-md-9"> 
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Amount (MYR)</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="number" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Description</label>
+						</div>
+						<div class="col-md-9">
+							<textarea class="form-control" rows="3" readonly></textarea>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Supporting Document</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="text" class="form-control" readonly>
+						</div>
+					</div>
 				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Supporting Document</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                   
-				</div>
-				
-				</div>
-				<div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                
-            </div>
+					<div class="row p-2">
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>		
-	
+
 	<!-- Modal amend -->
 	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1011,7 +1084,20 @@
 
 
 <script>
-   
+   $("#claimtable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
+	$("#traveltable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
 	$(document).on("click", "#btn-view-claim", function() {
         $('#modal-view-claim').modal('show');
 

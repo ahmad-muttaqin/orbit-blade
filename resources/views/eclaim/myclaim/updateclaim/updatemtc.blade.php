@@ -4,7 +4,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>OrbitHRM | Update Monthly Claim </title>
+	<title>OrbitHRM | Timesheet </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -26,11 +26,11 @@
 
 
 	{{-- timepicker --}}
-	{{-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"> --}}
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
 	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
-<link href="../assets/plugins/timepicker/css/mdtimepicker.css" rel="stylesheet" type="text/css">
+	<link href="../assets/plugins/timepicker/css/mdtimepicker.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -360,7 +360,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -643,10 +643,7 @@
 								<label class="form-label">Claim Type</label>
 							</div>
 							<div class="col-md-3">
-								<select class="form-select" >
-									<option class="form-label" value="" selected>Please Select</option>
-									
-								</select>
+								<input readonly type="text" class="form-control">
 							</div>
 						</div>
 
@@ -668,6 +665,7 @@
 							<br>
 						</div>
 							<div class="">	
+								
 									<div class="accordion" id="accordionExample">
 										<div class="accordion-item">
 											<h2 class="accordion-header" id="headingOne">
@@ -682,7 +680,7 @@
 														<label class="form-label">Applied Date</label>
 													</div>
 													<div class="col-md-8">
-														<input type="text" class="form-control" id="udatepickerpc">
+														<input type="text" class="form-control" id="datepickerpc">
 													</div>
 												</div>
 												<div class="row p-2">
@@ -697,11 +695,8 @@
 												</div>
 												{{-- akan tarik data dari  labelling name dlam setting add claim --}}
 												<div class="row p-2">
-													{{-- <div class="col-md-4">  --}}
-														{{-- <input type="text" class="form-control" name="labellingname" id="" readonly> --}}
-													{{-- </div> --}}
 													<div class="col-md-4"> 
-														<input type="text" class="form-control" name="labellingname" id="" readonly >
+														<input type="text" class="form-control" name="labellingname" id="" readonly value="">
 													</div>
 													<div class="col-md-8"> 
 														<select class="form-select" id="" readonly>
@@ -722,12 +717,12 @@
 														<label class="form-label">Description</label>
 													</div>
 													<div class="col-md-8">
-														<textarea class="form-control" rows="3"></textarea>
+														<textarea class="form-control" id="" rows="3"></textarea>
 													</div>
 												</div>
 												<div class="row p-2">
 													<div class="col-md-4">
-														<label class="form-label">Supporting Documents</label>
+														<label class="form-label">Supporting Document</label>
 													</div>
 													<div class="col-md-8">
 														
@@ -758,7 +753,7 @@
 															<label class="form-label">Travel Date</label>
 														</div>
 														<div class="col-md-8">
-															<input  type="text " class="form-control" id="udatepickertc">
+															<input  type="text " class="form-control" id="datepickertc">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -766,13 +761,13 @@
 															<label class="form-label" >Start Time</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" id="utimestart" class=" form-control" value="" placeholder="choose time">
+															<input  type="text" id="timestart" class=" form-control" value="" placeholder="choose time">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">End Time</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" id="utimeend" class=" form-control" placeholder="choose time">
+															<input  type="text" id="timeend" class=" form-control" placeholder="choose time">
 														</div>
 													</div>
 													<div id="" style="display: none">
@@ -781,13 +776,13 @@
 																<label class="form-label" >Start date</label>
 															</div>
 															<div class="col-md-3">
-																<input  type="text" id="udaystart" class=" form-control" value="">
+																<input  type="text" id="daystart" class=" form-control" value="">
 															</div>
 															<div class="col-md-2" style="display: none">
 																<label class="form-label">End date</label>
 															</div>
 															<div class="col-md-3">
-																<input  type="text" id="udayend" class=" form-control" >
+																<input  type="text" id="dayend" class=" form-control">
 															</div>
 														</div>
 													</div>
@@ -796,7 +791,7 @@
 															<label class="form-label">Total Hours</label>
 														</div>
 														<div class="col-md-8">
-															<input readonly type="text" id="utotalduration" class="form-control">
+															<input readonly type="text" id="totalduration" class="form-control">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -838,7 +833,7 @@
 														</div>
 														<div class="col-md-8">
 															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="uls">
+															<select class="form-select" id="ls">
 																<option class="form-label" value="" selected>Please Select</option>
 																<option class="form-label" value="" >Home</option>
 																<option class="form-label" value="" >Office</option>
@@ -847,7 +842,7 @@
 															</select>
 														</div>
 													</div>
-													<div class="row p-2" id="uproject" style="display: none">
+													<div class="row p-2" id="project" style="display: none">
 														<div class="col-md-4">
 															<label class="form-label">Project</label>
 														</div>
@@ -873,7 +868,7 @@
 														</div>
 														<div class="col-md-8">
 															{{-- <input readonly type="text" class="form-control"> --}}
-															<select class="form-select" id="udest">
+															<select class="form-select" id="dest">
 																<option class="form-label" value="" selected>Please Select</option>
 																<option class="form-label" value="" >Home</option>
 																<option class="form-label" value="" >Office</option>
@@ -882,7 +877,7 @@
 															</select>
 														</div>
 													</div>
-													<div class="row p-2" id="uprojectdest" style="display: none">
+													<div class="row p-2" id="projectdest" style="display: none">
 														<div class="col-md-4">
 															<label class="form-label">Project</label>
 														</div>
@@ -893,7 +888,7 @@
 															</select>
 														</div>
 													</div>
-													<div class="row p-2" id="ulogname" style="display: none">
+													<div class="row p-2" id="logname" style="display: none">
 														<div class="col-md-4">
 															<label class="form-label">Log Name</label>
 														</div>
@@ -974,7 +969,7 @@
 															<label class="form-label">Claim For</label>
 														</div>
 														<div class="col-md-8">
-															<select class="form-select" id="uca">
+															<select class="form-select" id="ca">
 																<option class="form-label" value="" selected>Please Select</option>
 																<option class="form-label" value="1" >With Cash Advance</option>
 																<option class="form-label" value="2" >Without Cash Advance</option>
@@ -991,10 +986,10 @@
 															</div>
 													</div>
 												
-												<div class="UWC" style="display:none">
+												<div class="WC" style="display:none">
 													
 													<div class="row p-2">
-														<table id="uclaimtable" class="table table-striped table-bordered align-middle">
+														<table id="claimtable" class="table table-striped table-bordered align-middle">
 															<thead>
 																<tr>
 																	<th>-</th>
@@ -1063,7 +1058,7 @@
 														<button type="button" class="btn btn-primary" >Save</button>	
 													</div>
 												</div>
-												<div class="UWOC" style="display:none">
+												<div class="WOC" style="display:none">
 													<div class="row p-2">
 														<div class="row p-2">
 															<label class="form-label">Travel date and time</label>
@@ -1078,7 +1073,7 @@
 																				<label class="form-label">Start</label>
 																			</div>
 																			<div class="col">
-																				<input  type="text" class="form-control" placeholder="Date" id="udate1">
+																				<input  type="text" class="form-control" placeholder="Date" id="date1">
 																			</div>
 																		</div>
 																		<div class="row p-2">
@@ -1086,7 +1081,7 @@
 																				<label class="form-label">Start</label>
 																			</div>
 																			<div class="col">
-																				<input  type="text" class="form-control" placeholder="Time" id="utime1">
+																				<input  type="text" class="form-control" placeholder="Time" id="time1">
 																			</div>
 																		</div>
 																	</div>
@@ -1100,7 +1095,7 @@
 																				<label class="form-label">End</label>
 																			</div>
 																			<div class="col">
-																				<input  type="text" class="form-control" placeholder="Date" id="udate2">
+																				<input  type="text" class="form-control" placeholder="Date" id="date2">
 																			</div>
 																		</div>
 																		<div class="row p-2">
@@ -1108,7 +1103,7 @@
 																				<label class="form-label">End</label>
 																			</div>
 																			<div class="col">
-																				<input  type="text" class="form-control" placeholder="Time" id="utime2">
+																				<input  type="text" class="form-control" placeholder="Time" id="time2">
 																			</div>
 																		</div>
 																	</div>
@@ -1121,7 +1116,7 @@
 																<label class="form-label">Travel Duration</label>
 															</div>
 															<div class="col-md-8">
-																<input  type="text" class="form-control" id="result1" readonly>
+																<input  type="text" class="form-control" id="result1" readonly >
 															</div>
 														</div>
 													<div class="row p-2">
@@ -1129,7 +1124,10 @@
 															<label class="form-label">Project</label>
 														</div>
 														<div class="col-md-8">
-															<input  type="text" class="form-control">
+															<select class="form-select" >
+																<option class="form-label" value="" selected>Please Select</option>
+																
+															</select>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1137,7 +1135,6 @@
 															<label class="form-label">Description</label>
 														</div>
 														<div class="col-md-8">
-															{{-- <input  type="text" class="form-control"> --}}
 															<textarea class="form-control" id="" rows="3"></textarea>
 														</div>
 													</div>
@@ -1149,13 +1146,13 @@
 															<label class="form-label">Breakfast</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control" value="15" id="UBF">
+															<input readonly type="text" class="form-control" value="15" id="BF">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X day =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" value="0" id="UDBF">
+															<input  type="text" class="form-control" value="0" id="DBF">
 														</div>
 														
 													</div>
@@ -1167,13 +1164,13 @@
 															<label class="form-label">Lunch</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control" value="15" id="ULH">
+															<input readonly type="text" class="form-control" value="15" id="LH">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X day =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" value="0" id="UDLH">
+															<input  type="text" class="form-control" value="0" id="DLH">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1183,13 +1180,13 @@
 															<label class="form-label">Dinner</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control" value="15" id="UDN">
+															<input readonly type="text" class="form-control" value="15" id="DN">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X day =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" value="0" id="UDDN">
+															<input  type="text" class="form-control" value="0" id="DDN">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1205,49 +1202,49 @@
 															Total Subsistence
 														</div>
 														<div class="col-md-2">
-															<input readonly  type="text" class="form-control" value="0" id="UTS">
+															<input readonly  type="text" class="form-control" value="0" id="TS">
 														</div>
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label">Accommodation:</label>
 														</div>
-														<div class="col-md-2" id="uhotelc">
-															<input class="form-check-input" type="checkbox" value="85" id="uhtv"/>
+														<div class="col-md-2" id="hotelc">
+															<input class="form-check-input" type="checkbox" value="85" id="htv"/>
 															<label class="form-label">Hotel</label>
 														</div>
 														<div class="col-md-2" >
-															<input readonly type="text" class="form-control" id="uhotelcv">
+															<input readonly type="text" class="form-control" id="hotelcv">
 														</div>
 														<div class="col-md-2" style="display: none">
-															<input readonly type="text" class="form-control" id="uhotelcv1" value="0">
+															<input readonly type="text" class="form-control" id="hotelcv1" value="0">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" id="uhn" disabled value="0">
+															<input  type="text" class="form-control" id="hn" disabled value="0">
 														</div>
 													</div>
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label"></label>
 														</div>
-														<div class="col-md-2" id="ulodgingc">
-															<input class="form-check-input" type="checkbox" value="100" id="uldgv"/>
+														<div class="col-md-2" id="lodgingc">
+															<input class="form-check-input" type="checkbox" value="100" id="ldgv"/>
 															<label class="form-label">Lodging</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control" id="ulodgingcv">
+															<input readonly type="text" class="form-control" id="lodgingcv">
 														</div>
 														<div class="col-md-2" style="display: none">
-															<input readonly type="text" class="form-control" id="ulodgingcv1" value="0">
+															<input readonly type="text" class="form-control" id="lodgingcv1" value="0">
 														</div>
 														<div class="col-md-2">
 															<label class="form-label">X Night =</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" value="0" id="uln" disabled>
+															<input  type="text" class="form-control" value="0" id="ln" disabled>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1265,7 +1262,7 @@
 															<label class="form-label">Total Accomodation</label>
 														</div>
 														<div class="col-md-2">
-															<input readonly type="text" class="form-control" value="0" id="UTAV">
+															<input readonly type="text" class="form-control" value="0" id="TAV">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -1302,11 +1299,16 @@
 						</div>
 					</div>
 				
+					
 				<div class="col-md-6">	
+					
 				<div class="form-control">	
+					<div class="row p-2">
+						<h4>Personal Claims Table List:</h4>
+					</div>
 					<div class="row">
 						<div class="">	
-							<table id="uclaimtable1" class="table table-striped table-bordered align-middle">
+							<table id="claimtable1" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1372,9 +1374,14 @@
 							</table>
 						</div>
 					</div>
+					<br>
+					<div class="row p-2">
+						<h4>Travelling & Subsistence & Accomodation Table List:</h4>
+					</div>
 					<div class="row">
+						
 						<div class="">	
-							<table id="utraveltable" class="table table-striped table-bordered align-middle">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -1508,12 +1515,12 @@
 
 
 {{-- timpicker --}}
-{{-- <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script> --}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 {{-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> --}}
 <script src="../assets/plugins/timepicker/js/mdtimepicker.js"></script>
 <script>
 
-  $('#uclaimtable1').DataTable({
+  $('#claimtable1').DataTable({
 	"searching": false,
 	"lengthChange": true,
 	lengthMenu: [5, 10],
@@ -1522,7 +1529,7 @@
 	scrollX : true
   });
 
-  $('#uclaimtable').DataTable({
+  $('#claimtable').DataTable({
 	"searching": false,
 	"lengthChange": true,
 	lengthMenu: [5, 10],
@@ -1532,7 +1539,7 @@
   });
 
 
-  $('#utraveltable').DataTable({
+  $('#traveltable').DataTable({
 	"searching": false,
 	"lengthChange": true,
 	lengthMenu: [5, 10],
@@ -1541,84 +1548,84 @@
 	scrollX : true
   });
 	
-//   $("#datepicker-autoClose").datepicker({
-//     todayHighlight: true,
-//     autoclose: true,
-// 	format: 'dd/mm/yyyy',
-//   });
+  $("#datepicker-autoClose").datepicker({
+    todayHighlight: true,
+    autoclose: true,
+	format: 'dd/mm/yyyy',
+  });
   
 
-	$(document).on('change', "#uca", function() {
+	$(document).on('change', "#ca", function() {
        
 		if ($(this).val() == "1") {
-            $(".UWC").show();
-			$(".UWOC").hide();
+            $(".WC").show();
+			$(".WOC").hide();
             
         } else if ($(this).val() == "2"){
-			$(".UWC").hide();
-			$(".UWOC").show();
+			$(".WC").hide();
+			$(".WOC").show();
 		}
 		else {
-            $(".UWC").hide();
-            $(".UWOC").hide();
+            $(".WC").hide();
+            $(".WOC").hide();
         }
     });
 
 	//
-	$(document).on('change', "#uls", function() {
+	$(document).on('change', "#ls", function() {
        
 	   if ($(this).val() == "3") {
-		   $("#uproject").show();
+		   $("#project").show();
 		
 	   } else {
-            $("#uproject").hide();
+            $("#project").hide();
         }
 	   
 	  
    });
 
    //
-   $(document).on('change', "#udest", function() {
+   $(document).on('change', "#dest", function() {
        
 	   if ($(this).val() == "3") {
-		   $("#uprojectdest").show();
-		   $("#ulogname").hide();
+		   $("#projectdest").show();
+		   $("#logname").hide();
 		
 	   } else if ($(this).val() == "4"){
-			$("#uprojectdest").hide();
-			$("#ulogname").show();
+			$("#projectdest").hide();
+			$("#logname").show();
 
 		}    else {
-            $("#uprojectdest").hide();
-			$("#ulogname").hide();
+            $("#projectdest").hide();
+			$("#logname").hide();
         }  
 	  
    });
 
-   $("#udatepickerpc").datepicker({
+   $("#datepickerpc").datepicker({
     todayHighlight: true,
     autoclose: true,
 	format: 'dd-mm-yyyy'
-  });
+  }).datepicker("setDate",'now');
 
 
-  $("#udatepickertc").datepicker({
+  $("#datepickertc").datepicker({
     todayHighlight: true,
     autoclose: true,
 	format: 'dd-mm-yyyy'
-  });
+  }).datepicker("setDate",'now');
 
   
   $(function () {
-     $("#udate1, #udate2").datepicker({  format: 'mm/dd/yyyy'})
-     $('#utime1,#utime2').mdtimepicker({
+     $("#date1, #date2").datepicker({  format: 'mm/dd/yyyy'})
+     $('#time1,#time2').mdtimepicker({
        
      });
 
-	 $('#utimestart,#utimeend').mdtimepicker({
+	 $('#timestart,#timeend').mdtimepicker({
        
 	});
-	$('#udaystart,#udayend').datepicker({
+	$('#daystart,#dayend').datepicker({
                     format:'mm/dd/yyyy',
                 }).datepicker("setDate",'now');
  });
@@ -1626,11 +1633,11 @@
  
  $(document).ready(function () {
 	//calculate date range in subsistence allowance
-     $("#result1,#udate1,#utime1,#udate2,#utime2").focus(function () {
+     $("#result1,#date1,#time1,#date2,#time2").focus(function () {
 
-    var startdt = new Date($("#udate1").val() + " " + $("#utime1").val());
+    var startdt = new Date($("#date1").val() + " " + $("#time1").val());
     
-    var enddt = new Date($("#udate2").val() + " " + $("#utime2").val());
+    var enddt = new Date($("#date2").val() + " " + $("#time2").val());
 
     var diff = enddt - startdt;
     
@@ -1650,11 +1657,13 @@
  });
 
 //  calculate time duration un travelling
- $("#utotalduration,#udaystart,#utimestart,#udayend,#utimeend").focus(function () {
 
-var startdt = new Date($("#udaystart").val() + " " + $("#utimestart").val());
+// 
+ $("#totalduration,#daystart,#timestart,#dayend,#timeend").focus(function () {
 
-var enddt = new Date($("#udayend").val() + " " + $("#utimeend").val());
+var startdt = new Date($("#daystart").val() + " " + $("#timestart").val());
+
+var enddt = new Date($("#dayend").val() + " " + $("#timeend").val());
 
 var diff = enddt - startdt;
 
@@ -1667,76 +1676,78 @@ diff -= hours * (1000 * 60 * 60);
 var mins = Math.floor(diff / (1000 * 60));
 diff -= mins * (1000 * 60);
 
-$("#utotalduration").val(hours + " hours : " + mins + " minutes ");
+$("#totalduration").val(hours + " hours : " + mins + " minutes ");
 
 });
 
 
-$('#uhotelc').change(function() {
-  var s = $('#uhotelc input:checked').map(function() {
+
+
+$('#hotelc').change(function() {
+  var s = $('#hotelc input:checked').map(function() {
     return this.value;
   }).get().join(',');
-  $('#uhotelcv').val((s.length > 0 ? s : ""));
-  $('#uhotelcv1').val((s.length > 0 ? s : "0"));
+  $('#hotelcv').val((s.length > 0 ? s : ""));
+  $('#hotelcv1').val((s.length > 0 ? s : "0"));
 });
 
-$('#ulodgingc').change(function() {
-  var s = $('#ulodgingc input:checked').map(function() {
+$('#lodgingc').change(function() {
+  var s = $('#lodgingc input:checked').map(function() {
     return this.value;
   }).get().join(',');
-  $('#ulodgingcv').val((s.length > 0 ? s : ""));
-  $('#ulodgingcv1').val((s.length > 0 ? s : "0"));
+  $('#lodgingcv').val((s.length > 0 ? s : ""));
+  $('#lodgingcv1').val((s.length > 0 ? s : "0"));
   
 });
 
 // calculate total subsistence & accomadation
-$("#UBF,#UDBF,#ULH,#UDLH,#UDN,#UDDN,#UTS").change(function(){
-		var a = parseFloat($("#UBF").val()); //float
-		var b = parseInt($("#UDBF").val());
-		var c = parseFloat($("#ULH").val()); //float
-		var d = parseInt($("#UDLH").val());
-		var e = parseFloat($("#UDN").val()); //float
-		var f = parseInt($("#UDDN").val());
-        $("#UTS").val((a*b) + (c*d) + (e*f)); //float
+$("#BF,#DBF,#LH,#DLH,#DN,#DDN,#TS").change(function(){
+		var a = parseFloat($("#BF").val()); //float
+		var b = parseInt($("#DBF").val());
+		var c = parseFloat($("#LH").val()); //float
+		var d = parseInt($("#DLH").val());
+		var e = parseFloat($("#DN").val()); //float
+		var f = parseInt($("#DDN").val());
+        $("#TS").val((a*b) + (c*d) + (e*f)); //float
     });
 
 
-$("#uhtv,#uhotelcv1,#uhn,#ulodgingcv1,#uln,#uldgv").change(function(){
-		var a = parseFloat($("#uhotelcv1").val()); //float
-		var b = parseInt($("#uhn").val());
+$("#htv,#hotelcv1,#hn,#lodgingcv1,#ln,#ldgv").change(function(){
+		var a = parseFloat($("#hotelcv1").val()); //float
+		var b = parseInt($("#hn").val());
 
-		var c = parseFloat($("#ulodgingcv1").val()); //float
-		var d = parseInt($("#uln").val());
-		var e = parseFloat((a*b) + (c*d)).toFixed(2)
-   	 	$("#UTAV").val(e);
+		var c = parseFloat($("#lodgingcv1").val()); //float
+		var d = parseInt($("#ln").val());
+		var e = parseFloat((a*b) + (c*d)).toFixed(2);
+   	 	$("#TAV").val(e);
 
 });
 
 
-	$("#uhotelcv,#uhotelcv1,#uhn,#ulodgingcv,#uln,#uhtv,#uldgv,#UTS,#UTAV,#UDBF,#UDLH,#UDDN").change(function(){
+	$("#hotelcv,#hotelcv1,#hn,#lodgingcv,#hotelcv1,#ln,#htv,#ldgv,#TS,#TAV,#DBF,#DLH,#DDN").change(function(){
 		
-		var a = parseFloat($("#UTS").val());	
-		var b = parseFloat($("#UTAV").val());
+		var a = parseFloat($("#TS").val());	
+		var b = parseFloat($("#TAV").val());
 		var c = parseFloat(a + b).toFixed(2)
 		$("#total2").val(c);
 
 });
 
-$('#uhtv').click(function() {
+$('#htv').click(function() {
     if (this.checked) {
-        $('#uhn').prop('disabled', false); // If checked enable item      
+        $('#hn').prop('disabled', false); // If checked enable item      
     } else {
-        $('#uhn').prop('disabled', true); // If checked disable item   
-		$("#uhn").val(0);               
+        $('#hn').prop('disabled', true); // If checked disable item   
+		$("#hn").val(0);               
     }
 });
 
-	$('#uldgv').click(function() {
+	$('#ldgv').click(function() {
 		if (this.checked) {
-			$('#uln').prop('disabled', false); // If checked enable item      
+			$('#ln').prop('disabled', false); // If checked enable item      
 		} else {
-			$('#uln').prop('disabled', true); // If checked disable item   
-			$("#uln").val(0);               
+			$('#ln').prop('disabled', true); // If checked disable item   
+			$("#ln").val(0);               
 		}
 	});
 </script>

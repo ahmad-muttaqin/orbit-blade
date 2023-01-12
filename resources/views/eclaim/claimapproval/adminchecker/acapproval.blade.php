@@ -358,7 +358,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -654,8 +654,6 @@
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
-                                    <button class="btn btn-primary"  type="button">Skip the Queue</button>&nbsp;
-                                    <button class="btn btn-primary"  type="button">Approve All</button>&nbsp;
                                     <button class="btn btn-primary"  type="button" id="filter"> <i class="fa fa-filter" aria-hidden="true"></i></button>&nbsp;
                                     <button class="btn btn-primary"  type="button"> <i class='far fa-file-pdf'></i></button>&nbsp;
                                 </div>  
@@ -740,7 +738,7 @@
                                 <table  id="activetable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
-                                        <th  data-orderable="false"></th>	
+                                        
                                         <th  data-orderable="false">Action</th>
                                         <th class="text-nowrap">Applied Date</th>
                                         <th class="text-nowrap">Employee Name</th>
@@ -754,7 +752,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -779,7 +777,7 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -804,7 +802,7 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -835,7 +833,7 @@
                                 <table  id="checkedtable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
-                                        <th  data-orderable="false"></th>	
+                                        
                                         <th  data-orderable="false">Action</th>
                                         <th class="text-nowrap">Applied Date</th>
                                         <th class="text-nowrap">Employee Name</th>
@@ -849,7 +847,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -874,7 +872,7 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -899,7 +897,7 @@
                                         <td>22/07/2022</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -930,7 +928,7 @@
                                 <table  id="amendtable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
-                                        <th  data-orderable="false"></th>	
+                                        
                                         <th  data-orderable="false">Action</th>
                                         <th class="text-nowrap">Applied Date</th>
                                         <th class="text-nowrap">Employee Name</th>
@@ -945,7 +943,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -971,7 +969,7 @@
                                         <td>file not <br> attached</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -997,7 +995,7 @@
                                         <td>incomplete</td> 
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -1029,7 +1027,7 @@
                                 <table  id="rejectedtable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
-                                        <th  data-orderable="false"></th>	
+                                        
                                         <th  data-orderable="false">Action</th>
                                         <th class="text-nowrap">Applied Date</th>
                                         <th class="text-nowrap">Employee Name</th>
@@ -1044,7 +1042,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -1070,7 +1068,7 @@
                                         <td>file not <br> attached</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
@@ -1096,7 +1094,7 @@
                                         <td>incomplete</td> 
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
+                                       
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">

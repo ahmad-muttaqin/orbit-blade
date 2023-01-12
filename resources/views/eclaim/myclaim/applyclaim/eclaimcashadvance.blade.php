@@ -352,7 +352,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -626,14 +626,7 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Travel Date</label>
@@ -647,7 +640,9 @@
 												<label class="form-label">Project</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -655,7 +650,9 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -669,8 +666,12 @@
 										<div class="row p-2">
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" >Reset</button>
-												<button type="button" class="btn btn-primary" >Save</button>
+												<button type="button" class="btn btn-primary" >Add</button>
 											</div>		
+										</div>
+
+										<div class="row p-2">
+											<h4>Project Table List :</h4>
 										</div>
 										<div class="row p-2">
 										<table id="claimtable" class="table table-striped table-bordered align-middle">
@@ -741,20 +742,13 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input type="text" class="form-control" id="datefilter2" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -762,7 +756,9 @@
 												<label class="form-label">Project</label>
 											</div>
 											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -770,7 +766,9 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<select class="form-select" id="" readonly>
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -798,20 +796,13 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input type="text" class="form-control" id="datefilter3" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -819,7 +810,7 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input  type="text" class="form-control">
 											</div>
 										</div>
 										<div class="row p-2">
@@ -849,18 +840,10 @@
 										</div>
 										<div class="row p-2">
 											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
 												<label class="form-label">Date of Required Cash</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input type="text" class="form-control" id="datefilter4" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -917,6 +900,9 @@
 											</div>
 											<!-- For Personal Car/Personal Motorcycle/Company Car -->
 												<div class="SAC" style="display: none">
+													<div class="subacco">
+
+													
 													<div class="row p-2">
 														<div class="col-md-4">
 															<label class="form-label">Subsistance Allowance :</label>
@@ -930,7 +916,7 @@
 															<label class="form-label">Day</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" id="day" value="0">
+															<input  type="text" class="form-control" id="day" value="0" >
 														</div>
 														<div class="col-md-1">
 															<label class="form-label">X</label>
@@ -995,6 +981,7 @@
 															<input type="text" class="form-control" id="acco" value="350" readonly >
 														</div>
 													</div>
+
 													<div class="row p-2">
 														<div class="col-md-2">
 															<label class="form-label"></label>
@@ -1016,6 +1003,7 @@
 														</div>
 													</div>
 												</div>
+											</div>
 												<div class="TE" style="display: none">
 													<div class="row p-2">
 														<div class="col-md-3">
@@ -1088,13 +1076,13 @@
 														</div>
 													</div>
 												</div>
-												<div class="SV" style="display: none">
+												{{-- <div class="SV" style="display: none">
 													<div class="row p-2">
 														<div class="modal-footer">
-															<button type="button" class="btn btn-primary" >Save</button>
+															<button type="button" class="btn btn-primary" >Save1</button>
 														</div>
 													</div>
-												</div>
+												</div> --}}
 											</div>
 											<!--  END For Carpool -->
 										</div>
@@ -1106,8 +1094,12 @@
 								<div class="col align-self-start">
 									<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
 								</div>
-								
+								{{-- <div class="col d-flex justify-content-end">
+									
+								</div> --}}
 								<div class="col d-flex justify-content-end">
+									
+									<a class="btn btn-light" style="color: black" type="submit" id="btnONO"><i class="fa fa-save"></i> Save</a>&nbsp;
 									<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
 								</div>
 							</div>
@@ -1168,7 +1160,9 @@
 			$(".PNO").hide();
 			$(".OTHERSNO").hide();
 			$(".OTHERSO").hide();
-            
+            $(".subacco").show();
+			
+
         } else if ($(this).val() == "2"){
 			
 			$(".PO").hide();
@@ -1176,6 +1170,8 @@
 			$(".MOT").show();
 			$(".OTHERSNO").hide();
 			$(".OTHERSO").hide();
+			$(".subacco").hide();
+			
 
 		} else if ($(this).val() == "3"){
 			
@@ -1184,6 +1180,8 @@
 			$(".PO").hide();
 			$(".PNO").hide();
 			$(".OTHERSNO").hide();
+			$(".subacco").show();
+			
 
 		} else if ($(this).val() == "4"){
 			
@@ -1192,6 +1190,8 @@
 			$(".MOT").hide();
 			$(".PO").hide();
 			$(".PNO").hide();
+			$(".subacco").show();
+			
 		}
 		else {
 			$(".OTHERSNO").hide();
@@ -1199,6 +1199,7 @@
             $(".PO").hide();
 			$(".MOT").hide();
 			$(".PNO").hide();
+			$(".subacco").show();
 			
         }
     });
@@ -1333,14 +1334,49 @@ $('#datefilter1').daterangepicker({
 	}
 });
 
+$('#datefilter2').daterangepicker({
+	autoUpdateInput: false,
+	locale: {
+		cancelLabel: 'Clear'
+	}
+});
+
+$('#datefilter3').daterangepicker({
+	autoUpdateInput: false,
+	locale: {
+		cancelLabel: 'Clear'
+	}
+});
 $('#datefilter1').on('apply.daterangepicker', function(ev, picker) {
-	$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
 });
 
 $('#datefilter1').on('cancel.daterangepicker', function(ev, picker) {
 	$(this).val('');
 });
 
+$('#datefilter2').on('apply.daterangepicker', function(ev, picker) {
+	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+});
+
+$('#datefilter2').on('cancel.daterangepicker', function(ev, picker) {
+	$(this).val('');
+});
+
+$('#datefilter3').on('apply.daterangepicker', function(ev, picker) {
+	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+});
+
+$('#datefilter3').on('cancel.daterangepicker', function(ev, picker) {
+	$(this).val('');
+});
+
+$("#datefilter4").datepicker({
+    todayHighlight: true,
+    autoclose: true,
+	format: 'dd/mm/yyyy',
+	orientation: "bottom"
+  });
 });
 </script>
 
