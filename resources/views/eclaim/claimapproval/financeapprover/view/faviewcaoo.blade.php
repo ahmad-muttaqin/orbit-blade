@@ -3,7 +3,7 @@
 <html lang="en" >
 	
 <head>
-	<meta charset="utf-8" /> 
+	<meta charset="utf-8" />
 	<title>OrbitHRM  </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Head of Department | View Cash Advance | Project ( Non-Outstation )</small></h1>
+	<h1 class="page-header">eClaim <small>| Admin Checker | View Cash Advance | Others ( Outstation )</small></h1>
 
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -641,7 +641,6 @@
 								<input readonly type="text" class="form-control">
 							</div>
 						</div>
-						
 						<div class="row p-2">
 							<div class="col-md-3">	
 							<label class="form-label col-form-label">Travel Date :</label>
@@ -692,7 +691,20 @@
 						<div class="row p-2">
 							<h4> Travel Expenses</h4>
 						</div>
-						
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Subsistence Allowance :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Accommodation :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
 						<div class="row p-2">
 							<div class="col-md-3">	
 								<label class="form-label col-form-label">Travel Expenses :</label>
@@ -939,6 +951,8 @@
 		</div>
 	</div>
 	
+		
+	<!-- END row -->
 	<!-- Modal amend -->
 	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -994,10 +1008,6 @@
           </div>
         </div>
       </div>	
-	  
-				
-	<!-- END row -->
-	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->
@@ -1036,7 +1046,7 @@
 
 
 <script>
-   
+  
 	
 	
 

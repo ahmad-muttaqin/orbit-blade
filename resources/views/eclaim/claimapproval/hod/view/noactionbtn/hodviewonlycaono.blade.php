@@ -3,7 +3,7 @@
 <html lang="en" >
 	
 <head>
-	<meta charset="utf-8" /> 
+	<meta charset="utf-8" />
 	<title>OrbitHRM  </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Head of Department | View Cash Advance | Project ( Non-Outstation )</small></h1>
+	<h1 class="page-header">eClaim <small>| Head of Department | View Cash Advance | Others ( Non-Outstation )</small></h1>
 
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -644,24 +644,7 @@
 						
 						<div class="row p-2">
 							<div class="col-md-3">	
-							<label class="form-label col-form-label">Travel Date :</label>
-								
-							</div>
-							<div class="col-md-9">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Project :</label>
-							</div>
-							<div class="col-md-9">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-							<label class="form-label col-form-label">Destination :</label>
+							<label class="form-label col-form-label">Date of Cash Required :</label>
 								
 							</div>
 							<div class="col-md-9">	
@@ -678,95 +661,26 @@
 						</div>
 						<div class="row p-2">
 							<div class="col-md-3">	
-							<label class="form-label col-form-label">Mode of Transport :</label>
+							<label class="form-label col-form-label">Amount :</label>
 								
 							</div>
 							<div class="col-md-9">	
 								<input readonly type="text" class="form-control">
 							</div>
 						</div>
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Supporting Document :</label>
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
+						
 						
 					</div>
-					<br>
-					<div class="form-control">
-						<div class="row p-2">
-							<h4> Travel Expenses</h4>
-						</div>
-						
-						<div class="row p-2">
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Travel Expenses :</label>
-							</div>
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Fuel Parking :</label>
-							</div>
-							<div class="col-md-3">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Toll/Parking :</label>
-							</div>
-							<div class="col-md-3">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Entertainment :</label>
-							</div>
-							<div class="col-md-3">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Total :</label>
-							</div>
-							<div class="col-md-3">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-						<div class="row p-2">
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								
-							</div>
-							<div class="col-md-3">	
-								<label class="form-label col-form-label">Maximum Paid Out (75%) :</label>
-							</div>
-							<div class="col-md-3">	
-								<input readonly type="text" class="form-control">
-							</div>
-						</div>
-					</div>
+					
+					
 				</div>
 				<div class="col-md-5">	
 				
@@ -932,14 +846,12 @@
 			</div>	
 			<div class="col d-flex justify-content-end">
 				<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-				<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-				<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-				<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 			</div>
 		</div>
 	</div>
 	
-	<!-- Modal amend -->
+		
+		<!-- Modal amend -->
 	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -994,8 +906,6 @@
           </div>
         </div>
       </div>	
-	  
-				
 	<!-- END row -->
 	
 	<!-- END #app -->

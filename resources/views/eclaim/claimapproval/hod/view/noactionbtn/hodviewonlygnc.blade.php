@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Claim Approval | Supervisor | View General Claim </small></h1>
+	<h1 class="page-header">eClaim <small>| Claim Approval | Head of Department | View General Claim </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -880,9 +880,6 @@
 				</div>	
 				<div class="col d-flex justify-content-end">
 					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 				</div>
 			</div>
 		</div>
@@ -899,53 +896,92 @@
             </div>
             <div class="modal-body">
 				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Applied Date</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Claim Category</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Amount</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
+						<div class="col-md-3">
+							<label class="form-label">Year</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								<option class="form-label" value="2022">2022</option>
+								<option class="form-label" value="2023">2023</option>
+								<option class="form-label" value="2024">2024</option>
+								<option class="form-label" value="2025">2025</option>
+							</select>							
+						</div>
 					</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Description</label>
-                    </div>
-					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
-                    </div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Month</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Applied Date</label>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group" >
+								<input type="text" name="" class="form-control" value=""  readonly/>
+									<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>					
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Claim Category</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
+				{{-- akan tarik data dari  labelling name dlam setting add claim --}}
+					<div class="row p-2">
+						<div class="col-md-3"> 
+							<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
+						</div>
+						<div class="col-md-9"> 
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Amount (MYR)</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="number" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Description</label>
+						</div>
+						<div class="col-md-9">
+							<textarea class="form-control" rows="3" readonly></textarea>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Supporting Document</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="text" class="form-control" readonly>
+						</div>
+					</div>
 				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Supporting Document</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                   
-				</div>
-				
-				</div>
-				<div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                
-            </div>
+					<div class="row p-2">
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>		

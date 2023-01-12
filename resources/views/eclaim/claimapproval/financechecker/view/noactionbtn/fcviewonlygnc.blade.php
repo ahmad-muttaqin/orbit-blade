@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Claim Approval | Supervisor | View General Claim </small></h1>
+	<h1 class="page-header">eClaim <small>| Claim Approval | Finance Checker | View General Claim </small></h1>
 	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
@@ -651,6 +651,7 @@
 								<thead>
 									<tr>
 										<th>Action</th>
+										<th>Checker</th>
 										<th class="text-nowrap">Applied Date</th>
 										<th class="text-nowrap">Claim Category</th>
 										<th class="text-nowrap">Amount</th>
@@ -663,6 +664,7 @@
 									
 									<tr>
 										<td><a data-bs-toggle="modal" id="btn-view" class="btn btn-primary btn-sm">View</a></td>
+										<td><input type="checkbox" class="form-check-input"  disabled/> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -671,6 +673,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM30</td>
@@ -679,6 +682,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -687,6 +691,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM50</td>
@@ -695,6 +700,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>
 										<td>21/07/2022</td>
 										<td>Telephone</td>
 										<td>RM40</td>
@@ -703,6 +709,7 @@
 									</tr>
 									<tr>
 										<td><button type="button" class="btn btn-primary btn-sm">View</button></td>
+										<td><input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>
 										<td>21/07/2022</td>
 										<td>Entertainment</td>
 										<td>RM140</td>
@@ -880,9 +887,6 @@
 				</div>	
 				<div class="col d-flex justify-content-end">
 					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 				</div>
 			</div>
 		</div>
@@ -899,112 +903,98 @@
             </div>
             <div class="modal-body">
 				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Applied Date</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Claim Category</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Amount</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
+						<div class="col-md-3">
+							<label class="form-label">Year</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								<option class="form-label" value="2022">2022</option>
+								<option class="form-label" value="2023">2023</option>
+								<option class="form-label" value="2024">2024</option>
+								<option class="form-label" value="2025">2025</option>
+							</select>							
+						</div>
 					</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Description</label>
-                    </div>
-					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
-                    </div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Month</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Applied Date</label>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group" >
+								<input type="text" name="" class="form-control" value=""  readonly/>
+									<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>					
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Claim Category</label>
+						</div>
+						<div class="col-md-9">
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+								
+							</select>
+						</div>
+					</div>
+				{{-- akan tarik data dari  labelling name dlam setting add claim --}}
+					<div class="row p-2">
+						<div class="col-md-3"> 
+							<input type="text" value="test" class="form-control" name="labellingname" id="label" readonly>
+						</div>
+						<div class="col-md-9"> 
+							<select class="form-select" disabled>
+								<option class="form-label" value="Please Select" selected>Please Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Amount (MYR)</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="number" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Description</label>
+						</div>
+						<div class="col-md-9">
+							<textarea class="form-control" rows="3" readonly></textarea>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3">
+							<label class="form-label">Supporting Document</label>
+						</div>
+						<div class="col-md-9">
+							<input  type="text" class="form-control" readonly>
+						</div>
+					</div>
 				</div>
-				<div class="row p-2">
-                    <div class="col-md-6">
-                        <label class="form-label col-form-label">Supporting Document</label>
-                    </div>
-					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                   
-				</div>
-				
-				</div>
-				<div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                
-            </div>
+					<div class="row p-2">
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>		
 
-	<!-- Modal amend -->
-	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-	  <!-- Modal reject -->
-      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
+	
+	  
 	<!-- END row -->
 	
 	<!-- END #app -->

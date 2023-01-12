@@ -976,9 +976,6 @@
 				</div>	
 				<div class="col d-flex justify-content-end">
 					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 				</div>
 			</div>
 		</div>
@@ -1132,7 +1129,6 @@
 				</div>
 				</div>
 				<div class="modal-footer">
-				<button type="button" class="btn btn-lime" data-bs-dismiss="modal">Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
@@ -1322,7 +1318,6 @@
 				</div>
 				</div>
 				<div class="modal-footer">
-				<button type="button" class="btn btn-lime" data-bs-dismiss="modal">Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
@@ -1392,7 +1387,6 @@
 				
 				</div>
 				<div class="modal-footer">
-				<button type="button" class="btn btn-lime">Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
@@ -1400,63 +1394,6 @@
 		</div>
 	</div>		
 
-	<!-- Modal amend -->
-	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-	  <!-- Modal reject -->
-      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
-	<!-- END row -->
-	
 	<!-- END #app -->
 	
 	<!-- ================== BEGIN core-js ================== -->

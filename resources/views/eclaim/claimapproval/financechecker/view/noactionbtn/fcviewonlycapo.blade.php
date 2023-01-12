@@ -3,7 +3,7 @@
 <html lang="en" >
 	
 <head>
-	<meta charset="utf-8" /> 
+	<meta charset="utf-8" />
 	<title>OrbitHRM  </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
@@ -601,8 +601,8 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Head of Department | View Cash Advance | Project ( Non-Outstation )</small></h1>
-
+	<h1 class="page-header">eClaim <small>| Finance Checker | View Cash Advance | Project ( Outstation )</small></h1>
+	
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
@@ -641,7 +641,15 @@
 								<input readonly type="text" class="form-control">
 							</div>
 						</div>
-						
+						<div class="row p-2">
+							<div class="col-md-3">	
+							<label class="form-label col-form-label">Mode of Transport :</label>
+								
+							</div>
+							<div class="col-md-9">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
 						<div class="row p-2">
 							<div class="col-md-3">	
 							<label class="form-label col-form-label">Travel Date :</label>
@@ -677,13 +685,54 @@
 							</div>
 						</div>
 						<div class="row p-2">
-							<div class="col-md-3">	
-							<label class="form-label col-form-label">Mode of Transport :</label>
-								
-							</div>
-							<div class="col-md-9">	
-								<input readonly type="text" class="form-control">
-							</div>
+						<table id="claimtable" class="table table-striped table-bordered align-middle">
+							<thead>
+								<tr>
+									<th class="text-nowrap">Travel Date</th>
+									<th class="text-nowrap">Project</th>
+									<th class="text-nowrap">Destination</th>
+									<th class="text-nowrap">Purpose</th>
+								</tr>
+							</thead>
+								<tbody>
+									<tr>
+										<td>1/1/2022</td>
+										<td>Orbit</td>
+										<td>Kuala Lumpur</td>
+										<td>Meeting</td>
+									</tr>
+									<tr>
+										<td>1/1/2022</td>
+										<td>Payje</td>
+										<td>Putrajaya</td>
+										<td>Project Discussion</td>
+									</tr>
+									<tr>
+										<td>1/1/2022</td>
+										<td>Orbit</td>
+										<td>Kuala Lumpur</td>
+										<td>Meeting</td>
+									</tr>
+									<tr>
+										<td>1/1/2022</td>
+										<td>MyVM</td>
+										<td>Selangor</td>
+										<td>Meeting</td>
+									</tr>
+									<tr>
+										<td>1/1/2022</td>
+										<td>Payje</td>
+										<td>Kuala Lumpur</td>
+										<td>Meeting</td>
+									</tr>
+									<tr>
+										<td>1/1/2022</td>
+										<td>Orbit</td>
+										<td>Kajang</td>
+										<td>Meeting</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 						
 					</div>
@@ -692,7 +741,20 @@
 						<div class="row p-2">
 							<h4> Travel Expenses</h4>
 						</div>
-						
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Subsistence Allowance :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Accommodation :</label>
+							</div>
+							<div class="col-md-3">	
+								<input readonly type="text" class="form-control">
+							</div>
+						</div>
 						<div class="row p-2">
 							<div class="col-md-3">	
 								<label class="form-label col-form-label">Travel Expenses :</label>
@@ -932,70 +994,71 @@
 			</div>	
 			<div class="col d-flex justify-content-end">
 				<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-				<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-				<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-				<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 			</div>
 		</div>
 	</div>
 	
-	<!-- Modal amend -->
-	<div class="modal fade" id="modalamend" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+	
+	  <!-- Modal view -->
+	<div class="modal fade" id="modal-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Amendment</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Applied Date</label>
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-	  <!-- Modal reject -->
-      <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reason for Rejection</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">State Reason</label><br>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="input reason"></textarea>
-                        </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>	
-	  
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Claim Category</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Amount</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
+					</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-6">
+                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label">Supporting Document</label>
+                    </div>
+					<div class="col-md-6">
+                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                    </div>
 				
+                   
+				</div>
+				
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
+			</div>
+		</div>
+	</div>		
 	<!-- END row -->
 	
 	<!-- END #app -->
@@ -1036,10 +1099,13 @@
 
 
 <script>
-   
-	
-	
-
+   $("#claimtable").DataTable({
+        responsive: false,
+        lengthMenu: [
+            [5,10, 15, 20, -1],
+            [5,10, 15, 20, 'All'],
+        ],
+    });
 	
 </script>
 
