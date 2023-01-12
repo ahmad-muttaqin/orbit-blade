@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Supervisor | View Cash Advance | Others ( Non-Outstation )</small></h1>
+	<h1 class="page-header">eClaim <small>| Head of Department | View Cash Advance | Others ( Non-Outstation )</small></h1>
 
 	<!-- END page-header -->
 	<!-- BEGIN panel -->

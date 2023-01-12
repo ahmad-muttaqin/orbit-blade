@@ -188,7 +188,7 @@
                         </div>
                     </div>
 
-                    <!-- End Sidenav Content Orbit -->
+                    <!-- End Sidenav Content Orbit --> 
                     <!-- Sidenav Content Orbit -->
 
                     <div class="menu-item has-sub">
@@ -1344,7 +1344,7 @@
                         <label class="form-label col-form-label">Applied Date</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1352,16 +1352,23 @@
                         <label class="form-label col-form-label">Claim Category</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
-				
+				<div class="row p-2">
+					<div class="col-md-6"> 
+						<input type="text" class="form-control" name="labellingname" id="" readonly value="">
+					</div>
+					<div class="col-md-6"> 
+						<input type="text" readonly class="form-control" >
+					</div>
+				</div>
 				<div class="row p-2">
                     <div class="col-md-6">
                         <label class="form-label col-form-label">Amount</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 					</div>
 				<div class="row p-2">
@@ -1369,7 +1376,7 @@
                         <label class="form-label col-form-label">Description</label>
                     </div>
 					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
+                        <textarea type="text" readonly class="form-control"  rows="3" maxlength="255"></textarea>
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1377,7 +1384,7 @@
                         <label class="form-label col-form-label">Supporting Document</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                    
@@ -1385,7 +1392,7 @@
 				
 				</div>
 				<div class="modal-footer">
-				<button type="button" class="btn btn-lime" >Check</button>
+				<button type="button" class="btn btn-lime">Check</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 
             </div>
