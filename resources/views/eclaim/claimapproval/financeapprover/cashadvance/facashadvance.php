@@ -601,7 +601,7 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	    <h1 class="page-header">eClaim | Cash Advance Approval | Finance Checker</h1>
+	    <h1 class="page-header">eClaim | Cash Advance Approval | Finance Approver</h1>
         <div class="panel panel">
             <div class="panel-body">
                 <div class="form-control">
@@ -645,7 +645,7 @@
                                             <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Active</a>   
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">In Process</a>   
+                                            <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">Approved</a>   
                                         </li>
                                         <li class="nav-item">
                                             <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Paid</a>   
@@ -752,7 +752,6 @@
                                             <th class="text-nowrap"> Amount</th>
                                             <th class="text-nowrap">Status</th>
                                             <th class="text-nowrap">Status  Date</th>
-                                            <th class="text-nowrap">Category</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -762,7 +761,7 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
@@ -776,7 +775,6 @@
                                             <td>MYR130</td>
                                             <td>Pending</td>
                                             <td>21/7/2022</td>
-                                            <td>PO</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -784,7 +782,7 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
@@ -799,7 +797,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>PNO</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -807,7 +804,7 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
@@ -822,7 +819,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>OO</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -830,7 +826,7 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
@@ -845,7 +841,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>ONO</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -864,7 +859,6 @@
                                             <th class="text-nowrap"> Amount</th>
                                             <th class="text-nowrap">Status</th>
                                             <th class="text-nowrap">Status  Date</th>
-                                            <th class="text-nowrap">Category</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -873,10 +867,6 @@
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -888,17 +878,12 @@
                                             <td>MYR130</td>
                                             <td>Pending</td>
                                             <td>21/7/2022</td>
-                                            <td>PO</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -911,17 +896,12 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>PNO</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -934,17 +914,12 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>OO</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -957,7 +932,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>ONO</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -988,10 +962,6 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
                                             <td>201</td>
@@ -1009,10 +979,6 @@
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1033,10 +999,6 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
                                             </td>
@@ -1055,10 +1017,6 @@
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1100,10 +1058,6 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
                                             <td>201</td>
@@ -1121,10 +1075,6 @@
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1145,10 +1095,6 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
                                             </td>
@@ -1167,10 +1113,6 @@
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1212,10 +1154,6 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
                                             <td>201</td>
@@ -1233,10 +1171,6 @@
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1257,10 +1191,6 @@
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                                    <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
                                             </td>
@@ -1279,10 +1209,6 @@
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
