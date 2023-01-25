@@ -609,3 +609,8 @@ Route::get('/eLeave/LeaveApproval', function () {
 Route::get('/setting/eleave', function () {
     return view('eleave/myleave');
 });
+
+
+Route::get('/eleave/myleave', function () {
+    return view('eleave/myleave');
+});
