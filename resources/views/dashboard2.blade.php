@@ -925,11 +925,11 @@
 
 <div class="row">
 		<div class="col-lg-6 panel panel-inverse">
-		<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+			<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 		</div>
 						
 		<div class="col-lg-6 panel panel-inverse">
-		<canvas id="bar-chart-grouped" style="width:100%;max-width:600px"></canvas>
+			<canvas id="bar-chart-grouped" style="width:100%;max-width:600px"></canvas>
 		</div>
 </div>
 
