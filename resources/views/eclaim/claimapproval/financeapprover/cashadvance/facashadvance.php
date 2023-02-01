@@ -601,61 +601,64 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	    <h1 class="page-header">eClaim | Claim Approval | Finance Recommender</h1>
+	    <h1 class="page-header">eClaim | Cash Advance Approval | Finance Approver</h1>
         <div class="panel panel">
             <div class="panel-body">
                 <div class="form-control">
-                    <h3>Claim Overview</h3>
-                    <div class="row p-2">	
+                    
+                 <div class="form-control">
+                    <div class="row p-2">
+                        <h3>Cash Advance Overview</h3>
+                        <div class="row p-2">	
                             <div class="col-sm-3">
-                                <h3 class="text-center">Total <br> Claims:</h3>
+                                <h3 class="text-center">Total <br> Cash Advance:</h3>
                                 <h3 class="text-center text-primary ">2</h3>
                             </div>
                             
                             <div class="col-sm-3">
                             
-                            <h3 class="text-center">Total <br> Pending  Claims:</h3>
+                            <h3 class="text-center">Total  Pending Cash <br> Advance: </h3>
                             <h3 class="text-center text-primary">3</h3>
                             </div>
                 
                             <div class="col-sm-3">
                                 
-                                <h3 class="text-center">Total <br> Rejected Claims</h3>
+                                <h3 class="text-center">Total Rejected <br> Cash Advance:</h3>
                                 <h3 class="text-center text-primary">6</h3>
                             </div>
                             
                             <div class="col-sm-3">
-                                
-                                <h3 class="text-center">Total <br> Closed Claims:</h3>
-                                <h3 class="text-center text-primary">0</h3>
+                                <h3 class="text-center">Total Closed <br> Cash Advance:</h3>
+                                <h3 class="text-center text-primary">5</h3>
                             </div>
                         </div>
                     </div>
+                </div>
                 <br>
-                 
                 <div class="form-control">
                     <div class="row p-2">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col d-flex justify-content-start">
                                     <ul class="nav nav-pills">
-                                    <li class="nav-item">
-                                        <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Active</a>   
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">Recommended</a>  
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Amend</a>  
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#default-tab-4" data-bs-toggle="tab" class="nav-link ">Rejected</a>  
-                                    </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Active</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">Approved</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Paid</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-4" data-bs-toggle="tab" class="nav-link ">Rejected</a>   
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#default-tab-5" data-bs-toggle="tab" class="nav-link ">Closed</a>   
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
-                                    <button class="btn btn-primary"  type="button">Skip the Queue</button>&nbsp;
-                                    <button class="btn btn-primary"  type="button">Approve All</button>&nbsp;
                                     <button class="btn btn-primary"  type="button" id="filter"> <i class="fa fa-filter" aria-hidden="true"></i></button>&nbsp;
                                     <button class="btn btn-primary"  type="button"> <i class='far fa-file-pdf'></i></button>&nbsp;
                                 </div>  
@@ -736,395 +739,495 @@
                     </div>
                         <div class="tab-content panel p-3 rounded">
                             <div class="tab-pane fade active show" id="default-tab-1">
-                                {{-- claim approval --}}
-                                <table  id="activetable"  class="table table-striped table-bordered align-middle">
+                                <!-- {{-- claim approval --}} -->
+                                <table  id="tableactive"  class="table table-striped table-bordered align-middle">
                                     <thead>
-                                    <tr>
-                                        <th  data-orderable="false"></th>	
-                                        <th  data-orderable="false">Action</th>
-                                        <th class="text-nowrap">Applied Date</th>
-                                        <th class="text-nowrap">Employee Name</th>
-                                        <th class="text-nowrap">Month</th>
-                                        <th class="text-nowrap">Claim ID</th>
-                                        <th class="text-nowrap">Claim Type</th>
-                                        <th class="text-nowrap">Total Amount</th>
-                                        <th class="text-nowrap">Status</th>
-                                        <th class="text-nowrap">Status Date</th>
-                                    </tr>
+                                        <tr>
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Cash Advance ID</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Type of Cash Advance</th>
+                                            <th class="text-nowrap">Request Date</th>
+                                            <th class="text-nowrap">Travel Date</th>
+                                            <th class="text-nowrap"> Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status  Date</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
+                                        <tr>
+                                            <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                                <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Nor Alia Ahmad</td>
-                                        <td>July</td>
-                                        <td>101</td>
-                                        <td>MTC</td>
-                                        <td>MYR100.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            <td>201</td>
+                                            <td>Marimar</td>
+                                            <td>Project  (Outstation)</td>
+                                            <td>20/7/2022</td>
+                                            <td>24/7/2022</td>
+                                            <td>MYR130</td>
+                                            <td>Pending</td>
+                                            <td>21/7/2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Project (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approved</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-2">
-                                <table  id="checkedtable"  class="table table-striped table-bordered align-middle">
+                                <!-- {{-- claim approval --}} -->
+                                <table  id="tableprocess"  class="table table-striped table-bordered align-middle">
                                     <thead>
-                                    <tr>
-                                        <th  data-orderable="false"></th>	
-                                        <th  data-orderable="false">Action</th>
-                                        <th class="text-nowrap">Applied Date</th>
-                                        <th class="text-nowrap">Employee Name</th>
-                                        <th class="text-nowrap">Month</th>
-                                        <th class="text-nowrap">Claim ID</th>
-                                        <th class="text-nowrap">Claim Type</th>
-                                        <th class="text-nowrap">Total Amount</th>
-                                        <th class="text-nowrap">Status</th>
-                                        <th class="text-nowrap">Status Date</th>
-                                    </tr>
+                                        <tr>
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Cash Advance ID</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Type of Cash Advance</th>
+                                            <th class="text-nowrap">Request Date</th>
+                                            <th class="text-nowrap">Travel Date</th>
+                                            <th class="text-nowrap"> Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status  Date</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
+                                        <tr>
+                                            <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                                <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Nor Alia Ahmad</td>
-                                        <td>July</td>
-                                        <td>101</td>
-                                        <td>MTC</td>
-                                        <td>MYR100.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            <td>201</td>
+                                            <td>Marimar</td>
+                                            <td>Project  (Outstation)</td>
+                                            <td>20/7/2022</td>
+                                            <td>24/7/2022</td>
+                                            <td>MYR130</td>
+                                            <td>Pending</td>
+                                            <td>21/7/2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Project (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-3">
-                                <table  id="amendtable"  class="table table-striped table-bordered align-middle">
+                                <!-- {{-- claim approval --}} -->
+                                <table  id="tablepaid"  class="table table-striped table-bordered align-middle">
                                     <thead>
-                                    <tr>
-                                        <th  data-orderable="false"></th>	
-                                        <th  data-orderable="false">Action</th>
-                                        <th class="text-nowrap">Applied Date</th>
-                                        <th class="text-nowrap">Employee Name</th>
-                                        <th class="text-nowrap">Month</th>
-                                        <th class="text-nowrap">Claim ID</th>
-                                        <th class="text-nowrap">Claim Type</th>
-                                        <th class="text-nowrap">Total Amount</th>
-                                        <th class="text-nowrap">Status</th>
-                                        <th class="text-nowrap">Status Date</th>
-                                        <th class="text-nowrap">Remarks</th> 
-                                    </tr>
+                                        <tr>
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Cash Advance ID</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Type of Cash Advance</th>
+                                            <th class="text-nowrap">Request Date</th>
+                                            <th class="text-nowrap">Travel Date</th>
+                                            <th class="text-nowrap"> Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status  Date</th>
+                                            <th class="text-nowrap">Advance PV No</th>
+
+                                            
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
+                                        <tr>
+                                            <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                                <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Nor Alia Ahmad</td>
-                                        <td>July</td>
-                                        <td>101</td>
-                                        <td>MTC</td>
-                                        <td>MYR100.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>file not <br> attached</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            <td>201</td>
+                                            <td>Marimar</td>
+                                            <td>Project  (Outstation)</td>
+                                            <td>20/7/2022</td>
+                                            <td>24/7/2022</td>
+                                            <td>MYR130</td>
+                                            <td>Pending</td>
+                                            <td>21/7/2022</td>
+                                            <td>123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Project (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>12313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>41241</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>123</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="tab-pane fade show" id="default-tab-4">
-                                <table  id="rejectedtable"  class="table table-striped table-bordered align-middle">
+                                <!-- {{-- claim approval --}} -->
+                                <table  id="tablerejected"  class="table table-striped table-bordered align-middle">
                                     <thead>
-                                    <tr>
-                                        <th  data-orderable="false"></th>	
-                                        <th  data-orderable="false">Action</th>
-                                        <th class="text-nowrap">Applied Date</th>
-                                        <th class="text-nowrap">Employee Name</th>
-                                        <th class="text-nowrap">Month</th>
-                                        <th class="text-nowrap">Claim ID</th>
-                                        <th class="text-nowrap">Claim Type</th>
-                                        <th class="text-nowrap">Total Amount</th>
-                                        <th class="text-nowrap">Status</th>
-                                        <th class="text-nowrap">Status Date</th>
-                                        <th class="text-nowrap">Remarks</th> 
-                                    </tr>
+                                        <tr>
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Cash Advance ID</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Type of Cash Advance</th>
+                                            <th class="text-nowrap">Request Date</th>
+                                            <th class="text-nowrap">Travel Date</th>
+                                            <th class="text-nowrap"> Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Status  Date</th>
+                                            <th class="text-nowrap">Remarks</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
+                                        <tr>
+                                            <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                                <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Nor Alia Ahmad</td>
-                                        <td>July</td>
-                                        <td>101</td>
-                                        <td>MTC</td>
-                                        <td>MYR100.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>file not <br> attached</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            <td>201</td>
+                                            <td>Marimar</td>
+                                            <td>Project  (Outstation)</td>
+                                            <td>20/7/2022</td>
+                                            <td>24/7/2022</td>
+                                            <td>MYR130</td>
+                                            <td>Pending</td>
+                                            <td>21/7/2022</td>
+                                            <td>Wrong</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Project (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>Wrong</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>Wrong</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>Wrong</td>
+                                        </tr>
                                     </tbody>
                                 </table>
-                             </div>
-                        </div>  
+                            </div>
+                            <div class="tab-pane fade show" id="default-tab-5">
+                                <!-- {{-- claim approval --}} -->
+                                <table  id="tableclosed"  class="table table-striped table-bordered align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th  data-orderable="false">Action</th>
+                                            <th class="text-nowrap">Cash Advance ID</th>
+                                            <th class="text-nowrap">Employee Name</th>
+                                            <th class="text-nowrap">Type of Cash Advance</th>
+                                            <th class="text-nowrap">Request Date</th>
+                                            <th class="text-nowrap">Travel Date</th>
+                                            <th class="text-nowrap"> Amount</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Cleared Date</th>
+                                            <th class="text-nowrap">Claim PV No</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            <td>201</td>
+                                            <td>Marimar</td>
+                                            <td>Project  (Outstation)</td>
+                                            <td>20/7/2022</td>
+                                            <td>24/7/2022</td>
+                                            <td>MYR130</td>
+                                            <td>Pending</td>
+                                            <td>21/7/2022</td>
+                                            <td>213</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Project (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>4124</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>1323</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                </div>
+                                            </td>
+                                            <td>202</td>
+                                            <td>Syqfiq</td>
+                                            <td>Others (Non-Outstation)</td>
+                                            <td>14/7/2022</td>
+                                            <td>23/7/2022</td>
+                                            <td>MYR250.00</td>
+                                            <td>Pending</td>
+                                            <td>21/07/2022</td>
+                                            <td>41242</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                          
                     </div>
                     </div>
                 </div>
@@ -1242,43 +1345,46 @@
 	<script>
 		$(document).ready(function () {
 
-            $('#activetable')
+            
+
+            $("#filter").click(function(){
+			$("#filteronoff").toggle();
+            });
+
+    });
+
+            $('#tableactive')
 				.dataTable({
 					// "responsive": true,
 					"bLengthChange": false,
 					"bFilter": false,
 				});
 
-			$('#checkedtable')
+			$('#tableprocess')
 			.dataTable({
 				// "responsive": true,
 				"bLengthChange": false,
 				"bFilter": false,
 				});
-            
-            $('#amendtable')
+                
+            $('#tablepaid')
 			.dataTable({
 				// "responsive": true,
 				"bLengthChange": false,
 				"bFilter": false,
 				});
-            
-            $('#rejectedtable')
+            $('#tablerejected')
 			.dataTable({
 				// "responsive": true,
 				"bLengthChange": false,
 				"bFilter": false,
 				});
-
-            $("#filter").click(function(){
-			$("#filteronoff").toggle();
-            });
-
-			// tablecashadvance
-
-            // hide remarks
-            // $('#tableclaimapproval th:nth-child(11),td:nth-child(11)').hide();
-    });
+            $('#tableclosed')
+			.dataTable({
+				// "responsive": true,
+				"bLengthChange": false,
+				"bFilter": false,
+				});
 	</script>
 
 	

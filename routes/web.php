@@ -302,9 +302,11 @@ Route::get('/claimapproval/supervisor', function () {
     return view('eclaim/claimapproval/supervisor/supervisorapproval');
 });
 Route::get('/claimapproval/viewmtcsupervisor', function () {
-    return view('eclaim/claimapproval/supervisor/view/viewmtc');
+    return view('eclaim/claimapproval/supervisor/view/svviewmtc');
 });
-
+Route::get('/claimapproval/viewgncsupervisor', function () {
+    return view('eclaim/claimapproval/supervisor/view/svviewgnc');
+});
 //approval hod
 Route::get('/claimapproval/hod', function () {
     return view('eclaim/claimapproval/hod/hodapproval');
@@ -532,11 +534,22 @@ Route::get('/supervisor/viewonlymtc', function () {
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////CASH ADVANCE/////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
-
+///HOD
 Route::get('/hod/cashadvanceapproval', function () {
     return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
 });
-
+///Finance checker
+Route::get('/financechecker/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/financechecker/cashadvance/fccashadvance');
+});
+///Finance Recommender
+Route::get('/financerecommender/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/financerecommender/cashadvance/frcashadvance');
+});
+///Finance approver
+Route::get('/financeapprover/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/financeapprover/cashadvance/facashadvance');
+});
 //view admin approver
 Route::get('/adminapprover/viewmtc', function () {
     return view('eclaim/claimapproval/adminapprover/view/aaviewmtc');
@@ -582,11 +595,12 @@ Route::get('/eleave/holidaylist', function () {
     return view('eleave/setting/holidaylist');
 });
 
-
 //Eleave Approval
 Route::get('/eLeave/LeaveApproval', function () {
     return view('eLeave/leaveAppr');
 });
+
+
 
 //eleave setting
 Route::get('/eleave/eleaveentitlement', function () {
@@ -599,6 +613,22 @@ Route::get('/eleave/holidaylist', function () {
     return view('eleave/setting/holidaylist');
 });
 
+//Eleave Approval
+Route::get('/eLeave/LeaveApproval', function () {
+    return view('eLeave/leaveAppr');
+});
+
+
+//eleave setting
+Route::get('/eleave/eleaveentitlement', function () {
+    return view('eleave/setting/eleaveentitlement');
+});
+Route::get('/eleave/leavetypes', function () {
+    return view('eleave/setting/leavetypes');
+});
+Route::get('/eleave/holidaylist', function () {
+    return view('eleave/setting/holidaylist');
+});
 
 //Eleave Approval
 Route::get('/eLeave/LeaveApproval', function () {
