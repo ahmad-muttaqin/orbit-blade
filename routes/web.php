@@ -302,9 +302,11 @@ Route::get('/claimapproval/supervisor', function () {
     return view('eclaim/claimapproval/supervisor/supervisorapproval');
 });
 Route::get('/claimapproval/viewmtcsupervisor', function () {
-    return view('eclaim/claimapproval/supervisor/view/viewmtc');
+    return view('eclaim/claimapproval/supervisor/view/svviewmtc');
 });
-
+Route::get('/claimapproval/viewgncsupervisor', function () {
+    return view('eclaim/claimapproval/supervisor/view/svviewgnc');
+});
 //approval hod
 Route::get('/claimapproval/hod', function () {
     return view('eclaim/claimapproval/hod/hodapproval');
