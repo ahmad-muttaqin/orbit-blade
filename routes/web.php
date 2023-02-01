@@ -587,3 +587,30 @@ Route::get('/eleave/holidaylist', function () {
 Route::get('/eLeave/LeaveApproval', function () {
     return view('eLeave/leaveAppr');
 });
+
+//eleave setting
+Route::get('/eleave/eleaveentitlement', function () {
+    return view('eleave/setting/eleaveentitlement');
+});
+Route::get('/eleave/leavetypes', function () {
+    return view('eleave/setting/leavetypes');
+});
+Route::get('/eleave/holidaylist', function () {
+    return view('eleave/setting/holidaylist');
+});
+
+
+//Eleave Approval
+Route::get('/eLeave/LeaveApproval', function () {
+    return view('eLeave/leaveAppr');
+});
+
+
+Route::get('/setting/eleave', function () {
+    return view('eleave/myleave');
+});
+
+
+Route::get('/eleave/myleave', function () {
+    return view('eleave/myleave');
+});
