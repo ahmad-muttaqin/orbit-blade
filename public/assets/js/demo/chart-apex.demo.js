@@ -979,10 +979,10 @@ var handlePieChart = function() {
 			}
 		},
 		colors: [app.color.pink, app.color.orange, app.color.blue, app.color.success, app.color.indigo],
-		labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
-		series: [44, 55, 13, 43, 22],
+		labels: ['Total Entitlement 14', 'Total Balance 6', 'Total Taken 8'],
+		series: [14, 6, 8],
 		title: {
-			text: 'HeatMap Chart (Single color)'
+			display: true,
 		}
 	};
 

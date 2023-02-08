@@ -657,6 +657,8 @@
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
+                                    <button class="btn btn-primary"  type="button">Skip the Queue</button>&nbsp;
+                                    <button class="btn btn-primary"  type="button">Approve All</button>&nbsp;
                                     <button class="btn btn-primary"  type="button" id="filter"> <i class="fa fa-filter" aria-hidden="true"></i></button>&nbsp;
                                     <button class="btn btn-primary"  type="button"> <i class='far fa-file-pdf'></i></button>&nbsp;
                                 </div>  
@@ -743,7 +745,7 @@
                                         <tr>
                                             <th  data-orderable="false"></th>	
                                             <th  data-orderable="false">Action</th>
-                                            <th class="text-nowrap">Form ID</th>
+                                            <th class="text-nowrap">Claim ID</th>
                                             <th class="text-nowrap">Requested By</th>
                                             <th class="text-nowrap">Type of Cash Advance</th>
                                             <th class="text-nowrap">Request Date</th>
@@ -751,7 +753,6 @@
                                             <th class="text-nowrap"> Amount (RM)</th>
                                             <th class="text-nowrap">Status Date</th>
                                             <th class="text-nowrap">Status</th>
-                                            <th class="text-nowrap">Category (HIDE)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -776,7 +777,6 @@
                                             <td>MYR130</td>
                                             <td>Pending</td>
                                             <td>21/7/2022</td>
-                                            <td>PO</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" id="" name="" value=""></td>
@@ -800,7 +800,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>PNO</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" id="" name="" value=""></td>
@@ -824,7 +823,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>OO</td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" id="" name="" value=""></td>
@@ -848,7 +846,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>ONO</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -857,9 +854,8 @@
                                 <table  id="approved"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                         <tr>
-                                            <th  data-orderable="false"></th>	
                                             <th  data-orderable="false">Action</th>
-                                            <th class="text-nowrap">Form ID</th>
+                                            <th class="text-nowrap">Claim ID</th>
                                             <th class="text-nowrap">Requested By</th>
                                             <th class="text-nowrap">Type of Cash Advance</th>
                                             <th class="text-nowrap">Request Date</th>
@@ -867,20 +863,14 @@
                                             <th class="text-nowrap"> Amount (RM)</th>
                                             <th class="text-nowrap">Status Date</th>
                                             <th class="text-nowrap">Status</th>
-                                            <th class="text-nowrap">Category (HIDE)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -892,18 +882,12 @@
                                             <td>MYR130</td>
                                             <td>Pending</td>
                                             <td>21/7/2022</td>
-                                            <td>PO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -916,18 +900,12 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>PNO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -940,18 +918,12 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>OO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -964,7 +936,6 @@
                                             <td>MYR250.00</td>
                                             <td>Pending</td>
                                             <td>21/07/2022</td>
-                                            <td>ONO</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -973,9 +944,8 @@
                                 <table  id="rejected"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                         <tr>
-                                            <th  data-orderable="false"></th>	
                                             <th  data-orderable="false">Action</th>
-                                            <th class="text-nowrap">Form ID</th>
+                                            <th class="text-nowrap">Claim ID</th>
                                             <th class="text-nowrap">Requested By</th>
                                             <th class="text-nowrap">Type of Cash Advance</th>
                                             <th class="text-nowrap">Request Date</th>
@@ -984,20 +954,14 @@
                                             <th class="text-nowrap">Status Date</th>
                                             <th class="text-nowrap">Status</th>
                                             <th class="text-nowrap">Remarks</th>
-                                            <th class="text-nowrap">Category (HIDE)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1010,18 +974,12 @@
                                             <td>Rejected</td>
                                             <td>21/7/2022</td>
                                             <td>Not Enough</td>
-                                            <td>PO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1035,18 +993,12 @@
                                             <td>Rejected</td>
                                             <td>21/07/2022</td>
                                             <td>Not Enough</td>
-                                            <td>PNO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1060,18 +1012,12 @@
                                             <td>Rejected</td>
                                             <td>21/07/2022</td>
                                             <td>Not Enough</td>
-                                            <td>OO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1085,7 +1031,6 @@
                                             <td>Rejected</td>
                                             <td>21/07/2022</td>
                                             <td>Not Enough</td>
-                                            <td>ONO</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1094,9 +1039,8 @@
                                 <table  id="closed"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                         <tr>
-                                            <th  data-orderable="false"></th>	
                                             <th  data-orderable="false">Action</th>
-                                            <th class="text-nowrap">Form ID</th>
+                                            <th class="text-nowrap">Claim ID</th>
                                             <th class="text-nowrap">Requested By</th>
                                             <th class="text-nowrap">Type of Cash Advance</th>
                                             <th class="text-nowrap">Request Date</th>
@@ -1104,20 +1048,14 @@
                                             <th class="text-nowrap"> Amount (RM)</th>
                                             <th class="text-nowrap">Cleared Date</th>
                                             <th class="text-nowrap">Status</th>
-                                            <th class="text-nowrap">Category (HIDE)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1129,18 +1067,12 @@
                                             <td>MYR130</td>
                                             <td>PAID</td>
                                             <td>21/7/2022</td>
-                                            <td>PO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewprojectnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View PNO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1153,18 +1085,12 @@
                                             <td>MYR250.00</td>
                                             <td>PAID</td>
                                             <td>21/07/2022</td>
-                                            <td>PNO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View OO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1177,18 +1103,12 @@
                                             <td>MYR250.00</td>
                                             <td>PAID</td>
                                             <td>21/07/2022</td>
-                                            <td>OO</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" id="" name="" value=""></td>
                                             <td>
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                                 <div class="dropdown-menu">
                                                     <a href="/claimapproval/viewothersnoneoutstation" id="" data-id="" class="dropdown-item"><i class="fa fa-eye" aria-hidden="true"></i> View ONO</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                                 </div>
@@ -1201,7 +1121,6 @@
                                             <td>MYR250.00</td>
                                             <td>PAID</td>
                                             <td>21/07/2022</td>
-                                            <td>ONO</td>
                                         </tr>
                                     </tbody>
                                 </table>

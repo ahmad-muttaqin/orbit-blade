@@ -309,21 +309,14 @@ Route::get('/claimapproval/supervisor', function () {
     return view('eclaim/claimapproval/supervisor/supervisorapproval');
 });
 Route::get('/claimapproval/viewmtcsupervisor', function () {
-    return view('eclaim/claimapproval/supervisor/view/viewmtc');
+    return view('eclaim/claimapproval/supervisor/view/svviewmtc');
 });
 Route::get('/claimapproval/viewgncsupervisor', function () {
-    return view('eclaim/claimapproval/supervisor/view/viewgnc');
+    return view('eclaim/claimapproval/supervisor/view/svviewgnc');
 });
-Route::get('/claimapproval/viewappealsupervisor', function () {
-    return view('eclaim/claimapproval/supervisor/view/viewappeal');
-});
-
 //approval hod
 Route::get('/claimapproval/hod', function () {
     return view('eclaim/claimapproval/hod/hodapproval');
-});
-Route::get('/cashadvance/hodcashadvance', function () {
-    return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
 });
 //approval finance recommender
 Route::get('/claimapproval/financerecommender', function () {
@@ -332,9 +325,6 @@ Route::get('/claimapproval/financerecommender', function () {
 //approval finance checker
 Route::get('/claimapproval/financechecker', function () {
     return view('eclaim/claimapproval/financechecker/fcapproval');
-});
-Route::get('/cashadvance/financechecker', function () {
-    return view('eclaim/claimapproval/financechecker/cashadvance/fccashadvance');
 });
 //approval finance approver
 Route::get('/claimapproval/financeapprover', function () {
@@ -352,55 +342,253 @@ Route::get('/claimapproval/adminrecommender', function () {
 Route::get('/claimapproval/adminapprover', function () {
     return view('eclaim/claimapproval/adminapprover/apapproval');
 });
-//cash advance
-Route::get('/claimapproval/supervisorcashadvance', function () {
-    return view('eclaim/claimapproval/supervisor/cashadvance/approvalcashadvance');
-});
-Route::get('/claimapproval/hodcashadvance', function () {
-    return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
-});
 Route::get('/claimapproval/challenge', function () {
     return view('eclaim/claimapproval/supervisor/challengeroute');
 });
 
-//view supervisor
-Route::get('/claimapproval/viewprojectoutstation', function () {
-    return view('eclaim/claimapproval/supervisor/view/supervisorviewcapo');
+//view adminchecker
+Route::get('/adminchecker/viewmtc', function () {
+    return view('eclaim/claimapproval/adminchecker/view/acviewmtc');
 });
-Route::get('/claimapproval/viewprojectnoneoutstation', function () {
-    return view('eclaim/claimapproval/supervisor/view/supervisorviewcapno');
-});
-Route::get('/claimapproval/viewothersoutstation', function () {
-    return view('eclaim/claimapproval/supervisor/view/supervisorviewcaoo');
-});
-Route::get('/claimapproval/viewothersnoneoutstation', function () {
-    return view('eclaim/claimapproval/supervisor/view/supervisorviewcaono');
-});
-//////
 
+
+///// no action btn admin checker
+Route::get('/adminchecker/viewonlymtc', function () {
+    return view('eclaim/claimapproval/adminchecker/view/noactionbtn/acviewonlymtc');
+});
+
+
+/// view admin recommender
+Route::get('/adminrecommender/viewmtc', function () {
+    return view('eclaim/claimapproval/adminrecommender/view/arviewmtc');
+});
+
+/// no action btn admin recommender
+Route::get('/adminrecommender/viewonlymtc', function () {
+    return view('eclaim/claimapproval/adminrecommender/view/noactionbtn/arviewonlymtc');
+});
+
+///finance approver
+Route::get('/financeapprover/viewmtc', function () {
+    return view('eclaim/claimapproval/financeapprover/view/faviewmtc');
+});
+Route::get('/financeapprover/viewgnc', function () {
+    return view('eclaim/claimapproval/financeapprover/view/faviewgnc');
+});
+Route::get('/financeapprover/viewcapo', function () {
+    return view('eclaim/claimapproval/financeapprover/view/faviewcapo');
+});
+Route::get('/financeapprover/viewcapno', function () {
+    return view('eclaim/claimapproval/financeapprover/view/faviewcapno');
+});
+Route::get('/financeapprover/viewcaoo', function () {
+    return view('eclaim/claimapproval/financeapprover/view/faviewcaoo');
+});
+Route::get('/financeapprover/viewcaono', function () {
+    return view('eclaim/claimapproval/financeapprover/view/faviewcaono');
+});
+
+///no action btn finance approver
+Route::get('/financeapprover/viewonlymtc', function () {
+    return view('eclaim/claimapproval/financeapprover/view/noactionbtn/faviewonlymtc');
+});
+Route::get('/financeapprover/viewonlygnc', function () {
+    return view('eclaim/claimapproval/financeapprover/view/noactionbtn/faviewonlygnc');
+});
+Route::get('/financeapprover/viewonlycapo', function () {
+    return view('eclaim/claimapproval/financeapprover/view/noactionbtn/faviewonlycapo');
+});
+Route::get('/financeapprover/viewonlycapno', function () {
+    return view('eclaim/claimapproval/financeapprover/view/noactionbtn/faviewonlycapno');
+});
+Route::get('/financeapprover/viewonlycaoo', function () {
+    return view('eclaim/claimapproval/financeapprover/view/noactionbtn/faviewonlycaoo');
+});
+Route::get('/financeapprover/viewonlycaono', function () {
+    return view('eclaim/claimapproval/financeapprover/view/noactionbtn/faviewonlycaono');
+});
+
+//view finance checker
+Route::get('/financechecker/viewmtc', function () {
+    return view('eclaim/claimapproval/financechecker/view/fcviewmtc');
+});
+Route::get('/financechecker/viewgnc', function () {
+    return view('eclaim/claimapproval/financechecker/view/fcviewgnc');
+});
+Route::get('/financechecker/viewcapo', function () {
+    return view('eclaim/claimapproval/financechecker/view/fcviewcapo');
+});
+Route::get('/financechecker/viewcapno', function () {
+    return view('eclaim/claimapproval/financechecker/view/fcviewcapno');
+});
+Route::get('/financechecker/viewcaoo', function () {
+    return view('eclaim/claimapproval/financechecker/view/fcviewcaoo');
+});
+Route::get('/financechecker/viewcaono', function () {
+    return view('eclaim/claimapproval/financechecker/view/fcviewcaono');
+});
+
+//no action btn finance checker
+Route::get('/financechecker/viewonlymtc', function () {
+    return view('eclaim/claimapproval/financechecker/view/noactionbtn/fcviewonlymtc');
+});
+Route::get('/financechecker/viewonlygnc', function () {
+    return view('eclaim/claimapproval/financechecker/view/noactionbtn/fcviewonlygnc');
+});
+Route::get('/financechecker/viewonlycapo', function () {
+    return view('eclaim/claimapproval/financechecker/view/noactionbtn/fcviewonlycapo');
+});
+Route::get('/financechecker/viewonlycapno', function () {
+    return view('eclaim/claimapproval/financechecker/view/noactionbtn/fcviewonlycapno');
+});
+Route::get('/financechecker/viewonlycaoo', function () {
+    return view('eclaim/claimapproval/financechecker/view/noactionbtn/fcviewonlycaoo');
+});
+Route::get('/financechecker/viewonlycaono', function () {
+    return view('eclaim/claimapproval/financechecker/view/noactionbtn/fcviewonlycaono');
+});
+
+//view finance recommender
+Route::get('/financerecommender/viewmtc', function () {
+    return view('eclaim/claimapproval/financerecommender/view/frviewmtc');
+});
+Route::get('/financerecommender/viewgnc', function () {
+    return view('eclaim/claimapproval/financerecommender/view/frviewgnc');
+});
+Route::get('/financerecommender/viewcapo', function () {
+    return view('eclaim/claimapproval/financerecommender/view/frviewcapo');
+});
+Route::get('/financerecommender/viewcapno', function () {
+    return view('eclaim/claimapproval/financerecommender/view/frviewcapno');
+});
+Route::get('/financerecommender/viewcaoo', function () {
+    return view('eclaim/claimapproval/financerecommender/view/frviewcaoo');
+});
+Route::get('/financerecommender/viewcaono', function () {
+    return view('eclaim/claimapproval/financerecommender/view/frviewcaono');
+});
+
+//no action btn finance recommender
+Route::get('/financerecommender/viewonlymtc', function () {
+    return view('eclaim/claimapproval/financerecommender/view/noactionbtn/frviewonlymtc');
+});
+Route::get('/financerecommender/viewonlygnc', function () {
+    return view('eclaim/claimapproval/financerecommender/view/noactionbtn/frviewonlygnc');
+});
+Route::get('/financerecommender/viewonlycapo', function () {
+    return view('eclaim/claimapproval/financerecommender/view/noactionbtn/frviewonlycapo');
+});
+Route::get('/financerecommender/viewonlycapno', function () {
+    return view('eclaim/claimapproval/financerecommender/view/noactionbtn/frviewonlycapno');
+});
+Route::get('/financerecommender/viewonlycaoo', function () {
+    return view('eclaim/claimapproval/financerecommender/view/noactionbtn/frviewonlycaoo');
+});
+Route::get('/financerecommender/viewonlycaono', function () {
+    return view('eclaim/claimapproval/financerecommender/view/noactionbtn/frviewonlycaono');
+});
+
+//view hod
+Route::get('/hod/viewmtc', function () {
+    return view('eclaim/claimapproval/hod/view/hodviewmtc');
+});
+Route::get('/hod/viewgnc', function () {
+    return view('eclaim/claimapproval/hod/view/hodviewgnc');
+});
+Route::get('/hod/viewcapo', function () {
+    return view('eclaim/claimapproval/hod/view/hodviewcapo');
+});
+Route::get('/hod/viewcapno', function () {
+    return view('eclaim/claimapproval/hod/view/hodviewcapno');
+});
+Route::get('/hod/viewcaoo', function () {
+    return view('eclaim/claimapproval/hod/view/hodviewcaoo');
+});
+Route::get('/hod/viewcaono', function () {
+    return view('eclaim/claimapproval/hod/view/hodviewcaono');
+});
+
+//view hod
+Route::get('/hod/viewonlymtc', function () {
+    return view('eclaim/claimapproval/hod/view/noactionbtn/hodviewonlymtc');
+});
+Route::get('/hod/viewonlygnc', function () {
+    return view('eclaim/claimapproval/hod/view/noactionbtn/hodviewonlygnc');
+});
+Route::get('/hod/viewonlycapo', function () {
+    return view('eclaim/claimapproval/hod/view/noactionbtn/hodviewonlycapo');
+});
+Route::get('/hod/viewonlycapno', function () {
+    return view('eclaim/claimapproval/hod/view/noactionbtn/hodviewonlycapno');
+});
+Route::get('/hod/viewonlycaoo', function () {
+    return view('eclaim/claimapproval/hod/view/noactionbtn/hodviewonlycaoo');
+});
+Route::get('/hod/viewonlycaono', function () {
+    return view('eclaim/claimapproval/hod/view/noactionbtn/hodviewonlycaono');
+});
+
+/// view supervisor
+Route::get('/supervisor/viewmtc', function () {
+    return view('eclaim/claimapproval/supervisor/view/svviewmtc');
+});
+
+/// no action btn supervisor
+Route::get('/supervisor/viewonlymtc', function () {
+    return view('eclaim/claimapproval/supervisor/view/noactionbtn/svviewonlymtc');
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////CASH ADVANCE/////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+///HOD
+Route::get('/hod/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/hod/cashadvance/hodcashadvance');
+});
+///Finance checker
+Route::get('/financechecker/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/financechecker/cashadvance/fccashadvance');
+});
+///Finance Recommender
+Route::get('/financerecommender/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/financerecommender/cashadvance/frcashadvance');
+});
+///Finance approver
+Route::get('/financeapprover/cashadvanceapproval', function () {
+    return view('eclaim/claimapproval/financeapprover/cashadvance/facashadvance');
+});
+//view admin approver
+Route::get('/adminapprover/viewmtc', function () {
+    return view('eclaim/claimapproval/adminapprover/view/aaviewmtc');
+});
+Route::get('/adminapprover/viewonlymtc', function () {
+    return view('eclaim/claimapproval/adminapprover/view/noactionbtn/aaviewonlymtc');
+});
+
+//////////////////// eclaim reporting //////////////////////////////
 Route::get('/report/reportingclaimreport', function () {
-    return view('eclaim/reportingclaimreport');
+    return view('eclaim/report/reportingclaimreport');
 });
 Route::get('/report/claimreportall', function () {
-    return view('eclaim/claimreportall');
+    return view('eclaim/report/claimreportall');
 });
 Route::get('/report/claimreportproject', function () {
-    return view('eclaim/claimreportproject');
+    return view('eclaim/report/claimreportproject');
 });
 Route::get('/report/claimreportdepartment', function () {
-    return view('eclaim/claimreportdepartment');
+    return view('eclaim/report/claimreportdepartment');
 });
 Route::get('/report/claimreportemployee', function () {
-    return view('eclaim/claimreportemployee');
+    return view('eclaim/report/claimreportemployee');
 });
 Route::get('/report/claimreportrefnum', function () {
-    return view('eclaim/claimreportrefnum');
+    return view('eclaim/report/claimreportrefnum');
 });
 Route::get('/report/cashadvreportall', function () {
-    return view('eclaim/cashadvreportall');
+    return view('eclaim/report/cashadvreportall');
 });
 Route::get('/report/reportingcashadvance', function () {
-    return view('eclaim/reportingcashadvance');
+    return view('eclaim/report/reportingcashadvance');
 });
 
 //eleave setting
@@ -414,6 +602,40 @@ Route::get('/eleave/holidaylist', function () {
     return view('eleave/setting/holidaylist');
 });
 
+//Eleave Approval
+Route::get('/eLeave/LeaveApproval', function () {
+    return view('eLeave/leaveAppr');
+});
+
+
+
+//eleave setting
+Route::get('/eleave/eleaveentitlement', function () {
+    return view('eleave/setting/eleaveentitlement');
+});
+Route::get('/eleave/leavetypes', function () {
+    return view('eleave/setting/leavetypes');
+});
+Route::get('/eleave/holidaylist', function () {
+    return view('eleave/setting/holidaylist');
+});
+
+//Eleave Approval
+Route::get('/eLeave/LeaveApproval', function () {
+    return view('eLeave/leaveAppr');
+});
+
+
+//eleave setting
+Route::get('/eleave/eleaveentitlement', function () {
+    return view('eleave/setting/eleaveentitlement');
+});
+Route::get('/eleave/leavetypes', function () {
+    return view('eleave/setting/leavetypes');
+});
+Route::get('/eleave/holidaylist', function () {
+    return view('eleave/setting/holidaylist');
+});
 
 //Eleave Approval
 Route::get('/eLeave/LeaveApproval', function () {
@@ -434,3 +656,13 @@ Route::get('reportingchargeoutratet', function () {
 
 
 
+
+
+Route::get('/setting/eleave', function () {
+    return view('eleave/myleave');
+});
+
+
+Route::get('/eleave/myleave', function () {
+    return view('eleave/myleave');
+});

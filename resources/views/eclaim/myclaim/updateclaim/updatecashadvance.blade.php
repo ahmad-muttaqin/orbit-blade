@@ -607,7 +607,7 @@
 											<label class="form-label">Type of Cash Advance</label>
 										</div>
 										<div class="col-md-8">
-											<select class="form-select" id="utoca">
+											<select class="form-select" id="toca">
 												<option class="form-label" value="" selected>Please Select</option>
 												<option class="form-label" value="1" >Project ( Outstation )</option>
 												<option class="form-label" value="2" >Project ( Non-Outstation )</option>
@@ -617,7 +617,7 @@
 										</div>
 									</div>
 									<!-- Project ( Outstation ) -->
-									<div class="UPO" style="display:none">
+									<div class="PO" style="display:none">
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Cash Advance ID</label>
@@ -626,20 +626,13 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input type="text" class="form-control" id="udatefilter1" value="">	
+												<input type="text" class="form-control" id="datefilter1" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -676,6 +669,7 @@
 												<button type="button" class="btn btn-primary" >Add</button>
 											</div>		
 										</div>
+
 										<div class="row p-2">
 											<h4>Project Table List :</h4>
 										</div>
@@ -739,7 +733,7 @@
 									</div>	
 									<!-- END Project ( Outstation ) -->
 									<!-- Project ( Non-Outstation ) -->
-									<div class="UPNO" style="display:none">
+									<div class="PNO" style="display:none">
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Cash Advance ID</label>
@@ -748,20 +742,13 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input type="text" class="form-control" id="udatefilter2" value="">	
+												<input type="text" class="form-control" id="datefilter2" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -800,7 +787,7 @@
 									</div>	
 									<!-- END Project ( Non-Outstation ) -->
 									<!-- Others (Outstation) -->
-									<div class="UOTHERSO" style="display:none">
+									<div class="OTHERSO" style="display:none">
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Cash Advance ID</label>
@@ -809,20 +796,13 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										<div class="row p-2">
-											<div class="col-md-4">
-												<label class="form-label">Claim Type</label>
-											</div>
-											<div class="col-md-8">
-												<input readonly type="text" class="form-control">	
-											</div>
-										</div>
+										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Travel Date</label>
 											</div>
 											<div class="col-md-8">
-												<input type="text" class="form-control" id="udatefilter3" value="">	
+												<input type="text" class="form-control" id="datefilter3" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -830,7 +810,7 @@
 												<label class="form-label">Destination</label>
 											</div>
 											<div class="col-md-8">
-												<input  type="text" class="form-control">	
+												<input  type="text" class="form-control">
 											</div>
 										</div>
 										<div class="row p-2">
@@ -849,7 +829,7 @@
 									</div>	
 									<!-- END Others (Outstation) -->
 									<!-- Others (Non-Outstation) -->
-									<div class="UOTHERSNO" style="display:none">
+									<div class="OTHERSNO" style="display:none">
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Cash Advance ID</label>
@@ -858,13 +838,12 @@
 												<input readonly type="text" class="form-control">	
 											</div>
 										</div>
-										
 										<div class="row p-2">
 											<div class="col-md-4">
 												<label class="form-label">Date of Required Cash</label>
 											</div>
 											<div class="col-md-8">
-												<input type="text" class="form-control" id="udatefilter4" value="">	
+												<input type="text" class="form-control" id="datefilter4" value="">	
 											</div>
 										</div>
 										<div class="row p-2">
@@ -902,14 +881,14 @@
 								</div>
 							</div>
 								<div class="col-md-5">
-									<div class="UMOT" style="display:none">
+									<div class="MOT" style="display:none">
 										<div class="form-control">	
 											<div class="row p-2">
 												<div class="col-md-4">
 													<label class="form-label">Mode Of Transport</label>
 												</div>
 												<div class="col-md-8">
-													<select class="form-select" id="USMOT">
+													<select class="form-select" id="SMOT">
 														<option class="form-label" value="1" selected>Please Select</option>
 														<option class="form-label" value="2" >Personal Car</option>
 														<option class="form-label" value="3" >Personal Motorcycle</option>
@@ -920,8 +899,8 @@
 												</div>
 											</div>
 											<!-- For Personal Car/Personal Motorcycle/Company Car -->
-												<div class="USAC" style="display: none">
-													<div class="usubbacco">
+												<div class="SAC" style="display: none">
+													<div class="subacco">
 
 													
 													<div class="row p-2">
@@ -937,7 +916,7 @@
 															<label class="form-label">Day</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" id="uday" value="0">
+															<input  type="text" class="form-control" id="day" value="0" >
 														</div>
 														<div class="col-md-1">
 															<label class="form-label">X</label>
@@ -950,7 +929,7 @@
 															</select>
 														</div>
 														<div class="col-md-3">
-															<input  type="text" class="form-control" id="usubs" value="60" readonly>
+															<input  type="text" class="form-control" id="subs" value="60" readonly>
 														</div>
 													</div>
 													<div class="row p-2">
@@ -970,7 +949,7 @@
 															<label class="form-label">Total</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="utotalsubs" value="0">
+															<input readonly type="text" class="form-control" id="totalsubs" value="0">
 														</div>
 													</div>
 													<div class="row p-2">
@@ -986,7 +965,7 @@
 															<label class="form-label">Night</label>
 														</div>
 														<div class="col-md-2">
-															<input  type="text" class="form-control" id="unight" value="0">
+															<input  type="text" class="form-control" id="night" value="0">
 														</div>
 														<div class="col-md-1">
 															<label class="form-label">X</label>
@@ -999,9 +978,10 @@
 															</select>
 														</div>
 														<div class="col-md-3">
-															<input type="text" class="form-control" id="uacco" value="350" readonly >
+															<input type="text" class="form-control" id="acco" value="350" readonly >
 														</div>
 													</div>
+
 													<div class="row p-2">
 														<div class="col-md-2">
 															<label class="form-label"></label>
@@ -1019,12 +999,12 @@
 															<label class="form-label">Total</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="utotalacco" value="0">
+															<input readonly type="text" class="form-control" id="totalacco" value="0">
 														</div>
 													</div>
 												</div>
 											</div>
-												<div class="UTEE" style="display: none">
+												<div class="TE" style="display: none">
 													<div class="row p-2">
 														<div class="col-md-3">
 																<label class="form-label">Travel Expenses</label>
@@ -1040,7 +1020,7 @@
 															<label class="form-label">Fuel/Fare</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="number" class="form-control" id="ufuelfare" value="0">
+															<input  type="number" class="form-control" id="fuelfare" value="0">
 														</div>
 													</div>
 												</div>
@@ -1053,7 +1033,7 @@
 															<label class="form-label">Toll/Parking</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="number" class="form-control" id="utollparking" value="0">
+															<input  type="number" class="form-control" id="tollparking" value="0">
 														</div>
 													</div>
 												</div>
@@ -1066,11 +1046,11 @@
 															<label class="form-label">Entertainment</label>
 														</div>
 														<div class="col-md-3">
-															<input  type="number" class="form-control" id="uent" value="0">
+															<input  type="number" class="form-control" id="ent" value="0">
 														</div>
 													</div>
 												</div>
-												<div class="UTE" style="display: none">
+												<div class="TE" style="display: none">
 													<div class="row p-2">
 														<div class="col-md-2">
 															<label class="form-label"></label>
@@ -1079,11 +1059,11 @@
 															<label class="form-label">Total</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="utotalexp" value="0">
+															<input readonly type="text" class="form-control" id="totalexp" value="0">
 														</div>
 													</div>
 												</div>
-												<div class="UMPO" style="display: none">
+												<div class="MPO" style="display: none">
 													<div class="row p-2">
 														<div class="col-md-2">
 															<label class="form-label"></label>
@@ -1092,14 +1072,14 @@
 															<label class="form-label">Maximum Paid Out (75%)</label>
 														</div>
 														<div class="col-md-3">
-															<input readonly type="text" class="form-control" id="umaxpaid">
+															<input readonly type="text" class="form-control" id="maxpaid">
 														</div>
 													</div>
 												</div>
-												{{-- <div class="USV" style="display: none">
+												{{-- <div class="SV" style="display: none">
 													<div class="row p-2">
 														<div class="modal-footer">
-															<button type="button" class="btn btn-primary" >Save</button>
+															<button type="button" class="btn btn-primary" >Save1</button>
 														</div>
 													</div>
 												</div> --}}
@@ -1114,9 +1094,12 @@
 								<div class="col align-self-start">
 									<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
 								</div>
-								
+								{{-- <div class="col d-flex justify-content-end">
+									
+								</div> --}}
 								<div class="col d-flex justify-content-end">
-									<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Save</a>&nbsp;
+									
+									<a class="btn btn-light" style="color: black" type="submit" ><i class="fa fa-save"></i> Save</a>&nbsp;
 									<a class="btn btn-light" style="color: black" type="submit"><i class="fa fa-save"></i> Submit</a>
 								</div>
 							</div>
@@ -1170,236 +1153,230 @@
 
 <script>
 
-  $(document).on('change', "#utoca", function() {
+  $(document).on('change', "#toca", function() {
         if ($(this).val() == "1") {
-            $(".UPO").show();
-			$(".UMOT").show();
-			$(".UPNO").hide();
-			$(".UOTHERSNO").hide();
-			$(".UOTHERSO").hide();
-			$(".usubbacco").show();
-            
+            $(".PO").show();
+			$(".MOT").show();
+			$(".PNO").hide();
+			$(".OTHERSNO").hide();
+			$(".OTHERSO").hide();
+            $(".subacco").show();
+			
+
         } else if ($(this).val() == "2"){
 			
-			$(".UPO").hide();
-			$(".UPNO").show();
-			$(".UMOT").show();
-			$(".UOTHERSNO").hide();
-			$(".UOTHERSO").hide();
-			$(".usubbacco").hide();
-
+			$(".PO").hide();
+			$(".PNO").show();
+			$(".MOT").show();
+			$(".OTHERSNO").hide();
+			$(".OTHERSO").hide();
+			$(".subacco").hide();
+			
 
 		} else if ($(this).val() == "3"){
 			
-			$(".UOTHERSO").show();
-			$(".UMOT").show();
-			$(".UPO").hide();
-			$(".UPNO").hide();
-			$(".UOTHERSNO").hide();
-			$(".usubbacco").show();
+			$(".OTHERSO").show();
+			$(".MOT").show();
+			$(".PO").hide();
+			$(".PNO").hide();
+			$(".OTHERSNO").hide();
+			$(".subacco").show();
+			
 
 		} else if ($(this).val() == "4"){
 			
-			$(".UOTHERSNO").show();
-			$(".UOTHERSO").hide();
-			$(".UMOT").hide();
-			$(".UPO").hide();
-			$(".UPNO").hide();
-			$(".usubbacco").show();
+			$(".OTHERSNO").show();
+			$(".OTHERSO").hide();
+			$(".MOT").hide();
+			$(".PO").hide();
+			$(".PNO").hide();
+			$(".subacco").show();
+			
 		}
 		else {
-			$(".UOTHERSNO").hide();
-			$(".UOTHERSO").hide();
-            $(".UPO").hide();
-			$(".UMOT").hide();
-			$(".UPNO").hide();
-			$(".usubbacco").show();
+			$(".OTHERSNO").hide();
+			$(".OTHERSO").hide();
+            $(".PO").hide();
+			$(".MOT").hide();
+			$(".PNO").hide();
+			$(".subacco").show();
 			
         }
     });
 
 
-	$(document).on('change', "#USMOT", function() {
+	$(document).on('change', "#SMOT", function() {
         if ($(this).val() == "2" || $(this).val() == '3' || $(this).val() == '5')  {
-            $(".USAC").show();
-			$(".UTEE").show();
+            $(".SAC").show();
+			$(".TE").show();
 			$(".FF").show();
 			$(".TP").show();
 			$(".ENTT").show();
-			$(".UTE").show();
-			$(".UMPO").show();
-			$(".USV").show();
-			$("#uday").val(0);
-			$("#unight").val(0);
-			$("#ufuelfare").val(0);
-			$("#utollparking").val(0);
-			$("#uent").val(0);
-			$("#utotalexp").val(0);
-			$("#umaxpaid").val(0);
-			$("#utotalsubs").val(0); 
-			$("#utotalacco").val(0);
+			$(".TE").show();
+			$(".MPO").show();
+			$(".SV").show();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
 			
 			
 			
 
         } else if ($(this).val() == "4"){
-			$(".USAC").show();
-			$(".UTEE").show();
+			$(".SAC").show();
+			$(".TE").show();
 			$(".FF").show();
 			$(".TP").hide();
 			$(".ENTT").show();
-			$(".UTE").show();
-			$(".UMPO").show();
-			$(".USV").show();
-			$("#uday").val(0);
-			$("#unight").val(0);
-			$("#ufuelfare").val(0);
-			$("#utollparking").val(0);
-			$("#uent").val(0);
-			$("#utotalexp").val(0);
-			$("#umaxpaid").val(0);
-			$("#utotalsubs").val(0); 
-			$("#utotalacco").val(0);
+			$(".TE").show();
+			$(".MPO").show();
+			$(".SV").show();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
 		}
 		else if ($(this).val() == "6"){
-			$(".USAC").show();
-			$(".UTEE").show();
+			$(".SAC").show();
+			$(".TE").show();
 			$(".FF").hide();
 			$(".TP").hide();
 			$(".ENTT").show();
-			$(".UTE").show();
-			$(".UMPO").show();
-			$(".USV").show();
-			$("#uday").val(0);
-			$("#unight").val(0);
-			$("#ufuelfare").val(0);
-			$("#utollparking").val(0);
-			$("#uent").val(0);
-			$("#utotalexp").val(0);
-			$("#umaxpaid").val(0);
-			$("#utotalsubs").val(0); 
-			$("#utotalacco").val(0);
+			$(".TE").show();
+			$(".MPO").show();
+			$(".SV").show();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
 		}
 		else {
-            $(".USAC").hide();
-			$(".UTEE").hide();
+            $(".SAC").hide();
+			$(".TE").hide();
 			$(".FF").hide();
 			$(".TP").hide();
 			$(".ENTT").hide();
-			$(".UTE").hide();
-			$(".UMPO").hide();
-			$(".USV").hide();
-			$("#uday").val(0);
-			$("#unight").val(0);
-			$("#ufuelfare").val(0);
-			$("#utollparking").val(0);
-			$("#uent").val(0);
-			$("#utotalexp").val(0);
-			$("#umaxpaid").val(0);
-			$("#utotalsubs").val(0); 
-			$("#utotalacco").val(0);
+			$(".TE").hide();
+			$(".MPO").hide();
+			$(".SV").hide();
+			$("#day").val(0);
+			$("#night").val(0);
+			$("#fuelfare").val(0);
+			$("#tollparking").val(0);
+			$("#ent").val(0);
+			$("#totalexp").val(0);
+			$("#maxpaid").val(0);
+			$("#totalsubs").val(0); 
+			$("#totalacco").val(0);
         }
     });	
 
 
 
 	// cal mode transport
-	$("#uday,#usubs").change(function(){
-		var a = parseInt($("#uday").val());
-		var b = parseFloat($("#usubs").val());
+	$("#day,#subs").change(function(){
+		var a = parseInt($("#day").val());
+		var b = parseFloat($("#subs").val());
 		var c = parseFloat(a*b).toFixed(2);
-        $("#utotalsubs").val(c);
+        $("#totalsubs").val(c);
     }); 
 
 	// cal acco
-	$("#unight,#uacco").change(function(){
-		var a = parseInt($("#unight").val());
-		var b = parseFloat($("#uacco").val());
+	$("#night,#acco").change(function(){
+		var a = parseInt($("#night").val());
+		var b = parseFloat($("#acco").val());
 		var c = parseFloat(a*b).toFixed(2);
-        $("#utotalacco").val(c);
+        $("#totalacco").val(c);
     }); 
 
 	//
-	$("#uday,#usubs,#unight,#uacco,#utotalsubs,#utotalacco,#ufuelfare,#utollparking,#uent").change(function(){
-		var a = parseFloat($("#utotalsubs").val());  
-		var b = parseFloat($("#utotalacco").val());  
-		var c = parseFloat($("#ufuelfare").val());  
-		var d = parseFloat($("#utollparking").val()); 
-		var e = parseFloat($("#uent").val()); 
+	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent").change(function(){
+		var a = parseFloat($("#totalsubs").val());  
+		var b = parseFloat($("#totalacco").val());  
+		var c = parseFloat($("#fuelfare").val());  
+		var d = parseFloat($("#tollparking").val()); 
+		var e = parseFloat($("#ent").val()); 
 		var f = parseFloat(a + b + c + d + e).toFixed(2);    
-        $("#utotalexp").val(f);
+        $("#totalexp").val(f);
     });
 
 
 	//cal maximum paid out
-	$("#uday,#usubs,#unight,#uacco,#utotalsubs,#utotalacco,#ufuelfare,#utollparking,#uent,#utotalexp").change(function(){
-		var a = parseFloat($("#utotalexp").val()); 
+	$("#day,#subs,#night,#acco,#totalsubs,#totalacco,#fuelfare,#tollparking,#ent,#totalexp").change(function(){
+		var a = parseFloat($("#totalexp").val()); 
 		var f = parseFloat((75 / 100) * a).toFixed(2); 
-		$("#umaxpaid").val(f);
+		$("#maxpaid").val(f);
     });
 
 	// end total transport
 	$(function() {
 
-$('#udatefilter1').daterangepicker({
+$('#datefilter1').daterangepicker({
 	autoUpdateInput: false,
 	locale: {
 		cancelLabel: 'Clear'
 	}
 });
 
-$('#udatefilter2').daterangepicker({
+$('#datefilter2').daterangepicker({
 	autoUpdateInput: false,
 	locale: {
 		cancelLabel: 'Clear'
 	}
 });
 
-$('#udatefilter3').daterangepicker({
+$('#datefilter3').daterangepicker({
 	autoUpdateInput: false,
 	locale: {
 		cancelLabel: 'Clear'
 	}
 });
-$('#udatefilter1').on('apply.daterangepicker', function(ev, picker) {
+$('#datefilter1').on('apply.daterangepicker', function(ev, picker) {
 	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
 });
 
-$('#udatefilter1').on('cancel.daterangepicker', function(ev, picker) {
+$('#datefilter1').on('cancel.daterangepicker', function(ev, picker) {
 	$(this).val('');
 });
 
-$('#udatefilter2').on('apply.daterangepicker', function(ev, picker) {
+$('#datefilter2').on('apply.daterangepicker', function(ev, picker) {
 	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
 });
 
-$('#udatefilter2').on('cancel.daterangepicker', function(ev, picker) {
+$('#datefilter2').on('cancel.daterangepicker', function(ev, picker) {
 	$(this).val('');
 });
 
-$('#udatefilter3').on('apply.daterangepicker', function(ev, picker) {
+$('#datefilter3').on('apply.daterangepicker', function(ev, picker) {
 	$(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
 });
 
-$('#udatefilter3').on('cancel.daterangepicker', function(ev, picker) {
+$('#datefilter3').on('cancel.daterangepicker', function(ev, picker) {
 	$(this).val('');
 });
 
-$("#udatefilter4").datepicker({
+$("#datefilter4").datepicker({
     todayHighlight: true,
     autoclose: true,
 	format: 'dd/mm/yyyy',
 	orientation: "bottom"
   });
-
-$('#udatefilter1').on('apply.daterangepicker', function(ev, picker) {
-	$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-});
-
-$('#udatefilter1').on('cancel.daterangepicker', function(ev, picker) {
-	$(this).val('');
-});
-
 });
 </script>
 

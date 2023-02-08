@@ -601,8 +601,8 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">eClaim <small>| Claim Approval | Supervisor | View General Claim </small></h1>
-	
+	<h1 class="page-header">eClaim <small>| Claim Approval | Admin Recommender | View Monthly Claim </small></h1>
+
 	<!-- END page-header -->
 	<!-- BEGIN panel -->
 	<div class="panel panel">
@@ -713,7 +713,89 @@
 							</table>
 						</div>
 						<div class="row p-2">
-							
+							<table id="claimtable" class="table table-striped table-bordered align-middle">
+								<thead>
+									<tr>
+										<th>Action</th>
+										<th class="text-nowrap">Travel Date</th>
+										<th class="text-nowrap">Project Name</th>
+										<th class="text-nowrap">Claim Category</th>
+										<th class="text-nowrap">Amount</th>
+										<th class="text-nowrap">Description</th>
+										<th class="text-nowrap">Attachment</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+										</td>
+										<td>21/07/2022</td>
+										<td>Orbit</td>
+										<td><label id="claim_check">Travelling</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check" >Subsistence</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check" >Subsistence</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check">Travelling</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-claim" class="btn btn-primary btn-sm travel" >View Travel</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check">Travelling</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+									<tr>
+										<td>
+											<a data-bs-toggle="modal" id="btn-view-subsistence" class="btn btn-primary btn-sm subsistence" >View Subsistence</a>
+										</td>										
+										<td>21/07/2022</td>
+										<td>Telephone</td>
+										<td><label class="claim_check" >Subsistence</label></td>
+										<td>RM40</td>
+										<td>Maxis Data</td>
+										<td>Receipt.pdf</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
@@ -880,16 +962,356 @@
 				</div>	
 				<div class="col d-flex justify-content-end">
 					<a class="btn btn-secondary" style="color: black" type="submit"> Cancel</a> &nbsp;
-					<a href="javascript:;" class="btn btn-warning" style="color: black" data-bs-toggle="modal" data-bs-target="#modalamend">Amend</a> &nbsp;
-					<a href="javascript:;" class="btn btn-danger" style="color: black" data-bs-toggle="modal" data-bs-target="#modalreject"> Reject</a> &nbsp;
-					<a class="btn btn-lime" style="color: black" type="submit"> Approve</a>
 				</div>
 			</div>
 		</div>
-		
 	</div>
-	
-		
+
+	<!-- Modal Travel claim -->
+	<div class="modal fade" id="modal-view-claim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Travel Date</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Start Time</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">End Time</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Total Hours</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Reason Using Web</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Type of Transport</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Location Start</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Project</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Log Name</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Address Start</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Destination</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Destination Address</label>
+                    </div>
+					<div class="col-md-9">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Milleage</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Toll</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Petrol/Fares</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Parking</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Supporting Documents</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
+			</div>
+		</div>
+	</div>	
+	<!-- Modal view subsistence -->
+	<div class="modal fade" id="modal-view-subsistence" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Claim Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+				<div class="row p-2">
+                    <div class="col-md-2">
+                        <label class="form-label col-form-label">Claim For</label>
+                    </div>
+					<div class="col-md-4">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+					<div class="col-md-2">
+                        <label class="form-label col-form-label">Supporting Document</label>
+                    </div>
+					<div class="col-md-4">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+					<div class="col-md-6">
+						{{-- <input  type="text" class="form-control"> --}}
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date1" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time1" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date2" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time2" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-2">
+                        <label class="form-label col-form-label">Project</label>
+                    </div>
+					<div class="col-md-10">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-2">
+                        <label class="form-label col-form-label">Description</label>
+                    </div>
+					<div class="col-md-10">
+						<textarea class="form-control"  rows="2" readonly></textarea>
+                    </div>
+					</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Subsistence Allowance :</label>
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Breakfast</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Lunch</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Dinner</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Total Subsistence Allowance:</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                        <label class="form-label col-form-label">Accommodation :</label>
+                    </div>
+					<div class="col-md-3">
+
+                    </div>
+					<div class="col-md-3">
+						<label class="form-label col-form-label">Hotel</label>
+                    </div>
+					<div class="col-md-3">
+						<input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+					<label class="form-label col-form-label">Lodging</label>
+                    </div>
+					<div class="col-md-3">
+					<input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+					<label class="form-label col-form-label">Total Accomodation</label>
+                    </div>
+					<div class="col-md-3">
+					<input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label"></label>
+                    </div>
+					<div class="col-md-3">
+						<label class="form-label col-form-label">Total</label>
+                    </div>
+					<div class="col-md-3">
+						<input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
+				</div>
+				<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+            </div>
+			</div>
+		</div>
+	</div>		
+
+	<!-- Modal view personal -->
 	<div class="modal fade" id="modal-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -903,7 +1325,7 @@
                         <label class="form-label col-form-label">Applied Date</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -911,15 +1333,23 @@
                         <label class="form-label col-form-label">Claim Category</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
+				</div>
+				<div class="row p-2">
+					<div class="col-md-6"> 
+						<input type="text" class="form-control" name="labellingname" id="" readonly value="">
+					</div>
+					<div class="col-md-6"> 
+						<input type="text" readonly class="form-control" >
+					</div>
 				</div>
 				<div class="row p-2">
                     <div class="col-md-6">
                         <label class="form-label col-form-label">Amount</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 					</div>
 				<div class="row p-2">
@@ -927,7 +1357,7 @@
                         <label class="form-label col-form-label">Description</label>
                     </div>
 					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
+                        <textarea type="text" readonly class="form-control"  rows="3" maxlength="255"></textarea>
                     </div>
 				</div>
 				<div class="row p-2">
@@ -935,7 +1365,7 @@
                         <label class="form-label col-form-label">Supporting Document</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                    
