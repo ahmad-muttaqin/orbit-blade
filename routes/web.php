@@ -116,6 +116,13 @@ Route::get('/hris/myprofile', function () {
     return view('hris-myprofile');
 });
 
+
+Route::get('/hris/employmentdetails', function () {
+    return view('hris-employmentdetails');
+});
+
+
+
 Route::get('/e-att', function () {
     return view('myattendance');
 });
@@ -634,6 +641,21 @@ Route::get('/eleave/holidaylist', function () {
 Route::get('/eLeave/LeaveApproval', function () {
     return view('eLeave/leaveAppr');
 });
+
+
+//charge out rate
+Route::get('reportingchargeoutrate', function () {
+    return view('reportingchargeoutrate');
+});
+
+Route::get('reportingchargeoutratet', function () {
+    return view('reportingchargeoutratet');
+});
+
+
+
+
+
 
 
 Route::get('/setting/eleave', function () {
