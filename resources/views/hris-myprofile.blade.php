@@ -783,7 +783,7 @@
 															</div>
 															<div class="col-sm-6">
 																<label for="expirydate" class="form-label">Expiry Date</label>
-																<input type="date" id="expirydate" class="form-control" aria-describedby="expirydate">
+																<input type="text" id="expirydate" class="form-control" aria-describedby="expirydate">
 															</div>
 														</div>
 													</div>
@@ -967,7 +967,7 @@
 														<div class="row">
 															<div class="col-sm-6">
 																<label for="dob" class="form-label">Date of Birth</label>
-																<input type="date" id="dob" class="form-control" aria-describedby="dob">
+																<input type="text" id="dob" class="form-control" aria-describedby="dob">
 															</div>
 															<div class="col-sm-6">
 																<label for="gender" class="form-label">Gender</label>
