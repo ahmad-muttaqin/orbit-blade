@@ -10,24 +10,9 @@
 	<meta content="" name="author" />
 	
     <link rel="shortcut icon" href="../assets/img/logo/orbit-sm.png" >
-	<!-- ================== BEGIN core-css ================== -->
-	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/app.min.css" rel="stylesheet" /> -->
-	<!-- ================== END core-css ================== -->
 	
-	<!-- ================== BEGIN page-css ================== -->
-	<!-- <link href="../assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
-	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
-	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
-	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-    
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> --> -->
-	
-	<!-- ================== END page-css ================== -->
+
+
     <!-- ================== BEGIN core-css ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,12 +25,11 @@
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
 	<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
 	<link href="../assets/plugins/simple-calendar/dist/simple-calendar.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-	<!-- ================== END page-css ================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <!-- ================== END page-css ================== -->
 	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-    
-</head> 
+</head>
 
 <body>
 	<!-- BEGIN #loader -->
@@ -284,6 +268,7 @@
 
                     <!-- End Sidenav Content Orbit -->
                     <!-- Sidenav Content Orbit -->
+
                     <div class="menu-item has-sub">
                         <a href="#" class="menu-link">
                             <div class="menu-icon">
@@ -465,40 +450,40 @@
                             <div class="menu-text text-gray">Reporting</div>
                             <div class="menu-caret text-gray"></div>
                         </a>
-                        <div class="menu-submenu">
+                             <div class="menu-submenu">
                             <div class="menu-item has-sub">
                                 <a href="#" class="menu-link">
                                     <div class="menu-icon">
 							    	    <i class="fa fa-file-signature text-gray"></i>
 							        </div>
-                                    <div class="menu-text text-gray">Timesheet</i></div>
-                                    <div class="menu-caret text-gray"></div>
+                                        <div class="menu-text text-gray">Timesheet</i></div>
+                                        <div class="menu-caret text-gray"></div>
                                 </a>
-                                <div class="menu-submenu">
-                                    <div class="menu-item">
-                                        <a href="/timesheet/reportingstatusreport" class="menu-link">
-                                            <div class="menu-icon">
-								                <i class="fa fa-address-card text-gray"></i>
-							                </div>
-                                            <div class="menu-text text-gray">Status Report</div>
-                                        </a>
+                            <div class="menu-submenu">
+                                <div class="menu-item">
+                                    <a href="/timesheet/reportingstatusreport" class="menu-link">
+                                        <div class="menu-icon">
+								             <i class="fa fa-address-card text-gray"></i>
+							            </div>
+                                        <div class="menu-text text-gray">Status Report</div>
+                                    </a>
                                     </div>
                                     <div class="menu-item">
-                                        <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
-                                            <div class="menu-icon">
-                                                <i class="fa fa-user-clock text-gray"></i>
-                                            </div>
-                                            <div class="menu-text text-gray">Employee Report</div>
-                                        </a>
-                                    </div>
-                                    <div class="menu-item">
-                                        <a href="/timesheet/timesheetovertimereport" class="menu-link">
-                                            <div class="menu-icon">
-                                                <i class="fa fa-user-gear text-gray"></i>
-                                            </div>
-                                            <div class="menu-text text-gray">Overtime Report</div>
-                                        </a>
-                                    </div>
+                                <a href="/timesheet/reportingtimesheetemployee" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-user-clock text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Employee Report</div>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="/timesheet/timesheetovertimereport" class="menu-link">
+                                <div class="menu-icon">
+								    <i class="fa fa-user-gear text-gray"></i>
+							    </div>
+                                    <div class="menu-text text-gray">Overtime Report</div>
+                                </a>
+                            </div>
                                 </div>
                                 
                             </div>
@@ -643,33 +628,16 @@
 	
 	<!-- END breadcrumb -->
 	<!-- BEGIN page-header -->
-	<h1 class="page-header">E-Leave <small>| Leave Approval | Supervisor</small></h1>
+    <br>
+	<h1 class="page-header">E-Leave <small>| Leave Approval | Head Of Department</small></h1>
 	<!-- END page-header -->
 
 	<!-- BEGIN panel -->
-    <div class="panel panel">
+	<div class="panel panel">
 
-        <!-- BEGIN panel-heading -->
-        
-            <!-- <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
-                        <span class="d-sm-none">Tab 1</span>
-                        <span class="d-sm-block d-none">Supervisor</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
-                        <span class="d-sm-none">Tab 2</span>
-                        <span class="d-sm-block d-none">HOD</span>
-                    </a>
-                </li>      
-            </ul> -->
-
-        <!-- BEGIN tab-pane 1-->
-        <!-- <div class="tab-pane fade active show" id="default-tab-1"> -->
-        <div class="panel-body">
-            <div class="form-control">
+		<!-- BEGIN panel-heading -->
+		<div class="panel-body">
+		    <div class="form-control">
                 <div class="row">
                     <div class="col">
                         <h3>Leave Approval</h3>
@@ -684,7 +652,7 @@
                         </div>
                     </div>
                 </div>
-                
+                    
                 <div id="collapseOne" class="form-control collapse hidden">
                     <h5>Filter</h5><br>
                     <table>
@@ -692,7 +660,7 @@
                             <div class="col-md-3">
                                 <div class="row p-1">
                                     <label for="date">Date</label>
-                                    <input type="text" class="form-control" id="datepicker-date">
+                                    <input type="text" id="calendar" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -813,8 +781,8 @@
                         <td>Rejected</td>
                     </tr>         
                 </table>
-                
-                <!-- TRIAL OF APPROVEMODAL-tab-1 -->
+
+                <!-- TRIAL OF APPROVEMODAL -->
                 <div class="modal fade" id="approveModal-tab-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -895,7 +863,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- END OF APPROVEMODAL-tab-1 -->
+                <!-- END OF APPROVEMODAL -->
                 <!-- TRIAL REJECTMODAL -tab-1-->
                 <div class="modal fade" id="rejectModal-tab-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -1005,40 +973,8 @@
                                             <input type="text" class="form-control row p-5">
                                         </div>
                                     </div>
-                                
-                                    <!-- <form action="/action_page.php">
-                                        <div class="row p-2">
-                                            <label for="text">Employee Name:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">Submitted Date:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">Type of Leave:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">No of Day(s) Applied:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">Duration:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">Start Date:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">End Date:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">Total Days Applied:</label>
-                                        </div>
-                                        <div class="row p-2">
-                                            <label for="text">Reason:</label><br>
-                                        </div>
-                                        <div class="row p-2"> 
-                                            <div class="form-control row p-5"></div>
-                                        </div>
-                                    </form> -->
                                     <br>
+
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Reject</button>
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
@@ -1049,17 +985,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- END OF REJECTMODAL-tab-1 -->
+                <!-- END OF REJECTMODAL -->
             </div>
-        </div>
-        <!-- </div> -->
-        <!-- END tab-pane 1 -->
-    </div>
-    <!-- END row -->
-</div>
-<!-- END #app -->
+		</div>
+	</div>
+	<!-- END row -->
+	<!-- END #app -->
 	
-    <!-- ================== BEGIN core-js ================== -->
+	<!-- ================== BEGIN core-js ================== -->
 	<script src="../assets/js/vendor.min.js"></script>
 	<script src="../assets/js/app.min.js"></script>
 	<!-- ================== END core-js ================== -->
@@ -1072,20 +1005,18 @@
 	<script src="../assets/plugins/simple-calendar/dist/jquery.simple-calendar.min.js"></script>
 	<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
 	<script src="../assets/js/demo/dashboard-v2.js"></script>
-    
-	<link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+    <link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<!-- ================== END page-js ================== -->
-
 </body>
 </html>
 
-
 <script>
-  $("#datepicker-date").datepicker({
+    $("#calendar").datepicker({
     todayHighlight: true,
     autoclose: true,
     orientation: 'bottom',
     format: 'yyyy-mm-dd'
   });
-</script>
+  </script>
