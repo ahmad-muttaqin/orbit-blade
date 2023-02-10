@@ -358,7 +358,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -656,11 +656,9 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    
                         <div class="tab-content panel p-3 rounded">
                             <div class="tab-pane fade active show" id="default-tab-1">
-                                <br>
+                                
                                 <table  id="activetable"  class="table table-striped table-bordered align-middle">
                                     <thead>
                                     <tr>
@@ -703,56 +701,7 @@
                                         <td>Pending</td>
                                         <td>22/07/2022</td>
                                     </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
+                                    
                                     </tbody>
                                     <tfoot style="display:table-row-group" id="filteractive">
                                         <tr>
@@ -801,7 +750,7 @@
                                                 <div class="dropdown-divider"></div>
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
                                                 <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                <a href="javascript:;" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -813,56 +762,8 @@
                                         <td>Pending</td>
                                         <td>22/07/2022</td>
                                     </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                    </tr>
+                                    
+                                    
                                     </tbody>
                                     <tfoot style="display:table-row-group" id="filterrecommend">
                                         <tr>
@@ -910,8 +811,6 @@
                                                 <div class="dropdown-divider"></div>
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
                                                 <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                             </div>
                                         </td>
@@ -925,58 +824,7 @@
                                         <td>22/07/2022</td>
                                         <td>file not <br> attached</td>
                                     </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
+                                    
                                     </tbody>
                                     <tfoot style="display:table-row-group" id="filteramends">
                                         <tr>
@@ -1021,12 +869,6 @@
                                             <div class="dropdown-menu">
                                                 <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
                                                 <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
                                                 <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
                                             </div>
                                         </td>
@@ -1040,58 +882,7 @@
                                         <td>22/07/2022</td>
                                         <td>file not <br> attached</td>
                                     </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>GNC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="" name="" value=""></td>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                        <td>July</td>
-                                        <td>102</td>
-                                        <td>MTC</td>
-                                        <td>MYR250.00</td>
-                                        <td>Pending</td>
-                                        <td>22/07/2022</td>
-                                        <td>incomplete</td> 
-                                    </tr>
+                                    
                                     </tbody>
                                     <tfoot style="display:table-row-group" id="filterreject">
                                         <tr>

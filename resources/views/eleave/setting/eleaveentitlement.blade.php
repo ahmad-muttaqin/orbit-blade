@@ -14,7 +14,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">	<link href="../assets/css/vendor.min.css" rel="stylesheet" />	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
-	
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	{{-- <link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
+	<script src="../assets/plugins/select-picker/dist/picker.min.js"></script> --}}
+
 	<!-- ================== BEGIN page-css ================== -->
 	<link href="../assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
 	<link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
@@ -23,13 +27,18 @@
 
 	<link href="../assets/plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" />
-
+	
 
 	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
 	{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	 --}}
 
+	
+
+	   
+
+	
 
 	
 	
@@ -367,7 +376,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -628,11 +637,11 @@
 									<th class="text-nowrap">Action</th>
 									<th class="text-nowrap">Employee Name</th>
 									<th class="text-nowrap">Department</th>
-									<th class="text-nowrap">Current Entitlement(2022)</th>
+									<th class="text-nowrap">Current Entitlement (<script>document.write(new Date().getFullYear())</script>)</th>
 									<th class="text-nowrap">Current Entitlement Balance</th>
 									<th class="text-nowrap">Sick Leave Entitlement</th>
 									<th class="text-nowrap">Sick Leave Entitlement Balance</th>
-									<th class="text-nowrap">Carry Forward(2021)</th>
+									<th class="text-nowrap">Carry Forward (<script>document.write(new Date().getFullYear()-1)</script>)</th>
 									<th class="text-nowrap">Carry Forward Balance</th>
 									<th class="text-nowrap">Lapsed Date</th>
 									<th class="text-nowrap">Lapse</th>
@@ -716,6 +725,13 @@
 				</div>
 
 				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Current Entitlement (<script>document.write(new Date().getFullYear())</script>)</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value="  "   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
 					<label class="form-label col-form-label col-md-3">Current Entitlement Balance :</label>
 					<div class="col-md-7">
 					  <input type="text" class="form-control" placeholder="" value=""   />
@@ -724,6 +740,13 @@
 
 				<div class="row mb-3">
 					<label class="form-label col-form-label col-md-3">Sick Leave Entitlement :</label>
+					<div class="col-md-7">
+					  <input type="text" class="form-control" placeholder="" value=""   />
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<label class="form-label col-form-label col-md-3">Sick Leave Entitlement Balance :</label>
 					<div class="col-md-7">
 					  <input type="text" class="form-control" placeholder="" value=""   />
 					</div>
@@ -783,7 +806,16 @@
 					<div class="col-md-9">
 						<div class="mb-2">
 							<label for="lapsed date" class="form-label">Employee Name: </label>
-							<input type="text" class="form-control col-sm-2" id="" readonly>
+							{{-- <input type="text" class="form-control col-sm-2" id="" readonly> --}}
+							<select class="selectpicker form-select" id="multi"  multiple>
+								{{-- <option class="form-label" value="">Please Select</option> --}}
+								<option class="form-label" value="1" selected>Amira Roslam</option>
+								<option class="form-label" value="2" selected>Hazizul Husni</option>
+								<option class="form-label" value="3" selected>Izudin Umar</option>
+								<option class="form-label" value="4">Shahira Ahmad</option>
+								<option class="form-label" value="5">Anisah</option>
+							</select>
+						   
 						</div>
 					</div>
 				</div>
@@ -820,6 +852,9 @@
 
 	<!-- ================== END core-js ================== -->
 
+<!-- required files -->
+<link href="/assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
+<script src="/assets/plugins/select-picker/dist/picker.min.js"></script>
 
 </body>
 </html>
@@ -853,7 +888,9 @@
 	<script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 	<link href="/assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<script src="/assets/plugins/jstree/dist/jstree.min.js"></script>
-
+	<!-- required files -->
+		<!-- required files -->
+	
 
 <script>
 	$(document).ready(function () {
@@ -875,5 +912,8 @@
 
 </script>
 
+<script>
+	$('#multi').picker({ search: true });
+</script>
 	
 

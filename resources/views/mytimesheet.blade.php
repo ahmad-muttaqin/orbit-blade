@@ -351,7 +351,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -871,10 +871,9 @@
 										<div class="col-sm-12">
 											<label for="firstname" class="form-label">Event Name*</label>
 											<input type="text" class="form-control" id="" />
-											
 										</div>
-										
-									</div>
+								</div>
+
 									<div class="row p-2">
 									<div class="col-sm-6">
 											<label for="lastname" class="form-label">Start Date*</label>
@@ -1309,19 +1308,23 @@
 										
 									</div>
 									<div class="row p-2">
-									<div class="col-sm-6">
+										<div class="col-sm-6">
 											<label for="lastname" class="form-label">Start Date*</label>
-											<div class="input-group">
-											<input type="text" class="form-control" id="starteventdateedit" />
-											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-										</div>
+												<div class="input-group">
+													<input type="text" class="form-control" id="starteventdateedit" />
+														<div class="input-group-text">
+															<i class="fa fa-calendar"></i>
+														</div>
+												</div>
 										</div>
 										<div class="col-sm-6">
 											<label for="lastname" class="form-label">End Date*</label>
-											<div class="input-group">
-											<input type="text" class="form-control" id="endeventdateedit" />
-											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-										</div>
+												<div class="input-group">
+													<input type="text" class="form-control" id="endeventdateedit" />
+														<div class="input-group-text">
+															<i class="fa fa-calendar"></i>
+														</div>
+												</div>
 										</div>
 									</div>
 									

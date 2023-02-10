@@ -372,7 +372,7 @@ margin-top: 10px;
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -636,7 +636,10 @@ margin-top: 10px;
                               <div class="row">
                                     <label for="jobgrade" class="col-sm col-form-label">Job Grade*</label>
                                     <div class="col">
-                                        <input type="text" class="form-control" name="jobgrade" id="job_grade" placeholder="Type for hints...">
+                                        <select class="form-select" name="" id="" aria-label="Disabled select example" id="">
+                                            <option selected>Please Select</option>
+                                            
+                                          </select>
                                     </div>
                               </div>
                               <br>
@@ -694,27 +697,31 @@ margin-top: 10px;
                         </div>
                         <div class="col mb-6">
                             <div class="row">
-                                <label for="lodgingallowance" class="col-sm-3 col-form-label">Lodging Allowance</label>
+                                <label for="localhotela" class="col-sm-3 col-form-label">Local Hotel Allowance</label>
                                 <div class="col-sm-3">
-                                    <select class="form-select" name="lodgingallowance" id="lodging_allowance" aria-label="Disabled select example">
-                                        <option selected>None</option>
-                                        <option value="actual">Actual</option>
-                                        <option value="inputvalue">Input Value</option>
+                                    <select class="form-select" name="localhotela" id="ulocalhotela" aria-label="Disabled select example">
+                                        <option selected value="0" >None</option>
+                                        <option value="1">Actual</option>
+                                        <option  value="2">Input Value</option>
                                       </select>
+                                </div>
+                                <div class="col-sm-3" style="display: none" id="ulocalhoteli">
+                                    <input type="text" class="form-control" id="" name="" value="">
                                 </div>
                             </div>
                             <br>
                             <div class="row">
-                                <label for="localhotela" class="col-sm-3 col-form-label">Local Hotel Allowance</label>
+                                
+                                <label for="lodgingallowance" class="col-sm-3 col-form-label">Lodging Allowance</label>
                                 <div class="col-sm-3">
-                                    <select class="form-select" name="localhotela" id="local_hotela" aria-label="Disabled select example">
-                                        <option >None</option>
-                                        <option value="actual">Actual</option>
-                                        <option selected value="inputvalue">Input Value</option>
+                                    <select class="form-select" name="" id="ulodgingallowance" aria-label="Disabled select example">
+                                        <option selected value="0">None</option>
+                                        <option  value="1">Actual</option>
+                                        <option  value="2">Input Value</option>
                                       </select>
                                 </div>
-                                <div class="col-sm-3">
-                                    <input type="text" class="form-control" id="local_hotela1" name="localhotela" value="150">
+                                <div class="col-sm-3" style="display: none" id="ulodginghoteli">
+                                    <input type="text" class="form-control" id="" name="" value="">
                                 </div>
                             </div>
                             <br>
@@ -820,6 +827,34 @@ margin-top: 10px;
                                         <button id="uminusmbtn2" type="button" style="display: none;" ><i class="fa fa-minus"></i> </button>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Food Allowance</label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Breakfast </label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Lunch </label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="carmileage" class="col-sm-3 col-form-label">Dinner </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" name="" id="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" name="" >
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" name="" >
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -845,7 +880,7 @@ margin-top: 10px;
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#updatesubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>  
                                         </td>
                                         <td>MALAYSIA</td>
-                                        <td>60</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
@@ -853,7 +888,7 @@ margin-top: 10px;
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#updatesubsistence" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
                                         </td>
                                         <td>MIDDLE EAST</td>
-                                        <td>170</td>
+                                        <td>unlimited</td>
                                     </tr>
 
                                     <tr>
@@ -886,7 +921,7 @@ margin-top: 10px;
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#updateclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a> 
                                         </td>
                                         <td>ENTERTAINMENT</td>
-                                        <td>60</td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
@@ -894,7 +929,7 @@ margin-top: 10px;
                                             <a href="javascript:;" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#updateclaimbenefit" class="btn btn-outline-blue" ><i class="fa fa-edit"></i></a>
                                         </td>
                                         <td>PHONE BILL</td>
-                                        <td>170</td>
+                                        <td>unlimited</td>
                                     </tr>
 
                                     <tr>
@@ -1160,7 +1195,30 @@ $(document).ready(function(){
         $('#count').val($("[type='checkbox']:checked").length); 
       });
 
-        });
+});
+
+        //
+        $(document).on('change', "#ulocalhotela", function() {
+        if ($(this).val() == "2") {
+            $("#ulocalhoteli").show();
+			
+		}else {
+			
+			$("#ulocalhoteli").hide();
+        }
+    });
+    
+    // 
+    $(document).on('change', "#ulodgingallowance", function() {
+        if ($(this).val() == "2") {
+            $("#ulodginghoteli").show();
+			
+		}else {
+			
+			$("#ulodginghoteli").hide();
+        }
+    });
+
 </script>
 
 

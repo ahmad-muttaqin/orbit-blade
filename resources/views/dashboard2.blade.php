@@ -361,7 +361,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -925,11 +925,11 @@
 
 <div class="row">
 		<div class="col-lg-6 panel panel-inverse">
-		<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+			<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 		</div>
 						
 		<div class="col-lg-6 panel panel-inverse">
-		<canvas id="bar-chart-grouped" style="width:100%;max-width:600px"></canvas>
+			<canvas id="bar-chart-grouped" style="width:100%;max-width:600px"></canvas>
 		</div>
 </div>
 

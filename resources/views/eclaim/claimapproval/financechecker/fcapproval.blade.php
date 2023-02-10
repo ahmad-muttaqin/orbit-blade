@@ -358,7 +358,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -652,6 +652,9 @@
                                             <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Generate PV</a>  
                                         </li>
                                         <li class="nav-item">
+                                            <a href="#default-tab-7" data-bs-toggle="tab" class="nav-link ">Payment</a>  
+                                        </li>
+                                        <li class="nav-item">
                                             <a href="#default-tab-4" data-bs-toggle="tab" class="nav-link ">Paid</a>  
                                         </li>
                                         <li class="nav-item">
@@ -660,9 +663,7 @@
                                         <li class="nav-item">
                                             <a href="#default-tab-6" data-bs-toggle="tab" class="nav-link ">Rejected</a>  
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="#default-tab-7" data-bs-toggle="tab" class="nav-link ">Payment</a>  
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
@@ -953,15 +954,9 @@
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
-                                                <a href="/claimapproval/viewmtcsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View MTC</a>
+                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalpv"><i class="fa fa-bill" aria-hidden="true" ></i> Generate PV</a>
                                                 <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" ><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true" ></i> Reject</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                                <div class="dropdown-divider"></div> 
-                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                                <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -971,33 +966,9 @@
                                         <td>
                                             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
                                             <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewgncsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View GNC</a>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalpv"><i class="fa fa-bill" aria-hidden="true" ></i> Generate PV</a>
                                             <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
-                                            </div>
-                                        </td>
-                                        <td>03/08/2022</td>
-                                        <td>Norlina Marwan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"><i class="fa fa-cogs"></i> Action <i class="fa fa-caret-down"></i></a>
-                                            <div class="dropdown-menu">
-                                            <a href="/claimapproval/viewappealsupervisor" id="" data-id="" class="dropdown-item"  ><i class="fa fa-eye" aria-hidden="true"></i> View Appeal</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-check" aria-hidden="true"></i> Approve</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalreject"><i class="fa fa-ban" aria-hidden="true"></i> Reject</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalamend"><i class="fa fa-reply" aria-hidden="true" ></i> Amend</a>
-                                            <div class="dropdown-divider"></div> 
-                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+                                            <a href="javascript:;" id="" data-id="" class="dropdown-item"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
                                             </div>
                                         </td>
                                         <td>03/08/2022</td>
@@ -1392,7 +1363,47 @@
                 </div>
             </div> 
         </div> 
+        <!-- Modal Generate PV -->
+      <div class="modal fade" id="modalpv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Generate PV</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row p-2">
+                        
+                        <div class="col-sm-4">
+                            <label for="inputEmail3" class="form-label">Claim ID</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="" readonly value="">
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        
+                        <div class="col-sm-4">
+                            <label for="inputEmail3" class="form-label">PV Number</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="" readonly value="">
+                        </div>
+                    </div>
 
+                    <button type="button" class="btn btn-primary">Generate</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Modal reject -->
       <div class="modal fade" id="modalreject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

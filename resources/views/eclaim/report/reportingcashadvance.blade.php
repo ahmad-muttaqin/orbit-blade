@@ -357,7 +357,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -612,83 +612,80 @@
 	<!-- BEGIN panel -->
     <div class="panel panel">
         <div class="panel-heading">
-        </div>
-        <div class="col-md-6">
             <h4>Cash Advance Report</h4>
         </div>
-                <h4 class="panel-titel"></h4>
+        
+            <h4 class="panel-titel"></h4>
 	<!-- END panel -->
     <!-- BEGIN panel-body -->
     <div class="panel-body">
-        <div id="data-table-default_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer"></div>
-    </div>
-
-    <div class="row mb-3">
-    <div class="col-md-4"> 
-        <label class="form-label col-form-label col-md-4">Select Date: </label>
-    </div>
-        <div class="col-md-4"> 
-            <div class="input-group" id="default-date">
-                <input type="text" name="default-date" class="form-control" value="" id="datepicker-autoClose" placeholder="dd/mm/yyyy" />
-                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+        <div class="row p-2">
+            <div class="col-md-4"> 
+                <label class="form-label col-form-label col-md-4">Select Date: </label>
             </div>
-        </div>  
+            <div class="col-md-4"> 
+                <div class="input-group" id="default-date">
+                    <input type="text" name="default-date" class="form-control" value="" id="datepicker-autoClose" placeholder="dd/mm/yyyy" />
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="row p-2">
+            <div class="col-md-4">
+            <label class="form-label col-form-label col-md-4">Select Department: </label>
+            </div>
+            <div class="col-md-4"> 
+                <select class="form-select">
+                    <option value="" label="ALL" selected="selected"></option>
+                    <option value="1" label="SDD-SERVICE DELIVERY DEPARTMENT"></option>
+                    <option value="2" label="BSR-BUSINESS DEVELOPMENT"></option>
+                    <option value="3" label="CSR-CUSTOMER SERVICE"></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col-md-4">
+                <label class="form-label col-form-label col-md-4">Select By Form: </label>
+            </div>
+            <div class="col-md-4"> 
+                <select class="form-select">
+                    <option value="" label="ALL" selected="selected"></option>
+                    <option value="1" label="PROJECT (OUTSTATION)"></option>
+                    <option value="2" label="PROJECT (NON-OUTSTATION)"></option>
+                    <option value="3" label="OTHER (OUTSTATION)">/option>
+                    <option value="4" label="OTHER (NON-OUTSTATION)"></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col-md-4">
+            <label class="form-label col-form-label col-md-4">Select By Status: </label>
+            </div>
+            <div class="col-md-4"> 
+                <select class="form-select">
+                    <option value="" label="ALL" selected="selected" ></option>
+                    <option value="1" label="APPROVED"></option>
+                    <option value="2" label="REJECTED"></option>
+                    <option value="3" label="PENDING"></option>
+                    <option value="4" label="PAID"></option>
+                    <option value="5" label="CLOSED"></option>
+                </select>
+            </div>
+        </div>
+        <div class="row p-2">
+        <div class="col-md-7">
+            <label class="form-label col-form-label col-md-4"></label>
+        </div>
+        <div class="col-md-3"> 
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+        </div>
     </div>
 
 
-<div class="row mb-3">
-    <div class="col-md-4">
-        <label class="form-label col-form-label col-md-4">Select Department: </label>
-    </div>
-    <div class="col-md-4"> 
-        <select class="form-select">
-            <option value="" label="ALL" selected="selected"></option>
-            <option value="1" label="SDD-SERVICE DELIVERY DEPARTMENT"></option>
-            <option value="2" label="BSR-BUSINESS DEVELOPMENT"></option>
-            <option value="3" label="CSR-CUSTOMER SERVICE"></option>
-        </select>
-    </div>
-</div>
-
-<div class="row mb-3" >
-    <div class="col-md-4">
-        <label class="form-label col-form-label col-md-4">Select By Form: </label>
-    </div>
-    <div class="col-md-4"> 
-        <select class="form-select">
-            <option value="" label="ALL" selected="selected"></option>
-            <option value="1" label="PROJECT (OUTSTATION)"></option>
-            <option value="2" label="PROJECT (NON-OUTSTATION)"></option>
-            <option value="3" label="OTHER (OUTSTATION)">/option>
-            <option value="4" label="OTHER (NON-OUTSTATION)"></option>
-        </select>
-    </div>
-</div>
-
-<div class="row mb-3">
-    <div class="col-md-4">
-        <label class="form-label col-form-label col-md-4">Select By Status: </label>
-    </div>
-    <div class="col-md-4"> 
-        <select class="form-select">
-            <option value="" label="ALL" selected="selected" ></option>
-            <option value="1" label="APPROVED"></option>
-            <option value="2" label="REJECTED"></option>
-            <option value="3" label="PENDING"></option>
-            <option value="4" label="PAID"></option>
-            <option value="5" label="CLOSED"></option>
-        </select>
-    </div>
-</div>
-
-<div class="row mb-3">
-    <div class="col-md-7">
-        <label class="form-label col-form-label col-md-4"></label>
-    </div>
-    <div class="col-md-4"> 
-        <button type="button" class="btn btn-primary">Submit</button>
-    </div>
-</div>
 
 </div>
 <!-- END panel-body -->

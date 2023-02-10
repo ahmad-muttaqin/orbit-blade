@@ -349,7 +349,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -606,11 +606,17 @@
 				<li class="nav-item">
 					<a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">
 						<span class="d-sm-none">Tab 1</span>
+						<span class="d-sm-block d-none">General</span>
+					</a>
+				</li>	
+				<li class="nav-item">
+					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
+						<span class="d-sm-none">Tab 1</span>
 						<span class="d-sm-block d-none">Domain</span>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#default-tab-2" data-bs-toggle="tab" class="nav-link">
+					<a href="#default-tab-3" data-bs-toggle="tab" class="nav-link">
 						<span class="d-sm-none">Tab 2</span>
 						<span class="d-sm-block d-none">Company</span>
 					</a>
@@ -620,8 +626,97 @@
 			<!-- END nav-tabs -->
 			<!-- BEGIN tab-content -->
 			<div class="tab-content panel m-0 rounded-0 p-3">
+			<div class="tab-pane fade active show" id="default-tab-1">
+					<h3 class="mt-10px"></i> General List </h3>
+					
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-control">
+								<div class="row p-2">
+									<h4>General</h4>
+								</div>
+								<div class="form-control">
+									<div class="row p-2">
+										<div class="col-md-2">
+											<h5>Department</h5>
+										</div>
+										<div class="col-md-2">
+											<label class="form-label">Recommender</label>
+										</div>
+										<div class="col-md-6">
+											<select class="form-select" id="" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											
+										</div>
+										<div class="col-md-2">
+											<label class="form-label">Approver</label>
+										</div>
+										<div class="col-md-6">
+											<select class="form-select" id="" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+									<br>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary">Reset</button>
+										<button type="button" class="btn btn-primary">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-control">
+									<div class="row p-2">
+										<h4>History</h4>
+									</div>
+										<div class="card">
+											
+											<div class="card-body">
+												<div class="container">
+													<ul class="timeline-with-icons">
+														<li class="timeline-item mb-5 ">
+														
+														<div class="card p-3 bg-white">														
+															<p class="fw-bold">Recommender has change from Customer Care to Administrator updated by Ahm Farid</p>
+															<p class="text-muted mb-2 fw-bold">11 March 2020</p>
+														</div>
+														</li>
+														<li class="timeline-item mb-5 ">
+														
+														<div class="card p-3 bg-white">														
+															<p class="fw-bold">Recommender has change from Customer Care to Administrator updated by Ahm Farid</p>
+															<p class="text-muted mb-2 fw-bold">11 March 2020</p>
+														</div>
+														</li>
+														<li class="timeline-item mb-5 ">
+														
+														<div class="card p-3 bg-white">														
+															<p class="fw-bold">Recommender has change from Customer Care to Administrator updated by Ahm Farid</p>
+															<p class="text-muted mb-2 fw-bold">11 March 2020</p>
+														</div>
+														</li>
+													</ul>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+					
+					
+				</div>
 				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade active show" id="default-tab-1">
+				<div class="tab-pane fade" id="default-tab-2">
 					<h3 class="mt-10px"></i> Domain List </h3>
 					
 				<div class="panel-body">
@@ -635,6 +730,19 @@
 									<div class="row p-2">
 										<div class="col-md-2">
 											<h5>ADMIN</h5>
+										</div>
+										<div class="col-md-2">
+											<label class="form-label">Role</label>
+										</div>
+										<div class="col-md-6">
+											<select class="form-select" id="" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											
 										</div>
 										<div class="col-md-2">
 											<label class="form-label">Checker 1</label>
@@ -708,6 +816,19 @@
 									<div class="row p-2">
 										<div class="col-md-2">
 											<h5>FINANCE</h5>
+										</div>
+										<div class="col-md-2">
+											<label class="form-label">Role</label>
+										</div>
+										<div class="col-md-6">
+											<select class="form-select" id="" >
+												<option class="form-label" value="" selected>Please Select</option>
+											</select>
+										</div>
+									</div>
+									<div class="row p-2">
+										<div class="col-md-2">
+											
 										</div>
 										<div class="col-md-2">
 											<label class="form-label">Checker 1</label>
@@ -789,6 +910,19 @@
 												<h5>FINANCE</h5>
 											</div>
 											<div class="col-md-2">
+												<label class="form-label">Role</label>
+											</div>
+											<div class="col-md-6">
+												<select class="form-select" id="" >
+													<option class="form-label" value="" selected>Please Select</option>
+												</select>
+											</div>
+										</div>
+										<div class="row p-2">
+											<div class="col-md-2">
+												
+											</div>
+											<div class="col-md-2">
 												<label class="form-label">Checker 1</label>
 											</div>
 											<div class="col-md-6">
@@ -865,7 +999,7 @@
 				</div>
 				<!-- END tab-pane -->
 				<!-- BEGIN tab-pane -->
-				<div class="tab-pane fade" id="default-tab-2">
+				<div class="tab-pane fade" id="default-tab-3">
 					<h3 class="mt-10px"></i> Company List </h3>
 					
 					<div class="panel-body">
@@ -888,6 +1022,19 @@
 															<div class="row p-2">
 																<div class="col-md-2">
 																	<h5>ADMIN</h5>
+																</div>
+																<div class="col-md-2">
+																	<label class="form-label">Role</label>
+																</div>
+																<div class="col-md-6">
+																	<select class="form-select" id="" >
+																		<option class="form-label" value="" selected>Please Select</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-md-2">
+																	
 																</div>
 																<div class="col-md-2">
 																	<label class="form-label">Checker 1</label>
@@ -961,6 +1108,19 @@
 															<div class="row p-2">
 																<div class="col-md-2">
 																	<h5>FINANCE</h5>
+																</div>
+																<div class="col-md-2">
+																	<label class="form-label">Role</label>
+																</div>
+																<div class="col-md-6">
+																	<select class="form-select" id="" >
+																		<option class="form-label" value="" selected>Please Select</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row p-2">
+																<div class="col-md-2">
+																	
 																</div>
 																<div class="col-md-2">
 																	<label class="form-label">Checker 1</label>
@@ -1040,6 +1200,19 @@
 																<div class="row p-2">
 																	<div class="col-md-2">
 																		<h5>FINANCE</h5>
+																	</div>
+																	<div class="col-md-2">
+																		<label class="form-label">Role</label>
+																	</div>
+																	<div class="col-md-6">
+																		<select class="form-select" id="" >
+																			<option class="form-label" value="" selected>Please Select</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="row p-2">
+																	<div class="col-md-2">
+																		
 																	</div>
 																	<div class="col-md-2">
 																		<label class="form-label">Checker 1</label>
@@ -1342,8 +1515,8 @@
 																	</div>
 																	<div class="col-md-6">
 																		<select class="form-select" id="" >
-                            <option class="form-label" value="" selected>Please Select</option>
-                        </select>
+																			<option class="form-label" value="" selected>Please Select</option>
+																		</select>
 																	</div>
 																</div>
 																<br>
@@ -1672,42 +1845,3 @@
 	<!-- ================== END page-js ================== -->
 </body>
 </html>
-<script>
-var elm = document.getElementById('switchery-default');
-  var switchery = new Switchery(elm, {
-    color: '#00acac'
-  });
-</script>
-<script>
-  $("#datepicker-autoClose").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<script>
-  $("#datepicker-birth").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-<script>
-  $("#datepicker-joindate").datepicker({
-    todayHighlight: true,
-    autoclose: true
-  });
-</script>
-
-<script>
-  $('#data-table-default').DataTable({
-    responsive: true
-  });
-</script>
-<script>
-  $('#data-table-default2').DataTable({
-    fixedHeader: {
-      header: true,
-      headerOffset: $('#header').height()
-    },
-	fixedColumns:   true,
-  });
-</script>

@@ -352,7 +352,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -647,7 +647,7 @@
 							</div>
 						</div>
 						<div class="row p-2">
-							<table id="traveltable" class="table table-striped table-bordered align-middle">
+							<table id="claimtable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -713,7 +713,7 @@
 							</table>
 						</div>
 						<div class="row p-2">
-							<table id="claimtable" class="table table-striped table-bordered align-middle">
+							<table id="traveltable" class="table table-striped table-bordered align-middle">
 								<thead>
 									<tr>
 										<th>Action</th>
@@ -957,6 +957,13 @@
 				
 			</div>
 		</div>
+
+		<div class="row p-2">
+			<div class="col align-self-start">
+				<a href="/eclaim/myclaim" class="btn btn-light" style="color: black;" type="submit"><i class="fa fa-arrow-left"></i> Back</a>
+			</div>	
+			
+		</div>
 	</div>
 	<div class="modal fade" id="modal-view-claim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -971,14 +978,14 @@
                         <label class="form-label col-form-label">Travel Date</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Start Time</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -986,14 +993,14 @@
                         <label class="form-label col-form-label">End Time</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Total Hours</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1001,7 +1008,7 @@
                         <label class="form-label col-form-label">Description</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1009,7 +1016,7 @@
                         <label class="form-label col-form-label">Reason Using Web</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1017,14 +1024,14 @@
                         <label class="form-label col-form-label">Type of Transport</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Location Start</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1032,7 +1039,13 @@
                         <label class="form-label col-form-label">Project</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Log Name</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1040,7 +1053,7 @@
                         <label class="form-label col-form-label">Address Start</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1048,7 +1061,7 @@
                         <label class="form-label col-form-label">Destination</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1056,7 +1069,7 @@
                         <label class="form-label col-form-label">Destination Address</label>
                     </div>
 					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1064,14 +1077,14 @@
                         <label class="form-label col-form-label">Milleage</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Toll</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1079,14 +1092,14 @@
                         <label class="form-label col-form-label">Petrol/Fares</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                     <div class="col-md-3">
                         <label class="form-label col-form-label">Parking</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1094,7 +1107,7 @@
                         <label class="form-label col-form-label">Supporting Documents</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				</div>
@@ -1114,57 +1127,80 @@
             </div>
             <div class="modal-body">
 				<div class="row p-2">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label class="form-label col-form-label">Claim For</label>
                     </div>
-					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-4">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
-				</div>
-				<div class="row p-2">
-                    <div class="col-md-3">
+					<div class="col-md-2">
                         <label class="form-label col-form-label">Supporting Document</label>
                     </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-4">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">Travel Date</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">Start Time</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
+					<div class="col-md-6">
+						{{-- <input  type="text" class="form-control"> --}}
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date1" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">Start</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time1" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Date" id="date2" readonly>
+									</div>
+								</div>
+								<div class="row p-2">
+									<div class="col-md-3">
+										<label class="form-label">End</label>
+									</div>
+									<div class="col">
+										<input  type="text" class="form-control" placeholder="Time" id="time2" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
-                        <label class="form-label col-form-label">End Time</label>
-                    </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
-                    </div>
-				
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label class="form-label col-form-label">Project</label>
                     </div>
-					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-10">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label class="form-label col-form-label">Description</label>
                     </div>
-					<div class="col-md-9">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<div class="col-md-10">
+						<textarea class="form-control"  rows="2" readonly></textarea>
                     </div>
 					</div>
 				<div class="row p-2">
@@ -1177,7 +1213,7 @@
                         <label class="form-label col-form-label">Breakfast</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 
@@ -1188,7 +1224,7 @@
                         <label class="form-label col-form-label">Lunch</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1198,7 +1234,18 @@
                         <label class="form-label col-form-label">Dinner</label>
                     </div>
 					<div class="col-md-3">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+
+				<div class="row p-2">
+                    <div class="col-md-6">
+                    </div>
+					<div class="col-md-3">
+                        <label class="form-label col-form-label">Total Subsistence Allowance:</label>
+                    </div>
+					<div class="col-md-3">
+                        <input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1212,7 +1259,7 @@
 						<label class="form-label col-form-label">Hotel</label>
                     </div>
 					<div class="col-md-3">
-						<input type="text" readonly class="form-control" name="customer_name" placeholder="">
+						<input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1224,7 +1271,31 @@
 					<label class="form-label col-form-label">Lodging</label>
                     </div>
 					<div class="col-md-3">
-					<input type="text" readonly class="form-control" name="customer_name" placeholder="">
+					<input type="text" readonly class="form-control" >
+                    </div>
+				</div>
+				<div class="row p-2">
+                    <div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+                    </div>
+					<div class="col-md-3">
+					<label class="form-label col-form-label">Total Accomodation</label>
+                    </div>
+					<div class="col-md-3">
+					<input type="text" readonly class="form-control" name="" placeholder="">
+                    </div>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="row p-2">
+                    <div class="col-md-6">
+                        <label class="form-label col-form-label"></label>
+                    </div>
+					<div class="col-md-3">
+						<label class="form-label col-form-label">Total</label>
+                    </div>
+					<div class="col-md-3">
+						<input type="text" readonly class="form-control" name="" placeholder="">
                     </div>
 				</div>
 				</div>
@@ -1248,7 +1319,7 @@
                         <label class="form-label col-form-label">Applied Date</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1256,15 +1327,23 @@
                         <label class="form-label col-form-label">Claim Category</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
+				</div>
+				<div class="row p-2">
+					<div class="col-md-6"> 
+						<input type="text" class="form-control" name="labellingname" id="" readonly value="">
+					</div>
+					<div class="col-md-6"> 
+						<input type="text" readonly class="form-control" >
+					</div>
 				</div>
 				<div class="row p-2">
                     <div class="col-md-6">
                         <label class="form-label col-form-label">Amount</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 					</div>
 				<div class="row p-2">
@@ -1272,7 +1351,7 @@
                         <label class="form-label col-form-label">Description</label>
                     </div>
 					<div class="col-md-6">
-                        <textarea type="text" readonly class="form-control" name="customer_name" placeholder="" rows="3" maxlength="255"></textarea>
+                        <textarea type="text" readonly class="form-control"  rows="3" maxlength="255"></textarea>
                     </div>
 				</div>
 				<div class="row p-2">
@@ -1280,7 +1359,7 @@
                         <label class="form-label col-form-label">Supporting Document</label>
                     </div>
 					<div class="col-md-6">
-                        <input type="text" readonly class="form-control" name="customer_name" placeholder="">
+                        <input type="text" readonly class="form-control" >
                     </div>
 				
                    
@@ -1293,7 +1372,9 @@
             </div>
 			</div>
 		</div>
-	</div>		
+	</div>
+	
+	
 	<!-- END row -->
 	
 	<!-- END #app -->
@@ -1340,6 +1421,7 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
+		scrollX : true
     });
 	$("#traveltable").DataTable({
         responsive: false,
@@ -1347,6 +1429,7 @@
             [5,10, 15, 20, -1],
             [5,10, 15, 20, 'All'],
         ],
+		scrollX : true
     });
 	$(document).on("click", "#btn-view-claim", function() {
         $('#modal-view-claim').modal('show');

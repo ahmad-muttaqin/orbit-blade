@@ -358,7 +358,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -654,6 +654,7 @@
                                         <li class="nav-item">
                                             <a href="#default-tab-5" data-bs-toggle="tab" class="nav-link ">Paid</a>  
                                         </li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">

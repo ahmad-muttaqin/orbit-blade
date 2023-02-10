@@ -358,7 +358,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -643,7 +643,7 @@
                                         <a href="#default-tab-1" data-bs-toggle="tab" class="nav-link active">Active</a>   
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">Checked</a>  
+                                        <a href="#default-tab-2" data-bs-toggle="tab" class="nav-link ">Recommended</a>  
                                     </li>
                                     <li class="nav-item">
                                         <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Amend</a>  

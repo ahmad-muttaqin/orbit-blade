@@ -352,7 +352,7 @@
 						</a>
 						<div class="menu-submenu">
 							<div class="menu-item">
-								<a href="#" class="menu-link">
+								<a href="/eclaim/myclaim" class="menu-link">
 								<div class="menu-icon">
 										<i class="fa fa-envelope-open-text text-gray"></i>
 									</div>
@@ -611,60 +611,57 @@
 		
 		<div class="panel-heading">
 		
-		<div class="col-md-12" style="display: flex; justify-content: flex-end" >
-		<a href="javascript:;"  class="btn btn-primary">Approve All</a>	&nbsp;&nbsp;&nbsp;
-		<a id="filter" class="btn btn-default btn-icon btn-lg">
-				<i class="fa fa-filter"></i>
-			</a>
-		
-		</div>
-		
+			<div class="col-md-12" style="display: flex; justify-content: flex-end" >
+				<a href="javascript:;"  class="btn btn-primary">Approve All</a>	&nbsp;&nbsp;&nbsp;
+				<a id="filter" class="btn btn-default btn-icon btn-lg">
+						<i class="fa fa-filter"></i>
+				</a>
+			</div>
 		</div>
 		<div class="panel-body">
-		<div class="form-control" id="filterform" style="display:none">	
-		<div class="row p-2">	
-			
-			<h4>Filter</h4>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Employer Name</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
+			<div class="form-control" id="filterform" style="display:none">	
+				<div class="row p-2">				
+					<h4>Filter</h4>
+						<div class="col-sm-2">
+							<label for="emergency-firstname" class="form-label">Employer Name</label>
+								<select class="form-select" id="" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+						</div>
+						<div class="col-sm-2">
+							<label for="emergency-lastname" class="form-label">Month</label>
+								<select class="form-select" id="" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+						</div>
+						<div class="col-sm-2">
+							<label for="emergency-firstname" class="form-label">Designation</label>
+								<select class="form-select" id="" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+						</div>
+						<div class="col-sm-2">
+							<label for="emergency-firstname" class="form-label">Department</label>
+								<select class="form-select" id="" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+						</div>
+						<div class="col-sm-2">
+							<label for="emergency-firstname" class="form-label">Status</label>
+								<select class="form-select" id="" >
+									<option class="form-label" value="" selected>Please Select</option>
+								</select>
+						</div>
+						<div class="col-sm-1">
+							<label for="emergency-firstname" class="form-label">&nbsp;</label>
+								<a href="#" class="btn btn-primary form-control"> <i class="fas fa-magnifying-glass"></i> Search</a>
+						</div>
+						<div class="col-sm-1">
+							<label for="emergency-firstname" class="form-label">&nbsp;</label>
+								<a href="#" class="btn btn-primary form-control"> <i class="fas fa-repeat"></i> Reset</a>
+						</div>
+				</div>
 			</div>
-			<div class="col-sm-2">
-			<label for="emergency-lastname" class="form-label">Month</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-2">
-				<label for="emergency-firstname" class="form-label">Designation</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Department</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-2">
-			<label for="emergency-firstname" class="form-label">Status</label>
-				<select class="form-select" id="" >
-					<option class="form-label" value="" selected>Please Select</option>
-				</select>
-			</div>
-			<div class="col-sm-1">
-			<label for="emergency-firstname" class="form-label">&nbsp;</label>
-			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-magnifying-glass"></i> Search</a>
-			</div>
-			<div class="col-sm-1">
-			<label for="emergency-firstname" class="form-label">&nbsp;</label>
-			<a href="#" class="btn btn-primary form-control"> <i class="fas fa-repeat"></i> Reset</a>
-			</div>
-			</div>
-		</div>
 		<!-- END panel-heading -->
 		<!-- BEGIN panel-body --><br>
 		<div class="form-control">	
@@ -681,8 +678,6 @@
 						<th class="text-nowrap">Designation</th>
 						<th class="text-nowrap">Department</th>
 						<th width="9%" data-orderable="false" class="align-middle">Status</th>
-
-
 					</tr>
 				</thead>
 				<tbody>
@@ -801,9 +796,6 @@
 							<div style="display:block"> <span class="badge bg-danger rounded-pill">Rejected</span></div>
 						</td>
 					</tr>
-					
-					
-					
 				</tbody>
 			</table>
 		</div>
