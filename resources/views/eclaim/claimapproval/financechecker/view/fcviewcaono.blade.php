@@ -676,7 +676,28 @@
 								<input readonly type="text" class="form-control">
 							</div>
 						</div>
-						
+						<div class="row p-2">
+							<div class="col-md-3">	
+								<label class="form-label col-form-label">Checker :</label>
+							</div>
+							<div class="col-md-9">	
+								<table class="table table-striped table-bordered align-middle">
+								<thead>
+									<tr>
+										<th>Action</th>
+										<th>Checker</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><button type="button" class="btn btn-lime" >Check</button></td>
+										<td><input type="checkbox" class="form-check-input"  disabled/> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> &nbsp; <input type="checkbox" class="form-check-input"  disabled /> </td>										
+									</tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
 						
 					</div>
 					
