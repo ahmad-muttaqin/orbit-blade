@@ -652,6 +652,9 @@
                                             <a href="#default-tab-3" data-bs-toggle="tab" class="nav-link ">Generate PV</a>  
                                         </li>
                                         <li class="nav-item">
+                                            <a href="#default-tab-7" data-bs-toggle="tab" class="nav-link ">Payment</a>  
+                                        </li>
+                                        <li class="nav-item">
                                             <a href="#default-tab-4" data-bs-toggle="tab" class="nav-link ">Paid</a>  
                                         </li>
                                         <li class="nav-item">
@@ -660,9 +663,7 @@
                                         <li class="nav-item">
                                             <a href="#default-tab-6" data-bs-toggle="tab" class="nav-link ">Rejected</a>  
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="#default-tab-7" data-bs-toggle="tab" class="nav-link ">Payment</a>  
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="col d-flex justify-content-end">
