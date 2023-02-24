@@ -217,6 +217,12 @@ Route::get('/setting/timesheetperiod', function () {
 Route::get('/timesheet/timesheetemployeereportall', function () {
     return view('timesheetemployeereportall');
 });
+
+Route::get('/timesheet/timesheet_summary', function () {
+    return view('timesheet_summary');
+});
+
+
 //my claim
 Route::get('/eclaim/myclaim', function () {
     return view('eclaim/myclaim/eclaimmyclaim');
